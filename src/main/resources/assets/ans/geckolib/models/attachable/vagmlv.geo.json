@@ -1,0 +1,85 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_vagmlv",
+				"texture_width": 16,
+				"texture_height": 16
+			},
+			"bones": [
+				{
+					"name": "spyglass",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "spyglass_axis",
+					"parent": "spyglass",
+					"pivot": [
+						0,
+						0,
+						-5.25
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5,
+								-1,
+								-1
+							],
+							"size": [
+								5,
+								2,
+								2
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-90,
+								0
+							],
+							"uv": [
+								0,
+								4
+							]
+						},
+						{
+							"origin": [
+								-11.1,
+								-1.1,
+								-1.1
+							],
+							"size": [
+								6.2,
+								2.2,
+								2.2
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-90,
+								0
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

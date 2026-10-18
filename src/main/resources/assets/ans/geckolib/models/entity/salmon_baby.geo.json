@@ -1,0 +1,263 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.salmon_baby",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [
+					0,
+					0.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "bodyarmoroffset",
+					"pivot": [
+						0,
+						-19,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "root",
+					"pivot": [
+						0,
+						2,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								0,
+								-4
+							],
+							"size": [
+								3,
+								4,
+								4
+							],
+							"uv": [
+								4,
+								4
+							]
+						}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [
+						0,
+						2.5,
+						-4
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								1,
+								-6
+							],
+							"size": [
+								2,
+								3,
+								2
+							],
+							"uv": [
+								23,
+								1
+							]
+						}
+					]
+				},
+				{
+					"name": "body_back",
+					"parent": "body",
+					"pivot": [
+						0,
+						2,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								0,
+								0
+							],
+							"size": [
+								3,
+								4,
+								4
+							],
+							"uv": [
+								4,
+								17
+							]
+						}
+					]
+				},
+				{
+					"name": "tailfin",
+					"parent": "body_back",
+					"pivot": [
+						0,
+						2,
+						4
+					],
+					"cubes": [
+						{
+							"origin": [
+								0,
+								-0.5,
+								4
+							],
+							"size": [
+								0,
+								5,
+								4
+							],
+							"uv": [
+								24,
+								12
+							]
+						}
+					]
+				},
+				{
+					"name": "dorsalfin_3",
+					"parent": "body_back",
+					"pivot": [
+						0,
+						5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0,
+								4,
+								0
+							],
+							"size": [
+								0,
+								2,
+								2
+							],
+							"uv": [
+								3,
+								4
+							]
+						}
+					]
+				},
+				{
+					"name": "dorsalfin_7",
+					"parent": "body",
+					"pivot": [
+						0,
+						5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0,
+								4,
+								-2
+							],
+							"size": [
+								0,
+								2,
+								2
+							],
+							"uv": [
+								4,
+								2
+							]
+						}
+					]
+				},
+				{
+					"name": "leftfin",
+					"parent": "body",
+					"pivot": [
+						1.5,
+						1,
+						-3
+					],
+					"rotation": [
+						0,
+						0,
+						35
+					],
+					"cubes": [
+						{
+							"origin": [
+								1.5,
+								1,
+								-4
+							],
+							"size": [
+								2,
+								0,
+								2
+							],
+							"uv": [
+								2,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "rightfin",
+					"parent": "body",
+					"pivot": [
+						-1.5,
+						1,
+						-3
+					],
+					"rotation": [
+						0,
+						0,
+						-35
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.5,
+								1,
+								-4
+							],
+							"size": [
+								2,
+								0,
+								2
+							],
+							"uv": [
+								-2,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

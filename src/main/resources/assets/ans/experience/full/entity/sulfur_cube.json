@@ -1,0 +1,3456 @@
+{
+	"format": "ans:bedrock_entity",
+	"format_version": 1,
+	"identifier": "minecraft:sulfur_cube",
+	"source": {
+		"layer": "root",
+		"file": "entity/nrn.json",
+		"min_engine_version": "1.8.0"
+	},
+	"animation_file": "ans:experience/full/entity/sulfur_cube",
+	"geometry": {
+		"nfpdcd": "ans:entity/sulfur_cube_nfpdcd",
+		"jnqabu": "ans:entity/sulfur_cube_jnqabu",
+		"inimgf": "ans:entity/sulfur_cube_inimgf",
+		"ophsjz": "ans:entity/sulfur_cube_ophsjz",
+		"utxigt": "ans:entity/sulfur_cube_utxigt",
+		"aopivf": "ans:entity/sulfur_cube_aopivf",
+		"niftqw": "ans:entity/sulfur_cube_niftqw",
+		"brjbwz": "ans:experience/full/entity/sulfur_cube_brjbwz",
+		"obxnso": "ans:entity/sulfur_cube_obxnso",
+		"nmhfxf": "ans:entity/sulfur_cube_nmhfxf",
+		"rbjlja": "ans:entity/sulfur_cube_rbjlja",
+		"peutrt": "ans:entity/sulfur_cube_peutrt",
+		"avldpk": "ans:experience/full/entity/sulfur_cube_b",
+		"hzdhgn": "ans:entity/sulfur_cube_hzdhgn",
+		"rvymgi": "ans:entity/sulfur_cube_rvymgi",
+		"aovkyt": "ans:entity/sulfur_cube_aovkyt",
+		"qdyjnf": "ans:experience/full/entity/sulfur_cube_qdyjnf",
+		"default": "ans:experience/full/entity/sulfur_cube",
+		"dbxdzp": "ans:experience/full/entity/sulfur_cube_dbxdzp",
+		"yewgpx": "ans:entity/sulfur_cube_yewgpx",
+		"enubxm": "ans:entity/sulfur_cube_enubxm",
+		"tfzgci": "ans:entity/sulfur_cube_tfzgci",
+		"caaolu": "ans:entity/sulfur_cube_caaolu",
+		"nvrths": "ans:entity/sulfur_cube_nvrths",
+		"rwgrow": "ans:entity/sulfur_cube_rwgrow",
+		"qidzco": "ans:entity/sulfur_cube_qidzco",
+		"ztkxmi": "ans:entity/sulfur_cube_ztkxmi",
+		"hseesb": "ans:entity/sulfur_cube_hseesb",
+		"ztssba": "ans:entity/sulfur_cube_ztssba",
+		"rxnioo": "ans:entity/sulfur_cube_rxnioo",
+		"qwlxrz": "ans:entity/sulfur_cube_qwlxrz",
+		"ojclfb": "ans:entity/sulfur_cube_ojclfb",
+		"esiwhi": "ans:entity/sulfur_cube_esiwhi",
+		"hzfxfb": "ans:entity/sulfur_cube_hzfxfb",
+		"pjnosr": "ans:entity/sulfur_cube_pjnosr",
+		"gfmtne": "ans:entity/sulfur_cube_gfmtne"
+	},
+	"textures": {
+		"xskjgy": "ans:textures/entity/sulfur_cube/xskjgy.png",
+		"nfpdcd": "ans:textures/entity/sulfur_cube/nfpdcd.png",
+		"kvcuwr": "ans:textures/entity/sulfur_cube/kvcuwr.png",
+		"iuonqg": "ans:textures/entity/sulfur_cube/iuonqg.png",
+		"vlzcbl": "ans:textures/entity/sulfur_cube/vlzcbl.png",
+		"bkwryt": "ans:textures/entity/sulfur_cube/bkwryt.png",
+		"erxguk": "ans:textures/entity/sulfur_cube/erxguk.png",
+		"ljhvfv": "ans:textures/entity/sulfur_cube/ljhvfv.png",
+		"klbbzr": "ans:textures/entity/sulfur_cube/klbbzr.png",
+		"klinmf": "ans:textures/entity/sulfur_cube/klinmf.png",
+		"izuovg": "ans:textures/entity/sulfur_cube/izuovg.png",
+		"qsnxay": "ans:textures/entity/sulfur_cube/qsnxay.png",
+		"sysysu": "ans:textures/entity/sulfur_cube/sysysu.png",
+		"suiwyc": "ans:textures/entity/sulfur_cube/suiwyc.png",
+		"lrwxyr": "ans:textures/entity/sulfur_cube/lrwxyr.png",
+		"kesrih": "ans:textures/entity/sulfur_cube/kesrih.png",
+		"ufbgao": "ans:textures/entity/sulfur_cube/ufbgao.png",
+		"pcybxl": "ans:textures/entity/sulfur_cube/pcybxl.png",
+		"eanxsm": "ans:textures/entity/sulfur_cube/eanxsm.png",
+		"opsebb": "ans:textures/entity/sulfur_cube/opsebb.png",
+		"ellmcc": "ans:textures/entity/sulfur_cube/ellmcc.png",
+		"qscjxq": "ans:textures/entity/sulfur_cube/qscjxq.png",
+		"ophsjz": "ans:textures/entity/sulfur_cube/ophsjz.png",
+		"ahumrc": "ans:textures/entity/sulfur_cube/ahumrc.png",
+		"pupgrl": "ans:textures/entity/sulfur_cube/pupgrl.png",
+		"kortiw": "ans:textures/entity/sulfur_cube/kortiw.png",
+		"uidjzs": "ans:textures/entity/sulfur_cube/uidjzs.png",
+		"itknwk": "ans:textures/entity/sulfur_cube/itknwk.png",
+		"ifrygo": "ans:textures/entity/sulfur_cube/ifrygo.png",
+		"wvvbvz": "ans:textures/entity/sulfur_cube/wvvbvz.png",
+		"rodphu": "ans:textures/entity/sulfur_cube/rodphu.png",
+		"aopivf": "ans:textures/entity/sulfur_cube/aopivf.png",
+		"jzgnoc": "ans:textures/entity/sulfur_cube/jzgnoc.png",
+		"nqixzc": "ans:textures/entity/sulfur_cube/nqixzc.png",
+		"nublif": "ans:textures/entity/sulfur_cube/nublif.png",
+		"cqebly": "ans:textures/entity/sulfur_cube/cqebly.png",
+		"oguudb": "ans:textures/entity/sulfur_cube/oguudb.png",
+		"wddtle": "ans:textures/entity/sulfur_cube/wddtle.png",
+		"niftqw": "ans:textures/entity/sulfur_cube/niftqw.png",
+		"matcia": "ans:textures/entity/sulfur_cube/matcia.png",
+		"brjbwz": "ans:textures/experience/full/entity/sulfur_cube/brjbwz.png",
+		"obxnso": "ans:textures/entity/sulfur_cube/obxnso.png",
+		"nmhfxf": "ans:textures/entity/sulfur_cube/nmhfxf.png",
+		"rbjlja": "ans:textures/entity/sulfur_cube/rbjlja.png",
+		"peutrt": "ans:textures/entity/sulfur_cube/peutrt.png",
+		"avldpk": "ans:textures/experience/full/entity/sulfur_cube/b.png",
+		"wmkjvd": "ans:textures/entity/sulfur_cube/wmkjvd.png",
+		"pjnosr": "ans:textures/entity/sulfur_cube/pjnosr.png",
+		"hzdhgn": "ans:textures/entity/sulfur_cube/hzdhgn.png",
+		"kwsppy": "ans:textures/entity/sulfur_cube/kwsppy.png",
+		"rvymgi": "ans:textures/entity/sulfur_cube/rvymgi.png",
+		"aovkyt": "ans:textures/entity/sulfur_cube/aovkyt.png",
+		"qdyjnf": "ans:textures/experience/full/entity/sulfur_cube/qdyjnf.png",
+		"default": "ans:textures/experience/full/entity/sulfur_cube/default.png",
+		"nvrths": "ans:textures/entity/sulfur_cube/nvrths.png",
+		"mhkggg": "ans:textures/entity/sulfur_cube/mhkggg.png",
+		"ztkxmi": "ans:textures/entity/sulfur_cube/ztkxmi.png",
+		"hseesb": "ans:textures/entity/sulfur_cube/hseesb.png",
+		"ztssba": "ans:textures/entity/sulfur_cube/ztssba.png",
+		"rxnioo": "ans:textures/entity/sulfur_cube/rxnioo.png",
+		"tovhxk": "ans:textures/entity/sulfur_cube/tovhxk.png",
+		"jxytyy": "ans:textures/entity/sulfur_cube/jxytyy.png",
+		"rjxxjp": "ans:textures/entity/sulfur_cube/rjxxjp.png",
+		"cwcuez": "ans:textures/entity/sulfur_cube/cwcuez.png",
+		"qwlxrz": "ans:textures/entity/sulfur_cube/qwlxrz.png",
+		"ojclfb": "ans:textures/entity/sulfur_cube/ojclfb.png",
+		"esiwhi": "ans:textures/entity/sulfur_cube/esiwhi.png",
+		"hzfxfb": "ans:textures/entity/sulfur_cube/hzfxfb.png",
+		"nmxqsn": "ans:textures/entity/sulfur_cube/nmxqsn.png"
+	},
+	"materials": {
+		"default": {
+			"bedrock": "ytdhnl",
+			"render_type": "solid"
+		},
+		"outer": {
+			"bedrock": "kipfdc",
+			"render_type": "translucent"
+		},
+		"qwhjrf": {
+			"bedrock": "gtilas",
+			"render_type": "translucent",
+			"uv_anim": true
+		},
+		"tcciio": {
+			"bedrock": "hnhcsb",
+			"render_type": "solid"
+		},
+		"biuohp": {
+			"bedrock": "klduzy",
+			"render_type": "cutout"
+		},
+		"wlqxdl": {
+			"bedrock": "mqwxej",
+			"render_type": "emissive_alpha",
+			"uv_anim": true
+		},
+		"sxepuo": {
+			"bedrock": "sxepuo",
+			"render_type": "solid"
+		},
+		"ryqsqj": {
+			"bedrock": "ryqsqj",
+			"render_type": "cutout"
+		},
+		"qpzxkv": {
+			"bedrock": "qpzxkv",
+			"render_type": "cutout"
+		}
+	},
+	"animations": {
+		"kgklcq": {
+			"bedrock": "animation.oreville_ans.xghxmf",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.evlypi='jhotdc';return 0;"
+		},
+		"hzsxsn": {
+			"bedrock": "controller.animation.oreville_ans.ienaao",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"boat": "q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+							},
+							{
+								"minecart": "q.is_riding_any_entity_of_type('minecraft:minecart')"
+							}
+						]
+					},
+					"boat": {
+						"transitions": [
+							{
+								"default": "!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "zgynvb",
+								"resolved": "oreville_ans:zgynvb"
+							}
+						]
+					},
+					"minecart": {
+						"transitions": [
+							{
+								"default": "!q.is_riding_any_entity_of_type('minecraft:minecart')"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "ylnbre",
+								"resolved": "oreville_ans:ylnbre"
+							}
+						]
+					}
+				}
+			}
+		},
+		"mqelhr": {
+			"bedrock": "controller.animation.oreville_ans.rznijw",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"gczhgd": "v.lzwweo>2"
+							}
+						],
+						"blend_transition": 0.05
+					},
+					"gczhgd": {
+						"animations": [
+							{
+								"gczhgd": "v.cphrie"
+							}
+						],
+						"transitions": [
+							{
+								"dfojlm": "v.lzwweo<0.25&&v.gtcjji<2"
+							}
+						],
+						"blend_transition": 0.1,
+						"on_entry": [
+							"v.znwert=v.xiemzw;",
+							"v.hdjltd=v.rupatf;",
+							"v.cphrie=Math.min(1,v.lzwweo/4);",
+							"v.swrowu=Math.abs(v.xiemzw)>Math.abs(v.rupatf);",
+							"v.ffelyj=Math.sin(q.camera_rotation(1))+Math.cos(q.rotation_to_camera(1)-90);",
+							"v.spmrbf=0;"
+						]
+					},
+					"dfojlm": {
+						"transitions": [
+							{
+								"default": "q.state_time>0.1"
+							}
+						],
+						"blend_transition": 0.1
+					}
+				}
+			}
+		},
+		"xyorsn": {
+			"bedrock": "controller.animation.oreville_ans.jfngmj",
+			"controller": {
+				"initial_state": "jbdiib",
+				"states": {
+					"jbdiib": {
+						"transitions": [
+							{
+								"default": "v.xvbbte=='default'"
+							},
+							{
+								"lswcie": "v.xvbbte=='lswcie'"
+							},
+							{
+								"rffohc": "v.xvbbte=='rffohc'"
+							},
+							{
+								"lkfgkj": "v.xvbbte=='lkfgkj'"
+							},
+							{
+								"qziczn": "v.xvbbte=='qziczn'"
+							},
+							{
+								"qjcrqu": "v.xvbbte=='qjcrqu'"
+							}
+						]
+					},
+					"default": {
+						"animations": [
+							"oyabwp",
+							"rdgtsa",
+							{
+								"zzkbxj": "(q.is_baby?2:1)*v.spexwz"
+							},
+							"ezxtan",
+							"qxuuyk",
+							"bqkeop"
+						],
+						"transitions": [
+							{
+								"hweody": "q.is_riding"
+							},
+							{
+								"lswcie": "v.xvbbte=='lswcie'"
+							},
+							{
+								"rffohc": "v.xvbbte=='rffohc'"
+							},
+							{
+								"lkfgkj": "v.xvbbte=='lkfgkj'"
+							},
+							{
+								"qziczn": "v.xvbbte=='qziczn'"
+							},
+							{
+								"qjcrqu": "v.xvbbte=='qjcrqu'"
+							}
+						]
+					},
+					"lswcie": {
+						"animations": [
+							{
+								"zzkbxj": "(q.is_baby?2:1)*v.spexwz"
+							},
+							"suysfn",
+							"txogmd"
+						],
+						"transitions": [
+							{
+								"hweody": "q.is_riding"
+							},
+							{
+								"default": "v.xvbbte=='default'"
+							},
+							{
+								"rffohc": "v.xvbbte=='rffohc'"
+							},
+							{
+								"lkfgkj": "v.xvbbte=='lkfgkj'"
+							},
+							{
+								"qziczn": "v.xvbbte=='qziczn'"
+							},
+							{
+								"qjcrqu": "v.xvbbte=='qjcrqu'"
+							}
+						]
+					},
+					"lkfgkj": {
+						"animations": [
+							"lxoegq",
+							"suysfn",
+							"txogmd"
+						],
+						"transitions": [
+							{
+								"hweody": "q.is_riding"
+							},
+							{
+								"default": "v.xvbbte=='default'"
+							},
+							{
+								"lswcie": "v.xvbbte=='lswcie'"
+							},
+							{
+								"rffohc": "v.xvbbte=='rffohc'"
+							},
+							{
+								"qziczn": "v.xvbbte=='qziczn'"
+							},
+							{
+								"qjcrqu": "v.xvbbte=='qjcrqu'"
+							}
+						]
+					},
+					"rffohc": {
+						"animations": [
+							"kvuaeh",
+							"oclmwf"
+						],
+						"transitions": [
+							{
+								"hweody": "q.is_riding"
+							},
+							{
+								"default": "v.xvbbte=='default'"
+							},
+							{
+								"lswcie": "v.xvbbte=='lswcie'"
+							},
+							{
+								"lkfgkj": "v.xvbbte=='lkfgkj'"
+							},
+							{
+								"qziczn": "v.xvbbte=='qziczn'"
+							},
+							{
+								"qjcrqu": "v.xvbbte=='qjcrqu'"
+							}
+						]
+					},
+					"qjcrqu": {
+						"animations": [
+							"dnxzlc",
+							"slhdnp"
+						],
+						"transitions": [
+							{
+								"hweody": "q.is_riding"
+							},
+							{
+								"default": "v.xvbbte=='default'"
+							},
+							{
+								"lswcie": "v.xvbbte=='lswcie'"
+							},
+							{
+								"rffohc": "v.xvbbte=='rffohc'"
+							},
+							{
+								"lkfgkj": "v.xvbbte=='lkfgkj'"
+							},
+							{
+								"qziczn": "v.xvbbte=='qziczn'"
+							}
+						]
+					},
+					"qziczn": {
+						"animations": [
+							"rdgtsa",
+							"qxuuyk",
+							"bqkeop"
+						],
+						"transitions": [
+							{
+								"hweody": "q.is_riding"
+							},
+							{
+								"default": "v.xvbbte=='default'"
+							},
+							{
+								"lswcie": "v.xvbbte=='lswcie'"
+							},
+							{
+								"lkfgkj": "v.xvbbte=='lkfgkj'"
+							},
+							{
+								"rffohc": "v.xvbbte=='rffohc'"
+							},
+							{
+								"qjcrqu": "v.xvbbte=='qjcrqu'"
+							}
+						]
+					},
+					"hweody": {
+						"transitions": [
+							{
+								"jbdiib": "!q.is_riding"
+							}
+						]
+					}
+				}
+			}
+		},
+		"jwxkxb": {
+			"bedrock": "controller.animation.oreville_ans.ywcyup",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"hihqcy": "q.any(v.xhwyuc,19,21,22,23)&&q.is_in_water"
+							}
+						]
+					},
+					"hihqcy": {
+						"animations": [
+							{
+								"hihqcy": "Math.clamp(Math.ease_in_out_cubic(0,1,q.state_time),0,1)"
+							}
+						],
+						"transitions": [
+							{
+								"default": "!q.any(v.xhwyuc,19,21,22,23)||!q.is_in_water"
+							}
+						],
+						"blend_transition": {
+							"0.0": 1,
+							"0.1112": 0.99451,
+							"0.2222": 0.9561,
+							"0.3334": 0.85185,
+							"0.4444": 0.64883,
+							"0.5556": 0.35117,
+							"0.6666": 0.14815,
+							"0.7778": 0.0439,
+							"0.8888": 0.00549,
+							"1.0": 0
+						}
+					}
+				}
+			}
+		},
+		"kvuaeh": {
+			"bedrock": "controller.animation.oreville_ans.bgafzq",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"zgaxen": "v.lzwweo>1&&v.njvqlj"
+							}
+						],
+						"on_exit": [
+							"v.klcwrq=Math.random_integer(0,1)==0?-1:1;"
+						]
+					},
+					"zgaxen": {
+						"animations": [
+							{
+								"qzijbs": "v.klcwrq==-1"
+							},
+							{
+								"jtxzis": "v.klcwrq==1"
+							}
+						]
+					}
+				}
+			}
+		},
+		"dnxzlc": {
+			"bedrock": "controller.animation.oreville_ans.eokvxr",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"zgaxen": "v.lzwweo<1&&v.gtcjji<1"
+							}
+						],
+						"on_exit": [
+							"v.klcwrq=Math.random_integer(0,1)==0?-1:1;"
+						]
+					},
+					"zgaxen": {
+						"animations": [
+							{
+								"qbmljh": "v.klcwrq==-1"
+							},
+							{
+								"cjwxay": "v.klcwrq==1"
+							}
+						],
+						"transitions": [
+							{
+								"syjyfn": "v.lzwweo>1&&v.njvqlj"
+							}
+						],
+						"blend_transition": 0.3
+					},
+					"syjyfn": {
+						"animations": [
+							{
+								"ogwqrl": "v.klcwrq==-1"
+							},
+							{
+								"meyfaa": "v.klcwrq==1"
+							}
+						],
+						"transitions": [
+							{
+								"zgaxen": "v.lzwweo<1&&v.gtcjji<1"
+							},
+							{
+								"default": "q.any_animation_finished"
+							}
+						],
+						"blend_transition": 0.3
+					}
+				}
+			}
+		},
+		"lxoegq": {
+			"bedrock": "controller.animation.oreville_ans.ouxnwl",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							"qvgthr"
+						],
+						"transitions": [
+							{
+								"nvlagq": "v.glinis&&v.lzwweo>1"
+							}
+						],
+						"blend_transition": 0.05
+					},
+					"nvlagq": {
+						"animations": [
+							"qvgthr"
+						],
+						"transitions": [
+							{
+								"bhdjwd": "v.ioiqtk>=1"
+							}
+						],
+						"blend_transition": 0.1,
+						"on_entry": [
+							"v.ioiqtk=0;",
+							"v.courpm=Math.random_integer(0,5);",
+							"v.hbxqst=(v.courpm==0?0:(v.courpm==1?90:(v.courpm==2?180:(v.courpm==3?-90:0))));",
+							"v.sodlum=(v.courpm==4?90:(v.courpm==5?-90:0));",
+							"v.snyydj=v.hbxqst-v.kjzmhz;",
+							"v.pqtrnw=v.hbxqst-(v.snyydj>180?360:(v.snyydj<-180?-360:0));",
+							"v.ywksjk=v.sodlum-v.qmmqpn;",
+							"v.wyucwo=v.sodlum-(v.ywksjk>180?360:(v.ywksjk<-180?-360:0));",
+							"v.ddiyxc=v.kjzmhz;",
+							"v.nwjogz=v.qmmqpn;"
+						]
+					},
+					"bhdjwd": {
+						"animations": [
+							"qvgthr"
+						],
+						"transitions": [
+							{
+								"default": "v.lzwweo<=0.5"
+							}
+						],
+						"blend_transition": 0.2,
+						"on_entry": [
+							"v.kjzmhz=v.pqtrnw;",
+							"v.qmmqpn=v.wyucwo;"
+						]
+					}
+				}
+			}
+		},
+		"niogoh": {
+			"bedrock": "controller.animation.oreville_ans.mkpeuq",
+			"controller": {
+				"initial_state": "kholtx",
+				"states": {
+					"kholtx": {
+						"animations": [
+							"wiggle"
+						],
+						"transitions": [
+							{
+								"vwlbqh": "v.njvqlj"
+							}
+						],
+						"on_entry": [
+							"q.life_time>0.25?{v.yutqeq=-1;};"
+						]
+					},
+					"vwlbqh": {
+						"animations": [
+							"wiggle"
+						],
+						"transitions": [
+							{
+								"kholtx": "!v.njvqlj"
+							}
+						],
+						"on_entry": [
+							"q.life_time>0.25?{v.yutqeq=1;};"
+						]
+					}
+				}
+			}
+		},
+		"hzhsag": {
+			"bedrock": "controller.animation.oreville_ans.dbjuvo",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"njqykr": "v.spmrbf<q.state_time"
+							}
+						],
+						"on_entry": [
+							"v.spmrbf=Math.random(0.3,3.33);"
+						]
+					},
+					"njqykr": {
+						"transitions": [
+							{
+								"default": "!v.vlhkjt"
+							}
+						],
+						"on_entry": [
+							"v.vlhkjt=1;"
+						]
+					}
+				}
+			}
+		},
+		"bidjar": {
+			"bedrock": "controller.animation.oreville_ans.vropib",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"laztdx": "v.txvzcq>0.5&&v.ylaird==0"
+							}
+						]
+					},
+					"laztdx": {
+						"transitions": [
+							{
+								"ekkloz": "q.state_time>v.mnlzjy"
+							},
+							{
+								"default": "v.txvzcq<0.5"
+							}
+						],
+						"on_entry": [
+							"v.mnlzjy=Math.random(1,8);"
+						]
+					},
+					"ekkloz": {
+						"transitions": [
+							{
+								"default": "1"
+							}
+						],
+						"on_entry": [
+							"v.njvqlj?{v.ylaird=Math.random_integer(1,3);}:{v.ylaird=Math.random_integer(-3,1);};"
+						]
+					}
+				}
+			}
+		},
+		"xvuape": {
+			"bedrock": "controller.animation.oreville_ans.gzzyow",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"xnadqh": "q.fuse_time>1"
+							}
+						]
+					},
+					"xnadqh": {
+						"animations": [
+							"guuqma"
+						],
+						"transitions": [
+							{
+								"default": "q.fuse_time<=1&&q.state_time>7"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "uwkkob",
+								"locator": "tmil",
+								"resolved": "oreville_ans:uwkkob"
+							}
+						]
+					}
+				}
+			}
+		},
+		"alfvvc": {
+			"bedrock": "controller.animation.oreville_ans.mvucsw",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"xnadqh": "q.fuse_time>1"
+							},
+							{
+								"nmagsu": "v.rjwqox||v.lzwweo>15"
+							},
+							{
+								"uzwbkg": "v.yutqeq==1"
+							},
+							{
+								"ollnhq": "v.yutqeq==-1"
+							},
+							{
+								"ekkloz": "v.ylaird"
+							},
+							{
+								"njqykr": "q.state_time>v.spmrbf"
+							}
+						],
+						"on_entry": [
+							"v.fxdays=0;",
+							"v.hsrxzg=0;",
+							"v.uhbxrt=0;"
+						]
+					},
+					"xnadqh": {
+						"animations": [
+							"xnadqh"
+						],
+						"transitions": [
+							{
+								"default": "q.fuse_time<=1&&q.state_time>7"
+							}
+						],
+						"on_exit": [
+							"v.setyuj=0;"
+						]
+					},
+					"njqykr": {
+						"animations": [
+							"blink"
+						],
+						"transitions": [
+							{
+								"xnadqh": "q.fuse_time>1"
+							},
+							{
+								"nmagsu": "v.rjwqox||v.lzwweo>15"
+							},
+							{
+								"default": "q.any_animation_finished"
+							}
+						],
+						"on_exit": [
+							"v.vlhkjt=0;"
+						]
+					},
+					"nmagsu": {
+						"animations": [
+							"hurt"
+						],
+						"transitions": [
+							{
+								"xnadqh": "q.fuse_time>1"
+							},
+							{
+								"default": "q.any_animation_finished"
+							}
+						]
+					},
+					"uzwbkg": {
+						"animations": [
+							"uzwbkg"
+						],
+						"transitions": [
+							{
+								"xnadqh": "q.fuse_time>1"
+							},
+							{
+								"nmagsu": "v.rjwqox||v.lzwweo>15"
+							},
+							{
+								"default": "q.any_animation_finished"
+							}
+						],
+						"on_exit": [
+							"v.yutqeq=0;"
+						]
+					},
+					"ollnhq": {
+						"animations": [
+							"ollnhq"
+						],
+						"transitions": [
+							{
+								"xnadqh": "q.fuse_time>1"
+							},
+							{
+								"nmagsu": "v.rjwqox||v.lzwweo>15"
+							},
+							{
+								"default": "q.any_animation_finished"
+							}
+						],
+						"on_exit": [
+							"v.yutqeq=0;"
+						]
+					},
+					"ekkloz": {
+						"animations": [
+							{
+								"kawgum": "Math.abs(v.ylaird)==1"
+							},
+							{
+								"lsubsg": "Math.abs(v.ylaird)==2"
+							},
+							{
+								"uzwbkg": "v.ylaird==3"
+							},
+							{
+								"cqpvwa": "v.ylaird==-3"
+							}
+						],
+						"transitions": [
+							{
+								"xnadqh": "q.fuse_time>1"
+							},
+							{
+								"nmagsu": "v.rjwqox||v.lzwweo>15"
+							},
+							{
+								"default": "q.any_animation_finished"
+							}
+						],
+						"on_exit": [
+							"v.ylaird=0;"
+						]
+					}
+				}
+			}
+		},
+		"qccpbw": {
+			"bedrock": "controller.animation.oreville_ans.scqnyh",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"cphbga": "v.njvqlj&&v.lzwweo>1&&v.nxabts==13&&v.xhwyuc==0"
+							}
+						]
+					},
+					"cphbga": {
+						"transitions": [
+							{
+								"awdoga": "v.njvqlj&&v.nxabts==13?{v.qpptdt=v.lzwweo>v.mchpvg+0.5;v.mchpvg=v.lzwweo;return v.qpptdt;};"
+							},
+							{
+								"default": "!v.njvqlj||v.nxabts!=13||v.xhwyuc!=0"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "gdwzgo",
+								"resolved": "oreville_ans:gdwzgo"
+							}
+						]
+					},
+					"awdoga": {
+						"transitions": [
+							{
+								"cphbga": "v.njvqlj&&v.nxabts==13?{v.qpptdt=v.lzwweo>v.mchpvg+0.5;v.mchpvg=v.lzwweo;return v.qpptdt;};"
+							},
+							{
+								"default": "!v.njvqlj||v.nxabts!=13||v.xhwyuc!=0"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "gdwzgo",
+								"resolved": "oreville_ans:gdwzgo"
+							}
+						]
+					}
+				}
+			}
+		},
+		"cimvga": {
+			"bedrock": "controller.animation.oreville_ans.tgdgme",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"vwlbqh": "v.njvqlj&&q.any(v.xhwyuc,0,11,15)&&!q.is_in_water"
+							}
+						]
+					},
+					"vwlbqh": {
+						"transitions": [
+							{
+								"default": "!v.njvqlj||q.is_in_water"
+							},
+							{
+								"gohyeo": "v.njvqlj&&v.lzwweo>1&&q.any(v.xhwyuc,11,15)"
+							},
+							{
+								"bfstto": "v.njvqlj&&v.lzwweo>1&&v.nxabts==0"
+							},
+							{
+								"miunoo": "v.njvqlj&&v.lzwweo>1&&q.any(v.nxabts,1,2)"
+							},
+							{
+								"lrbdsz": "v.njvqlj&&v.lzwweo>1&&v.nxabts==3"
+							},
+							{
+								"jfcwum": "v.njvqlj&&v.lzwweo>1&&v.nxabts==4"
+							},
+							{
+								"rctyjh": "v.njvqlj&&v.lzwweo>1&&v.nxabts==5"
+							},
+							{
+								"ewshpg": "v.njvqlj&&v.lzwweo>1&&q.any(v.nxabts,6,7,8)"
+							},
+							{
+								"wuxdbz": "v.njvqlj&&v.lzwweo>1&&v.nxabts==9"
+							},
+							{
+								"lzbxaa": "v.njvqlj&&v.lzwweo>1&&v.nxabts==10"
+							},
+							{
+								"fmpouq": "v.njvqlj&&v.lzwweo>1&&v.nxabts==11"
+							},
+							{
+								"ytgglt": "v.njvqlj&&v.lzwweo>1&&v.nxabts==12"
+							},
+							{
+								"cphbga": "v.njvqlj&&v.lzwweo>1&&v.nxabts==13"
+							}
+						]
+					},
+					"bfstto": {
+						"transitions": [
+							{
+								"default": "!v.njvqlj||q.is_in_water||v.nxabts!=0||v.xhwyuc!=0"
+							},
+							{
+								"vwlbqh": "v.lzwweo<0.25&&v.gtcjji<2"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "seoxyy",
+								"pre_effect_script": "v.jcalav=248/255;v.ypfpjf=253/255;v.rbnrwg=183/255;v.jzydng=0.6;",
+								"resolved": "oreville_ans:seoxyy"
+							},
+							{
+								"effect": "qgnuha",
+								"pre_effect_script": "v.jcalav=211/255;v.ypfpjf=197/255;v.rbnrwg=174/255;v.jzydng=0.45;",
+								"resolved": "oreville_ans:qgnuha"
+							},
+							{
+								"effect": "iyigez",
+								"resolved": "oreville_ans:iyigez"
+							}
+						]
+					},
+					"miunoo": {
+						"transitions": [
+							{
+								"default": "!v.njvqlj||q.is_in_water||!q.any(v.nxabts,1,2)||v.xhwyuc!=0"
+							},
+							{
+								"vwlbqh": "v.lzwweo<0.25&&v.gtcjji<2"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "seoxyy",
+								"pre_effect_script": "v.jcalav=107/255;v.ypfpjf=66/255;v.rbnrwg=43/255;v.jzydng=0.6;",
+								"resolved": "oreville_ans:seoxyy"
+							},
+							{
+								"effect": "qgnuha",
+								"pre_effect_script": "v.jcalav=204/255;v.ypfpjf=145/255;v.rbnrwg=104/255;v.jzydng=0.45;",
+								"resolved": "oreville_ans:qgnuha"
+							},
+							{
+								"effect": "iyigez",
+								"resolved": "oreville_ans:iyigez"
+							}
+						]
+					},
+					"lrbdsz": {
+						"transitions": [
+							{
+								"default": "!v.njvqlj||q.is_in_water||v.nxabts!=3||v.xhwyuc!=0"
+							},
+							{
+								"vwlbqh": "v.lzwweo<0.25&&v.gtcjji<2"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "seoxyy",
+								"pre_effect_script": "v.jcalav=237/255;v.ypfpjf=194/255;v.rbnrwg=51/255;v.jzydng=0.6;",
+								"resolved": "oreville_ans:seoxyy"
+							},
+							{
+								"effect": "qgnuha",
+								"pre_effect_script": "v.jcalav=236/255;v.ypfpjf=171/255;v.rbnrwg=39/255;v.jzydng=0.45;",
+								"resolved": "oreville_ans:qgnuha"
+							},
+							{
+								"effect": "iyigez",
+								"resolved": "oreville_ans:iyigez"
+							}
+						]
+					},
+					"jfcwum": {
+						"transitions": [
+							{
+								"default": "!v.njvqlj||q.is_in_water||v.nxabts!=4||v.xhwyuc!=0"
+							},
+							{
+								"vwlbqh": "v.lzwweo<0.25&&v.gtcjji<2"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "seoxyy",
+								"pre_effect_script": "v.jcalav=176/255;v.ypfpjf=243/255;v.rbnrwg=252/255;v.jzydng=0.55;",
+								"resolved": "oreville_ans:seoxyy"
+							},
+							{
+								"effect": "qgnuha",
+								"pre_effect_script": "v.jcalav=198/255;v.ypfpjf=238/255;v.rbnrwg=255/255;v.jzydng=0.4;",
+								"resolved": "oreville_ans:qgnuha"
+							},
+							{
+								"effect": "iyigez",
+								"resolved": "oreville_ans:iyigez"
+							}
+						]
+					},
+					"rctyjh": {
+						"transitions": [
+							{
+								"default": "!v.njvqlj||q.is_in_water||v.nxabts!=5||v.xhwyuc!=0"
+							},
+							{
+								"vwlbqh": "v.lzwweo<0.25&&v.gtcjji<2"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "quigrb",
+								"resolved": "oreville_ans:quigrb"
+							},
+							{
+								"effect": "qgnuha",
+								"pre_effect_script": "v.jcalav=76/255;v.ypfpjf=44/255;v.rbnrwg=41/255;v.jzydng=0.65;",
+								"resolved": "oreville_ans:qgnuha"
+							},
+							{
+								"effect": "iyigez",
+								"resolved": "oreville_ans:iyigez"
+							},
+							{
+								"effect": "bidpwb",
+								"resolved": "oreville_ans:bidpwb"
+							}
+						]
+					},
+					"ewshpg": {
+						"transitions": [
+							{
+								"default": "!v.njvqlj||q.is_in_water||!q.any(v.nxabts,6,7,8)||v.xhwyuc!=0"
+							},
+							{
+								"vwlbqh": "v.lzwweo<0.25&&v.gtcjji<2"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "seoxyy",
+								"pre_effect_script": "v.jcalav=235/255;v.ypfpjf=180/255;v.rbnrwg=41/255;v.jzydng=0.45;",
+								"resolved": "oreville_ans:seoxyy"
+							},
+							{
+								"effect": "qgnuha",
+								"pre_effect_script": "v.jcalav=235/255;v.ypfpjf=180/255;v.rbnrwg=41/255;v.jzydng=0.45;",
+								"resolved": "oreville_ans:qgnuha"
+							},
+							{
+								"effect": "iyigez",
+								"resolved": "oreville_ans:iyigez"
+							}
+						]
+					},
+					"wuxdbz": {
+						"transitions": [
+							{
+								"default": "!v.njvqlj||q.is_in_water||v.nxabts!=9||v.xhwyuc!=0"
+							},
+							{
+								"vwlbqh": "v.lzwweo<0.25&&v.gtcjji<2"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "seoxyy",
+								"pre_effect_script": "v.jcalav=238/255;v.ypfpjf=205/255;v.rbnrwg=114/255;v.jzydng=0.6;",
+								"resolved": "oreville_ans:seoxyy"
+							},
+							{
+								"effect": "qgnuha",
+								"pre_effect_script": "v.jcalav=221/255;v.ypfpjf=181/255;v.rbnrwg=94/255;v.jzydng=0.45;",
+								"resolved": "oreville_ans:qgnuha"
+							},
+							{
+								"effect": "iyigez",
+								"resolved": "oreville_ans:iyigez"
+							}
+						]
+					},
+					"lzbxaa": {
+						"transitions": [
+							{
+								"default": "!v.njvqlj||q.is_in_water||v.nxabts!=10"
+							},
+							{
+								"vwlbqh": "v.lzwweo<0.25&&v.gtcjji<2"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "seoxyy",
+								"pre_effect_script": "v.jcalav=118/255;v.ypfpjf=58/255;v.rbnrwg=19/255;v.jzydng=0.6;",
+								"resolved": "oreville_ans:seoxyy"
+							},
+							{
+								"effect": "qgnuha",
+								"pre_effect_script": "v.jcalav=163/255;v.ypfpjf=74/255;v.rbnrwg=21/255;v.jzydng=0.45;",
+								"resolved": "oreville_ans:qgnuha"
+							},
+							{
+								"effect": "iyigez",
+								"resolved": "oreville_ans:iyigez"
+							}
+						]
+					},
+					"fmpouq": {
+						"transitions": [
+							{
+								"default": "!v.njvqlj||q.is_in_water||v.nxabts!=11"
+							},
+							{
+								"vwlbqh": "v.lzwweo<0.25&&v.gtcjji<2"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "seoxyy",
+								"pre_effect_script": "v.jcalav=245/255;v.ypfpjf=252/255;v.rbnrwg=255/255;v.jzydng=0.55;",
+								"resolved": "oreville_ans:seoxyy"
+							},
+							{
+								"effect": "qgnuha",
+								"pre_effect_script": "v.jcalav=212/255;v.ypfpjf=242/255;v.rbnrwg=246/255;v.jzydng=0.4;",
+								"resolved": "oreville_ans:qgnuha"
+							},
+							{
+								"effect": "iyigez",
+								"resolved": "oreville_ans:iyigez"
+							}
+						]
+					},
+					"ytgglt": {
+						"transitions": [
+							{
+								"default": "!v.njvqlj||q.is_in_water||v.nxabts!=12"
+							},
+							{
+								"vwlbqh": "v.lzwweo<0.25&&v.gtcjji<2"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "seoxyy",
+								"pre_effect_script": "v.jcalav=78/255;v.ypfpjf=66/255;v.rbnrwg=55/255;v.jzydng=0.5;",
+								"resolved": "oreville_ans:seoxyy"
+							},
+							{
+								"effect": "qgnuha",
+								"pre_effect_script": "v.jcalav=78/255;v.ypfpjf=66/255;v.rbnrwg=55/255;v.jzydng=0.5;",
+								"resolved": "oreville_ans:qgnuha"
+							},
+							{
+								"effect": "iyigez",
+								"resolved": "oreville_ans:iyigez"
+							},
+							{
+								"effect": "whwfwi",
+								"resolved": "oreville_ans:whwfwi"
+							}
+						]
+					},
+					"cphbga": {
+						"transitions": [
+							{
+								"default": "!v.njvqlj||q.is_in_water||v.nxabts!=13"
+							},
+							{
+								"vwlbqh": "v.lzwweo<0.25&&v.gtcjji<2"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "seoxyy",
+								"pre_effect_script": "v.jcalav=200/255;v.ypfpjf=238/255;v.rbnrwg=255/255;v.jzydng=0.6;",
+								"resolved": "oreville_ans:seoxyy"
+							},
+							{
+								"effect": "bdjnny",
+								"resolved": "oreville_ans:bdjnny"
+							}
+						]
+					},
+					"gohyeo": {
+						"transitions": [
+							{
+								"default": "!v.njvqlj||q.is_in_water||!q.any(v.xhwyuc,11,15)"
+							},
+							{
+								"vwlbqh": "v.lzwweo<0.25&&v.gtcjji<2"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "seoxyy",
+								"pre_effect_script": "v.jcalav=245/255;v.ypfpjf=252/255;v.rbnrwg=255/255;v.jzydng=0.55;",
+								"resolved": "oreville_ans:seoxyy"
+							},
+							{
+								"effect": "qgnuha",
+								"pre_effect_script": "v.jcalav=212/255;v.ypfpjf=242/255;v.rbnrwg=246/255;v.jzydng=0.4;",
+								"resolved": "oreville_ans:qgnuha"
+							},
+							{
+								"effect": "iyigez",
+								"resolved": "oreville_ans:iyigez"
+							}
+						]
+					}
+				}
+			}
+		},
+		"glxloh": {
+			"bedrock": "controller.animation.oreville_ans.mqwuhu",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"jump": "!q.is_on_ground&&!q.is_in_water&&!v.njvqlj&&v.xhwyuc==0"
+							}
+						]
+					},
+					"jump": {
+						"transitions": [
+							{
+								"default": "q.is_in_water||v.njvqlj||v.xhwyuc!=0"
+							},
+							{
+								"pazmcr": "q.is_on_ground"
+							}
+						]
+					},
+					"pazmcr": {
+						"transitions": [
+							{
+								"pynddb": "q.state_time>0.2&&v.cdrzno"
+							},
+							{
+								"yytrhz": "q.state_time>0.2"
+							}
+						]
+					},
+					"yytrhz": {
+						"transitions": [
+							{
+								"default": "1"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "fwrago",
+								"pre_effect_script": "v.cdrzno=0;v.jcalav=248/255;v.ypfpjf=253/255;v.rbnrwg=183/255;v.jzydng=0.8;",
+								"resolved": "oreville_ans:fwrago"
+							}
+						]
+					},
+					"pynddb": {
+						"transitions": [
+							{
+								"default": "1"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "fwrago",
+								"pre_effect_script": "v.cdrzno=1;v.jcalav=248/255;v.ypfpjf=253/255;v.rbnrwg=183/255;v.jzydng=0.8;",
+								"resolved": "oreville_ans:fwrago"
+							}
+						]
+					}
+				}
+			}
+		},
+		"louqtt": {
+			"bedrock": "controller.animation.oreville_ans.teicbs",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"lknfxl": "v.wlpmcj&&v.njvqlj&&!((v.xhwyuc==4&&v.natixe==6)||v.xhwyuc==7)"
+							},
+							{
+								"bpuhuq": "v.wlpmcj&&v.njvqlj&&((v.xhwyuc==4&&v.natixe==6)||v.xhwyuc==7)"
+							}
+						]
+					},
+					"lknfxl": {
+						"transitions": [
+							{
+								"default": "!v.wlpmcj"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "dhucln",
+								"resolved": "oreville_ans:dhucln"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "drmkva",
+								"resolved": "oreville_ans:drmkva"
+							}
+						]
+					},
+					"bpuhuq": {
+						"transitions": [
+							{
+								"default": "!v.wlpmcj"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "lbmuce",
+								"resolved": "oreville_ans:lbmuce"
+							}
+						]
+					}
+				}
+			}
+		},
+		"txogmd": {
+			"bedrock": "animation.oreville_ans.qlvqzt",
+			"animation": "animation.sulfur_cube.anim_txogmd",
+			"loop": true
+		},
+		"suysfn": {
+			"bedrock": "animation.oreville_ans.qwdsfp",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.petnwq!=q.time_stamp?{v.petnwq=q.time_stamp;v.brfmzv=v.rgvuen;v.rgvuen=q.is_on_ground;t.x=q.position(0);t.y=q.position(1);t.z=q.position(2);t.ajs=t.x-v.bhblov;t.xry=t.y-v.ebypvy;t.bwe=t.z-v.borcrz;v.brfmzv?{v.rowpry=t.ajs;v.rgwjra=t.xry;v.ipczvr=t.bwe;}:{(Math.abs(t.ajs)>0.01&&Math.sign(v.rowpry)!=Math.sign(t.ajs))||(Math.abs(t.ajs)>Math.abs(v.rowpry))?{v.rowpry=t.ajs;};(Math.abs(t.xry)>0.01&&Math.sign(v.rgwjra)!=Math.sign(t.xry))||(Math.abs(t.xry)>Math.abs(v.rgwjra))?{v.rgwjra=t.xry;};(Math.abs(t.bwe)>0.01&&Math.sign(v.ipczvr)!=Math.sign(t.bwe))||(Math.abs(t.bwe)>Math.abs(v.ipczvr))?{v.ipczvr=t.bwe;};t.tmk=1;v.rowpry=Math.clamp(v.rowpry,-t.tmk,t.tmk);v.rgwjra=Math.clamp(v.rgwjra,-t.tmk,t.tmk);v.ipczvr=Math.clamp(v.ipczvr,-t.tmk,t.tmk);};v.ozfeea=v.bhblov;v.rvzhuz=v.ebypvy;v.yaalcs=v.borcrz;v.bhblov=t.x;v.ebypvy=t.y;v.borcrz=t.z;};!v.brfmzv?{t.hdp=q.is_in_water?0.65:0.7;t.tdq=1-Math.pow(t.hdp,q.delta_time);v.rowpry=Math.lerp(v.rowpry,0,t.tdq);v.rgwjra=Math.lerp(v.rgwjra,0,t.tdq);v.ipczvr=Math.lerp(v.ipczvr,0,t.tdq);};t.qas=v.ipczvr;t.dzh=0;t.aom=v.rowpry;t.hgz=Math.sqrt(t.qas*t.qas+t.aom*t.aom);t.hgz>0?{t.qas=t.qas/t.hgz;t.aom=t.aom/t.hgz;}:{t.qas=0;t.aom=0;};t.fao=t.hgz<0.08;!t.fao?{v.cgwfgd=0;};v.brfmzv&&t.fao&&!v.cgwfgd?{v.cgwfgd=1;t.foh=1-2*(v.njnknn*v.njnknn+v.tcrjwe*v.tcrjwe);t.hcd=2*(v.yrltdj*v.njnknn+v.atufzu*v.tcrjwe);t.rtn=2*(v.yrltdj*v.tcrjwe-v.atufzu*v.njnknn);t.bzx=2*(v.yrltdj*v.njnknn-v.atufzu*v.tcrjwe);t.hsz=1-2*(v.yrltdj*v.yrltdj+v.tcrjwe*v.tcrjwe);t.pyv=2*(v.njnknn*v.tcrjwe+v.atufzu*v.yrltdj);t.yik=2*(v.yrltdj*v.tcrjwe+v.atufzu*v.njnknn);t.xqh=2*(v.njnknn*v.tcrjwe-v.atufzu*v.yrltdj);t.llz=1-2*(v.yrltdj*v.yrltdj+v.njnknn*v.njnknn);t.ugy=Math.abs(t.hcd);t.xva=Math.abs(t.hsz);t.wyz=Math.abs(t.xqh);t.zkx=0;t.pwa=1;t.gmz=0;t.ugy>t.xva&&t.ugy>t.wyz?{t.zkx=t.foh;t.pwa=t.hcd;t.gmz=t.rtn;};t.wyz>t.ugy&&t.wyz>t.xva?{t.zkx=t.yik;t.pwa=t.xqh;t.gmz=t.llz;};t.xva>=t.ugy&&t.xva>=t.wyz?{t.zkx=t.bzx;t.pwa=t.hsz;t.gmz=t.pyv;};t.pwa<0?{t.zkx=-t.zkx;t.pwa=-t.pwa;t.gmz=-t.gmz;};t.iyk=-t.gmz;t.rxx=0;t.sal=t.zkx;t.bxv=t.pwa;t.sip=1+t.bxv;t.jsl=t.iyk;t.nte=t.rxx;t.rww=t.sal;t.dga=Math.sqrt(t.sip*t.sip+t.jsl*t.jsl+t.nte*t.nte+t.rww*t.rww);t.dga>0?{t.sip=t.sip/t.dga;t.jsl=t.jsl/t.dga;t.nte=t.nte/t.dga;t.rww=t.rww/t.dga;}:{t.sip=1;t.jsl=0;t.nte=0;t.rww=0;};v.luwnfr=t.sip*v.atufzu-t.jsl*v.yrltdj-t.nte*v.njnknn-t.rww*v.tcrjwe;v.sryhez=t.sip*v.yrltdj+t.jsl*v.atufzu+t.nte*v.tcrjwe-t.rww*v.njnknn;v.tbgupw=t.sip*v.njnknn+t.nte*v.atufzu+t.rww*v.yrltdj-t.jsl*v.tcrjwe;v.yfzdqn=t.sip*v.tcrjwe+t.rww*v.atufzu+t.jsl*v.njnknn-t.nte*v.yrltdj;};v.cgwfgd?{t.ofy=v.atufzu*v.luwnfr+v.yrltdj*v.sryhez+v.njnknn*v.tbgupw+v.tcrjwe*v.yfzdqn;t.ofy<0?{v.luwnfr=-v.luwnfr;v.sryhez=-v.sryhez;v.tbgupw=-v.tbgupw;v.yfzdqn=-v.yfzdqn;};t.vmz=1-Math.pow(0.01,q.delta_time);v.atufzu=Math.lerp(v.atufzu,v.luwnfr,t.vmz);v.yrltdj=Math.lerp(v.yrltdj,v.sryhez,t.vmz);v.njnknn=Math.lerp(v.njnknn,v.tbgupw,t.vmz);v.tcrjwe=Math.lerp(v.tcrjwe,v.yfzdqn,t.vmz);t.krl=Math.sqrt(v.atufzu*v.atufzu+v.yrltdj*v.yrltdj+v.njnknn*v.njnknn+v.tcrjwe*v.tcrjwe);t.krl>0?{v.atufzu=v.atufzu/t.krl;v.yrltdj=v.yrltdj/t.krl;v.njnknn=v.njnknn/t.krl;v.tcrjwe=v.tcrjwe/t.krl;};}:{t.xqo=0.5/16;t.jhn=(t.hgz*q.delta_time)/t.xqo;t.jhn=t.jhn*(180/Math.pi);t.cps=Math.cos(t.jhn/2);t.a=Math.sin(t.jhn/2);t.tbz=t.qas*t.a;t.mny=t.dzh*t.a;t.fla=t.aom*t.a;t.jny=t.cps*v.atufzu-t.tbz*v.yrltdj-t.mny*v.njnknn-t.fla*v.tcrjwe;t.bzj=t.cps*v.yrltdj+t.tbz*v.atufzu+t.mny*v.tcrjwe-t.fla*v.njnknn;t.ler=t.cps*v.njnknn+t.mny*v.atufzu+t.fla*v.yrltdj-t.tbz*v.tcrjwe;t.erb=t.cps*v.tcrjwe+t.fla*v.atufzu+t.tbz*v.njnknn-t.mny*v.yrltdj;v.atufzu=t.jny;v.yrltdj=t.bzj;v.njnknn=t.ler;v.tcrjwe=t.erb;t.hgz=Math.sqrt(v.atufzu*v.atufzu+v.yrltdj*v.yrltdj+v.njnknn*v.njnknn+v.tcrjwe*v.tcrjwe);t.hgz>0?{v.atufzu=v.atufzu/t.hgz;v.yrltdj=v.yrltdj/t.hgz;v.njnknn=v.njnknn/t.hgz;v.tcrjwe=v.tcrjwe/t.hgz;};};v.jbawka=Math.atan2(2*(v.atufzu*v.yrltdj+v.njnknn*v.tcrjwe),1-2*(v.yrltdj*v.yrltdj+v.njnknn*v.njnknn));v.wthuxi=Math.asin(2*(v.atufzu*v.njnknn-v.tcrjwe*v.yrltdj));v.lwwing=Math.atan2(2*(v.atufzu*v.tcrjwe+v.yrltdj*v.njnknn),1-2*(v.njnknn*v.njnknn+v.tcrjwe*v.tcrjwe));"
+		},
+		"oiukgn": {
+			"bedrock": "animation.oreville_ans.zcgjlb",
+			"animation": "animation.sulfur_cube.ride",
+			"loop": true
+		},
+		"oyabwp": {
+			"bedrock": "animation.oreville_ans.rseybq",
+			"animation": "animation.sulfur_cube.anim_oyabwp",
+			"loop": true,
+			"anim_time_update": "q.life_time+v.clqdou",
+			"blend_weight": "v.mzsyml"
+		},
+		"gczhgd": {
+			"bedrock": "animation.oreville_ans.ycdybb",
+			"animation": "animation.sulfur_cube.anim_gczhgd",
+			"animation_length": 0.75
+		},
+		"wiggle": {
+			"bedrock": "animation.oreville_ans.eaunda",
+			"animation": "animation.sulfur_cube.anim_wiggle",
+			"animation_length": 0.58333
+		},
+		"rdgtsa": {
+			"bedrock": "animation.oreville_ans.xophkp",
+			"animation": "animation.sulfur_cube.anim_rdgtsa",
+			"loop": "hold_on_last_frame"
+		},
+		"zzkbxj": {
+			"bedrock": "animation.oreville_ans.lbhwbt",
+			"animation": "animation.sulfur_cube.baby",
+			"loop": "hold_on_last_frame"
+		},
+		"ezxtan": {
+			"bedrock": "animation.oreville_ans.hngrxt",
+			"animation": "animation.sulfur_cube.anim_ezxtan",
+			"loop": "hold_on_last_frame"
+		},
+		"qxuuyk": {
+			"bedrock": "animation.oreville_ans.hhaozt",
+			"animation": "animation.sulfur_cube.anim_qxuuyk",
+			"loop": "hold_on_last_frame"
+		},
+		"bqkeop": {
+			"bedrock": "animation.oreville_ans.ooagoz",
+			"animation": "animation.sulfur_cube.anim_bqkeop",
+			"loop": "hold_on_last_frame"
+		},
+		"qvgthr": {
+			"bedrock": "animation.oreville_ans.mvhtor",
+			"animation": "animation.sulfur_cube.anim_qvgthr",
+			"loop": true
+		},
+		"qqdhzb": {
+			"bedrock": "animation.oreville_ans.tdhfrp",
+			"animation": "animation.sulfur_cube.unused_qqdhzb",
+			"loop": true
+		},
+		"blink": {
+			"bedrock": "animation.oreville_ans.syvtws",
+			"animation": null,
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.16667,
+			"timeline": {
+				"0.0": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;"
+				],
+				"0.125": [
+					"v.fxdays=2;",
+					"v.hsrxzg=2;"
+				],
+				"0.1667": [
+					"v.fxdays=0;",
+					"v.hsrxzg=0;"
+				]
+			}
+		},
+		"xnadqh": {
+			"bedrock": "animation.oreville_ans.ijbssy",
+			"animation": null,
+			"animation_length": 6,
+			"timeline": {
+				"0.0": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;"
+				],
+				"0.2917": [
+					"v.fxdays=0;",
+					"v.hsrxzg=2;"
+				],
+				"0.375": [
+					"v.fxdays=3;",
+					"v.hsrxzg=15;",
+					"v.uhbxrt=2;"
+				],
+				"0.4583": [
+					"v.uhbxrt=5;"
+				],
+				"0.7917": [
+					"v.fxdays=0;",
+					"v.hsrxzg=0;",
+					"v.uhbxrt=4;"
+				],
+				"0.875": [
+					"v.fxdays=2;",
+					"v.hsrxzg=2;",
+					"v.uhbxrt=0;"
+				],
+				"0.9167": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;"
+				],
+				"1.0": [
+					"v.fxdays=14;",
+					"v.hsrxzg=14;"
+				],
+				"1.0833": [
+					"v.fxdays=15;",
+					"v.hsrxzg=15;",
+					"v.uhbxrt=4;"
+				],
+				"1.1667": [
+					"v.uhbxrt=5;"
+				],
+				"1.25": [
+					"v.uhbxrt=6;"
+				],
+				"1.6667": [
+					"v.uhbxrt=5;"
+				],
+				"1.75": [
+					"v.uhbxrt=4;"
+				],
+				"1.9167": [
+					"v.fxdays=14;",
+					"v.hsrxzg=14;"
+				],
+				"2.0": [
+					"v.uhbxrt=9;"
+				],
+				"2.0833": [
+					"v.uhbxrt=3;"
+				],
+				"2.7917": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;",
+					"v.uhbxrt=9;"
+				],
+				"2.875": [
+					"v.uhbxrt=4;"
+				],
+				"3.0": [
+					"v.fxdays=7;",
+					"v.hsrxzg=7;"
+				],
+				"3.0417": [
+					"v.fxdays=8;",
+					"v.hsrxzg=8;"
+				],
+				"3.0833": [
+					"v.fxdays=16;",
+					"v.hsrxzg=16;",
+					"v.uhbxrt=9;"
+				],
+				"3.1667": [
+					"v.uhbxrt=3;"
+				]
+			}
+		},
+		"lsubsg": {
+			"bedrock": "animation.oreville_ans.rpkhdi",
+			"animation": "animation.sulfur_cube.anim_lsubsg",
+			"animation_length": 3.25,
+			"timeline": {
+				"0.0": [
+					"v.fxdays=9;",
+					"v.hsrxzg=9;",
+					"v.uhbxrt=0;"
+				],
+				"0.0833": [
+					"v.uhbxrt=4;"
+				],
+				"0.1667": [
+					"v.uhbxrt=5;"
+				],
+				"0.25": [
+					"v.uhbxrt=6;"
+				],
+				"0.3333": [
+					"v.uhbxrt=10;"
+				],
+				"0.4167": [
+					"v.fxdays=10;",
+					"v.hsrxzg=10;",
+					"v.uhbxrt=11;"
+				],
+				"0.5833": [
+					"v.fxdays=11;",
+					"v.hsrxzg=11;",
+					"v.uhbxrt=12;"
+				],
+				"1.3333": [
+					"v.uhbxrt=12;"
+				],
+				"1.5": [
+					"v.uhbxrt=11;"
+				],
+				"1.5833": [
+					"v.uhbxrt=10;"
+				],
+				"1.6667": [
+					"v.fxdays=10;",
+					"v.hsrxzg=10;",
+					"v.uhbxrt=6;"
+				],
+				"1.75": [
+					"v.fxdays=9;",
+					"v.hsrxzg=9;",
+					"v.uhbxrt=4;"
+				],
+				"1.8333": [
+					"v.uhbxrt=0;"
+				],
+				"1.9167": [
+					"v.fxdays=9;",
+					"v.hsrxzg=9;"
+				],
+				"2.0": [
+					"v.fxdays=2;"
+				],
+				"2.0833": [
+					"v.fxdays=0;",
+					"v.hsrxzg=2;"
+				],
+				"2.1667": [
+					"v.hsrxzg=0;"
+				],
+				"2.4167": [
+					"v.fxdays=1;"
+				],
+				"2.5": [
+					"v.hsrxzg=1;"
+				],
+				"2.5833": [
+					"v.fxdays=2;"
+				],
+				"2.6667": [
+					"v.fxdays=0;",
+					"v.hsrxzg=2;"
+				],
+				"2.75": [
+					"v.hsrxzg=0;"
+				],
+				"2.9167": [
+					"v.fxdays=2;",
+					"v.hsrxzg=1;"
+				],
+				"3.0": [
+					"v.fxdays=1;"
+				],
+				"3.0833": [
+					"v.fxdays=2;",
+					"v.hsrxzg=2;"
+				],
+				"3.1667": [
+					"v.fxdays=0;",
+					"v.hsrxzg=0;"
+				]
+			}
+		},
+		"uzwbkg": {
+			"bedrock": "animation.oreville_ans.mzsoss",
+			"animation": null,
+			"animation_length": 4,
+			"timeline": {
+				"0.0": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;"
+				],
+				"0.0833": [
+					"v.fxdays=2;",
+					"v.hsrxzg=2;"
+				],
+				"0.125": [
+					"v.fxdays=0;",
+					"v.hsrxzg=0;",
+					"v.uhbxrt=2;"
+				],
+				"0.6667": [
+					"v.uhbxrt=0;"
+				],
+				"0.75": [
+					"v.fxdays=2;",
+					"v.hsrxzg=2;",
+					"v.uhbxrt=4;"
+				],
+				"0.8333": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;",
+					"v.uhbxrt=8;"
+				],
+				"0.875": [
+					"v.fxdays=7;",
+					"v.hsrxzg=7;"
+				],
+				"1.0": [
+					"v.fxdays=8;",
+					"v.hsrxzg=8;"
+				],
+				"2.0": [
+					"v.fxdays=3;",
+					"v.hsrxzg=3;"
+				],
+				"2.0833": [
+					"v.fxdays=0;",
+					"v.hsrxzg=0;"
+				],
+				"2.25": [
+					"v.fxdays=2;",
+					"v.hsrxzg=2;"
+				],
+				"2.2917": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;"
+				],
+				"2.375": [
+					"v.fxdays=2;",
+					"v.hsrxzg=2;"
+				],
+				"2.4583": [
+					"v.fxdays=0;",
+					"v.hsrxzg=0;"
+				],
+				"3.7083": [
+					"v.uhbxrt=4;"
+				],
+				"3.7917": [
+					"v.uhbxrt=0;"
+				],
+				"3.8333": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;"
+				],
+				"3.9167": [
+					"v.fxdays=2;",
+					"v.hsrxzg=2;"
+				],
+				"3.9583": [
+					"v.fxdays=0;",
+					"v.hsrxzg=0;"
+				]
+			}
+		},
+		"ollnhq": {
+			"bedrock": "animation.oreville_ans.jvezzq",
+			"animation": null,
+			"animation_length": 4,
+			"timeline": {
+				"0.0": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;"
+				],
+				"0.0833": [
+					"v.fxdays=2;",
+					"v.hsrxzg=2;"
+				],
+				"0.125": [
+					"v.fxdays=0;",
+					"v.hsrxzg=0;",
+					"v.uhbxrt=2;"
+				],
+				"0.6667": [
+					"v.uhbxrt=0;"
+				],
+				"0.75": [
+					"v.fxdays=14;",
+					"v.hsrxzg=14;",
+					"v.uhbxrt=4;"
+				],
+				"0.8333": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;",
+					"v.uhbxrt=14;"
+				],
+				"0.875": [
+					"v.fxdays=14;",
+					"v.hsrxzg=14;"
+				],
+				"1.0": [
+					"v.fxdays=15;",
+					"v.hsrxzg=15;"
+				],
+				"2.0": [
+					"v.fxdays=14;",
+					"v.hsrxzg=14;"
+				],
+				"2.0833": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;",
+					"v.uhbxrt=4;"
+				],
+				"2.25": [
+					"v.fxdays=14;",
+					"v.hsrxzg=14;"
+				],
+				"3.625": [
+					"v.uhbxrt=0;"
+				],
+				"3.7083": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;"
+				],
+				"3.7917": [
+					"v.fxdays=2;",
+					"v.hsrxzg=2;"
+				],
+				"3.875": [
+					"v.fxdays=0;",
+					"v.hsrxzg=0;"
+				],
+				"3.9583": [
+					"v.fxdays=0;",
+					"v.hsrxzg=0;"
+				]
+			}
+		},
+		"cqpvwa": {
+			"bedrock": "animation.oreville_ans.fuyjxx",
+			"animation": null,
+			"animation_length": 4,
+			"timeline": {
+				"0.0": [
+					"v.fxdays=2;",
+					"v.hsrxzg=2;",
+					"v.uhbxrt=4;"
+				],
+				"0.0833": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;",
+					"v.uhbxrt=5;"
+				],
+				"0.1667": [
+					"v.fxdays=4;",
+					"v.hsrxzg=4;",
+					"v.uhbxrt=6;"
+				],
+				"0.25": [
+					"v.fxdays=5;",
+					"v.hsrxzg=5;"
+				],
+				"0.3333": [
+					"v.fxdays=6;",
+					"v.hsrxzg=6;"
+				],
+				"0.7917": [
+					"v.uhbxrt=5;"
+				],
+				"0.9167": [
+					"v.uhbxrt=4;"
+				],
+				"1.0417": [
+					"v.uhbxrt=0;"
+				],
+				"1.5417": [
+					"v.uhbxrt=5;"
+				],
+				"1.6667": [
+					"v.uhbxrt=6;"
+				],
+				"2.4167": [
+					"v.uhbxrt=5;"
+				],
+				"2.5": [
+					"v.uhbxrt=4;"
+				],
+				"2.5833": [
+					"v.fxdays=5;",
+					"v.hsrxzg=5;",
+					"v.uhbxrt=0;"
+				],
+				"2.6667": [
+					"v.fxdays=4;",
+					"v.hsrxzg=4;"
+				],
+				"2.75": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;"
+				],
+				"2.8333": [
+					"v.fxdays=14;",
+					"v.hsrxzg=14;"
+				],
+				"2.9167": [
+					"v.fxdays=15;",
+					"v.hsrxzg=15;",
+					"v.uhbxrt=4;"
+				],
+				"3.2917": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;"
+				],
+				"3.375": [
+					"v.fxdays=14;",
+					"v.hsrxzg=14;"
+				],
+				"3.4583": [
+					"v.fxdays=15;",
+					"v.hsrxzg=15;"
+				],
+				"3.6667": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;",
+					"v.uhbxrt=0;"
+				],
+				"3.75": [
+					"v.fxdays=2;",
+					"v.hsrxzg=2;"
+				],
+				"3.8333": [
+					"v.fxdays=0;",
+					"v.hsrxzg=0;"
+				]
+			}
+		},
+		"hurt": {
+			"bedrock": "animation.oreville_ans.ppzspu",
+			"animation": "animation.sulfur_cube.hurt",
+			"animation_length": 3,
+			"timeline": {
+				"0.0": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;",
+					"v.uhbxrt=0;"
+				],
+				"0.0417": [
+					"v.uhbxrt=2;"
+				],
+				"0.0833": [
+					"v.uhbxrt=10;"
+				],
+				"0.125": [
+					"v.fxdays=7;",
+					"v.hsrxzg=7;"
+				],
+				"0.1667": [
+					"v.fxdays=8;",
+					"v.hsrxzg=8;",
+					"v.uhbxrt=12;"
+				],
+				"0.2083": [
+					"v.fxdays=16;",
+					"v.hsrxzg=16;"
+				],
+				"0.2917": [
+					"v.uhbxrt=11;"
+				],
+				"0.375": [
+					"v.uhbxrt=10;"
+				],
+				"0.4583": [
+					"v.uhbxrt=6;"
+				],
+				"0.7083": [
+					"v.fxdays=7;",
+					"v.hsrxzg=7;"
+				],
+				"0.75": [
+					"v.fxdays=1;"
+				],
+				"0.7917": [
+					"v.hsrxzg=1;"
+				],
+				"0.8333": [
+					"v.fxdays=8;"
+				],
+				"0.9167": [
+					"v.fxdays=13;",
+					"v.hsrxzg=8;"
+				],
+				"1.0": [
+					"v.hsrxzg=13;"
+				],
+				"1.25": [
+					"v.uhbxrt=6;"
+				],
+				"1.3333": [
+					"v.uhbxrt=5;"
+				],
+				"1.4167": [
+					"v.fxdays=8;",
+					"v.hsrxzg=8;",
+					"v.uhbxrt=4;"
+				],
+				"1.5": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;",
+					"v.uhbxrt=0;"
+				],
+				"1.5833": [
+					"v.fxdays=14;",
+					"v.hsrxzg=14;"
+				],
+				"1.625": [
+					"v.fxdays=15;",
+					"v.hsrxzg=15;"
+				],
+				"2.625": [
+					"v.fxdays=14;",
+					"v.hsrxzg=14;"
+				],
+				"2.6667": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;"
+				],
+				"2.75": [
+					"v.fxdays=2;",
+					"v.hsrxzg=2;"
+				],
+				"2.8333": [
+					"v.fxdays=0;",
+					"v.hsrxzg=0;"
+				]
+			}
+		},
+		"kawgum": {
+			"bedrock": "animation.oreville_ans.znqstd",
+			"animation": null,
+			"animation_length": 2.5,
+			"timeline": {
+				"0.0": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;"
+				],
+				"0.2083": [
+					"v.fxdays=14;",
+					"v.hsrxzg=14;"
+				],
+				"0.25": [
+					"v.hsrxzg=15;"
+				],
+				"1.1667": [
+					"v.hsrxzg=14;"
+				],
+				"1.3333": [
+					"v.fxdays=15;"
+				],
+				"2.2083": [
+					"v.fxdays=14;"
+				],
+				"2.25": [
+					"v.fxdays=1;",
+					"v.hsrxzg=1;"
+				],
+				"2.375": [
+					"v.fxdays=2;",
+					"v.hsrxzg=2;"
+				],
+				"2.4167": [
+					"v.fxdays=0;",
+					"v.hsrxzg=0;"
+				]
+			}
+		},
+		"guuqma": {
+			"bedrock": "animation.oreville_ans.eehxis",
+			"animation": "animation.sulfur_cube.anim_guuqma",
+			"animation_length": 6,
+			"particle_effects": {
+				"3.0": [
+					{
+						"effect": "ygvjwg",
+						"locator": "tmil",
+						"resolved": "oreville_ans:ygvjwg"
+					}
+				]
+			}
+		},
+		"oclmwf": {
+			"bedrock": "animation.oreville_ans.gwyfre",
+			"animation": "animation.sulfur_cube.anim_oclmwf",
+			"loop": true
+		},
+		"jtxzis": {
+			"bedrock": "animation.oreville_ans.auddfa",
+			"animation": "animation.sulfur_cube.anim_jtxzis",
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.7083
+		},
+		"qzijbs": {
+			"bedrock": "animation.oreville_ans.nltxki",
+			"animation": "animation.sulfur_cube.anim_qzijbs",
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.70833
+		},
+		"slhdnp": {
+			"bedrock": "animation.oreville_ans.nvzrry",
+			"animation": "animation.sulfur_cube.anim_slhdnp",
+			"loop": true
+		},
+		"cjwxay": {
+			"bedrock": "animation.oreville_ans.fejwro",
+			"animation": "animation.sulfur_cube.anim_cjwxay",
+			"loop": "hold_on_last_frame",
+			"animation_length": 1
+		},
+		"qbmljh": {
+			"bedrock": "animation.oreville_ans.kylshz",
+			"animation": "animation.sulfur_cube.anim_qbmljh",
+			"loop": "hold_on_last_frame",
+			"animation_length": 1
+		},
+		"meyfaa": {
+			"bedrock": "animation.oreville_ans.vkwwvr",
+			"animation": "animation.sulfur_cube.anim_meyfaa",
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.5
+		},
+		"ogwqrl": {
+			"bedrock": "animation.oreville_ans.tmsasm",
+			"animation": "animation.sulfur_cube.anim_ogwqrl",
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.5
+		},
+		"hihqcy": {
+			"bedrock": "animation.oreville_ans.scgrvt",
+			"animation": "animation.sulfur_cube.swim",
+			"loop": true
+		},
+		"mdlfik": {
+			"bedrock": "animation.oreville_ans.smldde",
+			"animation": "animation.sulfur_cube.idle_1",
+			"loop": true
+		},
+		"baby_transform": {
+			"bedrock": "animation.oreville_ans.ddhqse",
+			"animation": "animation.sulfur_cube.baby_transform",
+			"loop": true
+		},
+		"anzvcs": {
+			"bedrock": "animation.oreville_ans.tjrisn",
+			"animation": "animation.sulfur_cube.eyes_1",
+			"loop": true,
+			"anim_time_update": "(v.cdrzno?400:v.nxabts==6?300:v.nxabts==7?100:v.nxabts==8?200:0)+v.fxdays"
+		},
+		"etkqrt": {
+			"bedrock": "animation.oreville_ans.oiycoe",
+			"animation": "animation.sulfur_cube.eyes_2",
+			"loop": true,
+			"anim_time_update": "(v.cdrzno?400:v.nxabts==6?300:v.nxabts==7?100:v.nxabts==8?200:0)+v.hsrxzg"
+		},
+		"zvsssg": {
+			"bedrock": "animation.oreville_ans.ohhkfj",
+			"animation": "animation.sulfur_cube.mouth",
+			"loop": true,
+			"anim_time_update": "(v.cdrzno?400:v.nxabts==6?300:v.nxabts==7?100:v.nxabts==8?200:0)+v.uhbxrt"
+		},
+		"kyoysp": {
+			"bedrock": "animation.oreville_ans.hfikrz",
+			"animation": "animation.sulfur_cube.idle_2",
+			"loop": true
+		},
+		"guawtz": {
+			"bedrock": "animation.oreville_ans.ycayan",
+			"animation": "animation.sulfur_cube.idle_3",
+			"loop": true
+		},
+		"bbcxmc": {
+			"bedrock": "controller.animation.oreville_ans.sishlq",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"zhbjho": "!q.is_in_water&&q.life_time>0.06"
+							}
+						]
+					},
+					"zhbjho": {
+						"transitions": [
+							{
+								"hihqcy": "q.is_in_water"
+							}
+						]
+					},
+					"hihqcy": {
+						"transitions": [
+							{
+								"default": "!q.is_in_water"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "hwuwvi",
+								"resolved": "oreville_ans:fmpdzx"
+							},
+							{
+								"effect": "djnihu",
+								"resolved": "oreville_ans:ndvctz"
+							},
+							{
+								"effect": "cbcewo",
+								"resolved": "oreville_ans:rpccbh"
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"scripts": {
+		"initialize": [
+			"v.qhhozj=0;",
+			"v.sqrooj=0;",
+			"v.phqhsg=0;",
+			"v.levhfc=0;",
+			"v.bywaby=0;",
+			"v.njvqlj=0;",
+			"v.mzsyml=0;",
+			"v.lzwweo=0;",
+			"v.avotjr=0;",
+			"v.zjtahu=0;",
+			"v.setyuj=0;",
+			"v.rwawnd=0;",
+			"v.nxabts=0;",
+			"v.xhwyuc=0;",
+			"v.apxkfe=0;",
+			"v.dkgqqu=0;",
+			"v.bdpemx=0;",
+			"v.gbaiaw=0;",
+			"v.xvbbte=0;",
+			"v.spexwz=0;",
+			"v.yngwni=0;",
+			"v.edmxtm=0;",
+			"v.ybdipa=0;",
+			"v.ysbudv=0;",
+			"v.iqxqyr=0;",
+			"v.tounsg=0;",
+			"v.goiddj=0;",
+			"v.tsupal=0;",
+			"v.wjttun=0;",
+			"v.tmkdsg=0;",
+			"v.lteoyq=0;",
+			"v.kojpur=0;",
+			"v.avmwac=0;",
+			"v.qnqdje=0;",
+			"v.vvbvfi=0;",
+			"v.owzbbz=0;",
+			"v.iowkzt=0;",
+			"v.dzffmv=0;",
+			"v.jbrwfq=0;",
+			"v.xpoyng=0;",
+			"v.rguyyk=0;",
+			"v.sqlmxx=0;",
+			"v.jdtwvc=0;",
+			"v.mhmlhq=0;",
+			"v.jpaefx=0;",
+			"v.mmiwfb=0;",
+			"v.umkcbm=0;",
+			"v.pdydhc=0;",
+			"v.orgnpc=0;",
+			"v.qsjbzh=0;",
+			"v.hxyrqu=0;",
+			"v.owwdbz=0;",
+			"v.vctxov=0;",
+			"v.lhmcso=0;",
+			"v.lolvtd=0;",
+			"v.lzycfg=0;",
+			"v.cqzmta=0;",
+			"v.bvxpvc=0;",
+			"v.pporuh=0;",
+			"v.nodgcr=0;",
+			"v.irdchy=0;",
+			"v.byxbub=0;",
+			"v.dwqqpk=0;",
+			"v.dyffdx=0;",
+			"v.glinis=0;",
+			"v.wmymqk=0;",
+			"v.mylaxl=0;",
+			"v.clrnsd=0;",
+			"v.wdckki=0;",
+			"v.tdjmon=0;",
+			"v.ncjcit=0;",
+			"v.rhillh=0;",
+			"v.cfuitp=0;",
+			"v.nacqvx=0;",
+			"v.dhlfap=0;",
+			"v.bruevd=0;",
+			"v.zrjcvw=0;",
+			"v.mjginv=0;",
+			"v.fortov=0;",
+			"v.mesfwz=0;",
+			"v.mxfsnd=0;",
+			"v.yzfhvz=0;",
+			"v.vjdggl=0;",
+			"v.hzrqgv=0;",
+			"v.qrvusr=0;",
+			"v.ykfjec=0;",
+			"v.qajyuv=0;",
+			"v.natixe=0;",
+			"v.ioiqtk=0;",
+			"v.rnfwzq=0;",
+			"v.cbmqio=0;",
+			"v.yjspsw=0;",
+			"v.kjzmhz=0;",
+			"v.ddiyxc=0;",
+			"v.pqtrnw=0;",
+			"v.qmmqpn=0;",
+			"v.nwjogz=0;",
+			"v.wyucwo=0;",
+			"v.wlpmcj=0;",
+			"v.abjhra=0;",
+			"v.fdaxbb=0;",
+			"v.xiemzw=0;",
+			"v.xjryuc=0;",
+			"v.rupatf=0;",
+			"v.txvzcq=0;",
+			"v.nyjdkl=0;",
+			"v.ulloou=0;",
+			"v.wwtybl=0;",
+			"v.gtcjji=0;",
+			"v.ufojdf=0;",
+			"v.hyspps=0;",
+			"v.tsejzc=0;",
+			"v.gekige=0;",
+			"v.nthjcy=0;",
+			"v.ffelyj=0;",
+			"v.rdbnlr=0;",
+			"v.yhbarh=0;",
+			"v.oufzta=0;",
+			"v.oeepai=0;",
+			"v.xjyjuh=0;",
+			"v.axvhci=0;",
+			"v.dcoegr=0;",
+			"v.aonxdy=0;",
+			"v.lsssqy=0;",
+			"v.rjwqox=0;",
+			"v.tsrqrd=0;",
+			"v.znwert=0;",
+			"v.hdjltd=0;",
+			"v.cphrie=0;",
+			"v.swrowu=0;",
+			"v.spmrbf=0;",
+			"v.klcwrq=0;",
+			"v.courpm=0;",
+			"v.hbxqst=0;",
+			"v.sodlum=0;",
+			"v.snyydj=0;",
+			"v.ywksjk=0;",
+			"v.yutqeq=0;",
+			"v.vlhkjt=0;",
+			"v.ylaird=0;",
+			"v.mnlzjy=0;",
+			"v.fxdays=0;",
+			"v.hsrxzg=0;",
+			"v.uhbxrt=0;",
+			"v.qpptdt=0;",
+			"v.mchpvg=0;",
+			"v.jcalav=0;",
+			"v.ypfpjf=0;",
+			"v.rbnrwg=0;",
+			"v.jzydng=0;",
+			"v.jbawka=0;",
+			"v.wthuxi=0;",
+			"v.lwwing=0;",
+			"v.petnwq=0;",
+			"v.brfmzv=0;",
+			"v.rgvuen=0;",
+			"v.rowpry=0;",
+			"v.rgwjra=0;",
+			"v.ipczvr=0;",
+			"v.ozfeea=0;",
+			"v.rvzhuz=0;",
+			"v.yaalcs=0;",
+			"v.cgwfgd=0;",
+			"v.luwnfr=0;",
+			"v.sryhez=0;",
+			"v.tbgupw=0;",
+			"v.yfzdqn=0;",
+			"v.uznkvn=0;",
+			"v.uyxotg=0;",
+			"v.txwpsk=0;",
+			"v.bvpxbu=0;",
+			"v.qkjcih=0;",
+			"v.rmapse=0;",
+			"v.jbnpua=0;",
+			"v.esnwcf=0;",
+			"v.tuneoy=0;",
+			"v.tojdzt=0;",
+			"v.vtkhmm=0;",
+			"v.nlpqjg=0;",
+			"v.rcgezu=0;",
+			"v.ispgly=0;",
+			"v.jkanjy=0;",
+			"v.vvtgzf=0;",
+			"v.pcbxuv=0;",
+			"v.tocraa=0;",
+			"v.cdrzno=v.tocraa||q.is_baby||(!q.is_in_ui&&q.is_name_any('baby','Baby'));",
+			"v.actions_and_stuff=1;",
+			"v.evlypi='unknown';",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.narpvm=0;v.ykxvro=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sxlefg=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.ykxvro?{v.narpvm=1;};v.mgdgwf=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.tsuowj=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.mgdgwf?{v.narpvm=2;};v.atuocm=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.hqvvjb=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.atuocm?{v.narpvm=3;};};",
+			"v.hvdbua=q.body_y_rotation;",
+			"v.toclgf=q.position(0);",
+			"v.zwgbad=q.position(1);",
+			"v.qkrfdi=q.position(2);",
+			"v.iaxjoy=v.toclgf;",
+			"v.eeydlb=v.zwgbad;",
+			"v.iynnie=v.qkrfdi;",
+			"v.clqdou=Math.random(0,1.44);",
+			"v.onoiya=1;",
+			"v.rdoxao=Math.random_integer(1,7);",
+			"v.hbwite=Math.random_integer(1,7);",
+			"v.zybrof=Math.random_integer(1,6);",
+			"v.qqfbna=Math.random_integer(1,5);",
+			"v.qvxbsq=Math.random_integer(1,3);",
+			"v.wtyvtf=Math.random_integer(1,4);",
+			"v.atufzu=1;v.yrltdj=0;v.njnknn=0;v.tcrjwe=0;",
+			"v.bhblov=q.position(0);v.ebypvy=q.position(1);v.borcrz=q.position(2);"
+		],
+		"pre_animation": [
+			"v.cdrzno=v.tocraa||q.is_baby||(!q.is_in_ui&&q.is_name_any('baby','Baby'));",
+			"v.actions_and_stuff=1;",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.qhhozj=0;v.ykxvro=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.ykxvro=v.sxlefg;};v.sqrooj=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sqrooj?{v.qhhozj=1;};v.mgdgwf=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.mgdgwf=v.tsuowj;};v.phqhsg=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.phqhsg?{v.qhhozj=2;};v.atuocm=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.atuocm=v.hqvvjb;};v.levhfc=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.levhfc?{v.qhhozj=3;};};",
+			"v.bywaby=q.is_invisible;",
+			"v.njvqlj=q.property('minecraft:sulfur_cube_archetype')!='none';",
+			"v.mzsyml=Math.lerp(v.mzsyml,(v.njvqlj?0.5:2)*(v.lzwweo<2),0.1);",
+			"q.fuse_time>1?{v.avotjr=v.avotjr+q.delta_time;v.zjtahu=(Math.sin(Math.pow(v.avotjr,1.7)*360)+1)*Math.clamp(v.avotjr/20,0,0.25);v.setyuj=(v.avotjr-1)*5;}:{v.avotjr=0;};",
+			"v.rwawnd=!v.bywaby&&(!v.njvqlj||v.nxabts==6||v.nxabts==7||v.nxabts==8||v.nxabts==12||v.xhwyuc>0);",
+			"v.apxkfe=v.dkgqqu||v.bdpemx||v.gbaiaw;",
+			"v.nxabts=0;v.njvqlj?{q.is_item_name_any('slot.weapon.mainhand','minecraft:dirt','minecraft:dirt_with_roots','minecraft:coarse_dirt','minecraft:packed_mud')?{v.nxabts=1;};q.is_item_name_any('slot.weapon.mainhand','minecraft:grass_block')?{v.nxabts=2;};q.is_item_name_any('slot.weapon.mainhand','minecraft:honeycomb_block')?{v.nxabts=3;};q.is_item_name_any('slot.weapon.mainhand','minecraft:blue_ice','minecraft:packed_ice')?{v.nxabts=4;};q.is_item_name_any('slot.weapon.mainhand','minecraft:magma')?{v.nxabts=5;};q.is_item_name_any('slot.weapon.mainhand','minecraft:pumpkin')?{v.nxabts=6;};q.is_item_name_any('slot.weapon.mainhand','minecraft:carved_pumpkin')?{v.nxabts=7;};q.is_item_name_any('slot.weapon.mainhand','minecraft:lit_pumpkin')?{v.nxabts=8;};q.is_item_name_any('slot.weapon.mainhand','minecraft:sandstone','minecraft:smooth_sandstone','minecraft:chiseled_sandstone','minecraft:cut_sandstone')?{v.nxabts=9;};q.is_item_name_any('slot.weapon.mainhand','minecraft:red_sandstone','minecraft:smooth_red_sandstone','minecraft:chiseled_red_sandstone','minecraft:cut_red_sandstone')?{v.nxabts=10;};q.is_item_name_any('slot.weapon.mainhand','minecraft:snow')?{v.nxabts=11;};q.is_item_name_any('slot.weapon.mainhand','minecraft:tnt')?{v.nxabts=12;};q.is_item_name_any('slot.weapon.mainhand','minecraft:sponge','minecraft:wet_sponge')?{v.nxabts=13;};v.nxabts==0&&v.njvqlj?{v.nxabts=0;};};",
+			"v.xvbbte='default';v.spexwz=1;v.yngwni=q.is_name_any('Baseball','baseball','Base Ball','Base ball','base Ball','base ball');v.edmxtm=q.is_name_any('Basketball','basketball','Basket Ball','Basket ball','basket Ball','basket ball');v.ybdipa=q.is_name_any('Beach Ball','Beach ball','beach Ball','beach ball','Beachball','beachball','beach','Beach');v.ysbudv=q.is_name_any('Billiards','billiards','Billiards Ball','Billiards ball','billiards Ball','billiards ball','Billiard','billiard','Billiard Ball','Billiard ball','billiard Ball','billiard ball','Pool','pool','Pool Ball','Pool ball','pool Ball','pool ball');v.iqxqyr=q.is_name_any('Black Billiards','Black billiards','black Billiards','black billiards','Black Billiards Ball','Black Billiards ball','Black billiards Ball','Black billiards ball','black Billiards Ball','black Billiards ball','black billiards Ball','black billiards ball','Black Pool','Black pool','black Pool','black pool','Black Pool Ball','Black Pool ball','Black pool Ball','Black pool ball','black Pool Ball','black Pool ball','black pool Ball','black pool ball');v.tounsg=q.is_name_any('Blue Billiards','Blue billiards','blue Billiards','blue billiards','Blue Billiards Ball','Blue Billiards ball','Blue billiards Ball','Blue billiards ball','blue Billiards Ball','blue Billiards ball','blue billiards Ball','blue billiards ball','Blue Pool','Blue pool','blue Pool','blue pool','Blue Pool Ball','Blue Pool ball','Blue pool Ball','Blue pool ball','blue Pool Ball','blue Pool ball','blue pool Ball','blue pool ball');v.goiddj=q.is_name_any('Brown Billiards','Brown billiards','brown Billiards','brown billiards','Brown Billiards Ball','Brown Billiards ball','Brown billiards Ball','Brown billiards ball','brown Billiards Ball','brown Billiards ball','brown billiards Ball','brown billiards ball','Brown Pool','Brown pool','brown Pool','brown pool','Brown Pool Ball','Brown Pool ball','Brown pool Ball','Brown pool ball','brown Pool Ball','brown Pool ball','brown pool Ball','brown pool ball');v.tsupal=q.is_name_any('Green Billiards','Green billiards','green Billiards','green billiards','Green Billiards Ball','Green Billiards ball','Green billiards Ball','Green billiards ball','green Billiards Ball','green Billiards ball','green billiards Ball','green billiards ball','Green Pool','Green pool','green Pool','green pool','Green Pool Ball','Green Pool ball','Green pool Ball','Green pool ball','green Pool Ball','green Pool ball','green pool Ball','green pool ball');v.wjttun=q.is_name_any('Pink Billiards','Pink billiards','pink Billiards','pink billiards','Pink Billiards Ball','Pink Billiards ball','Pink billiards Ball','Pink billiards ball','pink Billiards Ball','pink Billiards ball','pink billiards Ball','pink billiards ball','Pink Pool','Pink pool','pink Pool','pink pool','Pink Pool Ball','Pink Pool ball','Pink pool Ball','Pink pool ball','pink Pool Ball','pink Pool ball','pink pool Ball','pink pool ball');v.tmkdsg=q.is_name_any('Red Billiards','Red billiards','red Billiards','red billiards','Red Billiards Ball','Red Billiards ball','Red billiards Ball','Red billiards ball','red Billiards Ball','red Billiards ball','red billiards Ball','red billiards ball','Red Pool','Red pool','red Pool','red pool','Red Pool Ball','Red Pool ball','Red pool Ball','Red pool ball','red Pool Ball','red Pool ball','red pool Ball','red pool ball');v.lteoyq=q.is_name_any('White Billiards','White billiards','white Billiards','white billiards','White Billiards Ball','White Billiards ball','White billiards Ball','White billiards ball','white Billiards Ball','white Billiards ball','white billiards Ball','white billiards ball','White Pool','White pool','white Pool','white pool','White Pool Ball','White Pool ball','White pool Ball','White pool ball','white Pool Ball','white Pool ball','white pool Ball','white pool ball');v.kojpur=q.is_name_any('Yellow Billiards','Yellow billiards','yellow Billiards','yellow billiards','Yellow Billiards Ball','Yellow Billiards ball','Yellow billiards Ball','Yellow billiards ball','yellow Billiards Ball','yellow Billiards ball','yellow billiards Ball','yellow billiards ball','Yellow Pool','Yellow pool','yellow Pool','yellow pool','Yellow Pool Ball','Yellow Pool ball','Yellow pool Ball','Yellow pool ball','yellow Pool Ball','yellow Pool ball','yellow pool Ball','yellow pool ball');v.avmwac=q.is_name_any('Billiards Spot','Billiards spot','billiards Spot','billiards spot','Billiards Ball Spot','Billiards Ball spot','Billiards ball Spot','Billiards ball spot','billiards Ball Spot','billiards Ball spot','billiards ball Spot','billiards ball spot','Pool Spot','Pool spot','pool Spot','pool spot','Pool Ball Spot','Pool Ball spot','Pool ball Spot','Pool ball spot','pool Ball Spot','pool Ball spot','pool ball Spot','pool ball spot');v.qnqdje=q.is_name_any('Maroon Billiards Spot','Maroon Billiards spot','Maroon billiards Spot','Maroon billiards spot','maroon Billiards Spot','maroon Billiards spot','maroon billiards Spot','maroon billiards spot','Maroon Billiards Ball Spot','Maroon Billiards Ball spot','Maroon Billiards ball Spot','Maroon Billiards ball spot','Maroon billiards Ball Spot','Maroon billiards Ball spot','Maroon billiards ball Spot','Maroon billiards ball spot','maroon Billiards Ball Spot','maroon Billiards Ball spot','maroon Billiards ball Spot','maroon Billiards ball spot','maroon billiards Ball Spot','maroon billiards Ball spot','maroon billiards ball Spot','maroon billiards ball spot','Maroon Pool Spot','Maroon Pool spot','Maroon pool Spot','Maroon pool spot','maroon Pool Spot','maroon Pool spot','maroon pool Spot','maroon pool spot','Maroon Pool Ball Spot','Maroon Pool Ball spot','Maroon Pool ball Spot','Maroon Pool ball spot','Maroon pool Ball Spot','Maroon pool Ball spot','Maroon pool ball Spot','Maroon pool ball spot','maroon Pool Ball Spot','maroon Pool Ball spot','maroon Pool ball Spot','maroon Pool ball spot','maroon pool Ball Spot','maroon pool Ball spot','maroon pool ball Spot','maroon pool ball spot');v.vvbvfi=q.is_name_any('Black Billiards Spot','Black Billiards spot','Black billiards Spot','Black billiards spot','black Billiards Spot','black Billiards spot','black billiards Spot','black billiards spot','Black Billiards Ball Spot','Black Billiards Ball spot','Black Billiards ball Spot','Black Billiards ball spot','Black billiards Ball Spot','Black billiards Ball spot','Black billiards ball Spot','Black billiards ball spot','black Billiards Ball Spot','black Billiards Ball spot','black Billiards ball Spot','black Billiards ball spot','black billiards Ball Spot','black billiards Ball spot','black billiards ball Spot','black billiards ball spot','Black Pool Spot','Black Pool spot','Black pool Spot','Black pool spot','black Pool Spot','black Pool spot','black pool Spot','black pool spot','Black Pool Ball Spot','Black Pool Ball spot','Black Pool ball Spot','Black Pool ball spot','Black pool Ball Spot','Black pool Ball spot','Black pool ball Spot','Black pool ball spot','black Pool Ball Spot','black Pool Ball spot','black Pool ball Spot','black Pool ball spot','black pool Ball Spot','black pool Ball spot','black pool ball Spot','black pool ball spot');v.owzbbz=q.is_name_any('Blue Billiards Spot','Blue Billiards spot','Blue billiards Spot','Blue billiards spot','blue Billiards Spot','blue Billiards spot','blue billiards Spot','blue billiards spot','Blue Billiards Ball Spot','Blue Billiards Ball spot','Blue Billiards ball Spot','Blue Billiards ball spot','Blue billiards Ball Spot','Blue billiards Ball spot','Blue billiards ball Spot','Blue billiards ball spot','blue Billiards Ball Spot','blue Billiards Ball spot','blue Billiards ball Spot','blue Billiards ball spot','blue billiards Ball Spot','blue billiards Ball spot','blue billiards ball Spot','blue billiards ball spot','Blue Pool Spot','Blue Pool spot','Blue pool Spot','Blue pool spot','blue Pool Spot','blue Pool spot','blue pool Spot','blue pool spot','Blue Pool Ball Spot','Blue Pool Ball spot','Blue Pool ball Spot','Blue Pool ball spot','Blue pool Ball Spot','Blue pool Ball spot','Blue pool ball Spot','Blue pool ball spot','blue Pool Ball Spot','blue Pool Ball spot','blue Pool ball Spot','blue Pool ball spot','blue pool Ball Spot','blue pool Ball spot','blue pool ball Spot','blue pool ball spot');v.iowkzt=q.is_name_any('Green Billiards Spot','Green Billiards spot','Green billiards Spot','Green billiards spot','green Billiards Spot','green Billiards spot','green billiards Spot','green billiards spot','Green Billiards Ball Spot','Green Billiards Ball spot','Green Billiards ball Spot','Green Billiards ball spot','Green billiards Ball Spot','Green billiards Ball spot','Green billiards ball Spot','Green billiards ball spot','green Billiards Ball Spot','green Billiards Ball spot','green Billiards ball Spot','green Billiards ball spot','green billiards Ball Spot','green billiards Ball spot','green billiards ball Spot','green billiards ball spot','Green Pool Spot','Green Pool spot','Green pool Spot','Green pool spot','green Pool Spot','green Pool spot','green pool Spot','green pool spot','Green Pool Ball Spot','Green Pool Ball spot','Green Pool ball Spot','Green Pool ball spot','Green pool Ball Spot','Green pool Ball spot','Green pool ball Spot','Green pool ball spot','green Pool Ball Spot','green Pool Ball spot','green Pool ball Spot','green Pool ball spot','green pool Ball Spot','green pool Ball spot','green pool ball Spot','green pool ball spot');v.dzffmv=q.is_name_any('Orange Billiards Spot','Orange Billiards spot','Orange billiards Spot','Orange billiards spot','orange Billiards Spot','orange Billiards spot','orange billiards Spot','orange billiards spot','Orange Billiards Ball Spot','Orange Billiards Ball spot','Orange Billiards ball Spot','Orange Billiards ball spot','Orange billiards Ball Spot','Orange billiards Ball spot','Orange billiards ball Spot','Orange billiards ball spot','orange Billiards Ball Spot','orange Billiards Ball spot','orange Billiards ball Spot','orange Billiards ball spot','orange billiards Ball Spot','orange billiards Ball spot','orange billiards ball Spot','orange billiards ball spot','Orange Pool Spot','Orange Pool spot','Orange pool Spot','Orange pool spot','orange Pool Spot','orange Pool spot','orange pool Spot','orange pool spot','Orange Pool Ball Spot','Orange Pool Ball spot','Orange Pool ball Spot','Orange Pool ball spot','Orange pool Ball Spot','Orange pool Ball spot','Orange pool ball Spot','Orange pool ball spot','orange Pool Ball Spot','orange Pool Ball spot','orange Pool ball Spot','orange Pool ball spot','orange pool Ball Spot','orange pool Ball spot','orange pool ball Spot','orange pool ball spot');v.jbrwfq=q.is_name_any('Purple Billiards Spot','Purple Billiards spot','Purple billiards Spot','Purple billiards spot','purple Billiards Spot','purple Billiards spot','purple billiards Spot','purple billiards spot','Purple Billiards Ball Spot','Purple Billiards Ball spot','Purple Billiards ball Spot','Purple Billiards ball spot','Purple billiards Ball Spot','Purple billiards Ball spot','Purple billiards ball Spot','Purple billiards ball spot','purple Billiards Ball Spot','purple Billiards Ball spot','purple Billiards ball Spot','purple Billiards ball spot','purple billiards Ball Spot','purple billiards Ball spot','purple billiards ball Spot','purple billiards ball spot','Purple Pool Spot','Purple Pool spot','Purple pool Spot','Purple pool spot','purple Pool Spot','purple Pool spot','purple pool Spot','purple pool spot','Purple Pool Ball Spot','Purple Pool Ball spot','Purple Pool ball Spot','Purple Pool ball spot','Purple pool Ball Spot','Purple pool Ball spot','Purple pool ball Spot','Purple pool ball spot','purple Pool Ball Spot','purple Pool Ball spot','purple Pool ball Spot','purple Pool ball spot','purple pool Ball Spot','purple pool Ball spot','purple pool ball Spot','purple pool ball spot');v.xpoyng=q.is_name_any('Red Billiards Spot','Red Billiards spot','Red billiards Spot','Red billiards spot','red Billiards Spot','red Billiards spot','red billiards Spot','red billiards spot','Red Billiards Ball Spot','Red Billiards Ball spot','Red Billiards ball Spot','Red Billiards ball spot','Red billiards Ball Spot','Red billiards Ball spot','Red billiards ball Spot','Red billiards ball spot','red Billiards Ball Spot','red Billiards Ball spot','red Billiards ball Spot','red Billiards ball spot','red billiards Ball Spot','red billiards Ball spot','red billiards ball Spot','red billiards ball spot','Red Pool Spot','Red Pool spot','Red pool Spot','Red pool spot','red Pool Spot','red Pool spot','red pool Spot','red pool spot','Red Pool Ball Spot','Red Pool Ball spot','Red Pool ball Spot','Red Pool ball spot','Red pool Ball Spot','Red pool Ball spot','Red pool ball Spot','Red pool ball spot','red Pool Ball Spot','red Pool Ball spot','red Pool ball Spot','red Pool ball spot','red pool Ball Spot','red pool Ball spot','red pool ball Spot','red pool ball spot');v.rguyyk=q.is_name_any('Yellow Billiards Spot','Yellow Billiards spot','Yellow billiards Spot','Yellow billiards spot','yellow Billiards Spot','yellow Billiards spot','yellow billiards Spot','yellow billiards spot','Yellow Billiards Ball Spot','Yellow Billiards Ball spot','Yellow Billiards ball Spot','Yellow Billiards ball spot','Yellow billiards Ball Spot','Yellow billiards Ball spot','Yellow billiards ball Spot','Yellow billiards ball spot','yellow Billiards Ball Spot','yellow Billiards Ball spot','yellow Billiards ball Spot','yellow Billiards ball spot','yellow billiards Ball Spot','yellow billiards Ball spot','yellow billiards ball Spot','yellow billiards ball spot','Yellow Pool Spot','Yellow Pool spot','Yellow pool Spot','Yellow pool spot','yellow Pool Spot','yellow Pool spot','yellow pool Spot','yellow pool spot','Yellow Pool Ball Spot','Yellow Pool Ball spot','Yellow Pool ball Spot','Yellow Pool ball spot','Yellow pool Ball Spot','Yellow pool Ball spot','Yellow pool ball Spot','Yellow pool ball spot','yellow Pool Ball Spot','yellow Pool Ball spot','yellow Pool ball Spot','yellow Pool ball spot','yellow pool Ball Spot','yellow pool Ball spot','yellow pool ball Spot','yellow pool ball spot');v.sqlmxx=q.is_name_any('Billiards Stripe','Billiards stripe','billiards Stripe','billiards stripe','Billiards Ball Stripe','Billiards Ball stripe','Billiards ball Stripe','Billiards ball stripe','billiards Ball Stripe','billiards Ball stripe','billiards ball Stripe','billiards ball stripe','Pool Stripe','Pool stripe','pool Stripe','pool stripe','Pool Ball Stripe','Pool Ball stripe','Pool ball Stripe','Pool ball stripe','pool Ball Stripe','pool Ball stripe','pool ball Stripe','pool ball stripe');v.jdtwvc=q.is_name_any('Maroon Billiards Stripe','Maroon Billiards stripe','Maroon billiards Stripe','Maroon billiards stripe','maroon Billiards Stripe','maroon Billiards stripe','maroon billiards Stripe','maroon billiards stripe','Maroon Billiards Ball Stripe','Maroon Billiards Ball stripe','Maroon Billiards ball Stripe','Maroon Billiards ball stripe','Maroon billiards Ball Stripe','Maroon billiards Ball stripe','Maroon billiards ball Stripe','Maroon billiards ball stripe','maroon Billiards Ball Stripe','maroon Billiards Ball stripe','maroon Billiards ball Stripe','maroon Billiards ball stripe','maroon billiards Ball Stripe','maroon billiards Ball stripe','maroon billiards ball Stripe','maroon billiards ball stripe','Maroon Pool Stripe','Maroon Pool stripe','Maroon pool Stripe','Maroon pool stripe','maroon Pool Stripe','maroon Pool stripe','maroon pool Stripe','maroon pool stripe','Maroon Pool Ball Stripe','Maroon Pool Ball stripe','Maroon Pool ball Stripe','Maroon Pool ball stripe','Maroon pool Ball Stripe','Maroon pool Ball stripe','Maroon pool ball Stripe','Maroon pool ball stripe','maroon Pool Ball Stripe','maroon Pool Ball stripe','maroon Pool ball Stripe','maroon Pool ball stripe','maroon pool Ball Stripe','maroon pool Ball stripe','maroon pool ball Stripe','maroon pool ball stripe');v.mhmlhq=q.is_name_any('Blue Billiards Stripe','Blue Billiards stripe','Blue billiards Stripe','Blue billiards stripe','blue Billiards Stripe','blue Billiards stripe','blue billiards Stripe','blue billiards stripe','Blue Billiards Ball Stripe','Blue Billiards Ball stripe','Blue Billiards ball Stripe','Blue Billiards ball stripe','Blue billiards Ball Stripe','Blue billiards Ball stripe','Blue billiards ball Stripe','Blue billiards ball stripe','blue Billiards Ball Stripe','blue Billiards Ball stripe','blue Billiards ball Stripe','blue Billiards ball stripe','blue billiards Ball Stripe','blue billiards Ball stripe','blue billiards ball Stripe','blue billiards ball stripe','Blue Pool Stripe','Blue Pool stripe','Blue pool Stripe','Blue pool stripe','blue Pool Stripe','blue Pool stripe','blue pool Stripe','blue pool stripe','Blue Pool Ball Stripe','Blue Pool Ball stripe','Blue Pool ball Stripe','Blue Pool ball stripe','Blue pool Ball Stripe','Blue pool Ball stripe','Blue pool ball Stripe','Blue pool ball stripe','blue Pool Ball Stripe','blue Pool Ball stripe','blue Pool ball Stripe','blue Pool ball stripe','blue pool Ball Stripe','blue pool Ball stripe','blue pool ball Stripe','blue pool ball stripe');v.jpaefx=q.is_name_any('Green Billiards Stripe','Green Billiards stripe','Green billiards Stripe','Green billiards stripe','green Billiards Stripe','green Billiards stripe','green billiards Stripe','green billiards stripe','Green Billiards Ball Stripe','Green Billiards Ball stripe','Green Billiards ball Stripe','Green Billiards ball stripe','Green billiards Ball Stripe','Green billiards Ball stripe','Green billiards ball Stripe','Green billiards ball stripe','green Billiards Ball Stripe','green Billiards Ball stripe','green Billiards ball Stripe','green Billiards ball stripe','green billiards Ball Stripe','green billiards Ball stripe','green billiards ball Stripe','green billiards ball stripe','Green Pool Stripe','Green Pool stripe','Green pool Stripe','Green pool stripe','green Pool Stripe','green Pool stripe','green pool Stripe','green pool stripe','Green Pool Ball Stripe','Green Pool Ball stripe','Green Pool ball Stripe','Green Pool ball stripe','Green pool Ball Stripe','Green pool Ball stripe','Green pool ball Stripe','Green pool ball stripe','green Pool Ball Stripe','green Pool Ball stripe','green Pool ball Stripe','green Pool ball stripe','green pool Ball Stripe','green pool Ball stripe','green pool ball Stripe','green pool ball stripe');v.mmiwfb=q.is_name_any('Orange Billiards Stripe','Orange Billiards stripe','Orange billiards Stripe','Orange billiards stripe','orange Billiards Stripe','orange Billiards stripe','orange billiards Stripe','orange billiards stripe','Orange Billiards Ball Stripe','Orange Billiards Ball stripe','Orange Billiards ball Stripe','Orange Billiards ball stripe','Orange billiards Ball Stripe','Orange billiards Ball stripe','Orange billiards ball Stripe','Orange billiards ball stripe','orange Billiards Ball Stripe','orange Billiards Ball stripe','orange Billiards ball Stripe','orange Billiards ball stripe','orange billiards Ball Stripe','orange billiards Ball stripe','orange billiards ball Stripe','orange billiards ball stripe','Orange Pool Stripe','Orange Pool stripe','Orange pool Stripe','Orange pool stripe','orange Pool Stripe','orange Pool stripe','orange pool Stripe','orange pool stripe','Orange Pool Ball Stripe','Orange Pool Ball stripe','Orange Pool ball Stripe','Orange Pool ball stripe','Orange pool Ball Stripe','Orange pool Ball stripe','Orange pool ball Stripe','Orange pool ball stripe','orange Pool Ball Stripe','orange Pool Ball stripe','orange Pool ball Stripe','orange Pool ball stripe','orange pool Ball Stripe','orange pool Ball stripe','orange pool ball Stripe','orange pool ball stripe');v.umkcbm=q.is_name_any('Purple Billiards Stripe','Purple Billiards stripe','Purple billiards Stripe','Purple billiards stripe','purple Billiards Stripe','purple Billiards stripe','purple billiards Stripe','purple billiards stripe','Purple Billiards Ball Stripe','Purple Billiards Ball stripe','Purple Billiards ball Stripe','Purple Billiards ball stripe','Purple billiards Ball Stripe','Purple billiards Ball stripe','Purple billiards ball Stripe','Purple billiards ball stripe','purple Billiards Ball Stripe','purple Billiards Ball stripe','purple Billiards ball Stripe','purple Billiards ball stripe','purple billiards Ball Stripe','purple billiards Ball stripe','purple billiards ball Stripe','purple billiards ball stripe','Purple Pool Stripe','Purple Pool stripe','Purple pool Stripe','Purple pool stripe','purple Pool Stripe','purple Pool stripe','purple pool Stripe','purple pool stripe','Purple Pool Ball Stripe','Purple Pool Ball stripe','Purple Pool ball Stripe','Purple Pool ball stripe','Purple pool Ball Stripe','Purple pool Ball stripe','Purple pool ball Stripe','Purple pool ball stripe','purple Pool Ball Stripe','purple Pool Ball stripe','purple Pool ball Stripe','purple Pool ball stripe','purple pool Ball Stripe','purple pool Ball stripe','purple pool ball Stripe','purple pool ball stripe');v.pdydhc=q.is_name_any('Red Billiards Stripe','Red Billiards stripe','Red billiards Stripe','Red billiards stripe','red Billiards Stripe','red Billiards stripe','red billiards Stripe','red billiards stripe','Red Billiards Ball Stripe','Red Billiards Ball stripe','Red Billiards ball Stripe','Red Billiards ball stripe','Red billiards Ball Stripe','Red billiards Ball stripe','Red billiards ball Stripe','Red billiards ball stripe','red Billiards Ball Stripe','red Billiards Ball stripe','red Billiards ball Stripe','red Billiards ball stripe','red billiards Ball Stripe','red billiards Ball stripe','red billiards ball Stripe','red billiards ball stripe','Red Pool Stripe','Red Pool stripe','Red pool Stripe','Red pool stripe','red Pool Stripe','red Pool stripe','red pool Stripe','red pool stripe','Red Pool Ball Stripe','Red Pool Ball stripe','Red Pool ball Stripe','Red Pool ball stripe','Red pool Ball Stripe','Red pool Ball stripe','Red pool ball Stripe','Red pool ball stripe','red Pool Ball Stripe','red Pool Ball stripe','red Pool ball Stripe','red Pool ball stripe','red pool Ball Stripe','red pool Ball stripe','red pool ball Stripe','red pool ball stripe');v.orgnpc=q.is_name_any('Yellow Billiards Stripe','Yellow Billiards stripe','Yellow billiards Stripe','Yellow billiards stripe','yellow Billiards Stripe','yellow Billiards stripe','yellow billiards Stripe','yellow billiards stripe','Yellow Billiards Ball Stripe','Yellow Billiards Ball stripe','Yellow Billiards ball Stripe','Yellow Billiards ball stripe','Yellow billiards Ball Stripe','Yellow billiards Ball stripe','Yellow billiards ball Stripe','Yellow billiards ball stripe','yellow Billiards Ball Stripe','yellow Billiards Ball stripe','yellow Billiards ball Stripe','yellow Billiards ball stripe','yellow billiards Ball Stripe','yellow billiards Ball stripe','yellow billiards ball Stripe','yellow billiards ball stripe','Yellow Pool Stripe','Yellow Pool stripe','Yellow pool Stripe','Yellow pool stripe','yellow Pool Stripe','yellow Pool stripe','yellow pool Stripe','yellow pool stripe','Yellow Pool Ball Stripe','Yellow Pool Ball stripe','Yellow Pool ball Stripe','Yellow Pool ball stripe','Yellow pool Ball Stripe','Yellow pool Ball stripe','Yellow pool ball Stripe','Yellow pool ball stripe','yellow Pool Ball Stripe','yellow Pool Ball stripe','yellow Pool ball Stripe','yellow Pool ball stripe','yellow pool Ball Stripe','yellow pool Ball stripe','yellow pool ball Stripe','yellow pool ball stripe');v.qsjbzh=q.is_name_any('Bowling','bowling','Bowling Ball','Bowling ball','bowling Ball','bowling ball');v.hxyrqu=q.is_name_any('Blue Bowling Ball','Blue Bowling ball','Blue bowling Ball','Blue bowling ball','blue Bowling Ball','blue Bowling ball','blue bowling Ball','blue bowling ball');v.owwdbz=q.is_name_any('Green Bowling Ball','Green Bowling ball','Green bowling Ball','Green bowling ball','green Bowling Ball','green Bowling ball','green bowling Ball','green bowling ball');v.vctxov=q.is_name_any('Orange Bowling Ball','Orange Bowling ball','Orange bowling Ball','Orange bowling ball','orange Bowling Ball','orange Bowling ball','orange bowling Ball','orange bowling ball');v.lhmcso=q.is_name_any('Pink Bowling Ball','Pink Bowling ball','Pink bowling Ball','Pink bowling ball','pink Bowling Ball','pink Bowling ball','pink bowling Ball','pink bowling ball');v.lolvtd=q.is_name_any('Red Bowling Ball','Red Bowling ball','Red bowling Ball','Red bowling ball','red Bowling Ball','red Bowling ball','red bowling Ball','red bowling ball');v.lzycfg=q.is_name_any('White Bowling Ball','White Bowling ball','White bowling Ball','White bowling ball','white Bowling Ball','white Bowling ball','white bowling Ball','white bowling ball');v.cqzmta=q.is_name_any('Bowling Pin','Bowling pin','bowling Pin','bowling pin','Pin','pin');v.bvxpvc=q.is_name_any('Bomb','bomb','Cartoon Bomb','Cartoon bomb','cartoon Bomb','cartoon bomb');v.pporuh=q.is_name_any('Cricket','cricket','Cricket Ball','Cricket ball','cricket Ball','cricket ball');v.nodgcr=q.is_name_any('Curling','curling','Curling Stone','Curling stone','curling Stone','curling stone');v.irdchy=q.is_name_any('Blue Curling','Blue curling','blue Curling','blue curling','Blue Curling Stone','Blue Curling stone','Blue curling Stone','Blue curling stone','blue Curling Stone','blue Curling stone','blue curling Stone','blue curling stone');v.byxbub=q.is_name_any('Green Curling','Green curling','green Curling','green curling','Green Curling Stone','Green Curling stone','Green curling Stone','Green curling stone','green Curling Stone','green Curling stone','green curling Stone','green curling stone');v.dwqqpk=q.is_name_any('Red Curling','Red curling','red Curling','red curling','Red Curling Stone','Red Curling stone','Red curling Stone','Red curling stone','red Curling Stone','red Curling stone','red curling Stone','red curling stone');v.dyffdx=q.is_name_any('Yellow Curling','Yellow curling','yellow Curling','yellow curling','Yellow Curling Stone','Yellow Curling stone','Yellow curling Stone','Yellow curling stone','yellow Curling Stone','yellow Curling stone','yellow curling Stone','yellow curling stone');v.glinis=q.is_name_any('Die','die','Dice','dice');v.wmymqk=q.is_name_any('Soccer','soccer','Soccer Ball','Soccer ball','soccer Ball','soccer ball','Football','football','Foot Ball','Foot ball','foot Ball','foot ball');v.mylaxl=q.is_name_any('Golf','golf','Golf Ball','Golf ball','golf Ball','golf ball');v.clrnsd=q.is_name_any('Green Golf Ball','Green golf ball','green Golf Ball','green golf ball','Green Golf','green golf');v.wdckki=q.is_name_any('Orange Golf Ball','Orange golf ball','orange Golf Ball','orange golf ball','Orange Golf','orange golf');v.tdjmon=q.is_name_any('Pink Golf Ball','Pink golf ball','pink Golf Ball','pink golf ball','Pink Golf','pink golf');v.ncjcit=q.is_name_any('Yellow Golf Ball','Yellow golf ball','yellow Golf Ball','yellow golf ball','Yellow Golf','yellow golf');v.rhillh=q.is_name_any('Hockey','hockey','Puck','puck','Hockey Puck','Hockey puck','hockey Puck','hockey puck');v.cfuitp=q.is_name_any('Plastic','plastic','Plastic Ball','Plastic ball','plastic Ball','plastic ball');v.nacqvx=q.is_name_any('Blue Plastic','Blue plastic','blue Plastic','blue plastic','Blue Plastic Ball','Blue Plastic ball','Blue plastic Ball','Blue plastic ball','blue Plastic Ball','blue Plastic ball','blue plastic Ball','blue plastic ball');v.dhlfap=q.is_name_any('Green Plastic','Green plastic','green Plastic','green plastic','Green Plastic Ball','Green Plastic ball','Green plastic Ball','Green plastic ball','green Plastic Ball','green Plastic ball','green plastic Ball','green plastic ball');v.bruevd=q.is_name_any('Pink Plastic','Pink plastic','pink Plastic','pink plastic','Pink Plastic Ball','Pink Plastic ball','Pink plastic Ball','Pink plastic ball','pink Plastic Ball','pink Plastic ball','pink plastic Ball','pink plastic ball');v.zrjcvw=q.is_name_any('Red Plastic','Red plastic','red Plastic','red plastic','Red Plastic Ball','Red Plastic ball','Red plastic Ball','Red plastic ball','red Plastic Ball','red Plastic ball','red plastic Ball','red plastic ball');v.mjginv=q.is_name_any('Yellow Plastic','Yellow plastic','yellow Plastic','yellow plastic','Yellow Plastic Ball','Yellow Plastic ball','Yellow plastic Ball','Yellow plastic ball','yellow Plastic Ball','yellow Plastic ball','yellow plastic Ball','yellow plastic ball');v.fortov=q.is_name_any('Tennis','tennis','Tennis Ball','Tennis ball','tennis Ball','tennis ball');v.mesfwz=q.is_name_any('Volleyball','volleyball','Volley Ball','Volley ball','volley Ball','volley ball');v.mxfsnd=q.is_name_any('Axolotl Floaty','Axolotl floaty','axolotl Floaty','axolotl floaty');v.yzfhvz=q.is_name_any('Creeper Floaty','Creeper floaty','creeper Floaty','creeper floaty','Creeper Punching Bag','Creeper Punching bag','Creeper punching Bag','Creeper punching bag','creeper Punching Bag','creeper Punching bag','creeper punching Bag','creeper punching bag');v.vjdggl=q.is_name_any('Chick Floaty','Chick floaty','chick Floaty','chick floaty','Chicken Floaty','Chicken floaty','chicken Floaty','chicken floaty');v.hzrqgv=q.is_name_any('Squid Floaty','Squid floaty','squid Floaty','squid floaty');v.qrvusr=q.is_name_any('Turtle Floaty','Turtle floaty','turtle Floaty','turtle floaty');v.bdpemx=q.is_name_any('§s','Small Block','small block','Small block','small','Small');v.dkgqqu=q.is_name_any('§b','Block','block');v.gbaiaw=q.is_name_any('§l','Large Block','large block','Large block','large','Large','Big Block','big block','Big block','big','Big');v.ykfjec=q.is_name_any('Cheese','cheese');v.qajyuv=q.is_name_any('Rugby Ball','Rugby ball','rugby Ball','rugby ball','rugby','Rugby','American Football','American football','american Football','american football');v.xhwyuc=0;v.natixe=0;v.yngwni?{v.xhwyuc=1;v.xvbbte='lswcie';};v.edmxtm?{v.xhwyuc=2;v.xvbbte='lswcie';};v.ybdipa?{v.xhwyuc=3;v.xvbbte='lswcie';};(v.ysbudv||v.iqxqyr||v.tounsg||v.goiddj||v.tsupal||v.wjttun||v.tmkdsg||v.lteoyq||v.kojpur)?{v.xhwyuc=4;v.xvbbte='lswcie';v.spexwz=0;v.ysbudv?{v.natixe=v.rdoxao;};v.tounsg?{v.natixe=1;};v.goiddj?{v.natixe=2;};v.tsupal?{v.natixe=3;};v.wjttun?{v.natixe=4;};v.tmkdsg?{v.natixe=5;};v.lteoyq?{v.natixe=6;};v.kojpur?{v.natixe=7;};};(v.avmwac||v.qnqdje||v.vvbvfi||v.owzbbz||v.iowkzt||v.dzffmv||v.jbrwfq||v.xpoyng||v.rguyyk)?{v.xhwyuc=5;v.xvbbte='lswcie';v.spexwz=0;v.avmwac?{v.natixe=v.hbwite;};v.vvbvfi?{v.natixe=1;};v.owzbbz?{v.natixe=2;};v.iowkzt?{v.natixe=3;};v.dzffmv?{v.natixe=4;};v.jbrwfq?{v.natixe=5;};v.xpoyng?{v.natixe=6;};v.rguyyk?{v.natixe=7;};};(v.sqlmxx||v.jdtwvc||v.mhmlhq||v.jpaefx||v.mmiwfb||v.umkcbm||v.pdydhc||v.orgnpc)?{v.xhwyuc=6;v.xvbbte='lswcie';v.spexwz=0;v.sqlmxx?{v.natixe=v.zybrof;};v.mhmlhq?{v.natixe=1;};v.jpaefx?{v.natixe=2;};v.mmiwfb?{v.natixe=3;};v.umkcbm?{v.natixe=4;};v.pdydhc?{v.natixe=5;};v.orgnpc?{v.natixe=6;};};(v.qsjbzh||v.hxyrqu||v.owwdbz||v.vctxov||v.lhmcso||v.lolvtd||v.lzycfg)?{v.xhwyuc=7;v.xvbbte='lswcie';v.spexwz=0;v.qsjbzh?{v.natixe=v.qqfbna;};v.owwdbz?{v.natixe=1;};v.vctxov?{v.natixe=2;};v.lhmcso?{v.natixe=3;};v.lolvtd?{v.natixe=4;};v.lzycfg?{v.natixe=5;};};v.cqzmta?{v.xhwyuc=8;v.xvbbte='rffohc';};v.bvxpvc?{v.xhwyuc=9;v.xvbbte='lswcie';v.spexwz=0;};v.pporuh?{v.xhwyuc=10;v.xvbbte='lswcie';v.spexwz=0;};(v.nodgcr||v.irdchy||v.byxbub||v.dwqqpk||v.dyffdx)?{v.xhwyuc=11;v.spexwz=0;v.xvbbte='qziczn';v.nodgcr?{v.natixe=v.qvxbsq;};v.byxbub?{v.natixe=1;};v.dwqqpk?{v.natixe=2;};v.dyffdx?{v.natixe=3;};};v.glinis?{v.xhwyuc=12;v.xvbbte='lkfgkj';v.spexwz=0;v.ioiqtk=Math.clamp((v.ioiqtk??1)+q.delta_time,0,1);v.rnfwzq=1-v.ioiqtk;v.cbmqio=1-(v.rnfwzq*v.rnfwzq*v.rnfwzq);v.yjspsw=(4*v.ioiqtk*(1-v.ioiqtk))*24;v.kjzmhz=Math.lerp(v.ddiyxc??0,v.pqtrnw??0,v.cbmqio);v.qmmqpn=Math.lerp(v.nwjogz??0,v.wyucwo??0,v.cbmqio);};v.wmymqk?{v.xhwyuc=13;v.xvbbte='lswcie';};(v.mylaxl||v.clrnsd||v.wdckki||v.tdjmon||v.ncjcit)?{v.xhwyuc=14;v.xvbbte='lswcie';v.spexwz=0;v.mylaxl?{v.natixe=0;};v.clrnsd?{v.natixe=1;};v.wdckki?{v.natixe=2;};v.tdjmon?{v.natixe=3;};v.ncjcit?{v.natixe=4;};};v.rhillh?{v.xhwyuc=15;v.xvbbte='qziczn';};(v.cfuitp||v.nacqvx||v.dhlfap||v.bruevd||v.zrjcvw||v.mjginv)?{v.xhwyuc=16;v.xvbbte='lswcie';v.cfuitp?{v.natixe=v.wtyvtf;};v.dhlfap?{v.natixe=1;};v.bruevd?{v.natixe=2;};v.zrjcvw?{v.natixe=3;};v.mjginv?{v.natixe=4;};};v.fortov?{v.xhwyuc=17;v.xvbbte='lswcie';};v.mesfwz?{v.xhwyuc=18;v.xvbbte='lswcie';};v.mxfsnd?{v.xhwyuc=19;};v.yzfhvz?{v.xhwyuc=20;};v.vjdggl?{v.xhwyuc=21;};v.hzrqgv?{v.xhwyuc=22;};v.qrvusr?{v.xhwyuc=23;};v.dkgqqu?{v.xhwyuc=0;v.spexwz=0;v.onoiya=1;};v.bdpemx?{v.xhwyuc=0;v.spexwz=0;v.onoiya=0.5;};v.gbaiaw?{v.xhwyuc=0;v.spexwz=0;v.onoiya=2;};v.ykfjec?{v.xhwyuc=24;v.xvbbte='qjcrqu';};v.qajyuv?{v.xhwyuc=25;v.xvbbte='qjcrqu';};v.cdrzno?{v.xhwyuc=0;v.natixe=0;v.xvbbte='default';v.spexwz=1;};",
+			"t.buh=0;v.njvqlj?{t.qxh=3;t.ouf=3;t.x=q.position(0)-t.qxh/2+0.5;t.z=q.position(2)-t.qxh/2+0.5;t.y=q.position(1)-1.9;t.i=0;loop(t.qxh*t.qxh*t.ouf,{t.usv=t.x+Math.mod(t.i,t.qxh);t.fcr=t.z+Math.mod(Math.floor(t.i/t.qxh),t.qxh);t.tnj=t.y+Math.floor(t.i/(t.qxh*t.qxh));q.block_has_any_tag(t.usv,t.tnj,t.fcr,'trapdoors')?{t.buh=1;break;};t.i=t.i+1;});};v.wlpmcj=t.buh;",
+			"!q.is_riding?{t.x=q.position(0);t.y=q.position(1);t.z=q.position(2);v.iaxjoy=v.toclgf;v.eeydlb=v.zwgbad;v.iynnie=v.qkrfdi;t.t=q.life_time;t.x!=v.toclgf||t.y!=v.zwgbad||t.z!=v.qkrfdi?{t.ntr=t.t-v.abjhra;v.abjhra=t.t;t.swd=t.x-v.toclgf;t.isp=t.y-v.zwgbad;t.eao=t.z-v.qkrfdi;v.lzwweo=Math.sqrt(t.swd*t.swd+t.eao*t.eao)/t.ntr;v.fdaxbb=Math.sqrt(t.isp*t.isp)/t.ntr;v.xiemzw=t.swd/t.ntr;v.xjryuc=t.isp/t.ntr;v.rupatf=t.eao/t.ntr;v.toclgf=t.x;v.zwgbad=t.y;v.qkrfdi=t.z;v.txvzcq=0;}:{v.txvzcq=v.txvzcq+q.delta_time;v.txvzcq>0.05?{v.lzwweo=v.lzwweo*(1-12*q.delta_time);v.fdaxbb=v.fdaxbb*(1-12*q.delta_time);};};v.nyjdkl=Math.lerp(v.nyjdkl,v.xiemzw,1-Math.exp(-14*q.delta_time));v.ulloou=Math.lerp(v.ulloou,v.xjryuc,1-Math.exp(-10*q.delta_time));v.wwtybl=Math.lerp(v.wwtybl,v.rupatf,1-Math.exp(-14*q.delta_time));q.is_on_ground||(v.lzwweo>v.gtcjji&&!q.is_on_ground)?{v.gtcjji=v.lzwweo;}:{v.gtcjji=Math.max(v.gtcjji-q.delta_time*Math.pow(v.gtcjji,1.2),0);};(q.is_leashed&&q.is_on_ground)||!v.njvqlj?{v.ufojdf=Math.atan2(-v.xiemzw,v.rupatf);v.hyspps=v.ufojdf-v.tsejzc;v.gekige=v.hyspps+(v.hyspps<-180?360:v.hyspps>180?-360);v.nthjcy=v.nthjcy+v.gekige;v.tsejzc=v.ufojdf;v.lzwweo>0.1?{v.hvdbua=Math.lerp(v.hvdbua,v.nthjcy,1-Math.exp(-4*q.delta_time));};}:{v.lzwweo>0.1||!q.is_on_ground?{v.hvdbua=v.hvdbua+q.delta_time*Math.clamp(v.ffelyj*v.gtcjji,-0.75,0.75)*-800;v.hvdbua=Math.mod(v.hvdbua+180,360)-180;v.nthjcy=Math.mod(v.nthjcy+180,360)-180;};};v.njvqlj?{v.rdbnlr=Math.clamp((v.ulloou-v.xjryuc)/16,-0.5,0.5);v.yhbarh=Math.clamp(Math.abs(v.ulloou)/16,-0.5,0.5);v.oufzta=Math.lerp(v.oufzta,v.ulloou<0?v.rdbnlr-v.yhbarh:(v.rdbnlr-v.yhbarh)/2,1-Math.exp(-14*q.delta_time));}:{v.rdbnlr=Math.clamp((v.ulloou-v.xjryuc)/8,-0.5,0.5);v.yhbarh=Math.clamp(Math.abs(v.ulloou)/8,-0.5,0.5);v.oufzta=Math.lerp(v.oufzta,v.ulloou<0?v.rdbnlr-v.yhbarh:(v.rdbnlr-v.yhbarh)/2,1-Math.exp(-14*q.delta_time));};v.oeepai=Math.lerp(v.oeepai,Math.min(0,v.xjryuc)*1.2,1-Math.exp(-3*q.delta_time));v.njvqlj?{v.xjyjuh=Math.lerp(v.xjyjuh,-Math.clamp(v.xjryuc*v.rupatf,-45,45),1-Math.exp(-8*q.delta_time));v.axvhci=Math.lerp(v.axvhci,-Math.clamp(v.xjryuc*v.xiemzw,-45,45),1-Math.exp(-8*q.delta_time));}:{v.xjyjuh=Math.lerp(v.xjyjuh,Math.clamp(v.xjryuc*v.rupatf*2,-45,45),1-Math.exp(-8*q.delta_time));v.axvhci=Math.lerp(v.axvhci,Math.clamp(v.xjryuc*v.xiemzw*2,-45,45),1-Math.exp(-8*q.delta_time));};};",
+			"t.clj=Math.atan2(-v.nyjdkl,v.wwtybl);v.dcoegr=Math.mod((Math.lerprotate(v.dcoegr,t.clj,1-Math.exp(-8*q.delta_time))+360),360);v.aonxdy=v.aonxdy+v.lzwweo*q.delta_time*0.25;v.lsssqy=Math.mod((v.aonxdy*360),360);",
+			"v.rjwqox=v.tsrqrd;v.tsrqrd=0;"
+		],
+		"animate": [
+			"jwxkxb",
+			"xvuape",
+			"louqtt",
+			"hzsxsn",
+			"kgklcq",
+			{
+				"mdlfik": "v.rwawnd&&!v.apxkfe&&!v.cdrzno"
+			},
+			{
+				"guawtz": "v.njvqlj&&v.apxkfe"
+			},
+			{
+				"oiukgn": "!q.is_riding&&!v.apxkfe"
+			},
+			{
+				"mqelhr": "!v.glinis||!v.apxkfe"
+			},
+			{
+				"xyorsn": "!v.apxkfe"
+			},
+			{
+				"bidjar": "!v.apxkfe"
+			},
+			{
+				"niogoh": "!v.glinis||!v.apxkfe"
+			},
+			{
+				"hzhsag": "v.xhwyuc==0"
+			},
+			{
+				"alfvvc": "v.xhwyuc==0"
+			},
+			{
+				"cimvga": "!v.apxkfe"
+			},
+			{
+				"qccpbw": "!v.apxkfe"
+			},
+			{
+				"glxloh": "!v.apxkfe"
+			},
+			"bbcxmc",
+			{
+				"baby_transform": "v.cdrzno"
+			},
+			{
+				"etkqrt": "!v.xhwyuc"
+			},
+			{
+				"anzvcs": "!v.xhwyuc"
+			},
+			{
+				"zvsssg": "!v.xhwyuc"
+			},
+			{
+				"kyoysp": "!v.xhwyuc"
+			}
+		],
+		"scale": "v.onoiya"
+	},
+	"render_controllers": [
+		{
+			"id": "controller.render.oreville_ans.qwifrb",
+			"condition": null,
+			"geometry": "Geometry.default",
+			"textures": [
+				"Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.default"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					false
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.rvmpbl",
+			"condition": "v.nxabts!=5||v.cdrzno||v.xhwyuc!=0",
+			"arrays": {
+				"array.qijgvy": [
+					"geometry.default",
+					"geometry.rwgrow",
+					"geometry.nfpdcd",
+					"geometry.rwgrow",
+					"geometry.qidzco",
+					"geometry.jnqabu",
+					"geometry.inimgf",
+					"geometry.rwgrow",
+					"geometry.ophsjz",
+					"geometry.ztkxmi",
+					"geometry.rwgrow",
+					"geometry.utxigt",
+					"geometry.aopivf",
+					"geometry.ojclfb",
+					"geometry.rwgrow",
+					"geometry.niftqw",
+					"geometry.rwgrow",
+					"geometry.rwgrow",
+					"geometry.rwgrow",
+					"geometry.nvrths",
+					"geometry.rxnioo",
+					"geometry.ztssba",
+					"geometry.esiwhi",
+					"geometry.hzfxfb",
+					"geometry.hseesb",
+					"geometry.qwlxrz"
+				],
+				"array.epvbkc": [
+					"geometry.default",
+					"geometry.obxnso",
+					"geometry.nmhfxf",
+					"geometry.rbjlja",
+					"geometry.peutrt",
+					"geometry.avldpk",
+					"geometry.hzdhgn",
+					"geometry.gfmtne",
+					"geometry.pjnosr",
+					"geometry.rvymgi",
+					"geometry.rvymgi",
+					"geometry.aovkyt",
+					"geometry.qdyjnf"
+				],
+				"array.kfdcwo": [
+					"texture.itknwk",
+					"texture.ifrygo",
+					"texture.wvvbvz",
+					"texture.rodphu"
+				],
+				"array.vcvrkc": [
+					"texture.opsebb",
+					"texture.ellmcc",
+					"texture.qscjxq",
+					"texture.ahumrc",
+					"texture.pupgrl",
+					"texture.kortiw"
+				],
+				"array.ncyhyp": [
+					"texture.default",
+					"texture.obxnso",
+					"texture.nmhfxf",
+					"texture.rbjlja",
+					"texture.peutrt",
+					"texture.avldpk",
+					"texture.hzdhgn",
+					"texture.wmkjvd",
+					"texture.pjnosr",
+					"texture.rvymgi",
+					"texture.kwsppy",
+					"texture.aovkyt",
+					"texture.qdyjnf"
+				],
+				"array.iaronq": [
+					"texture.kvcuwr",
+					"texture.iuonqg",
+					"texture.bkwryt",
+					"texture.erxguk",
+					"texture.sysysu",
+					"texture.kesrih",
+					"texture.vlzcbl",
+					"texture.pcybxl"
+				],
+				"array.arwaen": [
+					"texture.jzgnoc",
+					"texture.tovhxk",
+					"texture.jxytyy",
+					"texture.rjxxjp",
+					"texture.cwcuez"
+				],
+				"array.hmnxzl": [
+					"texture.klbbzr",
+					"texture.kvcuwr",
+					"texture.iuonqg",
+					"texture.erxguk",
+					"texture.izuovg",
+					"texture.suiwyc",
+					"texture.kesrih",
+					"texture.pcybxl"
+				],
+				"array.gsdahk": [
+					"texture.nqixzc",
+					"texture.nublif",
+					"texture.cqebly",
+					"texture.oguudb",
+					"texture.wddtle"
+				],
+				"array.yqywfi": [
+					"texture.klinmf",
+					"texture.vlzcbl",
+					"texture.ljhvfv",
+					"texture.qsnxay",
+					"texture.lrwxyr",
+					"texture.ufbgao",
+					"texture.eanxsm"
+				],
+				"array.xfnpvg": [
+					"texture.default",
+					"texture.xskjgy",
+					"texture.nfpdcd",
+					"texture.mhkggg",
+					"texture.default",
+					"texture.default",
+					"texture.default",
+					"texture.default",
+					"texture.ophsjz",
+					"texture.ztkxmi",
+					"texture.uidjzs",
+					"texture.default",
+					"texture.aopivf",
+					"texture.ojclfb",
+					"texture.jzgnoc",
+					"texture.niftqw",
+					"texture.default",
+					"texture.matcia",
+					"texture.nmxqsn",
+					"texture.nvrths",
+					"texture.rxnioo",
+					"texture.ztssba",
+					"texture.esiwhi",
+					"texture.hzfxfb",
+					"texture.hseesb",
+					"texture.qwlxrz"
+				]
+			},
+			"geometry": "q.max_health==4||v.cdrzno?{return Geometry.brjbwz;}:{v.xhwyuc!=0?{return Array.qijgvy[v.xhwyuc];}:{return Array.epvbkc[v.nxabts];};};",
+			"textures": [
+				"q.max_health==4||v.cdrzno?{return Texture.brjbwz;}:{v.xhwyuc==4?{return Array.iaronq[v.natixe];};v.xhwyuc==5?{return Array.hmnxzl[v.natixe];};v.xhwyuc==6?{return Array.yqywfi[v.natixe];};v.xhwyuc==7?{return Array.vcvrkc[v.natixe];};v.xhwyuc==11?{return Array.kfdcwo[v.natixe];};v.xhwyuc==14?{return Array.arwaen[v.natixe];};v.xhwyuc==16?{return Array.gsdahk[v.natixe];};v.xhwyuc!=0?{return Array.xfnpvg[v.xhwyuc];};return Array.ncyhyp[v.nxabts];};"
+			],
+			"materials": [
+				[
+					"squid*",
+					"Material.ryqsqj"
+				],
+				[
+					"turtle*",
+					"Material.qpzxkv"
+				],
+				[
+					"*",
+					"Material.default"
+				],
+				[
+					"outer",
+					"Material.outer"
+				],
+				[
+					"eye*",
+					"Material.outer"
+				],
+				[
+					"mouth*",
+					"Material.outer"
+				],
+				[
+					"*glow",
+					"Material.wlqxdl"
+				],
+				[
+					"grass",
+					"Material.biuohp"
+				],
+				[
+					"honey",
+					"Material.biuohp"
+				],
+				[
+					"ice",
+					"Material.outer"
+				],
+				[
+					"icelayer",
+					"Material.default"
+				],
+				[
+					"pumpkin",
+					"Material.biuohp"
+				],
+				[
+					"snow",
+					"Material.biuohp"
+				],
+				[
+					"sand",
+					"Material.biuohp"
+				],
+				[
+					"sandpebbles",
+					"Material.sxepuo"
+				],
+				[
+					"inneroutline",
+					"Material.tcciio"
+				],
+				[
+					"inner",
+					"Material.biuohp"
+				],
+				[
+					"sulfurcubebomb",
+					"Material.biuohp"
+				],
+				[
+					"number",
+					"Material.biuohp"
+				],
+				[
+					"*chick",
+					"Material.biuohp"
+				],
+				[
+					"*creeper",
+					"Material.biuohp"
+				],
+				[
+					"*squid",
+					"Material.biuohp"
+				],
+				[
+					"*axolotl",
+					"Material.biuohp"
+				],
+				[
+					"*turtle",
+					"Material.biuohp"
+				],
+				[
+					"fuse*",
+					"Material.wlqxdl"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"!v.bywaby"
+				],
+				[
+					"inner*",
+					"v.rwawnd"
+				],
+				[
+					"eye*",
+					false
+				],
+				[
+					"mouth*",
+					false
+				],
+				[
+					"fuse1",
+					"v.setyuj<10"
+				],
+				[
+					"fuse2",
+					"v.setyuj<9"
+				],
+				[
+					"fuse3",
+					"v.setyuj<8"
+				],
+				[
+					"fuse4",
+					"v.setyuj<7"
+				],
+				[
+					"fuse5",
+					"v.setyuj<6"
+				],
+				[
+					"fuse6",
+					"v.setyuj<5"
+				],
+				[
+					"fuse7",
+					"v.setyuj<4"
+				],
+				[
+					"fuse8",
+					"v.setyuj<3"
+				],
+				[
+					"fuse9",
+					"v.setyuj<2"
+				],
+				[
+					"fuse10",
+					"v.setyuj<1"
+				]
+			],
+			"overlay_color": {
+				"r": 1,
+				"g": "v.xhwyuc==0?1:1-v.zjtahu*2",
+				"b": "v.xhwyuc==0?1",
+				"a": "v.zjtahu"
+			},
+			"is_hurt_color": {
+				"r": "v.tsrqrd=v.njvqlj?0:1;return 1;",
+				"g": 0,
+				"b": 0,
+				"a": "v.njvqlj?0:0.4"
+			},
+			"light_color_multiplier": "1+v.zjtahu"
+		},
+		{
+			"id": "controller.render.oreville_ans.zlziyz",
+			"condition": "v.nxabts==5&&v.xhwyuc==0&&!v.cdrzno",
+			"geometry": "Geometry.avldpk",
+			"textures": [
+				"Texture.avldpk"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.default"
+				],
+				[
+					"outer",
+					"Material.outer"
+				],
+				[
+					"eye*",
+					"Material.outer"
+				],
+				[
+					"mouth*",
+					"Material.outer"
+				],
+				[
+					"*glow",
+					"Material.wlqxdl"
+				],
+				[
+					"inneroutline",
+					"Material.tcciio"
+				],
+				[
+					"inner",
+					"Material.biuohp"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"!v.bywaby"
+				],
+				[
+					"inner*",
+					"v.rwawnd"
+				],
+				[
+					"eye*",
+					false
+				],
+				[
+					"mouth*",
+					false
+				],
+				[
+					"fuse1",
+					"v.setyuj<10"
+				],
+				[
+					"fuse2",
+					"v.setyuj<9"
+				],
+				[
+					"fuse3",
+					"v.setyuj<8"
+				],
+				[
+					"fuse4",
+					"v.setyuj<7"
+				],
+				[
+					"fuse5",
+					"v.setyuj<6"
+				],
+				[
+					"fuse6",
+					"v.setyuj<5"
+				],
+				[
+					"fuse7",
+					"v.setyuj<4"
+				],
+				[
+					"fuse8",
+					"v.setyuj<3"
+				],
+				[
+					"fuse9",
+					"v.setyuj<2"
+				],
+				[
+					"fuse10",
+					"v.setyuj<1"
+				]
+			],
+			"is_hurt_color": {
+				"r": "v.tsrqrd=v.njvqlj?0:1;return 1;",
+				"g": 0,
+				"b": 0,
+				"a": "v.njvqlj?0:0.4"
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.hkdgej",
+			"condition": "!v.xhwyuc&&(v.nxabts!=5||v.cdrzno)",
+			"arrays": {
+				"array.epvbkc": [
+					"geometry.yewgpx",
+					"geometry.caaolu",
+					"geometry.enubxm",
+					"geometry.tfzgci"
+				],
+				"array.ncyhyp": [
+					"texture.default",
+					"texture.obxnso",
+					"texture.nmhfxf",
+					"texture.rbjlja",
+					"texture.peutrt",
+					"texture.avldpk",
+					"texture.hzdhgn",
+					"texture.wmkjvd",
+					"texture.pjnosr",
+					"texture.rvymgi",
+					"texture.kwsppy",
+					"texture.aovkyt",
+					"texture.qdyjnf"
+				]
+			},
+			"geometry": "q.max_health==4||v.cdrzno?{return Geometry.dbxdzp;}:{t.huh=v.nxabts;return Array.epvbkc[q.in_range(t.huh,6,8)?t.huh-5:0];};",
+			"textures": [
+				"q.max_health==4||v.cdrzno?{return Texture.brjbwz;}:{return Array.ncyhyp[v.nxabts];};"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.qwhjrf"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					false
+				],
+				[
+					"lefteye",
+					"!v.bywaby"
+				]
+			],
+			"overlay_color": {
+				"r": 1,
+				"g": "v.xhwyuc==0?1:1-v.zjtahu*2",
+				"b": "v.xhwyuc==0?1",
+				"a": "v.zjtahu"
+			},
+			"is_hurt_color": {
+				"r": "v.tsrqrd=v.njvqlj?0:1;return 1;",
+				"g": 0,
+				"b": 0,
+				"a": "v.njvqlj?0:0.4"
+			},
+			"uv_anim": {
+				"offset": [
+					"v.qkjcih",
+					"v.rmapse"
+				],
+				"scale": [
+					"v.jbnpua",
+					"v.esnwcf"
+				]
+			},
+			"light_color_multiplier": "1+v.zjtahu"
+		},
+		{
+			"id": "controller.render.oreville_ans.hymklr",
+			"condition": "!v.xhwyuc&&(v.nxabts!=5||v.cdrzno)",
+			"arrays": {
+				"array.epvbkc": [
+					"geometry.yewgpx",
+					"geometry.caaolu",
+					"geometry.enubxm",
+					"geometry.tfzgci"
+				],
+				"array.ncyhyp": [
+					"texture.default",
+					"texture.obxnso",
+					"texture.nmhfxf",
+					"texture.rbjlja",
+					"texture.peutrt",
+					"texture.avldpk",
+					"texture.hzdhgn",
+					"texture.wmkjvd",
+					"texture.pjnosr",
+					"texture.rvymgi",
+					"texture.kwsppy",
+					"texture.aovkyt",
+					"texture.qdyjnf"
+				]
+			},
+			"geometry": "q.max_health==4||v.cdrzno?{return Geometry.dbxdzp;}:{t.huh=v.nxabts;return Array.epvbkc[q.in_range(t.huh,6,8)?t.huh-5:0];};",
+			"textures": [
+				"q.max_health==4||v.cdrzno?{return Texture.brjbwz;}:{return Array.ncyhyp[v.nxabts];};"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.qwhjrf"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					false
+				],
+				[
+					"righteye",
+					"!v.bywaby"
+				]
+			],
+			"overlay_color": {
+				"r": 1,
+				"g": "v.xhwyuc==0?1:1-v.zjtahu*2",
+				"b": "v.xhwyuc==0?1",
+				"a": "v.zjtahu"
+			},
+			"is_hurt_color": {
+				"r": "v.tsrqrd=v.njvqlj?0:1;return 1;",
+				"g": 0,
+				"b": 0,
+				"a": "v.njvqlj?0:0.4"
+			},
+			"uv_anim": {
+				"offset": [
+					"v.uznkvn",
+					"v.uyxotg"
+				],
+				"scale": [
+					"v.txwpsk",
+					"v.bvpxbu"
+				]
+			},
+			"light_color_multiplier": "1+v.zjtahu"
+		},
+		{
+			"id": "controller.render.oreville_ans.zoeguu",
+			"condition": "!v.xhwyuc&&(v.nxabts!=5||v.cdrzno)",
+			"arrays": {
+				"array.epvbkc": [
+					"geometry.yewgpx",
+					"geometry.caaolu",
+					"geometry.enubxm",
+					"geometry.tfzgci"
+				],
+				"array.ncyhyp": [
+					"texture.default",
+					"texture.obxnso",
+					"texture.nmhfxf",
+					"texture.rbjlja",
+					"texture.peutrt",
+					"texture.avldpk",
+					"texture.hzdhgn",
+					"texture.wmkjvd",
+					"texture.pjnosr",
+					"texture.rvymgi",
+					"texture.kwsppy",
+					"texture.aovkyt",
+					"texture.qdyjnf"
+				]
+			},
+			"geometry": "q.max_health==4||v.cdrzno?{return Geometry.dbxdzp;}:{t.huh=v.nxabts;return Array.epvbkc[q.in_range(t.huh,6,8)?t.huh-5:0];};",
+			"textures": [
+				"q.max_health==4||v.cdrzno?{return Texture.brjbwz;}:{return Array.ncyhyp[v.nxabts];};"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.qwhjrf"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					false
+				],
+				[
+					"mouth",
+					"!v.bywaby"
+				]
+			],
+			"overlay_color": {
+				"r": 1,
+				"g": "v.xhwyuc==0?1:1-v.zjtahu*2",
+				"b": "v.xhwyuc==0?1",
+				"a": "v.zjtahu"
+			},
+			"is_hurt_color": {
+				"r": "v.tsrqrd=v.njvqlj?0:1;return 1;",
+				"g": 0,
+				"b": 0,
+				"a": "v.njvqlj?0:0.4"
+			},
+			"uv_anim": {
+				"offset": [
+					"v.tuneoy",
+					"v.tojdzt"
+				],
+				"scale": [
+					"v.vtkhmm",
+					"v.nlpqjg"
+				]
+			},
+			"light_color_multiplier": "1+v.zjtahu"
+		},
+		{
+			"id": "controller.render.oreville_ans.ytjwwu",
+			"condition": "!v.xhwyuc&&q.any(v.nxabts,5,8)&&!v.cdrzno",
+			"arrays": {
+				"array.epvbkc": [
+					"geometry.yewgpx",
+					"geometry.caaolu",
+					"geometry.enubxm",
+					"geometry.tfzgci"
+				],
+				"array.ncyhyp": [
+					"texture.default",
+					"texture.obxnso",
+					"texture.nmhfxf",
+					"texture.rbjlja",
+					"texture.peutrt",
+					"texture.avldpk",
+					"texture.hzdhgn",
+					"texture.wmkjvd",
+					"texture.pjnosr",
+					"texture.rvymgi",
+					"texture.kwsppy",
+					"texture.aovkyt",
+					"texture.qdyjnf"
+				]
+			},
+			"geometry": "q.max_health==4||v.cdrzno?{return Geometry.dbxdzp;}:{t.huh=v.nxabts;return Array.epvbkc[q.in_range(t.huh,6,8)?t.huh-5:0];};",
+			"textures": [
+				"q.max_health==4||v.cdrzno?{return Texture.brjbwz;}:{return Array.ncyhyp[v.nxabts];};"
+			],
+			"materials": [
+				[
+					"*",
+					"v.nxabts==8?Material.wlqxdl:Material.qwhjrf"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					false
+				],
+				[
+					"lefteye",
+					"!v.bywaby"
+				]
+			],
+			"overlay_color": {
+				"r": 1,
+				"g": "v.xhwyuc==0?1:1-v.zjtahu*2",
+				"b": "v.xhwyuc==0?1",
+				"a": "v.zjtahu"
+			},
+			"is_hurt_color": {
+				"r": "v.tsrqrd=v.njvqlj?0:1;return 1;",
+				"g": 0,
+				"b": 0,
+				"a": "v.njvqlj?0:0.4"
+			},
+			"uv_anim": {
+				"offset": [
+					"v.qkjcih+(v.nxabts==8?72/184:0)",
+					"v.rmapse"
+				],
+				"scale": [
+					"v.jbnpua",
+					"v.esnwcf"
+				]
+			},
+			"light_color_multiplier": "1+v.zjtahu",
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.zoofdn",
+			"condition": "!v.xhwyuc&&q.any(v.nxabts,5,8)&&!v.cdrzno",
+			"arrays": {
+				"array.epvbkc": [
+					"geometry.yewgpx",
+					"geometry.caaolu",
+					"geometry.enubxm",
+					"geometry.tfzgci"
+				],
+				"array.ncyhyp": [
+					"texture.default",
+					"texture.obxnso",
+					"texture.nmhfxf",
+					"texture.rbjlja",
+					"texture.peutrt",
+					"texture.avldpk",
+					"texture.hzdhgn",
+					"texture.wmkjvd",
+					"texture.pjnosr",
+					"texture.rvymgi",
+					"texture.kwsppy",
+					"texture.aovkyt",
+					"texture.qdyjnf"
+				]
+			},
+			"geometry": "q.max_health==4||v.cdrzno?{return Geometry.dbxdzp;}:{t.huh=v.nxabts;return Array.epvbkc[q.in_range(t.huh,6,8)?t.huh-5:0];};",
+			"textures": [
+				"q.max_health==4||v.cdrzno?{return Texture.brjbwz;}:{return Array.ncyhyp[v.nxabts];};"
+			],
+			"materials": [
+				[
+					"*",
+					"v.nxabts==8?Material.wlqxdl:Material.qwhjrf"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					false
+				],
+				[
+					"righteye",
+					"!v.bywaby"
+				]
+			],
+			"overlay_color": {
+				"r": 1,
+				"g": "v.xhwyuc==0?1:1-v.zjtahu*2",
+				"b": "v.xhwyuc==0?1",
+				"a": "v.zjtahu"
+			},
+			"is_hurt_color": {
+				"r": "v.tsrqrd=v.njvqlj?0:1;return 1;",
+				"g": 0,
+				"b": 0,
+				"a": "v.njvqlj?0:0.4"
+			},
+			"uv_anim": {
+				"offset": [
+					"v.uznkvn+(v.nxabts==8?72/184:0)",
+					"v.uyxotg"
+				],
+				"scale": [
+					"v.txwpsk",
+					"v.bvpxbu"
+				]
+			},
+			"light_color_multiplier": "1+v.zjtahu",
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.mehdiy",
+			"condition": "!v.xhwyuc&&q.any(v.nxabts,5,8)&&!v.cdrzno",
+			"arrays": {
+				"array.epvbkc": [
+					"geometry.yewgpx",
+					"geometry.caaolu",
+					"geometry.enubxm",
+					"geometry.tfzgci"
+				],
+				"array.ncyhyp": [
+					"texture.default",
+					"texture.obxnso",
+					"texture.nmhfxf",
+					"texture.rbjlja",
+					"texture.peutrt",
+					"texture.avldpk",
+					"texture.hzdhgn",
+					"texture.wmkjvd",
+					"texture.pjnosr",
+					"texture.rvymgi",
+					"texture.kwsppy",
+					"texture.aovkyt",
+					"texture.qdyjnf"
+				]
+			},
+			"geometry": "q.max_health==4||v.cdrzno?{return Geometry.dbxdzp;}:{t.huh=v.nxabts;return Array.epvbkc[q.in_range(t.huh,6,8)?t.huh-5:0];};",
+			"textures": [
+				"q.max_health==4||v.cdrzno?{return Texture.brjbwz;}:{return Array.ncyhyp[v.nxabts];};"
+			],
+			"materials": [
+				[
+					"*",
+					"v.nxabts==8?Material.wlqxdl:Material.qwhjrf"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					false
+				],
+				[
+					"mouth",
+					"!v.bywaby"
+				]
+			],
+			"overlay_color": {
+				"r": 1,
+				"g": "v.xhwyuc==0?1:1-v.zjtahu*2",
+				"b": "v.xhwyuc==0?1",
+				"a": "v.zjtahu"
+			},
+			"is_hurt_color": {
+				"r": "v.tsrqrd=v.njvqlj?0:1;return 1;",
+				"g": 0,
+				"b": 0,
+				"a": "v.njvqlj?0:0.4"
+			},
+			"uv_anim": {
+				"offset": [
+					"v.tuneoy+(v.nxabts==8?72/184:0)",
+					"v.tojdzt"
+				],
+				"scale": [
+					"v.vtkhmm",
+					"v.nlpqjg"
+				]
+			},
+			"light_color_multiplier": "1+v.zjtahu",
+			"ignore_lighting": true
+		}
+	],
+	"sound_effects": {
+		"zgynvb": "oreville_ans:zgynvb",
+		"ylnbre": "oreville_ans:ylnbre",
+		"dhucln": "oreville_ans:dhucln",
+		"lbmuce": "oreville_ans:lbmuce"
+	},
+	"particle_effects": {
+		"hwuwvi": "oreville_ans:fmpdzx",
+		"djnihu": "oreville_ans:ndvctz",
+		"cbcewo": "oreville_ans:rpccbh",
+		"drmkva": "oreville_ans:drmkva",
+		"ygvjwg": "oreville_ans:ygvjwg",
+		"uwkkob": "oreville_ans:uwkkob",
+		"bdjnny": "oreville_ans:bdjnny",
+		"qgnuha": "oreville_ans:qgnuha",
+		"fwrago": "oreville_ans:fwrago",
+		"seoxyy": "oreville_ans:seoxyy",
+		"quigrb": "oreville_ans:quigrb",
+		"bidpwb": "oreville_ans:bidpwb",
+		"iyigez": "oreville_ans:iyigez",
+		"gdwzgo": "oreville_ans:gdwzgo",
+		"whwfwi": "oreville_ans:whwfwi"
+	}
+}

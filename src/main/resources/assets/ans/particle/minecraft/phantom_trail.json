@@ -1,0 +1,91 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "minecraft:phantom_trail",
+ "source": {
+  "layer": "root",
+  "file": "particles/eey.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_add",
+ "render": "add",
+ "bedrock_texture": "textures/particle/cloud",
+ "texture": "ans:textures/particle_fx/particle/cloud.png",
+ "texture_size": [
+  196,
+  196
+ ],
+ "curves": {
+  "variable.uyupem": {
+   "type": "linear",
+   "input": "v.particle_age",
+   "horizontal_range": "v.particle_lifetime",
+   "nodes": [
+    0.5,
+    1.1,
+    1.18,
+    1.05,
+    0.9,
+    0.75,
+    0.6,
+    0.45,
+    0.35,
+    0.3,
+    0.3
+   ]
+  }
+ },
+ "components": {
+  "minecraft:emitter_rate_steady": {
+   "spawn_rate": 24,
+   "max_particles": 26
+  },
+  "minecraft:emitter_lifetime_once": {
+   "active_time": 1.5
+  },
+  "minecraft:emitter_shape_point": {
+   "direction": [
+    0,
+    0,
+    -1
+   ]
+  },
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": 0.82
+  },
+  "minecraft:particle_initial_spin": {
+   "rotation": "Math.random(0,359)"
+  },
+  "minecraft:particle_initial_speed": 2,
+  "minecraft:particle_motion_dynamic": {},
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    "0.26*v.uyupem",
+    "0.26*v.uyupem"
+   ],
+   "facing_camera_mode": "lookat_xyz",
+   "uv": {
+    "texture_width": 32,
+    "texture_height": 32,
+    "uv": [
+     0,
+     0
+    ],
+    "uv_size": [
+     32,
+     32
+    ]
+   }
+  },
+  "minecraft:particle_appearance_tinting": {
+   "color": {
+    "interpolant": "v.particle_age/v.particle_lifetime",
+    "gradient": {
+     "0.0": "#9446FF2D",
+     "0.3": "#47008F0B",
+     "1.0": "#00003314"
+    }
+   }
+  }
+ }
+}

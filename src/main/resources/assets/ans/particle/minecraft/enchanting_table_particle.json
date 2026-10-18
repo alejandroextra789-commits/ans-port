@@ -1,0 +1,75 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "minecraft:enchanting_table_particle",
+ "source": {
+  "layer": "root",
+  "file": "particles/epv.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_blend",
+ "render": "blend",
+ "bedrock_texture": "textures/particle/galactic_alphabet",
+ "texture": "ans:textures/particle_fx/particle/galactic_alphabet.png",
+ "texture_size": [
+  120,
+  120
+ ],
+ "curves": {
+  "variable.scale": {
+   "type": "linear",
+   "input": "v.particle_age",
+   "horizontal_range": "v.particle_lifetime",
+   "nodes": [
+    0,
+    0.75,
+    0
+   ]
+  }
+ },
+ "components": {
+  "minecraft:emitter_rate_instant": {
+   "num_particles": 2
+  },
+  "minecraft:emitter_lifetime_once": {},
+  "minecraft:emitter_shape_point": {},
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": "Math.random(0.5,2.5)"
+  },
+  "minecraft:particle_motion_parametric": {
+   "relative_position": [
+    "v.pos=1-(v.particle_age/v.particle_lifetime);return v.direction.x*v.pos;",
+    "v.direction.y*v.pos-Math.pow((1-v.pos),3)*1.2",
+    "v.direction.z*v.pos"
+   ],
+   "rotation": "Math.lerp(Math.sin(v.particle_age*1280)*30,0,Math.min(1,v.particle_age))"
+  },
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    "Math.min(v.scale,0.15)",
+    "Math.min(v.scale,0.15)"
+   ],
+   "facing_camera_mode": "lookat_xyz",
+   "uv": {
+    "texture_width": 120,
+    "texture_height": 120,
+    "uv": [
+     "Math.round(v.particle_random_1*4)*24",
+     "Math.round(v.particle_random_2*4)*24"
+    ],
+    "uv_size": [
+     24,
+     24
+    ]
+   }
+  },
+  "minecraft:particle_appearance_tinting": {
+   "color": [
+    1,
+    1,
+    1,
+    "Math.min(1,v.particle_age*1.25)"
+   ]
+  }
+ }
+}

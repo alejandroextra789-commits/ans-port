@@ -1,0 +1,45 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "oreville_ans:paljdo",
+ "source": {
+  "layer": "root",
+  "file": "particles/eiz.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_opaque",
+ "render": "opaque",
+ "bedrock_texture": "textures/particle/splash_mid",
+ "texture": "ans:textures/particle_fx/particle/splash_mid.png",
+ "texture_size": [
+  120,
+  12
+ ],
+ "components": {
+  "minecraft:emitter_rate_instant": {
+   "num_particles": 0
+  },
+  "minecraft:emitter_lifetime_once": {
+   "active_time": 0
+  },
+  "minecraft:emitter_lifetime_events": {
+   "creation_event": "vvepkv"
+  }
+ },
+ "events": {
+  "vvepkv": {
+   "sequence": [
+    {
+     "expression": "t.yfd=q.vertical_speed;"
+    },
+    {
+     "particle_effect": {
+      "effect": "oreville_ans:zjohdw",
+      "type": "emitter",
+      "pre_effect_expression": "v.fdaxbb=t.yfd;"
+     }
+    }
+   ]
+  }
+ }
+}

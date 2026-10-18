@@ -1,0 +1,82 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.arrow_jidivw",
+				"texture_width": 13,
+				"texture_height": 13,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [
+					0,
+					0.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "arrow",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "glow",
+					"parent": "arrow",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-12,
+								-12,
+								-5.5
+							],
+							"size": [
+								24,
+								24,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										64
+									],
+									"uv_size": [
+										64,
+										-64
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

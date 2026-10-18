@@ -1,0 +1,309 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.chicken_cooked",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [
+					0,
+					0.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "root_leftleg",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "leftleg",
+					"parent": "root_leftleg",
+					"pivot": [
+						1,
+						2.5,
+						0
+					]
+				},
+				{
+					"name": "leftfoot",
+					"parent": "leftleg",
+					"pivot": [
+						1,
+						0.5,
+						-0.125
+					]
+				},
+				{
+					"name": "root_rightleg",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "rightleg",
+					"parent": "root_rightleg",
+					"pivot": [
+						0,
+						2.5,
+						0.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-0.9,
+								-0.4,
+								-1
+							],
+							"size": [
+								1.8,
+								4.8,
+								2
+							],
+							"inflate": -0.4,
+							"uv": {
+								"north": {
+									"uv": [
+										4,
+										0
+									],
+									"uv_size": [
+										-1,
+										4
+									]
+								},
+								"east": {
+									"uv": [
+										4,
+										0
+									],
+									"uv_size": [
+										-2,
+										4
+									]
+								},
+								"south": {
+									"uv": [
+										3,
+										0
+									],
+									"uv_size": [
+										-1,
+										4
+									]
+								},
+								"west": {
+									"uv": [
+										4,
+										0
+									],
+									"uv_size": [
+										-2,
+										4
+									]
+								},
+								"up": {
+									"uv": [
+										4,
+										0
+									],
+									"uv_size": [
+										-2,
+										1
+									]
+								},
+								"down": {
+									"uv": [
+										4,
+										4
+									],
+									"uv_size": [
+										-2,
+										-1
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "rightfoot",
+					"parent": "rightleg",
+					"pivot": [
+						0,
+						0.5,
+						0.375
+					],
+					"cubes": [
+						{
+							"origin": [
+								-0.9,
+								-0.4,
+								-1
+							],
+							"size": [
+								1.8,
+								1.8,
+								2
+							],
+							"inflate": -0.2,
+							"uv": {
+								"north": {
+									"uv": [
+										2,
+										2
+									],
+									"uv_size": [
+										-1,
+										1
+									]
+								},
+								"east": {
+									"uv": [
+										2,
+										2
+									],
+									"uv_size": [
+										-1,
+										1
+									]
+								},
+								"south": {
+									"uv": [
+										2,
+										2
+									],
+									"uv_size": [
+										-1,
+										1
+									]
+								},
+								"west": {
+									"uv": [
+										2,
+										2
+									],
+									"uv_size": [
+										-1,
+										1
+									]
+								},
+								"up": {
+									"uv": [
+										2,
+										1
+									],
+									"uv_size": [
+										-1,
+										1
+									]
+								},
+								"down": {
+									"uv": [
+										2,
+										4
+									],
+									"uv_size": [
+										-1,
+										-1
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "babybody",
+					"parent": "root",
+					"pivot": [
+						0,
+						4,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "babybody",
+					"pivot": [
+						0,
+						5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2,
+								3,
+								-2
+							],
+							"size": [
+								4,
+								4,
+								4
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [
+						0,
+						5,
+						0
+					]
+				},
+				{
+					"name": "blink",
+					"parent": "head",
+					"pivot": [
+						0,
+						5,
+						-2
+					]
+				},
+				{
+					"name": "rightwing",
+					"parent": "body",
+					"pivot": [
+						-2,
+						5,
+						-1
+					]
+				},
+				{
+					"name": "leftwing",
+					"parent": "body",
+					"pivot": [
+						2,
+						5,
+						-1
+					]
+				}
+			]
+		}
+	]
+}

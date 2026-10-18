@@ -1,0 +1,12 @@
+{"format_version":"1.8.0","animations":{
+"animation.shulker.has_target":{"loop":true,"bones":{"head":{"rotation":["q.target_x_rotation","Math.cos(Math.abs(q.rotation_to_camera(1)-v.uvikqu)*0.5)*180-180",0]},"left_eye":{"position":["Math.clamp(Math.sin(q.rotation_to_camera(1))*-1,0,1)",0,0]},"right_eye":{"position":["Math.clamp(Math.sin(q.rotation_to_camera(1))*-1,-1,0)",0,0]}}},
+"animation.shulker.idle":{"loop":true,"bones":{"base":{"rotation":["v.Shulker.xprerotation",0,"v.Shulker.zprerotation"],"position":["v.Shulker.xoffset","v.Shulker.yoffset","v.Shulker.zoffset"],"scale":[0.98,0.98,0.98]},"head":{"position":[0,"Math.lerp(0,this,v.Shulker.yoffset/32)",0]}}},
+"animation.shulker.hurt":{"loop":"hold_on_last_frame","animation_length":0.5,"bones":{"lid":{"rotation":["Math.cos(q.anim_time*1080)*(5-q.anim_time*10)",0,"Math.sin(q.anim_time*1080)*(5-q.anim_time*10)"],"position":[0,"Math.sin(Math.clamp(q.anim_time,0,0.1666)*1080)*1.2",0]},"head":{"rotation":["Math.cos(q.anim_time*810)*(24+q.anim_time*-48)","Math.sin(q.anim_time*810)*(30-q.anim_time*60)","Math.sin(q.anim_time*810)*(-10+q.anim_time*20)"],"position":[0,"Math.sin(q.anim_time*1080)*(1-q.anim_time*2)",0]},"right_eye":{"scale":{"0.0":[0.5,0.5,0.5],"0.5":[1,1,1]}},"left_eye":{"scale":{"0.0":[0.5,0.5,0.5],"0.5":[1,1,1]}}}},
+"animation.shulker.move":{"loop":true,"bones":{"head":{"rotation":["Math.sin(q.life_time*240)*-4",0,"Math.cos(q.life_time*120)*4"],"position":[0,"-v.Shulker.upfacing*6-(3*(v.Shulker.northfacing+v.Shulker.southfacing+v.Shulker.westfacing+v.Shulker.eastfacing))+Math.cos(q.life_time*240)*0.3",0]}}},
+"animation.shulker.open_1":{"loop":"hold_on_last_frame","animation_length":0.5,"bones":{"lid":{"position":[0,"Math.cos(q.anim_time*360)*-1.6+1.6",0]}}},
+"animation.shulker.close":{"animation_length":0.5,"bones":{"lid":{"position":[0,"Math.cos(q.anim_time*360)*1.6+1.6",0]}}},
+"animation.shulker.open_2":{"loop":"hold_on_last_frame","animation_length":0.75,"bones":{"lid":{"rotation":[0,"Math.cos(q.anim_time*240)*90-90",0]},"head":{"position":[0,"Math.cos(Math.clamp(q.anim_time,0,0.5)*360)*-1.25+1.25",0]}}},
+"animation.shulker.close_1":{"animation_length":0.5,"bones":{"lid":{"rotation":[0,"Math.cos(q.anim_time*360)*-90-90",0]},"head":{"position":[0,"Math.cos(Math.clamp(q.anim_time,0,0.5)*360)*1.25+1.25",0]}}},
+"animation.shulker.blinking_1":{"loop":true,"animation_length":0.15,"bones":{"blink":{"position":[0,0,-3]}}},
+"animation.shulker.target":{"loop":true,"bones":{"head":{"rotation":["q.target_x_rotation","q.target_y_rotation",0]}}}
+}}

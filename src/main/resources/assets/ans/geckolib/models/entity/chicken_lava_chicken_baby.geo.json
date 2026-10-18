@@ -1,0 +1,82 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.chicken_lava_chicken_baby",
+				"texture_width": 1,
+				"texture_height": 1,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "babybody",
+					"parent": "root",
+					"pivot": [
+						0,
+						4,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "babybody",
+					"pivot": [
+						0,
+						4,
+						0
+					]
+				},
+				{
+					"name": "glow3",
+					"parent": "body",
+					"pivot": [
+						0,
+						4,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.5,
+								1,
+								-5
+							],
+							"size": [
+								9,
+								9,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										1,
+										1
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

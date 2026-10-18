@@ -1,0 +1,128 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_eybqoi",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "piston1",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "pistonarm",
+					"parent": "piston1",
+					"pivot": [
+						0,
+						4,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								4,
+								-3
+							],
+							"size": [
+								6,
+								8,
+								6
+							],
+							"uv": [
+								64,
+								258
+							]
+						}
+					]
+				},
+				{
+					"name": "joint",
+					"parent": "pistonarm",
+					"pivot": [
+						0,
+						-4,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2,
+								4,
+								-2
+							],
+							"size": [
+								4,
+								8,
+								4
+							],
+							"uv": [
+								64,
+								240
+							]
+						}
+					]
+				},
+				{
+					"name": "pushplate",
+					"parent": "joint",
+					"pivot": [
+						0,
+						-4,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								12,
+								-8
+							],
+							"size": [
+								16,
+								4,
+								16
+							],
+							"uv": [
+								0,
+								240
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

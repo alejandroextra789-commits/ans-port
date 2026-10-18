@@ -1,0 +1,65 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_gprdop",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [
+					0,
+					0.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "spawneggskeleton",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								0,
+								-3
+							],
+							"size": [
+								6,
+								8,
+								6
+							],
+							"uv": [
+								635,
+								33
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

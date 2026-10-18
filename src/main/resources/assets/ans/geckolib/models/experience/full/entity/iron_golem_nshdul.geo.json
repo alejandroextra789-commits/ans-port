@@ -1,0 +1,85 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.iron_golem_nshdul",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [
+					0,
+					1.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [
+						0,
+						17.5,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [
+						0,
+						21,
+						0
+					],
+					"locators": {
+						"uuttq_tmil_1": [
+							9,
+							33,
+							5
+						],
+						"uuttq_tmil_2": [
+							9,
+							33,
+							-6
+						],
+						"uuttq_tmil_3": [
+							-9,
+							33,
+							-6
+						],
+						"uuttq_tmil_4": [
+							-9,
+							33,
+							5
+						]
+					}
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [
+						0,
+						33,
+						-3
+					],
+					"locators": {
+						"tmil": [
+							0,
+							33,
+							-3
+						]
+					}
+				}
+			]
+		}
+	]
+}

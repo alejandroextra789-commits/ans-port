@@ -1,0 +1,123 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_azwfno",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "glasspane",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								-1
+							],
+							"size": [
+								16,
+								16,
+								2
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										239.98,
+										80
+									],
+									"uv_size": [
+										-15.98,
+										15.98
+									]
+								},
+								"east": {
+									"uv": [
+										239,
+										80
+									],
+									"uv_size": [
+										0.98,
+										15.98
+									]
+								},
+								"south": {
+									"uv": [
+										224,
+										80
+									],
+									"uv_size": [
+										15.98,
+										15.98
+									]
+								},
+								"west": {
+									"uv": [
+										224,
+										80
+									],
+									"uv_size": [
+										0.98,
+										15.98
+									]
+								},
+								"up": {
+									"uv": [
+										239.98,
+										80
+									],
+									"uv_size": [
+										-15.98,
+										0.98
+									]
+								},
+								"down": {
+									"uv": [
+										239.98,
+										95.98
+									],
+									"uv_size": [
+										-15.98,
+										-0.98
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

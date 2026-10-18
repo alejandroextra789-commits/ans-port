@@ -1,0 +1,622 @@
+{
+	"format": "ans:bedrock_attachable",
+	"format_version": 1,
+	"identifier": "minecraft:leather_boots",
+	"source": {
+		"layer": "SP2",
+		"file": "attachables/mjz.json",
+		"min_engine_version": null
+	},
+	"items": {
+		"minecraft:leather_boots": null
+	},
+	"animation_file": "ans:attachable/attachables",
+	"geometry": {
+		"ttywjo": "ans:experience/full/attachable/pruist",
+		"mocaaj": "ans:experience/full/attachable/xdgzom",
+		"pzmphd": "ans:attachable/agrcfb",
+		"ymoteu": "ans:attachable/zctxfc",
+		"zhldov": "ans:attachable/mdvxnf",
+		"fvpbat": "ans:attachable/gybvbn",
+		"pkyidp": "ans:attachable/ixqauz",
+		"clualh": "ans:attachable/lmypsj",
+		"ouwtvr": "ans:attachable/vqrayt",
+		"ddocks": "ans:attachable/zivncz",
+		"hxgxej": "ans:attachable/vibtoy",
+		"tmylcr": "ans:attachable/aibfgc",
+		"alqqgw": "ans:attachable/cdhhcq",
+		"whjcoa": "ans:attachable/rwcpqv",
+		"xqubxd": "ans:attachable/sjvvax",
+		"fmibgr": "ans:attachable/cvtztw",
+		"cssiam": "ans:attachable/nddtci",
+		"lcbqhs": "ans:attachable/jmxohi",
+		"sqcmxe": "ans:attachable/bapyei",
+		"xicbta": "ans:attachable/cagtnq",
+		"kodrpl": "ans:attachable/ksfbnl",
+		"btbzfb": "ans:attachable/vaugfa",
+		"mqftiw": "ans:attachable/hrhgil",
+		"bwzdvh": "ans:attachable/fenrrk",
+		"qjerda": "ans:attachable/wytjbd",
+		"lostkf": "ans:attachable/ektpxt",
+		"muxxgo": "ans:experience/full/attachable/xdgzom",
+		"rlqobs": "ans:experience/full/attachable/pruist",
+		"default": "ans:experience/full/attachable/ggfwaa"
+	},
+	"bone_bindings": {},
+	"textures": {
+		"default": "ans:textures/experience/full/attachable/cdq.png",
+		"uuzfpo": "ans:textures/experience/full/attachable/djk.png",
+		"enchanted": "minecraft:textures/misc/enchanted_glint_item.png",
+		"pzmphd": "ans:textures/attachable/dpg.png",
+		"ymoteu": "ans:textures/attachable/dpg.png",
+		"zhldov": "ans:textures/attachable/dpg.png",
+		"fvpbat": "ans:textures/attachable/dpg.png",
+		"pkyidp": "ans:textures/attachable/dpg.png",
+		"clualh": "ans:textures/attachable/dpg.png",
+		"ouwtvr": "ans:textures/attachable/dpg.png",
+		"ddocks": "ans:textures/attachable/dpg.png",
+		"hxgxej": "ans:textures/attachable/dpg.png",
+		"tmylcr": "ans:textures/attachable/dpg.png",
+		"alqqgw": "ans:textures/attachable/dpg.png",
+		"whjcoa": "ans:textures/attachable/dpg.png",
+		"xqubxd": "ans:textures/attachable/dpg.png",
+		"fmibgr": "ans:textures/attachable/dpg.png",
+		"cssiam": "ans:textures/attachable/dpg.png",
+		"lcbqhs": "ans:textures/attachable/dpg.png",
+		"sqcmxe": "ans:textures/attachable/dpg.png",
+		"xicbta": "ans:textures/attachable/dpg.png",
+		"kodrpl": "ans:textures/attachable/dpg.png",
+		"btbzfb": "ans:textures/attachable/dpg.png",
+		"mqftiw": "ans:textures/attachable/dpg.png",
+		"bwzdvh": "ans:textures/attachable/dpg.png",
+		"qjerda": "ans:textures/attachable/dpg.png",
+		"lostkf": "ans:textures/attachable/dpg.png"
+	},
+	"materials": {
+		"default": {
+			"bedrock": "armor_leather",
+			"render_type": "cutout",
+			"color_mask": true
+		},
+		"enchanted": {
+			"bedrock": "armor_leather_enchanted",
+			"render_type": "cutout",
+			"glint": true,
+			"color_mask": true
+		},
+		"avltwh": {
+			"bedrock": "avltwh",
+			"render_type": "cutout"
+		},
+		"irduzd": {
+			"bedrock": "entity_alphatest",
+			"render_type": "cutout"
+		},
+		"vppzlt": {
+			"bedrock": "vppzlt",
+			"render_type": "emissive_alpha",
+			"uv_anim": true
+		},
+		"uhrqgp": {
+			"bedrock": "uhrqgp",
+			"render_type": "eyes"
+		},
+		"mqwxej": {
+			"bedrock": "mqwxej",
+			"render_type": "emissive_alpha",
+			"uv_anim": true
+		},
+		"zyrdrt": {
+			"bedrock": "zyrdrt",
+			"render_type": "invisible"
+		},
+		"rueivk": {
+			"bedrock": "rueivk",
+			"render_type": "cutout",
+			"glint": true,
+			"color_mask": true
+		},
+		"xxcvdc": {
+			"bedrock": "xxcvdc",
+			"render_type": "cutout",
+			"color_mask": true
+		},
+		"plgjvn": {
+			"bedrock": "jpfveg",
+			"render_type": "cutout"
+		},
+		"chicken": {
+			"bedrock": "chicken",
+			"render_type": "cutout"
+		},
+		"otinlx": {
+			"bedrock": "otinlx",
+			"render_type": "eyes"
+		}
+	},
+	"animations": {
+		"nywoyr": {
+			"bedrock": "animation.oreville_ans.ctqdnf",
+			"animation": "animation.attachables.oreville_ans_ctqdnf",
+			"loop": true
+		},
+		"ztxrdh": {
+			"bedrock": "animation.oreville_ans.ztxrdh",
+			"animation": "animation.attachables.oreville_ans_ztxrdh",
+			"loop": "hold_on_last_frame",
+			"animation_length": 6.44,
+			"anim_time_update": "!v.thfjyq?{v.thfjyq=1;return 0;};(v.pupzxg!=-1&&v.pupzxg!=v.dhvjqp)?{return 0;};v.xisdqo!=-1&&v.dimfle!=-1&&v.oabugt!=-1&&(Math.round(v.tfpivo/v.ppijuv)!=1)&&(v.wweoge-v.xisdqo>1)?{return 0;};return q.anim_time+q.delta_time;",
+			"sound_effects": {
+				"0.01": [
+					{
+						"effect": "tcdyup",
+						"resolved": "oreville_ans:tcdyup"
+					}
+				]
+			}
+		},
+		"dcdzju": {
+			"bedrock": "animation.oreville_ans.dcdzju",
+			"animation": null,
+			"anim_time_update": "v.dimfle=v.csqgdq;v.oabugt=v.qzhvmd;v.xisdqo=v.wweoge;v.csqgdq=q.anim_time+q.delta_time;v.qzhvmd=q.life_time;v.wweoge=q.time_stamp;v.tfpivo=v.csqgdq-v.dimfle;v.ppijuv=v.qzhvmd-v.oabugt;return q.anim_time+q.delta_time;"
+		},
+		"lqlrks": {
+			"bedrock": "controller.animation.oreville_ans.dmaerc",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							{
+								"nywoyr": "!c.is_first_person&&q.is_owner_identifier_any('minecraft:copper_golem')"
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"scripts": {
+		"initialize": [
+			"v.ujysjy=0;",
+			"v.ujysjy.r=0;",
+			"v.ujysjy.g=0;",
+			"v.ujysjy.b=0;",
+			"v.kgytha=0;",
+			"v.pupzxg=0;",
+			"v.mgwsac=0;",
+			"v.vishqs=0;",
+			"v.ykbhla=0;",
+			"v.bfcvrw=0;",
+			"v.mucbaa=0;",
+			"v.qndtur=0;",
+			"v.cdrzno=0;",
+			"v.vcwktz=0;",
+			"v.jipoeq=0;",
+			"v.thfjyq=0;",
+			"v.xisdqo=0;",
+			"v.dimfle=0;",
+			"v.oabugt=0;",
+			"v.tfpivo=0;",
+			"v.ppijuv=0;",
+			"v.pihgwp=0;",
+			"v.dhvjqp=-1;",
+			"v.xktqpg=-1;",
+			"v.csqgdq=-1;",
+			"v.qzhvmd=-1;",
+			"v.wweoge=-1;"
+		],
+		"pre_animation": [
+			"v.ujysjy=0;",
+			"v.ujysjy.r=Math.round(255*q.armor_color_slot(3,0));",
+			"v.ujysjy.g=Math.round(255*q.armor_color_slot(3,1));",
+			"v.ujysjy.b=Math.round(255*q.armor_color_slot(3,2));v.xktqpg=-1;v.kgytha=q.is_name_any('§§')&&q.is_owner_identifier_any('minecraft:armor_stand')&&q.is_item_name_any('slot.weapon.mainhand','minecraft:banner');v.kgytha?{v.ujysjy.r==29&&v.ujysjy.g==29&&v.ujysjy.b==33?{v.xktqpg=0;};v.ujysjy.r==60&&v.ujysjy.g==68&&v.ujysjy.b==170?{v.xktqpg=1;};v.ujysjy.r==131&&v.ujysjy.g==84&&v.ujysjy.b==50?{v.xktqpg=2;};v.ujysjy.r==22&&v.ujysjy.g==156&&v.ujysjy.b==156?{v.xktqpg=3;};v.ujysjy.r==71&&v.ujysjy.g==79&&v.ujysjy.b==82?{v.xktqpg=4;};v.ujysjy.r==94&&v.ujysjy.g==124&&v.ujysjy.b==22?{v.xktqpg=5;};v.ujysjy.r==58&&v.ujysjy.g==179&&v.ujysjy.b==218?{v.xktqpg=6;};v.ujysjy.r==157&&v.ujysjy.g==157&&v.ujysjy.b==151?{v.xktqpg=7;};v.ujysjy.r==128&&v.ujysjy.g==199&&v.ujysjy.b==31?{v.xktqpg=8;};v.ujysjy.r==199&&v.ujysjy.g==78&&v.ujysjy.b==189?{v.xktqpg=9;};v.ujysjy.r==249&&v.ujysjy.g==128&&v.ujysjy.b==29?{v.xktqpg=10;};v.ujysjy.r==243&&v.ujysjy.g==139&&v.ujysjy.b==170?{v.xktqpg=11;};v.ujysjy.r==137&&v.ujysjy.g==50&&v.ujysjy.b==184?{v.xktqpg=12;};v.ujysjy.r==176&&v.ujysjy.g==46&&v.ujysjy.b==38?{v.xktqpg=13;};v.ujysjy.r==240&&v.ujysjy.g==240&&v.ujysjy.b==240?{v.xktqpg=14;};v.ujysjy.r==254&&v.ujysjy.g==216&&v.ujysjy.b==61?{v.xktqpg=15;};};v.pupzxg=v.dhvjqp;v.dhvjqp=-1;v.mgwsac=q.is_name_any('§§')&&q.is_owner_identifier_any('minecraft:armor_stand')&&!q.is_item_name_any('slot.weapon.mainhand','minecraft:banner');v.mgwsac?{v.ujysjy.r==176&&v.ujysjy.g==46&&v.ujysjy.b==38?{v.dhvjqp=0;};v.ujysjy.r==199&&v.ujysjy.g==78&&v.ujysjy.b==189?{v.dhvjqp=1;};v.ujysjy.r==128&&v.ujysjy.g==199&&v.ujysjy.b==31?{v.dhvjqp=2;};v.ujysjy.r==249&&v.ujysjy.g==128&&v.ujysjy.b==29?{v.dhvjqp=3;};v.ujysjy.r==157&&v.ujysjy.g==157&&v.ujysjy.b==151?{v.dhvjqp=4;};v.ujysjy.r==58&&v.ujysjy.g==179&&v.ujysjy.b==218?{v.dhvjqp=5;};v.ujysjy.r==94&&v.ujysjy.g==124&&v.ujysjy.b==22?{v.dhvjqp=6;};v.ujysjy.r==112&&v.ujysjy.g==104&&v.ujysjy.b==36?{v.dhvjqp=7;};v.ujysjy.r==174&&v.ujysjy.g==170&&v.ujysjy.b==41?{v.dhvjqp=8;};v.ujysjy.r==131&&v.ujysjy.g==84&&v.ujysjy.b==50?{v.dhvjqp=9;};v.ujysjy.r==243&&v.ujysjy.g==139&&v.ujysjy.b==170?{v.dhvjqp=10;};v.ujysjy.r==254&&v.ujysjy.g==216&&v.ujysjy.b==61?{v.dhvjqp=11;};v.ujysjy.r==60&&v.ujysjy.g==68&&v.ujysjy.b==170?{v.dhvjqp=12;};v.ujysjy.r==80&&v.ujysjy.g==56&&v.ujysjy.b==41?{v.dhvjqp=13;};v.ujysjy.r==71&&v.ujysjy.g==79&&v.ujysjy.b==82?{v.dhvjqp=14;};v.ujysjy.r==137&&v.ujysjy.g==50&&v.ujysjy.b==184?{v.dhvjqp=15;};v.ujysjy.r==251&&v.ujysjy.g==172&&v.ujysjy.b==45?{v.dhvjqp=16;};v.ujysjy.r==22&&v.ujysjy.g==156&&v.ujysjy.b==156?{v.dhvjqp=17;};v.ujysjy.r==29&&v.ujysjy.g==29&&v.ujysjy.b==33?{v.dhvjqp=18;};v.ujysjy.r==187&&v.ujysjy.g==62&&v.ujysjy.b==113?{v.dhvjqp=19;};v.ujysjy.r==240&&v.ujysjy.g==240&&v.ujysjy.b==240?{v.dhvjqp=20;};v.ujysjy.r==114&&v.ujysjy.g==53&&v.ujysjy.b==111?{v.dhvjqp=21;};v.ujysjy.r==61&&v.ujysjy.g==76&&v.ujysjy.b==27?{v.dhvjqp=22;};v.ujysjy.r==99&&v.ujysjy.g==139&&v.ujysjy.b==56?{v.dhvjqp=23;};};",
+			"v.vishqs=v.ujysjy.r;",
+			"v.ykbhla=v.ujysjy.g;",
+			"v.bfcvrw=v.ujysjy.b;",
+			"v.mucbaa=0;",
+			"v.qndtur=c.owning_entity->v.use_dedicated_baby_armor;",
+			"v.cdrzno=c.owning_entity->v.cdrzno;",
+			"v.vcwktz=v.qndtur&&v.cdrzno;",
+			"v.jipoeq=(!q.is_pack_setting_selected('oreville_ans:cvmbbr','disabled')&&q.is_owner_identifier_any('minecraft:player')&&!v.mucbaa)||!q.is_owner_identifier_any('minecraft:player');"
+		],
+		"animate": [
+			{
+				"dcdzju": "v.dhvjqp>=0"
+			},
+			{
+				"ztxrdh": "v.dhvjqp>=0"
+			},
+			{
+				"lqlrks": "q.is_attached"
+			}
+		],
+		"parent_setup": "q.is_name_any('§§')&&q.is_owner_identifier_any('minecraft:armor_stand')?{t.fpo=Math.round(255*q.armor_color_slot(3,0));t.bsm=Math.round(255*q.armor_color_slot(3,1));t.lgj=Math.round(255*q.armor_color_slot(3,2));t.fpo==176&&t.bsm==46&&t.lgj==38?{v.hfipcv=1;};t.fpo==199&&t.bsm==78&&t.lgj==189?{v.hfipcv=1;};t.fpo==128&&t.bsm==199&&t.lgj==31?{v.hfipcv=1;};t.fpo==249&&t.bsm==128&&t.lgj==29?{v.hfipcv=1;};t.fpo==157&&t.bsm==157&&t.lgj==151?{v.hfipcv=1;};t.fpo==58&&t.bsm==179&&t.lgj==218?{v.hfipcv=1;};t.fpo==94&&t.bsm==124&&t.lgj==22?{v.hfipcv=1;};t.fpo==112&&t.bsm==104&&t.lgj==36?{v.hfipcv=1;};t.fpo==174&&t.bsm==170&&t.lgj==41?{v.hfipcv=1;};t.fpo==131&&t.bsm==84&&t.lgj==50?{v.hfipcv=1;};t.fpo==243&&t.bsm==139&&t.lgj==170?{v.hfipcv=1;};t.fpo==254&&t.bsm==216&&t.lgj==61?{v.hfipcv=1;};t.fpo==60&&t.bsm==68&&t.lgj==170?{v.hfipcv=1;};t.fpo==80&&t.bsm==56&&t.lgj==41?{v.hfipcv=1;};t.fpo==71&&t.bsm==79&&t.lgj==82?{v.hfipcv=1;};t.fpo==137&&t.bsm==50&&t.lgj==184?{v.hfipcv=1;};t.fpo==251&&t.bsm==172&&t.lgj==45?{v.hfipcv=1;};t.fpo==22&&t.bsm==156&&t.lgj==156?{v.hfipcv=1;};t.fpo==29&&t.bsm==29&&t.lgj==33?{v.hfipcv=1;};t.fpo==187&&t.bsm==62&&t.lgj==113?{v.hfipcv=1;};t.fpo==240&&t.bsm==240&&t.lgj==240?{v.hfipcv=1;};t.fpo==114&&t.bsm==53&&t.lgj==111?{v.hfipcv=1;};t.fpo==61&&t.bsm==76&&t.lgj==27?{v.hfipcv=1;};t.fpo==99&&t.bsm==139&&t.lgj==56?{v.hfipcv=1;};};"
+	},
+	"render_controllers": [
+		{
+			"id": "controller.render.oreville_ans.ayjoyc",
+			"condition": "v.has_trim&&q.is_pack_setting_enabled('oreville_ans:ltqtrn')&&v.dhvjqp<0&&v.xktqpg<0",
+			"geometry": "Geometry.default",
+			"textures": [
+				"Texture.uuzfpo",
+				"v.has_trim?v.trim_path:Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.zyrdrt"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					false
+				],
+				[
+					"leather*",
+					"v.jipoeq"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.bzjhwc",
+			"condition": "q.is_pack_setting_enabled('oreville_ans:ltqtrn')&&v.dhvjqp<0&&v.xktqpg<0",
+			"geometry": "Geometry.default",
+			"textures": [
+				"Texture.uuzfpo",
+				"Texture.enchanted"
+			],
+			"materials": [
+				[
+					"*",
+					"v.has_trim?(v.is_enchanted?Material.rueivk:Material.xxcvdc):(v.is_enchanted?Material.enchanted:Material.default)"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					false
+				],
+				[
+					"leather*",
+					"v.jipoeq"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.vtnsiu",
+			"condition": "!q.is_pack_setting_enabled('oreville_ans:ltqtrn')&&v.dhvjqp<0&&v.xktqpg<0",
+			"geometry": "Geometry.default",
+			"textures": [
+				"Texture.uuzfpo",
+				"Texture.enchanted"
+			],
+			"materials": [
+				[
+					"*",
+					"v.is_enchanted?Material.enchanted:Material.default"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					false
+				],
+				[
+					"leather*",
+					"v.jipoeq"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.tvjlvq",
+			"condition": "v.has_trim&&v.dhvjqp<0&&v.xktqpg<0",
+			"geometry": "q.is_pack_setting_enabled('oreville_ans:ltqtrn')?Geometry.ttywjo:Geometry.mocaaj",
+			"textures": [
+				"v.has_trim?v.trim_path:Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.avltwh"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.jipoeq"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.atdbzk",
+			"condition": "v.has_trim&&q.is_pack_setting_enabled('oreville_ans:ltqtrn')&&v.dhvjqp<0&&v.xktqpg<0",
+			"geometry": "Geometry.default",
+			"textures": [
+				"v.has_trim?v.trim_path:Texture.default",
+				"Texture.enchanted"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.plgjvn"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.jipoeq"
+				],
+				[
+					"leather*",
+					false
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.fbkggi",
+			"condition": "v.dhvjqp>=0&&v.mgwsac&&v.xktqpg<0&&!v.kgytha",
+			"arrays": {
+				"array.epvbkc": [
+					"geometry.pzmphd",
+					"geometry.ymoteu",
+					"geometry.zhldov",
+					"geometry.fvpbat",
+					"geometry.pkyidp",
+					"geometry.clualh",
+					"geometry.ouwtvr",
+					"geometry.ddocks",
+					"geometry.hxgxej",
+					"geometry.tmylcr",
+					"geometry.alqqgw",
+					"geometry.whjcoa",
+					"geometry.xqubxd",
+					"geometry.fmibgr",
+					"geometry.cssiam",
+					"geometry.lcbqhs",
+					"geometry.sqcmxe",
+					"geometry.xicbta",
+					"geometry.kodrpl",
+					"geometry.btbzfb",
+					"geometry.mqftiw",
+					"geometry.bwzdvh",
+					"geometry.qjerda",
+					"geometry.lostkf"
+				],
+				"array.ncyhyp": [
+					"texture.pzmphd",
+					"texture.ymoteu",
+					"texture.zhldov",
+					"texture.fvpbat",
+					"texture.pkyidp",
+					"texture.clualh",
+					"texture.ouwtvr",
+					"texture.ddocks",
+					"texture.hxgxej",
+					"texture.tmylcr",
+					"texture.alqqgw",
+					"texture.whjcoa",
+					"texture.xqubxd",
+					"texture.fmibgr",
+					"texture.cssiam",
+					"texture.lcbqhs",
+					"texture.sqcmxe",
+					"texture.xicbta",
+					"texture.kodrpl",
+					"texture.btbzfb",
+					"texture.mqftiw",
+					"texture.bwzdvh",
+					"texture.qjerda",
+					"texture.lostkf"
+				]
+			},
+			"geometry": "Array.epvbkc[v.dhvjqp]",
+			"textures": [
+				"Array.ncyhyp[v.dhvjqp]"
+			],
+			"materials": [
+				[
+					"chicken*",
+					"Material.chicken"
+				],
+				[
+					"emissiveoutline*",
+					"Material.otinlx"
+				],
+				[
+					"*",
+					"Material.irduzd"
+				],
+				[
+					"outlinbasecatear*",
+					"Material.vppzlt"
+				],
+				[
+					"outlinbasecathead*",
+					"Material.vppzlt"
+				],
+				[
+					"outlinbasecatheadphones*",
+					"Material.vppzlt"
+				],
+				[
+					"outlinbasecatmouth*",
+					"Material.vppzlt"
+				],
+				[
+					"outlinbasegift*",
+					"Material.vppzlt"
+				],
+				[
+					"outlinbaseliquid*",
+					"Material.vppzlt"
+				],
+				[
+					"outlinbaseredstone*",
+					"Material.vppzlt"
+				],
+				[
+					"outlinbaseredstonetorch*",
+					"Material.vppzlt"
+				],
+				[
+					"outlinbasetassle*",
+					"Material.vppzlt"
+				],
+				[
+					"outlinbase*",
+					"Material.vppzlt"
+				],
+				[
+					"outlinecalculator*",
+					"Material.uhrqgp"
+				],
+				[
+					"outlinecatear*",
+					"Material.uhrqgp"
+				],
+				[
+					"outlinecathead*",
+					"Material.uhrqgp"
+				],
+				[
+					"outlinedome*",
+					"Material.uhrqgp"
+				],
+				[
+					"outlineenderpearl*",
+					"Material.uhrqgp"
+				],
+				[
+					"outlinehook*",
+					"Material.uhrqgp"
+				],
+				[
+					"outlinematerial*",
+					"Material.uhrqgp"
+				],
+				[
+					"outlinepotion*",
+					"Material.uhrqgp"
+				],
+				[
+					"outlineredstonetorch*",
+					"Material.uhrqgp"
+				],
+				[
+					"outline*",
+					"Material.uhrqgp"
+				],
+				[
+					"emissiveantenna*",
+					"Material.mqwxej"
+				],
+				[
+					"emissivebeeeyes*",
+					"Material.mqwxej"
+				],
+				[
+					"emissivebeewings*",
+					"Material.mqwxej"
+				],
+				[
+					"emissivedome*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiveendermanhead*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiveenderpearl*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiveeye*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiveeyes*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiveflamearm*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiveflamehead*",
+					"Material.mqwxej"
+				],
+				[
+					"emissivegoggles*",
+					"Material.mqwxej"
+				],
+				[
+					"emissivehat*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiveimphead*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiveinvader*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiveletter*",
+					"Material.mqwxej"
+				],
+				[
+					"emissivemicrophone*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiveoutline*",
+					"Material.mqwxej"
+				],
+				[
+					"emissivepotion*",
+					"Material.mqwxej"
+				],
+				[
+					"emissivepotiontop*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiverepeater*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiveredstone*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiveredstonetorch*",
+					"Material.mqwxej"
+				],
+				[
+					"emissivescreen*",
+					"Material.mqwxej"
+				],
+				[
+					"emissivestocking*",
+					"Material.mqwxej"
+				],
+				[
+					"emissivestring*",
+					"Material.mqwxej"
+				],
+				[
+					"emissive*",
+					"Material.mqwxej"
+				]
+			]
+		}
+	],
+	"sound_effects": {
+		"tcdyup": "oreville_ans:tcdyup"
+	},
+	"particle_effects": {}
+}

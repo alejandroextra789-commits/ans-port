@@ -1,0 +1,1175 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_veobrr",
+				"texture_width": 88,
+				"texture_height": 170,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [
+					0,
+					0,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "leftleg",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "netheritebootsright",
+					"parent": "leftleg",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "netheritebootsrightsnowy1",
+					"parent": "netheritebootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								44,
+								0
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								68,
+								3
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsrightsnowy2",
+					"parent": "netheritebootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								44,
+								17
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								68,
+								20
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsrightsnowy3",
+					"parent": "netheritebootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								44,
+								34
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								68,
+								37
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsrightsnowy4",
+					"parent": "netheritebootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								44,
+								51
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								68,
+								54
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsrightsnowy5",
+					"parent": "netheritebootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								44,
+								68
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								68,
+								71
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsrightsnowy6",
+					"parent": "netheritebootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								44,
+								85
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								68,
+								88
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsrightsnowy7",
+					"parent": "netheritebootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								44,
+								102
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								68,
+								105
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsrightsnowy8",
+					"parent": "netheritebootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								44,
+								119
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								68,
+								122
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsrightsnowy9",
+					"parent": "netheritebootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								44,
+								136
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								68,
+								139
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsrightsnowy10",
+					"parent": "netheritebootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								44,
+								153
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								68,
+								156
+							]
+						}
+					]
+				},
+				{
+					"name": "rightleg",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "netheritebootsleft",
+					"parent": "rightleg",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "netheritebootsleftsnowy1",
+					"parent": "netheritebootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"inflate": 0.01,
+							"uv": [
+								44,
+								0
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								68,
+								3
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsleftsnowy2",
+					"parent": "netheritebootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"inflate": 0.01,
+							"uv": [
+								44,
+								17
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								68,
+								20
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsleftsnowy3",
+					"parent": "netheritebootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"inflate": 0.01,
+							"uv": [
+								44,
+								34
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								68,
+								37
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsleftsnowy4",
+					"parent": "netheritebootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"inflate": 0.01,
+							"uv": [
+								44,
+								51
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								68,
+								54
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsleftsnowy5",
+					"parent": "netheritebootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"inflate": 0.01,
+							"uv": [
+								44,
+								68
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								68,
+								71
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsleftsnowy6",
+					"parent": "netheritebootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"inflate": 0.01,
+							"uv": [
+								44,
+								85
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								68,
+								88
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsleftsnowy7",
+					"parent": "netheritebootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"inflate": 0.01,
+							"uv": [
+								44,
+								102
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								68,
+								105
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsleftsnowy8",
+					"parent": "netheritebootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"inflate": 0.01,
+							"uv": [
+								44,
+								119
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								68,
+								122
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsleftsnowy9",
+					"parent": "netheritebootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"inflate": 0.01,
+							"uv": [
+								44,
+								136
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								68,
+								139
+							]
+						}
+					]
+				},
+				{
+					"name": "netheritebootsleftsnowy10",
+					"parent": "netheritebootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								11,
+								6
+							],
+							"inflate": 0.01,
+							"uv": [
+								44,
+								153
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								68,
+								156
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

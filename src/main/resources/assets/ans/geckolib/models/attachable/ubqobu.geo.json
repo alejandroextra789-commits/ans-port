@@ -1,0 +1,302 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_ubqobu",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "elements",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "plush",
+					"parent": "elements",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "plushbody",
+					"parent": "plush",
+					"pivot": [
+						0,
+						0,
+						3
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								0,
+								1
+							],
+							"size": [
+								6,
+								8,
+								4
+							],
+							"uv": [
+								447,
+								345
+							]
+						}
+					]
+				},
+				{
+					"name": "plushleg1",
+					"parent": "plushbody",
+					"pivot": [
+						-2.20248,
+						1.5,
+						3.30791
+					],
+					"rotation": [
+						-90,
+						10,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.70248,
+								-4.5,
+								1.80791
+							],
+							"size": [
+								3,
+								6,
+								3
+							],
+							"uv": [
+								483,
+								341
+							]
+						},
+						{
+							"origin": [
+								-3.70248,
+								-4.5,
+								1.80791
+							],
+							"size": [
+								3,
+								6,
+								3
+							],
+							"inflate": 0.2,
+							"uv": [
+								483,
+								359
+							]
+						}
+					]
+				},
+				{
+					"name": "plushleg2",
+					"parent": "plushbody",
+					"pivot": [
+						2.20248,
+						1.5,
+						3.30791
+					],
+					"rotation": [
+						-90,
+						-10,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0.70248,
+								-4.5,
+								1.80791
+							],
+							"size": [
+								3,
+								6,
+								3
+							],
+							"uv": [
+								483,
+								350
+							]
+						},
+						{
+							"origin": [
+								0.70248,
+								-4.5,
+								1.80791
+							],
+							"size": [
+								3,
+								6,
+								3
+							],
+							"inflate": 0.2,
+							"uv": [
+								483,
+								359
+							]
+						}
+					]
+				},
+				{
+					"name": "plusharm2",
+					"parent": "plushbody",
+					"pivot": [
+						3.36947,
+						7.26171,
+						2.18438
+					],
+					"rotation": [
+						-103.74538,
+						-24.3683,
+						5.7632
+					],
+					"cubes": [
+						{
+							"origin": [
+								1.86947,
+								2.26171,
+								0.68438
+							],
+							"size": [
+								3,
+								6,
+								3
+							],
+							"uv": [
+								483,
+								323
+							]
+						},
+						{
+							"origin": [
+								1.86947,
+								2.26171,
+								0.68438
+							],
+							"size": [
+								3,
+								6,
+								3
+							],
+							"inflate": 0.2,
+							"uv": [
+								483,
+								332
+							]
+						}
+					]
+				},
+				{
+					"name": "plusharm1",
+					"parent": "plushbody",
+					"pivot": [
+						-3.36947,
+						7.26171,
+						2.18438
+					],
+					"rotation": [
+						-113.08619,
+						17.07228,
+						-3.90399
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.86947,
+								2.26171,
+								0.68438
+							],
+							"size": [
+								3,
+								6,
+								3
+							],
+							"uv": [
+								483,
+								323
+							]
+						},
+						{
+							"origin": [
+								-4.86947,
+								2.26171,
+								0.68438
+							],
+							"size": [
+								3,
+								6,
+								3
+							],
+							"inflate": 0.2,
+							"uv": [
+								483,
+								332
+							]
+						}
+					]
+				},
+				{
+					"name": "plushhead",
+					"parent": "plushbody",
+					"pivot": [
+						0,
+						8,
+						3
+					]
+				},
+				{
+					"name": "plushheadrotate",
+					"parent": "plushhead",
+					"pivot": [
+						0,
+						8,
+						3
+					],
+					"rotation": [
+						-9.91615,
+						1.29876,
+						7.38733
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.5,
+								8,
+								-0.5
+							],
+							"size": [
+								7,
+								7,
+								7
+							],
+							"uv": [
+								447,
+								323
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,91 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_rnlzgd",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "campfire",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "flame",
+					"parent": "campfire",
+					"pivot": [
+						0,
+						2,
+						0
+					]
+				},
+				{
+					"name": "emissivenofancy",
+					"parent": "flame",
+					"pivot": [
+						0,
+						2,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5,
+								2,
+								0
+							],
+							"size": [
+								10,
+								10,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										803
+									],
+									"uv_size": [
+										15.984000000000002,
+										15.984000000000002
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

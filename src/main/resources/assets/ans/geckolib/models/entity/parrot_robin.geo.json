@@ -1,0 +1,310 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.parrot_robin",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [
+						0,
+						2,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [
+						0,
+						6,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								3,
+								-2.5
+							],
+							"size": [
+								3,
+								5,
+								4
+							],
+							"uv": [
+								1,
+								7
+							]
+						}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "body",
+					"pivot": [
+						0,
+						2,
+						1.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								-1,
+								0.5
+							],
+							"size": [
+								3,
+								4,
+								1
+							],
+							"uv": [
+								22,
+								1
+							]
+						}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [
+						0,
+						8,
+						0.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								7,
+								-1.5
+							],
+							"size": [
+								2,
+								3,
+								3
+							],
+							"uv": [
+								1,
+								1
+							]
+						},
+						{
+							"origin": [
+								-0.25,
+								8.25,
+								-2.5
+							],
+							"size": [
+								0.5,
+								0.5,
+								1
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										11.5,
+										13.5
+									],
+									"uv_size": [
+										1,
+										1
+									]
+								},
+								"east": {
+									"uv": [
+										11.5,
+										13.5
+									],
+									"uv_size": [
+										1,
+										1
+									]
+								},
+								"south": {
+									"uv": [
+										11.5,
+										13.5
+									],
+									"uv_size": [
+										1,
+										1
+									]
+								},
+								"west": {
+									"uv": [
+										11.5,
+										13.5
+									],
+									"uv_size": [
+										1,
+										1
+									]
+								},
+								"up": {
+									"uv": [
+										12.5,
+										14.5
+									],
+									"uv_size": [
+										-1,
+										-1
+									]
+								},
+								"down": {
+									"uv": [
+										12.5,
+										14.5
+									],
+									"uv_size": [
+										-1,
+										-1
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "feather",
+					"parent": "head",
+					"pivot": [
+						0,
+						11,
+						-0.5
+					]
+				},
+				{
+					"name": "leftwing",
+					"parent": "body",
+					"pivot": [
+						1.5,
+						7.75,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								2.75,
+								-1.5
+							],
+							"size": [
+								1,
+								5,
+								3
+							],
+							"uv": [
+								19,
+								8
+							]
+						}
+					]
+				},
+				{
+					"name": "rightwing",
+					"parent": "body",
+					"pivot": [
+						-1.5,
+						7.75,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2,
+								2.75,
+								-1.5
+							],
+							"size": [
+								1,
+								5,
+								3
+							],
+							"uv": [
+								19,
+								8
+							]
+						}
+					]
+				},
+				{
+					"name": "leftleg",
+					"parent": "root",
+					"pivot": [
+						1,
+						2,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0.5,
+								0,
+								-1
+							],
+							"size": [
+								1,
+								2,
+								1
+							],
+							"uv": [
+								14,
+								18
+							]
+						}
+					]
+				},
+				{
+					"name": "rightleg",
+					"parent": "root",
+					"pivot": [
+						-1,
+						2,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								0,
+								-1
+							],
+							"size": [
+								1,
+								2,
+								1
+							],
+							"uv": [
+								14,
+								18
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.ans.client.mixin",
+  "refmap": "ans.refmap.json",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "EntityRenderDispatcherMixin",
+    "InventoryScreenMixin",
+    "ItemInHandRendererAccessor",
+    "ItemInHandRendererMixin",
+    "SkinTextureDownloaderMixin",
+    "WalkAnimationMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

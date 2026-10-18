@@ -1,0 +1,61 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.player_satrmm",
+				"texture_width": 1,
+				"texture_height": 1,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [
+					0,
+					0.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "elements",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "leftfootstep",
+					"parent": "elements",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"locators": {
+						"wjjrlu": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				{
+					"name": "rightfootstep",
+					"parent": "elements",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"locators": {
+						"poyqul": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,84 @@
+{
+	"format": "ans:bedrock_particle",
+	"format_version": 1,
+	"identifier": "oreville_ans:hdwkpf",
+	"source": {
+		"layer": "SP2",
+		"file": "particles/nja.json",
+		"format_version": "1.10.0"
+	},
+	"material": "particles_alpha",
+	"render": "alpha",
+	"bedrock_texture": "textures/particle/particles",
+	"texture": "ans:textures/particle_fx/particle/particles.png",
+	"texture_size": [
+		128,
+		128
+	],
+	"components": {
+		"minecraft:emitter_rate_manual": {
+			"max_particles": 100
+		},
+		"minecraft:emitter_lifetime_expression": {
+			"activation_expression": 1,
+			"expiration_expression": 0
+		},
+		"minecraft:emitter_shape_point": {},
+		"minecraft:particle_expire_if_in_blocks": [
+			"minecraft:black_candle",
+			"minecraft:black_candle_cake",
+			"minecraft:blue_candle",
+			"minecraft:blue_candle_cake",
+			"minecraft:brown_candle",
+			"minecraft:brown_candle_cake",
+			"minecraft:cyan_candle",
+			"minecraft:cyan_candle_cake",
+			"minecraft:gray_candle",
+			"minecraft:gray_candle_cake",
+			"minecraft:green_candle",
+			"minecraft:green_candle_cake",
+			"minecraft:light_blue_candle",
+			"minecraft:light_blue_candle_cake",
+			"minecraft:light_gray_candle",
+			"minecraft:light_gray_candle_cake",
+			"minecraft:lime_candle",
+			"minecraft:lime_candle_cake",
+			"minecraft:magenta_candle",
+			"minecraft:magenta_candle_cake",
+			"minecraft:orange_candle",
+			"minecraft:orange_candle_cake",
+			"minecraft:pink_candle",
+			"minecraft:pink_candle_cake",
+			"minecraft:purple_candle",
+			"minecraft:purple_candle_cake",
+			"minecraft:red_candle",
+			"minecraft:red_candle_cake",
+			"minecraft:white_candle",
+			"minecraft:white_candle_cake",
+			"minecraft:yellow_candle",
+			"minecraft:yellow_candle_cake"
+		],
+		"minecraft:particle_lifetime_expression": {
+			"max_lifetime": "Math.random(9,11.5)"
+		},
+		"minecraft:particle_appearance_billboard": {
+			"size": [
+				"t.qoc=v.particle_age>0?0.5*((0.1+v.particle_random_1*0.1)-(0.01*v.particle_age)):0;return t.qoc;",
+				"t.qoc"
+			],
+			"facing_camera_mode": "lookat_xyz",
+			"uv": {
+				"texture_width": 128,
+				"texture_height": 128,
+				"uv": [
+					0,
+					24
+				],
+				"uv_size": [
+					8,
+					8
+				]
+			}
+		}
+	}
+}

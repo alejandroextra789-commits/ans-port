@@ -1,0 +1,129 @@
+{
+	"format": "ans:bedrock_attachable",
+	"format_version": 1,
+	"identifier": "minecraft:diamond_boots",
+	"source": {
+		"layer": "SP2",
+		"file": "attachables/mke.json",
+		"min_engine_version": null
+	},
+	"items": {
+		"minecraft:diamond_boots": null
+	},
+	"animation_file": "ans:attachable/attachables",
+	"geometry": {
+		"ttywjo": "ans:experience/full/attachable/cuupab",
+		"aopwgb": "ans:experience/full/attachable/cuupab",
+		"default": "ans:experience/full/attachable/faimby"
+	},
+	"bone_bindings": {},
+	"textures": {
+		"default": "ans:textures/experience/full/attachable/drl.png",
+		"armor": "ans:textures/experience/full/attachable/cdv.png",
+		"enchanted": "minecraft:textures/misc/enchanted_glint_item.png"
+	},
+	"materials": {
+		"default": {
+			"bedrock": "klduzy",
+			"render_type": "cutout"
+		},
+		"enchanted": {
+			"bedrock": "armor_enchanted",
+			"render_type": "cutout",
+			"glint": true
+		},
+		"avltwh": {
+			"bedrock": "avltwh",
+			"render_type": "cutout"
+		}
+	},
+	"animations": {
+		"nywoyr": {
+			"bedrock": "animation.oreville_ans.ctqdnf",
+			"animation": "animation.attachables.oreville_ans_ctqdnf",
+			"loop": true
+		},
+		"lqlrks": {
+			"bedrock": "controller.animation.oreville_ans.dmaerc",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							{
+								"nywoyr": "!c.is_first_person&&q.is_owner_identifier_any('minecraft:copper_golem')"
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"scripts": {
+		"initialize": [
+			"v.mucbaa=0;",
+			"v.qndtur=0;",
+			"v.cdrzno=0;",
+			"v.vcwktz=0;",
+			"v.jipoeq=0;",
+			"v.pihgwp=0;"
+		],
+		"pre_animation": [
+			"v.mucbaa=0;",
+			"v.qndtur=c.owning_entity->v.use_dedicated_baby_armor;",
+			"v.cdrzno=c.owning_entity->v.cdrzno;",
+			"v.vcwktz=v.qndtur&&v.cdrzno;",
+			"v.jipoeq=(!q.is_pack_setting_selected('oreville_ans:cvmbbr','disabled')&&q.is_owner_identifier_any('minecraft:player')&&!v.mucbaa)||!q.is_owner_identifier_any('minecraft:player');"
+		],
+		"animate": [
+			{
+				"lqlrks": "q.is_attached"
+			}
+		]
+	},
+	"render_controllers": [
+		{
+			"id": "controller.render.oreville_ans.zdjgpe",
+			"condition": null,
+			"geometry": "Geometry.default",
+			"textures": [
+				"Texture.armor",
+				"Texture.enchanted"
+			],
+			"materials": [
+				[
+					"*",
+					"v.is_enchanted?Material.enchanted:Material.default"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.jipoeq"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.oaozfh",
+			"condition": "v.has_trim",
+			"geometry": "Geometry.ttywjo",
+			"textures": [
+				"v.has_trim?v.trim_path:Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.avltwh"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.jipoeq"
+				]
+			]
+		}
+	],
+	"sound_effects": {},
+	"particle_effects": {}
+}

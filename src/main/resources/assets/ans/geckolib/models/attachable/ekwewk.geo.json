@@ -1,0 +1,156 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_ekwewk",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "wolfspawnegg",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								0,
+								-3
+							],
+							"size": [
+								6,
+								8,
+								6
+							],
+							"uv": [
+								635,
+								845
+							]
+						}
+					]
+				},
+				{
+					"name": "ears",
+					"parent": "wolfspawnegg",
+					"pivot": [
+						0,
+						8,
+						0.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2.975,
+								8.5,
+								-0.5
+							],
+							"size": [
+								2,
+								1,
+								2
+							],
+							"pivot": [
+								-1.975,
+								9,
+								0.5
+							],
+							"rotation": [
+								-90,
+								0,
+								0
+							],
+							"mirror": true,
+							"uv": [
+								646,
+								860
+							]
+						},
+						{
+							"origin": [
+								0.975,
+								8.5,
+								-0.5
+							],
+							"size": [
+								2,
+								1,
+								2
+							],
+							"pivot": [
+								1.975,
+								9,
+								0.5
+							],
+							"rotation": [
+								-90,
+								0,
+								0
+							],
+							"uv": [
+								646,
+								860
+							]
+						}
+					]
+				},
+				{
+					"name": "snout",
+					"parent": "wolfspawnegg",
+					"pivot": [
+						0,
+						1.5,
+						-3
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								0,
+								-5
+							],
+							"size": [
+								3,
+								3,
+								2
+							],
+							"uv": [
+								635,
+								860
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

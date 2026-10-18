@@ -1,0 +1,128 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.bee_firefly_baby",
+				"texture_width": 48,
+				"texture_height": 48,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [
+						0,
+						5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2,
+								3,
+								1
+							],
+							"size": [
+								4,
+								4,
+								3
+							],
+							"uv": [
+								0,
+								40
+							]
+						}
+					]
+				},
+				{
+					"name": "antenna",
+					"parent": "body",
+					"pivot": [
+						0,
+						7,
+						-2.3
+					]
+				},
+				{
+					"name": "stinger",
+					"parent": "body",
+					"pivot": [
+						0,
+						5,
+						4
+					],
+					"cubes": [
+						{
+							"origin": [
+								-0.75,
+								4,
+								4
+							],
+							"size": [
+								1.5,
+								1,
+								1.5
+							],
+							"uv": [
+								13,
+								32
+							]
+						}
+					]
+				},
+				{
+					"name": "rightwing_bone",
+					"parent": "body",
+					"pivot": [
+						0,
+						7.5,
+						-1.5
+					]
+				},
+				{
+					"name": "leftwing_bone",
+					"parent": "body",
+					"pivot": [
+						0,
+						7.5,
+						-1.5
+					]
+				},
+				{
+					"name": "leg_front",
+					"parent": "body",
+					"pivot": [
+						0,
+						1.75,
+						-1
+					]
+				},
+				{
+					"name": "leg_mid",
+					"parent": "body",
+					"pivot": [
+						0,
+						1.75,
+						0
+					]
+				},
+				{
+					"name": "leg_back",
+					"parent": "body",
+					"pivot": [
+						0,
+						1.75,
+						0.95
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,224 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_ecnuoa",
+				"texture_width": 1,
+				"texture_height": 1,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [
+					0,
+					0.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "flowerroots",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "flowerrotate",
+					"parent": "flowerroots",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "fireflies",
+					"parent": "flowerrotate",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "firefly1",
+					"parent": "fireflies",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "glow1",
+					"parent": "firefly1",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear1",
+					"parent": "glow1",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								-1.5,
+								-0.5
+							],
+							"size": [
+								3,
+								3,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										1,
+										1
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "firefly2",
+					"parent": "fireflies",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "glow2",
+					"parent": "firefly2",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear2",
+					"parent": "glow2",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								-1.5,
+								-0.5
+							],
+							"size": [
+								3,
+								3,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										1,
+										1
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "firefly3",
+					"parent": "fireflies",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "glow3",
+					"parent": "firefly3",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear3",
+					"parent": "glow3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								-1.5,
+								-0.5
+							],
+							"size": [
+								3,
+								3,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										1,
+										1
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,100 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_xpgzmm",
+				"texture_width": 1,
+				"texture_height": 1,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "heldflower",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "flower",
+					"parent": "heldflower",
+					"pivot": [
+						0,
+						5.5,
+						0
+					]
+				},
+				{
+					"name": "offset",
+					"parent": "flower",
+					"pivot": [
+						0,
+						5.5,
+						0
+					]
+				},
+				{
+					"name": "itemglow",
+					"parent": "offset",
+					"pivot": [
+						0,
+						13.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.5,
+								10.5,
+								-4
+							],
+							"size": [
+								7,
+								7,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										1,
+										1
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

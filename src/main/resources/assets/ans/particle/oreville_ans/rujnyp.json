@@ -1,0 +1,59 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "oreville_ans:rujnyp",
+ "source": {
+  "layer": "root",
+  "file": "particles/ejl.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_opaque",
+ "render": "opaque",
+ "bedrock_texture": "textures/oreville/ans/dgk",
+ "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+ "texture_size": [
+  1,
+  1
+ ],
+ "components": {
+  "minecraft:emitter_initialization": {
+   "creation_expression": "v.hrsqwn=0.75;v.jcalav=1;v.ypfpjf=1;v.rbnrwg=1;v.jzydng=1;v.tlnhrs=0;v.oblorc=0;v.rquezm=v.rquezm??1;v.rlbzul=-100;",
+   "per_update_expression": "t.val=q.distance_from_camera<2;!t.val&&q.is_sneaking&&(v.emitter_age-v.rlbzul)>1.33?{v.rlbzul=v.emitter_age;v.rquezm=-v.rquezm;};"
+  },
+  "minecraft:emitter_rate_steady": {
+   "spawn_rate": 40,
+   "max_particles": 10000
+  },
+  "minecraft:emitter_lifetime_expression": {
+   "expiration_expression": "!q.is_gliding"
+  },
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": 0
+  },
+  "minecraft:particle_lifetime_events": {
+   "expiration_event": "vvepkv"
+  },
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    0,
+    0
+   ]
+  }
+ },
+ "events": {
+  "vvepkv": {
+   "sequence": [
+    {
+     "expression": "t.qig=v.hrsqwn;t.glr=0;t.r=v.jcalav;t.g=v.ypfpjf;t.b=v.rbnrwg;t.a=v.jzydng;t.fiv=0;t.tni=0;t.vnk=0;t.mir=0;t.xht=0;t.tcq=0;t.kgp=0;t.wmu=0;t.cfu=q.position(0);t.cdl=q.position(1)-1.62;t.qxs=q.position(2);t.hld=t.cfu-(v.dsbcmi??t.cfu);t.pbk=t.cdl-(v.vvhyzw??t.cdl);t.yvh=t.qxs-(v.kwrfap??t.qxs);t.wmu=t.hld||t.pbk||t.yvh;v.dsbcmi=t.cfu;v.vvhyzw=t.cdl;v.kwrfap=t.qxs;t.wmu?{t.kgp=Math.sqrt(t.hld*t.hld+t.pbk*t.pbk+t.yvh*t.yvh);t.hld=t.hld/t.kgp;t.pbk=t.pbk/t.kgp;t.yvh=t.yvh/t.kgp;t.hdp=20*Math.sqrt(q.position_delta(0)*q.position_delta(0)+q.position_delta(1)*q.position_delta(1)+q.position_delta(2)*q.position_delta(2));q.is_local_player&&q.distance_from_camera<2?{t.wmu=0;};t.a=v.jzydng*Math.pow(Math.clamp(t.hdp/15,0,1),2);t.ulg=Math.cos(q.body_y_rotation);t.wgo=0;t.fba=Math.sin(q.body_y_rotation);t.ktq=-t.yvh*t.wgo+t.pbk*t.fba;t.ajr=t.yvh*t.ulg-t.hld*t.fba;t.bkf=-t.pbk*t.ulg+t.hld*t.wgo;t.kgp=Math.sqrt(t.ktq*t.ktq+t.ajr*t.ajr+t.bkf*t.bkf);t.ktq=t.ktq/t.kgp;t.ajr=t.ajr/t.kgp;t.bkf=t.bkf/t.kgp;t.jtu=Math.clamp(v.emitter_age-v.rlbzul,0,2);t.tgr=375*Math.clamp(t.jtu/0.75,0,1)-25*Math.hermite_blend(Math.clamp((t.jtu-0.75)/0.38,0,1))+15*Math.hermite_blend(Math.clamp((t.jtu-1.13)/0.33,0,1))-5*Math.hermite_blend(Math.clamp((t.jtu-1.46)/0.54,0,1));t.tgr=t.tgr*v.rquezm;t.xqz=-Math.sin(v.emitter_age*600)*10*Math.clamp(1/Math.max(1,t.hdp*0.6*0.5),0,1);t.mqz=q.target_y_rotation+t.tgr+t.xqz;t.xyq=Math.sin(t.mqz);t.dth=Math.cos(t.mqz);t.owg=t.dth*t.ulg+t.xyq*t.ktq;t.ykg=t.dth*t.wgo+t.xyq*t.ajr;t.egx=t.dth*t.fba+t.xyq*t.bkf;t.xyq=Math.sin(t.mqz+90);t.dth=Math.cos(t.mqz+90);t.ktq=t.dth*t.ulg+t.xyq*t.ktq;t.ajr=t.dth*t.wgo+t.xyq*t.ajr;t.bkf=t.dth*t.fba+t.xyq*t.bkf;t.ulg=t.owg;t.wgo=t.ykg;t.fba=t.egx;v.oblorc?{t.ulg=-t.ulg;t.wgo=-t.wgo;t.fba=-t.fba;};t.gev=Math.clamp(q.target_x_rotation+20,0,60)/60;t.rje=Math.lerp(1.5,0.5,t.gev);t.zwo=0.5;t.rah=Math.lerp(0.3,-0.1,t.gev);t.x=t.cfu+t.rje*t.ulg+t.zwo*t.ktq+t.rah*t.hld;t.y=t.cdl+t.rje*t.wgo+t.zwo*t.ajr+t.rah*t.pbk;t.z=t.qxs+t.rje*t.fba+t.zwo*t.bkf+t.rah*t.yvh;v.bhblov=v.bhblov??t.x;v.ebypvy=v.ebypvy??t.y;v.borcrz=v.borcrz??t.z;t.afg=Math.lerp(0.3,1,Math.clamp((t.hdp-5)/15,0,1));t.x=Math.lerp(v.bhblov,t.x,t.afg);t.y=Math.lerp(v.ebypvy,t.y,t.afg);t.z=Math.lerp(v.borcrz,t.z,t.afg);t.swd=t.x-v.bhblov;t.isp=t.y-v.ebypvy;t.eao=t.z-v.borcrz;t.glr=(v.emitter_age-v.tlnhrs)/v.hrsqwn;v.tlnhrs=v.emitter_age;t.kgp=Math.sqrt(t.swd*t.swd+t.isp*t.isp+t.eao*t.eao);t.mir=t.swd/t.kgp;t.xht=t.isp/t.kgp;t.tcq=t.eao/t.kgp;t.fiv=Math.lerp(v.bhblov,t.x,0.5);t.tni=Math.lerp(v.ebypvy,t.y,0.5);t.vnk=Math.lerp(v.borcrz,t.z,0.5);v.bhblov=t.x;v.ebypvy=t.y;v.borcrz=t.z;};"
+    },
+    {
+     "particle_effect": {
+      "effect": "oreville_ans:ejwqin",
+      "type": "emitter_bound",
+      "pre_effect_expression": "v.sealpe=t.wmu;v.sbiadh=t.glr;v.jcalav=t.r;v.ypfpjf=t.g;v.rbnrwg=t.b;v.jzydng=t.a;v.bhblov=t.fiv;v.ebypvy=t.tni;v.borcrz=t.vnk;v.rowpry=t.mir;v.rgwjra=t.xht;v.ipczvr=t.tcq;v.cfglpd=0.5*(t.kgp+0);v.hrsqwn=t.qig;"
+     }
+    }
+   ]
+  }
+ }
+}

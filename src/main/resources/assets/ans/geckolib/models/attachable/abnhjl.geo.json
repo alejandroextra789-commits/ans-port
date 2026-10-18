@@ -1,0 +1,149 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_abnhjl",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "elements",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "smithingtemplate",
+					"parent": "elements",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.5,
+								0,
+								-1.5
+							],
+							"size": [
+								9,
+								12,
+								3
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										3,
+										3
+									],
+									"uv_size": [
+										9,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										0,
+										3
+									],
+									"uv_size": [
+										3,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										24,
+										3
+									],
+									"uv_size": [
+										-9,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										12,
+										3
+									],
+									"uv_size": [
+										3,
+										12
+									]
+								},
+								"up": {
+									"uv": [
+										3,
+										0
+									],
+									"uv_size": [
+										9,
+										3
+									]
+								},
+								"down": {
+									"uv": [
+										3,
+										18
+									],
+									"uv_size": [
+										9,
+										-3
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear",
+					"parent": "smithingtemplate",
+					"pivot": [
+						0,
+						0,
+						-0.1
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								-2,
+								-1.6
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										88.5,
+										88.5
+									],
+									"uv_size": [
+										38,
+										38
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

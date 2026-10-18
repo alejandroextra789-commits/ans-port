@@ -1,0 +1,76 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "oreville_ans:bidpwb",
+ "source": {
+  "layer": "root",
+  "file": "particles/nwm.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_opaque",
+ "render": "opaque",
+ "bedrock_texture": "textures/oreville/ans/dgk",
+ "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+ "texture_size": [
+  1,
+  1
+ ],
+ "components": {
+  "minecraft:emitter_initialization": {
+   "creation_expression": "v.jcalav=v.jcalav??1;v.ypfpjf=v.ypfpjf??1;v.rbnrwg=v.rbnrwg??1;v.jzydng=v.jzydng??1;"
+  },
+  "minecraft:emitter_rate_steady": {
+   "spawn_rate": "3+Math.pow(Math.clamp((q.ground_speed-3)/12,0,1),0.5)*14",
+   "max_particles": 10000
+  },
+  "minecraft:particle_motion_collision": {
+   "collision_radius": 0.01,
+   "expire_on_contact": true
+  },
+  "minecraft:emitter_shape_disc": {
+   "offset": [
+    "(Math.floor(v.particle_random_1*13)-6)*(2/16/2)",
+    0.51,
+    "(Math.floor(v.particle_random_2*13)-6)*(2/16/2)"
+   ],
+   "radius": 0,
+   "plane_normal": "y",
+   "direction": [
+    0,
+    -1,
+    0
+   ]
+  },
+  "minecraft:particle_lifetime_events": {
+   "expiration_event": "vvepkv"
+  },
+  "minecraft:emitter_lifetime_expression": {},
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": 0.1
+  },
+  "minecraft:particle_motion_dynamic": {},
+  "minecraft:particle_initial_speed": 10,
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    0,
+    0
+   ]
+  }
+ },
+ "events": {
+  "vvepkv": {
+   "sequence": [
+    {
+     "expression": "t.wmu=v.particle_age<v.particle_lifetime;t.hdp=q.ground_speed;t.r=v.jcalav;t.g=v.ypfpjf;t.b=v.rbnrwg;t.a=v.jzydng;"
+    },
+    {
+     "particle_effect": {
+      "effect": "oreville_ans:mnntfa",
+      "type": "particle",
+      "pre_effect_expression": "v.sealpe=t.wmu;v.obhshf=t.hdp;v.jcalav=t.r;v.ypfpjf=t.g;v.rbnrwg=t.b;v.jzydng=t.a;v.svgetx=1.5;"
+     }
+    }
+   ]
+  }
+ }
+}

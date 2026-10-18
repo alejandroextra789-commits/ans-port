@@ -1,0 +1,83 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "minecraft:block_destruct",
+ "source": {
+  "layer": "root",
+  "file": "particles/ept.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_opaque",
+ "render": "opaque",
+ "bedrock_texture": "textures/oreville/ans/dgk",
+ "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+ "texture_size": [
+  1,
+  1
+ ],
+ "components": {
+  "minecraft:emitter_lifetime_events": {
+   "creation_event": "meeuld"
+  },
+  "minecraft:emitter_rate_instant": {
+   "num_particles": 1
+  },
+  "minecraft:emitter_lifetime_once": {
+   "active_time": 0
+  },
+  "minecraft:emitter_shape_point": {
+   "offset": [
+    0,
+    "v.emitter_radius+0.6",
+    0
+   ]
+  },
+  "minecraft:particle_expire_if_not_in_blocks": [
+   "minecraft:water",
+   "minecraft:flowing_water",
+   "minecraft:snow_layer"
+  ],
+  "minecraft:particle_lifetime_events": {
+   "expiration_event": "zomplc"
+  },
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": 0.5
+  },
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    0,
+    0
+   ]
+  }
+ },
+ "events": {
+  "meeuld": {
+   "sequence": [
+    {
+     "expression": "t.nhe=v.emitter_intensity;t.xqo=v.emitter_radius;t.wqq=v.velocity_scalar;t.bph=v.emitter_texture_coordinate;t.svc=v.emitter_texture_size;t.jqx=v.color;"
+    },
+    {
+     "particle_effect": {
+      "effect": "oreville_ans:fdxqqv",
+      "type": "emitter",
+      "pre_effect_expression": "v.gsyren=t.nhe;v.egfdym=t.xqo;v.cqknid=t.wqq;v.nloogt=t.bph;v.mcgelh=t.svc;v.qysgsk=t.jqx;"
+     }
+    }
+   ]
+  },
+  "zomplc": {
+   "sequence": [
+    {
+     "expression": "t.vss=v.particle_age<v.particle_lifetime;t.nhe=v.emitter_intensity;t.xqo=v.emitter_radius;t.wqq=v.velocity_scalar;t.bph=v.emitter_texture_coordinate;t.svc=v.emitter_texture_size;t.jqx=v.color;"
+    },
+    {
+     "particle_effect": {
+      "effect": "oreville_ans:yohytx",
+      "type": "emitter",
+      "pre_effect_expression": "v.sealpe=t.vss;v.gsyren=t.nhe;v.egfdym=t.xqo;v.cqknid=t.wqq;v.nloogt=t.bph;v.mcgelh=t.svc;v.qysgsk=t.jqx;"
+     }
+    }
+   ]
+  }
+ }
+}

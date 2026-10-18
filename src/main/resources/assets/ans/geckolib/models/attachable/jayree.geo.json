@@ -1,0 +1,705 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_jayree",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [
+					0,
+					0.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "elements",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "plush",
+					"parent": "elements",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "plushbody",
+					"parent": "plush",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "plushsquid",
+					"parent": "plushbody",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "plushsquidhead",
+					"parent": "plushsquid",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								0,
+								-4
+							],
+							"size": [
+								8,
+								9,
+								8
+							],
+							"uv": [
+								280,
+								323
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegsquid1",
+					"parent": "plushsquid",
+					"pivot": [
+						-2,
+						0.25,
+						-4
+					],
+					"rotation": [
+						0,
+						15,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								0.25,
+								-7
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								340
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegsquid2",
+					"parent": "plushsquid",
+					"pivot": [
+						-4,
+						0.25,
+						-2
+					],
+					"rotation": [
+						0,
+						75,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5,
+								0.25,
+								-5
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								340
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegsquid3",
+					"parent": "plushsquid",
+					"pivot": [
+						-4,
+						0.25,
+						2
+					],
+					"rotation": [
+						0,
+						105,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5,
+								0.25,
+								-1
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								340
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegsquid4",
+					"parent": "plushsquid",
+					"pivot": [
+						-2,
+						0.25,
+						4
+					],
+					"rotation": [
+						0,
+						165,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								0.25,
+								1
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								340
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegsquid5",
+					"parent": "plushsquid",
+					"pivot": [
+						2,
+						0.25,
+						4
+					],
+					"rotation": [
+						0,
+						-165,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								0.25,
+								1
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								340
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegsquid6",
+					"parent": "plushsquid",
+					"pivot": [
+						4,
+						0.25,
+						2
+					],
+					"rotation": [
+						0,
+						-105,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								3,
+								0.25,
+								-1
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								340
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegsquid7",
+					"parent": "plushsquid",
+					"pivot": [
+						4,
+						0.25,
+						-2
+					],
+					"rotation": [
+						0,
+						-75,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								3,
+								0.25,
+								-5
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								340
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegsquid8",
+					"parent": "plushsquid",
+					"pivot": [
+						2,
+						0,
+						-4
+					],
+					"rotation": [
+						0,
+						-15,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								0.25,
+								-7
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								340
+							]
+						}
+					]
+				},
+				{
+					"name": "plushglowsquid",
+					"parent": "plushbody",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "plushglowsquidhead",
+					"parent": "plushglowsquid",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								-9,
+								-4
+							],
+							"size": [
+								8,
+								9,
+								8
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										288,
+										362.98
+									],
+									"uv_size": [
+										7.98,
+										-8.98
+									]
+								},
+								"east": {
+									"uv": [
+										280,
+										362.98
+									],
+									"uv_size": [
+										7.98,
+										-8.98
+									]
+								},
+								"south": {
+									"uv": [
+										304,
+										362.98
+									],
+									"uv_size": [
+										7.98,
+										-8.98
+									]
+								},
+								"west": {
+									"uv": [
+										296,
+										362.98
+									],
+									"uv_size": [
+										7.98,
+										-8.98
+									]
+								},
+								"up": {
+									"uv": [
+										296,
+										346
+									],
+									"uv_size": [
+										7.98,
+										7.98
+									]
+								},
+								"down": {
+									"uv": [
+										288,
+										353.98
+									],
+									"uv_size": [
+										7.98,
+										-7.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "plushlegglowsquid1",
+					"parent": "plushglowsquid",
+					"pivot": [
+						-2,
+						-0.25,
+						-4
+					],
+					"rotation": [
+						0,
+						15,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-2.25,
+								-7
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								363
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegglowsquid2",
+					"parent": "plushglowsquid",
+					"pivot": [
+						-4,
+						-0.25,
+						-2
+					],
+					"rotation": [
+						0,
+						75,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5,
+								-2.25,
+								-5
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								363
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegglowsquid3",
+					"parent": "plushglowsquid",
+					"pivot": [
+						-4,
+						-0.25,
+						2
+					],
+					"rotation": [
+						0,
+						105,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5,
+								-2.25,
+								-1
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								363
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegglowsquid4",
+					"parent": "plushglowsquid",
+					"pivot": [
+						-2,
+						-0.25,
+						4
+					],
+					"rotation": [
+						0,
+						165,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-2.25,
+								1
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								363
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegglowsquid5",
+					"parent": "plushglowsquid",
+					"pivot": [
+						2,
+						-0.25,
+						4
+					],
+					"rotation": [
+						0,
+						-165,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								-2.25,
+								1
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								363
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegglowsquid6",
+					"parent": "plushglowsquid",
+					"pivot": [
+						4,
+						-0.25,
+						2
+					],
+					"rotation": [
+						0,
+						-105,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								3,
+								-2.25,
+								-1
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								363
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegglowsquid7",
+					"parent": "plushglowsquid",
+					"pivot": [
+						4,
+						-0.25,
+						-2
+					],
+					"rotation": [
+						0,
+						-75,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								3,
+								-2.25,
+								-5
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								363
+							]
+						}
+					]
+				},
+				{
+					"name": "plushlegglowsquid8",
+					"parent": "plushglowsquid",
+					"pivot": [
+						2,
+						0,
+						-4
+					],
+					"rotation": [
+						0,
+						-15,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								-2.25,
+								-7
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"inflate": 0.25,
+							"uv": [
+								280,
+								363
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

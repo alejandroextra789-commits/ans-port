@@ -1,0 +1,110 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.wither_vqmxer",
+				"texture_width": 64,
+				"texture_height": 32,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "summon_root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "summon_head",
+					"parent": "summon_root",
+					"pivot": [
+						0,
+						26,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								22,
+								-4
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "summon_head_right",
+					"parent": "summon_root",
+					"pivot": [
+						-12,
+						26,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-16,
+								22,
+								-4
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "summon_head_left",
+					"parent": "summon_root",
+					"pivot": [
+						12,
+						26,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								8,
+								22,
+								-4
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

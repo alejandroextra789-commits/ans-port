@@ -1,0 +1,81 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.sheep_nshdul",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "root",
+					"pivot": [
+						0,
+						14.25,
+						0
+					]
+				},
+				{
+					"name": "centroid",
+					"parent": "body",
+					"pivot": [
+						0,
+						14.25,
+						0
+					],
+					"rotation": [
+						90,
+						0,
+						0
+					]
+				},
+				{
+					"name": "wool_centroid",
+					"parent": "centroid",
+					"pivot": [
+						0,
+						14.25,
+						0
+					]
+				},
+				{
+					"name": "sheep_head",
+					"parent": "body",
+					"pivot": [
+						0,
+						18,
+						-8
+					]
+				},
+				{
+					"name": "lead_locator",
+					"parent": "body",
+					"locators": {
+						"tmil": [
+							0,
+							18,
+							-8
+						]
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,135 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_gjidji",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 8,
+				"visible_bounds_height": 6.5,
+				"visible_bounds_offset": [
+					0,
+					2.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "emissive1",
+					"parent": "head",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "goggles",
+					"parent": "head",
+					"pivot": [
+						0,
+						34,
+						-32
+					]
+				},
+				{
+					"name": "glow2",
+					"parent": "goggles",
+					"pivot": [
+						16,
+						31,
+						-36
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear2",
+					"parent": "glow2",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								19,
+								-58.25
+							],
+							"size": [
+								40,
+								24,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										76.5,
+										76.5
+									],
+									"uv_size": [
+										50,
+										50
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "glow1",
+					"parent": "goggles",
+					"pivot": [
+						-16,
+						31,
+						-36
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear1",
+					"parent": "glow1",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-36,
+								19,
+								-58.25
+							],
+							"size": [
+								40,
+								24,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										126.5,
+										76.5
+									],
+									"uv_size": [
+										-50,
+										50
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

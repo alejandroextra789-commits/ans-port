@@ -1,0 +1,1977 @@
+{
+	"format": "ans:bedrock_entity",
+	"format_version": 1,
+	"identifier": "minecraft:creeper",
+	"source": {
+		"layer": "root",
+		"file": "entity/dur.json",
+		"min_engine_version": "1.8.0"
+	},
+	"animation_file": "ans:experience/full/entity/creeper",
+	"geometry": {
+		"nshdul": "ans:entity/creeper_nshdul",
+		"cqvkuv": "ans:entity/creeper_cqvkuv",
+		"meratx": "ans:experience/full/entity/creeper_meratx",
+		"sofmpb": "ans:experience/full/entity/creeper_cherry",
+		"tblaea": "ans:experience/full/entity/creeper_tblaea",
+		"uibrhs": "ans:experience/full/entity/creeper_uibrhs",
+		"hkyjlq": "ans:experience/full/entity/creeper_hkyjlq",
+		"tlyzdy": "ans:experience/full/entity/creeper_powered",
+		"qrkrcz": "ans:experience/full/entity/creeper_powered_qrkrcz",
+		"bsitgo": "ans:experience/full/entity/creeper_powered_bsitgo",
+		"qddgxu": "ans:experience/full/entity/creeper_qddgxu",
+		"xcyaru": "ans:experience/full/entity/creeper_powered_xcyaru",
+		"vpbaiq": "ans:experience/full/entity/creeper_powered_vpbaiq",
+		"hxbtht": "ans:entity/creeper_hxbtht",
+		"giazhl": "ans:entity/creeper_giazhl",
+		"mnpxpx": "ans:entity/creeper_mnpxpx",
+		"inmizy": "ans:entity/creeper_inmizy",
+		"frjmwe": "ans:entity/creeper_frjmwe",
+		"mguodl": "ans:entity/creeper_powered_halloween",
+		"emksye": "ans:entity/creeper_halloween",
+		"vtzpwi": "ans:entity/creeper_powered_halloween_vtzpwi",
+		"walmof": "ans:experience/full/entity/creeper_halloween_walmof",
+		"ngaddc": "ans:entity/creeper_ngaddc",
+		"ykktdw": "ans:experience/full/entity/creeper_cherry_ykktdw",
+		"eaoeng": "ans:entity/creeper_eaoeng",
+		"kpyzld": "ans:entity/creeper_kpyzld",
+		"eedkng": "ans:entity/creeper_eedkng",
+		"vnknol": "ans:entity/creeper_vnknol",
+		"bdelxt": "ans:experience/full/entity/creeper_powered_bdelxt",
+		"dejbib": "ans:entity/creeper_powered_dejbib",
+		"rbjrxp": "ans:entity/creeper_powered_rbjrxp",
+		"pyscvg": "ans:experience/full/entity/creeper_powered_pyscvg",
+		"default": "ans:entity/creeper",
+		"wnimdp": "ans:experience/full/entity/creeper_sulfur",
+		"fxahuk": "ans:experience/full/entity/creeper_sulfur_fxahuk"
+	},
+	"textures": {
+		"default": "ans:textures/experience/full/entity/creeper/default.png",
+		"vfccku": "ans:textures/entity/creeper/vfccku.png",
+		"mvzggm": "ans:textures/experience/full/entity/creeper/mvzggm.png",
+		"jkeviz": "ans:textures/entity/creeper/jkeviz.png",
+		"meratx": "ans:textures/experience/full/entity/creeper/powered.png",
+		"sofmpb": "ans:textures/experience/full/entity/creeper/cherry.png",
+		"tshbvv": "ans:textures/experience/full/entity/creeper/powered_tshbvv.png",
+		"xcyaru": "ans:textures/experience/full/entity/creeper/xcyaru.png",
+		"vpbaiq": "ans:textures/experience/full/entity/creeper/vpbaiq.png",
+		"sbhvpd": "ans:textures/experience/full/entity/creeper/sbhvpd.png",
+		"untbxc": "ans:textures/experience/full/entity/creeper/powered_untbxc.png",
+		"fpvyfs": "ans:textures/experience/full/entity/creeper/powered_fpvyfs.png",
+		"rylmmb": "ans:textures/entity/creeper/rylmmb.png",
+		"vzgcjr": "ans:textures/entity/creeper/vzgcjr.png",
+		"dxvoig": "ans:textures/entity/creeper/dxvoig.png",
+		"ngaddc": "ans:textures/experience/full/entity/creeper/powered_ngaddc.png",
+		"ykktdw": "ans:textures/experience/full/entity/creeper/cherry_ykktdw.png",
+		"bjeqak": "ans:textures/entity/creeper/powered_bjeqak.png",
+		"uvulxv": "ans:textures/entity/creeper/uvulxv.png",
+		"bdelxt": "ans:textures/entity/creeper/powered_bdelxt.png",
+		"tlvtrl": "ans:textures/entity/creeper/tlvtrl.png",
+		"vtxbmc": "ans:textures/entity/creeper/powered_pig.png",
+		"oagtmt": "ans:textures/entity/creeper/powered_pig_oagtmt.png",
+		"kjuzvo": "ans:textures/experience/full/entity/creeper/pig.png",
+		"geyxzx": "ans:textures/experience/full/entity/creeper/pig_geyxzx.png",
+		"qkjlhw": "ans:textures/entity/creeper/powered_pig_qkjlhw.png",
+		"rbjrxp": "ans:textures/experience/full/entity/creeper/halloween.png",
+		"pyscvg": "ans:textures/experience/full/entity/creeper/pyscvg.png",
+		"wnimdp": "ans:textures/experience/full/entity/creeper/sulfur.png",
+		"fxahuk": "ans:textures/experience/full/entity/creeper/sulfur_fxahuk.png"
+	},
+	"materials": {
+		"wlqxdl": {
+			"bedrock": "auulis",
+			"render_type": "additive",
+			"uv_anim": true
+		},
+		"jpooxn": {
+			"bedrock": "vozhhb",
+			"render_type": "solid"
+		},
+		"bzpamm": {
+			"bedrock": "gkhguv",
+			"render_type": "stencil_outline"
+		},
+		"default": {
+			"bedrock": "entity",
+			"render_type": "solid"
+		},
+		"mqwxej": {
+			"bedrock": "mqwxej",
+			"render_type": "emissive_alpha",
+			"uv_anim": true
+		},
+		"klduzy": {
+			"bedrock": "klduzy",
+			"render_type": "cutout"
+		},
+		"irduzd": {
+			"bedrock": "entity_alphatest",
+			"render_type": "cutout"
+		},
+		"zqsqyu": {
+			"bedrock": "zqsqyu",
+			"render_type": "emissive_alpha_cull",
+			"uv_anim": true
+		},
+		"jpfveg": {
+			"bedrock": "jpfveg",
+			"render_type": "cutout"
+		},
+		"vozhhb": {
+			"bedrock": "vozhhb",
+			"render_type": "solid"
+		},
+		"gkhguv": {
+			"bedrock": "gkhguv",
+			"render_type": "stencil_outline"
+		},
+		"pdewsm": {
+			"bedrock": "charged_creeper",
+			"render_type": "energy_swirl"
+		},
+		"auulis": {
+			"bedrock": "auulis",
+			"render_type": "additive",
+			"uv_anim": true
+		},
+		"uhlnyb": {
+			"bedrock": "uhlnyb",
+			"render_type": "additive",
+			"uv_anim": true
+		}
+	},
+	"animations": {
+		"kgklcq": {
+			"bedrock": "animation.oreville_ans.xghxmf",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.evlypi='jhotdc';return 0;"
+		},
+		"hzsxsn": {
+			"bedrock": "controller.animation.oreville_ans.ienaao",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"boat": "q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+							},
+							{
+								"minecart": "q.is_riding_any_entity_of_type('minecraft:minecart')"
+							}
+						]
+					},
+					"boat": {
+						"transitions": [
+							{
+								"default": "!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "zgynvb",
+								"resolved": "oreville_ans:zgynvb"
+							}
+						]
+					},
+					"minecart": {
+						"transitions": [
+							{
+								"default": "!q.is_riding_any_entity_of_type('minecraft:minecart')"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "ylnbre",
+								"resolved": "oreville_ans:ylnbre"
+							}
+						]
+					}
+				}
+			}
+		},
+		"hspnai": {
+			"bedrock": "controller.animation.oreville_ans.yxsuam",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							{
+								"rxkiuo": "v.dxvpbr"
+							}
+						],
+						"transitions": [
+							{
+								"biuohp": "1"
+							}
+						],
+						"on_exit": [
+							"q.anim_time>=v.edfatt&&v.dxvpbr?{v.mwofua!=0?{v.fuppgm=q.bone_orientation_trs(v.mwofua);};v.kmdjay!=0?{v.zxxjyc=q.bone_orientation_trs(v.kmdjay);};v.xuasnj!=0?{v.lrnnba=q.bone_orientation_trs(v.xuasnj);};v.nwbaeq!=0?{v.lfzvoq=q.bone_orientation_trs(v.nwbaeq);};};v.edfatt=q.anim_time;"
+						]
+					},
+					"biuohp": {
+						"animations": [
+							{
+								"rxkiuo": "v.dxvpbr"
+							}
+						],
+						"transitions": [
+							{
+								"default": "1"
+							}
+						],
+						"on_exit": [
+							"q.anim_time>=v.edfatt&&v.dxvpbr?{v.mwofua!=0?{v.fuppgm=q.bone_orientation_trs(v.mwofua);};v.kmdjay!=0?{v.zxxjyc=q.bone_orientation_trs(v.kmdjay);};v.xuasnj!=0?{v.lrnnba=q.bone_orientation_trs(v.xuasnj);};v.nwbaeq!=0?{v.lfzvoq=q.bone_orientation_trs(v.nwbaeq);};};v.edfatt=q.anim_time;"
+						]
+					}
+				}
+			}
+		},
+		"rxkiuo": {
+			"bedrock": "animation.oreville_ans.kexzif",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.acloko=v.acloko+q.delta_time;v.mwofua!=0&&v.zgldyg==1&&!v.rghlbo?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.fuppgm.t.x/16;t.czy=v.fuppgm.t.y/16;t.hbg=v.fuppgm.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.hcmvys=Math.asin(t.vqv/t.ida);v.rdmkec=Math.atan2(t.lxb,t.zwc);};v.mwofua!=0&&v.zgldyg==1&&v.rghlbo?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.fuppgm.t.x/16;t.czy=v.fuppgm.t.y/16;t.hbg=v.fuppgm.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.qugnsz=Math.asin(t.vqv/t.ida);v.jgzabo=Math.atan2(t.lxb,t.zwc);};v.mwofua!=0&&v.zgldyg>1?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.fuppgm.t.x/16;t.czy=v.fuppgm.t.y/16;t.hbg=v.fuppgm.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.qugnsz=Math.asin(t.vqv/t.ida);v.jgzabo=Math.atan2(t.lxb,t.zwc);};v.kmdjay!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.zxxjyc.t.x/16;t.czy=v.zxxjyc.t.y/16;t.hbg=v.zxxjyc.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.zkzmro=Math.asin(t.vqv/t.ida);v.tgmzwf=Math.atan2(t.lxb,t.zwc);};v.xuasnj!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.lrnnba.t.x/16;t.czy=v.lrnnba.t.y/16;t.hbg=v.lrnnba.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.boadtw=Math.asin(t.vqv/t.ida);v.uumlcn=Math.atan2(t.lxb,t.zwc);};v.nwbaeq!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.lfzvoq.t.x/16;t.czy=v.lfzvoq.t.y/16;t.hbg=v.lfzvoq.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.yirztn=Math.asin(t.vqv/t.ida);v.hxyjgv=Math.atan2(t.lxb,t.zwc);};v.oohocu!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.wrxogz.t.x/16;t.czy=v.wrxogz.t.y/16;t.hbg=v.wrxogz.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.cyktco=Math.asin(t.vqv/t.ida);v.pkwiaw=Math.atan2(t.lxb,t.zwc);};v.onlypv!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.tatbcp.t.x/16;t.czy=v.tatbcp.t.y/16;t.hbg=v.tatbcp.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.aacasc=Math.asin(t.vqv/t.ida);v.oxglad=Math.atan2(t.lxb,t.zwc);};v.nbdusc!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.sxeczg.t.x/16;t.czy=v.sxeczg.t.y/16;t.hbg=v.sxeczg.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.vsnqcv=Math.asin(t.vqv/t.ida);v.drflti=Math.atan2(t.lxb,t.zwc);};v.snwgjb!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.gcbpjp.t.x/16;t.czy=v.gcbpjp.t.y/16;t.hbg=v.gcbpjp.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.pbgflo=Math.asin(t.vqv/t.ida);v.zmpzgo=Math.atan2(t.lxb,t.zwc);};v.xieegi!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.uroqqy.t.x/16;t.czy=v.uroqqy.t.y/16;t.hbg=v.uroqqy.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.yxeyjs=Math.asin(t.vqv/t.ida);v.zexxcg=Math.atan2(t.lxb,t.zwc);};t.wkb=0;v.bmahve?{t.wkb=-q.target_y_rotation;};v.zgldyg==1&&!v.rghlbo?{t.ini=v.rdmkec;};v.zgldyg>=1||v.rghlbo?{t.ini=v.jgzabo;};v.habcyx=Math.min(v.acloko/3,1)*Math.clamp(1-(Math.abs(t.ini+t.wkb)/180),0,1);return 0;"
+		},
+		"mxkxfp": {
+			"bedrock": "animation.oreville_ans.aqyeyg",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.hcmvys=0;v.rdmkec=0;v.qugnsz=0;v.jgzabo=0;v.zkzmro=0;v.tgmzwf=0;v.boadtw=0;v.uumlcn=0;v.yirztn=0;v.hxyjgv=0;v.cyktco=0;v.pkwiaw=0;v.aacasc=0;v.oxglad=0;v.vsnqcv=0;v.drflti=0;v.pbgflo=0;v.zmpzgo=0;v.yxeyjs=0;v.zexxcg=0;return 0;"
+		},
+		"ihzgyq": {
+			"bedrock": "controller.animation.oreville_ans.wcnvyr",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							"jlgdzl",
+							"fndthi",
+							"vhgkyg",
+							{
+								"qsmfqg": "!q.is_in_ui"
+							},
+							"vdahiy",
+							{
+								"sfbfzz": "q.is_on_ground&&!v.apkost"
+							},
+							{
+								"hjdppu": "q.is_on_ground&&v.apkost"
+							}
+						],
+						"transitions": [
+							{
+								"hweody": "q.is_riding"
+							}
+						]
+					},
+					"hweody": {
+						"animations": [
+							"yytrhz"
+						],
+						"transitions": [
+							{
+								"default": "!q.is_riding"
+							}
+						]
+					}
+				}
+			}
+		},
+		"vdahiy": {
+			"bedrock": "controller.animation.oreville_ans.lpsitj",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							{
+								"walk": "Math.min(0.7,q.modified_move_speed)"
+							}
+						],
+						"transitions": [
+							{
+								"xzmjxw": "q.is_in_water"
+							},
+							{
+								"zhbjho": "!q.is_on_ground&&q.vertical_speed>1"
+							}
+						],
+						"blend_transition": 0.16
+					},
+					"xzmjxw": {
+						"animations": [
+							"swim"
+						],
+						"transitions": [
+							{
+								"default": "!q.is_in_water&&q.is_on_ground"
+							}
+						],
+						"blend_transition": 0.2
+					},
+					"zhbjho": {
+						"transitions": [
+							{
+								"xzmjxw": "q.is_in_water"
+							},
+							{
+								"default": "q.is_on_ground"
+							}
+						],
+						"blend_transition": 0.12
+					}
+				}
+			}
+		},
+		"kynizh": {
+			"bedrock": "controller.animation.oreville_ans.kzvhsa",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"eaibrx": "q.swelling_dir==1"
+							}
+						],
+						"blend_transition": 0.16
+					},
+					"eaibrx": {
+						"animations": [
+							"ozqjkf",
+							"eoqcfz",
+							{
+								"ermejm": "2.4"
+							}
+						],
+						"transitions": [
+							{
+								"default": "q.swell_amount==0"
+							}
+						],
+						"blend_transition": 0.6
+					}
+				}
+			}
+		},
+		"bufqou": {
+			"bedrock": "controller.animation.oreville_ans.dbjtyg",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"oxwesc": "q.swelling_dir==1&&v.aybhly"
+							},
+							{
+								"wifaop": "q.swelling_dir==1&&q.is_powered"
+							},
+							{
+								"kypqpn": "q.swelling_dir==1"
+							}
+						]
+					},
+					"kypqpn": {
+						"transitions": [
+							{
+								"default": "q.swelling_dir==-1"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "charging",
+								"locator": "uylvxk",
+								"resolved": "oreville_ans:dcbgep"
+							},
+							{
+								"effect": "uduqhm",
+								"locator": "uylvxk",
+								"resolved": "oreville_ans:dfqtjy"
+							}
+						]
+					},
+					"wifaop": {
+						"transitions": [
+							{
+								"default": "q.swelling_dir==-1"
+							},
+							{
+								"aincay": "q.state_time>1.4"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "ieqhvn",
+								"resolved": "oreville_ans:ieqhvn"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "charging",
+								"locator": "uylvxk",
+								"resolved": "oreville_ans:dcbgep"
+							},
+							{
+								"effect": "unuvja",
+								"locator": "uylvxk",
+								"resolved": "oreville_ans:xrnvdt"
+							},
+							{
+								"effect": "uduqhm",
+								"locator": "uylvxk",
+								"resolved": "oreville_ans:dfqtjy"
+							}
+						]
+					},
+					"aincay": {
+						"transitions": [
+							{
+								"default": "q.swelling_dir==-1"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "mdzohb",
+								"resolved": "oreville_ans:mdzohb"
+							}
+						]
+					},
+					"oxwesc": {
+						"transitions": [
+							{
+								"default": "q.swelling_dir==-1"
+							},
+							{
+								"raytse": "q.state_time>1.4"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "charging",
+								"locator": "uylvxk",
+								"resolved": "oreville_ans:dcbgep"
+							},
+							{
+								"effect": "uduqhm",
+								"locator": "uylvxk",
+								"resolved": "oreville_ans:dfqtjy"
+							}
+						]
+					},
+					"raytse": {
+						"transitions": [
+							{
+								"default": "q.swelling_dir==-1"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "jlutvv",
+								"resolved": "oreville_ans:jlutvv"
+							},
+							{
+								"effect": "vmphqy",
+								"resolved": "oreville_ans:vmphqy"
+							}
+						]
+					}
+				}
+			}
+		},
+		"bwqvaq": {
+			"bedrock": "controller.animation.oreville_ans.jpkkof",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"fnkdxo": "v.qdrdvj"
+							},
+							{
+								"kypqpn": "q.is_powered"
+							}
+						],
+						"on_entry": [
+							"v.qdrdvj=q.is_powered;"
+						]
+					},
+					"kypqpn": {
+						"animations": [
+							{
+								"bvudml": "!v.cdrzno"
+							},
+							{
+								"biczoq": "v.cdrzno"
+							},
+							"ohknry"
+						],
+						"particle_effects": [
+							{
+								"effect": "egbttn",
+								"locator": "uylvxk",
+								"resolved": "oreville_ans:egbttn"
+							},
+							{
+								"effect": "qbkcbp",
+								"locator": "uylvxk",
+								"resolved": "oreville_ans:qbkcbp"
+							},
+							{
+								"effect": "ocfbzk",
+								"locator": "uylvxk",
+								"resolved": "oreville_ans:ocfbzk"
+							},
+							{
+								"effect": "rakimo",
+								"locator": "locator",
+								"resolved": "oreville_ans:rakimo"
+							},
+							{
+								"effect": "dzzsci",
+								"locator": "uylvxk",
+								"resolved": "oreville_ans:dzzsci"
+							}
+						]
+					},
+					"fnkdxo": {
+						"particle_effects": [
+							{
+								"effect": "egbttn",
+								"locator": "uylvxk",
+								"resolved": "oreville_ans:egbttn"
+							},
+							{
+								"effect": "qbkcbp",
+								"locator": "uylvxk",
+								"resolved": "oreville_ans:qbkcbp"
+							}
+						]
+					}
+				}
+			}
+		},
+		"hznowc": {
+			"bedrock": "controller.animation.oreville_ans.njutyc",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"fnkdxo": "q.is_powered&&q.state_time>v.ntultr"
+							}
+						],
+						"on_entry": [
+							"v.ntultr=Math.random(0,1);"
+						]
+					},
+					"fnkdxo": {
+						"transitions": [
+							{
+								"default": "1"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "evzpuv",
+								"resolved": "oreville_ans:evzpuv"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "tmtnba",
+								"locator": "uylvxk",
+								"resolved": "oreville_ans:tmtnba"
+							}
+						]
+					}
+				}
+			}
+		},
+		"hjdppu": {
+			"bedrock": "controller.animation.oreville_ans.afrhfr",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"lalsxc": "v.lzghwo==1&&q.distance_from_camera<=16"
+							},
+							{
+								"yvzior": "v.lzghwo==2&&q.distance_from_camera<=16"
+							}
+						]
+					},
+					"lalsxc": {
+						"transitions": [
+							{
+								"yvzior": "v.lzghwo==2&&q.distance_from_camera<=16"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "grpkfe",
+								"resolved": "mob.pig.step"
+							}
+						]
+					},
+					"yvzior": {
+						"transitions": [
+							{
+								"lalsxc": "v.lzghwo==1&&q.distance_from_camera<=16"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "grpkfe",
+								"resolved": "mob.pig.step"
+							}
+						]
+					}
+				}
+			}
+		},
+		"wlqxdl": {
+			"bedrock": "animation.oreville_ans.duqzql",
+			"animation": "animation.creeper.glow",
+			"loop": true,
+			"relative_to_entity": [
+				"glowbody",
+				"glowhead"
+			]
+		},
+		"look_at_target": {
+			"bedrock": "animation.oreville_ans.kfcznl",
+			"animation": "animation.creeper.look_at_target",
+			"loop": true,
+			"relative_to_entity": [
+				"creeper_head"
+			]
+		},
+		"bob": {
+			"bedrock": "animation.oreville_ans.kgqudf",
+			"animation": "animation.creeper.bob",
+			"loop": true
+		},
+		"ozqjkf": {
+			"bedrock": "animation.oreville_ans.uozugp",
+			"animation": "animation.creeper.anim_ozqjkf",
+			"loop": true
+		},
+		"swim": {
+			"bedrock": "animation.oreville_ans.jhwptf",
+			"animation": "animation.creeper.swim",
+			"loop": true
+		},
+		"walk": {
+			"bedrock": "animation.oreville_ans.kfrqtl",
+			"animation": "animation.creeper.walk",
+			"loop": true,
+			"animation_length": 0.6667,
+			"anim_time_update": "q.anim_time+Math.pow(1.3,q.has_target)*(1+0.25*v.cdrzno)*q.delta_time",
+			"timeline": {
+				"0.0": [
+					"v.lzghwo=q.modified_move_speed>0.3?1;"
+				],
+				"0.2857": [
+					"v.lzghwo=q.modified_move_speed>0.3?2;"
+				]
+			}
+		},
+		"jump": {
+			"bedrock": "animation.oreville_ans.ktlklh",
+			"animation": "animation.creeper.jump",
+			"animation_length": 0.7917,
+			"blend_weight": "2"
+		},
+		"fall": {
+			"bedrock": "animation.oreville_ans.undwcf",
+			"animation": "animation.creeper.fall",
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.5417,
+			"blend_weight": "2"
+		},
+		"yytrhz": {
+			"bedrock": "animation.oreville_ans.kfqxwl",
+			"animation": "animation.creeper.ride",
+			"animation_length": 0.6875,
+			"blend_weight": "2",
+			"particle_effects": {
+				"0.125": [
+					{
+						"effect": "ddrfzp",
+						"resolved": "oreville_ans:tfrjam"
+					}
+				]
+			}
+		},
+		"eoqcfz": {
+			"bedrock": "animation.oreville_ans.wdpekr",
+			"animation": "animation.creeper.anim_eoqcfz",
+			"loop": true
+		},
+		"lkixfo": {
+			"bedrock": "animation.oreville_ans.uoepog",
+			"animation": "animation.creeper.walk_1",
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.6333
+		},
+		"wxmvys": {
+			"bedrock": "animation.oreville_ans.urnklg",
+			"animation": "animation.creeper.walk_2",
+			"animation_length": 0.6333
+		},
+		"ermejm": {
+			"bedrock": "animation.oreville_ans.cuvucl",
+			"animation": "animation.creeper.anim_ermejm",
+			"animation_length": 2.9167
+		},
+		"vwpadn": {
+			"bedrock": "animation.oreville_ans.wyxyrn",
+			"animation": "animation.creeper.idle_1",
+			"loop": true
+		},
+		"bvudml": {
+			"bedrock": "animation.oreville_ans.dymqnh",
+			"animation": "animation.creeper.anim_bvudml",
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.7917,
+			"timeline": {
+				"0.0833": [
+					"v.lbcbew=1;"
+				],
+				"0.1667": [
+					"v.lbcbew=-1;"
+				],
+				"0.25": [
+					"v.lbcbew=0;"
+				],
+				"0.3333": [
+					"v.lbcbew=1;"
+				],
+				"0.4167": [
+					"v.lbcbew=-1;"
+				],
+				"0.5": [
+					"v.lbcbew=0;"
+				],
+				"0.5833": [
+					"v.lbcbew=1;"
+				],
+				"0.6667": [
+					"v.lbcbew=-1;"
+				],
+				"0.75": [
+					"v.lbcbew=0;"
+				]
+			},
+			"sound_effects": {
+				"0": [
+					{
+						"effect": "ieqzty",
+						"resolved": "oreville_ans:ieqzty"
+					}
+				]
+			}
+		},
+		"ohknry": {
+			"bedrock": "animation.oreville_ans.xhxasz",
+			"animation": "animation.creeper.anim_ohknry",
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.7917
+		},
+		"biczoq": {
+			"bedrock": "animation.oreville_ans.ttaekn",
+			"animation": "animation.creeper.anim_biczoq",
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.7917,
+			"timeline": {
+				"0.0833": [
+					"v.lbcbew=1;"
+				],
+				"0.1667": [
+					"v.lbcbew=-1;"
+				],
+				"0.25": [
+					"v.lbcbew=0;"
+				],
+				"0.3333": [
+					"v.lbcbew=1;"
+				],
+				"0.4167": [
+					"v.lbcbew=-1;"
+				],
+				"0.5": [
+					"v.lbcbew=0;"
+				],
+				"0.5833": [
+					"v.lbcbew=1;"
+				],
+				"0.6667": [
+					"v.lbcbew=-1;"
+				],
+				"0.75": [
+					"v.lbcbew=0;"
+				]
+			},
+			"sound_effects": {
+				"0.0": [
+					{
+						"effect": "ieqzty",
+						"resolved": "oreville_ans:ieqzty"
+					}
+				]
+			}
+		},
+		"nvplwb": {
+			"bedrock": "animation.oreville_ans.ipesaz",
+			"animation": "animation.creeper.idle_2",
+			"loop": true,
+			"blend_weight": "0.2+(0.5+Math.atan(10*Math.sin((q.anim_time+v.ngjrwv)*90))/Math.atan(10)*0.5)*0.5"
+		},
+		"iivysx": {
+			"bedrock": "animation.oreville_ans.azfoaj",
+			"animation": "animation.creeper.idle_3",
+			"loop": true
+		},
+		"qsmfqg": {
+			"bedrock": "controller.animation.oreville_ans.gokvqd",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"gyckww": "v.tjswog>0"
+							},
+							{
+								"zzjhtn": "v.tjswog<0"
+							}
+						],
+						"on_entry": [
+							"v.vsokrf=q.body_y_rotation;"
+						],
+						"on_exit": [
+							"v.vsokrf=q.body_y_rotation;"
+						]
+					},
+					"gyckww": {
+						"animations": [
+							{
+								"lkixfo": "Math.clamp(1.1-q.modified_move_speed,0.01,1)"
+							}
+						],
+						"transitions": [
+							{
+								"default": "q.any_animation_finished"
+							},
+							{
+								"zzjhtn": "v.tjswog<0"
+							}
+						]
+					},
+					"zzjhtn": {
+						"animations": [
+							{
+								"wxmvys": "Math.clamp(1.1-q.modified_move_speed,0.01,1)"
+							}
+						],
+						"transitions": [
+							{
+								"default": "q.any_animation_finished"
+							},
+							{
+								"gyckww": "v.tjswog>0"
+							}
+						]
+					}
+				}
+			}
+		},
+		"jlgdzl": {
+			"bedrock": "controller.animation.oreville_ans.jmhaye",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"jump": "!q.is_on_ground&&!q.is_in_water&&q.vertical_speed>0.5"
+							}
+						]
+					},
+					"jump": {
+						"animations": [
+							"jump"
+						],
+						"transitions": [
+							{
+								"default": "q.is_on_ground||q.is_in_water||q.vertical_speed<-0.15"
+							}
+						],
+						"blend_transition": 0.24
+					}
+				}
+			}
+		},
+		"fndthi": {
+			"bedrock": "controller.animation.oreville_ans.zmclsx",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							"yytrhz"
+						],
+						"transitions": [
+							{
+								"zhbjho": "!q.is_on_ground"
+							}
+						],
+						"blend_transition": 0.1,
+						"on_entry": [
+							"v.rcgezu=1;"
+						]
+					},
+					"zhbjho": {
+						"transitions": [
+							{
+								"xjbrkk": "q.is_on_ground"
+							}
+						],
+						"on_entry": [
+							"v.rcgezu=0;"
+						]
+					},
+					"xjbrkk": {
+						"transitions": [
+							{
+								"zhbjho": "!q.is_on_ground"
+							},
+							{
+								"default": "q.state_time>0.15"
+							}
+						]
+					}
+				}
+			}
+		},
+		"pybruj": {
+			"bedrock": "controller.animation.oreville_ans.rdtrjt",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"zrgadw": "q.is_on_fire"
+							}
+						]
+					},
+					"zrgadw": {
+						"transitions": [
+							{
+								"nbelyy": "!q.is_on_fire"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "fire",
+								"resolved": "oreville_ans:awoviv"
+							}
+						]
+					},
+					"nbelyy": {
+						"transitions": [
+							{
+								"default": "1"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "nbelyy",
+								"resolved": "oreville_ans:qxwqkh"
+							}
+						]
+					}
+				}
+			}
+		},
+		"vhgkyg": {
+			"bedrock": "controller.animation.oreville_ans.dtjsxk",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"fall": "!q.is_on_ground&&q.vertical_speed<-0.5"
+							}
+						]
+					},
+					"fall": {
+						"animations": [
+							"fall"
+						],
+						"transitions": [
+							{
+								"default": "(q.is_on_ground&&q.vertical_speed>-2&&v.rcgezu)||q.vertical_speed>=-0.15"
+							},
+							{
+								"hwuwvi": "q.is_in_water"
+							}
+						],
+						"blend_transition": 0.22
+					},
+					"hwuwvi": {
+						"transitions": [
+							{
+								"default": "!q.is_in_water"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "hwuwvi",
+								"resolved": "oreville_ans:qouoou"
+							},
+							{
+								"effect": "djnihu",
+								"resolved": "oreville_ans:pdabuv"
+							},
+							{
+								"effect": "cbcewo",
+								"resolved": "oreville_ans:rpccbh"
+							}
+						]
+					}
+				}
+			}
+		},
+		"sfbfzz": {
+			"bedrock": "controller.animation.oreville_ans.xjvure",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"lalsxc": "v.lzghwo==1&&q.distance_from_camera<=16"
+							},
+							{
+								"yvzior": "v.lzghwo==2&&q.distance_from_camera<=16"
+							}
+						]
+					},
+					"lalsxc": {
+						"transitions": [
+							{
+								"yvzior": "v.lzghwo==2&&q.distance_from_camera<=16"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "ggufcw",
+								"resolved": "oreville_ans:bcnizj"
+							}
+						]
+					},
+					"yvzior": {
+						"transitions": [
+							{
+								"lalsxc": "v.lzghwo==1&&q.distance_from_camera<=16"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "ggufcw",
+								"resolved": "oreville_ans:bcnizj"
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"scripts": {
+		"initialize": [
+			"v.ohkbax=0;",
+			"v.dxvpbr=0;",
+			"v.fuppgm=0;",
+			"v.zxxjyc=0;",
+			"v.lrnnba=0;",
+			"v.lfzvoq=0;",
+			"v.wrxogz=0;",
+			"v.tatbcp=0;",
+			"v.sxeczg=0;",
+			"v.gcbpjp=0;",
+			"v.uroqqy=0;",
+			"v.qhhozj=0;",
+			"v.sqrooj=0;",
+			"v.phqhsg=0;",
+			"v.levhfc=0;",
+			"v.apkost=0;",
+			"v.rijemu=0;",
+			"v.aybhly=0;",
+			"v.ifqpks=0;",
+			"v.yfxgau=0;",
+			"v.uunhwi=0;",
+			"v.rpqxbs=0;",
+			"v.gjrfbe=0;",
+			"v.tjswog=0;",
+			"v.vsokrf=0;",
+			"v.cprttl=0;",
+			"v.itaryt=0;",
+			"v.fuppgm.t=0;",
+			"v.fuppgm.t.x=0;",
+			"v.fuppgm.t.y=0;",
+			"v.fuppgm.t.z=0;",
+			"v.hcmvys=0;",
+			"v.rdmkec=0;",
+			"v.zxxjyc.t=0;",
+			"v.zxxjyc.t.x=0;",
+			"v.zxxjyc.t.y=0;",
+			"v.zxxjyc.t.z=0;",
+			"v.lrnnba.t=0;",
+			"v.lrnnba.t.x=0;",
+			"v.lrnnba.t.y=0;",
+			"v.lrnnba.t.z=0;",
+			"v.boadtw=0;",
+			"v.uumlcn=0;",
+			"v.lfzvoq.t=0;",
+			"v.lfzvoq.t.x=0;",
+			"v.lfzvoq.t.y=0;",
+			"v.lfzvoq.t.z=0;",
+			"v.yirztn=0;",
+			"v.hxyjgv=0;",
+			"v.wrxogz.t=0;",
+			"v.wrxogz.t.x=0;",
+			"v.wrxogz.t.y=0;",
+			"v.wrxogz.t.z=0;",
+			"v.cyktco=0;",
+			"v.pkwiaw=0;",
+			"v.tatbcp.t=0;",
+			"v.tatbcp.t.x=0;",
+			"v.tatbcp.t.y=0;",
+			"v.tatbcp.t.z=0;",
+			"v.aacasc=0;",
+			"v.oxglad=0;",
+			"v.sxeczg.t=0;",
+			"v.sxeczg.t.x=0;",
+			"v.sxeczg.t.y=0;",
+			"v.sxeczg.t.z=0;",
+			"v.vsnqcv=0;",
+			"v.drflti=0;",
+			"v.gcbpjp.t=0;",
+			"v.gcbpjp.t.x=0;",
+			"v.gcbpjp.t.y=0;",
+			"v.gcbpjp.t.z=0;",
+			"v.pbgflo=0;",
+			"v.zmpzgo=0;",
+			"v.uroqqy.t=0;",
+			"v.uroqqy.t.x=0;",
+			"v.uroqqy.t.y=0;",
+			"v.uroqqy.t.z=0;",
+			"v.yxeyjs=0;",
+			"v.zexxcg=0;",
+			"v.habcyx=0;",
+			"v.qdrdvj=0;",
+			"v.ntultr=0;",
+			"v.lzghwo=0;",
+			"v.lbcbew=0;",
+			"v.ugxubt=0;",
+			"v.rcgezu=0;",
+			"v.mnlzjy=0;",
+			"v.ylaird=0;",
+			"v.ispgly=0;",
+			"v.jkanjy=0;",
+			"v.vvtgzf=0;",
+			"v.pcbxuv=0;",
+			"v.wsthwm=0;",
+			"v.qpptaw=0;",
+			"v.qpptaw.t=0;",
+			"v.qpptaw.t.x=0;",
+			"v.qpptaw.t.y=0;",
+			"v.qpptaw.t.z=0;",
+			"v.qpptaw.r=0;",
+			"v.qpptaw.r.x=0;",
+			"v.qpptaw.r.y=0;",
+			"v.qpptaw.r.z=0;",
+			"v.qpptaw.s=0;",
+			"v.qpptaw.s.x=0;",
+			"v.qpptaw.s.y=0;",
+			"v.qpptaw.s.z=0;",
+			"v.edfatt=10000;",
+			"v.acloko=0;",
+			"v.zgldyg=2;",
+			"v.bmahve=1;",
+			"v.rghlbo=0;",
+			"v.mwofua='8dgohead';",
+			"v.kmdjay='8dgobody';",
+			"v.xuasnj=0;",
+			"v.nwbaeq=0;",
+			"v.oohocu=0;",
+			"v.onlypv=0;",
+			"v.nbdusc=0;",
+			"v.snwgjb=0;",
+			"v.xieegi=0;",
+			"v.qugnsz=0;v.jgzabo=0;v.zkzmro=0;v.tgmzwf=0;",
+			"v.tocraa=Math.random(0,1)<=0.005;",
+			"v.cdrzno=v.tocraa||q.is_baby||(!q.is_in_ui&&q.is_name_any('baby','Baby','creeperling','Creeperling','boomlet','Boomlet'));",
+			"v.actions_and_stuff=1;",
+			"v.evlypi='unknown';",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.narpvm=0;v.ykxvro=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sxlefg=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.ykxvro?{v.narpvm=1;};v.mgdgwf=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.tsuowj=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.mgdgwf?{v.narpvm=2;};v.atuocm=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.hqvvjb=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.atuocm?{v.narpvm=3;};};",
+			"v.ngjrwv=Math.random(0,360);",
+			"v.gdklic=((Math.random(0,1)<=0.01)&&v.mgdgwf);"
+		],
+		"pre_animation": [
+			"!q.is_in_ui&&!(v.is_paperdoll??0)?{v.ohkbax=q.is_owner_identifier_any('minecraft:player')?1.665:0;};",
+			"v.dxvpbr=q.is_name_any('skeleton','Skeleton');",
+			"v.fuppgm=v.qpptaw;",
+			"v.zxxjyc=v.qpptaw;",
+			"v.lrnnba=v.qpptaw;",
+			"v.lfzvoq=v.qpptaw;",
+			"v.wrxogz=v.qpptaw;",
+			"v.tatbcp=v.qpptaw;",
+			"v.sxeczg=v.qpptaw;",
+			"v.gcbpjp=v.qpptaw;",
+			"v.uroqqy=v.qpptaw;",
+			"v.cdrzno=v.tocraa||q.is_baby||(!q.is_in_ui&&q.is_name_any('baby','Baby','creeperling','Creeperling','boomlet','Boomlet'));",
+			"v.actions_and_stuff=1;",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.qhhozj=0;v.ykxvro=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.ykxvro=v.sxlefg;};v.sqrooj=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sqrooj?{v.qhhozj=1;};v.mgdgwf=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.mgdgwf=v.tsuowj;};v.phqhsg=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.phqhsg?{v.qhhozj=2;};v.atuocm=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.atuocm=v.hqvvjb;};v.levhfc=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.levhfc?{v.qhhozj=3;};};",
+			"v.apkost=q.is_name_any('pig','Pig');",
+			"v.rijemu=q.is_name_any('halloween','Halloween','skeleton','Skeleton');",
+			"v.aybhly=(q.is_name_any('snowy','Snowy','frosty','Frosty')||(!(v.apkost||v.rijemu)&&!q.is_name_any('blossom','Blossom','cherry','Cherry','blossom','Blossom')&&v.ykxvro))&&!(v.apkost||v.rijemu)&&!q.is_pack_setting_selected('oreville_ans:fxwjdy','disabled');",
+			"v.ifqpks=q.is_name_any('cherry','Cherry')||(!(v.apkost||v.rijemu||v.aybhly)&&!v.gdklic&&v.mgdgwf)&&!q.is_pack_setting_selected('oreville_ans:fxwjdy','disabled');",
+			"v.yfxgau=q.is_name_any('blossom','Blossom')||(!(v.apkost||v.rijemu||v.aybhly)&&!q.is_name_any('cherry','Cherry')&&v.gdklic);",
+			"v.uunhwi=(q.is_name_any('sulfur','Sulfur')||(!(v.apkost||v.rijemu)&&!q.is_name_any('blossom','Blossom','cherry','Cherry','blossom','Blossom')&&v.atuocm))&&!(v.apkost||v.rijemu)&&!q.is_pack_setting_selected('oreville_ans:fxwjdy','disabled');",
+			"(v.apkost||v.rijemu)&&v.cdrzno?{v.cdrzno=!v.cdrzno;};",
+			"v.rpqxbs=0;",
+			"v.apkost?{v.rpqxbs=1;};",
+			"v.rijemu?{v.rpqxbs=2;};",
+			"v.aybhly?{v.rpqxbs=3;};",
+			"v.ifqpks?{v.rpqxbs=4;};",
+			"v.yfxgau?{v.rpqxbs=5;};",
+			"v.uunhwi?{v.rpqxbs=6;};",
+			"v.gjrfbe=Math.hermite_blend(Math.mod(Math.round(q.swell_amount*15*q.swell_amount),2)*Math.clamp(q.swell_amount/2,0,1));",
+			"v.tjswog=Math.sin(q.body_y_rotation-v.vsokrf)*90;",
+			"v.cprttl=Math.lerp(v.cprttl,q.is_on_ground,0.2);",
+			"v.itaryt=0.2;"
+		],
+		"animate": [
+			"ihzgyq",
+			"kynizh",
+			"bufqou",
+			"bwqvaq",
+			"hznowc",
+			{
+				"mxkxfp": "v.dxvpbr"
+			},
+			{
+				"hspnai": "v.dxvpbr&&v.wtlyok"
+			},
+			"hzsxsn",
+			"kgklcq",
+			"wlqxdl",
+			"look_at_target",
+			"bob",
+			"pybruj",
+			{
+				"vwpadn": "q.is_powered"
+			},
+			{
+				"nvplwb": "q.is_powered"
+			},
+			{
+				"iivysx": "v.cdrzno"
+			}
+		]
+	},
+	"render_controllers": [
+		{
+			"id": "controller.render.oreville_ans.ykojiq",
+			"condition": null,
+			"geometry": "Geometry.cqvkuv",
+			"textures": [
+				"Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.default"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"0"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.ksyffi",
+			"condition": "!q.is_powered",
+			"arrays": {
+				"array.toqyjz": [
+					"geometry.default",
+					"geometry.default",
+					"geometry.walmof",
+					"geometry.pyscvg",
+					"geometry.ykktdw",
+					"geometry.ykktdw",
+					"geometry.fxahuk"
+				],
+				"array.fszzyn": [
+					"texture.default",
+					"texture.geyxzx",
+					"texture.rbjrxp",
+					"texture.pyscvg",
+					"texture.ykktdw",
+					"texture.sbhvpd",
+					"texture.fxahuk"
+				]
+			},
+			"geometry": "v.cdrzno?(v.rijemu?Geometry.walmof:v.aybhly?Geometry.xcyaru:v.uunhwi?Geometry.wnimdp:((v.ifqpks||v.yfxgau)?Geometry.sofmpb:Geometry.vpbaiq)):Array.toqyjz[v.rpqxbs]",
+			"textures": [
+				"v.cdrzno?(v.rijemu?Texture.rbjrxp:v.aybhly?Texture.xcyaru:v.uunhwi?Texture.wnimdp:(v.ifqpks?Texture.sofmpb:v.yfxgau?Texture.mvzggm:Texture.vpbaiq)):Array.fszzyn[v.rpqxbs]"
+			],
+			"materials": [
+				[
+					"alphatest*",
+					"Material.jpfveg"
+				],
+				[
+					"alphatestnofancy*",
+					"Material.klduzy"
+				],
+				[
+					"*",
+					"v.uunhwi?Material.mqwxej:Material.default"
+				],
+				[
+					"alphatestnofancy*",
+					"Material.klduzy"
+				],
+				[
+					"alphatest",
+					"Material.irduzd"
+				],
+				[
+					"cherry*",
+					"Material.irduzd"
+				],
+				[
+					"creeperheadnormalemissiveonesidednofancybilinear",
+					"Material.zqsqyu"
+				],
+				[
+					"creeperheadnormalemissive",
+					"Material.mqwxej"
+				],
+				[
+					"pigheadnormalemissive",
+					"Material.mqwxej"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.lbcbew==0"
+				],
+				[
+					"ear*",
+					"v.lbcbew==0&&v.apkost"
+				],
+				[
+					"blink*",
+					"v.lbcbew==0&&v.apkost"
+				],
+				[
+					"snout*",
+					"v.lbcbew==0&&v.apkost"
+				],
+				[
+					"creeperheadnormal*",
+					"!v.apkost"
+				],
+				[
+					"pigheadnormal*",
+					"v.apkost"
+				]
+			],
+			"overlay_color": {
+				"r": "v.rijemu?255/255:(v.apkost||v.yfxgau)?249/255:172/255",
+				"g": "v.rijemu?255/255:(v.apkost||v.yfxgau)?187/255:244/255",
+				"b": "v.rijemu?255/255:(v.apkost||v.yfxgau)?190/255:100/255",
+				"a": "0.35*v.gjrfbe+(Math.hermite_blend(Math.clamp(Math.pow(2,10*q.swell_amount-10),0,1))*0.0625)"
+			},
+			"light_color_multiplier": "1+((v.gjrfbe*0.75)+(Math.hermite_blend(Math.clamp(Math.pow(2,10*q.swell_amount-10),0,1))*0.125))"
+		},
+		{
+			"id": "controller.render.oreville_ans.vbqbti",
+			"condition": "q.is_powered",
+			"geometry": "(v.cdrzno&&v.aybhly)?Geometry.xcyaru:v.cdrzno?Geometry.vpbaiq:(v.rijemu?(v.lbcbew==-1?Geometry.walmof:Geometry.mguodl):(v.aybhly?Geometry.pyscvg:Geometry.default))",
+			"textures": [
+				"v.apkost?(v.lbcbew==-1?Texture.oagtmt:(v.wtlyok?Texture.vtxbmc:Texture.tlvtrl)):(v.rijemu?Texture.rbjrxp:(v.lbcbew==-1?(v.cdrzno?Texture.tshbvv:Texture.bjeqak):(v.cdrzno?(v.aybhly?(v.wtlyok?Texture.untbxc:Texture.rylmmb):(v.wtlyok?Texture.meratx:Texture.jkeviz)):(v.aybhly?(v.wtlyok?Texture.fpvyfs:Texture.vzgcjr):(v.wtlyok?Texture.ngaddc:Texture.dxvoig)))))"
+			],
+			"materials": [
+				[
+					"alphatestnofancy*",
+					"Material.klduzy"
+				],
+				[
+					"alphatest*",
+					"Material.jpfveg"
+				],
+				[
+					"*",
+					"Material.vozhhb"
+				],
+				[
+					"alphatest",
+					"Material.jpfveg"
+				],
+				[
+					"alphatestnofancy*",
+					"Material.klduzy"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.lbcbew!=1"
+				],
+				[
+					"ear*",
+					"v.lbcbew!=1&&v.apkost"
+				],
+				[
+					"blink*",
+					"v.lbcbew!=1&&v.apkost"
+				],
+				[
+					"snout*",
+					"v.lbcbew!=1&&v.apkost"
+				]
+			],
+			"overlay_color": {
+				"r": "v.gjrfbe?1:150/255",
+				"g": "v.gjrfbe?1:255/255",
+				"b": "v.gjrfbe?1:255/255",
+				"a": "v.gjrfbe?0.125+q.swell_amount*0.375:(0.5+Math.atan(3*Math.sin((q.life_time+v.ngjrwv)*270))/Math.atan(3)*0.5)*0.4"
+			},
+			"on_fire_color": {
+				"r": 1,
+				"g": "v.gjrfbe?0.6:0.4",
+				"b": 0,
+				"a": "v.gjrfbe?1:Math.cos(q.life_time*1200)*-0.35+0.35"
+			},
+			"light_color_multiplier": "v.lbcbew!=-1?(v.gjrfbe?1.2+q.swell_amount*3:1):0.8",
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.jshvsi",
+			"condition": "q.is_powered",
+			"geometry": "v.rijemu?Geometry.vtzpwi:v.cdrzno?Geometry.tlyzdy:Geometry.bdelxt",
+			"textures": [
+				"Texture.bdelxt"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.gkhguv"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.lbcbew==0"
+				],
+				[
+					"rotate7*",
+					"v.lbcbew==0&&v.apkost"
+				],
+				[
+					"rotate8*",
+					"v.lbcbew==0&&v.apkost"
+				],
+				[
+					"rotate9*",
+					"v.lbcbew==0&&v.apkost"
+				]
+			],
+			"overlay_color": {
+				"r": 1,
+				"g": 1,
+				"b": 1,
+				"a": "v.gjrfbe?0.125+q.swell_amount*0.375:0"
+			},
+			"on_fire_color": {
+				"r": 1,
+				"g": "v.gjrfbe?0.6:0.4",
+				"b": 0,
+				"a": "v.gjrfbe?1:Math.cos(q.life_time*1200)*-0.35+0.35"
+			},
+			"light_color_multiplier": "v.gjrfbe?1.2+q.swell_amount*3:1",
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.wtilju",
+			"condition": "!v.rijemu",
+			"geometry": "(v.cdrzno&&v.aybhly)?Geometry.qddgxu:v.cdrzno?Geometry.uibrhs:Geometry.kpyzld",
+			"textures": [
+				"(v.cdrzno&&v.aybhly)?Texture.xcyaru:(v.cdrzno&&v.uunhwi)?Texture.wnimdp:v.cdrzno?Texture.vpbaiq:v.aybhly?Texture.pyscvg:v.yfxgau?Texture.sbhvpd:v.uunhwi?Texture.fxahuk:Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"v.uunhwi?Material.mqwxej:Material.default"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.lbcbew!=1"
+				]
+			],
+			"overlay_color": {
+				"r": "(v.apkost||v.yfxgau)?249/255:172/255",
+				"g": "(v.apkost||v.yfxgau)?187/255:244/255",
+				"b": "(v.apkost||v.yfxgau)?190/255:100/255",
+				"a": "0.5*Math.pow(q.swell_amount,0.25)"
+			},
+			"light_color_multiplier": "1+(Math.pow(q.swell_amount,0.25)*1.5)"
+		},
+		{
+			"id": "controller.render.oreville_ans.masfnr",
+			"condition": null,
+			"geometry": "v.rijemu?Geometry.emksye:v.cdrzno?Geometry.meratx:Geometry.ngaddc",
+			"textures": [
+				"Texture.vfccku"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.pdewsm"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"q.is_powered&&v.lbcbew==0"
+				],
+				[
+					"ear*",
+					"(q.is_powered&&v.lbcbew==0)&&v.apkost"
+				],
+				[
+					"blink*",
+					"(q.is_powered&&v.lbcbew==0)&&v.apkost"
+				],
+				[
+					"snout*",
+					"(q.is_powered&&v.lbcbew==0)&&v.apkost"
+				]
+			],
+			"uv_anim": {
+				"offset": [
+					"(q.life_time+v.ngjrwv)/4",
+					"(q.life_time+v.ngjrwv)/2"
+				],
+				"scale": [
+					1,
+					1
+				]
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.humdhh",
+			"condition": "q.is_powered",
+			"geometry": "v.rijemu?Geometry.walmof:v.cdrzno?Geometry.bsitgo:Geometry.rbjrxp",
+			"textures": [
+				"v.apkost?Texture.qkjlhw:Texture.rbjrxp"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.jpooxn"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.lbcbew==1"
+				],
+				[
+					"ear*",
+					"v.lbcbew==1&&v.apkost"
+				],
+				[
+					"blink*",
+					"v.lbcbew==1&&v.apkost"
+				],
+				[
+					"snout*",
+					"v.lbcbew==1&&v.apkost"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.djffew",
+			"condition": "q.is_powered",
+			"geometry": "v.rijemu?Geometry.vtzpwi:v.cdrzno?Geometry.qrkrcz:Geometry.dejbib",
+			"textures": [
+				"Texture.rbjrxp"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.bzpamm"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.lbcbew==1"
+				],
+				[
+					"ear*",
+					"v.lbcbew==1&&v.apkost"
+				],
+				[
+					"blink*",
+					"v.lbcbew==1&&v.apkost"
+				],
+				[
+					"snout*",
+					"v.lbcbew==1&&v.apkost"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.csxeal",
+			"condition": "q.swell_amount&&!v.apkost&&!v.rijemu",
+			"geometry": "v.cdrzno?Geometry.tblaea:Geometry.eaoeng",
+			"textures": [
+				"(v.apkost||v.yfxgau)?Texture.kjuzvo:Texture.uvulxv"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.auulis"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.wtlyok"
+				]
+			],
+			"overlay_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": "1-Math.pow(q.swell_amount,0.25)"
+			},
+			"on_fire_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"is_hurt_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.ucwdvy",
+			"condition": "q.swell_amount&&!v.rijemu",
+			"geometry": "v.cdrzno?Geometry.hkyjlq:Geometry.eedkng",
+			"textures": [
+				"(v.apkost||v.yfxgau)?Texture.kjuzvo:Texture.uvulxv"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.auulis"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.wtlyok"
+				]
+			],
+			"overlay_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": "1-(q.swell_amount*0.5)"
+			},
+			"on_fire_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"is_hurt_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.pjxaxi",
+			"condition": "q.swell_amount&&!v.cdrzno&&!v.rijemu",
+			"geometry": "Geometry.frjmwe",
+			"textures": [
+				"(v.apkost||v.yfxgau)?Texture.kjuzvo:Texture.uvulxv"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.auulis"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.wtlyok"
+				]
+			],
+			"overlay_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": "1-(q.swell_amount*0.5)"
+			},
+			"on_fire_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"is_hurt_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.dghrjr",
+			"condition": "q.swell_amount&&!v.cdrzno&&!v.rijemu&&!v.yfxgau",
+			"geometry": "Geometry.hxbtht",
+			"textures": [
+				"v.apkost?Texture.geyxzx:Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.uhlnyb"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.wtlyok"
+				]
+			],
+			"overlay_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": "1-(0.5*q.swell_amount)"
+			},
+			"on_fire_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"is_hurt_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.fcxyya",
+			"condition": "q.swell_amount&&!v.cdrzno&&!v.rijemu&&!v.yfxgau",
+			"geometry": "Geometry.giazhl",
+			"textures": [
+				"v.apkost?Texture.geyxzx:Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.uhlnyb"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.wtlyok"
+				]
+			],
+			"overlay_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": "1-(0.3*q.swell_amount)"
+			},
+			"on_fire_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"is_hurt_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.kolmqz",
+			"condition": "q.swell_amount&&!v.cdrzno&&!v.rijemu&&!v.yfxgau",
+			"geometry": "Geometry.mnpxpx",
+			"textures": [
+				"v.apkost?Texture.geyxzx:Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.uhlnyb"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.wtlyok"
+				]
+			],
+			"overlay_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": "1-(0.1*q.swell_amount)"
+			},
+			"on_fire_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"is_hurt_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.dyukav",
+			"condition": "q.swell_amount&&!v.cdrzno&&!v.rijemu&&!v.yfxgau",
+			"geometry": "Geometry.inmizy",
+			"textures": [
+				"v.apkost?Texture.geyxzx:Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.uhlnyb"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.wtlyok"
+				]
+			],
+			"overlay_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": "1-(0.025*q.swell_amount)"
+			},
+			"on_fire_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"is_hurt_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.umsbvt",
+			"condition": null,
+			"geometry": "Geometry.nshdul",
+			"textures": [
+				"Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.default"
+				]
+			]
+		}
+	],
+	"sound_effects": {
+		"zgynvb": "oreville_ans:zgynvb",
+		"ylnbre": "oreville_ans:ylnbre",
+		"ggufcw": "oreville_ans:bcnizj",
+		"grpkfe": "mob.pig.step",
+		"ieqhvn": "oreville_ans:ieqhvn",
+		"mdzohb": "oreville_ans:mdzohb",
+		"jlutvv": "oreville_ans:jlutvv",
+		"vmphqy": "oreville_ans:vmphqy",
+		"ieqzty": "oreville_ans:ieqzty",
+		"evzpuv": "oreville_ans:evzpuv"
+	},
+	"particle_effects": {
+		"ddrfzp": "oreville_ans:tfrjam",
+		"fire": "oreville_ans:awoviv",
+		"nbelyy": "oreville_ans:qxwqkh",
+		"charging": "oreville_ans:dcbgep",
+		"unuvja": "oreville_ans:xrnvdt",
+		"uduqhm": "oreville_ans:dfqtjy",
+		"djnihu": "oreville_ans:pdabuv",
+		"hwuwvi": "oreville_ans:qouoou",
+		"cbcewo": "oreville_ans:rpccbh",
+		"egbttn": "oreville_ans:egbttn",
+		"qbkcbp": "oreville_ans:qbkcbp",
+		"ocfbzk": "oreville_ans:ocfbzk",
+		"rakimo": "oreville_ans:rakimo",
+		"dzzsci": "oreville_ans:dzzsci",
+		"tmtnba": "oreville_ans:tmtnba"
+	}
+}

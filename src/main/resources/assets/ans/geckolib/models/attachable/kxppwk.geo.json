@@ -1,0 +1,123 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_kxppwk",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "fireworkstar",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								1,
+								-4
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										313
+									],
+									"uv_size": [
+										7.98,
+										7.98
+									]
+								},
+								"east": {
+									"uv": [
+										0,
+										313
+									],
+									"uv_size": [
+										7.98,
+										7.98
+									]
+								},
+								"south": {
+									"uv": [
+										0,
+										313
+									],
+									"uv_size": [
+										7.98,
+										7.98
+									]
+								},
+								"west": {
+									"uv": [
+										0,
+										313
+									],
+									"uv_size": [
+										7.98,
+										7.98
+									]
+								},
+								"up": {
+									"uv": [
+										15.98,
+										320.98
+									],
+									"uv_size": [
+										-7.98,
+										-7.98
+									]
+								},
+								"down": {
+									"uv": [
+										23.98,
+										320.98
+									],
+									"uv_size": [
+										-7.98,
+										-7.98
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

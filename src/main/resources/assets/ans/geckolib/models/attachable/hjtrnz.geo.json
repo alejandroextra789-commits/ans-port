@@ -1,0 +1,157 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_hjtrnz",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "camelspawnegg",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								0,
+								-3
+							],
+							"size": [
+								6,
+								8,
+								6
+							],
+							"uv": [
+								569,
+								532
+							]
+						}
+					]
+				},
+				{
+					"name": "camelear1",
+					"parent": "camelspawnegg",
+					"pivot": [
+						-2.6,
+						6.85,
+						1
+					],
+					"rotation": [
+						0,
+						0,
+						45
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5.6,
+								6.35,
+								0
+							],
+							"size": [
+								3,
+								1,
+								2
+							],
+							"mirror": true,
+							"uv": [
+								583,
+								547
+							]
+						}
+					]
+				},
+				{
+					"name": "camelear2",
+					"parent": "camelspawnegg",
+					"pivot": [
+						2.6,
+						6.85,
+						1
+					],
+					"rotation": [
+						0,
+						0,
+						-45
+					],
+					"cubes": [
+						{
+							"origin": [
+								2.6,
+								6.35,
+								0
+							],
+							"size": [
+								3,
+								1,
+								2
+							],
+							"uv": [
+								583,
+								547
+							]
+						}
+					]
+				},
+				{
+					"name": "snout",
+					"parent": "camelspawnegg",
+					"pivot": [
+						0,
+						1.5,
+						-3
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2,
+								0,
+								-5
+							],
+							"size": [
+								4,
+								3,
+								2
+							],
+							"uv": [
+								569,
+								547
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,67 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "minecraft:portal_directional",
+ "source": {
+  "layer": "root",
+  "file": "particles/eqc.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_blend",
+ "render": "blend",
+ "bedrock_texture": "textures/particle/glowing_purple",
+ "texture": "ans:textures/particle_fx/particle/glowing_purple.png",
+ "texture_size": [
+  16,
+  16
+ ],
+ "components": {
+  "minecraft:emitter_rate_instant": {
+   "num_particles": "Math.random(0,1)>0.6"
+  },
+  "minecraft:emitter_lifetime_expression": {
+   "activation_expression": 1,
+   "expiration_expression": 1
+  },
+  "minecraft:emitter_shape_point": {},
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": "Math.random(0.25,1.25)"
+  },
+  "minecraft:particle_initial_speed": 12,
+  "minecraft:particle_motion_dynamic": {
+   "linear_acceleration": [
+    0,
+    1,
+    0
+   ],
+   "linear_drag_coefficient": 9
+  },
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    "(1-v.particle_age/v.particle_lifetime)*0.26",
+    "(1-v.particle_age/v.particle_lifetime)*0.26"
+   ],
+   "facing_camera_mode": "lookat_xyz",
+   "uv": {
+    "texture_width": 1,
+    "texture_height": 1,
+    "uv": [
+     0,
+     0
+    ],
+    "uv_size": [
+     1,
+     1
+    ]
+   }
+  },
+  "minecraft:particle_appearance_tinting": {
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ]
+  }
+ }
+}

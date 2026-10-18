@@ -1,0 +1,295 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.bee_pvdzny",
+				"texture_width": 64,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [
+						0,
+						5,
+						-2
+					]
+				},
+				{
+					"name": "abdomen",
+					"parent": "body",
+					"pivot": [
+						0,
+						5.5,
+						1
+					],
+					"rotation": [
+						-12.5,
+						0,
+						0
+					]
+				},
+				{
+					"name": "abdomennectar1",
+					"parent": "abdomen",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.5,
+								1,
+								1
+							],
+							"size": [
+								9,
+								9,
+								7
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								86
+							]
+						}
+					]
+				},
+				{
+					"name": "abdomennectar2",
+					"parent": "abdomen",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.5,
+								1,
+								1
+							],
+							"size": [
+								9,
+								9,
+								7
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								102
+							]
+						}
+					]
+				},
+				{
+					"name": "abdomennectar3",
+					"parent": "abdomen",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.5,
+								1,
+								1
+							],
+							"size": [
+								9,
+								9,
+								7
+							],
+							"inflate": 0.2,
+							"uv": [
+								32,
+								86
+							]
+						}
+					]
+				},
+				{
+					"name": "abdomennectar4",
+					"parent": "abdomen",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.5,
+								1,
+								1
+							],
+							"size": [
+								9,
+								9,
+								7
+							],
+							"inflate": 0.2,
+							"uv": [
+								32,
+								102
+							]
+						}
+					]
+				},
+				{
+					"name": "nectar4",
+					"parent": "body",
+					"pivot": [
+						0,
+						5,
+						-2
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.5,
+								2,
+								-7
+							],
+							"size": [
+								7,
+								7,
+								10
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								69
+							]
+						}
+					]
+				},
+				{
+					"name": "nectar3",
+					"parent": "body",
+					"pivot": [
+						0,
+						5,
+						-2
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.5,
+								2,
+								-7
+							],
+							"size": [
+								7,
+								7,
+								10
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								52
+							]
+						}
+					]
+				},
+				{
+					"name": "nectar2",
+					"parent": "body",
+					"pivot": [
+						0,
+						5,
+						-2
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.5,
+								2,
+								-7
+							],
+							"size": [
+								7,
+								7,
+								10
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								35
+							]
+						}
+					]
+				},
+				{
+					"name": "nectar1",
+					"parent": "body",
+					"pivot": [
+						0,
+						5,
+						-2
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.5,
+								2,
+								-7
+							],
+							"size": [
+								7,
+								7,
+								10
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								18
+							]
+						}
+					]
+				},
+				{
+					"name": "nectar0",
+					"parent": "body",
+					"pivot": [
+						0,
+						5,
+						-2
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.5,
+								2,
+								-7
+							],
+							"size": [
+								7,
+								7,
+								10
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								1
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

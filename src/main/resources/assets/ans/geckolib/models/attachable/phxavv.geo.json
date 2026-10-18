@@ -1,0 +1,550 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_phxavv",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "cactusflower",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								0,
+								-1
+							],
+							"size": [
+								2,
+								1,
+								2
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										475,
+										43
+									],
+									"uv_size": [
+										1.98,
+										0.98
+									]
+								},
+								"east": {
+									"uv": [
+										477,
+										43
+									],
+									"uv_size": [
+										1.98,
+										0.98
+									]
+								},
+								"south": {
+									"uv": [
+										479,
+										43
+									],
+									"uv_size": [
+										1.98,
+										0.98
+									]
+								},
+								"west": {
+									"uv": [
+										481,
+										43
+									],
+									"uv_size": [
+										1.98,
+										0.98
+									]
+								},
+								"up": {
+									"uv": [
+										471,
+										43
+									],
+									"uv_size": [
+										1.98,
+										1.98
+									]
+								},
+								"down": {
+									"uv": [
+										473,
+										44.98
+									],
+									"uv_size": [
+										1.98,
+										-1.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "petalrotate2",
+					"parent": "cactusflower",
+					"pivot": [
+						0,
+						1,
+						0
+					],
+					"rotation": [
+						0,
+						-90,
+						0
+					]
+				},
+				{
+					"name": "petal2",
+					"parent": "petalrotate2",
+					"pivot": [
+						0,
+						1,
+						-1
+					],
+					"rotation": [
+						-40,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								1,
+								-9
+							],
+							"size": [
+								8,
+								0,
+								8
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										471,
+										40.98
+									],
+									"uv_size": [
+										7.98,
+										-7.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "petalrotate3",
+					"parent": "cactusflower",
+					"pivot": [
+						0,
+						1,
+						0
+					],
+					"rotation": [
+						0,
+						180,
+						0
+					]
+				},
+				{
+					"name": "petal3",
+					"parent": "petalrotate3",
+					"pivot": [
+						0,
+						1,
+						-1
+					],
+					"rotation": [
+						-40,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								1,
+								-9
+							],
+							"size": [
+								8,
+								0,
+								8
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										471,
+										40.98
+									],
+									"uv_size": [
+										7.98,
+										-7.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "petalrotate4",
+					"parent": "cactusflower",
+					"pivot": [
+						0,
+						1,
+						0
+					],
+					"rotation": [
+						0,
+						90,
+						0
+					]
+				},
+				{
+					"name": "petal4",
+					"parent": "petalrotate4",
+					"pivot": [
+						0,
+						1,
+						-1
+					],
+					"rotation": [
+						-40,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								1,
+								-9
+							],
+							"size": [
+								8,
+								0,
+								8
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										478.98,
+										40.98
+									],
+									"uv_size": [
+										-7.98,
+										-7.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "petalrotate",
+					"parent": "cactusflower",
+					"pivot": [
+						0,
+						1,
+						0
+					]
+				},
+				{
+					"name": "petal",
+					"parent": "petalrotate",
+					"pivot": [
+						0,
+						1,
+						-1
+					],
+					"rotation": [
+						-40,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								1,
+								-9
+							],
+							"size": [
+								8,
+								0,
+								8
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										471,
+										40.98
+									],
+									"uv_size": [
+										7.98,
+										-7.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "petalrotate5",
+					"parent": "cactusflower",
+					"pivot": [
+						0,
+						1,
+						0
+					],
+					"rotation": [
+						0,
+						45,
+						0
+					]
+				},
+				{
+					"name": "petal5",
+					"parent": "petalrotate5",
+					"pivot": [
+						0,
+						1,
+						-1
+					],
+					"rotation": [
+						-60,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								1,
+								-11
+							],
+							"size": [
+								8,
+								0,
+								10
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										479,
+										42.98
+									],
+									"uv_size": [
+										7.98,
+										-9.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "petalrotate6",
+					"parent": "cactusflower",
+					"pivot": [
+						0,
+						1,
+						0
+					],
+					"rotation": [
+						0,
+						135,
+						0
+					]
+				},
+				{
+					"name": "petal6",
+					"parent": "petalrotate6",
+					"pivot": [
+						0,
+						1,
+						-1
+					],
+					"rotation": [
+						-60,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								1,
+								-11
+							],
+							"size": [
+								8,
+								0,
+								10
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										479,
+										42.98
+									],
+									"uv_size": [
+										7.98,
+										-9.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "petalrotate7",
+					"parent": "cactusflower",
+					"pivot": [
+						0,
+						1,
+						0
+					],
+					"rotation": [
+						0,
+						-135,
+						0
+					]
+				},
+				{
+					"name": "petal7",
+					"parent": "petalrotate7",
+					"pivot": [
+						0,
+						1,
+						-1
+					],
+					"rotation": [
+						-60,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								1,
+								-11
+							],
+							"size": [
+								8,
+								0,
+								10
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										479,
+										42.98
+									],
+									"uv_size": [
+										7.98,
+										-9.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "petalrotate8",
+					"parent": "cactusflower",
+					"pivot": [
+						0,
+						1,
+						0
+					],
+					"rotation": [
+						0,
+						-45,
+						0
+					]
+				},
+				{
+					"name": "petal8",
+					"parent": "petalrotate8",
+					"pivot": [
+						0,
+						1,
+						-1
+					],
+					"rotation": [
+						-60,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								1,
+								-11
+							],
+							"size": [
+								8,
+								0,
+								10
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										479,
+										42.98
+									],
+									"uv_size": [
+										7.98,
+										-9.98
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

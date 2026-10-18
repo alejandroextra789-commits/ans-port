@@ -1,0 +1,117 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_opmugt",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "smalldripleafstem",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.5,
+								0,
+								0
+							],
+							"size": [
+								7,
+								14,
+								0
+							],
+							"pivot": [
+								0,
+								8,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										293,
+										242
+									],
+									"uv_size": [
+										6.98,
+										13.98
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-3.5,
+								0,
+								0
+							],
+							"size": [
+								7,
+								14,
+								0
+							],
+							"pivot": [
+								0,
+								8,
+								0
+							],
+							"rotation": [
+								0,
+								45,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										299.98,
+										242
+									],
+									"uv_size": [
+										-6.98,
+										13.98
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

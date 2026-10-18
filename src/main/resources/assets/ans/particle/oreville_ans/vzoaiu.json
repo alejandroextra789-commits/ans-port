@@ -1,0 +1,89 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "oreville_ans:vzoaiu",
+ "source": {
+  "layer": "root",
+  "file": "particles/ejb.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_add",
+ "render": "add",
+ "bedrock_texture": "textures/oreville/ans/dge",
+ "texture": "ans:textures/particle_fx/oreville/ans/dge.png",
+ "texture_size": [
+  221,
+  221
+ ],
+ "curves": {
+  "variable.uyupem": {
+   "type": "linear",
+   "input": "v.particle_age",
+   "horizontal_range": "v.particle_lifetime",
+   "nodes": [
+    0.5,
+    1,
+    1,
+    1,
+    0.7,
+    0.25
+   ]
+  }
+ },
+ "components": {
+  "minecraft:emitter_rate_instant": {
+   "num_particles": "Math.mod(q.body_y_rotation,90)?16:6"
+  },
+  "minecraft:emitter_lifetime_once": {
+   "active_time": 0.1
+  },
+  "minecraft:emitter_shape_box": {
+   "offset": [
+    0,
+    "Math.mod(q.body_y_rotation,90)?0.2",
+    0
+   ],
+   "half_dimensions": [
+    "Math.mod(q.body_y_rotation,90)?0.4:0.1",
+    0.2,
+    "Math.mod(q.body_y_rotation,90)?0.4:0.1"
+   ],
+   "direction": [
+    "Math.random(-0.5,0.5)",
+    1,
+    "Math.random(-0.5,0.5)"
+   ]
+  },
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": "Math.random(0.2,0.8)"
+  },
+  "minecraft:particle_initial_speed": "Math.random(2,4)",
+  "minecraft:particle_motion_dynamic": {
+   "linear_acceleration": [
+    "Math.random(-8,8)",
+    0,
+    "Math.random(-8,8)"
+   ],
+   "linear_drag_coefficient": 2
+  },
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    "(0.03*1.6254877)*v.uyupem",
+    "(0.03*1.6254877)*v.uyupem"
+   ],
+   "facing_camera_mode": "lookat_xyz",
+   "uv": {
+    "texture_width": 11,
+    "texture_height": 11,
+    "uv": [
+     0,
+     0
+    ],
+    "uv_size": [
+     1,
+     1
+    ]
+   }
+  }
+ }
+}

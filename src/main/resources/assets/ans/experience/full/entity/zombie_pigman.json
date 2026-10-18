@@ -1,0 +1,1455 @@
+{
+	"format": "ans:bedrock_entity",
+	"format_version": 1,
+	"identifier": "minecraft:zombie_pigman",
+	"source": {
+		"layer": "root",
+		"file": "entity/dsv.json",
+		"min_engine_version": "1.12.1"
+	},
+	"animation_file": "ans:experience/full/entity/zombie_pigman",
+	"geometry": {
+		"wlqxdl": "ans:entity/zombie_pigman_wlqxdl",
+		"nshdul": "ans:entity/zombie_pigman_nshdul",
+		"umyynp": "ans:experience/full/entity/zombie_pigman_baby",
+		"zqidep": "ans:entity/zombie_pigman_zqidep",
+		"sukynj": "ans:entity/zombie_pigman_sukynj",
+		"default": "ans:entity/zombie_pigman"
+	},
+	"textures": {
+		"wlqxdl": "ans:textures/entity/zombie_pigman/wlqxdl.png",
+		"umyynp": "ans:textures/experience/full/entity/zombie_pigman/baby.png",
+		"xfbroz": "ans:textures/experience/full/entity/zombie_pigman/xfbroz.png",
+		"default": "ans:textures/experience/full/entity/zombie_pigman/default.png"
+	},
+	"materials": {
+		"default": {
+			"bedrock": "zombie",
+			"render_type": "cutout"
+		},
+		"eyes": {
+			"bedrock": "entity_emissive_alpha",
+			"render_type": "emissive_alpha"
+		},
+		"wlqxdl": {
+			"bedrock": "auulis",
+			"render_type": "additive",
+			"uv_anim": true
+		}
+	},
+	"animations": {
+		"zvuaju": {
+			"bedrock": "controller.animation.oreville_ans.nwwoke",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"anchlp": "v.rjwqox&&v.riwbye=='anchlp'"
+							},
+							{
+								"diamond": "v.rjwqox&&v.riwbye=='diamond'"
+							},
+							{
+								"xfmoki": "v.rjwqox&&v.riwbye=='xfmoki'"
+							},
+							{
+								"haiscg": "v.rjwqox&&v.riwbye=='haiscg'"
+							},
+							{
+								"khmlti": "v.rjwqox&&v.riwbye=='khmlti'"
+							},
+							{
+								"qouyjp": "v.rjwqox&&v.riwbye=='qouyjp'"
+							},
+							{
+								"leather": "v.rjwqox&&v.riwbye=='leather'"
+							}
+						]
+					},
+					"anchlp": {
+						"transitions": [
+							{
+								"default": "!v.rjwqox"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "ltsnsx",
+								"resolved": "oreville_ans:ltsnsx"
+							}
+						]
+					},
+					"diamond": {
+						"transitions": [
+							{
+								"default": "!v.rjwqox"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "lbzlyq",
+								"resolved": "oreville_ans:lbzlyq"
+							}
+						]
+					},
+					"xfmoki": {
+						"transitions": [
+							{
+								"default": "!v.rjwqox"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "fyuddu",
+								"resolved": "oreville_ans:fyuddu"
+							}
+						]
+					},
+					"haiscg": {
+						"transitions": [
+							{
+								"default": "!v.rjwqox"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "edgwdf",
+								"resolved": "oreville_ans:edgwdf"
+							}
+						]
+					},
+					"khmlti": {
+						"transitions": [
+							{
+								"default": "!v.rjwqox"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "hmtmlh",
+								"resolved": "oreville_ans:hmtmlh"
+							}
+						]
+					},
+					"qouyjp": {
+						"transitions": [
+							{
+								"default": "!v.rjwqox"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "bnrzve",
+								"resolved": "oreville_ans:bnrzve"
+							}
+						]
+					},
+					"leather": {
+						"transitions": [
+							{
+								"default": "!v.rjwqox"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "dafmoj",
+								"resolved": "oreville_ans:dafmoj"
+							}
+						]
+					}
+				}
+			}
+		},
+		"blinking.step_eye": {
+			"bedrock": "animation.oreville_ans.kqjgpg",
+			"animation": "animation.zombie_pigman.blinking_step_eye",
+			"loop": true,
+			"animation_length": 0.15,
+			"loop_delay": "Math.random(1,3.75)"
+		},
+		"kgklcq": {
+			"bedrock": "animation.oreville_ans.xghxmf",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.evlypi='jhotdc';return 0;"
+		},
+		"hzsxsn": {
+			"bedrock": "controller.animation.oreville_ans.ienaao",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"boat": "q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+							},
+							{
+								"minecart": "q.is_riding_any_entity_of_type('minecraft:minecart')"
+							}
+						]
+					},
+					"boat": {
+						"transitions": [
+							{
+								"default": "!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "zgynvb",
+								"resolved": "oreville_ans:zgynvb"
+							}
+						]
+					},
+					"minecart": {
+						"transitions": [
+							{
+								"default": "!q.is_riding_any_entity_of_type('minecraft:minecart')"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "ylnbre",
+								"resolved": "oreville_ans:ylnbre"
+							}
+						]
+					}
+				}
+			}
+		},
+		"hspnai": {
+			"bedrock": "controller.animation.oreville_ans.yxsuam",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							{
+								"rxkiuo": "v.dxvpbr"
+							}
+						],
+						"transitions": [
+							{
+								"biuohp": "1"
+							}
+						],
+						"on_exit": [
+							"q.anim_time>=v.edfatt&&v.dxvpbr?{v.mwofua!=0?{v.fuppgm=q.bone_orientation_trs(v.mwofua);};v.kmdjay!=0?{v.zxxjyc=q.bone_orientation_trs(v.kmdjay);};v.xuasnj!=0?{v.lrnnba=q.bone_orientation_trs(v.xuasnj);};v.nwbaeq!=0?{v.lfzvoq=q.bone_orientation_trs(v.nwbaeq);};};v.edfatt=q.anim_time;"
+						]
+					},
+					"biuohp": {
+						"animations": [
+							{
+								"rxkiuo": "v.dxvpbr"
+							}
+						],
+						"transitions": [
+							{
+								"default": "1"
+							}
+						],
+						"on_exit": [
+							"q.anim_time>=v.edfatt&&v.dxvpbr?{v.mwofua!=0?{v.fuppgm=q.bone_orientation_trs(v.mwofua);};v.kmdjay!=0?{v.zxxjyc=q.bone_orientation_trs(v.kmdjay);};v.xuasnj!=0?{v.lrnnba=q.bone_orientation_trs(v.xuasnj);};v.nwbaeq!=0?{v.lfzvoq=q.bone_orientation_trs(v.nwbaeq);};};v.edfatt=q.anim_time;"
+						]
+					}
+				}
+			}
+		},
+		"rxkiuo": {
+			"bedrock": "animation.oreville_ans.kexzif",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.acloko=v.acloko+q.delta_time;v.mwofua!=0&&v.zgldyg==1&&!v.rghlbo?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.fuppgm.t.x/16;t.czy=v.fuppgm.t.y/16;t.hbg=v.fuppgm.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.hcmvys=Math.asin(t.vqv/t.ida);v.rdmkec=Math.atan2(t.lxb,t.zwc);};v.mwofua!=0&&v.zgldyg==1&&v.rghlbo?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.fuppgm.t.x/16;t.czy=v.fuppgm.t.y/16;t.hbg=v.fuppgm.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.qugnsz=Math.asin(t.vqv/t.ida);v.jgzabo=Math.atan2(t.lxb,t.zwc);};v.mwofua!=0&&v.zgldyg>1?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.fuppgm.t.x/16;t.czy=v.fuppgm.t.y/16;t.hbg=v.fuppgm.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.qugnsz=Math.asin(t.vqv/t.ida);v.jgzabo=Math.atan2(t.lxb,t.zwc);};v.kmdjay!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.zxxjyc.t.x/16;t.czy=v.zxxjyc.t.y/16;t.hbg=v.zxxjyc.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.zkzmro=Math.asin(t.vqv/t.ida);v.tgmzwf=Math.atan2(t.lxb,t.zwc);};v.xuasnj!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.lrnnba.t.x/16;t.czy=v.lrnnba.t.y/16;t.hbg=v.lrnnba.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.boadtw=Math.asin(t.vqv/t.ida);v.uumlcn=Math.atan2(t.lxb,t.zwc);};v.nwbaeq!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.lfzvoq.t.x/16;t.czy=v.lfzvoq.t.y/16;t.hbg=v.lfzvoq.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.yirztn=Math.asin(t.vqv/t.ida);v.hxyjgv=Math.atan2(t.lxb,t.zwc);};v.oohocu!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.wrxogz.t.x/16;t.czy=v.wrxogz.t.y/16;t.hbg=v.wrxogz.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.cyktco=Math.asin(t.vqv/t.ida);v.pkwiaw=Math.atan2(t.lxb,t.zwc);};v.onlypv!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.tatbcp.t.x/16;t.czy=v.tatbcp.t.y/16;t.hbg=v.tatbcp.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.aacasc=Math.asin(t.vqv/t.ida);v.oxglad=Math.atan2(t.lxb,t.zwc);};v.nbdusc!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.sxeczg.t.x/16;t.czy=v.sxeczg.t.y/16;t.hbg=v.sxeczg.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.vsnqcv=Math.asin(t.vqv/t.ida);v.drflti=Math.atan2(t.lxb,t.zwc);};v.snwgjb!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.gcbpjp.t.x/16;t.czy=v.gcbpjp.t.y/16;t.hbg=v.gcbpjp.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.pbgflo=Math.asin(t.vqv/t.ida);v.zmpzgo=Math.atan2(t.lxb,t.zwc);};v.xieegi!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.uroqqy.t.x/16;t.czy=v.uroqqy.t.y/16;t.hbg=v.uroqqy.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.yxeyjs=Math.asin(t.vqv/t.ida);v.zexxcg=Math.atan2(t.lxb,t.zwc);};t.wkb=0;v.bmahve?{t.wkb=-q.target_y_rotation;};v.zgldyg==1&&!v.rghlbo?{t.ini=v.rdmkec;};v.zgldyg>=1||v.rghlbo?{t.ini=v.jgzabo;};v.habcyx=Math.min(v.acloko/3,1)*Math.clamp(1-(Math.abs(t.ini+t.wkb)/180),0,1);return 0;"
+		},
+		"mxkxfp": {
+			"bedrock": "animation.oreville_ans.aqyeyg",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.hcmvys=0;v.rdmkec=0;v.qugnsz=0;v.jgzabo=0;v.zkzmro=0;v.tgmzwf=0;v.boadtw=0;v.uumlcn=0;v.yirztn=0;v.hxyjgv=0;v.cyktco=0;v.pkwiaw=0;v.aacasc=0;v.oxglad=0;v.vsnqcv=0;v.drflti=0;v.pbgflo=0;v.zmpzgo=0;v.yxeyjs=0;v.zexxcg=0;return 0;"
+		},
+		"ciducd": {
+			"bedrock": "animation.oreville_ans.pdhupw",
+			"animation": "animation.zombie_pigman.idle_action_1",
+			"animation_length": 2.6667
+		},
+		"tculwn": {
+			"bedrock": "animation.oreville_ans.uqusye",
+			"animation": "animation.zombie_pigman.idle_action_2",
+			"animation_length": 2.58333
+		},
+		"qofebb": {
+			"bedrock": "animation.oreville_ans.rfaeyk",
+			"animation": "animation.zombie_pigman.idle_action_3",
+			"animation_length": 1.83333
+		},
+		"dwdraj": {
+			"bedrock": "animation.oreville_ans.hrllie",
+			"animation": "animation.zombie_pigman.unused_dwdraj",
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.58333
+		},
+		"attack": {
+			"bedrock": "animation.oreville_ans.craixf",
+			"animation": "animation.zombie_pigman.attack",
+			"animation_length": 0.75
+		},
+		"jump": {
+			"bedrock": "animation.oreville_ans.fmtgmc",
+			"animation": "animation.zombie_pigman.jump",
+			"animation_length": 0.9583,
+			"blend_weight": 2
+		},
+		"fall": {
+			"bedrock": "animation.oreville_ans.fvsggb",
+			"animation": "animation.zombie_pigman.fall",
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.9167
+		},
+		"yytrhz": {
+			"bedrock": "animation.oreville_ans.fdlrwm",
+			"animation": "animation.zombie_pigman.idle_action_4",
+			"animation_length": 0.625,
+			"blend_weight": "1.5",
+			"particle_effects": {
+				"0.125": [
+					{
+						"effect": "ddrfzp",
+						"resolved": "oreville_ans:tfrjam"
+					}
+				]
+			}
+		},
+		"lkixfo": {
+			"bedrock": "animation.oreville_ans.vzdzks",
+			"animation": "animation.zombie_pigman.walk_1",
+			"animation_length": 0.5
+		},
+		"wxmvys": {
+			"bedrock": "animation.oreville_ans.mxzdyg",
+			"animation": "animation.zombie_pigman.walk_2",
+			"animation_length": 0.5
+		},
+		"xuxfzo": {
+			"bedrock": "controller.animation.oreville_ans.awhsnc",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							"ztmvxp",
+							"fndthi",
+							"jlgdzl",
+							"jowhpu",
+							"mtjlij",
+							"flstkx",
+							"dlkrwk",
+							{
+								"sfbfzz": "q.is_on_ground"
+							},
+							{
+								"qsmfqg": "!q.is_in_ui"
+							}
+						],
+						"transitions": [
+							{
+								"zqihwb": "q.is_riding"
+							}
+						]
+					},
+					"zqihwb": {
+						"transitions": [
+							{
+								"default": "!q.is_riding"
+							}
+						]
+					}
+				}
+			}
+		},
+		"ztmvxp": {
+			"bedrock": "controller.animation.oreville_ans.lspkgf",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"zoyoot": "v.cdrzno"
+							},
+							{
+								"onccai": "1"
+							}
+						]
+					},
+					"onccai": {
+						"animations": [
+							{
+								"rsdjvd": "q.modified_move_speed"
+							}
+						],
+						"transitions": [
+							{
+								"run": "q.has_target&&q.modified_move_speed>0.5"
+							}
+						],
+						"blend_transition": 0.2
+					},
+					"run": {
+						"animations": [
+							{
+								"kbbnnm": "q.modified_move_speed"
+							}
+						],
+						"transitions": [
+							{
+								"onccai": "!q.has_target&&q.ground_speed==0"
+							}
+						],
+						"blend_transition": 0.2
+					},
+					"zoyoot": {
+						"animations": [
+							{
+								"drefou": "q.modified_move_speed"
+							}
+						],
+						"transitions": [
+							{
+								"ncvlio": "q.has_target"
+							}
+						],
+						"blend_transition": 0.2
+					},
+					"ncvlio": {
+						"animations": [
+							{
+								"cjcvxy": "q.modified_move_speed"
+							}
+						],
+						"transitions": [
+							{
+								"zoyoot": "!q.has_target"
+							}
+						],
+						"blend_transition": 0.2
+					}
+				}
+			}
+		},
+		"dlkrwk": {
+			"bedrock": "controller.animation.oreville_ans.wfeiio",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"iivysx": "v.cdrzno"
+							},
+							{
+								"pivtsr": "!v.cdrzno"
+							}
+						]
+					},
+					"iivysx": {
+						"animations": [
+							{
+								"vtdywf": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_sword')||q.is_item_name_any('slot.weapon.mainhand','minecraft:crossbow')"
+							}
+						]
+					},
+					"pivtsr": {
+						"animations": [
+							{
+								"dqyakn": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_sword','minecraft:is_axe')"
+							}
+						],
+						"transitions": [
+							{
+								"angry": "q.has_target"
+							}
+						],
+						"blend_transition": 0.3
+					},
+					"angry": {
+						"transitions": [
+							{
+								"pivtsr": "!q.has_target"
+							}
+						]
+					}
+				}
+			}
+		},
+		"ozujad": {
+			"bedrock": "controller.animation.oreville_ans.yrthfr",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"has_target": "q.has_target"
+							}
+						]
+					},
+					"has_target": {
+						"animations": [
+							"isqbxt"
+						],
+						"transitions": [
+							{
+								"default": "!q.has_target"
+							}
+						],
+						"blend_transition": 0.35
+					}
+				}
+			}
+		},
+		"slnysg": {
+			"bedrock": "controller.animation.oreville_ans.mdgyan",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"uwpoku": "q.is_riding"
+							}
+						]
+					},
+					"uwpoku": {
+						"transitions": [
+							{
+								"strider": "q.is_riding_any_entity_of_type('minecraft:strider')"
+							},
+							{
+								"slbpfr": "1"
+							}
+						]
+					},
+					"slbpfr": {
+						"animations": [
+							"pieuky"
+						],
+						"transitions": [
+							{
+								"default": "!q.is_riding"
+							},
+							{
+								"strider": "q.is_riding_any_entity_of_type('minecraft:strider')"
+							}
+						]
+					},
+					"strider": {
+						"animations": [
+							"anthro.riding_cancel_rotation",
+							"anthro.riding_land",
+							"nahehe",
+							{
+								"ztyyck": "Math.clamp(v.aikbud,0.001,1)"
+							},
+							{
+								"hnpxmu": "Math.clamp(v.zdfvrw,0.001,1)"
+							},
+							{
+								"wkvipu": "Math.max(0.001,v.dkfpzv)"
+							}
+						],
+						"transitions": [
+							{
+								"strider": "!q.is_in_ui?{t.x=q.position(0);t.z=q.position(2);v.iaxjoy=v.toclgf;v.iynnie=v.qkrfdi;t.t=q.life_time;t.x!=v.toclgf||t.z!=v.qkrfdi?{t.ntr=t.t-v.abjhra;v.abjhra=t.t;t.swd=t.x-v.toclgf;t.eao=t.z-v.qkrfdi;v.lzwweo=Math.sqrt(t.swd*t.swd+t.eao*t.eao)/t.ntr;v.xiemzw=t.swd/t.ntr;v.rupatf=t.eao/t.ntr;v.toclgf=t.x;v.qkrfdi=t.z;v.txvzcq=0;}:{v.txvzcq=v.txvzcq+q.delta_time;v.txvzcq>0.03?{v.lzwweo=v.lzwweo*(1-6*q.delta_time);};};v.aikbud=Math.lerp(v.aikbud,v.lzwweo<3?v.lzwweo,0.05);v.zdfvrw=Math.lerp(v.zdfvrw,q.in_range(v.lzwweo,3,8.5)?v.lzwweo/3,0.05);v.dkfpzv=Math.lerp(v.dkfpzv,v.lzwweo>8.5,0.05);};return 0;"
+							},
+							{
+								"default": "!q.is_riding"
+							},
+							{
+								"slbpfr": "!q.is_riding_any_entity_of_type('minecraft:strider')"
+							}
+						],
+						"on_entry": [
+							"!q.is_in_ui?{v.toclgf=q.position(0);v.qkrfdi=q.position(2);v.iaxjoy=q.position(0);v.iynnie=q.position(2);};"
+						]
+					}
+				}
+			}
+		},
+		"wlqxdl": {
+			"bedrock": "animation.oreville_ans.pvknpu",
+			"animation": "animation.zombie_pigman.glow",
+			"loop": true,
+			"relative_to_entity": [
+				"glow"
+			]
+		},
+		"kevang": {
+			"bedrock": "animation.oreville_ans.fuzgau",
+			"animation": "animation.zombie_pigman.anim_kevang",
+			"loop": true
+		},
+		"ioknti": {
+			"bedrock": "animation.oreville_ans.fezakx",
+			"animation": "animation.zombie_pigman.anim_ioknti",
+			"loop": true
+		},
+		"ubytcm": {
+			"bedrock": "animation.oreville_ans.kmxwkw",
+			"animation": "animation.zombie_pigman.anim_ubytcm",
+			"loop": true
+		},
+		"idqskp": {
+			"bedrock": "animation.oreville_ans.xjrnvn",
+			"animation": "animation.zombie_pigman.anim_idqskp",
+			"loop": true
+		},
+		"pieuky": {
+			"bedrock": "animation.oreville_ans.mhsfwu",
+			"animation": "animation.zombie_pigman.ride",
+			"loop": true
+		},
+		"nahehe": {
+			"bedrock": "animation.oreville_ans.mbloir",
+			"animation": "animation.zombie_pigman.strider_1",
+			"loop": true
+		},
+		"ztyyck": {
+			"bedrock": "animation.oreville_ans.kpcfmy",
+			"animation": "animation.zombie_pigman.strider_2",
+			"loop": true,
+			"anim_time_update": "q.anim_time+q.delta_time*7"
+		},
+		"hnpxmu": {
+			"bedrock": "animation.oreville_ans.jxynbc",
+			"animation": "animation.zombie_pigman.strider_3",
+			"loop": true,
+			"anim_time_update": "q.anim_time+q.delta_time*14"
+		},
+		"wkvipu": {
+			"bedrock": "animation.oreville_ans.idttbl",
+			"animation": "animation.zombie_pigman.strider_4",
+			"loop": true,
+			"anim_time_update": "q.anim_time+q.delta_time*19"
+		},
+		"dqyakn": {
+			"bedrock": "animation.oreville_ans.gqkdgi",
+			"animation": "animation.zombie_pigman.target_1",
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.4
+		},
+		"vtdywf": {
+			"bedrock": "animation.oreville_ans.nrqwdo",
+			"animation": "animation.zombie_pigman.baby_1",
+			"loop": true
+		},
+		"iivysx": {
+			"bedrock": "animation.oreville_ans.wkqfpr",
+			"animation": "animation.zombie_pigman.baby_2",
+			"loop": true
+		},
+		"ogxhdn": {
+			"bedrock": "controller.animation.oreville_ans.aioksj",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"fmriac": "v.attack_time>0"
+							}
+						]
+					},
+					"fmriac": {
+						"animations": [
+							"attack"
+						],
+						"transitions": [
+							{
+								"default": "q.any_animation_finished"
+							}
+						]
+					}
+				}
+			}
+		},
+		"qsmfqg": {
+			"bedrock": "controller.animation.oreville_ans.gokvqd",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"gyckww": "v.tjswog>0"
+							},
+							{
+								"zzjhtn": "v.tjswog<0"
+							}
+						],
+						"on_entry": [
+							"v.vsokrf=q.body_y_rotation;"
+						],
+						"on_exit": [
+							"v.vsokrf=q.body_y_rotation;"
+						]
+					},
+					"gyckww": {
+						"animations": [
+							{
+								"lkixfo": "Math.clamp(1.1-q.modified_move_speed,0.01,1)"
+							}
+						],
+						"transitions": [
+							{
+								"default": "q.any_animation_finished"
+							},
+							{
+								"zzjhtn": "v.tjswog<0"
+							}
+						]
+					},
+					"zzjhtn": {
+						"animations": [
+							{
+								"wxmvys": "Math.clamp(1.1-q.modified_move_speed,0.01,1)"
+							}
+						],
+						"transitions": [
+							{
+								"default": "q.any_animation_finished"
+							},
+							{
+								"gyckww": "v.tjswog>0"
+							}
+						]
+					}
+				}
+			}
+		},
+		"jlgdzl": {
+			"bedrock": "controller.animation.oreville_ans.jmhaye",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"jump": "!q.is_on_ground&&!q.is_in_water&&q.vertical_speed>0.5"
+							}
+						]
+					},
+					"jump": {
+						"animations": [
+							"jump"
+						],
+						"transitions": [
+							{
+								"default": "q.is_on_ground||q.is_in_water||q.vertical_speed<-0.15"
+							}
+						],
+						"blend_transition": 0.24
+					}
+				}
+			}
+		},
+		"jowhpu": {
+			"bedrock": "controller.animation.oreville_ans.bunnax",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"fall": "!q.is_on_ground&&q.vertical_speed<-0.5"
+							}
+						]
+					},
+					"fall": {
+						"animations": [
+							"fall"
+						],
+						"transitions": [
+							{
+								"default": "(q.is_on_ground&&v.rcgezu)||(q.vertical_speed>0.1&&q.state_time>0.1)"
+							},
+							{
+								"hwuwvi": "q.is_in_water"
+							}
+						],
+						"blend_transition": 0.16
+					},
+					"hwuwvi": {
+						"transitions": [
+							{
+								"default": "!q.is_in_water"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "hwuwvi",
+								"resolved": "oreville_ans:qouoou"
+							},
+							{
+								"effect": "djnihu",
+								"resolved": "oreville_ans:pdabuv"
+							},
+							{
+								"effect": "cbcewo",
+								"resolved": "oreville_ans:rpccbh"
+							}
+						]
+					}
+				}
+			}
+		},
+		"fndthi": {
+			"bedrock": "controller.animation.oreville_ans.zmclsx",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							"yytrhz"
+						],
+						"transitions": [
+							{
+								"zhbjho": "!q.is_on_ground"
+							}
+						],
+						"blend_transition": 0.1,
+						"on_entry": [
+							"v.rcgezu=1;"
+						]
+					},
+					"zhbjho": {
+						"transitions": [
+							{
+								"xjbrkk": "q.is_on_ground"
+							}
+						],
+						"on_entry": [
+							"v.rcgezu=0;"
+						]
+					},
+					"xjbrkk": {
+						"transitions": [
+							{
+								"zhbjho": "!q.is_on_ground"
+							},
+							{
+								"default": "q.state_time>0.15"
+							}
+						]
+					}
+				}
+			}
+		},
+		"flstkx": {
+			"bedrock": "controller.animation.oreville_ans.xweizq",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"gvbikx": "q.state_time>0.3&&!q.has_target"
+							}
+						]
+					},
+					"gvbikx": {
+						"transitions": [
+							{
+								"default": "q.has_target||q.ground_speed"
+							},
+							{
+								"ekkloz": "q.state_time>v.mnlzjy"
+							}
+						],
+						"on_entry": [
+							"v.mnlzjy=Math.random(0,6.33);"
+						]
+					},
+					"ekkloz": {
+						"animations": [
+							{
+								"ciducd": "v.ylaird==0"
+							},
+							{
+								"tculwn": "v.ylaird==1"
+							},
+							{
+								"qofebb": "v.ylaird==2"
+							}
+						],
+						"transitions": [
+							{
+								"default": "q.any_animation_finished||q.has_target"
+							}
+						],
+						"blend_transition": 0.3,
+						"on_entry": [
+							"v.ylaird=Math.random_integer(0,2);"
+						]
+					}
+				}
+			}
+		},
+		"sfbfzz": {
+			"bedrock": "controller.animation.oreville_ans.xjvure",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"lalsxc": "v.lzghwo==1&&q.distance_from_camera<=16"
+							},
+							{
+								"yvzior": "v.lzghwo==2&&q.distance_from_camera<=16"
+							}
+						]
+					},
+					"lalsxc": {
+						"transitions": [
+							{
+								"yvzior": "v.lzghwo==2&&q.distance_from_camera<=16"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "ggufcw",
+								"resolved": "oreville_ans:zrqlle"
+							}
+						]
+					},
+					"yvzior": {
+						"transitions": [
+							{
+								"lalsxc": "v.lzghwo==1&&q.distance_from_camera<=16"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "ggufcw",
+								"resolved": "oreville_ans:zrqlle"
+							}
+						]
+					}
+				}
+			}
+		},
+		"mtjlij": {
+			"bedrock": "controller.animation.oreville_ans.plzqel",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"kevang": "v.ngjrwv==0"
+							},
+							{
+								"ioknti": "v.ngjrwv==1"
+							},
+							{
+								"ubytcm": "v.ngjrwv==2"
+							},
+							{
+								"idqskp": "v.ngjrwv==3"
+							}
+						],
+						"on_entry": [
+							"v.ngjrwv=Math.random_integer(0,3);"
+						]
+					},
+					"kevang": {
+						"animations": [
+							"kevang"
+						]
+					},
+					"ioknti": {
+						"animations": [
+							"ioknti"
+						]
+					},
+					"ubytcm": {
+						"animations": [
+							"ubytcm"
+						]
+					},
+					"idqskp": {
+						"animations": [
+							"idqskp"
+						]
+					}
+				}
+			}
+		},
+		"rdtbho": {
+			"bedrock": "controller.animation.oreville_ans.xwjvym",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"njqykr": "q.state_time>v.biljes"
+							}
+						],
+						"on_entry": [
+							"v.biljes=Math.random(1,3.75);"
+						]
+					},
+					"njqykr": {
+						"animations": [
+							"blinking.step_eye"
+						],
+						"transitions": [
+							{
+								"default": "q.any_animation_finished"
+							}
+						]
+					}
+				}
+			}
+		},
+		"anthro.riding_cancel_rotation": {
+			"bedrock": "animation.oreville_ans.umiujv",
+			"animation": "animation.zombie_pigman.anthro_riding_cancel_rotation",
+			"loop": true
+		},
+		"anthro.riding_land": {
+			"bedrock": "animation.oreville_ans.esehxp",
+			"animation": "animation.zombie_pigman.anthro_riding_land",
+			"animation_length": 0.75
+		},
+		"nnxixp": {
+			"bedrock": "animation.oreville_ans.nnxixp",
+			"animation": "animation.zombie_pigman.idle",
+			"loop": true,
+			"relative_to_entity": [
+				"head"
+			]
+		},
+		"pmwcjk": {
+			"bedrock": "animation.oreville_ans.pmwcjk",
+			"animation": "animation.zombie_pigman.baby_3",
+			"loop": true
+		},
+		"pqvdja": {
+			"bedrock": "animation.oreville_ans.pqvdja",
+			"animation": "animation.zombie_pigman.baby_4",
+			"loop": true
+		},
+		"rsdjvd": {
+			"bedrock": "animation.oreville_ans.rsdjvd",
+			"animation": "animation.zombie_pigman.target_2",
+			"loop": true,
+			"animation_length": 0.75,
+			"timeline": {
+				"0.1667": [
+					"v.lzghwo=q.modified_move_speed>0.12?1;"
+				],
+				"0.5417": [
+					"v.lzghwo=q.modified_move_speed>0.12?2;"
+				]
+			}
+		},
+		"kbbnnm": {
+			"bedrock": "animation.oreville_ans.kbbnnm",
+			"animation": "animation.zombie_pigman.run",
+			"loop": true,
+			"animation_length": 0.6667,
+			"blend_weight": "0.9",
+			"timeline": {
+				"0.25": [
+					"v.lzghwo=q.modified_move_speed>0.4?1;"
+				],
+				"0.5833": [
+					"v.lzghwo=q.modified_move_speed>0.4?2;"
+				]
+			}
+		},
+		"drefou": {
+			"bedrock": "animation.oreville_ans.drefou",
+			"animation": "animation.zombie_pigman.target_3",
+			"loop": true,
+			"animation_length": 0.6667,
+			"timeline": {
+				"0.25": [
+					"v.lzghwo=q.modified_move_speed>5?1;"
+				],
+				"0.5833": [
+					"v.lzghwo=q.modified_move_speed>5?2;"
+				]
+			}
+		},
+		"cjcvxy": {
+			"bedrock": "animation.oreville_ans.cjcvxy",
+			"animation": "animation.zombie_pigman.target_4",
+			"loop": true,
+			"animation_length": 0.4375,
+			"blend_weight": "0.6",
+			"timeline": {
+				"0.1563": [
+					"v.lzghwo=q.modified_move_speed>0.4?1;"
+				],
+				"0.375": [
+					"v.lzghwo=q.modified_move_speed>0.4?2;"
+				]
+			}
+		},
+		"isqbxt": {
+			"bedrock": "animation.oreville_ans.isqbxt",
+			"animation": "animation.zombie_pigman.has_target",
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.7083,
+			"anim_time_update": "q.anim_time+q.delta_time*(v.attack_time?1:0.5)"
+		}
+	},
+	"scripts": {
+		"initialize": [
+			"v.ohkbax=0;",
+			"v.dxvpbr=0;",
+			"v.fuppgm=0;",
+			"v.zxxjyc=0;",
+			"v.lrnnba=0;",
+			"v.lfzvoq=0;",
+			"v.wrxogz=0;",
+			"v.tatbcp=0;",
+			"v.sxeczg=0;",
+			"v.gcbpjp=0;",
+			"v.uroqqy=0;",
+			"v.qhhozj=0;",
+			"v.sqrooj=0;",
+			"v.phqhsg=0;",
+			"v.levhfc=0;",
+			"v.jvamob=0;",
+			"v.vkzvpx=0;",
+			"v.tjswog=0;",
+			"v.vsokrf=0;",
+			"v.itaryt=0;",
+			"v.cprttl=0;",
+			"v.lzwweo=0;",
+			"v.riwbye=0;",
+			"v.rjwqox=0;",
+			"v.tsrqrd=0;",
+			"v.fuppgm.t=0;",
+			"v.fuppgm.t.x=0;",
+			"v.fuppgm.t.y=0;",
+			"v.fuppgm.t.z=0;",
+			"v.qugnsz=0;",
+			"v.jgzabo=0;",
+			"v.zxxjyc.t=0;",
+			"v.zxxjyc.t.x=0;",
+			"v.zxxjyc.t.y=0;",
+			"v.zxxjyc.t.z=0;",
+			"v.zkzmro=0;",
+			"v.tgmzwf=0;",
+			"v.lrnnba.t=0;",
+			"v.lrnnba.t.x=0;",
+			"v.lrnnba.t.y=0;",
+			"v.lrnnba.t.z=0;",
+			"v.boadtw=0;",
+			"v.uumlcn=0;",
+			"v.lfzvoq.t=0;",
+			"v.lfzvoq.t.x=0;",
+			"v.lfzvoq.t.y=0;",
+			"v.lfzvoq.t.z=0;",
+			"v.yirztn=0;",
+			"v.hxyjgv=0;",
+			"v.wrxogz.t=0;",
+			"v.wrxogz.t.x=0;",
+			"v.wrxogz.t.y=0;",
+			"v.wrxogz.t.z=0;",
+			"v.cyktco=0;",
+			"v.pkwiaw=0;",
+			"v.tatbcp.t=0;",
+			"v.tatbcp.t.x=0;",
+			"v.tatbcp.t.y=0;",
+			"v.tatbcp.t.z=0;",
+			"v.aacasc=0;",
+			"v.oxglad=0;",
+			"v.sxeczg.t=0;",
+			"v.sxeczg.t.x=0;",
+			"v.sxeczg.t.y=0;",
+			"v.sxeczg.t.z=0;",
+			"v.vsnqcv=0;",
+			"v.drflti=0;",
+			"v.gcbpjp.t=0;",
+			"v.gcbpjp.t.x=0;",
+			"v.gcbpjp.t.y=0;",
+			"v.gcbpjp.t.z=0;",
+			"v.pbgflo=0;",
+			"v.zmpzgo=0;",
+			"v.uroqqy.t=0;",
+			"v.uroqqy.t.x=0;",
+			"v.uroqqy.t.y=0;",
+			"v.uroqqy.t.z=0;",
+			"v.yxeyjs=0;",
+			"v.zexxcg=0;",
+			"v.habcyx=0;",
+			"v.toclgf=0;",
+			"v.qkrfdi=0;",
+			"v.iaxjoy=0;",
+			"v.iynnie=0;",
+			"v.abjhra=0;",
+			"v.xiemzw=0;",
+			"v.rupatf=0;",
+			"v.txvzcq=0;",
+			"v.aikbud=0;",
+			"v.zdfvrw=0;",
+			"v.dkfpzv=0;",
+			"v.ugxubt=0;",
+			"v.rcgezu=0;",
+			"v.mnlzjy=0;",
+			"v.ylaird=0;",
+			"v.ispgly=0;",
+			"v.jkanjy=0;",
+			"v.vvtgzf=0;",
+			"v.pcbxuv=0;",
+			"v.lzghwo=0;",
+			"v.wsthwm=0;",
+			"v.ngjrwv=0;",
+			"v.biljes=0;",
+			"v.jbawka=0;",
+			"v.gudkut=0;",
+			"v.wqcvrh=0;",
+			"v.srbken=0;",
+			"v.qajkdw=0;",
+			"v.yeuhgd=0;",
+			"v.vscmpn=0;",
+			"v.uxygqh=0;",
+			"v.fotrkf=0;",
+			"v.slqndo=0;",
+			"v.thszct=0;",
+			"v.uunhwi=0;",
+			"v.dnxsjo=0;",
+			"v.nfewbb=0;",
+			"v.htmvuq=0;",
+			"v.lxzhap=0;",
+			"v.tvkktp=0;",
+			"v.qpptaw=0;",
+			"v.qpptaw.t=0;",
+			"v.qpptaw.t.x=0;",
+			"v.qpptaw.t.y=0;",
+			"v.qpptaw.t.z=0;",
+			"v.qpptaw.r=0;",
+			"v.qpptaw.r.x=0;",
+			"v.qpptaw.r.y=0;",
+			"v.qpptaw.r.z=0;",
+			"v.qpptaw.s=0;",
+			"v.qpptaw.s.x=0;",
+			"v.qpptaw.s.y=0;",
+			"v.qpptaw.s.z=0;",
+			"v.edfatt=10000;",
+			"v.acloko=0;",
+			"v.zgldyg=1;",
+			"v.bmahve=1;",
+			"v.rghlbo=0;",
+			"v.mwofua='8dgo';",
+			"v.kmdjay=0;",
+			"v.xuasnj=0;",
+			"v.nwbaeq=0;",
+			"v.oohocu=0;",
+			"v.onlypv=0;",
+			"v.nbdusc=0;",
+			"v.snwgjb=0;",
+			"v.xieegi=0;",
+			"v.hcmvys=0;v.rdmkec=0;",
+			"v.tocraa=0;",
+			"v.cdrzno=v.tocraa||q.is_baby||(!q.is_in_ui&&q.is_name_any('baby','Baby','piggly','Piggly'));",
+			"v.actions_and_stuff=1;",
+			"v.evlypi='unknown';",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.narpvm=0;v.ykxvro=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sxlefg=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.ykxvro?{v.narpvm=1;};v.mgdgwf=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.tsuowj=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.mgdgwf?{v.narpvm=2;};v.atuocm=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.hqvvjb=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.atuocm?{v.narpvm=3;};};",
+			"v.pvzdpf=q.position(0);",
+			"v.odgnyi=q.position(2);",
+			"v.use_dedicated_baby_armor=1;"
+		],
+		"pre_animation": [
+			"!q.is_in_ui&&!(v.is_paperdoll??0)?{v.ohkbax=q.is_owner_identifier_any('minecraft:player')?1.665:0;};",
+			"v.dxvpbr=1;",
+			"v.fuppgm=v.qpptaw;",
+			"v.zxxjyc=v.qpptaw;",
+			"v.lrnnba=v.qpptaw;",
+			"v.lfzvoq=v.qpptaw;",
+			"v.wrxogz=v.qpptaw;",
+			"v.tatbcp=v.qpptaw;",
+			"v.sxeczg=v.qpptaw;",
+			"v.gcbpjp=v.qpptaw;",
+			"v.uroqqy=v.qpptaw;",
+			"v.cdrzno=v.tocraa||q.is_baby||(!q.is_in_ui&&q.is_name_any('baby','Baby','piggly','Piggly'));",
+			"v.actions_and_stuff=1;",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.qhhozj=0;v.ykxvro=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.ykxvro=v.sxlefg;};v.sqrooj=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sqrooj?{v.qhhozj=1;};v.mgdgwf=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.mgdgwf=v.tsuowj;};v.phqhsg=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.phqhsg?{v.qhhozj=2;};v.atuocm=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.atuocm=v.hqvvjb;};v.levhfc=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.levhfc?{v.qhhozj=3;};};",
+			"v.jvamob=Math.lerp(v.jvamob,q.target_y_rotation,0.05);",
+			"v.vkzvpx=Math.lerp(v.vkzvpx,q.target_x_rotation,0.02);",
+			"v.tjswog=Math.sin(q.body_y_rotation-v.vsokrf)*90;",
+			"v.itaryt=0.6;",
+			"v.cprttl=Math.lerp(v.cprttl,q.is_on_ground,0.2);",
+			"v.pvzdpf=Math.lerp(v.pvzdpf,q.position(0),q.delta_time/0.2);",
+			"v.odgnyi=Math.lerp(v.odgnyi,q.position(2),q.delta_time/0.2);",
+			"v.lzwweo=Math.abs(q.position(0)-v.pvzdpf)+Math.abs(q.position(2)-v.odgnyi);",
+			"t.fdi=(q.is_item_name_any('slot.armor.head','minecraft:netherite_helmet')?1:0)+(q.is_item_name_any('slot.armor.chest','minecraft:netherite_chestplate')?3:0)+(q.is_item_name_any('slot.armor.legs','minecraft:netherite_leggings')?2:0)+(q.is_item_name_any('slot.armor.feet','minecraft:netherite_boots')?1:0);t.imn=(q.is_item_name_any('slot.armor.head','minecraft:diamond_helmet')?1:0)+(q.is_item_name_any('slot.armor.chest','minecraft:diamond_chestplate')?3:0)+(q.is_item_name_any('slot.armor.legs','minecraft:diamond_leggings')?2:0)+(q.is_item_name_any('slot.armor.feet','minecraft:diamond_boots')?1:0);t.nmk=(q.is_item_name_any('slot.armor.head','minecraft:iron_helmet')?1:0)+(q.is_item_name_any('slot.armor.chest','minecraft:iron_chestplate')?3:0)+(q.is_item_name_any('slot.armor.legs','minecraft:iron_leggings')?2:0)+(q.is_item_name_any('slot.armor.feet','minecraft:iron_boots')?1:0);t.uzp=(q.is_item_name_any('slot.armor.head','minecraft:chainmail_helmet')?1:0)+(q.is_item_name_any('slot.armor.chest','minecraft:chainmail_chestplate')?3:0)+(q.is_item_name_any('slot.armor.legs','minecraft:chainmail_leggings')?2:0)+(q.is_item_name_any('slot.armor.feet','minecraft:chainmail_boots')?1:0);t.xni=(q.is_item_name_any('slot.armor.head','minecraft:copper_helmet')?1:0)+(q.is_item_name_any('slot.armor.chest','minecraft:copper_chestplate')?3:0)+(q.is_item_name_any('slot.armor.legs','minecraft:copper_leggings')?2:0)+(q.is_item_name_any('slot.armor.feet','minecraft:copper_boots')?1:0);t.dzj=(q.is_item_name_any('slot.armor.head','minecraft:golden_helmet')?1:0)+(q.is_item_name_any('slot.armor.chest','minecraft:golden_chestplate')?3:0)+(q.is_item_name_any('slot.armor.legs','minecraft:golden_leggings')?2:0)+(q.is_item_name_any('slot.armor.feet','minecraft:golden_boots')?1:0);t.sgi=(q.is_item_name_any('slot.armor.head','minecraft:leather_helmet')?1:0)+(q.is_item_name_any('slot.armor.chest','minecraft:leather_chestplate')?3:0)+(q.is_item_name_any('slot.armor.legs','minecraft:leather_leggings')?2:0)+(q.is_item_name_any('slot.armor.feet','minecraft:leather_boots')?1:0);t.bfq=Math.max(t.fdi,Math.max(t.imn,Math.max(t.nmk,Math.max(t.uzp,Math.max(t.xni,Math.max(t.dzj,t.sgi))))));v.riwbye=(t.bfq==0)?'vxkmcv':(t.fdi==t.bfq)?'anchlp':(t.imn==t.bfq)?'diamond':(t.nmk==t.bfq)?'xfmoki':(t.uzp==t.bfq)?'haiscg':(t.xni==t.bfq)?'khmlti':(t.dzj==t.bfq)?'qouyjp':'leather';",
+			"v.rjwqox=v.tsrqrd;v.tsrqrd=0;"
+		],
+		"animate": [
+			"xuxfzo",
+			"ozujad",
+			"slnysg",
+			{
+				"mxkxfp": "v.dxvpbr"
+			},
+			{
+				"hspnai": "v.dxvpbr&&v.wtlyok"
+			},
+			"hzsxsn",
+			"kgklcq",
+			{
+				"pmwcjk": "v.cdrzno"
+			},
+			"wlqxdl",
+			{
+				"iivysx": "v.cdrzno"
+			},
+			"ogxhdn",
+			"rdtbho",
+			"nnxixp",
+			{
+				"pqvdja": "v.cdrzno"
+			},
+			"zvuaju"
+		],
+		"scale": "(v.cdrzno&&!q.is_baby?0.5:1)*(1)"
+	},
+	"render_controllers": [
+		{
+			"id": "controller.render.oreville_ans.zhylhg",
+			"condition": null,
+			"geometry": "Geometry.default",
+			"textures": [
+				"q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_axe')?Texture.xfbroz:Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.default"
+				],
+				[
+					"blink",
+					"Material.eyes"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"!v.cdrzno"
+				]
+			],
+			"is_hurt_color": {
+				"r": "v.tsrqrd=1;return 1;",
+				"g": 0,
+				"b": 0,
+				"a": 0.2
+			}
+		},
+		{
+			"id": "controller.render.oreville_ans.wlqxdl",
+			"condition": "!v.cdrzno",
+			"geometry": "Geometry.wlqxdl",
+			"textures": [
+				"Texture.wlqxdl"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.wlqxdl"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.wtlyok&&!(v.cdrzno??0)"
+				]
+			],
+			"overlay_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": "1-Math.pow(v.habcyx,(v.vscmpn??3))+(v.itaryt??0)"
+			},
+			"on_fire_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"is_hurt_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.umyynp",
+			"condition": "v.cdrzno",
+			"geometry": "Geometry.umyynp",
+			"textures": [
+				"Texture.umyynp"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.default"
+				],
+				[
+					"blink",
+					"Material.eyes"
+				]
+			],
+			"is_hurt_color": {
+				"r": "v.tsrqrd=1;return 1;",
+				"g": 0,
+				"b": 0,
+				"a": 0.2
+			}
+		},
+		{
+			"id": "controller.render.oreville_ans.umsbvt",
+			"condition": null,
+			"geometry": "Geometry.nshdul",
+			"textures": [
+				"Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.default"
+				]
+			]
+		}
+	],
+	"sound_effects": {
+		"ltsnsx": "oreville_ans:ltsnsx",
+		"lbzlyq": "oreville_ans:lbzlyq",
+		"fyuddu": "oreville_ans:fyuddu",
+		"edgwdf": "oreville_ans:edgwdf",
+		"hmtmlh": "oreville_ans:hmtmlh",
+		"bnrzve": "oreville_ans:bnrzve",
+		"dafmoj": "oreville_ans:dafmoj",
+		"zgynvb": "oreville_ans:zgynvb",
+		"ylnbre": "oreville_ans:ylnbre",
+		"ggufcw": "oreville_ans:zrqlle"
+	},
+	"particle_effects": {
+		"djnihu": "oreville_ans:pdabuv",
+		"hwuwvi": "oreville_ans:qouoou",
+		"cbcewo": "oreville_ans:rpccbh",
+		"ddrfzp": "oreville_ans:tfrjam"
+	}
+}

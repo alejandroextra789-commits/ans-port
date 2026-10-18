@@ -1,0 +1,120 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "oreville_ans:leaf_litter",
+ "source": {
+  "layer": "root",
+  "file": "particles/enj.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_alpha",
+ "render": "alpha",
+ "bedrock_texture": "textures/oreville/ans/dgh",
+ "texture": "ans:textures/particle_fx/oreville/ans/dgh.png",
+ "texture_size": [
+  96,
+  48
+ ],
+ "curves": {
+  "variable.onoiya": {
+   "type": "linear",
+   "input": "v.particle_age",
+   "horizontal_range": "v.particle_lifetime",
+   "nodes": [
+    0.5,
+    1,
+    0.99,
+    0.98,
+    0.95,
+    0.88,
+    0.76,
+    0.6,
+    0.35,
+    0
+   ]
+  }
+ },
+ "components": {
+  "minecraft:emitter_rate_instant": {
+   "num_particles": "Math.random(3,5)"
+  },
+  "minecraft:emitter_lifetime_once": {
+   "active_time": 1
+  },
+  "minecraft:emitter_shape_point": {
+   "offset": [
+    0.25,
+    0.1,
+    -0.2
+   ],
+   "direction": [
+    "Math.random(0.5,-0.5)",
+    1,
+    "Math.random(0,-1)"
+   ]
+  },
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": "Math.random(0.9,2)"
+  },
+  "minecraft:particle_expire_if_in_blocks": [
+   "minecraft:water",
+   "minecraft:flowing_water"
+  ],
+  "minecraft:particle_lifetime_events": {
+   "expiration_event": "vvepkv"
+  },
+  "minecraft:particle_initial_speed": 3,
+  "minecraft:particle_motion_dynamic": {
+   "linear_acceleration": [
+    0,
+    "-Math.clamp(v.particle_random_1,0.4,1)*24",
+    0
+   ],
+   "linear_drag_coefficient": "2.5*0"
+  },
+  "minecraft:particle_motion_parametric": {
+   "rotation": "v.particle_random_3>0.5?Math.sin(Math.min(0.5,v.particle_age/v.particle_lifetime)*180)*120*v.particle_lifetime:-Math.sin(Math.min(0.5,v.particle_age/v.particle_lifetime)*180)*120*v.particle_lifetime"
+  },
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    "(1-Math.clamp(((v.particle_age/v.particle_lifetime)-0.95)/0.05,0,1))*((12/16)/2)",
+    "(1-Math.clamp(((v.particle_age/v.particle_lifetime)-0.95)/0.05,0,1))*((12/16)/2)"
+   ],
+   "facing_camera_mode": "rotate_xyz",
+   "uv": {
+    "texture_width": 8,
+    "texture_height": 4,
+    "uv": [
+     5,
+     "Math.floor(v.particle_random_4*4)"
+    ],
+    "uv_size": [
+     1,
+     1
+    ]
+   }
+  },
+  "minecraft:particle_motion_collision": {
+   "collision_drag": 7,
+   "coefficient_of_restitution": 0.2,
+   "collision_radius": 0.2
+  },
+  "minecraft:particle_appearance_lighting": {}
+ },
+ "events": {
+  "vvepkv": {
+   "sequence": [
+    {
+     "expression": "t.wmu=v.particle_age<v.particle_lifetime;"
+    },
+    {
+     "particle_effect": {
+      "effect": "oreville_ans:cioyls",
+      "type": "emitter",
+      "pre_effect_expression": "v.sealpe=t.wmu;"
+     }
+    }
+   ]
+  }
+ }
+}

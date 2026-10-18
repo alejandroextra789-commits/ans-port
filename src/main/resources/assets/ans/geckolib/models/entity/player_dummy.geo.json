@@ -1,0 +1,13 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.player_dummy",
+				"texture_width": 64,
+				"texture_height": 32
+			},
+			"bones": []
+		}
+	]
+}

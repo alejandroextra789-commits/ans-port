@@ -1,0 +1,772 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_osskif",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [
+					0,
+					0.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						-1,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						-1,
+						0
+					]
+				},
+				{
+					"name": "spawneggglowsquid",
+					"parent": "item",
+					"pivot": [
+						0,
+						-1,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								0,
+								-3
+							],
+							"size": [
+								6,
+								7,
+								6
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										635,
+										317
+									],
+									"uv_size": [
+										5.98,
+										6.98
+									]
+								},
+								"east": {
+									"uv": [
+										641,
+										317
+									],
+									"uv_size": [
+										5.98,
+										6.98
+									]
+								},
+								"south": {
+									"uv": [
+										635,
+										324
+									],
+									"uv_size": [
+										5.98,
+										6.98
+									]
+								},
+								"west": {
+									"uv": [
+										641,
+										324
+									],
+									"uv_size": [
+										5.98,
+										6.98
+									]
+								},
+								"up": {
+									"uv": [
+										647,
+										317
+									],
+									"uv_size": [
+										5.98,
+										5.98
+									]
+								},
+								"down": {
+									"uv": [
+										647,
+										328.98
+									],
+									"uv_size": [
+										5.98,
+										-5.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "squidtentaclerotate1",
+					"parent": "spawneggglowsquid",
+					"pivot": [
+						0,
+						0.5,
+						0
+					]
+				},
+				{
+					"name": "squidtentacle1",
+					"parent": "squidtentaclerotate1",
+					"pivot": [
+						3,
+						0.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								0.1,
+								-4
+							],
+							"size": [
+								2,
+								1,
+								3
+							],
+							"pivot": [
+								2,
+								0.1,
+								0
+							],
+							"rotation": [
+								0,
+								-90,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										646.98,
+										331
+									],
+									"uv_size": [
+										-1.98,
+										0.98
+									]
+								},
+								"east": {
+									"uv": [
+										651.98,
+										329
+									],
+									"uv_size": [
+										-2.98,
+										0.98
+									]
+								},
+								"south": {
+									"uv": [
+										642.98,
+										332
+									],
+									"uv_size": [
+										-1.98,
+										0.98
+									]
+								},
+								"west": {
+									"uv": [
+										644.98,
+										331
+									],
+									"uv_size": [
+										-2.98,
+										0.98
+									]
+								},
+								"up": {
+									"uv": [
+										648.98,
+										330
+									],
+									"uv_size": [
+										-1.98,
+										2.98
+									]
+								},
+								"down": {
+									"uv": [
+										636.98,
+										334.98
+									],
+									"uv_size": [
+										-1.98,
+										-2.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "squidtentaclerotate2",
+					"parent": "spawneggglowsquid",
+					"pivot": [
+						0,
+						0.5,
+						0
+					],
+					"rotation": [
+						0,
+						57.5,
+						0
+					]
+				},
+				{
+					"name": "squidtentacle2",
+					"parent": "squidtentaclerotate2",
+					"pivot": [
+						3,
+						0.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								0.1,
+								-4
+							],
+							"size": [
+								2,
+								1,
+								3
+							],
+							"pivot": [
+								2,
+								0.1,
+								0
+							],
+							"rotation": [
+								0,
+								-90,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										646.98,
+										331
+									],
+									"uv_size": [
+										-1.98,
+										0.98
+									]
+								},
+								"east": {
+									"uv": [
+										651.98,
+										329
+									],
+									"uv_size": [
+										-2.98,
+										0.98
+									]
+								},
+								"south": {
+									"uv": [
+										642.98,
+										332
+									],
+									"uv_size": [
+										-1.98,
+										0.98
+									]
+								},
+								"west": {
+									"uv": [
+										644.98,
+										331
+									],
+									"uv_size": [
+										-2.98,
+										0.98
+									]
+								},
+								"up": {
+									"uv": [
+										648.98,
+										330
+									],
+									"uv_size": [
+										-1.98,
+										2.98
+									]
+								},
+								"down": {
+									"uv": [
+										636.98,
+										334.98
+									],
+									"uv_size": [
+										-1.98,
+										-2.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "squidtentaclerotate3",
+					"parent": "spawneggglowsquid",
+					"pivot": [
+						0,
+						0.5,
+						0
+					],
+					"rotation": [
+						0,
+						122.5,
+						0
+					]
+				},
+				{
+					"name": "squidtentacle3",
+					"parent": "squidtentaclerotate3",
+					"pivot": [
+						3,
+						0.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								0.1,
+								-4
+							],
+							"size": [
+								2,
+								1,
+								3
+							],
+							"pivot": [
+								2,
+								0.1,
+								0
+							],
+							"rotation": [
+								0,
+								-90,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										646.98,
+										331
+									],
+									"uv_size": [
+										-1.98,
+										0.98
+									]
+								},
+								"east": {
+									"uv": [
+										651.98,
+										329
+									],
+									"uv_size": [
+										-2.98,
+										0.98
+									]
+								},
+								"south": {
+									"uv": [
+										642.98,
+										332
+									],
+									"uv_size": [
+										-1.98,
+										0.98
+									]
+								},
+								"west": {
+									"uv": [
+										644.98,
+										331
+									],
+									"uv_size": [
+										-2.98,
+										0.98
+									]
+								},
+								"up": {
+									"uv": [
+										648.98,
+										330
+									],
+									"uv_size": [
+										-1.98,
+										2.98
+									]
+								},
+								"down": {
+									"uv": [
+										636.98,
+										334.98
+									],
+									"uv_size": [
+										-1.98,
+										-2.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "squidtentaclerotate4",
+					"parent": "spawneggglowsquid",
+					"pivot": [
+						0,
+						0.5,
+						0
+					],
+					"rotation": [
+						0,
+						180,
+						0
+					]
+				},
+				{
+					"name": "squidtentacle4",
+					"parent": "squidtentaclerotate4",
+					"pivot": [
+						3,
+						0.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								0.1,
+								-4
+							],
+							"size": [
+								2,
+								1,
+								3
+							],
+							"pivot": [
+								2,
+								0.1,
+								0
+							],
+							"rotation": [
+								0,
+								-90,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										646.98,
+										331
+									],
+									"uv_size": [
+										-1.98,
+										0.98
+									]
+								},
+								"east": {
+									"uv": [
+										651.98,
+										329
+									],
+									"uv_size": [
+										-2.98,
+										0.98
+									]
+								},
+								"south": {
+									"uv": [
+										642.98,
+										332
+									],
+									"uv_size": [
+										-1.98,
+										0.98
+									]
+								},
+								"west": {
+									"uv": [
+										644.98,
+										331
+									],
+									"uv_size": [
+										-2.98,
+										0.98
+									]
+								},
+								"up": {
+									"uv": [
+										648.98,
+										330
+									],
+									"uv_size": [
+										-1.98,
+										2.98
+									]
+								},
+								"down": {
+									"uv": [
+										636.98,
+										334.98
+									],
+									"uv_size": [
+										-1.98,
+										-2.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "squidtentaclerotate5",
+					"parent": "spawneggglowsquid",
+					"pivot": [
+						0,
+						0.5,
+						0
+					],
+					"rotation": [
+						0,
+						-122.5,
+						0
+					]
+				},
+				{
+					"name": "squidtentacle5",
+					"parent": "squidtentaclerotate5",
+					"pivot": [
+						3,
+						0.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								0.1,
+								-4
+							],
+							"size": [
+								2,
+								1,
+								3
+							],
+							"pivot": [
+								2,
+								0.1,
+								0
+							],
+							"rotation": [
+								0,
+								-90,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										646.98,
+										331
+									],
+									"uv_size": [
+										-1.98,
+										0.98
+									]
+								},
+								"east": {
+									"uv": [
+										651.98,
+										329
+									],
+									"uv_size": [
+										-2.98,
+										0.98
+									]
+								},
+								"south": {
+									"uv": [
+										642.98,
+										332
+									],
+									"uv_size": [
+										-1.98,
+										0.98
+									]
+								},
+								"west": {
+									"uv": [
+										644.98,
+										331
+									],
+									"uv_size": [
+										-2.98,
+										0.98
+									]
+								},
+								"up": {
+									"uv": [
+										648.98,
+										330
+									],
+									"uv_size": [
+										-1.98,
+										2.98
+									]
+								},
+								"down": {
+									"uv": [
+										636.98,
+										334.98
+									],
+									"uv_size": [
+										-1.98,
+										-2.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "squidtentaclerotate6",
+					"parent": "spawneggglowsquid",
+					"pivot": [
+						0,
+						0.5,
+						0
+					],
+					"rotation": [
+						0,
+						-57.5,
+						0
+					]
+				},
+				{
+					"name": "squidtentacle6",
+					"parent": "squidtentaclerotate6",
+					"pivot": [
+						3,
+						0.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								0.1,
+								-4
+							],
+							"size": [
+								2,
+								1,
+								3
+							],
+							"pivot": [
+								2,
+								0.1,
+								0
+							],
+							"rotation": [
+								0,
+								-90,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										646.98,
+										331
+									],
+									"uv_size": [
+										-1.98,
+										0.98
+									]
+								},
+								"east": {
+									"uv": [
+										651.98,
+										329
+									],
+									"uv_size": [
+										-2.98,
+										0.98
+									]
+								},
+								"south": {
+									"uv": [
+										642.98,
+										332
+									],
+									"uv_size": [
+										-1.98,
+										0.98
+									]
+								},
+								"west": {
+									"uv": [
+										644.98,
+										331
+									],
+									"uv_size": [
+										-2.98,
+										0.98
+									]
+								},
+								"up": {
+									"uv": [
+										648.98,
+										330
+									],
+									"uv_size": [
+										-1.98,
+										2.98
+									]
+								},
+								"down": {
+									"uv": [
+										636.98,
+										334.98
+									],
+									"uv_size": [
+										-1.98,
+										-2.98
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

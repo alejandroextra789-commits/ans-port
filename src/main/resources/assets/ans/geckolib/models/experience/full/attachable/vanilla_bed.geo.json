@@ -1,0 +1,258 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_vanilla_bed",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [
+					0,
+					2,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "jml",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0,
+								0,
+								0
+							],
+							"size": [
+								16,
+								32,
+								6
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								0,
+								17.5,
+								0
+							],
+							"size": [
+								16,
+								6,
+								5
+							],
+							"inflate": 0.5,
+							"pivot": [
+								8,
+								20.5,
+								-0.5
+							],
+							"rotation": [
+								0,
+								0.1,
+								0
+							],
+							"uv": [
+								0,
+								53
+							]
+						},
+						{
+							"origin": [
+								2,
+								25,
+								-2
+							],
+							"size": [
+								12,
+								6,
+								2
+							],
+							"uv": [
+								36,
+								43
+							]
+						},
+						{
+							"origin": [
+								3,
+								31,
+								6
+							],
+							"size": [
+								10,
+								1,
+								3
+							],
+							"uv": [
+								38,
+								2
+							]
+						},
+						{
+							"origin": [
+								3,
+								0,
+								6
+							],
+							"size": [
+								10,
+								1,
+								3
+							],
+							"uv": [
+								38,
+								38
+							]
+						},
+						{
+							"origin": [
+								15,
+								3,
+								6
+							],
+							"size": [
+								1,
+								26,
+								3
+							],
+							"uv": [
+								52,
+								6
+							]
+						},
+						{
+							"origin": [
+								0,
+								3,
+								6
+							],
+							"size": [
+								1,
+								26,
+								3
+							],
+							"uv": [
+								44,
+								6
+							]
+						}
+					]
+				},
+				{
+					"name": "tmo1",
+					"pivot": [
+						5,
+						22,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								13,
+								29,
+								6
+							],
+							"size": [
+								3,
+								3,
+								3
+							],
+							"uv": [
+								12,
+								38
+							]
+						}
+					]
+				},
+				{
+					"name": "tmo0",
+					"pivot": [
+						-5,
+						22,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0,
+								29,
+								6
+							],
+							"size": [
+								3,
+								3,
+								3
+							],
+							"uv": [
+								0,
+								38
+							]
+						}
+					]
+				},
+				{
+					"name": "tmo3",
+					"pivot": [
+						2,
+						12,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								13,
+								0,
+								6
+							],
+							"size": [
+								3,
+								3,
+								3
+							],
+							"uv": [
+								12,
+								44
+							]
+						}
+					]
+				},
+				{
+					"name": "tmo2",
+					"pivot": [
+						-2,
+						12,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0,
+								0,
+								6
+							],
+							"size": [
+								3,
+								3,
+								3
+							],
+							"uv": [
+								0,
+								44
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

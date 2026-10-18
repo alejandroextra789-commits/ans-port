@@ -1,0 +1,65 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "oreville_ans:uzmmel",
+ "source": {
+  "layer": "root",
+  "file": "particles/eio.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_blend",
+ "render": "blend",
+ "bedrock_texture": "textures/particle/z",
+ "texture": "ans:textures/particle_fx/particle/z.png",
+ "texture_size": [
+  11,
+  11
+ ],
+ "components": {
+  "minecraft:emitter_rate_instant": {
+   "num_particles": 1
+  },
+  "minecraft:emitter_lifetime_once": {
+   "active_time": 0
+  },
+  "minecraft:emitter_shape_point": {
+   "offset": [
+    0,
+    -0.75,
+    0
+   ]
+  },
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": 0.25
+  },
+  "minecraft:particle_initial_speed": 0,
+  "minecraft:particle_motion_dynamic": {},
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    "0.5-Math.round(v.particle_age*5)*0.4",
+    "1-Math.round(v.particle_age*5)*0.8"
+   ],
+   "facing_camera_mode": "lookat_y",
+   "uv": {
+    "texture_width": 11,
+    "texture_height": 11,
+    "uv": [
+     0,
+     0
+    ],
+    "uv_size": [
+     1,
+     1
+    ]
+   }
+  },
+  "minecraft:particle_appearance_tinting": {
+   "color": [
+    1,
+    "1-v.particle_age*3.3",
+    1,
+    "1-v.particle_age*3.3"
+   ]
+  }
+ }
+}

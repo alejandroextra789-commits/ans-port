@@ -1,0 +1,203 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_fxqrmb",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "heldflower",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "flower",
+					"parent": "heldflower",
+					"pivot": [
+						0,
+						5.5,
+						0
+					]
+				},
+				{
+					"name": "flowertop",
+					"parent": "flower",
+					"pivot": [
+						0,
+						17.5,
+						0
+					]
+				},
+				{
+					"name": "alphatestnofancy2",
+					"parent": "flowertop",
+					"pivot": [
+						0,
+						23.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0,
+								17.5,
+								-6
+							],
+							"size": [
+								0,
+								12,
+								12
+							],
+							"pivot": [
+								0,
+								23.5,
+								0
+							],
+							"rotation": [
+								0,
+								-135,
+								0
+							],
+							"uv": {
+								"east": {
+									"uv": [
+										65,
+										422
+									],
+									"uv_size": [
+										15.96,
+										15.96
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								0,
+								17.5,
+								-6
+							],
+							"size": [
+								0,
+								12,
+								12
+							],
+							"pivot": [
+								0,
+								23.5,
+								0
+							],
+							"rotation": [
+								0,
+								135,
+								0
+							],
+							"uv": {
+								"east": {
+									"uv": [
+										65,
+										422
+									],
+									"uv_size": [
+										15.96,
+										15.96
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "sunflowerhead",
+					"parent": "alphatestnofancy2",
+					"pivot": [
+						0,
+						25,
+						0
+					],
+					"rotation": [
+						22.5,
+						0,
+						0
+					]
+				},
+				{
+					"name": "alphatestnofancy3",
+					"parent": "sunflowerhead",
+					"pivot": [
+						0,
+						25,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-6,
+								19,
+								0.5
+							],
+							"size": [
+								12,
+								12,
+								0.2
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										81,
+										438
+									],
+									"uv_size": [
+										15.96,
+										15.96
+									]
+								},
+								"south": {
+									"uv": [
+										65,
+										438
+									],
+									"uv_size": [
+										15.96,
+										15.96
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

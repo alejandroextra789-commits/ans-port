@@ -1,0 +1,305 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_clvofn",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "elements",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "plush",
+					"parent": "elements",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "plushbody",
+					"parent": "plush",
+					"pivot": [
+						0,
+						0.00426,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2.5,
+								0.00426,
+								-2.5
+							],
+							"size": [
+								5,
+								7,
+								5
+							],
+							"uv": [
+								529,
+								337
+							]
+						}
+					]
+				},
+				{
+					"name": "plushhead",
+					"parent": "plushbody",
+					"pivot": [
+						0,
+						7,
+						0
+					],
+					"rotation": [
+						0,
+						0,
+						2
+					]
+				},
+				{
+					"name": "plushheadrotate",
+					"parent": "plushhead",
+					"pivot": [
+						0.2443,
+						6.98276,
+						0
+					],
+					"rotation": [
+						0,
+						0,
+						7
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.2557,
+								6.98276,
+								-3.5
+							],
+							"size": [
+								7,
+								7,
+								7
+							],
+							"uv": [
+								529,
+								323
+							]
+						},
+						{
+							"origin": [
+								-2.7557,
+								6.98276,
+								-3.75
+							],
+							"size": [
+								6,
+								7,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										529,
+										323
+									],
+									"uv_size": [
+										5.98,
+										6.98
+									]
+								},
+								"east": {
+									"uv": [
+										535.98,
+										330
+									],
+									"uv_size": [
+										-0.02,
+										6.98
+									]
+								},
+								"west": {
+									"uv": [
+										542.98,
+										330
+									],
+									"uv_size": [
+										-0.02,
+										6.98
+									]
+								},
+								"up": {
+									"uv": [
+										536,
+										329.98
+									],
+									"uv_size": [
+										6.98,
+										-0.02
+									]
+								},
+								"down": {
+									"uv": [
+										543,
+										329.98
+									],
+									"uv_size": [
+										6.98,
+										-0.02
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "plushleg1",
+					"parent": "plushbody",
+					"pivot": [
+						-2.86603,
+						3.75,
+						-2
+					],
+					"rotation": [
+						0,
+						30,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.86603,
+								0,
+								-4.5
+							],
+							"size": [
+								4,
+								4,
+								3
+							],
+							"mirror": true,
+							"uv": [
+								549,
+								344
+							]
+						}
+					]
+				},
+				{
+					"name": "plushleg2",
+					"parent": "plushbody",
+					"pivot": [
+						2.86603,
+						3.75,
+						-2
+					],
+					"rotation": [
+						0,
+						-30,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0.86603,
+								0,
+								-4.5
+							],
+							"size": [
+								4,
+								4,
+								3
+							],
+							"uv": [
+								549,
+								344
+							]
+						}
+					]
+				},
+				{
+					"name": "plushleg3",
+					"parent": "plushbody",
+					"pivot": [
+						-2.86603,
+						4,
+						2
+					],
+					"rotation": [
+						0,
+						-30,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.86603,
+								0,
+								1.5
+							],
+							"size": [
+								4,
+								4,
+								3
+							],
+							"mirror": true,
+							"uv": [
+								549,
+								344
+							]
+						}
+					]
+				},
+				{
+					"name": "plushleg4",
+					"parent": "plushbody",
+					"pivot": [
+						2.86603,
+						4,
+						2
+					],
+					"rotation": [
+						0,
+						30,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0.86603,
+								0,
+								1.5
+							],
+							"size": [
+								4,
+								4,
+								3
+							],
+							"uv": [
+								549,
+								344
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

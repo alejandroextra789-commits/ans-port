@@ -1,0 +1,78 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "oreville_ans:nhewct",
+ "source": {
+  "layer": "root",
+  "file": "particles/epj.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_blend",
+ "render": "blend",
+ "bedrock_texture": "textures/particle/splash_ring",
+ "texture": "ans:textures/particle_fx/particle/splash_ring.png",
+ "texture_size": [
+  14,
+  196
+ ],
+ "curves": {
+  "variable.lictzx": {
+   "type": "linear",
+   "input": "v.particle_random_4",
+   "horizontal_range": 1,
+   "nodes": [
+    0.3,
+    2
+   ]
+  }
+ },
+ "components": {
+  "minecraft:emitter_rate_instant": {
+   "num_particles": 16
+  },
+  "minecraft:emitter_lifetime_expression": {
+   "activation_expression": "q.vertical_speed<-0.5",
+   "expiration_expression": 1
+  },
+  "minecraft:emitter_shape_point": {
+   "offset": [
+    "Math.random(-1.5,1.5)",
+    "-q.vertical_speed*0.1",
+    "Math.random(-1.5,1.5)"
+   ]
+  },
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": "0.3+v.lictzx"
+  },
+  "minecraft:particle_initial_speed": 0,
+  "minecraft:particle_motion_dynamic": {},
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    "0.12+v.particle_random_1*0.1",
+    "v.particle_age+0.1>v.lictzx?(0.12+v.particle_random_1*0.1)"
+   ],
+   "facing_camera_mode": "emitter_transform_xz",
+   "uv": {
+    "texture_width": 14,
+    "texture_height": 196,
+    "flipbook": {
+     "base_UV": [
+      0,
+      "98-Math.round(v.lictzx*24)*14"
+     ],
+     "size_UV": [
+      14,
+      14
+     ],
+     "step_UV": [
+      0,
+      14
+     ],
+     "frames_per_second": 24,
+     "max_frame": "7+Math.round(v.lictzx*24)"
+    }
+   }
+  },
+  "minecraft:particle_appearance_lighting": {}
+ }
+}

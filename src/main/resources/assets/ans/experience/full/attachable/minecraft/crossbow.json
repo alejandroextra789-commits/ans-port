@@ -1,0 +1,1974 @@
+{
+	"format": "ans:bedrock_attachable",
+	"format_version": 1,
+	"identifier": "minecraft:crossbow",
+	"source": {
+		"layer": "root",
+		"file": "attachables/glm.json",
+		"min_engine_version": "1.8.0"
+	},
+	"items": {
+		"minecraft:crossbow": null
+	},
+	"animation_file": "ans:attachable/attachables",
+	"geometry": {
+		"eibycd": "ans:experience/full/attachable/mcwojh__crossbow_pulling_0",
+		"cryspg": "ans:experience/full/attachable/kjlflg__crossbow_pulling_0",
+		"iebbzb": "ans:experience/full/attachable/iwffcl__crossbow_pulling_0",
+		"cseakx": "ans:experience/full/attachable/vqhbez__crossbow_pulling_0",
+		"vtuhjp": "ans:experience/full/attachable/nibvej__crossbow_pulling_1",
+		"rwafvh": "ans:experience/full/attachable/tlnsqt__crossbow_pulling_1",
+		"akbanv": "ans:experience/full/attachable/uiarad__crossbow_pulling_1",
+		"lytfhq": "ans:experience/full/attachable/oxbnbz__crossbow_pulling_1",
+		"ibzvaj": "ans:experience/full/attachable/hybrgb__crossbow_pulling_2",
+		"klhopw": "ans:experience/full/attachable/btxnew__crossbow_pulling_2",
+		"wgyjbt": "ans:experience/full/attachable/ymjwlq__crossbow_pulling_2",
+		"pblnao": "ans:experience/full/attachable/hkdoue__crossbow_pulling_2",
+		"likfyq": "ans:attachable/czsajb",
+		"obcxgq": "ans:attachable/grkrub",
+		"bveokf": "ans:attachable/dbiaqd",
+		"crossbow_arrow": "ans:experience/full/attachable/ycvwuy__arrow",
+		"ezsjtw": "ans:experience/full/attachable/ggilyo__crossbow_standby",
+		"dyqqqa": "ans:experience/full/attachable/fnjisy__crossbow_standby",
+		"zwzzaw": "ans:experience/full/attachable/silarf__crossbow_standby",
+		"crossbow_rocket": "ans:experience/full/attachable/bbqpbd__crossbow_standby",
+		"default": "ans:experience/full/attachable/hwdxtn__crossbow_standby",
+		"firework_rocket": "ans:attachable/vgqdup",
+		"arrow": "ans:experience/full/attachable/nwvvik",
+		"dfhqgk": "ans:attachable/yjreit"
+	},
+	"bone_bindings": {
+		"ans:experience/full/attachable/mcwojh__crossbow_pulling_0": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/kjlflg__crossbow_pulling_0": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/iwffcl__crossbow_pulling_0": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/vqhbez__crossbow_pulling_0": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/nibvej__crossbow_pulling_1": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/tlnsqt__crossbow_pulling_1": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/uiarad__crossbow_pulling_1": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/oxbnbz__crossbow_pulling_1": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/hybrgb__crossbow_pulling_2": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/btxnew__crossbow_pulling_2": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/ymjwlq__crossbow_pulling_2": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/hkdoue__crossbow_pulling_2": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:attachable/czsajb": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:attachable/grkrub": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:attachable/dbiaqd": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/ycvwuy__arrow": {
+			"arrow": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/ggilyo__crossbow_standby": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/fnjisy__crossbow_standby": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/silarf__crossbow_standby": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/bbqpbd__crossbow_standby": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/hwdxtn__crossbow_standby": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:attachable/vgqdup": {
+			"firework": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:experience/full/attachable/nwvvik": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		}
+	},
+	"textures": {
+		"enchanted": "ans:textures/attachable/dia.png",
+		"gsxohw": "ans:textures/attachable/dhj.png",
+		"tsonee": "ans:textures/attachable/mxw.png",
+		"xwzaqy": "ans:textures/attachable/dlx.png",
+		"walvpl": "ans:textures/attachable/dly.png",
+		"mbphlt": "ans:textures/attachable/did.png",
+		"uqnyyk": "ans:textures/attachable/dny.png",
+		"xxelqg": "ans:textures/attachable/die.png",
+		"dxxrrc": "ans:textures/attachable/dnz.png",
+		"turiub": "ans:textures/attachable/mxx.png",
+		"vcresl": "ans:textures/attachable/mxy.png",
+		"gqtytj": "ans:textures/attachable/mxz.png",
+		"yqqyyz": "ans:textures/attachable/mya.png",
+		"jdglqe": "ans:textures/attachable/myb.png",
+		"obvklq": "ans:textures/attachable/myc.png",
+		"uigfji": "ans:textures/attachable/myd.png",
+		"najtzc": "ans:textures/attachable/mye.png",
+		"htthhy": "ans:textures/attachable/myf.png",
+		"pzbcji": "ans:textures/attachable/myg.png",
+		"dldhlg": "ans:textures/attachable/myh.png",
+		"orhfty": "ans:textures/attachable/myi.png",
+		"mtvlai": "ans:textures/attachable/myj.png",
+		"qzfedd": "ans:textures/attachable/myk.png",
+		"atxwug": "ans:textures/attachable/myl.png",
+		"nuvoyw": "ans:textures/attachable/mym.png",
+		"aszzqw": "ans:textures/attachable/myn.png",
+		"ymsggo": "ans:textures/attachable/dpw.png",
+		"otkiyh": "ans:textures/attachable/myo.png",
+		"default": "ans:textures/experience/full/attachable/items_crossbow_standby.png",
+		"crossbow_pulling_0": "ans:textures/experience/full/attachable/items_crossbow_pulling_0.png",
+		"crossbow_pulling_1": "ans:textures/experience/full/attachable/items_crossbow_pulling_1.png",
+		"crossbow_pulling_2": "ans:textures/experience/full/attachable/items_crossbow_pulling_2.png",
+		"qmwwtk": "minecraft:textures/misc/enchanted_glint_item.png",
+		"arrow": "ans:textures/experience/full/attachable/items_arrow.png",
+		"eosxhb": "ans:textures/experience/full/attachable/bvk.png",
+		"bveokf": "ans:textures/experience/full/attachable/myv.png",
+		"zabslf": "ans:textures/attachable/cwa.png",
+		"black": "ans:textures/attachable/cdx.png",
+		"transparent": "ans:textures/attachable/bge.png"
+	},
+	"texture_meshes": {
+		"ans:experience/full/attachable/mcwojh__crossbow_pulling_0": {
+			"texture": "crossbow_pulling_0",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"outline": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								-0.15,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0.15,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-12.85
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-13.15
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "c0498b391a398b19df3188caf2a605e5f560008e"
+		},
+		"ans:experience/full/attachable/kjlflg__crossbow_pulling_0": {
+			"texture": "crossbow_pulling_0",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"outline": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								-0.2,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0.2,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-12.8
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-13.2
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "c0498b391a398b19df3188caf2a605e5f560008e"
+		},
+		"ans:experience/full/attachable/iwffcl__crossbow_pulling_0": {
+			"texture": "crossbow_pulling_0",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"item": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								0,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "c0498b391a398b19df3188caf2a605e5f560008e"
+		},
+		"ans:experience/full/attachable/vqhbez__crossbow_pulling_0": {
+			"texture": "crossbow_pulling_0",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"item": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								0,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "c0498b391a398b19df3188caf2a605e5f560008e"
+		},
+		"ans:experience/full/attachable/nibvej__crossbow_pulling_1": {
+			"texture": "crossbow_pulling_1",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"outline": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								-0.15,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0.15,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-12.85
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-13.15
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "9455365c932edf067e44971eae53daf5e133d727"
+		},
+		"ans:experience/full/attachable/tlnsqt__crossbow_pulling_1": {
+			"texture": "crossbow_pulling_1",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"outline": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								-0.2,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0.2,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-12.8
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-13.2
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "9455365c932edf067e44971eae53daf5e133d727"
+		},
+		"ans:experience/full/attachable/uiarad__crossbow_pulling_1": {
+			"texture": "crossbow_pulling_1",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"item": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								0,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "9455365c932edf067e44971eae53daf5e133d727"
+		},
+		"ans:experience/full/attachable/oxbnbz__crossbow_pulling_1": {
+			"texture": "crossbow_pulling_1",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"item": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								0,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "9455365c932edf067e44971eae53daf5e133d727"
+		},
+		"ans:experience/full/attachable/hybrgb__crossbow_pulling_2": {
+			"texture": "crossbow_pulling_2",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"outline": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								-0.15,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0.15,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-12.85
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-13.15
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "2f0eb84796d50847124dad14a839854cf8c73216"
+		},
+		"ans:experience/full/attachable/btxnew__crossbow_pulling_2": {
+			"texture": "crossbow_pulling_2",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"outline": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								-0.2,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0.2,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-12.8
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-13.2
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "2f0eb84796d50847124dad14a839854cf8c73216"
+		},
+		"ans:experience/full/attachable/ymjwlq__crossbow_pulling_2": {
+			"texture": "crossbow_pulling_2",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"item": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								0,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "2f0eb84796d50847124dad14a839854cf8c73216"
+		},
+		"ans:experience/full/attachable/hkdoue__crossbow_pulling_2": {
+			"texture": "crossbow_pulling_2",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"item": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								0,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "2f0eb84796d50847124dad14a839854cf8c73216"
+		},
+		"ans:experience/full/attachable/ycvwuy__arrow": {
+			"texture": "arrow",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"arrow": {
+					"cubes_before": 0,
+					"pivot_y": 11.75,
+					"meshes": [
+						{
+							"position": [
+								-0.4,
+								12.5,
+								-10
+							],
+							"local_pivot": [
+								16,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "70ef0984aef39ae72d91b40f45bc8db1a014fb3e"
+		},
+		"ans:experience/full/attachable/ggilyo__crossbow_standby": {
+			"texture": "default",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"outline": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								-0.15,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0.15,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-12.85
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-13.15
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "71fac563766c15bf344132ac2f3c45bbf667ff59"
+		},
+		"ans:experience/full/attachable/fnjisy__crossbow_standby": {
+			"texture": "default",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"outline": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								-0.2,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0.2,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-12.8
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						},
+						{
+							"position": [
+								0,
+								-1,
+								-13.2
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "71fac563766c15bf344132ac2f3c45bbf667ff59"
+		},
+		"ans:experience/full/attachable/silarf__crossbow_standby": {
+			"texture": "default",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"item": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								0,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "71fac563766c15bf344132ac2f3c45bbf667ff59"
+		},
+		"ans:experience/full/attachable/bbqpbd__crossbow_standby": {
+			"texture": "default",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"item": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								0,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "71fac563766c15bf344132ac2f3c45bbf667ff59"
+		},
+		"ans:experience/full/attachable/hwdxtn__crossbow_standby": {
+			"texture": "default",
+			"texture_width": 16,
+			"texture_height": 16,
+			"bones": {
+				"item": {
+					"cubes_before": 0,
+					"pivot_y": 0,
+					"meshes": [
+						{
+							"position": [
+								0,
+								-1,
+								-13
+							],
+							"local_pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"scale": [
+								1,
+								1,
+								1
+							]
+						}
+					]
+				}
+			},
+			"image": [
+				16,
+				16
+			],
+			"mask": "71fac563766c15bf344132ac2f3c45bbf667ff59"
+		}
+	},
+	"materials": {
+		"default": {
+			"bedrock": "sxepuo",
+			"render_type": "solid"
+		},
+		"irduzd": {
+			"bedrock": "entity_alphatest",
+			"render_type": "cutout"
+		},
+		"lqwvta": {
+			"bedrock": "lqwvta",
+			"render_type": "translucent"
+		},
+		"agjqtl": {
+			"bedrock": "agjqtl",
+			"render_type": "solid",
+			"glint": true
+		},
+		"vrwhkp": {
+			"bedrock": "vrwhkp",
+			"render_type": "eyes"
+		},
+		"frwljx": {
+			"bedrock": "frwljx",
+			"render_type": "eyes"
+		},
+		"sjctga": {
+			"bedrock": "sjctga",
+			"render_type": "solid",
+			"glint": true
+		},
+		"njlxva": {
+			"bedrock": "njlxva",
+			"render_type": "stencil_outline_additive"
+		},
+		"dgvqwe": {
+			"bedrock": "dgvqwe",
+			"render_type": "additive_one",
+			"glint": true
+		}
+	},
+	"animations": {
+		"nywoyr": {
+			"bedrock": "animation.oreville_ans.ctqdnf",
+			"animation": "animation.attachables.oreville_ans_ctqdnf",
+			"loop": true
+		},
+		"kgklcq": {
+			"bedrock": "animation.oreville_ans.xghxmf",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.evlypi='jhotdc';return 0;"
+		},
+		"wjxnkh": {
+			"bedrock": "controller.animation.oreville_ans.oxlgtq",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"fnkdxo": "q.item_is_charged&&!v.misscd"
+							},
+							{
+								"xkmrvx": "q.item_is_charged&&v.misscd"
+							},
+							{
+								"charging": "q.main_hand_item_use_duration!=0&&!v.misscd"
+							},
+							{
+								"pijgxs": "q.main_hand_item_use_duration!=0&&v.misscd"
+							}
+						],
+						"on_entry": [
+							"v.clelcz=0;"
+						]
+					},
+					"charging": {
+						"transitions": [
+							{
+								"fnkdxo": "q.item_is_charged"
+							},
+							{
+								"default": "q.main_hand_item_use_duration==0"
+							}
+						],
+						"blend_transition": 0.1,
+						"particle_effects": [
+							{
+								"effect": "charging",
+								"locator": "tmil_pwtl",
+								"resolved": "oreville_ans:tzeeak"
+							}
+						]
+					},
+					"pijgxs": {
+						"transitions": [
+							{
+								"xkmrvx": "q.item_is_charged"
+							},
+							{
+								"default": "q.main_hand_item_use_duration==0"
+							}
+						],
+						"blend_transition": 0.1
+					},
+					"fnkdxo": {
+						"animations": [
+							"akwqlb"
+						],
+						"transitions": [
+							{
+								"ullktb": "v.clelcz!=q.get_animation_frame"
+							},
+							{
+								"default": "!q.item_is_charged"
+							}
+						],
+						"on_entry": [
+							"v.clelcz=q.get_animation_frame;"
+						],
+						"particle_effects": [
+							{
+								"effect": "fnkdxo",
+								"locator": "tmil_pwtl",
+								"resolved": "oreville_ans:iqcijl"
+							}
+						]
+					},
+					"ullktb": {
+						"animations": [
+							"akwqlb"
+						],
+						"transitions": [
+							{
+								"fnkdxo": "v.clelcz!=q.get_animation_frame"
+							},
+							{
+								"default": "!q.item_is_charged"
+							}
+						],
+						"on_entry": [
+							"v.clelcz=q.get_animation_frame;"
+						],
+						"particle_effects": [
+							{
+								"effect": "fnkdxo",
+								"locator": "tmil_pwtl",
+								"resolved": "oreville_ans:iqcijl"
+							}
+						]
+					},
+					"xkmrvx": {
+						"animations": [
+							"akwqlb"
+						],
+						"transitions": [
+							{
+								"vmxjxk": "v.clelcz!=q.get_animation_frame"
+							},
+							{
+								"default": "!q.item_is_charged"
+							}
+						],
+						"on_entry": [
+							"v.clelcz=q.get_animation_frame;"
+						]
+					},
+					"vmxjxk": {
+						"animations": [
+							"akwqlb"
+						],
+						"transitions": [
+							{
+								"xkmrvx": "v.clelcz!=q.get_animation_frame"
+							},
+							{
+								"default": "!q.item_is_charged"
+							}
+						],
+						"on_entry": [
+							"v.clelcz=q.get_animation_frame;"
+						]
+					}
+				}
+			}
+		},
+		"fpimem": {
+			"bedrock": "controller.animation.oreville_ans.vhbuxm",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"fnkdxo": "q.item_is_charged"
+							},
+							{
+								"charging": "q.main_hand_item_use_duration!=0"
+							}
+						]
+					},
+					"charging": {
+						"animations": [
+							"charging"
+						],
+						"transitions": [
+							{
+								"fnkdxo": "q.item_is_charged"
+							},
+							{
+								"default": "q.main_hand_item_use_duration==0"
+							}
+						]
+					},
+					"fnkdxo": {
+						"animations": [
+							"akwqlb"
+						],
+						"transitions": [
+							{
+								"ullktb": "v.clelcz!=q.get_animation_frame"
+							},
+							{
+								"fire": "!q.item_is_charged"
+							}
+						],
+						"on_entry": [
+							"v.clelcz=q.get_animation_frame;"
+						]
+					},
+					"ullktb": {
+						"animations": [
+							"akwqlb"
+						],
+						"transitions": [
+							{
+								"fnkdxo": "v.clelcz!=q.get_animation_frame"
+							},
+							{
+								"fire": "!q.item_is_charged"
+							}
+						],
+						"on_entry": [
+							"v.clelcz=q.get_animation_frame;"
+						]
+					},
+					"fire": {
+						"animations": [
+							"fire"
+						],
+						"transitions": [
+							{
+								"default": "q.any_animation_finished"
+							},
+							{
+								"charging": "q.main_hand_item_use_duration!=0"
+							}
+						],
+						"blend_transition": 0.1,
+						"on_entry": [
+							"v.clelcz=0;"
+						]
+					}
+				}
+			}
+		},
+		"outline": {
+			"bedrock": "animation.oreville_ans.xgyepx",
+			"animation": "animation.attachables.oreville_ans_xgyepx",
+			"loop": true
+		},
+		"wield_first_person": {
+			"bedrock": "animation.oreville_ans.snnccy",
+			"animation": "animation.attachables.oreville_ans_snnccy",
+			"loop": true
+		},
+		"wield_third_person": {
+			"bedrock": "animation.oreville_ans.ctxhqv",
+			"animation": "animation.attachables.oreville_ans_ctxhqv",
+			"loop": true
+		},
+		"charging": {
+			"bedrock": "animation.oreville_ans.wgxbep",
+			"animation": "animation.attachables.oreville_ans_wgxbep",
+			"animation_length": 2,
+			"start_delay": "q.main_hand_item_max_duration*0.02-0.1"
+		},
+		"akwqlb": {
+			"bedrock": "animation.oreville_ans.oqdmyj",
+			"animation": "animation.attachables.oreville_ans_oqdmyj",
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.1875
+		},
+		"fire": {
+			"bedrock": "animation.oreville_ans.ozpjwf",
+			"animation": "animation.attachables.oreville_ans_ozpjwf",
+			"animation_length": 0.75
+		},
+		"lqlrks": {
+			"bedrock": "controller.animation.oreville_ans.dmaerc",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							{
+								"nywoyr": "!c.is_first_person&&q.is_owner_identifier_any('minecraft:copper_golem')"
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"scripts": {
+		"initialize": [
+			"v.qhhozj=0;",
+			"v.sqrooj=0;",
+			"v.phqhsg=0;",
+			"v.levhfc=0;",
+			"v.nwypnn=0;",
+			"v.nszoco=0;",
+			"v.shnqjb=0;",
+			"v.xsttiu=0;",
+			"v.dzoqor=0;",
+			"v.dziukm=0;",
+			"v.sqfrlv=0;",
+			"v.avrcqm=0;",
+			"v.lvamli=0;",
+			"v.clelcz=0;",
+			"v.pihgwp=0;",
+			"v.misscd=0;",
+			"v.actions_and_stuff=1;",
+			"v.evlypi='unknown';",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.narpvm=0;v.ykxvro=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sxlefg=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.ykxvro?{v.narpvm=1;};v.mgdgwf=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.tsuowj=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.mgdgwf?{v.narpvm=2;};v.atuocm=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.hqvvjb=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.atuocm?{v.narpvm=3;};};",
+			"v.bmhuds=0;",
+			"v.mtvyqs=0;",
+			"v.vfnwfl=0;",
+			"v.ozlwha=0;"
+		],
+		"pre_animation": [
+			"v.wtlyok=q.graphics_mode_is_any('simple','fancy');",
+			"q.is_attached?{v.misscd=c.owning_entity->v.misscd;};",
+			"v.actions_and_stuff=1;",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.qhhozj=0;v.ykxvro=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.ykxvro=v.sxlefg;};v.sqrooj=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sqrooj?{v.qhhozj=1;};v.mgdgwf=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.mgdgwf=v.tsuowj;};v.phqhsg=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.phqhsg?{v.qhhozj=2;};v.atuocm=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.atuocm=v.hqvvjb;};v.levhfc=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.levhfc?{v.qhhozj=3;};};",
+			"v.nwypnn=0;q.is_pack_setting_selected('oreville_ans:iocufj','blue')?{v.nwypnn=1;};q.is_pack_setting_selected('oreville_ans:iocufj','purple')?{v.nwypnn=2;};q.is_pack_setting_selected('oreville_ans:iocufj','cyan')?{v.nwypnn=3;};q.is_pack_setting_selected('oreville_ans:iocufj','green')?{v.nwypnn=4;};q.is_pack_setting_selected('oreville_ans:iocufj','orange')?{v.nwypnn=5;};q.is_pack_setting_selected('oreville_ans:iocufj','red')?{v.nwypnn=6;};q.is_pack_setting_selected('oreville_ans:iocufj','white')?{v.nwypnn=7;};q.is_pack_setting_selected('oreville_ans:iocufj','yellow')?{v.nwypnn=8;};",
+			"q.is_owner_identifier_any('minecraft:player','minecraft:armor_stand')?{c.item_slot=='main_hand'?{v.nszoco=c.owning_entity->v.shnqjb;};c.item_slot=='off_hand'?{v.nszoco=c.owning_entity->v.xsttiu;};};!q.is_owner_identifier_any('minecraft:player','minecraft:armor_stand')?{v.nszoco=1;};",
+			"v.dzoqor=q.life_time-v.dziukm>q.delta_time+0.1;v.dziukm=q.life_time;",
+			"v.bmhuds=c.is_first_person;",
+			"v.mtvyqs=c.item_slot=='main_hand';",
+			"v.vfnwfl=c.item_slot=='off_hand';",
+			"v.ozlwha=c.item_slot=='head';",
+			"q.is_attached?{v.sqfrlv=q.is_pack_setting_selected('oreville_ans:stghmf','default')||q.is_pack_setting_selected('oreville_ans:stghmf','outline');v.avrcqm=!q.is_pack_setting_selected('oreville_ans:stghmf','outline');v.lvamli='uowpvm';q.is_pack_setting_selected('oreville_ans:stghmf','flhgoc')?{v.lvamli='flhgoc';};};"
+		],
+		"animate": [
+			"kgklcq",
+			"outline",
+			{
+				"wield_first_person": "c.is_first_person"
+			},
+			{
+				"wield_third_person": "!c.is_first_person"
+			},
+			{
+				"fpimem": "c.is_first_person"
+			},
+			{
+				"wjxnkh": "!c.is_first_person&&!q.is_in_ui"
+			},
+			{
+				"lqlrks": "q.is_attached"
+			}
+		],
+		"parent_setup": "c.item_slot=='main_hand'?{v.oreville_mainhand_custom_pos=1;v.oreville_mainhand_visible=1;v.shnqjb=1;};c.item_slot=='off_hand'?{v.oreville_offhand_custom_pos=1;v.oreville_offhand_visible=1;v.xsttiu=1;};"
+	},
+	"render_controllers": [
+		{
+			"id": "controller.render.oreville_ans.ifbxrk",
+			"condition": "v.is_enchanted&&!v.wtlyok&&c.is_first_person",
+			"geometry": "Geometry.dfhqgk",
+			"textures": [
+				"Texture.transparent"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.lqwvta"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.crossbow",
+			"condition": null,
+			"arrays": {
+				"array.epvbkc": [
+					"geometry.default",
+					"geometry.cseakx",
+					"geometry.lytfhq",
+					"geometry.pblnao",
+					"geometry.pblnao",
+					"geometry.pblnao"
+				],
+				"array.ncyhyp": [
+					"texture.default",
+					"texture.crossbow_pulling_0",
+					"texture.crossbow_pulling_1",
+					"texture.crossbow_pulling_2",
+					"texture.crossbow_pulling_2",
+					"texture.crossbow_pulling_2"
+				],
+				"array.sbnpwd": [
+					"texture.ymsggo",
+					"texture.vcresl",
+					"texture.dldhlg",
+					"texture.yqqyyz",
+					"texture.obvklq",
+					"texture.htthhy",
+					"texture.mtvlai",
+					"texture.atxwug",
+					"texture.aszzqw"
+				],
+				"array.ghwasx": [
+					"texture.uigfji",
+					"texture.turiub",
+					"texture.pzbcji",
+					"texture.gqtytj",
+					"texture.jdglqe",
+					"texture.najtzc",
+					"texture.orhfty",
+					"texture.qzfedd",
+					"texture.nuvoyw"
+				]
+			},
+			"geometry": "q.is_pack_setting_enabled('oreville_ans:jlfjfs')?{return Geometry.bveokf;};return Array.epvbkc[q.get_animation_frame];",
+			"textures": [
+				"q.is_pack_setting_enabled('oreville_ans:jlfjfs')?{return Texture.bveokf;};return Array.ncyhyp[q.get_animation_frame];",
+				"!v.avrcqm?{return Texture.black;};v.lvamli=='flhgoc'?{return Texture.qmwwtk;};return q.is_pack_setting_enabled('oreville_ans:jlfjfs')?Array.ghwasx[v.nwypnn]:Array.sbnpwd[v.nwypnn];"
+			],
+			"materials": [
+				[
+					"*",
+					"v.is_enchanted?(v.wtlyok?Material.sjctga:Material.agjqtl):Material.default"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.wmhdaf",
+			"condition": "v.is_enchanted&&v.sqfrlv",
+			"arrays": {
+				"array.epvbkc": [
+					"geometry.dyqqqa",
+					"geometry.cryspg",
+					"geometry.rwafvh",
+					"geometry.klhopw",
+					"geometry.klhopw",
+					"geometry.klhopw"
+				],
+				"array.jxlfvp": [
+					"geometry.ezsjtw",
+					"geometry.eibycd",
+					"geometry.vtuhjp",
+					"geometry.ibzvaj",
+					"geometry.ibzvaj",
+					"geometry.ibzvaj"
+				],
+				"array.ncyhyp": [
+					"texture.enchanted",
+					"texture.gsxohw",
+					"texture.tsonee",
+					"texture.xwzaqy",
+					"texture.walvpl",
+					"texture.mbphlt",
+					"texture.uqnyyk",
+					"texture.xxelqg",
+					"texture.dxxrrc"
+				]
+			},
+			"geometry": "q.is_pack_setting_enabled('oreville_ans:jlfjfs')?{return Geometry.likfyq;};c.is_first_person?{return Array.jxlfvp[q.get_animation_frame];}:{return Array.epvbkc[q.get_animation_frame];};",
+			"textures": [
+				"Array.ncyhyp[v.nwypnn]"
+			],
+			"materials": [
+				[
+					"*",
+					"v.wtlyok?Material.njlxva:(v.bmhuds?Material.vrwhkp:Material.frwljx)"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.pbsebw",
+			"condition": "v.is_enchanted&&v.avrcqm&&v.lvamli!='flhgoc'",
+			"arrays": {
+				"array.epvbkc": [
+					"geometry.zwzzaw",
+					"geometry.iebbzb",
+					"geometry.akbanv",
+					"geometry.wgyjbt",
+					"geometry.wgyjbt",
+					"geometry.wgyjbt"
+				],
+				"array.sbnpwd": [
+					"texture.ymsggo",
+					"texture.vcresl",
+					"texture.dldhlg",
+					"texture.yqqyyz",
+					"texture.obvklq",
+					"texture.htthhy",
+					"texture.mtvlai",
+					"texture.atxwug",
+					"texture.aszzqw"
+				],
+				"array.ghwasx": [
+					"texture.uigfji",
+					"texture.turiub",
+					"texture.pzbcji",
+					"texture.gqtytj",
+					"texture.jdglqe",
+					"texture.najtzc",
+					"texture.orhfty",
+					"texture.qzfedd",
+					"texture.nuvoyw"
+				]
+			},
+			"geometry": "q.is_pack_setting_enabled('oreville_ans:jlfjfs')?{return Geometry.obcxgq;};return Array.epvbkc[q.get_animation_frame];",
+			"textures": [
+				"Texture.otkiyh",
+				"q.is_pack_setting_enabled('oreville_ans:jlfjfs')?Array.ghwasx[v.nwypnn]:Array.sbnpwd[v.nwypnn]"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.dgvqwe"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.qegsat",
+			"condition": "v.clelcz==4",
+			"geometry": "q.is_pack_setting_enabled('oreville_ans:zxgkpp')?{return Geometry.arrow;};return Geometry.crossbow_arrow;",
+			"textures": [
+				"q.is_pack_setting_enabled('oreville_ans:zxgkpp')?{return Texture.eosxhb;};return Texture.arrow;"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.irduzd"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.pepnry",
+			"condition": "v.clelcz==5",
+			"geometry": "Geometry.firework_rocket",
+			"textures": [
+				"Texture.zabslf"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.irduzd"
+				]
+			]
+		}
+	],
+	"sound_effects": {},
+	"particle_effects": {
+		"charging": "oreville_ans:tzeeak",
+		"fnkdxo": "oreville_ans:iqcijl"
+	}
+}

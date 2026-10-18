@@ -1,0 +1,233 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_ufnawc",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "heldflower",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "flower",
+					"parent": "heldflower",
+					"pivot": [
+						0,
+						5.5,
+						0
+					]
+				},
+				{
+					"name": "offset",
+					"parent": "flower",
+					"pivot": [
+						0,
+						5.5,
+						0
+					]
+				},
+				{
+					"name": "itemglow",
+					"parent": "offset",
+					"pivot": [
+						0,
+						13.5,
+						0
+					]
+				},
+				{
+					"name": "alphatestnofancy",
+					"parent": "offset",
+					"pivot": [
+						0,
+						11.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0,
+								5.5,
+								-6
+							],
+							"size": [
+								0,
+								12,
+								12
+							],
+							"pivot": [
+								0,
+								11.5,
+								0
+							],
+							"rotation": [
+								-180,
+								-45,
+								180
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										127.98,
+										272
+									],
+									"uv_size": [
+										-0.02,
+										10.98
+									]
+								},
+								"east": {
+									"uv": [
+										143.98,
+										272
+									],
+									"uv_size": [
+										-15.98,
+										15.98
+									]
+								},
+								"south": {
+									"uv": [
+										127.98,
+										272
+									],
+									"uv_size": [
+										-0.02,
+										10.98
+									]
+								},
+								"up": {
+									"uv": [
+										127.98,
+										283.98
+									],
+									"uv_size": [
+										-0.02,
+										-11.98
+									]
+								},
+								"down": {
+									"uv": [
+										127.98,
+										283.98
+									],
+									"uv_size": [
+										-0.02,
+										-11.98
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								0,
+								5.5,
+								-6
+							],
+							"size": [
+								0,
+								12,
+								12
+							],
+							"pivot": [
+								0,
+								11.5,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										127.98,
+										272
+									],
+									"uv_size": [
+										-0.02,
+										10.98
+									]
+								},
+								"east": {
+									"uv": [
+										143.98,
+										272
+									],
+									"uv_size": [
+										-15.98,
+										15.98
+									]
+								},
+								"south": {
+									"uv": [
+										129,
+										273
+									],
+									"uv_size": [
+										0.98,
+										0.98
+									]
+								},
+								"up": {
+									"uv": [
+										127.98,
+										283.98
+									],
+									"uv_size": [
+										-0.02,
+										-11.98
+									]
+								},
+								"down": {
+									"uv": [
+										127.98,
+										283.98
+									],
+									"uv_size": [
+										-0.02,
+										-11.98
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

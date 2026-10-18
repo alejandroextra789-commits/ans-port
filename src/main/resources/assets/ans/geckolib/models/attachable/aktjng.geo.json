@@ -1,0 +1,136 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_aktjng",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "block",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "chest",
+					"parent": "block",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "chestrotate",
+					"parent": "chest",
+					"pivot": [
+						0,
+						7,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-7,
+								0,
+								-7
+							],
+							"size": [
+								14,
+								10,
+								14
+							],
+							"uv": [
+								864,
+								291
+							]
+						}
+					]
+				},
+				{
+					"name": "lid",
+					"parent": "chestrotate",
+					"pivot": [
+						0,
+						9.5,
+						6.5
+					]
+				},
+				{
+					"name": "lidrotate",
+					"parent": "lid",
+					"pivot": [
+						0,
+						9.5,
+						6.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-7,
+								9,
+								-7
+							],
+							"size": [
+								14,
+								5,
+								14
+							],
+							"inflate": 0.025,
+							"uv": [
+								864,
+								272
+							]
+						},
+						{
+							"origin": [
+								-1,
+								7,
+								-8
+							],
+							"size": [
+								2,
+								4,
+								1
+							],
+							"uv": [
+								864,
+								272
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

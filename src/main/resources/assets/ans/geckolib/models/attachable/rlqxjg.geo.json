@@ -1,0 +1,135 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_rlqxjg",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 11,
+				"visible_bounds_height": 7,
+				"visible_bounds_offset": [
+					0,
+					2.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "goggles",
+					"parent": "head",
+					"pivot": [
+						0,
+						34,
+						-32
+					]
+				},
+				{
+					"name": "emissivenofancy",
+					"parent": "goggles",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "glow1",
+					"parent": "emissivenofancy",
+					"pivot": [
+						-16,
+						35,
+						-36
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear1",
+					"parent": "glow1",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-36,
+								19,
+								-48.5
+							],
+							"size": [
+								40,
+								32,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										63.25,
+										36.25
+									],
+									"uv_size": [
+										-27,
+										27
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "glow2",
+					"parent": "emissivenofancy",
+					"pivot": [
+						16,
+						35,
+						-36
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear2",
+					"parent": "glow2",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								19,
+								-48.5
+							],
+							"size": [
+								40,
+								32,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										36.25,
+										36.25
+									],
+									"uv_size": [
+										27,
+										27
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

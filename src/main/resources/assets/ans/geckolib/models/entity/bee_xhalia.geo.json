@@ -1,0 +1,407 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.bee_xhalia",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [
+					0,
+					0.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [
+						0,
+						2.88125,
+						0.4625
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2,
+								1,
+								-2
+							],
+							"size": [
+								4,
+								4,
+								5
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								1,
+								4,
+								-4.02
+							],
+							"size": [
+								1,
+								2,
+								2
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										11,
+										14
+									],
+									"uv_size": [
+										1,
+										2
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-2,
+								4,
+								-4.05
+							],
+							"size": [
+								1,
+								2,
+								2
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										5,
+										14
+									],
+									"uv_size": [
+										1,
+										2
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "antenna",
+					"parent": "body",
+					"pivot": [
+						0,
+						4.2,
+						-2.035
+					],
+					"cubes": [
+						{
+							"origin": [
+								1,
+								4,
+								-4.02
+							],
+							"size": [
+								1,
+								2,
+								2
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										8,
+										14
+									],
+									"uv_size": [
+										1,
+										2
+									]
+								},
+								"east": {
+									"uv": [
+										6,
+										14
+									],
+									"uv_size": [
+										2,
+										2
+									]
+								},
+								"west": {
+									"uv": [
+										9,
+										14
+									],
+									"uv_size": [
+										2,
+										2
+									]
+								},
+								"up": {
+									"uv": [
+										8,
+										12
+									],
+									"uv_size": [
+										1,
+										2
+									]
+								},
+								"down": {
+									"uv": [
+										9,
+										14
+									],
+									"uv_size": [
+										1,
+										-2
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-2,
+								4,
+								-4.05
+							],
+							"size": [
+								1,
+								2,
+								2
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										2,
+										14
+									],
+									"uv_size": [
+										1,
+										2
+									]
+								},
+								"east": {
+									"uv": [
+										0,
+										14
+									],
+									"uv_size": [
+										2,
+										2
+									]
+								},
+								"west": {
+									"uv": [
+										3,
+										14
+									],
+									"uv_size": [
+										2,
+										2
+									]
+								},
+								"up": {
+									"uv": [
+										2,
+										12
+									],
+									"uv_size": [
+										1,
+										2
+									]
+								},
+								"down": {
+									"uv": [
+										3,
+										14
+									],
+									"uv_size": [
+										1,
+										-2
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "stinger",
+					"parent": "body",
+					"pivot": [
+						0,
+						4.4,
+						0.7
+					],
+					"cubes": [
+						{
+							"origin": [
+								0,
+								2,
+								3
+							],
+							"size": [
+								0,
+								1,
+								1
+							],
+							"uv": [
+								13,
+								2
+							]
+						}
+					]
+				},
+				{
+					"name": "rightwing_bone",
+					"parent": "body",
+					"pivot": [
+						-0.75,
+						5.15,
+						-0.95
+					],
+					"rotation": [
+						12.5,
+						20,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.7365,
+								5.16054,
+								-0.97156
+							],
+							"size": [
+								3,
+								0,
+								3
+							],
+							"uv": [
+								3,
+								9
+							]
+						}
+					]
+				},
+				{
+					"name": "leftwing_bone",
+					"parent": "body",
+					"pivot": [
+						0.8,
+						5.15,
+						-0.875
+					],
+					"rotation": [
+						12.5,
+						-20,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0.71387,
+								5.1721,
+								-0.94867
+							],
+							"size": [
+								3,
+								0,
+								3
+							],
+							"mirror": true,
+							"uv": [
+								-3,
+								9
+							]
+						}
+					]
+				},
+				{
+					"name": "leg_front",
+					"parent": "body",
+					"pivot": [
+						0,
+						0.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								0,
+								0
+							],
+							"size": [
+								3,
+								1,
+								0
+							],
+							"uv": [
+								13,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "leg_mid",
+					"parent": "body",
+					"pivot": [
+						0,
+						0.5,
+						1
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								0,
+								1
+							],
+							"size": [
+								3,
+								1,
+								0
+							],
+							"uv": [
+								13,
+								1
+							]
+						}
+					]
+				},
+				{
+					"name": "leg_back",
+					"parent": "body",
+					"pivot": [
+						0,
+						0.5,
+						2
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								0,
+								2
+							],
+							"size": [
+								3,
+								1,
+								0
+							],
+							"uv": [
+								13,
+								2
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

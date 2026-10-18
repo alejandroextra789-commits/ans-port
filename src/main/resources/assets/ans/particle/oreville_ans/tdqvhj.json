@@ -1,0 +1,62 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "oreville_ans:tdqvhj",
+ "source": {
+  "layer": "root",
+  "file": "particles/ejw.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_alpha",
+ "render": "alpha",
+ "bedrock_texture": "textures/particle/z",
+ "texture": "ans:textures/particle_fx/particle/z.png",
+ "texture_size": [
+  11,
+  11
+ ],
+ "components": {
+  "minecraft:emitter_rate_steady": {
+   "spawn_rate": 40,
+   "max_particles": 48
+  },
+  "minecraft:emitter_lifetime_looping": {
+   "active_time": 1
+  },
+  "minecraft:emitter_shape_point": {},
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": 0.3
+  },
+  "minecraft:particle_initial_speed": 0.3,
+  "minecraft:particle_motion_dynamic": {},
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    0.03,
+    0.03
+   ],
+   "facing_camera_mode": "lookat_xyz",
+   "uv": {
+    "texture_width": 11,
+    "texture_height": 11,
+    "uv": [
+     0,
+     0
+    ],
+    "uv_size": [
+     1,
+     1
+    ]
+   }
+  },
+  "minecraft:particle_appearance_tinting": {
+   "color": {
+    "interpolant": "v.particle_age/v.particle_lifetime",
+    "gradient": {
+     "0.0": "#ffffffff",
+     "0.46": "#FFFFD160",
+     "0.87": "#FFFF8000"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,78 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_hohzru",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "scaffoldingtop",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						90,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								15.99,
+								-8
+							],
+							"size": [
+								16,
+								0.01,
+								16
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										159.98,
+										255.98
+									],
+									"uv_size": [
+										-15.98,
+										-15.98
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

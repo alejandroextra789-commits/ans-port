@@ -1,0 +1,58 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "oreville_ans:hqhjri",
+ "source": {
+  "layer": "root",
+  "file": "particles/ekt.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_alpha",
+ "render": "alpha",
+ "bedrock_texture": "textures/oreville/ans/dgf",
+ "texture": "ans:textures/particle_fx/oreville/ans/dgf.png",
+ "texture_size": [
+  12,
+  192
+ ],
+ "components": {
+  "minecraft:emitter_rate_instant": {
+   "num_particles": 1
+  },
+  "minecraft:emitter_lifetime_looping": {
+   "active_time": 4
+  },
+  "minecraft:emitter_shape_point": {
+   "offset": [
+    "v.apclqa==0?13/16:v.apclqa==1?0/16:v.apclqa==2?-13/16:v.apclqa==3?-13/16:v.apclqa==4?-13/16:v.apclqa==5?0/16:v.apclqa==6?13/16:v.apclqa==7?13/16:0",
+    "v.apclqa==8?(39/16)+(6/16/2*0.666):(25/16)+(6/16/2*0.666)",
+    "v.apclqa==0?-13/16:v.apclqa==1?-13/16:v.apclqa==2?-13/16:v.apclqa==3?0/16:v.apclqa==4?13/16:v.apclqa==5?13/16:v.apclqa==6?13/16:v.apclqa==7?0/16:0"
+   ]
+  },
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": 4,
+   "expiration_expression": "q.is_alive&&q.is_item_name_any('slot.weapon.mainhand',0,'minecraft:cake')==0"
+  },
+  "minecraft:particle_initial_speed": 0,
+  "minecraft:particle_motion_dynamic": {},
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    "4/16/2*0.666",
+    "6/16/2*0.666"
+   ],
+   "facing_camera_mode": "lookat_y",
+   "uv": {
+    "texture_width": 12,
+    "texture_height": 192,
+    "uv": [
+     0,
+     "6*Math.mod(Math.floor(v.particle_age*8)+Math.floor(v.emitter_random_1*32),32)"
+    ],
+    "uv_size": [
+     4,
+     6
+    ]
+   }
+  }
+ }
+}

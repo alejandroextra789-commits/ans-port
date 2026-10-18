@@ -1,0 +1,193 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.player_riding_boat",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "waistcopy",
+					"parent": "root",
+					"pivot": [
+						0,
+						12,
+						0
+					]
+				},
+				{
+					"name": "bodycopy",
+					"parent": "waistcopy",
+					"pivot": [
+						0,
+						24,
+						0
+					]
+				},
+				{
+					"name": "rightarmcopy",
+					"parent": "bodycopy",
+					"pivot": [
+						-5,
+						22,
+						0
+					]
+				},
+				{
+					"name": "rightarmcopybottom",
+					"parent": "rightarmcopy",
+					"pivot": [
+						-5,
+						22,
+						0
+					]
+				},
+				{
+					"name": "rightpaddle",
+					"parent": "rightarmcopybottom",
+					"pivot": [
+						-6,
+						15,
+						1
+					],
+					"cubes": [
+						{
+							"origin": [
+								-10,
+								12.1,
+								14
+							],
+							"size": [
+								6,
+								1,
+								7
+							],
+							"mirror": true,
+							"uv": [
+								2,
+								19
+							]
+						},
+						{
+							"origin": [
+								-7,
+								-4,
+								-13
+							],
+							"size": [
+								2,
+								23,
+								2
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								-90,
+								0,
+								0
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "leftarmcopy",
+					"parent": "bodycopy",
+					"pivot": [
+						5,
+						22,
+						0
+					],
+					"mirror": true
+				},
+				{
+					"name": "leftarmcopybottom",
+					"parent": "leftarmcopy",
+					"pivot": [
+						5,
+						22,
+						0
+					],
+					"mirror": true
+				},
+				{
+					"name": "leftpaddle",
+					"parent": "leftarmcopybottom",
+					"pivot": [
+						6,
+						15,
+						1
+					],
+					"cubes": [
+						{
+							"origin": [
+								4,
+								12.1,
+								14
+							],
+							"size": [
+								6,
+								1,
+								7
+							],
+							"uv": [
+								2,
+								19
+							]
+						},
+						{
+							"origin": [
+								5,
+								-4,
+								-13
+							],
+							"size": [
+								2,
+								23,
+								2
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								-90,
+								0,
+								0
+							],
+							"mirror": true,
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,56 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "oreville_ans:rxlhmw",
+ "source": {
+  "layer": "root",
+  "file": "particles/ejp.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_opaque",
+ "render": "opaque",
+ "bedrock_texture": "textures/oreville/ans/dgk",
+ "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+ "texture_size": [
+  1,
+  1
+ ],
+ "components": {
+  "minecraft:emitter_initialization": {
+   "creation_expression": "v.hrsqwn=0.1;v.jcalav=1;v.ypfpjf=1;v.rbnrwg=1;v.vimpib=-2.5/16;"
+  },
+  "minecraft:emitter_rate_steady": {
+   "spawn_rate": 40,
+   "max_particles": 10000
+  },
+  "minecraft:emitter_lifetime_expression": {},
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": 0
+  },
+  "minecraft:particle_lifetime_events": {
+   "expiration_event": "vvepkv"
+  },
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    0,
+    0
+   ]
+  }
+ },
+ "events": {
+  "vvepkv": {
+   "sequence": [
+    {
+     "expression": "t.jtu=v.emitter_age;t.qig=v.hrsqwn;t.glr=0;t.r=v.jcalav;t.g=v.ypfpjf;t.b=v.rbnrwg;t.fiv=0;t.tni=0;t.vnk=0;t.mir=0;t.xht=0;t.tcq=0;t.kgp=0;t.wmu=0;t.x=q.position(0);t.y=q.position(1);t.z=q.position(2);v.bhblov=v.bhblov??t.x;v.ebypvy=v.ebypvy??t.y;v.borcrz=v.borcrz??t.z;t.swd=t.x-v.bhblov;t.isp=t.y-v.ebypvy;t.eao=t.z-v.borcrz;t.swd||t.isp||t.eao?{t.glr=(v.emitter_age-(v.tlnhrs??0))/v.hrsqwn;v.tlnhrs=v.emitter_age;t.kgp=Math.sqrt(t.swd*t.swd+t.isp*t.isp+t.eao*t.eao);t.mir=t.swd/t.kgp;t.xht=t.isp/t.kgp;t.tcq=t.eao/t.kgp;t.fiv=Math.lerp(v.bhblov,t.x,0.5);t.tni=Math.lerp(v.ebypvy,t.y,0.5)+v.vimpib;t.vnk=Math.lerp(v.borcrz,t.z,0.5);v.bhblov=t.x;v.ebypvy=t.y;v.borcrz=t.z;t.wmu=1;};"
+    },
+    {
+     "particle_effect": {
+      "effect": "oreville_ans:ysrjoz",
+      "type": "emitter_bound",
+      "pre_effect_expression": "v.tlnhrs=t.jtu;v.sealpe=t.wmu;v.sbiadh=t.glr;v.jcalav=t.r;v.ypfpjf=t.g;v.rbnrwg=t.b;v.bhblov=t.fiv;v.ebypvy=t.tni;v.borcrz=t.vnk;v.rowpry=t.mir;v.rgwjra=t.xht;v.ipczvr=t.tcq;v.cfglpd=0.5*(t.kgp+0.02);v.hrsqwn=t.qig;"
+     }
+    }
+   ]
+  }
+ }
+}

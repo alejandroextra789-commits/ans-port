@@ -1,0 +1,43 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_ietppw",
+				"texture_width": 44,
+				"texture_height": 15
+			},
+			"bones": [
+				{
+					"name": "dummy"
+				},
+				{
+					"name": "head",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-6,
+								28,
+								-5
+							],
+							"size": [
+								12,
+								5,
+								10
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

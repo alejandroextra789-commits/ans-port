@@ -1,0 +1,195 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_rernhh",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "elements",
+					"pivot": [
+						21,
+						4,
+						-4
+					]
+				},
+				{
+					"name": "fireplace",
+					"parent": "elements",
+					"pivot": [
+						0,
+						0,
+						1
+					],
+					"cubes": [
+						{
+							"origin": [
+								-24.025,
+								0,
+								-8.025
+							],
+							"size": [
+								48.05,
+								4,
+								16.025
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										248,
+										388
+									],
+									"uv_size": [
+										47.98,
+										3.98
+									]
+								},
+								"east": {
+									"uv": [
+										232,
+										388
+									],
+									"uv_size": [
+										15.98,
+										3.98
+									]
+								},
+								"south": {
+									"uv": [
+										248,
+										388
+									],
+									"uv_size": [
+										47.98,
+										3.98
+									]
+								},
+								"west": {
+									"uv": [
+										247.98,
+										388
+									],
+									"uv_size": [
+										-15.98,
+										3.98
+									]
+								},
+								"up": {
+									"uv": [
+										232,
+										392
+									],
+									"uv_size": [
+										47.98,
+										15.98
+									]
+								},
+								"down": {
+									"uv": [
+										232,
+										438.98
+									],
+									"uv_size": [
+										47.98,
+										-15.98
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								12,
+								19,
+								7.5
+							],
+							"size": [
+								-24,
+								-15,
+								-12.5
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										232,
+										422.98
+									],
+									"uv_size": [
+										23.98,
+										-14.98
+									]
+								},
+								"east": {
+									"uv": [
+										268.98,
+										422.98
+									],
+									"uv_size": [
+										-12.98,
+										-14.98
+									]
+								},
+								"west": {
+									"uv": [
+										256,
+										422.98
+									],
+									"uv_size": [
+										12.98,
+										-14.98
+									]
+								},
+								"down": {
+									"uv": [
+										269,
+										408
+									],
+									"uv_size": [
+										23.98,
+										10.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "grate",
+					"parent": "fireplace",
+					"pivot": [
+						0,
+						4,
+						-5
+					]
+				},
+				{
+					"name": "log1",
+					"parent": "fireplace",
+					"pivot": [
+						-1,
+						8,
+						1.5
+					]
+				},
+				{
+					"name": "log2",
+					"parent": "fireplace",
+					"pivot": [
+						2,
+						6,
+						1.5
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,63 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_gzikup",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [
+					0,
+					0.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "mush1",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								2,
+								-3
+							],
+							"size": [
+								6,
+								4,
+								6
+							],
+							"uv": [
+								42,
+								44
+							]
+						},
+						{
+							"origin": [
+								-1.5,
+								-1,
+								-1.5
+							],
+							"size": [
+								3,
+								3,
+								3
+							],
+							"uv": [
+								58,
+								54
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

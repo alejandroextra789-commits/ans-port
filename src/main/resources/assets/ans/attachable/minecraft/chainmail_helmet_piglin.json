@@ -1,0 +1,132 @@
+{
+	"format": "ans:bedrock_attachable",
+	"format_version": 1,
+	"identifier": "minecraft:chainmail_helmet_piglin",
+	"source": {
+		"layer": "SP1",
+		"file": "attachables/eva.json",
+		"min_engine_version": null
+	},
+	"items": {
+		"minecraft:chainmail_helmet": "q.is_owner_identifier_any('minecraft:piglin', 'minecraft:piglin_brute', 'minecraft:zombie_pigman')"
+	},
+	"animation_file": "ans:attachable/attachables",
+	"geometry": {
+		"default": "ans:attachable/sdrlgc",
+		"ttywjo": "ans:attachable/ietppw",
+		"baby": "ans:attachable/bbfniw"
+	},
+	"bone_bindings": {},
+	"textures": {
+		"default": "ans:textures/attachable/dru.png",
+		"armor": "ans:textures/attachable/dou.png",
+		"iivysx": "minecraft:textures/entity/equipment/humanoid_baby/chainmail.png",
+		"enchanted": "minecraft:textures/misc/enchanted_glint_item.png",
+		"fbfusz": "ans:textures/attachable/dou.png"
+	},
+	"materials": {
+		"default": {
+			"bedrock": "armor",
+			"render_type": "cutout",
+			"color_mask": true
+		},
+		"enchanted": {
+			"bedrock": "armor_enchanted",
+			"render_type": "cutout",
+			"glint": true
+		},
+		"avltwh": {
+			"bedrock": "avltwh",
+			"render_type": "cutout"
+		}
+	},
+	"animations": {
+		"nywoyr": {
+			"bedrock": "animation.oreville_ans.ctqdnf",
+			"animation": "animation.attachables.oreville_ans_ctqdnf",
+			"loop": true
+		},
+		"lqlrks": {
+			"bedrock": "controller.animation.oreville_ans.dmaerc",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							{
+								"nywoyr": "!c.is_first_person&&q.is_owner_identifier_any('minecraft:copper_golem')"
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"scripts": {
+		"initialize": [
+			"v.mucbaa=0;",
+			"v.qndtur=0;",
+			"v.cdrzno=0;",
+			"v.vcwktz=0;",
+			"v.jipoeq=0;",
+			"v.pihgwp=0;"
+		],
+		"pre_animation": [
+			"v.mucbaa=0;",
+			"v.qndtur=c.owning_entity->v.use_dedicated_baby_armor;",
+			"v.cdrzno=c.owning_entity->v.cdrzno;",
+			"v.vcwktz=v.qndtur&&v.cdrzno;",
+			"v.jipoeq=(!q.is_pack_setting_selected('oreville_ans:cvmbbr','disabled')&&q.is_owner_identifier_any('minecraft:player')&&!v.mucbaa)||!q.is_owner_identifier_any('minecraft:player');"
+		],
+		"animate": [
+			{
+				"lqlrks": "q.is_attached"
+			}
+		]
+	},
+	"render_controllers": [
+		{
+			"id": "controller.render.oreville_ans.txoloc",
+			"condition": null,
+			"geometry": "v.vcwktz?Geometry.baby:Geometry.default",
+			"textures": [
+				"v.vcwktz?Texture.iivysx:Texture.armor",
+				"Texture.enchanted"
+			],
+			"materials": [
+				[
+					"*",
+					"v.is_enchanted?Material.enchanted:Material.default"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.jipoeq"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.lyefjo",
+			"condition": "v.has_trim",
+			"geometry": "v.vcwktz?Geometry.baby:Geometry.ttywjo",
+			"textures": [
+				"v.has_trim?v.trim_path:v.vcwktz?Texture.iivysx:Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.avltwh"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.jipoeq"
+				]
+			]
+		}
+	],
+	"sound_effects": {},
+	"particle_effects": {}
+}

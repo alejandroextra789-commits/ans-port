@@ -1,0 +1,283 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_egovmg",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						7.5,
+						0
+					]
+				},
+				{
+					"name": "lantern",
+					"parent": "item",
+					"pivot": [
+						0,
+						7.5,
+						0
+					]
+				},
+				{
+					"name": "itemglow",
+					"parent": "lantern",
+					"pivot": [
+						0,
+						2.625,
+						0
+					]
+				},
+				{
+					"name": "emissivenofancy",
+					"parent": "lantern",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2.25,
+								0,
+								-2.25
+							],
+							"size": [
+								4.5,
+								5.25,
+								4.5
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										955,
+										246
+									],
+									"uv_size": [
+										5.98,
+										6.98
+									]
+								},
+								"east": {
+									"uv": [
+										955,
+										246
+									],
+									"uv_size": [
+										5.98,
+										6.98
+									]
+								},
+								"south": {
+									"uv": [
+										955,
+										246
+									],
+									"uv_size": [
+										5.98,
+										6.98
+									]
+								},
+								"west": {
+									"uv": [
+										955,
+										246
+									],
+									"uv_size": [
+										5.98,
+										6.98
+									]
+								},
+								"up": {
+									"uv": [
+										966.98,
+										251.98
+									],
+									"uv_size": [
+										-5.98,
+										-5.98
+									]
+								},
+								"down": {
+									"uv": [
+										966.98,
+										251.98
+									],
+									"uv_size": [
+										-5.98,
+										-5.98
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-1.5,
+								5.25,
+								-1.5
+							],
+							"size": [
+								3,
+								1.5,
+								3
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										955,
+										253
+									],
+									"uv_size": [
+										3.98,
+										1.98
+									]
+								},
+								"east": {
+									"uv": [
+										955,
+										253
+									],
+									"uv_size": [
+										3.98,
+										1.98
+									]
+								},
+								"south": {
+									"uv": [
+										955,
+										253
+									],
+									"uv_size": [
+										3.98,
+										1.98
+									]
+								},
+								"west": {
+									"uv": [
+										955,
+										253
+									],
+									"uv_size": [
+										3.98,
+										1.98
+									]
+								},
+								"up": {
+									"uv": [
+										965.98,
+										250.98
+									],
+									"uv_size": [
+										-3.98,
+										-3.98
+									]
+								},
+								"down": {
+									"uv": [
+										954.98,
+										261.98
+									],
+									"uv_size": [
+										-0.02,
+										-0.02
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-1.125,
+								6.75,
+								0
+							],
+							"size": [
+								2.25,
+								1.5,
+								0
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								45,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										955,
+										255
+									],
+									"uv_size": [
+										2.98,
+										1.98
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-1.125,
+								6.75,
+								0
+							],
+							"size": [
+								2.25,
+								1.5,
+								0
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										957.98,
+										255
+									],
+									"uv_size": [
+										-2.98,
+										1.98
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

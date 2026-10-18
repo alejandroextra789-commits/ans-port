@@ -1,0 +1,267 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_jvvtbv",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "dragonhead",
+					"parent": "item",
+					"pivot": [
+						0,
+						8,
+						8
+					],
+					"cubes": [
+						{
+							"origin": [
+								-6,
+								4,
+								-22
+							],
+							"size": [
+								12,
+								5,
+								16
+							],
+							"uv": [
+								176,
+								44
+							]
+						},
+						{
+							"origin": [
+								-8,
+								0,
+								-8
+							],
+							"size": [
+								16,
+								16,
+								16
+							],
+							"uv": [
+								112,
+								30
+							]
+						},
+						{
+							"origin": [
+								-5,
+								16,
+								-2
+							],
+							"size": [
+								2,
+								4,
+								6
+							],
+							"mirror": true,
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-5,
+								9,
+								-20
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"mirror": true,
+							"uv": [
+								112,
+								0
+							]
+						},
+						{
+							"origin": [
+								3,
+								16,
+								-2
+							],
+							"size": [
+								2,
+								4,
+								6
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								3,
+								9,
+								-20
+							],
+							"size": [
+								2,
+								2,
+								4
+							],
+							"uv": [
+								112,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "glow1",
+					"parent": "dragonhead",
+					"pivot": [
+						-4,
+						11,
+						-8
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear1",
+					"parent": "glow1",
+					"pivot": [
+						-1.5,
+						6.5,
+						-5.4
+					],
+					"cubes": [
+						{
+							"origin": [
+								-9,
+								6,
+								-11.5
+							],
+							"size": [
+								10,
+								10,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										201,
+										201
+									],
+									"uv_size": [
+										53,
+										53
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "glow2",
+					"parent": "dragonhead",
+					"pivot": [
+						4,
+						11,
+						-8
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear2",
+					"parent": "glow2",
+					"pivot": [
+						1.5,
+						6.5,
+						-5.4
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								6,
+								-11.5
+							],
+							"size": [
+								10,
+								10,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										201,
+										201
+									],
+									"uv_size": [
+										53,
+										53
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "jaw",
+					"parent": "dragonhead",
+					"pivot": [
+						0,
+						4,
+						-5
+					],
+					"rotation": [
+						15,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-6,
+								0,
+								-22
+							],
+							"size": [
+								12,
+								4,
+								16
+							],
+							"uv": [
+								176,
+								65
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

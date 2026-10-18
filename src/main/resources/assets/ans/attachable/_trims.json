@@ -1,0 +1,22 @@
+{
+	"format": "ans:trim_textures",
+	"java_patterns": true,
+	"patterns": {},
+	"palettes": {
+		"amethyst": "ans:textures/attachable/trims_color_palettes_amethyst.png",
+		"copper": "ans:textures/attachable/trims_color_palettes_copper.png",
+		"diamond": "ans:textures/attachable/trims_color_palettes_diamond.png",
+		"diamond_darker": "ans:textures/attachable/trims_color_palettes_diamond_darker.png",
+		"emerald": "ans:textures/attachable/trims_color_palettes_emerald.png",
+		"gold": "ans:textures/attachable/trims_color_palettes_gold.png",
+		"gold_darker": "ans:textures/attachable/trims_color_palettes_gold_darker.png",
+		"iron": "ans:textures/attachable/trims_color_palettes_iron.png",
+		"iron_darker": "ans:textures/attachable/trims_color_palettes_iron_darker.png",
+		"lapis": "ans:textures/attachable/trims_color_palettes_lapis.png",
+		"netherite": "ans:textures/attachable/trims_color_palettes_netherite.png",
+		"netherite_darker": "ans:textures/attachable/trims_color_palettes_netherite_darker.png",
+		"quartz": "ans:textures/attachable/trims_color_palettes_quartz.png",
+		"redstone": "ans:textures/attachable/trims_color_palettes_redstone.png",
+		"resin": "ans:textures/attachable/trims_color_palettes_resin.png"
+	}
+}

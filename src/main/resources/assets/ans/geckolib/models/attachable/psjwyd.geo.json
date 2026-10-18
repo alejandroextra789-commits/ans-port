@@ -1,0 +1,113 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_psjwyd",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "armor1",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "armor1",
+					"pivot": [
+						0,
+						6,
+						-1
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								4,
+								-2.5
+							],
+							"size": [
+								6,
+								5,
+								3
+							],
+							"inflate": 0.3,
+							"uv": [
+								0,
+								17
+							]
+						}
+					]
+				},
+				{
+					"name": "rightarm",
+					"parent": "armor1",
+					"pivot": [
+						-4,
+						9,
+						0.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5.5,
+								4.8,
+								-0.97
+							],
+							"size": [
+								2,
+								5,
+								3
+							],
+							"inflate": 0.3,
+							"uv": [
+								30,
+								25
+							]
+						}
+					]
+				},
+				{
+					"name": "leftarm",
+					"parent": "armor1",
+					"pivot": [
+						4,
+						9,
+						0.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								3.5,
+								4.8,
+								-1.03
+							],
+							"size": [
+								2,
+								5,
+								3
+							],
+							"inflate": 0.3,
+							"uv": [
+								30,
+								17
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,191 @@
+{
+	"format": "ans:bedrock_attachable",
+	"format_version": 1,
+	"identifier": "minecraft:decorated_pot",
+	"source": {
+		"layer": "root",
+		"file": "attachables/gll.json",
+		"min_engine_version": "1.8.0"
+	},
+	"items": {
+		"minecraft:decorated_pot": null
+	},
+	"animation_file": "ans:attachable/attachables",
+	"geometry": {
+		"surwer": "ans:attachable/ozldqh",
+		"hzhxxv": "ans:attachable/oaondr"
+	},
+	"bone_bindings": {
+		"ans:attachable/ozldqh": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:attachable/oaondr": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		}
+	},
+	"textures": {
+		"rubktq": "ans:textures/attachable/dop.png",
+		"krhtvt": "ans:textures/attachable/dop.png",
+		"brick": "minecraft:textures/entity/decorated_pot/decorated_pot_side.png",
+		"angler_pottery_sherd": "minecraft:textures/entity/decorated_pot/angler_pottery_pattern.png",
+		"archer_pottery_sherd": "minecraft:textures/entity/decorated_pot/archer_pottery_pattern.png",
+		"arms_up_pottery_sherd": "minecraft:textures/entity/decorated_pot/arms_up_pottery_pattern.png",
+		"blade_pottery_sherd": "minecraft:textures/entity/decorated_pot/blade_pottery_pattern.png",
+		"brewer_pottery_sherd": "minecraft:textures/entity/decorated_pot/brewer_pottery_pattern.png",
+		"burn_pottery_sherd": "minecraft:textures/entity/decorated_pot/burn_pottery_pattern.png",
+		"danger_pottery_sherd": "minecraft:textures/entity/decorated_pot/danger_pottery_pattern.png",
+		"explorer_pottery_sherd": "minecraft:textures/entity/decorated_pot/explorer_pottery_pattern.png",
+		"friend_pottery_sherd": "minecraft:textures/entity/decorated_pot/friend_pottery_pattern.png",
+		"heart_pottery_sherd": "minecraft:textures/entity/decorated_pot/heart_pottery_pattern.png",
+		"heartbreak_pottery_sherd": "minecraft:textures/entity/decorated_pot/heartbreak_pottery_pattern.png",
+		"howl_pottery_sherd": "minecraft:textures/entity/decorated_pot/howl_pottery_pattern.png",
+		"miner_pottery_sherd": "minecraft:textures/entity/decorated_pot/miner_pottery_pattern.png",
+		"mourner_pottery_sherd": "minecraft:textures/entity/decorated_pot/mourner_pottery_pattern.png",
+		"plenty_pottery_sherd": "minecraft:textures/entity/decorated_pot/plenty_pottery_pattern.png",
+		"prize_pottery_sherd": "minecraft:textures/entity/decorated_pot/prize_pottery_pattern.png",
+		"sheaf_pottery_sherd": "minecraft:textures/entity/decorated_pot/sheaf_pottery_pattern.png",
+		"shelter_pottery_sherd": "minecraft:textures/entity/decorated_pot/shelter_pottery_pattern.png",
+		"skull_pottery_sherd": "minecraft:textures/entity/decorated_pot/skull_pottery_pattern.png",
+		"snort_pottery_sherd": "minecraft:textures/entity/decorated_pot/snort_pottery_pattern.png",
+		"flow_pottery_sherd": "minecraft:textures/entity/decorated_pot/flow_pottery_pattern.png",
+		"guster_pottery_sherd": "minecraft:textures/entity/decorated_pot/guster_pottery_pattern.png",
+		"scrape_pottery_sherd": "minecraft:textures/entity/decorated_pot/scrape_pottery_pattern.png"
+	},
+	"materials": {
+		"default": {
+			"bedrock": "sxepuo",
+			"render_type": "solid"
+		}
+	},
+	"animations": {
+		"nywoyr": {
+			"bedrock": "animation.oreville_ans.ctqdnf",
+			"animation": "animation.attachables.oreville_ans_ctqdnf",
+			"loop": true
+		},
+		"kgklcq": {
+			"bedrock": "animation.oreville_ans.xghxmf",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.evlypi='flhgoc';return 0;"
+		},
+		"cekrqo": {
+			"bedrock": "animation.oreville_ans.cekrqo",
+			"animation": "animation.attachables.oreville_ans_cekrqo",
+			"loop": true,
+			"relative_to_entity": [
+				"itemglow"
+			]
+		},
+		"ecpndh": {
+			"bedrock": "animation.oreville_ans.ecpndh",
+			"animation": "animation.attachables.oreville_ans_ecpndh",
+			"loop": true,
+			"relative_to_entity": [
+				"itemglow"
+			]
+		},
+		"lqlrks": {
+			"bedrock": "controller.animation.oreville_ans.dmaerc",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							{
+								"nywoyr": "!c.is_first_person&&q.is_owner_identifier_any('minecraft:copper_golem')"
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"scripts": {
+		"initialize": [
+			"v.nszoco=0;",
+			"v.shnqjb=0;",
+			"v.xsttiu=0;",
+			"v.sqfrlv=0;",
+			"v.avrcqm=0;",
+			"v.lvamli=0;",
+			"v.qhhozj=0;",
+			"v.sqrooj=0;",
+			"v.phqhsg=0;",
+			"v.levhfc=0;",
+			"v.hcmvys=0;",
+			"v.rdmkec=0;",
+			"v.ozlwha=0;",
+			"v.ukeclk=0;",
+			"v.oreville_helmet_armor_layer_hidden=0;",
+			"v.pihgwp=0;",
+			"q.is_attached?{v.bmhuds=0;};",
+			"q.is_attached?{v.mtvyqs=0;};",
+			"q.is_attached?{v.vfnwfl=0;};",
+			"v.cdrzno=!q.is_attached&&q.is_baby;",
+			"v.misscd=0;",
+			"v.actions_and_stuff=1;",
+			"v.evlypi='unknown';",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.narpvm=0;v.ykxvro=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sxlefg=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.ykxvro?{v.narpvm=1;};v.mgdgwf=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.tsuowj=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.mgdgwf?{v.narpvm=2;};v.atuocm=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.hqvvjb=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.atuocm?{v.narpvm=3;};};"
+		],
+		"pre_animation": [
+			"q.is_attached?{v.bmhuds=c.is_first_person;};",
+			"q.is_attached?{v.mtvyqs=c.item_slot=='main_hand';};",
+			"q.is_attached?{v.vfnwfl=c.item_slot=='off_hand';};",
+			"q.is_attached?{q.is_owner_identifier_any('minecraft:player','minecraft:armor_stand')?{c.item_slot=='main_hand'?{v.nszoco=c.owning_entity->v.shnqjb;};c.item_slot=='off_hand'?{v.nszoco=c.owning_entity->v.xsttiu;};};!q.is_owner_identifier_any('minecraft:player','minecraft:armor_stand')?{v.nszoco=1;};};",
+			"q.is_attached?{v.sqfrlv=q.is_pack_setting_selected('oreville_ans:stghmf','default')||q.is_pack_setting_selected('oreville_ans:stghmf','outline');v.avrcqm=!q.is_pack_setting_selected('oreville_ans:stghmf','outline');v.lvamli='uowpvm';q.is_pack_setting_selected('oreville_ans:stghmf','flhgoc')?{v.lvamli='flhgoc';};};",
+			"v.wtlyok=q.graphics_mode_is_any('simple','fancy');",
+			"q.is_attached?{v.misscd=c.owning_entity->v.misscd;};",
+			"v.actions_and_stuff=1;",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.qhhozj=0;v.ykxvro=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.ykxvro=v.sxlefg;};v.sqrooj=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sqrooj?{v.qhhozj=1;};v.mgdgwf=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.mgdgwf=v.tsuowj;};v.phqhsg=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.phqhsg?{v.qhhozj=2;};v.atuocm=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.atuocm=v.hqvvjb;};v.levhfc=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.levhfc?{v.qhhozj=3;};};"
+		],
+		"animate": [
+			"kgklcq",
+			{
+				"cekrqo": "q.is_attached&&c.is_first_person"
+			},
+			{
+				"ecpndh": "q.is_attached&&!c.is_first_person"
+			},
+			{
+				"lqlrks": "q.is_attached"
+			}
+		],
+		"parent_setup": "c.item_slot=='main_hand'?{v.oreville_mainhand_custom_pos=1;v.oreville_mainhand_visible=1;v.shnqjb=1;v.jyerzu='block';v.liynxr='fzorbx';};c.item_slot=='off_hand'?{v.oreville_offhand_custom_pos=1;v.oreville_offhand_visible=1;v.xsttiu=1;v.kqkoyf='block';v.ympdnj='fzorbx';};",
+		"scale": "q.is_attached?(1):(v.cdrzno&&!q.is_baby?0.5:1)*(1)"
+	},
+	"render_controllers": [
+		{
+			"id": "controller.render.oreville_ans.decorated_pot",
+			"condition": "q.is_attached",
+			"geometry": "Geometry.surwer",
+			"textures": [
+				"Texture.rubktq"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.default"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.utraxv",
+			"condition": "q.is_attached",
+			"geometry": "Geometry.hzhxxv",
+			"textures": [
+				"Texture.krhtvt"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.default"
+				]
+			]
+		}
+	],
+	"sound_effects": {},
+	"particle_effects": {}
+}

@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="ans"
+version="${version}"
+displayName="Actions & Stuff (Java Port - 1.20.1 Forge port)"
+description="""Experimental source-reconstruction port for Minecraft 1.20.1 Forge. This build is incomplete and is not yet expected to compile or run."""
+
+[[dependencies.ans]]
+modId="forge"
+mandatory=true
+versionRange="[47.3.0,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.ans]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.ans]]
+modId="geckolib"
+mandatory=true
+versionRange="[4.8.4,)"
+ordering="AFTER"
+side="CLIENT"

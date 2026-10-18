@@ -1,0 +1,268 @@
+{
+	"format": "ans:bedrock_attachable",
+	"format_version": 1,
+	"identifier": "minecraft:elytra",
+	"source": {
+		"layer": "root",
+		"file": "attachables/fak.json",
+		"min_engine_version": null
+	},
+	"items": {
+		"minecraft:elytra": null
+	},
+	"animation_file": "ans:attachable/attachables",
+	"geometry": {
+		"default": "ans:attachable/vanilla_elytra"
+	},
+	"bone_bindings": {},
+	"textures": {
+		"default": "minecraft:textures/entity/equipment/wings/elytra.png",
+		"enchanted": "minecraft:textures/misc/enchanted_glint_item.png"
+	},
+	"materials": {
+		"default": {
+			"bedrock": "elytra",
+			"render_type": "cutout"
+		},
+		"enchanted": {
+			"bedrock": "elytra_glint",
+			"render_type": "cutout",
+			"glint": true
+		}
+	},
+	"animations": {
+		"nywoyr": {
+			"bedrock": "animation.oreville_ans.ctqdnf",
+			"animation": "animation.attachables.oreville_ans_ctqdnf",
+			"loop": true
+		},
+		"default": {
+			"bedrock": "animation.elytra.default",
+			"animation": "animation.attachables.elytra_default",
+			"loop": true
+		},
+		"sneaking": {
+			"bedrock": "animation.elytra.sneaking",
+			"animation": "animation.attachables.elytra_sneaking",
+			"loop": true
+		},
+		"sleeping": {
+			"bedrock": "animation.elytra.sleeping",
+			"animation": "animation.attachables.elytra_sleeping",
+			"loop": true
+		},
+		"avongy": {
+			"bedrock": "controller.animation.oreville_ans.qcyskc",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							"default"
+						],
+						"transitions": [
+							{
+								"vqwfah": "q.is_gliding"
+							},
+							{
+								"awsgka": "q.is_sneaking"
+							},
+							{
+								"sykxyi": "q.is_sleeping"
+							}
+						],
+						"blend_transition": 0.1,
+						"blend_via_shortest_path": true
+					},
+					"vqwfah": {
+						"animations": [
+							"gliding"
+						],
+						"transitions": [
+							{
+								"sykxyi": "q.is_sleeping"
+							},
+							{
+								"default": "!q.is_gliding"
+							}
+						],
+						"blend_transition": 0.1,
+						"blend_via_shortest_path": true
+					},
+					"awsgka": {
+						"animations": [
+							"sneaking"
+						],
+						"transitions": [
+							{
+								"vqwfah": "q.is_gliding"
+							},
+							{
+								"sykxyi": "q.is_sleeping"
+							},
+							{
+								"default": "!q.is_sneaking"
+							}
+						],
+						"blend_transition": 0.1,
+						"blend_via_shortest_path": true
+					},
+					"sykxyi": {
+						"animations": [
+							"sleeping"
+						],
+						"transitions": [
+							{
+								"vqwfah": "q.is_gliding"
+							},
+							{
+								"awsgka": "q.is_sneaking"
+							},
+							{
+								"default": "!q.is_sleeping"
+							}
+						],
+						"blend_transition": 0.1,
+						"blend_via_shortest_path": true
+					}
+				}
+			}
+		},
+		"pchdlh": {
+			"bedrock": "controller.animation.oreville_ans.vqnnme",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"cbixvs": "q.is_gliding"
+							}
+						]
+					},
+					"cbixvs": {
+						"transitions": [
+							{
+								"default": "!q.is_gliding"
+							},
+							{
+								"evrjlf": "q.is_gliding&&q.is_sneaking"
+							}
+						],
+						"blend_transition": 0.15,
+						"blend_via_shortest_path": true
+					},
+					"evrjlf": {
+						"animations": [
+							"evrjlf"
+						],
+						"transitions": [
+							{
+								"default": "!q.is_gliding"
+							},
+							{
+								"cbixvs": "q.is_gliding&&q.all_animations_finished"
+							},
+							{
+								"fpsgkf": "q.is_gliding&&q.is_sneaking&&q.state_time>1.33"
+							}
+						],
+						"blend_transition": 0.15,
+						"blend_via_shortest_path": true
+					},
+					"fpsgkf": {
+						"animations": [
+							"fpsgkf"
+						],
+						"transitions": [
+							{
+								"default": "!q.is_gliding"
+							},
+							{
+								"cbixvs": "q.is_gliding&&q.all_animations_finished"
+							},
+							{
+								"evrjlf": "q.is_gliding&&q.is_sneaking&&q.state_time>1.33"
+							}
+						],
+						"blend_transition": 0.15,
+						"blend_via_shortest_path": true
+					}
+				}
+			}
+		},
+		"gliding": {
+			"bedrock": "animation.oreville_ans.uejbji",
+			"animation": "animation.attachables.oreville_ans_uejbji",
+			"loop": true
+		},
+		"mvalnd": {
+			"bedrock": "animation.oreville_ans.pvhwfd",
+			"animation": "animation.attachables.oreville_ans_pvhwfd",
+			"loop": true
+		},
+		"evrjlf": {
+			"bedrock": "animation.oreville_ans.tfxdcn",
+			"animation": "animation.attachables.oreville_ans_tfxdcn",
+			"loop": "hold_on_last_frame",
+			"animation_length": 2.5
+		},
+		"fpsgkf": {
+			"bedrock": "animation.oreville_ans.mluoil",
+			"animation": "animation.attachables.oreville_ans_mluoil",
+			"loop": "hold_on_last_frame",
+			"animation_length": 2.5
+		},
+		"lqlrks": {
+			"bedrock": "controller.animation.oreville_ans.dmaerc",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							{
+								"nywoyr": "!c.is_first_person&&q.is_owner_identifier_any('minecraft:copper_golem')"
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"scripts": {
+		"initialize": [
+			"v.yjiavs=0;",
+			"v.pihgwp=0;"
+		],
+		"pre_animation": [
+			"v.yjiavs=Math.lerp(v.yjiavs,Math.clamp(q.target_x_rotation+20,0,60),0.1);"
+		],
+		"animate": [
+			"avongy",
+			"pchdlh",
+			{
+				"lqlrks": "q.is_attached"
+			}
+		],
+		"parent_setup": "v.chest_layer_visible=1;"
+	},
+	"render_controllers": [
+		{
+			"id": "controller.render.elytra",
+			"condition": null,
+			"geometry": "Geometry.default",
+			"textures": [
+				"v.has_trim?v.trim_path:Texture.default",
+				"Texture.enchanted"
+			],
+			"materials": [
+				[
+					"*",
+					"v.is_enchanted?Material.enchanted:Material.default"
+				]
+			]
+		}
+	],
+	"sound_effects": {},
+	"particle_effects": {}
+}

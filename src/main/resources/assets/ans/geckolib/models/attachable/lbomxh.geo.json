@@ -1,0 +1,254 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_lbomxh",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "elements",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "plush",
+					"parent": "elements",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "plushbody",
+					"parent": "plush",
+					"pivot": [
+						0,
+						0,
+						3
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								2,
+								1
+							],
+							"size": [
+								6,
+								6,
+								4
+							],
+							"uv": [
+								496,
+								339
+							]
+						},
+						{
+							"origin": [
+								-3,
+								0,
+								1
+							],
+							"size": [
+								6,
+								2,
+								4
+							],
+							"uv": [
+								496,
+								349
+							]
+						}
+					]
+				},
+				{
+					"name": "plushleg2",
+					"parent": "plushbody",
+					"pivot": [
+						3,
+						1,
+						1
+					],
+					"rotation": [
+						-90,
+						-22.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								2,
+								-6,
+								0
+							],
+							"size": [
+								2,
+								8,
+								2
+							],
+							"inflate": -0.01,
+							"mirror": true,
+							"uv": [
+								520,
+								345
+							]
+						}
+					]
+				},
+				{
+					"name": "plushleg1",
+					"parent": "plushbody",
+					"pivot": [
+						-3,
+						1,
+						1
+					],
+					"rotation": [
+						-90,
+						22.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								-6,
+								0
+							],
+							"size": [
+								2,
+								8,
+								2
+							],
+							"inflate": -0.01,
+							"uv": [
+								520,
+								345
+							]
+						}
+					]
+				},
+				{
+					"name": "plusharm2",
+					"parent": "plushbody",
+					"pivot": [
+						3,
+						6,
+						1
+					],
+					"rotation": [
+						-39.31615,
+						8.40819,
+						9.28293
+					],
+					"cubes": [
+						{
+							"origin": [
+								2,
+								-1,
+								0
+							],
+							"size": [
+								2,
+								8,
+								2
+							],
+							"mirror": true,
+							"uv": [
+								520,
+								345
+							]
+						}
+					]
+				},
+				{
+					"name": "plusharm1",
+					"parent": "plushbody",
+					"pivot": [
+						-3,
+						6,
+						1
+					],
+					"rotation": [
+						-39.31615,
+						-8.40819,
+						-9.28293
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								-1,
+								0
+							],
+							"size": [
+								2,
+								8,
+								2
+							],
+							"uv": [
+								520,
+								345
+							]
+						}
+					]
+				},
+				{
+					"name": "plushhead",
+					"parent": "plushbody",
+					"pivot": [
+						0.04341,
+						7.79765,
+						3.00979
+					]
+				},
+				{
+					"name": "plushheadrotate",
+					"parent": "plushhead",
+					"pivot": [
+						0.04341,
+						7.79765,
+						3.00979
+					],
+					"rotation": [
+						-7.5,
+						0,
+						7.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.45231,
+								7.66768,
+								-0.47741
+							],
+							"size": [
+								7,
+								7,
+								7
+							],
+							"uv": [
+								496,
+								323
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

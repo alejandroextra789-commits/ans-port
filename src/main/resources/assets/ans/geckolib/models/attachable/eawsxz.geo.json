@@ -1,0 +1,446 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_eawsxz",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "creakingspawnegg",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								8,
+								-3
+							],
+							"size": [
+								6,
+								2,
+								6
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										595,
+										730
+									],
+									"uv_size": [
+										5.98,
+										1.98
+									]
+								},
+								"east": {
+									"uv": [
+										595,
+										732
+									],
+									"uv_size": [
+										5.98,
+										1.98
+									]
+								},
+								"south": {
+									"uv": [
+										595,
+										734
+									],
+									"uv_size": [
+										5.98,
+										1.98
+									]
+								},
+								"west": {
+									"uv": [
+										595,
+										732
+									],
+									"uv_size": [
+										5.98,
+										1.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "emissive",
+					"parent": "creakingspawnegg",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								0,
+								-3
+							],
+							"size": [
+								6,
+								8,
+								6
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										569,
+										736
+									],
+									"uv_size": [
+										5.98,
+										7.98
+									]
+								},
+								"east": {
+									"uv": [
+										575,
+										736
+									],
+									"uv_size": [
+										5.98,
+										7.98
+									]
+								},
+								"south": {
+									"uv": [
+										581,
+										736
+									],
+									"uv_size": [
+										5.98,
+										7.98
+									]
+								},
+								"west": {
+									"uv": [
+										575,
+										736
+									],
+									"uv_size": [
+										5.98,
+										7.98
+									]
+								},
+								"up": {
+									"uv": [
+										569,
+										730
+									],
+									"uv_size": [
+										5.98,
+										5.98
+									]
+								},
+								"down": {
+									"uv": [
+										575,
+										735.98
+									],
+									"uv_size": [
+										5.98,
+										-5.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "alphatestnofancy",
+					"parent": "creakingspawnegg",
+					"pivot": [
+						-5,
+						4.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								3.87868,
+								2.12132,
+								-3
+							],
+							"size": [
+								0,
+								3,
+								6
+							],
+							"pivot": [
+								0.87868,
+								2.12132,
+								0
+							],
+							"rotation": [
+								0,
+								0,
+								45
+							],
+							"uv": {
+								"west": {
+									"uv": [
+										588,
+										730
+									],
+									"uv_size": [
+										5.98,
+										2.98
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								3,
+								0,
+								-9
+							],
+							"size": [
+								0,
+								3,
+								6
+							],
+							"pivot": [
+								3,
+								0,
+								-3
+							],
+							"rotation": [
+								90,
+								45,
+								90
+							],
+							"uv": {
+								"west": {
+									"uv": [
+										582,
+										730
+									],
+									"uv_size": [
+										5.98,
+										2.98
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-3.87868,
+								2.12132,
+								-3
+							],
+							"size": [
+								0,
+								3,
+								6
+							],
+							"pivot": [
+								-0.87868,
+								2.12132,
+								0
+							],
+							"rotation": [
+								0,
+								0,
+								-45
+							],
+							"uv": {
+								"east": {
+									"uv": [
+										593.98,
+										730
+									],
+									"uv_size": [
+										-5.98,
+										2.98
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-3,
+								0,
+								3
+							],
+							"size": [
+								0,
+								3,
+								6
+							],
+							"pivot": [
+								-3,
+								0,
+								3
+							],
+							"rotation": [
+								-90,
+								45,
+								-90
+							],
+							"uv": {
+								"east": {
+									"uv": [
+										587.98,
+										730
+									],
+									"uv_size": [
+										-5.98,
+										2.98
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								3,
+								0,
+								0
+							],
+							"size": [
+								4,
+								9,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										589,
+										737
+									],
+									"uv_size": [
+										3.98,
+										8.98
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-7,
+								0,
+								0
+							],
+							"size": [
+								4,
+								12,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										597.98,
+										737
+									],
+									"uv_size": [
+										-3.98,
+										11.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "eyes",
+					"parent": "creakingspawnegg",
+					"pivot": [
+						-3.5,
+						30,
+						-0.5
+					]
+				},
+				{
+					"name": "glow1",
+					"parent": "eyes",
+					"pivot": [
+						-1.5,
+						6.5,
+						-3
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear",
+					"parent": "glow1",
+					"pivot": [
+						-1.5,
+						-5.5,
+						2.5
+					]
+				},
+				{
+					"name": "glow2",
+					"parent": "eyes",
+					"pivot": [
+						1.5,
+						4.5,
+						-3
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear2",
+					"parent": "glow2",
+					"pivot": [
+						1.5,
+						-7.5,
+						2.5
+					]
+				},
+				{
+					"name": "glow3",
+					"parent": "eyes",
+					"pivot": [
+						-0.5,
+						2.5,
+						-3
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear3",
+					"parent": "glow3",
+					"pivot": [
+						-0.5,
+						-9.5,
+						2.5
+					]
+				}
+			]
+		}
+	]
+}

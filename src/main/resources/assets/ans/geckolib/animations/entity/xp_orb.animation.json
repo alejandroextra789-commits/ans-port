@@ -1,0 +1,4 @@
+{"format_version":"1.8.0","animations":{
+"animation.xp_orb.idle_1":{"loop":true,"bones":{"body":{"scale":["2.4+q.texture_frame_index*0.6","2.4+q.texture_frame_index*0.6","2.4+q.texture_frame_index*0.6"]},"axis":{"rotation":[0,"q.life_time*90+v.ngjrwv","Math.sin(q.life_time*90+v.ngjrwv)*22.5"],"position":[0,0.5,0]},"beam":{"rotation":[0,"q.rotation_to_camera(1)",0],"scale":["1+q.texture_frame_index*0.5","1+q.texture_frame_index*0.15",1]}}},
+"animation.xp_orb.idle_2":{"loop":true,"bones":{"pulse":{"scale":["1.1+Math.sin(q.life_time*180+v.ngjrwv)*0.1","1.1+Math.sin(q.life_time*180+v.ngjrwv)*0.1","1.1+Math.sin(q.life_time*180+v.ngjrwv)*0.1"]}}}
+}}

@@ -1,0 +1,1661 @@
+{
+ "format": "ans:bedrock_particle_index",
+ "format_version": 1,
+ "effects": {
+  "minecraft:arrow_spell_emitter": {
+   "file": "ans:particle/minecraft/arrow_spell_emitter.json",
+   "texture": "ans:textures/particle_fx/particle/dust_small.png",
+   "layer": "root"
+  },
+  "minecraft:basic_crit_particle": {
+   "file": "ans:particle/minecraft/basic_crit_particle.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "minecraft:block_destruct": {
+   "file": "ans:particle/minecraft/block_destruct.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "minecraft:campfire_smoke_particle": {
+   "file": "ans:particle/minecraft/campfire_smoke_particle.json",
+   "texture": "ans:textures/particle_fx/particle/campfire_smoke.png",
+   "layer": "root"
+  },
+  "minecraft:campfire_tall_smoke_particle": {
+   "file": "ans:particle/minecraft/campfire_tall_smoke_particle.json",
+   "texture": "ans:textures/particle_fx/particle/campfire_smoke.png",
+   "layer": "root"
+  },
+  "minecraft:critical_hit_emitter": {
+   "file": "ans:particle/minecraft/critical_hit_emitter.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "minecraft:dragon_breath_fire": {
+   "file": "ans:particle/minecraft/dragon_breath_fire.json",
+   "texture": "ans:textures/particle_fx/particle/cloud.png",
+   "layer": "root"
+  },
+  "minecraft:dragon_breath_lingering": {
+   "file": "ans:particle/minecraft/dragon_breath_lingering.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "minecraft:dragon_breath_trail": {
+   "file": "ans:particle/minecraft/dragon_breath_trail.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_purple.png",
+   "layer": "root"
+  },
+  "minecraft:enchanting_table_particle": {
+   "file": "ans:particle/minecraft/enchanting_table_particle.json",
+   "texture": "ans:textures/particle_fx/particle/galactic_alphabet.png",
+   "layer": "root"
+  },
+  "minecraft:end_chest": {
+   "file": "ans:particle/minecraft/end_chest.json",
+   "texture": "ans:textures/particle_fx/particle/teleport_dust.png",
+   "layer": "root"
+  },
+  "minecraft:firefly_particle": {
+   "file": "ans:particle/minecraft/firefly_particle.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dge.png",
+   "layer": "root"
+  },
+  "minecraft:glow_particle": {
+   "file": "ans:particle/minecraft/glow_particle.json",
+   "texture": "ans:textures/particle_fx/particle/glow_squid_sparkle.png",
+   "layer": "SP1"
+  },
+  "minecraft:heart_particle": {
+   "file": "ans:particle/minecraft/heart_particle.json",
+   "texture": "ans:textures/particle_fx/particle/pop_heart.png",
+   "layer": "root"
+  },
+  "minecraft:knockback_roar_particle": {
+   "file": "ans:particle/minecraft/knockback_roar_particle.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "minecraft:mob_portal": {
+   "file": "ans:particle/minecraft/mob_portal.json",
+   "texture": "ans:textures/particle_fx/particle/teleport_dust.png",
+   "layer": "root"
+  },
+  "minecraft:mobflame_emitter": {
+   "file": "ans:particle/minecraft/mobflame_emitter.json",
+   "texture": "ans:textures/particle_fx/particle/glowing.png",
+   "layer": "root"
+  },
+  "minecraft:mobspell_emitter": {
+   "file": "ans:particle/minecraft/mobspell_emitter.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_smol.png",
+   "layer": "root"
+  },
+  "minecraft:phantom_trail": {
+   "file": "ans:particle/minecraft/phantom_trail.json",
+   "texture": "ans:textures/particle_fx/particle/cloud.png",
+   "layer": "root"
+  },
+  "minecraft:portal_directional": {
+   "file": "ans:particle/minecraft/portal_directional.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_purple.png",
+   "layer": "root"
+  },
+  "minecraft:portal_east_west": {
+   "file": "ans:particle/minecraft/portal_east_west.json",
+   "texture": "ans:textures/particle_fx/particle/nether_portal_pixel_glow.png",
+   "layer": "root"
+  },
+  "minecraft:portal_north_south": {
+   "file": "ans:particle/minecraft/portal_north_south.json",
+   "texture": "ans:textures/particle_fx/particle/nether_portal_pixel_glow.png",
+   "layer": "root"
+  },
+  "minecraft:portal_reverse_particle": {
+   "file": "ans:particle/minecraft/portal_reverse_particle.json",
+   "texture": "ans:textures/particle_fx/particle/nether_portal_pixel_glow.png",
+   "layer": "root"
+  },
+  "minecraft:rain_splash_particle": {
+   "file": "ans:particle/minecraft/rain_splash_particle.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "minecraft:shulker_bullet": {
+   "file": "ans:particle/minecraft/shulker_bullet.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "minecraft:splash_spell_emitter": {
+   "file": "ans:particle/minecraft/splash_spell_emitter.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "minecraft:totem_manual": {
+   "file": "ans:particle/minecraft/totem_manual.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "minecraft:totem_particle": {
+   "file": "ans:particle/minecraft/totem_particle.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "minecraft:villager_happy": {
+   "file": "ans:particle/minecraft/villager_happy.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_green.png",
+   "layer": "root"
+  },
+  "minecraft:warden_dig": {
+   "file": "ans:particle/minecraft/warden_dig.json",
+   "texture": "minecraft:textures/atlas/blocks.png",
+   "layer": "root"
+  },
+  "minecraft:water_splash_particle_manual": {
+   "file": "ans:particle/minecraft/water_splash_particle_manual.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:aejbkk": {
+   "file": "ans:particle/oreville_ans/aejbkk.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgq.png",
+   "layer": "root"
+  },
+  "oreville_ans:aigfhq": {
+   "file": "ans:particle/oreville_ans/aigfhq.json",
+   "texture": "ans:textures/particle_fx/particle/water_impact_big.png",
+   "layer": "root"
+  },
+  "oreville_ans:ajivwq": {
+   "file": "ans:particle/oreville_ans/ajivwq.json",
+   "texture": "ans:textures/particle_fx/environment/weather.png",
+   "layer": "root"
+  },
+  "oreville_ans:akbkls": {
+   "file": "ans:particle/oreville_ans/akbkls.json",
+   "texture": "ans:textures/particle_fx/particle/shine.png",
+   "layer": "root"
+  },
+  "oreville_ans:apqgad": {
+   "file": "ans:particle/oreville_ans/apqgad.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/msp.png",
+   "layer": "root"
+  },
+  "oreville_ans:aqspda": {
+   "file": "ans:particle/oreville_ans/aqspda.json",
+   "texture": null,
+   "layer": "root"
+  },
+  "oreville_ans:audgzy": {
+   "file": "ans:particle/oreville_ans/audgzy.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:aupsst": {
+   "file": "ans:particle/oreville_ans/aupsst.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_smol.png",
+   "layer": "root"
+  },
+  "oreville_ans:awewku": {
+   "file": "ans:particle/oreville_ans/awewku.json",
+   "texture": "ans:textures/particle_fx/particle/water_impact_big.png",
+   "layer": "root"
+  },
+  "oreville_ans:awoviv": {
+   "file": "ans:particle/oreville_ans/awoviv.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:aynkct": {
+   "file": "ans:particle/oreville_ans/aynkct.json",
+   "texture": null,
+   "layer": "root"
+  },
+  "oreville_ans:banufe": {
+   "file": "ans:particle/oreville_ans/banufe.json",
+   "texture": "ans:textures/particle_fx/particle/glowing.png",
+   "layer": "root"
+  },
+  "oreville_ans:bcdjqk": {
+   "file": "ans:particle/oreville_ans/bcdjqk.json",
+   "texture": "ans:textures/particle_fx/particle/explosion_ring.png",
+   "layer": "root"
+  },
+  "oreville_ans:bdjnny": {
+   "file": "ans:particle/oreville_ans/bdjnny.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:beetroot_seeds": {
+   "file": "ans:particle/oreville_ans/beetroot_seeds.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgh.png",
+   "layer": "root"
+  },
+  "oreville_ans:bgpbtm": {
+   "file": "ans:particle/oreville_ans/bgpbtm.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgl.png",
+   "layer": "root"
+  },
+  "oreville_ans:bguunf": {
+   "file": "ans:particle/oreville_ans/bguunf.json",
+   "texture": "ans:textures/particle_fx/particle/splash_ring.png",
+   "layer": "root"
+  },
+  "oreville_ans:bidpwb": {
+   "file": "ans:particle/oreville_ans/bidpwb.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:bntjjk": {
+   "file": "ans:particle/oreville_ans/bntjjk.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgq.png",
+   "layer": "root"
+  },
+  "oreville_ans:bobiol": {
+   "file": "ans:particle/oreville_ans/bobiol.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:bobtew": {
+   "file": "ans:particle/oreville_ans/bobtew.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgo.png",
+   "layer": "root"
+  },
+  "oreville_ans:bpbjus": {
+   "file": "ans:particle/oreville_ans/bpbjus.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_purple.png",
+   "layer": "root"
+  },
+  "oreville_ans:bpyggn": {
+   "file": "ans:particle/oreville_ans/bpyggn.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgw.png",
+   "layer": "root"
+  },
+  "oreville_ans:bsmhvx": {
+   "file": "ans:particle/oreville_ans/bsmhvx.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:bvivod": {
+   "file": "ans:particle/oreville_ans/bvivod.json",
+   "texture": "ans:textures/particle_fx/particle/shine.png",
+   "layer": "root"
+  },
+  "oreville_ans:cestwf": {
+   "file": "ans:particle/oreville_ans/cestwf.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dcx.png",
+   "layer": "root"
+  },
+  "oreville_ans:cfwekf": {
+   "file": "ans:particle/oreville_ans/cfwekf.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:cioyls": {
+   "file": "ans:particle/oreville_ans/cioyls.json",
+   "texture": "ans:textures/particle_fx/particle/rain_drop_splash.png",
+   "layer": "root"
+  },
+  "oreville_ans:cmrola": {
+   "file": "ans:particle/oreville_ans/cmrola.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgn.png",
+   "layer": "root"
+  },
+  "oreville_ans:cohrbk": {
+   "file": "ans:particle/oreville_ans/cohrbk.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_white.png",
+   "layer": "root"
+  },
+  "oreville_ans:corpjb": {
+   "file": "ans:particle/oreville_ans/corpjb.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgf.png",
+   "layer": "root"
+  },
+  "oreville_ans:cotanr": {
+   "file": "ans:particle/oreville_ans/cotanr.json",
+   "texture": "ans:textures/particle_fx/particle/glowing.png",
+   "layer": "root"
+  },
+  "oreville_ans:cqwgvk": {
+   "file": "ans:particle/oreville_ans/cqwgvk.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:culanl": {
+   "file": "ans:particle/oreville_ans/culanl.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:cvocbd": {
+   "file": "ans:particle/oreville_ans/cvocbd.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:cwuosc": {
+   "file": "ans:particle/oreville_ans/cwuosc.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_white.png",
+   "layer": "root"
+  },
+  "oreville_ans:dcbgep": {
+   "file": "ans:particle/oreville_ans/dcbgep.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "oreville_ans:dfqtjy": {
+   "file": "ans:particle/oreville_ans/dfqtjy.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:doxwba": {
+   "file": "ans:particle/oreville_ans/doxwba.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:dpixec": {
+   "file": "ans:particle/oreville_ans/dpixec.json",
+   "texture": "ans:textures/particle_fx/particle/dust_small.png",
+   "layer": "root"
+  },
+  "oreville_ans:dragon_breath": {
+   "file": "ans:particle/oreville_ans/dragon_breath.json",
+   "texture": "ans:textures/particle_fx/particle/breath.png",
+   "layer": "root"
+  },
+  "oreville_ans:drmkva": {
+   "file": "ans:particle/oreville_ans/drmkva.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/nnz.png",
+   "layer": "root"
+  },
+  "oreville_ans:drnrvi": {
+   "file": "ans:particle/oreville_ans/drnrvi.json",
+   "texture": "ans:textures/particle_fx/particle/campfire_smoke.png",
+   "layer": "root"
+  },
+  "oreville_ans:dsdrzi": {
+   "file": "ans:particle/oreville_ans/dsdrzi.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:dybimo": {
+   "file": "ans:particle/oreville_ans/dybimo.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:dymxlh": {
+   "file": "ans:particle/oreville_ans/dymxlh.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgi.png",
+   "layer": "root"
+  },
+  "oreville_ans:dzzsci": {
+   "file": "ans:particle/oreville_ans/dzzsci.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgy.png",
+   "layer": "root"
+  },
+  "oreville_ans:edlemj": {
+   "file": "ans:particle/oreville_ans/edlemj.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:egbttn": {
+   "file": "ans:particle/oreville_ans/egbttn.json",
+   "texture": "ans:textures/particle_fx/particle/electric.png",
+   "layer": "root"
+  },
+  "oreville_ans:eheose": {
+   "file": "ans:particle/oreville_ans/eheose.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgr.png",
+   "layer": "root"
+  },
+  "oreville_ans:ejwqin": {
+   "file": "ans:particle/oreville_ans/ejwqin.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgz.png",
+   "layer": "root"
+  },
+  "oreville_ans:ektiop": {
+   "file": "ans:particle/oreville_ans/ektiop.json",
+   "texture": null,
+   "layer": "root"
+  },
+  "oreville_ans:embovt": {
+   "file": "ans:particle/oreville_ans/embovt.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:end_crystal": {
+   "file": "ans:particle/oreville_ans/end_crystal.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_purple.png",
+   "layer": "root"
+  },
+  "oreville_ans:etopxu": {
+   "file": "ans:particle/oreville_ans/etopxu.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:ezietv": {
+   "file": "ans:particle/oreville_ans/ezietv.json",
+   "texture": "ans:textures/particle_fx/particle/dust_small.png",
+   "layer": "root"
+  },
+  "oreville_ans:ezldmk": {
+   "file": "ans:particle/oreville_ans/ezldmk.json",
+   "texture": "ans:textures/particle_fx/particle/dust_small.png",
+   "layer": "root"
+  },
+  "oreville_ans:fbnpyn": {
+   "file": "ans:particle/oreville_ans/fbnpyn.json",
+   "texture": null,
+   "layer": "root"
+  },
+  "oreville_ans:fdxqqv": {
+   "file": "ans:particle/oreville_ans/fdxqqv.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:fgaqsv": {
+   "file": "ans:particle/oreville_ans/fgaqsv.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgh.png",
+   "layer": "root"
+  },
+  "oreville_ans:fivuiy": {
+   "file": "ans:particle/oreville_ans/fivuiy.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:flhyet": {
+   "file": "ans:particle/oreville_ans/flhyet.json",
+   "texture": "ans:textures/particle_fx/particle/dust_medium.png",
+   "layer": "root"
+  },
+  "oreville_ans:fllzkp": {
+   "file": "ans:particle/oreville_ans/fllzkp.json",
+   "texture": "ans:textures/particle_fx/particle/water_impact_big.png",
+   "layer": "root"
+  },
+  "oreville_ans:fmpdzx": {
+   "file": "ans:particle/oreville_ans/fmpdzx.json",
+   "texture": "ans:textures/particle_fx/particle/splash_mid.png",
+   "layer": "root"
+  },
+  "oreville_ans:frame": {
+   "file": "ans:particle/oreville_ans/frame.json",
+   "texture": "ans:textures/particle_fx/particle/frame.png",
+   "layer": "root"
+  },
+  "oreville_ans:fvhgxn": {
+   "file": "ans:particle/oreville_ans/fvhgxn.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dge.png",
+   "layer": "root"
+  },
+  "oreville_ans:fwpjib": {
+   "file": "ans:particle/oreville_ans/fwpjib.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:fwrago": {
+   "file": "ans:particle/oreville_ans/fwrago.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:gcpawo": {
+   "file": "ans:particle/oreville_ans/gcpawo.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "oreville_ans:gctgse": {
+   "file": "ans:particle/oreville_ans/gctgse.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:gdlccj": {
+   "file": "ans:particle/oreville_ans/gdlccj.json",
+   "texture": "ans:textures/particle_fx/particle/glowing.png",
+   "layer": "root"
+  },
+  "oreville_ans:gdwzgo": {
+   "file": "ans:particle/oreville_ans/gdwzgo.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:gfdfpf": {
+   "file": "ans:particle/oreville_ans/gfdfpf.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgn.png",
+   "layer": "root"
+  },
+  "oreville_ans:gfgtdc": {
+   "file": "ans:particle/oreville_ans/gfgtdc.json",
+   "texture": "ans:textures/particle_fx/particle/dust_medium.png",
+   "layer": "root"
+  },
+  "oreville_ans:grtjxg": {
+   "file": "ans:particle/oreville_ans/grtjxg.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "oreville_ans:gsqiuw": {
+   "file": "ans:particle/oreville_ans/gsqiuw.json",
+   "texture": "ans:textures/particle_fx/particle/dust_medium.png",
+   "layer": "root"
+  },
+  "oreville_ans:gsxagh": {
+   "file": "ans:particle/oreville_ans/gsxagh.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:gvzgfe": {
+   "file": "ans:particle/oreville_ans/gvzgfe.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:gywhhe": {
+   "file": "ans:particle/oreville_ans/gywhhe.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:heorkq": {
+   "file": "ans:particle/oreville_ans/heorkq.json",
+   "texture": "ans:textures/particle_fx/particle/stunned.png",
+   "layer": "root"
+  },
+  "oreville_ans:hjekhu": {
+   "file": "ans:particle/oreville_ans/hjekhu.json",
+   "texture": "ans:textures/particle_fx/particle/explosion_ring.png",
+   "layer": "root"
+  },
+  "oreville_ans:hmmhkh": {
+   "file": "ans:particle/oreville_ans/hmmhkh.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:hnsoxk": {
+   "file": "ans:particle/oreville_ans/hnsoxk.json",
+   "texture": "ans:textures/particle_fx/particle/splash_ring.png",
+   "layer": "root"
+  },
+  "oreville_ans:hopqos": {
+   "file": "ans:particle/oreville_ans/hopqos.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:hqhjri": {
+   "file": "ans:particle/oreville_ans/hqhjri.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgf.png",
+   "layer": "root"
+  },
+  "oreville_ans:hrgoll": {
+   "file": "ans:particle/oreville_ans/hrgoll.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:hrhrye": {
+   "file": "ans:particle/oreville_ans/hrhrye.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_smol.png",
+   "layer": "root"
+  },
+  "oreville_ans:hrihlh": {
+   "file": "ans:particle/oreville_ans/hrihlh.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_smol.png",
+   "layer": "root"
+  },
+  "oreville_ans:hsfnkm": {
+   "file": "ans:particle/oreville_ans/hsfnkm.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dcx.png",
+   "layer": "root"
+  },
+  "oreville_ans:htdwpk": {
+   "file": "ans:particle/oreville_ans/htdwpk.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgv.png",
+   "layer": "root"
+  },
+  "oreville_ans:huruot": {
+   "file": "ans:particle/oreville_ans/huruot.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:huxwmr": {
+   "file": "ans:particle/oreville_ans/huxwmr.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "oreville_ans:hvbtrt": {
+   "file": "ans:particle/oreville_ans/hvbtrt.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgs.png",
+   "layer": "root"
+  },
+  "oreville_ans:hwbujj": {
+   "file": "ans:particle/oreville_ans/hwbujj.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgf.png",
+   "layer": "root"
+  },
+  "oreville_ans:ijrkyb": {
+   "file": "ans:particle/oreville_ans/ijrkyb.json",
+   "texture": "ans:textures/particle_fx/particle/splash_mid.png",
+   "layer": "root"
+  },
+  "oreville_ans:iqcijl": {
+   "file": "ans:particle/oreville_ans/iqcijl.json",
+   "texture": "ans:textures/particle_fx/particle/splash_ring.png",
+   "layer": "root"
+  },
+  "oreville_ans:isllnu": {
+   "file": "ans:particle/oreville_ans/isllnu.json",
+   "texture": "ans:textures/particle_fx/particle/splash_ring.png",
+   "layer": "root"
+  },
+  "oreville_ans:iydhry": {
+   "file": "ans:particle/oreville_ans/iydhry.json",
+   "texture": "ans:textures/particle_fx/particle/chimkin.png",
+   "layer": "root"
+  },
+  "oreville_ans:iyigez": {
+   "file": "ans:particle/oreville_ans/iyigez.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:izbvph": {
+   "file": "ans:particle/oreville_ans/izbvph.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgp.png",
+   "layer": "root"
+  },
+  "oreville_ans:izrbmt": {
+   "file": "ans:particle/oreville_ans/izrbmt.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:jceddx": {
+   "file": "ans:particle/oreville_ans/jceddx.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgq.png",
+   "layer": "root"
+  },
+  "oreville_ans:jexawc": {
+   "file": "ans:particle/oreville_ans/jexawc.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dhb.png",
+   "layer": "root"
+  },
+  "oreville_ans:jojqkm": {
+   "file": "ans:particle/oreville_ans/jojqkm.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_red.png",
+   "layer": "root"
+  },
+  "oreville_ans:jokpgk": {
+   "file": "ans:particle/oreville_ans/jokpgk.json",
+   "texture": "ans:textures/particle_fx/particle/dust_medium.png",
+   "layer": "root"
+  },
+  "oreville_ans:jrjcmz": {
+   "file": "ans:particle/oreville_ans/jrjcmz.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:jwttvk": {
+   "file": "ans:particle/oreville_ans/jwttvk.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgr.png",
+   "layer": "root"
+  },
+  "oreville_ans:jxbvwo": {
+   "file": "ans:particle/oreville_ans/jxbvwo.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgf.png",
+   "layer": "root"
+  },
+  "oreville_ans:jxmvgv": {
+   "file": "ans:particle/oreville_ans/jxmvgv.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgq.png",
+   "layer": "root"
+  },
+  "oreville_ans:jywftx": {
+   "file": "ans:particle/oreville_ans/jywftx.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:kbjmol": {
+   "file": "ans:particle/oreville_ans/kbjmol.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "oreville_ans:kcwgra": {
+   "file": "ans:particle/oreville_ans/kcwgra.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_smol.png",
+   "layer": "root"
+  },
+  "oreville_ans:kdapmp": {
+   "file": "ans:particle/oreville_ans/kdapmp.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgw.png",
+   "layer": "root"
+  },
+  "oreville_ans:kdcmgl": {
+   "file": "ans:particle/oreville_ans/kdcmgl.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:kdoftm": {
+   "file": "ans:particle/oreville_ans/kdoftm.json",
+   "texture": "ans:textures/particle_fx/particle/potion_ring.png",
+   "layer": "root"
+  },
+  "oreville_ans:kjwafo": {
+   "file": "ans:particle/oreville_ans/kjwafo.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:kwnhvt": {
+   "file": "ans:particle/oreville_ans/kwnhvt.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dha.png",
+   "layer": "root"
+  },
+  "oreville_ans:leaf_litter": {
+   "file": "ans:particle/oreville_ans/leaf_litter.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgh.png",
+   "layer": "root"
+  },
+  "oreville_ans:lhcxiq": {
+   "file": "ans:particle/oreville_ans/lhcxiq.json",
+   "texture": "ans:textures/particle_fx/particle/water_impact.png",
+   "layer": "root"
+  },
+  "oreville_ans:lhoudj": {
+   "file": "ans:particle/oreville_ans/lhoudj.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:ljcprd": {
+   "file": "ans:particle/oreville_ans/ljcprd.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:ljcqzr": {
+   "file": "ans:particle/oreville_ans/ljcqzr.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:lokpmz": {
+   "file": "ans:particle/oreville_ans/lokpmz.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:lsnldk": {
+   "file": "ans:particle/oreville_ans/lsnldk.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_smol.png",
+   "layer": "root"
+  },
+  "oreville_ans:lvmvxu": {
+   "file": "ans:particle/oreville_ans/lvmvxu.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:lwjydg": {
+   "file": "ans:particle/oreville_ans/lwjydg.json",
+   "texture": "ans:textures/particle_fx/particle/campfire_smoke.png",
+   "layer": "root"
+  },
+  "oreville_ans:maczxf": {
+   "file": "ans:particle/oreville_ans/maczxf.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:maikvy": {
+   "file": "ans:particle/oreville_ans/maikvy.json",
+   "texture": "ans:textures/particle_fx/particle/breath.png",
+   "layer": "root"
+  },
+  "oreville_ans:mdaveq": {
+   "file": "ans:particle/oreville_ans/mdaveq.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:melon_seeds": {
+   "file": "ans:particle/oreville_ans/melon_seeds.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgh.png",
+   "layer": "root"
+  },
+  "oreville_ans:mfvnui": {
+   "file": "ans:particle/oreville_ans/mfvnui.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_smol.png",
+   "layer": "root"
+  },
+  "oreville_ans:mguxav": {
+   "file": "ans:particle/oreville_ans/mguxav.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:mlozwz": {
+   "file": "ans:particle/oreville_ans/mlozwz.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgr.png",
+   "layer": "root"
+  },
+  "oreville_ans:mngdyk": {
+   "file": "ans:particle/oreville_ans/mngdyk.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "oreville_ans:mnntfa": {
+   "file": "ans:particle/oreville_ans/mnntfa.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "oreville_ans:mtlnnp": {
+   "file": "ans:particle/oreville_ans/mtlnnp.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgw.png",
+   "layer": "root"
+  },
+  "oreville_ans:musfoh": {
+   "file": "ans:particle/oreville_ans/musfoh.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_smol.png",
+   "layer": "root"
+  },
+  "oreville_ans:mvjojt": {
+   "file": "ans:particle/oreville_ans/mvjojt.json",
+   "texture": "ans:textures/particle_fx/particle/splash_big.png",
+   "layer": "root"
+  },
+  "oreville_ans:mwbbqh": {
+   "file": "ans:particle/oreville_ans/mwbbqh.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:mwrydc": {
+   "file": "ans:particle/oreville_ans/mwrydc.json",
+   "texture": "ans:textures/particle_fx/particle/teleport_dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:mxlnse": {
+   "file": "ans:particle/oreville_ans/mxlnse.json",
+   "texture": "ans:textures/particle_fx/environment/weather.png",
+   "layer": "root"
+  },
+  "oreville_ans:mzawnd": {
+   "file": "ans:particle/oreville_ans/mzawnd.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_smol.png",
+   "layer": "root"
+  },
+  "oreville_ans:mzocys": {
+   "file": "ans:particle/oreville_ans/mzocys.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:nbrqwp": {
+   "file": "ans:particle/oreville_ans/nbrqwp.json",
+   "texture": "ans:textures/particle_fx/particle/splash_small.png",
+   "layer": "root"
+  },
+  "oreville_ans:ndvctz": {
+   "file": "ans:particle/oreville_ans/ndvctz.json",
+   "texture": "ans:textures/particle_fx/particle/water_impact_big.png",
+   "layer": "root"
+  },
+  "oreville_ans:nhewct": {
+   "file": "ans:particle/oreville_ans/nhewct.json",
+   "texture": "ans:textures/particle_fx/particle/splash_ring.png",
+   "layer": "root"
+  },
+  "oreville_ans:nifpmx": {
+   "file": "ans:particle/oreville_ans/nifpmx.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:nilpnj": {
+   "file": "ans:particle/oreville_ans/nilpnj.json",
+   "texture": "ans:textures/particle_fx/particle/dust_small.png",
+   "layer": "root"
+  },
+  "oreville_ans:nkwaka": {
+   "file": "ans:particle/oreville_ans/nkwaka.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgr.png",
+   "layer": "root"
+  },
+  "oreville_ans:nnedkx": {
+   "file": "ans:particle/oreville_ans/nnedkx.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgu.png",
+   "layer": "root"
+  },
+  "oreville_ans:noidvc": {
+   "file": "ans:particle/oreville_ans/noidvc.json",
+   "texture": "ans:textures/particle_fx/particle/glowing.png",
+   "layer": "root"
+  },
+  "oreville_ans:npkvck": {
+   "file": "ans:particle/oreville_ans/npkvck.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:npmwuq": {
+   "file": "ans:particle/oreville_ans/npmwuq.json",
+   "texture": "ans:textures/particle_fx/particle/splash_big.png",
+   "layer": "root"
+  },
+  "oreville_ans:nrmdvv": {
+   "file": "ans:particle/oreville_ans/nrmdvv.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dhb.png",
+   "layer": "root"
+  },
+  "oreville_ans:nszmav": {
+   "file": "ans:particle/oreville_ans/nszmav.json",
+   "texture": "ans:textures/particle_fx/particle/dust_medium.png",
+   "layer": "root"
+  },
+  "oreville_ans:ntaytt": {
+   "file": "ans:particle/oreville_ans/ntaytt.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_smol.png",
+   "layer": "root"
+  },
+  "oreville_ans:obfchp": {
+   "file": "ans:particle/oreville_ans/obfchp.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_white.png",
+   "layer": "root"
+  },
+  "oreville_ans:occdmm": {
+   "file": "ans:particle/oreville_ans/occdmm.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgr.png",
+   "layer": "root"
+  },
+  "oreville_ans:ocfbzk": {
+   "file": "ans:particle/oreville_ans/ocfbzk.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:oeogwf": {
+   "file": "ans:particle/oreville_ans/oeogwf.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "oreville_ans:ogjuya": {
+   "file": "ans:particle/oreville_ans/ogjuya.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:okntly": {
+   "file": "ans:particle/oreville_ans/okntly.json",
+   "texture": "ans:textures/particle_fx/particle/dust_medium.png",
+   "layer": "root"
+  },
+  "oreville_ans:ondhvu": {
+   "file": "ans:particle/oreville_ans/ondhvu.json",
+   "texture": "ans:textures/particle_fx/particle/dust_medium.png",
+   "layer": "root"
+  },
+  "oreville_ans:opsoho": {
+   "file": "ans:particle/oreville_ans/opsoho.json",
+   "texture": "ans:textures/particle_fx/particle/splash_mid.png",
+   "layer": "root"
+  },
+  "oreville_ans:oszosz": {
+   "file": "ans:particle/oreville_ans/oszosz.json",
+   "texture": "minecraft:textures/atlas/blocks.png",
+   "layer": "root"
+  },
+  "oreville_ans:ozlclk": {
+   "file": "ans:particle/oreville_ans/ozlclk.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:paljdo": {
+   "file": "ans:particle/oreville_ans/paljdo.json",
+   "texture": "ans:textures/particle_fx/particle/splash_mid.png",
+   "layer": "root"
+  },
+  "oreville_ans:pbhfex": {
+   "file": "ans:particle/oreville_ans/pbhfex.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgi.png",
+   "layer": "root"
+  },
+  "oreville_ans:pdabuv": {
+   "file": "ans:particle/oreville_ans/pdabuv.json",
+   "texture": "ans:textures/particle_fx/particle/water_impact.png",
+   "layer": "root"
+  },
+  "oreville_ans:pink_petals": {
+   "file": "ans:particle/oreville_ans/pink_petals.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgh.png",
+   "layer": "root"
+  },
+  "oreville_ans:pkrzxd": {
+   "file": "ans:particle/oreville_ans/pkrzxd.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgw.png",
+   "layer": "root"
+  },
+  "oreville_ans:pmjsej": {
+   "file": "ans:particle/oreville_ans/pmjsej.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:pnmias": {
+   "file": "ans:particle/oreville_ans/pnmias.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:ppmmod": {
+   "file": "ans:particle/oreville_ans/ppmmod.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "oreville_ans:pptsaf": {
+   "file": "ans:particle/oreville_ans/pptsaf.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/noa.png",
+   "layer": "root"
+  },
+  "oreville_ans:prseyf": {
+   "file": "ans:particle/oreville_ans/prseyf.json",
+   "texture": "ans:textures/particle_fx/particle/dust_small.png",
+   "layer": "root"
+  },
+  "oreville_ans:puilgq": {
+   "file": "ans:particle/oreville_ans/puilgq.json",
+   "texture": "ans:textures/particle_fx/particle/glowing.png",
+   "layer": "root"
+  },
+  "oreville_ans:pumpkin_seeds": {
+   "file": "ans:particle/oreville_ans/pumpkin_seeds.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgh.png",
+   "layer": "root"
+  },
+  "oreville_ans:pvubiw": {
+   "file": "ans:particle/oreville_ans/pvubiw.json",
+   "texture": "ans:textures/particle_fx/particle/rain_drop_splash.png",
+   "layer": "root"
+  },
+  "oreville_ans:pxnpjx": {
+   "file": "ans:particle/oreville_ans/pxnpjx.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgi.png",
+   "layer": "root"
+  },
+  "oreville_ans:qaeghi": {
+   "file": "ans:particle/oreville_ans/qaeghi.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgi.png",
+   "layer": "root"
+  },
+  "oreville_ans:qbkcbp": {
+   "file": "ans:particle/oreville_ans/qbkcbp.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgm.png",
+   "layer": "root"
+  },
+  "oreville_ans:qgbipi": {
+   "file": "ans:particle/oreville_ans/qgbipi.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:qgnuha": {
+   "file": "ans:particle/oreville_ans/qgnuha.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:qhbvmn": {
+   "file": "ans:particle/oreville_ans/qhbvmn.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:qinwcg": {
+   "file": "ans:particle/oreville_ans/qinwcg.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:qlegdk": {
+   "file": "ans:particle/oreville_ans/qlegdk.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_purple.png",
+   "layer": "root"
+  },
+  "oreville_ans:qmmsvr": {
+   "file": "ans:particle/oreville_ans/qmmsvr.json",
+   "texture": "ans:textures/particle_fx/particle/glowing.png",
+   "layer": "root"
+  },
+  "oreville_ans:qokzhq": {
+   "file": "ans:particle/oreville_ans/qokzhq.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgr.png",
+   "layer": "root"
+  },
+  "oreville_ans:qoufgh": {
+   "file": "ans:particle/oreville_ans/qoufgh.json",
+   "texture": "minecraft:textures/atlas/blocks.png",
+   "layer": "root"
+  },
+  "oreville_ans:qouoou": {
+   "file": "ans:particle/oreville_ans/qouoou.json",
+   "texture": "ans:textures/particle_fx/particle/splash_mid.png",
+   "layer": "root"
+  },
+  "oreville_ans:qqouwr": {
+   "file": "ans:particle/oreville_ans/qqouwr.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:qqpiff": {
+   "file": "ans:particle/oreville_ans/qqpiff.json",
+   "texture": null,
+   "layer": "root"
+  },
+  "oreville_ans:qqtfzr": {
+   "file": "ans:particle/oreville_ans/qqtfzr.json",
+   "texture": "ans:textures/particle_fx/particle/dust_medium.png",
+   "layer": "root"
+  },
+  "oreville_ans:qrbcig": {
+   "file": "ans:particle/oreville_ans/qrbcig.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:qturaa": {
+   "file": "ans:particle/oreville_ans/qturaa.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/msr.png",
+   "layer": "root"
+  },
+  "oreville_ans:quigrb": {
+   "file": "ans:particle/oreville_ans/quigrb.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:qxwqkh": {
+   "file": "ans:particle/oreville_ans/qxwqkh.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:rakimo": {
+   "file": "ans:particle/oreville_ans/rakimo.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgr.png",
+   "layer": "root"
+  },
+  "oreville_ans:rbprda": {
+   "file": "ans:particle/oreville_ans/rbprda.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:reymhz": {
+   "file": "ans:particle/oreville_ans/reymhz.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:rjxqpa": {
+   "file": "ans:particle/oreville_ans/rjxqpa.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/msq.png",
+   "layer": "root"
+  },
+  "oreville_ans:rlsdjw": {
+   "file": "ans:particle/oreville_ans/rlsdjw.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:robblt": {
+   "file": "ans:particle/oreville_ans/robblt.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:rpccbh": {
+   "file": "ans:particle/oreville_ans/rpccbh.json",
+   "texture": "ans:textures/particle_fx/particle/splash_ring.png",
+   "layer": "root"
+  },
+  "oreville_ans:rrcypc": {
+   "file": "ans:particle/oreville_ans/rrcypc.json",
+   "texture": "ans:textures/particle_fx/particle/dust_small.png",
+   "layer": "root"
+  },
+  "oreville_ans:rujnyp": {
+   "file": "ans:particle/oreville_ans/rujnyp.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:rxlhmw": {
+   "file": "ans:particle/oreville_ans/rxlhmw.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:rzhthr": {
+   "file": "ans:particle/oreville_ans/rzhthr.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:sabqgy": {
+   "file": "ans:particle/oreville_ans/sabqgy.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgj.png",
+   "layer": "root"
+  },
+  "oreville_ans:scfubx": {
+   "file": "ans:particle/oreville_ans/scfubx.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgr.png",
+   "layer": "root"
+  },
+  "oreville_ans:seoxyy": {
+   "file": "ans:particle/oreville_ans/seoxyy.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:sfowys": {
+   "file": "ans:particle/oreville_ans/sfowys.json",
+   "texture": null,
+   "layer": "root"
+  },
+  "oreville_ans:shdqsj": {
+   "file": "ans:particle/oreville_ans/shdqsj.json",
+   "texture": "ans:textures/particle_fx/particle/villager_thought_bubble.png",
+   "layer": "root"
+  },
+  "oreville_ans:sigfni": {
+   "file": "ans:particle/oreville_ans/sigfni.json",
+   "texture": "ans:textures/particle_fx/particle/splash_ring.png",
+   "layer": "root"
+  },
+  "oreville_ans:snwqnx": {
+   "file": "ans:particle/oreville_ans/snwqnx.json",
+   "texture": "ans:textures/particle_fx/particle/water_impact.png",
+   "layer": "root"
+  },
+  "oreville_ans:swuggf": {
+   "file": "ans:particle/oreville_ans/swuggf.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:tbnyfx": {
+   "file": "ans:particle/oreville_ans/tbnyfx.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_white.png",
+   "layer": "root"
+  },
+  "oreville_ans:tcibuz": {
+   "file": "ans:particle/oreville_ans/tcibuz.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:tdqvhj": {
+   "file": "ans:particle/oreville_ans/tdqvhj.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:texrxh": {
+   "file": "ans:particle/oreville_ans/texrxh.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_white.png",
+   "layer": "root"
+  },
+  "oreville_ans:tfecoj": {
+   "file": "ans:particle/oreville_ans/tfecoj.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:tfrjam": {
+   "file": "ans:particle/oreville_ans/tfrjam.json",
+   "texture": "ans:textures/particle_fx/particle/dust_small.png",
+   "layer": "root"
+  },
+  "oreville_ans:thndec": {
+   "file": "ans:particle/oreville_ans/thndec.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/cnh.png",
+   "layer": "root"
+  },
+  "oreville_ans:tmtnba": {
+   "file": "ans:particle/oreville_ans/tmtnba.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgy.png",
+   "layer": "root"
+  },
+  "oreville_ans:tngokd": {
+   "file": "ans:particle/oreville_ans/tngokd.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/msq.png",
+   "layer": "root"
+  },
+  "oreville_ans:torchflower_seeds": {
+   "file": "ans:particle/oreville_ans/torchflower_seeds.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgh.png",
+   "layer": "root"
+  },
+  "oreville_ans:tsobxp": {
+   "file": "ans:particle/oreville_ans/tsobxp.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:ttajna": {
+   "file": "ans:particle/oreville_ans/ttajna.json",
+   "texture": "ans:textures/particle_fx/particle/potion_ring.png",
+   "layer": "root"
+  },
+  "oreville_ans:tuembl": {
+   "file": "ans:particle/oreville_ans/tuembl.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:tvbebm": {
+   "file": "ans:particle/oreville_ans/tvbebm.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:twdpqw": {
+   "file": "ans:particle/oreville_ans/twdpqw.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:txoeiy": {
+   "file": "ans:particle/oreville_ans/txoeiy.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_white.png",
+   "layer": "root"
+  },
+  "oreville_ans:tzeeak": {
+   "file": "ans:particle/oreville_ans/tzeeak.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:uabixr": {
+   "file": "ans:particle/oreville_ans/uabixr.json",
+   "texture": "ans:textures/particle_fx/particle/potion_ring.png",
+   "layer": "root"
+  },
+  "oreville_ans:ulmjdx": {
+   "file": "ans:particle/oreville_ans/ulmjdx.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "oreville_ans:umsrer": {
+   "file": "ans:particle/oreville_ans/umsrer.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_smol.png",
+   "layer": "root"
+  },
+  "oreville_ans:usjktb": {
+   "file": "ans:particle/oreville_ans/usjktb.json",
+   "texture": "ans:textures/particle_fx/particle/dust_medium.png",
+   "layer": "root"
+  },
+  "oreville_ans:uutgiw": {
+   "file": "ans:particle/oreville_ans/uutgiw.json",
+   "texture": "ans:textures/particle_fx/particle/dust_small.png",
+   "layer": "root"
+  },
+  "oreville_ans:uuxzsc": {
+   "file": "ans:particle/oreville_ans/uuxzsc.json",
+   "texture": "ans:textures/particle_fx/particle/potion_ring.png",
+   "layer": "root"
+  },
+  "oreville_ans:uwkkob": {
+   "file": "ans:particle/oreville_ans/uwkkob.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:uzmmel": {
+   "file": "ans:particle/oreville_ans/uzmmel.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:vcndke": {
+   "file": "ans:particle/oreville_ans/vcndke.json",
+   "texture": "ans:textures/particle_fx/particle/water_impact_big.png",
+   "layer": "root"
+  },
+  "oreville_ans:vebkux": {
+   "file": "ans:particle/oreville_ans/vebkux.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:vfxqhr": {
+   "file": "ans:particle/oreville_ans/vfxqhr.json",
+   "texture": "ans:textures/particle_fx/particle/water_impact.png",
+   "layer": "root"
+  },
+  "oreville_ans:vfyiwh": {
+   "file": "ans:particle/oreville_ans/vfyiwh.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgx.png",
+   "layer": "root"
+  },
+  "oreville_ans:vjfdfj": {
+   "file": "ans:particle/oreville_ans/vjfdfj.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgo.png",
+   "layer": "root"
+  },
+  "oreville_ans:vkmnfw": {
+   "file": "ans:particle/oreville_ans/vkmnfw.json",
+   "texture": "minecraft:textures/atlas/blocks.png",
+   "layer": "root"
+  },
+  "oreville_ans:vmpdgl": {
+   "file": "ans:particle/oreville_ans/vmpdgl.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgf.png",
+   "layer": "root"
+  },
+  "oreville_ans:vqcyfx": {
+   "file": "ans:particle/oreville_ans/vqcyfx.json",
+   "texture": "minecraft:textures/atlas/blocks.png",
+   "layer": "root"
+  },
+  "oreville_ans:vrgwcx": {
+   "file": "ans:particle/oreville_ans/vrgwcx.json",
+   "texture": "ans:textures/particle_fx/particle/splash_big.png",
+   "layer": "root"
+  },
+  "oreville_ans:vrnmye": {
+   "file": "ans:particle/oreville_ans/vrnmye.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:vrpwzc": {
+   "file": "ans:particle/oreville_ans/vrpwzc.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/nnz.png",
+   "layer": "root"
+  },
+  "oreville_ans:vsulpr": {
+   "file": "ans:particle/oreville_ans/vsulpr.json",
+   "texture": "ans:textures/particle_fx/particle/splash_big.png",
+   "layer": "root"
+  },
+  "oreville_ans:vtopbc": {
+   "file": "ans:particle/oreville_ans/vtopbc.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/noc.png",
+   "layer": "root"
+  },
+  "oreville_ans:vtqqii": {
+   "file": "ans:particle/oreville_ans/vtqqii.json",
+   "texture": "ans:textures/particle_fx/particle/dust_medium.png",
+   "layer": "root"
+  },
+  "oreville_ans:vtviky": {
+   "file": "ans:particle/oreville_ans/vtviky.json",
+   "texture": "ans:textures/particle_fx/particle/dust_small.png",
+   "layer": "root"
+  },
+  "oreville_ans:vzoaiu": {
+   "file": "ans:particle/oreville_ans/vzoaiu.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dge.png",
+   "layer": "root"
+  },
+  "oreville_ans:waekpm": {
+   "file": "ans:particle/oreville_ans/waekpm.json",
+   "texture": "ans:textures/particle_fx/particle/splash_ring.png",
+   "layer": "root"
+  },
+  "oreville_ans:wcueeq": {
+   "file": "ans:particle/oreville_ans/wcueeq.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:wdcblg": {
+   "file": "ans:particle/oreville_ans/wdcblg.json",
+   "texture": "ans:textures/particle_fx/particle/water_impact_big.png",
+   "layer": "root"
+  },
+  "oreville_ans:wehlap": {
+   "file": "ans:particle/oreville_ans/wehlap.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:wffdjp": {
+   "file": "ans:particle/oreville_ans/wffdjp.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:wgjufv": {
+   "file": "ans:particle/oreville_ans/wgjufv.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:wheat_seeds": {
+   "file": "ans:particle/oreville_ans/wheat_seeds.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgh.png",
+   "layer": "root"
+  },
+  "oreville_ans:whwfwi": {
+   "file": "ans:particle/oreville_ans/whwfwi.json",
+   "texture": "ans:textures/particle_fx/particle/particles.png",
+   "layer": "root"
+  },
+  "oreville_ans:wildflowers": {
+   "file": "ans:particle/oreville_ans/wildflowers.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgh.png",
+   "layer": "root"
+  },
+  "oreville_ans:wither": {
+   "file": "ans:particle/oreville_ans/wither.json",
+   "texture": "ans:textures/particle_fx/particle/breath.png",
+   "layer": "root"
+  },
+  "oreville_ans:wnhqgm": {
+   "file": "ans:particle/oreville_ans/wnhqgm.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:wqughz": {
+   "file": "ans:particle/oreville_ans/wqughz.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_white.png",
+   "layer": "root"
+  },
+  "oreville_ans:wqxuas": {
+   "file": "ans:particle/oreville_ans/wqxuas.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:wtijvn": {
+   "file": "ans:particle/oreville_ans/wtijvn.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:wvqasx": {
+   "file": "ans:particle/oreville_ans/wvqasx.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgf.png",
+   "layer": "root"
+  },
+  "oreville_ans:wvqbjj": {
+   "file": "ans:particle/oreville_ans/wvqbjj.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:wwvczy": {
+   "file": "ans:particle/oreville_ans/wwvczy.json",
+   "texture": "ans:textures/particle_fx/particle/arrow_charge.png",
+   "layer": "root"
+  },
+  "oreville_ans:wzikrc": {
+   "file": "ans:particle/oreville_ans/wzikrc.json",
+   "texture": "ans:textures/particle_fx/particle/rain_drop_splash.png",
+   "layer": "root"
+  },
+  "oreville_ans:xjxjzv": {
+   "file": "ans:particle/oreville_ans/xjxjzv.json",
+   "texture": "ans:textures/particle_fx/particle/dust_small.png",
+   "layer": "root"
+  },
+  "oreville_ans:xkagev": {
+   "file": "ans:particle/oreville_ans/xkagev.json",
+   "texture": "ans:textures/particle_fx/particle/water_impact.png",
+   "layer": "root"
+  },
+  "oreville_ans:xkrpoo": {
+   "file": "ans:particle/oreville_ans/xkrpoo.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/noc.png",
+   "layer": "root"
+  },
+  "oreville_ans:xlovmy": {
+   "file": "ans:particle/oreville_ans/xlovmy.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:xp": {
+   "file": "ans:particle/oreville_ans/xp.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:xrnvdt": {
+   "file": "ans:particle/oreville_ans/xrnvdt.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgg.png",
+   "layer": "root"
+  },
+  "oreville_ans:xsjhvb": {
+   "file": "ans:particle/oreville_ans/xsjhvb.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_smol.png",
+   "layer": "root"
+  },
+  "oreville_ans:yarqfa": {
+   "file": "ans:particle/oreville_ans/yarqfa.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgf.png",
+   "layer": "root"
+  },
+  "oreville_ans:ydgaqy": {
+   "file": "ans:particle/oreville_ans/ydgaqy.json",
+   "texture": "ans:textures/particle_fx/particle/cloud.png",
+   "layer": "root"
+  },
+  "oreville_ans:ygqhbg": {
+   "file": "ans:particle/oreville_ans/ygqhbg.json",
+   "texture": "ans:textures/particle_fx/particle/glowing_smol.png",
+   "layer": "root"
+  },
+  "oreville_ans:ygumos": {
+   "file": "ans:particle/oreville_ans/ygumos.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:ygvjwg": {
+   "file": "ans:particle/oreville_ans/ygvjwg.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:yhkynr": {
+   "file": "ans:particle/oreville_ans/yhkynr.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgi.png",
+   "layer": "root"
+  },
+  "oreville_ans:yijrou": {
+   "file": "ans:particle/oreville_ans/yijrou.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:ymalqk": {
+   "file": "ans:particle/oreville_ans/ymalqk.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:yohytx": {
+   "file": "ans:particle/oreville_ans/yohytx.json",
+   "texture": "minecraft:textures/atlas/blocks.png",
+   "layer": "root"
+  },
+  "oreville_ans:ypvppc": {
+   "file": "ans:particle/oreville_ans/ypvppc.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:ysrjoz": {
+   "file": "ans:particle/oreville_ans/ysrjoz.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgi.png",
+   "layer": "root"
+  },
+  "oreville_ans:yzrnwe": {
+   "file": "ans:particle/oreville_ans/yzrnwe.json",
+   "texture": "ans:textures/particle_fx/particle/z.png",
+   "layer": "root"
+  },
+  "oreville_ans:zeujtg": {
+   "file": "ans:particle/oreville_ans/zeujtg.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgk.png",
+   "layer": "root"
+  },
+  "oreville_ans:zjohdw": {
+   "file": "ans:particle/oreville_ans/zjohdw.json",
+   "texture": "ans:textures/particle_fx/particle/splash_mid.png",
+   "layer": "root"
+  },
+  "oreville_ans:zuevyd": {
+   "file": "ans:particle/oreville_ans/zuevyd.json",
+   "texture": "ans:textures/particle_fx/particle/wave.png",
+   "layer": "root"
+  },
+  "oreville_ans:zuzfpp": {
+   "file": "ans:particle/oreville_ans/zuzfpp.json",
+   "texture": "ans:textures/particle_fx/particle/dust.png",
+   "layer": "root"
+  },
+  "oreville_ans:zzfcre": {
+   "file": "ans:particle/oreville_ans/zzfcre.json",
+   "texture": "ans:textures/particle_fx/oreville/ans/dgp.png",
+   "layer": "root"
+  }
+ }
+}

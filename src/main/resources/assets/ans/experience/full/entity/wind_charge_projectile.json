@@ -1,0 +1,336 @@
+{
+	"format": "ans:bedrock_entity",
+	"format_version": 1,
+	"identifier": "minecraft:wind_charge_projectile",
+	"source": {
+		"layer": "root",
+		"file": "entity/dvp.json",
+		"min_engine_version": null
+	},
+	"animation_file": "ans:entity/wind_charge_projectile",
+	"geometry": {
+		"zyozij": "ans:experience/full/entity/wind_charge_projectile",
+		"qnleqp": "ans:experience/full/entity/wind_charge_projectile_qnleqp",
+		"ptajuz": "ans:experience/full/entity/wind_charge_projectile_ptajuz",
+		"hgmdat": "ans:experience/full/entity/wind_charge_projectile_hgmdat",
+		"oyhphn": "ans:experience/full/entity/wind_charge_projectile_oyhphn",
+		"bntsfx": "ans:experience/full/entity/wind_charge_projectile_bntsfx",
+		"goykrl": "ans:experience/full/entity/wind_charge_projectile_goykrl",
+		"ajjuwi": "ans:experience/full/entity/wind_charge_projectile_ajjuwi",
+		"igcwxs": "ans:experience/full/entity/wind_charge_projectile_igcwxs",
+		"czomkf": "ans:experience/full/entity/wind_charge_projectile_czomkf",
+		"jfmfzi": "ans:experience/full/entity/wind_charge_projectile_jfmfzi",
+		"iifyoh": "ans:experience/full/entity/wind_charge_projectile_iifyoh",
+		"owerhs": "ans:experience/full/entity/wind_charge_projectile_owerhs",
+		"vjbeze": "ans:experience/full/entity/wind_charge_projectile_vjbeze",
+		"ecfbsf": "ans:experience/full/entity/wind_charge_projectile_ecfbsf",
+		"plpdtf": "ans:experience/full/entity/wind_charge_projectile_plpdtf"
+	},
+	"textures": {
+		"zyozij": "ans:textures/experience/full/entity/wind_charge_projectile/zyozij.png",
+		"qnleqp": "ans:textures/experience/full/entity/wind_charge_projectile/qnleqp.png",
+		"ptajuz": "ans:textures/experience/full/entity/wind_charge_projectile/ptajuz.png",
+		"hgmdat": "ans:textures/experience/full/entity/wind_charge_projectile/hgmdat.png",
+		"oyhphn": "ans:textures/experience/full/entity/wind_charge_projectile/oyhphn.png",
+		"bntsfx": "ans:textures/experience/full/entity/wind_charge_projectile/bntsfx.png",
+		"goykrl": "ans:textures/experience/full/entity/wind_charge_projectile/goykrl.png",
+		"ajjuwi": "ans:textures/experience/full/entity/wind_charge_projectile/ajjuwi.png",
+		"igcwxs": "ans:textures/experience/full/entity/wind_charge_projectile/igcwxs.png",
+		"czomkf": "ans:textures/experience/full/entity/wind_charge_projectile/czomkf.png",
+		"jfmfzi": "ans:textures/experience/full/entity/wind_charge_projectile/jfmfzi.png",
+		"iifyoh": "ans:textures/experience/full/entity/wind_charge_projectile/iifyoh.png",
+		"owerhs": "ans:textures/experience/full/entity/wind_charge_projectile/owerhs.png",
+		"vjbeze": "ans:textures/experience/full/entity/wind_charge_projectile/vjbeze.png",
+		"ecfbsf": "ans:textures/experience/full/entity/wind_charge_projectile/ecfbsf.png",
+		"plpdtf": "ans:textures/experience/full/entity/wind_charge_projectile/plpdtf.png"
+	},
+	"materials": {
+		"mqwxej": {
+			"bedrock": "mqwxej",
+			"render_type": "emissive_alpha",
+			"uv_anim": true
+		},
+		"gwgmcy": {
+			"bedrock": "gwgmcy",
+			"render_type": "emissive_opaque_cull"
+		},
+		"uhlnyb": {
+			"bedrock": "uhlnyb",
+			"render_type": "additive",
+			"uv_anim": true
+		},
+		"default": {
+			"bedrock": "entity",
+			"render_type": "solid"
+		}
+	},
+	"animations": {
+		"kgklcq": {
+			"bedrock": "animation.oreville_ans.xghxmf",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.evlypi='jhotdc';return 0;"
+		},
+		"hzsxsn": {
+			"bedrock": "controller.animation.oreville_ans.ienaao",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"boat": "q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+							},
+							{
+								"minecart": "q.is_riding_any_entity_of_type('minecraft:minecart')"
+							}
+						]
+					},
+					"boat": {
+						"transitions": [
+							{
+								"default": "!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "zgynvb",
+								"resolved": "oreville_ans:zgynvb"
+							}
+						]
+					},
+					"minecart": {
+						"transitions": [
+							{
+								"default": "!q.is_riding_any_entity_of_type('minecraft:minecart')"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "ylnbre",
+								"resolved": "oreville_ans:ylnbre"
+							}
+						]
+					}
+				}
+			}
+		},
+		"dfmnlx": {
+			"bedrock": "controller.animation.oreville_ans.bmjbyn",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"xhbole": "q.state_time>0.15"
+							}
+						]
+					},
+					"xhbole": {
+						"particle_effects": [
+							{
+								"effect": "bobtew",
+								"locator": "wxtwlp",
+								"resolved": "oreville_ans:bobtew"
+							},
+							{
+								"effect": "vfyiwh",
+								"locator": "wxtwlp",
+								"resolved": "oreville_ans:vfyiwh"
+							}
+						]
+					}
+				}
+			}
+		},
+		"move": {
+			"bedrock": "animation.oreville_ans.vmphis",
+			"animation": "animation.wind_charge_projectile.move",
+			"loop": true,
+			"anim_time_update": "(v.dduoix<2||q.vertical_speed)?q.life_time:q.anim_time"
+		},
+		"flying": {
+			"bedrock": "animation.oreville_ans.pgwira",
+			"animation": "animation.wind_charge_projectile.flying",
+			"loop": true
+		},
+		"idle": {
+			"bedrock": "animation.oreville_ans.evudub",
+			"animation": "animation.wind_charge_projectile.idle",
+			"loop": true
+		},
+		"bbcxmc": {
+			"bedrock": "controller.animation.oreville_ans.sishlq",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"zhbjho": "!q.is_in_water&&q.life_time>0.06"
+							}
+						]
+					},
+					"zhbjho": {
+						"transitions": [
+							{
+								"hihqcy": "q.is_in_water"
+							}
+						]
+					},
+					"hihqcy": {
+						"transitions": [
+							{
+								"default": "!q.is_in_water"
+							}
+						],
+						"particle_effects": [
+							{
+								"effect": "hwuwvi",
+								"resolved": "oreville_ans:nbrqwp"
+							},
+							{
+								"effect": "djnihu",
+								"resolved": "oreville_ans:vfxqhr"
+							},
+							{
+								"effect": "cbcewo",
+								"resolved": "oreville_ans:rpccbh"
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"scripts": {
+		"initialize": [
+			"v.qhhozj=0;",
+			"v.sqrooj=0;",
+			"v.phqhsg=0;",
+			"v.levhfc=0;",
+			"v.dduoix=0;",
+			"v.iaxjoy=0;",
+			"v.eeydlb=0;",
+			"v.iynnie=0;",
+			"v.wfhvmb=0;",
+			"v.rmydys=0;",
+			"v.sbbjhd=0;",
+			"v.rcgezu=0;",
+			"v.mnlzjy=0;",
+			"v.ylaird=0;",
+			"v.ispgly=0;",
+			"v.jkanjy=0;",
+			"v.vvtgzf=0;",
+			"v.pcbxuv=0;",
+			"v.tocraa=0;",
+			"v.cdrzno=v.tocraa||q.is_baby;",
+			"v.actions_and_stuff=1;",
+			"v.evlypi='unknown';",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.narpvm=0;v.ykxvro=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sxlefg=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.ykxvro?{v.narpvm=1;};v.mgdgwf=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.tsuowj=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.mgdgwf?{v.narpvm=2;};v.atuocm=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.hqvvjb=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.atuocm?{v.narpvm=3;};};"
+		],
+		"pre_animation": [
+			"v.cdrzno=v.tocraa||q.is_baby;",
+			"v.actions_and_stuff=1;",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.qhhozj=0;v.ykxvro=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.ykxvro=v.sxlefg;};v.sqrooj=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sqrooj?{v.qhhozj=1;};v.mgdgwf=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.mgdgwf=v.tsuowj;};v.phqhsg=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.phqhsg?{v.qhhozj=2;};v.atuocm=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.atuocm=v.hqvvjb;};v.levhfc=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.levhfc?{v.qhhozj=3;};};"
+		],
+		"animate": [
+			"dfmnlx",
+			"hzsxsn",
+			"kgklcq",
+			"flying",
+			"idle",
+			"move",
+			"bbcxmc"
+		],
+		"scale": "(v.cdrzno&&!q.is_baby?0.5:1)*(1)"
+	},
+	"render_controllers": [
+		{
+			"id": "controller.render.oreville_ans.tbtpbs",
+			"condition": null,
+			"arrays": {
+				"array.epvbkc": [
+					"geometry.zyozij",
+					"geometry.qnleqp",
+					"geometry.ptajuz",
+					"geometry.hgmdat",
+					"geometry.oyhphn",
+					"geometry.bntsfx",
+					"geometry.goykrl",
+					"geometry.ajjuwi",
+					"geometry.igcwxs",
+					"geometry.czomkf",
+					"geometry.jfmfzi",
+					"geometry.iifyoh",
+					"geometry.owerhs",
+					"geometry.vjbeze",
+					"geometry.ecfbsf",
+					"geometry.plpdtf"
+				],
+				"array.ncyhyp": [
+					"texture.zyozij",
+					"texture.qnleqp",
+					"texture.ptajuz",
+					"texture.hgmdat",
+					"texture.oyhphn",
+					"texture.bntsfx",
+					"texture.goykrl",
+					"texture.ajjuwi",
+					"texture.igcwxs",
+					"texture.czomkf",
+					"texture.jfmfzi",
+					"texture.iifyoh",
+					"texture.owerhs",
+					"texture.vjbeze",
+					"texture.ecfbsf",
+					"texture.plpdtf"
+				]
+			},
+			"geometry": "Array.epvbkc[q.life_time*24]",
+			"textures": [
+				"Array.ncyhyp[q.life_time*24]"
+			],
+			"materials": [
+				[
+					"emissiveopaquenofancy*",
+					"Material.gwgmcy"
+				],
+				[
+					"emissivenofancy*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiveadditivealpha*",
+					"Material.uhlnyb"
+				],
+				[
+					"*",
+					"Material.mqwxej"
+				],
+				[
+					"emissiveopaquenofancy*",
+					"Material.gwgmcy"
+				],
+				[
+					"emissiveadditivealpha*",
+					"Material.uhlnyb"
+				]
+			]
+		}
+	],
+	"sound_effects": {
+		"zgynvb": "oreville_ans:zgynvb",
+		"ylnbre": "oreville_ans:ylnbre"
+	},
+	"particle_effects": {
+		"djnihu": "oreville_ans:vfxqhr",
+		"hwuwvi": "oreville_ans:nbrqwp",
+		"cbcewo": "oreville_ans:rpccbh",
+		"bobtew": "oreville_ans:bobtew",
+		"vfyiwh": "oreville_ans:vfyiwh"
+	}
+}

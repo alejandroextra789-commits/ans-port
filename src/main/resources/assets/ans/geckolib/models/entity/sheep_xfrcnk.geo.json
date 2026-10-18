@@ -1,0 +1,543 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.sheep_xfrcnk",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "root",
+					"pivot": [
+						0,
+						14.25,
+						0
+					]
+				},
+				{
+					"name": "centroid",
+					"parent": "body",
+					"pivot": [
+						0,
+						14.25,
+						0
+					],
+					"rotation": [
+						90,
+						0,
+						0
+					]
+				},
+				{
+					"name": "wool_centroid",
+					"parent": "centroid",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "wool_centroid_cherry_overlay",
+					"parent": "wool_centroid",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.55,
+								7,
+								-3.4
+							],
+							"size": [
+								9,
+								16,
+								7
+							],
+							"inflate": 1.35,
+							"uv": {
+								"east": {
+									"uv": [
+										7,
+										0
+									],
+									"uv_size": [
+										-7,
+										16
+									]
+								},
+								"south": {
+									"uv": [
+										7,
+										0
+									],
+									"uv_size": [
+										9,
+										16
+									]
+								},
+								"west": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										7,
+										16
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-4.55,
+								7,
+								-3.4
+							],
+							"size": [
+								9,
+								16,
+								7
+							],
+							"inflate": 1.35,
+							"uv": {
+								"east": {
+									"uv": [
+										7,
+										0
+									],
+									"uv_size": [
+										-7,
+										16
+									]
+								},
+								"south": {
+									"uv": [
+										7,
+										0
+									],
+									"uv_size": [
+										9,
+										16
+									]
+								},
+								"west": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										7,
+										16
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-4.55,
+								7,
+								-3.4
+							],
+							"size": [
+								9,
+								16,
+								7
+							],
+							"inflate": 1.35,
+							"uv": {
+								"east": {
+									"uv": [
+										7,
+										0
+									],
+									"uv_size": [
+										-7,
+										16
+									]
+								},
+								"south": {
+									"uv": [
+										7,
+										0
+									],
+									"uv_size": [
+										9,
+										16
+									]
+								},
+								"west": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										7,
+										16
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "wool_centroid_cherry_shadow",
+					"parent": "wool_centroid",
+					"pivot": [
+						-0.05,
+						15,
+						0.1
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.55,
+								7,
+								-3.4
+							],
+							"size": [
+								9,
+								16,
+								7
+							],
+							"inflate": 1.15,
+							"uv": {
+								"east": {
+									"uv": [
+										7,
+										16
+									],
+									"uv_size": [
+										-7,
+										16
+									]
+								},
+								"south": {
+									"uv": [
+										7,
+										16
+									],
+									"uv_size": [
+										9,
+										16
+									]
+								},
+								"west": {
+									"uv": [
+										0,
+										16
+									],
+									"uv_size": [
+										7,
+										16
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-4.55,
+								7,
+								-3.4
+							],
+							"size": [
+								9,
+								16,
+								7
+							],
+							"inflate": 1.15,
+							"uv": {
+								"east": {
+									"uv": [
+										7,
+										16
+									],
+									"uv_size": [
+										-7,
+										16
+									]
+								},
+								"south": {
+									"uv": [
+										7,
+										16
+									],
+									"uv_size": [
+										9,
+										16
+									]
+								},
+								"west": {
+									"uv": [
+										0,
+										16
+									],
+									"uv_size": [
+										7,
+										16
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-4.55,
+								7,
+								-3.4
+							],
+							"size": [
+								9,
+								16,
+								7
+							],
+							"inflate": 1.15,
+							"uv": {
+								"east": {
+									"uv": [
+										7,
+										16
+									],
+									"uv_size": [
+										-7,
+										16
+									]
+								},
+								"south": {
+									"uv": [
+										7,
+										16
+									],
+									"uv_size": [
+										9,
+										16
+									]
+								},
+								"west": {
+									"uv": [
+										0,
+										16
+									],
+									"uv_size": [
+										7,
+										16
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "sheep_head",
+					"parent": "body",
+					"pivot": [
+						0,
+						18,
+						-8
+					]
+				},
+				{
+					"name": "wool_head",
+					"parent": "sheep_head",
+					"pivot": [
+						0,
+						18,
+						-8
+					]
+				},
+				{
+					"name": "wool_head_cherry_overlay",
+					"parent": "wool_head",
+					"pivot": [
+						0,
+						18,
+						-9.75
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								15,
+								-12.75
+							],
+							"size": [
+								6,
+								6,
+								6
+							],
+							"inflate": 0.85,
+							"uv": {
+								"up": {
+									"uv": [
+										16,
+										0
+									],
+									"uv_size": [
+										6,
+										6
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-3,
+								15,
+								-12.75
+							],
+							"size": [
+								6,
+								6,
+								6
+							],
+							"inflate": 0.85,
+							"uv": {
+								"up": {
+									"uv": [
+										16,
+										0
+									],
+									"uv_size": [
+										6,
+										6
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-3,
+								15,
+								-12.75
+							],
+							"size": [
+								6,
+								6,
+								6
+							],
+							"inflate": 0.85,
+							"uv": {
+								"up": {
+									"uv": [
+										16,
+										0
+									],
+									"uv_size": [
+										6,
+										6
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "wool_head_cherry_shadow",
+					"parent": "wool_head",
+					"pivot": [
+						0,
+						18,
+						-9.75
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								15,
+								-12.75
+							],
+							"size": [
+								6,
+								6,
+								6
+							],
+							"inflate": 0.65,
+							"uv": {
+								"up": {
+									"uv": [
+										16,
+										16
+									],
+									"uv_size": [
+										6,
+										6
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-3,
+								15,
+								-12.75
+							],
+							"size": [
+								6,
+								6,
+								6
+							],
+							"inflate": 0.65,
+							"uv": {
+								"up": {
+									"uv": [
+										16,
+										16
+									],
+									"uv_size": [
+										6,
+										6
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-3,
+								15,
+								-12.75
+							],
+							"size": [
+								6,
+								6,
+								6
+							],
+							"inflate": 0.65,
+							"uv": {
+								"up": {
+									"uv": [
+										16,
+										16
+									],
+									"uv_size": [
+										6,
+										6
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,166 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_yfcqwl",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "lightningrod",
+					"parent": "item",
+					"pivot": [
+						0,
+						5,
+						0
+					]
+				},
+				{
+					"name": "lightningstrike",
+					"parent": "lightningrod",
+					"pivot": [
+						0,
+						13.5,
+						0
+					]
+				},
+				{
+					"name": "itemglow",
+					"parent": "lightningstrike",
+					"pivot": [
+						0,
+						14,
+						0
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear",
+					"parent": "itemglow",
+					"pivot": [
+						0,
+						14,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-6,
+								8,
+								-4
+							],
+							"size": [
+								12,
+								12,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										825,
+										195
+									],
+									"uv_size": [
+										42.94625,
+										42.94625
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "lightningimpact2",
+					"parent": "lightningrod",
+					"pivot": [
+						0,
+						-2.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								3.975,
+								-1
+							],
+							"size": [
+								2,
+								8,
+								2
+							],
+							"inflate": 0.025,
+							"uv": {
+								"north": {
+									"uv": [
+										846.23125,
+										216.48
+									],
+									"uv_size": [
+										0.48375000000000007,
+										-21.446250000000003
+									]
+								},
+								"east": {
+									"uv": [
+										846.23125,
+										216.48
+									],
+									"uv_size": [
+										0.48375000000000007,
+										-21.446250000000003
+									]
+								},
+								"south": {
+									"uv": [
+										846.23125,
+										216.48
+									],
+									"uv_size": [
+										0.48375000000000007,
+										-21.446250000000003
+									]
+								},
+								"west": {
+									"uv": [
+										846.23125,
+										216.48
+									],
+									"uv_size": [
+										0.48375000000000007,
+										-21.446250000000003
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

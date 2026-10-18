@@ -1,0 +1,2078 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.player_ender_eye",
+				"texture_width": 93,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [
+					0,
+					1.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "morphroot",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "morphwaist",
+					"parent": "morphroot",
+					"pivot": [
+						0,
+						12,
+						0
+					]
+				},
+				{
+					"name": "morphbody",
+					"parent": "morphwaist",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								12,
+								-2
+							],
+							"size": [
+								8,
+								12,
+								4
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										4,
+										20
+									],
+									"uv_size": [
+										8,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										0,
+										20
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										16,
+										20
+									],
+									"uv_size": [
+										8,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										4,
+										20
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"up": {
+									"uv": [
+										12,
+										16
+									],
+									"uv_size": [
+										-8,
+										4
+									]
+								},
+								"down": {
+									"uv": [
+										20,
+										20
+									],
+									"uv_size": [
+										-8,
+										-4
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-4,
+								12,
+								-2
+							],
+							"size": [
+								8,
+								12,
+								4
+							],
+							"inflate": 0.25,
+							"uv": {
+								"north": {
+									"uv": [
+										4,
+										36
+									],
+									"uv_size": [
+										8,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										0,
+										36
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										16,
+										36
+									],
+									"uv_size": [
+										8,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										0,
+										36
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"up": {
+									"uv": [
+										12,
+										32
+									],
+									"uv_size": [
+										-8,
+										4
+									]
+								},
+								"down": {
+									"uv": [
+										20,
+										36
+									],
+									"uv_size": [
+										-8,
+										-4
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-2,
+								12,
+								-2.325
+							],
+							"size": [
+								4,
+								4,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										58,
+										42
+									],
+									"uv_size": [
+										4,
+										4
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morphhead",
+					"parent": "morphbody",
+					"pivot": [
+						0,
+						28,
+						0
+					]
+				},
+				{
+					"name": "morphheadendereye",
+					"parent": "morphhead",
+					"pivot": [
+						0,
+						32,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								28,
+								-4
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"east": {
+									"uv": [
+										16,
+										0
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"south": {
+									"uv": [
+										8,
+										0
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"west": {
+									"uv": [
+										24,
+										0
+									],
+									"uv_size": [
+										-8,
+										8
+									]
+								},
+								"up": {
+									"uv": [
+										32,
+										8
+									],
+									"uv_size": [
+										8,
+										-8
+									],
+									"uv_rotation": 180
+								},
+								"down": {
+									"uv": [
+										24,
+										8
+									],
+									"uv_size": [
+										8,
+										-8
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morphendereyeemissiveonesidednofancybilinear",
+					"parent": "morphheadendereye",
+					"pivot": [
+						0,
+						32,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								4,
+								36,
+								4
+							],
+							"size": [
+								-8,
+								-8,
+								-8
+							],
+							"inflate": -0.4,
+							"uv": {
+								"north": {
+									"uv": [
+										41.5,
+										7.5
+									],
+									"uv_size": [
+										0,
+										-7
+									]
+								},
+								"east": {
+									"uv": [
+										41.5,
+										7.5
+									],
+									"uv_size": [
+										0,
+										-7
+									]
+								},
+								"south": {
+									"uv": [
+										41.5,
+										7.5
+									],
+									"uv_size": [
+										0,
+										-7
+									]
+								},
+								"west": {
+									"uv": [
+										41.5,
+										7.5
+									],
+									"uv_size": [
+										0,
+										-7
+									]
+								},
+								"up": {
+									"uv": [
+										41.5,
+										7.5
+									],
+									"uv_size": [
+										0,
+										0
+									]
+								},
+								"down": {
+									"uv": [
+										41.5,
+										0.5
+									],
+									"uv_size": [
+										0,
+										0
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								4,
+								36,
+								4
+							],
+							"size": [
+								-8,
+								-8,
+								-8
+							],
+							"inflate": -0.9,
+							"uv": {
+								"north": {
+									"uv": [
+										44,
+										1
+									],
+									"uv_size": [
+										0,
+										0
+									],
+									"uv_rotation": 90
+								},
+								"east": {
+									"uv": [
+										44,
+										1
+									],
+									"uv_size": [
+										0,
+										0
+									],
+									"uv_rotation": 90
+								},
+								"south": {
+									"uv": [
+										44,
+										1
+									],
+									"uv_size": [
+										0,
+										0
+									],
+									"uv_rotation": 90
+								},
+								"west": {
+									"uv": [
+										44,
+										1
+									],
+									"uv_size": [
+										0,
+										0
+									],
+									"uv_rotation": 90
+								},
+								"up": {
+									"uv": [
+										44,
+										1
+									],
+									"uv_size": [
+										0,
+										0
+									],
+									"uv_rotation": 90
+								},
+								"down": {
+									"uv": [
+										44,
+										1
+									],
+									"uv_size": [
+										0,
+										0
+									],
+									"uv_rotation": 90
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morphendereyeemissivenofancy1",
+					"parent": "morphheadendereye",
+					"pivot": [
+						0,
+						32,
+						-3.65
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								28,
+								-3.65
+							],
+							"size": [
+								8,
+								8,
+								0
+							],
+							"inflate": 0.4,
+							"uv": {
+								"north": {
+									"uv": [
+										8,
+										8
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morpheyelid0",
+					"parent": "morphheadendereye",
+					"pivot": [
+						0,
+						32,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.085,
+								28.915,
+								-3.085
+							],
+							"size": [
+								6.17,
+								6.17,
+								6.17
+							],
+							"inflate": 0.65,
+							"uv": {
+								"north": {
+									"uv": [
+										60,
+										48
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"east": {
+									"uv": [
+										68,
+										56
+									],
+									"uv_size": [
+										-8,
+										8
+									]
+								},
+								"south": {
+									"uv": [
+										52,
+										56
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"west": {
+									"uv": [
+										60,
+										56
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"up": {
+									"uv": [
+										52,
+										48
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"down": {
+									"uv": [
+										20,
+										8
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morpheyelid1",
+					"parent": "morphheadendereye",
+					"pivot": [
+						0,
+						32,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.085,
+								28.915,
+								-3.085
+							],
+							"size": [
+								6.17,
+								6.17,
+								6.17
+							],
+							"inflate": 0.65,
+							"uv": {
+								"north": {
+									"uv": [
+										45,
+										0
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"east": {
+									"uv": [
+										53,
+										8
+									],
+									"uv_size": [
+										-8,
+										8
+									]
+								},
+								"south": {
+									"uv": [
+										52,
+										56
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"west": {
+									"uv": [
+										45,
+										8
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"up": {
+									"uv": [
+										52,
+										48
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"down": {
+									"uv": [
+										20,
+										8
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morpheyelid2",
+					"parent": "morphheadendereye",
+					"pivot": [
+						0,
+						32,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.085,
+								28.915,
+								-3.085
+							],
+							"size": [
+								6.17,
+								6.17,
+								6.17
+							],
+							"inflate": 0.65,
+							"uv": {
+								"north": {
+									"uv": [
+										68,
+										48
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"east": {
+									"uv": [
+										76,
+										56
+									],
+									"uv_size": [
+										-8,
+										8
+									]
+								},
+								"south": {
+									"uv": [
+										52,
+										56
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"west": {
+									"uv": [
+										68,
+										56
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"up": {
+									"uv": [
+										52,
+										48
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"down": {
+									"uv": [
+										20,
+										8
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morpheyelid3",
+					"parent": "morphheadendereye",
+					"pivot": [
+						0,
+						32,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.085,
+								28.915,
+								-3.085
+							],
+							"size": [
+								6.17,
+								6.17,
+								6.17
+							],
+							"inflate": 0.65,
+							"uv": {
+								"north": {
+									"uv": [
+										54,
+										0
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"east": {
+									"uv": [
+										62,
+										8
+									],
+									"uv_size": [
+										-8,
+										8
+									]
+								},
+								"south": {
+									"uv": [
+										52,
+										56
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"west": {
+									"uv": [
+										54,
+										8
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"up": {
+									"uv": [
+										52,
+										48
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								},
+								"down": {
+									"uv": [
+										20,
+										8
+									],
+									"uv_size": [
+										8,
+										8
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "cyclops_handle",
+					"parent": "morphheadendereye",
+					"pivot": [
+						0,
+						31,
+						-3.9
+					]
+				},
+				{
+					"name": "morphendereyeemissivenofancy2",
+					"parent": "cyclops_handle",
+					"pivot": [
+						1,
+						28,
+						-2.9
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2,
+								28,
+								-3.9
+							],
+							"size": [
+								4,
+								6,
+								0
+							],
+							"inflate": 0.2,
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										8
+									],
+									"uv_size": [
+										4,
+										6
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "jacket",
+					"parent": "morphhead",
+					"pivot": [
+						0,
+						32,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-14,
+								19,
+								9.55
+							],
+							"size": [
+								28,
+								26,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										62.5,
+										0.5
+									],
+									"uv_size": [
+										30,
+										30
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morphleftarm",
+					"parent": "morphbody",
+					"pivot": [
+						5,
+						22,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								4,
+								12,
+								-2
+							],
+							"size": [
+								4,
+								12,
+								4
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										28,
+										20
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										24,
+										20
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										36,
+										20
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										32,
+										20
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"up": {
+									"uv": [
+										28,
+										20
+									],
+									"uv_size": [
+										4,
+										-4
+									]
+								},
+								"down": {
+									"uv": [
+										32,
+										16
+									],
+									"uv_size": [
+										4,
+										4
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								4,
+								12,
+								-2
+							],
+							"size": [
+								4,
+								12,
+								4
+							],
+							"inflate": 0.25,
+							"uv": {
+								"north": {
+									"uv": [
+										28,
+										36
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										24,
+										36
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										36,
+										36
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										32,
+										36
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morphendereyeemissiveonesidednofancybilinear2",
+					"parent": "morphleftarm",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								8,
+								14.625,
+								2
+							],
+							"size": [
+								-4,
+								-2.625,
+								-4
+							],
+							"inflate": -0.25,
+							"uv": {
+								"north": {
+									"uv": [
+										59,
+										31.5
+									],
+									"uv_size": [
+										0,
+										-2
+									]
+								},
+								"east": {
+									"uv": [
+										59,
+										31.5
+									],
+									"uv_size": [
+										0,
+										-2
+									]
+								},
+								"south": {
+									"uv": [
+										59,
+										31.5
+									],
+									"uv_size": [
+										0,
+										-2
+									]
+								},
+								"west": {
+									"uv": [
+										59,
+										31.5
+									],
+									"uv_size": [
+										0,
+										-2
+									]
+								},
+								"up": {
+									"uv": [
+										59,
+										31.5
+									],
+									"uv_size": [
+										0,
+										0
+									]
+								},
+								"down": {
+									"uv": [
+										59,
+										29.5
+									],
+									"uv_size": [
+										0,
+										0
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "leftsleeve",
+					"parent": "morphleftarm",
+					"pivot": [
+						6,
+						13.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								6.5,
+								-3.75
+							],
+							"size": [
+								14,
+								14,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										62.5,
+										0.5
+									],
+									"uv_size": [
+										30,
+										30
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morphrightarm",
+					"parent": "morphbody",
+					"pivot": [
+						-5,
+						22,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								12,
+								-2
+							],
+							"size": [
+								4,
+								12,
+								4
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										32,
+										20
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										36,
+										20
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										40,
+										20
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										28,
+										20
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"up": {
+									"uv": [
+										32,
+										20
+									],
+									"uv_size": [
+										-4,
+										-4
+									]
+								},
+								"down": {
+									"uv": [
+										32,
+										16
+									],
+									"uv_size": [
+										4,
+										4
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-8,
+								12,
+								-2
+							],
+							"size": [
+								4,
+								12,
+								4
+							],
+							"inflate": 0.25,
+							"uv": {
+								"north": {
+									"uv": [
+										32,
+										36
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										36,
+										36
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										40,
+										36
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										28,
+										36
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morphendereyeemissiveonesidednofancybilinear3",
+					"parent": "morphrightarm",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								14.625,
+								2
+							],
+							"size": [
+								-4,
+								-2.625,
+								-4
+							],
+							"inflate": -0.25,
+							"uv": {
+								"north": {
+									"uv": [
+										59,
+										31.5
+									],
+									"uv_size": [
+										0,
+										-2
+									]
+								},
+								"east": {
+									"uv": [
+										59,
+										31.5
+									],
+									"uv_size": [
+										0,
+										-2
+									]
+								},
+								"south": {
+									"uv": [
+										59,
+										31.5
+									],
+									"uv_size": [
+										0,
+										-2
+									]
+								},
+								"west": {
+									"uv": [
+										59,
+										31.5
+									],
+									"uv_size": [
+										0,
+										-2
+									]
+								},
+								"up": {
+									"uv": [
+										59,
+										31.5
+									],
+									"uv_size": [
+										0,
+										0
+									]
+								},
+								"down": {
+									"uv": [
+										59,
+										29.5
+									],
+									"uv_size": [
+										0,
+										0
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "rightsleeve",
+					"parent": "morphrightarm",
+					"pivot": [
+						-6,
+						13.5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-13,
+								6.5,
+								-3.75
+							],
+							"size": [
+								14,
+								14,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										62.5,
+										0.5
+									],
+									"uv_size": [
+										30,
+										30
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morphpupila",
+					"parent": "morphbody",
+					"pivot": [
+						0,
+						13.925,
+						-2.45
+					]
+				},
+				{
+					"name": "pupilsright_middle_bx1",
+					"parent": "morphpupila",
+					"pivot": [
+						0,
+						13.925,
+						-2.45
+					],
+					"cubes": [
+						{
+							"origin": [
+								-0.5,
+								12.925,
+								-2.45
+							],
+							"size": [
+								1,
+								2,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										62,
+										43
+									],
+									"uv_size": [
+										1,
+										2
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morphhood",
+					"parent": "morphbody",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"rotation": [
+						25,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5,
+								18,
+								0
+							],
+							"size": [
+								10,
+								6,
+								10
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										22,
+										58
+									],
+									"uv_size": [
+										10,
+										6
+									]
+								},
+								"east": {
+									"uv": [
+										21,
+										48
+									],
+									"uv_size": [
+										-10,
+										6
+									]
+								},
+								"south": {
+									"uv": [
+										11,
+										54
+									],
+									"uv_size": [
+										10,
+										6
+									]
+								},
+								"west": {
+									"uv": [
+										11,
+										48
+									],
+									"uv_size": [
+										10,
+										6
+									]
+								},
+								"up": {
+									"uv": [
+										10,
+										48
+									],
+									"uv_size": [
+										-10,
+										10
+									]
+								},
+								"down": {
+									"uv": [
+										32,
+										58
+									],
+									"uv_size": [
+										-10,
+										-10
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								4,
+								24,
+								9
+							],
+							"size": [
+								-8,
+								-2,
+								-9
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										41,
+										48
+									],
+									"uv_size": [
+										-8,
+										4
+									],
+									"uv_rotation": 90
+								},
+								"east": {
+									"uv": [
+										41,
+										48
+									],
+									"uv_size": [
+										-8,
+										9
+									],
+									"uv_rotation": 90
+								},
+								"south": {
+									"uv": [
+										41,
+										53
+									],
+									"uv_size": [
+										-8,
+										4
+									],
+									"uv_rotation": 90
+								},
+								"west": {
+									"uv": [
+										41,
+										57
+									],
+									"uv_size": [
+										-8,
+										-9
+									],
+									"uv_rotation": 90
+								},
+								"up": {
+									"uv": [
+										33,
+										57
+									],
+									"uv_size": [
+										8,
+										-9
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morphhoodtail",
+					"parent": "morphhood",
+					"pivot": [
+						1,
+						22.75446,
+						-8.19596
+					],
+					"rotation": [
+						-25,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2.5,
+								18.00446,
+								0.55404
+							],
+							"size": [
+								5,
+								6,
+								5
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										47,
+										64
+									],
+									"uv_size": [
+										-5,
+										-6
+									]
+								},
+								"east": {
+									"uv": [
+										37,
+										64
+									],
+									"uv_size": [
+										5,
+										-6
+									]
+								},
+								"south": {
+									"uv": [
+										32,
+										64
+									],
+									"uv_size": [
+										5,
+										-6
+									]
+								},
+								"west": {
+									"uv": [
+										42,
+										64
+									],
+									"uv_size": [
+										-5,
+										-6
+									]
+								},
+								"up": {
+									"uv": [
+										42,
+										58
+									],
+									"uv_size": [
+										5,
+										5
+									]
+								},
+								"down": {
+									"uv": [
+										47,
+										63
+									],
+									"uv_size": [
+										5,
+										-5
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morphleftleg",
+					"parent": "morphroot",
+					"pivot": [
+						2,
+						12,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0,
+								0,
+								-2
+							],
+							"size": [
+								4,
+								12,
+								4
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										45,
+										20
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										41,
+										20
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										53,
+										20
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										49,
+										20
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"up": {
+									"uv": [
+										45,
+										16
+									],
+									"uv_size": [
+										4,
+										4
+									]
+								},
+								"down": {
+									"uv": [
+										53,
+										20
+									],
+									"uv_size": [
+										-4,
+										-4
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								0,
+								0,
+								-2
+							],
+							"size": [
+								4,
+								12,
+								4
+							],
+							"inflate": 0.25,
+							"uv": {
+								"north": {
+									"uv": [
+										45,
+										36
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										41,
+										36
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										53,
+										36
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										49,
+										36
+									],
+									"uv_size": [
+										4,
+										12
+									]
+								},
+								"up": {
+									"uv": [
+										45,
+										32
+									],
+									"uv_size": [
+										4,
+										4
+									]
+								},
+								"down": {
+									"uv": [
+										53,
+										36
+									],
+									"uv_size": [
+										-4,
+										-4
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "morphrightleg",
+					"parent": "morphroot",
+					"pivot": [
+						-2,
+						12,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								0,
+								-2
+							],
+							"size": [
+								4,
+								12,
+								4
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										49,
+										20
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										53,
+										20
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										57,
+										20
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										45,
+										20
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"up": {
+									"uv": [
+										49,
+										16
+									],
+									"uv_size": [
+										-4,
+										4
+									]
+								},
+								"down": {
+									"uv": [
+										53,
+										20
+									],
+									"uv_size": [
+										-4,
+										-4
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-4,
+								0,
+								-2
+							],
+							"size": [
+								4,
+								12,
+								4
+							],
+							"inflate": 0.25,
+							"uv": {
+								"north": {
+									"uv": [
+										49,
+										36
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"east": {
+									"uv": [
+										53,
+										36
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"south": {
+									"uv": [
+										57,
+										36
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"west": {
+									"uv": [
+										45,
+										36
+									],
+									"uv_size": [
+										-4,
+										12
+									]
+								},
+								"up": {
+									"uv": [
+										49,
+										32
+									],
+									"uv_size": [
+										-4,
+										4
+									]
+								},
+								"down": {
+									"uv": [
+										53,
+										36
+									],
+									"uv_size": [
+										-4,
+										-4
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

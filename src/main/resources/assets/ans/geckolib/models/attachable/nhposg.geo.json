@@ -1,0 +1,151 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_nhposg",
+				"texture_width": 3,
+				"texture_height": 3,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "root",
+					"pivot": [
+						0,
+						6.25,
+						0
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [
+						0,
+						9,
+						-3
+					],
+					"cubes": [
+						{
+							"origin": [
+								1.5,
+								12.25,
+								-4.5
+							],
+							"size": [
+								3,
+								3,
+								0
+							],
+							"pivot": [
+								3,
+								13.75,
+								-4.5
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										3,
+										3
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								1.5,
+								12.25,
+								-4.5
+							],
+							"size": [
+								3,
+								3,
+								0
+							],
+							"pivot": [
+								3,
+								13.75,
+								-4.5
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										3,
+										3
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								1.5,
+								12.25,
+								-4.5
+							],
+							"size": [
+								3,
+								3,
+								0
+							],
+							"pivot": [
+								3,
+								13.75,
+								-4.5
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										3,
+										3
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

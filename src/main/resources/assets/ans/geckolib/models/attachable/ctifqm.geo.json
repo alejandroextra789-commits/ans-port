@@ -1,0 +1,188 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_ctifqm",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 9,
+				"visible_bounds_height": 8,
+				"visible_bounds_offset": [
+					0,
+					3,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "goggles",
+					"parent": "head",
+					"pivot": [
+						0,
+						34,
+						-32
+					]
+				},
+				{
+					"name": "glow1",
+					"parent": "goggles",
+					"pivot": [
+						-16,
+						44,
+						-35
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear1",
+					"parent": "glow1",
+					"pivot": [
+						0,
+						0,
+						-16
+					],
+					"cubes": [
+						{
+							"origin": [
+								-36,
+								28,
+								-48
+							],
+							"size": [
+								40,
+								32,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										72.5,
+										72.5
+									],
+									"uv_size": [
+										54,
+										54
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "glow2",
+					"parent": "goggles",
+					"pivot": [
+						16,
+						32,
+						-35
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear2",
+					"parent": "glow2",
+					"pivot": [
+						32,
+						-12,
+						-16
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								16,
+								-48
+							],
+							"size": [
+								40,
+								32,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										72.5,
+										72.5
+									],
+									"uv_size": [
+										54,
+										54
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "glow3",
+					"parent": "goggles",
+					"pivot": [
+						-16,
+						20,
+						-35
+					]
+				},
+				{
+					"name": "emissiveadditivealphabilinear3",
+					"parent": "glow3",
+					"pivot": [
+						0,
+						-24,
+						-16
+					],
+					"cubes": [
+						{
+							"origin": [
+								-36,
+								4,
+								-48
+							],
+							"size": [
+								40,
+								32,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										72.5,
+										72.5
+									],
+									"uv_size": [
+										54,
+										54
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

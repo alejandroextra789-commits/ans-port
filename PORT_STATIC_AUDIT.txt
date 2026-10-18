@@ -1,0 +1,65 @@
+Java source files: 130
+Static migration findings (occurrences, unique files):
+- Fabric API references: 0 occurrence(s) across 0 file(s) — must be migrated to Forge
+- new GeckoLib namespace references: 144 occurrence(s) across 29 file(s) — must be ported to GeckoLib 4 API; package renames alone are unsafe
+    src/main/java/com/ans/client/attachable/AttachableRenderer.java (7)
+    src/main/java/com/ans/client/attachable/Attachables.java (2)
+    src/main/java/com/ans/client/attachable/TextureMeshes.java (5)
+    src/main/java/com/ans/client/bedrock/AnimationLookup.java (4)
+    src/main/java/com/ans/client/bedrock/BoneTransforms.java (3)
+    src/main/java/com/ans/client/bedrock/EntityRuntime.java (13)
+    src/main/java/com/ans/client/bedrock/FrameResult.java (1)
+    src/main/java/com/ans/client/bedrock/RelativeBones.java (2)
+    src/main/java/com/ans/client/equipment/EquipmentLayer.java (19)
+    src/main/java/com/ans/client/gecko/AnsGeckoLoader.java (4)
+    src/main/java/com/ans/client/gecko/AnsMathParser.java (3)
+    src/main/java/com/ans/client/gecko/MolangMathValue.java (2)
+    ... and 17 more file(s)
+- new rendering pipeline references: 0 occurrence(s) across 0 file(s) — not available in Minecraft 1.20.1's rendering API
+- new render-state references: 88 occurrence(s) across 14 file(s) — must be rewritten for 1.20.1 renderer signatures
+    src/main/java/com/ans/client/equipment/EquipmentLayer.java (10)
+    src/main/java/com/ans/client/mob/aquatic/DolphinItemLayer.java (6)
+    src/main/java/com/ans/client/mob/aquatic/GuardianBeamLayer.java (5)
+    src/main/java/com/ans/client/mob/misc/EnderDragonRenderer.java (5)
+    src/main/java/com/ans/client/mob/monster/EndermanCarriedBlockLayer.java (6)
+    src/main/java/com/ans/client/mob/pets/FoxHeldItemLayer.java (6)
+    src/main/java/com/ans/client/mob/player/FirstPerson.java (3)
+    src/main/java/com/ans/client/mob/player/PaperDoll.java (2)
+    src/main/java/com/ans/client/mob/player/PlayerRenderer.java (10)
+    src/main/java/com/ans/client/mob/player/PlayerWingsLayer.java (3)
+    src/main/java/com/ans/client/mob/player/ShoulderParrotLayer.java (4)
+    src/main/java/com/ans/client/render/EffectsOnlyRuntimes.java (3)
+    ... and 2 more file(s)
+- new submit-collector references: 58 occurrence(s) across 16 file(s) — not available in Minecraft 1.20.1
+    src/main/java/com/ans/client/attachable/AttachableRenderer.java (2)
+    src/main/java/com/ans/client/equipment/EquipmentLayer.java (4)
+    src/main/java/com/ans/client/mixin/ItemInHandRendererAccessor.java (3)
+    src/main/java/com/ans/client/mixin/ItemInHandRendererMixin.java (2)
+    src/main/java/com/ans/client/mob/aquatic/DolphinItemLayer.java (2)
+    src/main/java/com/ans/client/mob/aquatic/GuardianBeamLayer.java (4)
+    src/main/java/com/ans/client/mob/misc/EnderDragonRenderer.java (5)
+    src/main/java/com/ans/client/mob/monster/EndermanCarriedBlockLayer.java (2)
+    src/main/java/com/ans/client/mob/pets/FoxHeldItemLayer.java (2)
+    src/main/java/com/ans/client/mob/player/FirstPerson.java (6)
+    src/main/java/com/ans/client/mob/player/PlayerRenderer.java (3)
+    src/main/java/com/ans/client/mob/player/PlayerWingsLayer.java (2)
+    ... and 4 more file(s)
+- new tint API references: 0 occurrence(s) across 0 file(s) — not available in Minecraft 1.20.1
+- new item component API references: 4 occurrence(s) across 2 file(s) — must be migrated to legacy item/NBT APIs
+    src/main/java/com/ans/client/equipment/EquipmentLayer.java (2)
+    src/main/java/com/ans/client/mob/player/PlayerWingsLayer.java (2)
+- new equipment asset API references: 2 occurrence(s) across 1 file(s) — must be migrated to legacy armor rendering
+    src/main/java/com/ans/client/equipment/EquipmentLayer.java (2)
+- new player skin object references: 0 occurrence(s) across 0 file(s) — not part of the 1.20.1 player texture API
+- new sound engine result API references: 0 occurrence(s) across 0 file(s) — SoundEngine.play returns void in 1.20.1
+
+Unsupported 1.21+ entity constants remaining in Java: 0
+
+Build/runtime validation: NOT performed by this static audit.
+Do not install this workspace as a mod until Gradle compilation and client launch pass.
+
+Fresh continuation pass (2026-10-17):
+- Recounted against the uploaded workspace: 130 Java files; GeckoLib modern namespace 144/29; EntityRenderState 88/14; SubmitNodeCollector 58/16; RenderPassInfo 49/14; ItemStackRenderState 25/3.
+- Resource JSON syntax checker added to tools/audit_port.py: 7,884 resource JSON files, zero syntax errors.
+- See RENDER_REWRITE_PLAN.md for concrete renderer/animation rewrite sequencing and impacted source files.
+- GeckoLib 4.8.4 binary is not cached; Maven/Gradle endpoints were not resolvable from this execution environment. No compile claim.

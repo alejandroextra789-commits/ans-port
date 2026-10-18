@@ -1,0 +1,123 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.player_jhotdc_enabled_itqbxd",
+				"texture_width": 384,
+				"texture_height": 256,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [
+					0,
+					0.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "waistcopy",
+					"parent": "root",
+					"pivot": [
+						0,
+						12,
+						0
+					]
+				},
+				{
+					"name": "bodycopy",
+					"parent": "waistcopy",
+					"pivot": [
+						0,
+						24,
+						0
+					]
+				},
+				{
+					"name": "leftarmcopy",
+					"parent": "bodycopy",
+					"pivot": [
+						5,
+						22,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								4.5,
+								21.25,
+								-3
+							],
+							"size": [
+								4,
+								5,
+								6
+							],
+							"pivot": [
+								5,
+								25.75,
+								0
+							],
+							"rotation": [
+								0,
+								0,
+								7.5
+							],
+							"inflate": 0.25,
+							"uv": [
+								62,
+								19
+							]
+						}
+					]
+				},
+				{
+					"name": "rightarmcopy",
+					"parent": "bodycopy",
+					"pivot": [
+						-5,
+						22,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8.5,
+								21.25,
+								-3
+							],
+							"size": [
+								4,
+								5,
+								6
+							],
+							"pivot": [
+								-5,
+								25.75,
+								0
+							],
+							"rotation": [
+								0,
+								0,
+								-7.5
+							],
+							"inflate": 0.25,
+							"uv": [
+								62,
+								37
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

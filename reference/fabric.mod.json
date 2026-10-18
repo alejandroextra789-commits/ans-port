@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "ans",
+  "version": "0.7.0-1.20.1-dev",
+  "name": "Actions & Stuff (Java Port - 1.20.1 port)",
+  "description": "Experimental source-reconstruction port target for Minecraft 1.20.1. Not yet functional; requires decompilation and API migration.",
+  "authors": [
+    "ans-port contributors",
+    "Original Bedrock pack: Oreville Studios"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.ans.client.AnsClient"
+    ]
+  },
+  "mixins": [
+    "ans.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*",
+    "geckolib": "~4.8.4"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}

@@ -1,0 +1,407 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.wolf_lhfnmo",
+				"texture_width": 24,
+				"texture_height": 24,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "root",
+					"pivot": [
+						0,
+						10,
+						0
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [
+						0,
+						10.5,
+						-6.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.25,
+								7.25,
+								-9.5
+							],
+							"size": [
+								6.5,
+								6.5,
+								1
+							],
+							"uv": [
+								0,
+								15
+							]
+						}
+					]
+				},
+				{
+					"name": "reindeerantler",
+					"parent": "head",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0,
+								13.725,
+								-12.5
+							],
+							"size": [
+								0,
+								7,
+								10
+							],
+							"uv": {
+								"east": {
+									"uv": [
+										0,
+										8
+									],
+									"uv_size": [
+										10,
+										7
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "snout",
+					"parent": "head",
+					"pivot": [
+						0,
+						9,
+						-10.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								9.51563,
+								-14.5
+							],
+							"size": [
+								2,
+								2,
+								2
+							],
+							"uv": [
+								10,
+								8
+							]
+						}
+					]
+				},
+				{
+					"name": "centroid",
+					"parent": "body",
+					"pivot": [
+						0,
+						10,
+						0
+					],
+					"rotation": [
+						90,
+						0,
+						0
+					]
+				},
+				{
+					"name": "upperbody",
+					"parent": "centroid",
+					"pivot": [
+						0,
+						14.5,
+						0.5
+					]
+				},
+				{
+					"name": "reindeerbells",
+					"parent": "upperbody",
+					"pivot": [
+						0,
+						17.1,
+						4.25
+					],
+					"cubes": [
+						{
+							"origin": [
+								0,
+								16.6,
+								1.25
+							],
+							"size": [
+								0,
+								1,
+								1
+							],
+							"pivot": [
+								0,
+								17.1,
+								4.25
+							],
+							"rotation": [
+								0,
+								90,
+								0
+							],
+							"uv": {
+								"west": {
+									"uv": [
+										11,
+										12
+									],
+									"uv_size": [
+										-1,
+										1
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								0,
+								16.6,
+								3.75
+							],
+							"size": [
+								0,
+								1,
+								1
+							],
+							"pivot": [
+								0,
+								17.1,
+								4.25
+							],
+							"rotation": [
+								0,
+								90,
+								0
+							],
+							"uv": {
+								"west": {
+									"uv": [
+										11,
+										12
+									],
+									"uv_size": [
+										-1,
+										1
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								0,
+								16.6,
+								6.25
+							],
+							"size": [
+								0,
+								1,
+								1
+							],
+							"pivot": [
+								0,
+								17.1,
+								4.25
+							],
+							"rotation": [
+								0,
+								90,
+								0
+							],
+							"uv": {
+								"west": {
+									"uv": [
+										11,
+										12
+									],
+									"uv_size": [
+										-1,
+										1
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								4.25,
+								16.6,
+								2.5
+							],
+							"size": [
+								0,
+								1,
+								1
+							],
+							"uv": {
+								"west": {
+									"uv": [
+										11,
+										12
+									],
+									"uv_size": [
+										-1,
+										1
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								4.25,
+								16.6,
+								0
+							],
+							"size": [
+								0,
+								1,
+								1
+							],
+							"uv": {
+								"west": {
+									"uv": [
+										11,
+										12
+									],
+									"uv_size": [
+										-1,
+										1
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								4.25,
+								16.6,
+								-2.5
+							],
+							"size": [
+								0,
+								1,
+								1
+							],
+							"uv": {
+								"west": {
+									"uv": [
+										11,
+										12
+									],
+									"uv_size": [
+										-1,
+										1
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-4.25,
+								16.6,
+								2.5
+							],
+							"size": [
+								0,
+								1,
+								1
+							],
+							"uv": {
+								"west": {
+									"uv": [
+										11,
+										12
+									],
+									"uv_size": [
+										-1,
+										1
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-4.25,
+								16.6,
+								0
+							],
+							"size": [
+								0,
+								1,
+								1
+							],
+							"uv": {
+								"west": {
+									"uv": [
+										11,
+										12
+									],
+									"uv_size": [
+										-1,
+										1
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-4.25,
+								16.6,
+								-2.5
+							],
+							"size": [
+								0,
+								1,
+								1
+							],
+							"uv": {
+								"west": {
+									"uv": [
+										11,
+										12
+									],
+									"uv_size": [
+										-1,
+										1
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

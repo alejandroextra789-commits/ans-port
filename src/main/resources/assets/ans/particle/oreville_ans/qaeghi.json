@@ -1,0 +1,83 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "oreville_ans:qaeghi",
+ "source": {
+  "layer": "root",
+  "file": "particles/ehx.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_blend",
+ "render": "blend",
+ "bedrock_texture": "textures/oreville/ans/dgi",
+ "texture": "ans:textures/particle_fx/oreville/ans/dgi.png",
+ "texture_size": [
+  128,
+  128
+ ],
+ "components": {
+  "minecraft:emitter_rate_instant": {
+   "num_particles": 1
+  },
+  "minecraft:emitter_lifetime_expression": {
+   "activation_expression": "v.sealpe??0",
+   "expiration_expression": "(v.wnaarx??0)||!(v.sealpe??1)"
+  },
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": "v.hrsqwn+0.2"
+  },
+  "minecraft:particle_motion_parametric": {
+   "relative_position": [
+    "v.bhblov",
+    "v.ebypvy",
+    "v.borcrz"
+   ]
+  },
+  "minecraft:particle_lifetime_events": {
+   "creation_event": "kfjwfy"
+  },
+  "minecraft:particle_initial_spin": {
+   "rotation": 90
+  },
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    0.1,
+    "v.cfglpd"
+   ],
+   "facing_camera_mode": "lookat_direction",
+   "direction": {
+    "mode": "custom",
+    "custom_direction": [
+     "v.rowpry",
+     "v.rgwjra",
+     "v.ipczvr"
+    ]
+   },
+   "uv": {
+    "texture_width": 1,
+    "texture_height": 1,
+    "uv": [
+     0,
+     "1-v.sbiadh-(v.particle_age-0.05)/v.hrsqwn"
+    ],
+    "uv_size": [
+     1,
+     "v.sbiadh"
+    ]
+   }
+  },
+  "minecraft:particle_appearance_tinting": {
+   "color": [
+    "(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==0?151:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==1?135:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==2?50:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==3?71:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==4?87:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==5?100:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==6?110:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==7?119:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==8?125:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==9?131:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==10?131:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==11?125:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==12?119:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==13?110:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==14?100:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==15?87:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==16?71:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==17?50:(Math.mod(Math.floor(((v.tlnhrs+v.emitter_age)+0.1)*10),20)==18?135:151)))))))))))))))))))/255",
+    "227/255",
+    "43/255",
+    1
+   ]
+  }
+ },
+ "events": {
+  "kfjwfy": {
+   "expression": "v.wnaarx=1;"
+  }
+ }
+}

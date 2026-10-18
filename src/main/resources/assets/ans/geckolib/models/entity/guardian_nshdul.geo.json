@@ -1,0 +1,55 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.guardian_nshdul",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "head",
+					"parent": "root",
+					"pivot": [
+						0,
+						8,
+						0
+					],
+					"mirror": true
+				},
+				{
+					"name": "eye",
+					"parent": "head",
+					"pivot": [
+						0,
+						8,
+						-8.25
+					],
+					"locators": {
+						"sjyvot": [
+							0,
+							8,
+							-8.35
+						]
+					}
+				}
+			]
+		}
+	]
+}

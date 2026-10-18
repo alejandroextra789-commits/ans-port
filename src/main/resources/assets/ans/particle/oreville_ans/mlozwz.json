@@ -1,0 +1,64 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "oreville_ans:mlozwz",
+ "source": {
+  "layer": "root",
+  "file": "particles/elv.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_blend",
+ "render": "blend",
+ "bedrock_texture": "textures/oreville/ans/dgr",
+ "texture": "ans:textures/particle_fx/oreville/ans/dgr.png",
+ "texture_size": [
+  128,
+  128
+ ],
+ "curves": {
+  "variable.scale": {
+   "type": "linear",
+   "input": "v.particle_age",
+   "horizontal_range": "v.particle_lifetime",
+   "nodes": [
+    0.5,
+    1,
+    1,
+    0.93,
+    0.7,
+    0.25
+   ]
+  }
+ },
+ "components": {
+  "minecraft:emitter_local_space": {
+   "position": true
+  },
+  "minecraft:emitter_rate_instant": {
+   "num_particles": 1
+  },
+  "minecraft:emitter_lifetime_once": {
+   "active_time": 0.1
+  },
+  "minecraft:emitter_shape_point": {},
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": 1,
+   "expiration_expression": "!q.is_alive"
+  },
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    "0.6*v.scale*q.is_on_screen",
+    "0.6*v.scale"
+   ],
+   "facing_camera_mode": "lookat_xyz"
+  },
+  "minecraft:particle_appearance_tinting": {
+   "color": [
+    "Math.max(1-v.particle_age*2.66,0)",
+    "Math.max(1-v.particle_age*1.33,0.5)",
+    1,
+    0.5
+   ]
+  }
+ }
+}

@@ -1,0 +1,288 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.silverfish_baby",
+				"texture_width": 64,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [
+					0,
+					0.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						1
+					]
+				},
+				{
+					"name": "head",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						-2.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								0,
+								-3.5
+							],
+							"size": [
+								3,
+								2,
+								2
+							],
+							"inflate": -0.1,
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "layer_head",
+					"parent": "head",
+					"pivot": [
+						0,
+						0,
+						-4.5
+					]
+				},
+				{
+					"name": "body",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2,
+								0,
+								-2
+							],
+							"size": [
+								4,
+								3,
+								4
+							],
+							"uv": [
+								1,
+								8
+							]
+						}
+					]
+				},
+				{
+					"name": "layer_body",
+					"parent": "body",
+					"pivot": [
+						0,
+						0,
+						-1
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								0,
+								-1
+							],
+							"size": [
+								8,
+								5,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										37,
+										5
+									],
+									"uv_size": [
+										8,
+										5
+									]
+								},
+								"east": {
+									"uv": [
+										20,
+										6
+									],
+									"uv_size": [
+										0,
+										5
+									]
+								},
+								"south": {
+									"uv": [
+										44,
+										15
+									],
+									"uv_size": [
+										8,
+										5
+									]
+								},
+								"west": {
+									"uv": [
+										28,
+										6
+									],
+									"uv_size": [
+										0,
+										5
+									]
+								},
+								"up": {
+									"uv": [
+										20,
+										6
+									],
+									"uv_size": [
+										8,
+										0
+									]
+								},
+								"down": {
+									"uv": [
+										28,
+										6
+									],
+									"uv_size": [
+										8,
+										0
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-4,
+								0,
+								1
+							],
+							"size": [
+								8,
+								5,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										37,
+										5
+									],
+									"uv_size": [
+										8,
+										5
+									]
+								},
+								"east": {
+									"uv": [
+										20,
+										6
+									],
+									"uv_size": [
+										0,
+										5
+									]
+								},
+								"south": {
+									"uv": [
+										44,
+										15
+									],
+									"uv_size": [
+										8,
+										5
+									]
+								},
+								"west": {
+									"uv": [
+										28,
+										6
+									],
+									"uv_size": [
+										0,
+										5
+									]
+								},
+								"up": {
+									"uv": [
+										20,
+										6
+									],
+									"uv_size": [
+										8,
+										0
+									]
+								},
+								"down": {
+									"uv": [
+										28,
+										6
+									],
+									"uv_size": [
+										8,
+										0
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						2.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								0,
+								1.5
+							],
+							"size": [
+								2,
+								2,
+								2
+							],
+							"inflate": -0.05,
+							"uv": [
+								11,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "bodyarmoroffset",
+					"pivot": [
+						0,
+						-24,
+						-4
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,320 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_pcbbuj",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "rootleg2",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "lafloor",
+					"parent": "rootleg2",
+					"pivot": [
+						-1.5,
+						0,
+						-5.5
+					]
+				},
+				{
+					"name": "leg7",
+					"parent": "lafloor",
+					"pivot": [
+						-1.5,
+						8,
+						-5.5
+					]
+				},
+				{
+					"name": "legabottom",
+					"parent": "leg7",
+					"pivot": [
+						-1.5,
+						0,
+						-4.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2.5,
+								0,
+								-6.5
+							],
+							"size": [
+								2,
+								8,
+								2
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								18
+							]
+						}
+					]
+				},
+				{
+					"name": "rootleg1",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "l1floor",
+					"parent": "rootleg1",
+					"pivot": [
+						1.5,
+						0,
+						5.5
+					]
+				},
+				{
+					"name": "leg6",
+					"parent": "l1floor",
+					"pivot": [
+						1.5,
+						8,
+						5.5
+					]
+				},
+				{
+					"name": "leg1bottom",
+					"parent": "leg6",
+					"pivot": [
+						1.5,
+						0,
+						6.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								0.5,
+								0,
+								4.5
+							],
+							"size": [
+								2,
+								8,
+								2
+							],
+							"inflate": 0.2,
+							"mirror": true,
+							"uv": [
+								0,
+								18
+							]
+						}
+					]
+				},
+				{
+					"name": "rootleg0",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "l0floor",
+					"parent": "rootleg0",
+					"pivot": [
+						-1.5,
+						0,
+						5.5
+					]
+				},
+				{
+					"name": "leg5",
+					"parent": "l0floor",
+					"pivot": [
+						-1.5,
+						8,
+						5.5
+					]
+				},
+				{
+					"name": "leg0bottom",
+					"parent": "leg5",
+					"pivot": [
+						-1.5,
+						0,
+						6.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2.5,
+								0,
+								4.5
+							],
+							"size": [
+								2,
+								8,
+								2
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								18
+							]
+						}
+					]
+				},
+				{
+					"name": "rootleg3",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "lbfloor",
+					"parent": "rootleg3",
+					"pivot": [
+						1.5,
+						0,
+						-5.5
+					]
+				},
+				{
+					"name": "leg4",
+					"parent": "lbfloor",
+					"pivot": [
+						1.5,
+						8,
+						-5.5
+					]
+				},
+				{
+					"name": "legbbottom",
+					"parent": "leg4",
+					"pivot": [
+						1.5,
+						0,
+						-4.625
+					],
+					"cubes": [
+						{
+							"origin": [
+								0.5,
+								0,
+								-6.5
+							],
+							"size": [
+								2,
+								8,
+								2
+							],
+							"inflate": 0.2,
+							"mirror": true,
+							"uv": [
+								0,
+								18
+							]
+						}
+					]
+				},
+				{
+					"name": "head",
+					"pivot": [
+						0,
+						10.5,
+						-6.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								7.5,
+								-10.5
+							],
+							"size": [
+								6,
+								6,
+								4
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "centroid",
+					"pivot": [
+						0,
+						10,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								2.5,
+								-3
+							],
+							"size": [
+								6,
+								9,
+								6
+							],
+							"inflate": 0.2,
+							"uv": [
+								18,
+								14
+							]
+						}
+					]
+				},
+				{
+					"name": "upperbody",
+					"pivot": [
+						0,
+						14.5,
+						0.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								11.5,
+								-3
+							],
+							"size": [
+								8,
+								6,
+								7
+							],
+							"inflate": 0.2,
+							"uv": [
+								21,
+								0
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

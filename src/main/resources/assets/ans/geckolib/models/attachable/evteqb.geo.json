@@ -1,0 +1,831 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_evteqb",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "windcharge",
+					"parent": "item",
+					"pivot": [
+						0,
+						3,
+						0
+					]
+				},
+				{
+					"name": "windchargecore",
+					"parent": "windcharge",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "emissiveopaquenofancy",
+					"parent": "windchargecore",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								3,
+								6,
+								3
+							],
+							"size": [
+								-6,
+								-6,
+								-6
+							],
+							"inflate": -0.3,
+							"uv": {
+								"north": {
+									"uv": [
+										773,
+										34
+									],
+									"uv_size": [
+										0.98,
+										0.98
+									]
+								},
+								"east": {
+									"uv": [
+										773,
+										34
+									],
+									"uv_size": [
+										0.98,
+										0.98
+									]
+								},
+								"south": {
+									"uv": [
+										773,
+										34
+									],
+									"uv_size": [
+										0.98,
+										0.98
+									]
+								},
+								"west": {
+									"uv": [
+										773,
+										34
+									],
+									"uv_size": [
+										0.98,
+										0.98
+									]
+								},
+								"up": {
+									"uv": [
+										773.98,
+										34.98
+									],
+									"uv_size": [
+										-0.98,
+										-0.98
+									]
+								},
+								"down": {
+									"uv": [
+										773.98,
+										34.98
+									],
+									"uv_size": [
+										-0.98,
+										-0.98
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-3,
+								0,
+								-3
+							],
+							"size": [
+								6,
+								6,
+								6
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										760,
+										33
+									],
+									"uv_size": [
+										5.98,
+										5.98
+									]
+								},
+								"east": {
+									"uv": [
+										760,
+										33
+									],
+									"uv_size": [
+										5.98,
+										5.98
+									]
+								},
+								"south": {
+									"uv": [
+										760,
+										33
+									],
+									"uv_size": [
+										5.98,
+										5.98
+									]
+								},
+								"west": {
+									"uv": [
+										760,
+										33
+									],
+									"uv_size": [
+										5.98,
+										5.98
+									]
+								},
+								"up": {
+									"uv": [
+										771.98,
+										38.98
+									],
+									"uv_size": [
+										-5.98,
+										-5.98
+									]
+								},
+								"down": {
+									"uv": [
+										765.98,
+										44.98
+									],
+									"uv_size": [
+										-5.98,
+										-5.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "emissivenofancy",
+					"parent": "windchargecore",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								0.5,
+								-3
+							],
+							"size": [
+								6,
+								5,
+								6
+							],
+							"inflate": 0.3,
+							"uv": {
+								"north": {
+									"uv": [
+										766,
+										39
+									],
+									"uv_size": [
+										5.98,
+										4.98
+									]
+								},
+								"east": {
+									"uv": [
+										766,
+										39
+									],
+									"uv_size": [
+										5.98,
+										4.98
+									]
+								},
+								"south": {
+									"uv": [
+										766,
+										39
+									],
+									"uv_size": [
+										5.98,
+										4.98
+									]
+								},
+								"west": {
+									"uv": [
+										766,
+										39
+									],
+									"uv_size": [
+										5.98,
+										4.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "windgust1",
+					"parent": "windcharge",
+					"pivot": [
+						0,
+						3,
+						0
+					]
+				},
+				{
+					"name": "emissiveadditivealpha1",
+					"parent": "windgust1",
+					"pivot": [
+						0.5,
+						4,
+						-0.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.9,
+								1,
+								-3.9
+							],
+							"size": [
+								7.8,
+								4,
+								7.8
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										766,
+										46
+									],
+									"uv_size": [
+										5.98,
+										3.98
+									]
+								},
+								"east": {
+									"uv": [
+										760,
+										46
+									],
+									"uv_size": [
+										5.98,
+										3.98
+									]
+								},
+								"south": {
+									"uv": [
+										778,
+										46
+									],
+									"uv_size": [
+										5.98,
+										3.98
+									]
+								},
+								"west": {
+									"uv": [
+										772,
+										46
+									],
+									"uv_size": [
+										5.98,
+										3.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "windgust2",
+					"parent": "windcharge",
+					"pivot": [
+						0,
+						3,
+						0
+					]
+				},
+				{
+					"name": "emissiveadditivealpha2",
+					"parent": "windgust2",
+					"pivot": [
+						0,
+						3,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.751,
+								2,
+								-4.751
+							],
+							"size": [
+								9.502,
+								2,
+								9.502
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										768,
+										50
+									],
+									"uv_size": [
+										7.98,
+										1.98
+									]
+								},
+								"east": {
+									"uv": [
+										760,
+										50
+									],
+									"uv_size": [
+										7.98,
+										1.98
+									]
+								},
+								"south": {
+									"uv": [
+										784,
+										50
+									],
+									"uv_size": [
+										7.98,
+										1.98
+									]
+								},
+								"west": {
+									"uv": [
+										776,
+										50
+									],
+									"uv_size": [
+										7.98,
+										1.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "item2",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "windcharge2",
+					"parent": "item2",
+					"pivot": [
+						0,
+						3,
+						0
+					]
+				},
+				{
+					"name": "windchargecore2",
+					"parent": "windcharge2",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "emissiveopaquenofancy2",
+					"parent": "windchargecore2",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								3,
+								6,
+								3
+							],
+							"size": [
+								-6,
+								-6,
+								-6
+							],
+							"inflate": -0.3,
+							"uv": {
+								"north": {
+									"uv": [
+										773,
+										34
+									],
+									"uv_size": [
+										0.98,
+										0.98
+									]
+								},
+								"east": {
+									"uv": [
+										773,
+										34
+									],
+									"uv_size": [
+										0.98,
+										0.98
+									]
+								},
+								"south": {
+									"uv": [
+										773,
+										34
+									],
+									"uv_size": [
+										0.98,
+										0.98
+									]
+								},
+								"west": {
+									"uv": [
+										773,
+										34
+									],
+									"uv_size": [
+										0.98,
+										0.98
+									]
+								},
+								"up": {
+									"uv": [
+										773.98,
+										34.98
+									],
+									"uv_size": [
+										-0.98,
+										-0.98
+									]
+								},
+								"down": {
+									"uv": [
+										773.98,
+										34.98
+									],
+									"uv_size": [
+										-0.98,
+										-0.98
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								-3,
+								0,
+								-3
+							],
+							"size": [
+								6,
+								6,
+								6
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										760,
+										33
+									],
+									"uv_size": [
+										5.98,
+										5.98
+									]
+								},
+								"east": {
+									"uv": [
+										760,
+										33
+									],
+									"uv_size": [
+										5.98,
+										5.98
+									]
+								},
+								"south": {
+									"uv": [
+										760,
+										33
+									],
+									"uv_size": [
+										5.98,
+										5.98
+									]
+								},
+								"west": {
+									"uv": [
+										760,
+										33
+									],
+									"uv_size": [
+										5.98,
+										5.98
+									]
+								},
+								"up": {
+									"uv": [
+										771.98,
+										38.98
+									],
+									"uv_size": [
+										-5.98,
+										-5.98
+									]
+								},
+								"down": {
+									"uv": [
+										765.98,
+										44.98
+									],
+									"uv_size": [
+										-5.98,
+										-5.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "emissivenofancy2",
+					"parent": "windchargecore2",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								0.5,
+								-3
+							],
+							"size": [
+								6,
+								5,
+								6
+							],
+							"inflate": 0.3,
+							"uv": {
+								"north": {
+									"uv": [
+										766,
+										39
+									],
+									"uv_size": [
+										5.98,
+										4.98
+									]
+								},
+								"east": {
+									"uv": [
+										766,
+										39
+									],
+									"uv_size": [
+										5.98,
+										4.98
+									]
+								},
+								"south": {
+									"uv": [
+										766,
+										39
+									],
+									"uv_size": [
+										5.98,
+										4.98
+									]
+								},
+								"west": {
+									"uv": [
+										766,
+										39
+									],
+									"uv_size": [
+										5.98,
+										4.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "windgust3",
+					"parent": "windcharge2",
+					"pivot": [
+						0,
+						3,
+						0
+					]
+				},
+				{
+					"name": "emissiveadditivealpha3",
+					"parent": "windgust3",
+					"pivot": [
+						0.5,
+						4,
+						-0.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.9,
+								1,
+								-3.9
+							],
+							"size": [
+								7.8,
+								4,
+								7.8
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										766,
+										46
+									],
+									"uv_size": [
+										5.98,
+										3.98
+									]
+								},
+								"east": {
+									"uv": [
+										760,
+										46
+									],
+									"uv_size": [
+										5.98,
+										3.98
+									]
+								},
+								"south": {
+									"uv": [
+										778,
+										46
+									],
+									"uv_size": [
+										5.98,
+										3.98
+									]
+								},
+								"west": {
+									"uv": [
+										772,
+										46
+									],
+									"uv_size": [
+										5.98,
+										3.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "windgust4",
+					"parent": "windcharge2",
+					"pivot": [
+						0,
+						3,
+						0
+					]
+				},
+				{
+					"name": "emissiveadditivealpha4",
+					"parent": "windgust4",
+					"pivot": [
+						0,
+						3,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4.751,
+								2,
+								-4.751
+							],
+							"size": [
+								9.502,
+								2,
+								9.502
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										768,
+										50
+									],
+									"uv_size": [
+										7.98,
+										1.98
+									]
+								},
+								"east": {
+									"uv": [
+										760,
+										50
+									],
+									"uv_size": [
+										7.98,
+										1.98
+									]
+								},
+								"south": {
+									"uv": [
+										784,
+										50
+									],
+									"uv_size": [
+										7.98,
+										1.98
+									]
+								},
+								"west": {
+									"uv": [
+										776,
+										50
+									],
+									"uv_size": [
+										7.98,
+										1.98
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

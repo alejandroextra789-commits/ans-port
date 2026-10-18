@@ -1,0 +1,1038 @@
+{
+	"format": "ans:bedrock_entity",
+	"format_version": 1,
+	"identifier": "minecraft:vex",
+	"source": {
+		"layer": "root",
+		"file": "entity/dsp.json",
+		"min_engine_version": "1.8.0"
+	},
+	"animation_file": "ans:entity/vex",
+	"geometry": {
+		"wlqxdl": "ans:entity/vex_wlqxdl",
+		"zomwvg": "ans:entity/vex_baby",
+		"udcwre": "ans:entity/vex_baby_udcwre",
+		"rylnol": "ans:entity/vex_charging1",
+		"syceym": "ans:entity/vex_syceym",
+		"uwbvqm": "ans:entity/vex_charging0",
+		"aueyju": "ans:entity/vex_aueyju",
+		"xuqdxy": "ans:entity/vex_xuqdxy",
+		"sfeecb": "ans:entity/vex_sfeecb",
+		"default": "ans:entity/vex"
+	},
+	"textures": {
+		"wlqxdl": "ans:textures/entity/vex/wlqxdl.png",
+		"vihznw": "ans:textures/entity/vex/vihznw.png",
+		"udcwre": "ans:textures/entity/vex/baby.png",
+		"ruertq": "ans:textures/entity/vex/ruertq.png",
+		"fgqnsd": "ans:textures/entity/vex/fgqnsd.png",
+		"nhqpoi": "ans:textures/experience/full/entity/vex/charging1.png",
+		"syceym": "ans:textures/entity/vex/syceym.png",
+		"aueyju": "ans:textures/entity/vex/aueyju.png",
+		"default": "ans:textures/experience/full/entity/vex/default.png"
+	},
+	"materials": {
+		"default": {
+			"bedrock": "klduzy",
+			"render_type": "cutout"
+		},
+		"vhedeg": {
+			"bedrock": "mqwxej",
+			"render_type": "emissive_alpha",
+			"uv_anim": true
+		},
+		"xxbuud": {
+			"bedrock": "mqwxej",
+			"render_type": "emissive_alpha",
+			"uv_anim": true
+		},
+		"wsonqq": {
+			"bedrock": "mqwxej",
+			"render_type": "emissive_alpha",
+			"uv_anim": true
+		},
+		"wlqxdl": {
+			"bedrock": "auulis",
+			"render_type": "additive",
+			"uv_anim": true
+		},
+		"nfimvm": {
+			"bedrock": "nfimvm",
+			"render_type": "stencil_outline"
+		},
+		"ckkelc": {
+			"bedrock": "ckkelc",
+			"render_type": "cutout"
+		},
+		"vppzlt": {
+			"bedrock": "vppzlt",
+			"render_type": "emissive_alpha",
+			"uv_anim": true
+		}
+	},
+	"animations": {
+		"blinking.step_head": {
+			"bedrock": "animation.oreville_ans.evxxlm",
+			"animation": "animation.vex.blinking_step_head",
+			"loop": true,
+			"animation_length": 0.15,
+			"loop_delay": "Math.random(0.1,3)",
+			"override_previous_animation": true
+		},
+		"kgklcq": {
+			"bedrock": "animation.oreville_ans.xghxmf",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.evlypi='jhotdc';return 0;"
+		},
+		"hzsxsn": {
+			"bedrock": "controller.animation.oreville_ans.ienaao",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"boat": "q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+							},
+							{
+								"minecart": "q.is_riding_any_entity_of_type('minecraft:minecart')"
+							}
+						]
+					},
+					"boat": {
+						"transitions": [
+							{
+								"default": "!q.is_riding_any_entity_of_type('minecraft:boat','minecraft:chest_boat')"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "zgynvb",
+								"resolved": "oreville_ans:zgynvb"
+							}
+						]
+					},
+					"minecart": {
+						"transitions": [
+							{
+								"default": "!q.is_riding_any_entity_of_type('minecraft:minecart')"
+							}
+						],
+						"sound_effects": [
+							{
+								"effect": "ylnbre",
+								"resolved": "oreville_ans:ylnbre"
+							}
+						]
+					}
+				}
+			}
+		},
+		"hspnai": {
+			"bedrock": "controller.animation.oreville_ans.yxsuam",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							{
+								"rxkiuo": "v.dxvpbr"
+							}
+						],
+						"transitions": [
+							{
+								"biuohp": "1"
+							}
+						],
+						"on_exit": [
+							"q.anim_time>=v.edfatt&&v.dxvpbr?{v.mwofua!=0?{v.fuppgm=q.bone_orientation_trs(v.mwofua);};v.kmdjay!=0?{v.zxxjyc=q.bone_orientation_trs(v.kmdjay);};v.xuasnj!=0?{v.lrnnba=q.bone_orientation_trs(v.xuasnj);};v.nwbaeq!=0?{v.lfzvoq=q.bone_orientation_trs(v.nwbaeq);};};v.edfatt=q.anim_time;"
+						]
+					},
+					"biuohp": {
+						"animations": [
+							{
+								"rxkiuo": "v.dxvpbr"
+							}
+						],
+						"transitions": [
+							{
+								"default": "1"
+							}
+						],
+						"on_exit": [
+							"q.anim_time>=v.edfatt&&v.dxvpbr?{v.mwofua!=0?{v.fuppgm=q.bone_orientation_trs(v.mwofua);};v.kmdjay!=0?{v.zxxjyc=q.bone_orientation_trs(v.kmdjay);};v.xuasnj!=0?{v.lrnnba=q.bone_orientation_trs(v.xuasnj);};v.nwbaeq!=0?{v.lfzvoq=q.bone_orientation_trs(v.nwbaeq);};};v.edfatt=q.anim_time;"
+						]
+					}
+				}
+			}
+		},
+		"rxkiuo": {
+			"bedrock": "animation.oreville_ans.kexzif",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.acloko=v.acloko+q.delta_time;v.mwofua!=0&&v.zgldyg==1&&!v.rghlbo?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.fuppgm.t.x/16;t.czy=v.fuppgm.t.y/16;t.hbg=v.fuppgm.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.hcmvys=Math.asin(t.vqv/t.ida);v.rdmkec=Math.atan2(t.lxb,t.zwc);};v.mwofua!=0&&v.zgldyg==1&&v.rghlbo?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.fuppgm.t.x/16;t.czy=v.fuppgm.t.y/16;t.hbg=v.fuppgm.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.qugnsz=Math.asin(t.vqv/t.ida);v.jgzabo=Math.atan2(t.lxb,t.zwc);};v.mwofua!=0&&v.zgldyg>1?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.fuppgm.t.x/16;t.czy=v.fuppgm.t.y/16;t.hbg=v.fuppgm.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.qugnsz=Math.asin(t.vqv/t.ida);v.jgzabo=Math.atan2(t.lxb,t.zwc);};v.kmdjay!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.zxxjyc.t.x/16;t.czy=v.zxxjyc.t.y/16;t.hbg=v.zxxjyc.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.zkzmro=Math.asin(t.vqv/t.ida);v.tgmzwf=Math.atan2(t.lxb,t.zwc);};v.xuasnj!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.lrnnba.t.x/16;t.czy=v.lrnnba.t.y/16;t.hbg=v.lrnnba.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.boadtw=Math.asin(t.vqv/t.ida);v.uumlcn=Math.atan2(t.lxb,t.zwc);};v.nwbaeq!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.lfzvoq.t.x/16;t.czy=v.lfzvoq.t.y/16;t.hbg=v.lfzvoq.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.yirztn=Math.asin(t.vqv/t.ida);v.hxyjgv=Math.atan2(t.lxb,t.zwc);};v.oohocu!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.wrxogz.t.x/16;t.czy=v.wrxogz.t.y/16;t.hbg=v.wrxogz.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.cyktco=Math.asin(t.vqv/t.ida);v.pkwiaw=Math.atan2(t.lxb,t.zwc);};v.onlypv!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.tatbcp.t.x/16;t.czy=v.tatbcp.t.y/16;t.hbg=v.tatbcp.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.aacasc=Math.asin(t.vqv/t.ida);v.oxglad=Math.atan2(t.lxb,t.zwc);};v.nbdusc!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.sxeczg.t.x/16;t.czy=v.sxeczg.t.y/16;t.hbg=v.sxeczg.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.vsnqcv=Math.asin(t.vqv/t.ida);v.drflti=Math.atan2(t.lxb,t.zwc);};v.snwgjb!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.gcbpjp.t.x/16;t.czy=v.gcbpjp.t.y/16;t.hbg=v.gcbpjp.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.pbgflo=Math.asin(t.vqv/t.ida);v.zmpzgo=Math.atan2(t.lxb,t.zwc);};v.xieegi!=0?{t.btb=q.distance_from_camera;t.jot=q.rotation_to_camera(0);t.cqr=q.rotation_to_camera(1)-q.body_y_rotation;t.wkc=-t.btb*Math.sin(t.cqr)*Math.cos(t.jot);t.syo=t.btb*Math.sin(-t.jot)+v.ohkbax;t.ptm=-t.btb*Math.cos(t.cqr)*Math.cos(t.jot);t.qrm=v.uroqqy.t.x/16;t.czy=v.uroqqy.t.y/16;t.hbg=v.uroqqy.t.z/16;t.lxb=t.qrm-t.wkc;t.vqv=t.czy-t.syo;t.zwc=t.hbg-t.ptm;t.ida=Math.sqrt(t.lxb*t.lxb+t.vqv*t.vqv+t.zwc*t.zwc);v.yxeyjs=Math.asin(t.vqv/t.ida);v.zexxcg=Math.atan2(t.lxb,t.zwc);};t.wkb=0;v.bmahve?{t.wkb=-q.target_y_rotation;};v.zgldyg==1&&!v.rghlbo?{t.ini=v.rdmkec;};v.zgldyg>=1||v.rghlbo?{t.ini=v.jgzabo;};v.habcyx=Math.min(v.acloko/3,1)*Math.clamp(1-(Math.abs(t.ini+t.wkb)/180),0,1);return 0;"
+		},
+		"mxkxfp": {
+			"bedrock": "animation.oreville_ans.aqyeyg",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.hcmvys=0;v.rdmkec=0;v.qugnsz=0;v.jgzabo=0;v.zkzmro=0;v.tgmzwf=0;v.boadtw=0;v.uumlcn=0;v.yirztn=0;v.hxyjgv=0;v.cyktco=0;v.pkwiaw=0;v.aacasc=0;v.oxglad=0;v.vsnqcv=0;v.drflti=0;v.pbgflo=0;v.zmpzgo=0;v.yxeyjs=0;v.zexxcg=0;return 0;"
+		},
+		"bqnjfd": {
+			"bedrock": "controller.animation.oreville_ans.uhvaxg",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							"mhrqvf",
+							"imkbdr",
+							"vscrcg",
+							"uauoua",
+							"idle",
+							{
+								"move": "q.modified_move_speed"
+							}
+						],
+						"transitions": [
+							{
+								"bnyqbz": "!q.is_alive"
+							}
+						]
+					},
+					"bnyqbz": {
+						"animations": [
+							"hurt",
+							"fhpsqq",
+							"ltqasd"
+						],
+						"on_entry": [
+							"v.eewgjn=q.life_time;"
+						],
+						"particle_effects": [
+							{
+								"effect": "frame",
+								"locator": "tmil",
+								"resolved": "oreville_ans:frame"
+							},
+							{
+								"effect": "mzocys",
+								"resolved": "oreville_ans:mzocys"
+							}
+						]
+					}
+				}
+			}
+		},
+		"owcvuz": {
+			"bedrock": "controller.animation.oreville_ans.cwzhbr",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"red": "t.dwk=q.is_charging?'red':'gray';return t.dwk=='red'?!v.lxzmtl:v.lxzmtl=='red';"
+							},
+							{
+								"gray": "t.dwk=='gray'?!v.lxzmtl:v.lxzmtl=='gray'"
+							}
+						]
+					},
+					"gray": {
+						"transitions": [
+							{
+								"default": "q.is_charging"
+							}
+						],
+						"on_entry": [
+							"v.lxzmtl='gray';"
+						],
+						"on_exit": [
+							"v.lxzmtl=0;"
+						],
+						"particle_effects": [
+							{
+								"effect": "txoeiy",
+								"resolved": "oreville_ans:txoeiy"
+							},
+							{
+								"effect": "tvbebm",
+								"pre_effect_script": "v.hrsqwn=0.5;v.jcalav=181/255;v.ypfpjf=219/255;v.rbnrwg=255/255;v.vimpib=0.5;",
+								"resolved": "oreville_ans:tvbebm"
+							}
+						]
+					},
+					"red": {
+						"transitions": [
+							{
+								"default": "!q.is_charging"
+							}
+						],
+						"on_entry": [
+							"v.lxzmtl='red';"
+						],
+						"on_exit": [
+							"v.lxzmtl=0;"
+						],
+						"particle_effects": [
+							{
+								"effect": "txoeiy",
+								"resolved": "oreville_ans:txoeiy"
+							},
+							{
+								"effect": "tvbebm",
+								"pre_effect_script": "v.hrsqwn=0.5;v.jcalav=255/255;v.ypfpjf=155/255;v.rbnrwg=172/255;v.vimpib=0.5;",
+								"resolved": "oreville_ans:tvbebm"
+							}
+						]
+					}
+				}
+			}
+		},
+		"imkbdr": {
+			"bedrock": "controller.animation.oreville_ans.gvipwb",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							"xhvvxo"
+						],
+						"transitions": [
+							{
+								"has_target": "q.has_target"
+							}
+						],
+						"blend_transition": 0.2
+					},
+					"has_target": {
+						"animations": [
+							"xhvvxo",
+							"tihkih"
+						],
+						"transitions": [
+							{
+								"default": "!q.has_target&&q.all_animations_finished"
+							}
+						],
+						"blend_transition": 0.2
+					}
+				}
+			}
+		},
+		"cfgpsz": {
+			"bedrock": "controller.animation.oreville_ans.aedvkj",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"fnwjwi": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_sword')"
+							}
+						]
+					},
+					"fnwjwi": {
+						"animations": [
+							"eypfmy"
+						],
+						"transitions": [
+							{
+								"default": "!q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:is_sword')"
+							}
+						],
+						"blend_transition": 0.2
+					}
+				}
+			}
+		},
+		"zsccdr": {
+			"bedrock": "controller.animation.oreville_ans.jsocpl",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"kypqpn": {
+						"animations": [
+							"charging"
+						],
+						"transitions": [
+							{
+								"fmriac": "v.attack_time>0"
+							},
+							{
+								"kielvs": "!q.is_charging&&q.any_animation_finished"
+							},
+							{
+								"yhlxyj": "!q.is_alive"
+							}
+						],
+						"blend_transition": 0.07,
+						"on_entry": [
+							"v.yjhjhs=q.life_time;"
+						]
+					},
+					"kielvs": {
+						"animations": [
+							"fybnag"
+						],
+						"transitions": [
+							{
+								"kypqpn": "q.is_charging&&q.state_time>=0.3"
+							},
+							{
+								"default": "!q.is_charging&&q.any_animation_finished"
+							}
+						],
+						"blend_transition": 0.07
+					},
+					"fmriac": {
+						"animations": [
+							"fybnag"
+						],
+						"transitions": [
+							{
+								"kypqpn": "q.is_charging&&q.state_time>=0.3"
+							},
+							{
+								"default": "!q.is_charging&&q.any_animation_finished"
+							}
+						],
+						"blend_transition": 0.07,
+						"particle_effects": [
+							{
+								"effect": "mzocys",
+								"resolved": "oreville_ans:mzocys"
+							}
+						]
+					},
+					"yhlxyj": {
+						"animations": [
+							"fybnag"
+						]
+					},
+					"default": {
+						"transitions": [
+							{
+								"kypqpn": "q.is_charging"
+							}
+						]
+					}
+				}
+			}
+		},
+		"fsetfs": {
+			"bedrock": "animation.oreville_ans.hiumxe",
+			"animation": "animation.vex.idle_1",
+			"loop": true
+		},
+		"wlqxdl": {
+			"bedrock": "animation.oreville_ans.yssqoa",
+			"animation": "animation.vex.glow",
+			"loop": true,
+			"relative_to_entity": [
+				"glow"
+			]
+		},
+		"mhrqvf": {
+			"bedrock": "animation.oreville_ans.kwurmm",
+			"animation": "animation.vex.anim_mhrqvf",
+			"animation_length": 0.9167,
+			"particle_effects": {
+				"0.1667": [
+					{
+						"effect": "wffdjp",
+						"locator": "tmil",
+						"resolved": "oreville_ans:wffdjp"
+					}
+				]
+			}
+		},
+		"idle": {
+			"bedrock": "animation.oreville_ans.qonfox",
+			"animation": "animation.vex.idle",
+			"loop": true
+		},
+		"lhbnex": {
+			"bedrock": "animation.oreville_ans.oqokch",
+			"animation": "animation.vex.unused_lhbnex",
+			"animation_length": 0.6
+		},
+		"uauoua": {
+			"bedrock": "animation.oreville_ans.semigg",
+			"animation": "animation.vex.idle_2",
+			"loop": true,
+			"anim_time_update": "q.anim_time+Math.pow(1.34,q.vertical_speed>0)*q.delta_time"
+		},
+		"tihkih": {
+			"bedrock": "animation.oreville_ans.jetafi",
+			"animation": "animation.vex.has_target_1",
+			"loop": true,
+			"animation_length": 0.5
+		},
+		"move": {
+			"bedrock": "animation.oreville_ans.lqhhgc",
+			"animation": "animation.vex.move",
+			"loop": true
+		},
+		"eypfmy": {
+			"bedrock": "animation.oreville_ans.yypxjk",
+			"animation": "animation.vex.anim_eypfmy",
+			"loop": "hold_on_last_frame"
+		},
+		"charging": {
+			"bedrock": "animation.oreville_ans.kdkxqz",
+			"animation": "animation.vex.charging",
+			"loop": "hold_on_last_frame",
+			"animation_length": 1
+		},
+		"fybnag": {
+			"bedrock": "animation.oreville_ans.vlvbss",
+			"animation": "animation.vex.attack",
+			"animation_length": 1.08333
+		},
+		"fhpsqq": {
+			"bedrock": "animation.oreville_ans.cejqvi",
+			"animation": "animation.vex.death_1",
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"particle_effects": {
+				"0.9167": [
+					{
+						"effect": "texrxh",
+						"locator": "tmil",
+						"resolved": "oreville_ans:texrxh"
+					}
+				]
+			}
+		},
+		"ltqasd": {
+			"bedrock": "animation.oreville_ans.awynsc",
+			"animation": "animation.vex.death_2",
+			"loop": true
+		},
+		"hurt": {
+			"bedrock": "animation.oreville_ans.shqrvc",
+			"animation": "animation.vex.hurt",
+			"animation_length": 0.5
+		},
+		"xhvvxo": {
+			"bedrock": "animation.oreville_ans.xhvvxo",
+			"animation": "animation.vex.has_target_2",
+			"loop": true,
+			"relative_to_entity": [
+				"head"
+			]
+		},
+		"vscrcg": {
+			"bedrock": "controller.animation.oreville_ans.unxrpk",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"nmagsu": "v.ugxubt>q.health"
+							},
+							{
+								"sxuoyn": "v.ugxubt<q.health"
+							}
+						],
+						"on_entry": [
+							"v.ugxubt=q.health;"
+						]
+					},
+					"nmagsu": {
+						"animations": [
+							"hurt"
+						],
+						"transitions": [
+							{
+								"default": "q.any_animation_finished"
+							},
+							{
+								"ebniro": "v.ugxubt>q.health"
+							}
+						],
+						"on_entry": [
+							"v.ugxubt=q.health;"
+						],
+						"particle_effects": [
+							{
+								"effect": "nmagsu",
+								"resolved": "oreville_ans:mzocys"
+							}
+						]
+					},
+					"ebniro": {
+						"animations": [
+							"hurt"
+						],
+						"transitions": [
+							{
+								"default": "q.any_animation_finished"
+							},
+							{
+								"nmagsu": "v.ugxubt>q.health"
+							}
+						],
+						"on_entry": [
+							"v.ugxubt=q.health;"
+						],
+						"particle_effects": [
+							{
+								"effect": "nmagsu",
+								"resolved": "oreville_ans:mzocys"
+							}
+						]
+					},
+					"sxuoyn": {
+						"transitions": [
+							{
+								"default": "1"
+							}
+						]
+					}
+				}
+			}
+		},
+		"vaistl": {
+			"bedrock": "controller.animation.oreville_ans.athfqg",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"transitions": [
+							{
+								"njqykr": "q.state_time>v.biljes"
+							}
+						],
+						"on_entry": [
+							"v.biljes=Math.random(0.1,3);"
+						]
+					},
+					"njqykr": {
+						"animations": [
+							"blinking.step_head"
+						],
+						"transitions": [
+							{
+								"default": "q.any_animation_finished"
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"scripts": {
+		"initialize": [
+			"v.ohkbax=0;",
+			"v.dxvpbr=0;",
+			"v.fuppgm=0;",
+			"v.zxxjyc=0;",
+			"v.lrnnba=0;",
+			"v.lfzvoq=0;",
+			"v.wrxogz=0;",
+			"v.tatbcp=0;",
+			"v.sxeczg=0;",
+			"v.gcbpjp=0;",
+			"v.uroqqy=0;",
+			"v.qhhozj=0;",
+			"v.sqrooj=0;",
+			"v.phqhsg=0;",
+			"v.levhfc=0;",
+			"v.fuppgm.t=0;",
+			"v.fuppgm.t.x=0;",
+			"v.fuppgm.t.y=0;",
+			"v.fuppgm.t.z=0;",
+			"v.qugnsz=0;",
+			"v.jgzabo=0;",
+			"v.zxxjyc.t=0;",
+			"v.zxxjyc.t.x=0;",
+			"v.zxxjyc.t.y=0;",
+			"v.zxxjyc.t.z=0;",
+			"v.zkzmro=0;",
+			"v.tgmzwf=0;",
+			"v.lrnnba.t=0;",
+			"v.lrnnba.t.x=0;",
+			"v.lrnnba.t.y=0;",
+			"v.lrnnba.t.z=0;",
+			"v.boadtw=0;",
+			"v.uumlcn=0;",
+			"v.lfzvoq.t=0;",
+			"v.lfzvoq.t.x=0;",
+			"v.lfzvoq.t.y=0;",
+			"v.lfzvoq.t.z=0;",
+			"v.yirztn=0;",
+			"v.hxyjgv=0;",
+			"v.wrxogz.t=0;",
+			"v.wrxogz.t.x=0;",
+			"v.wrxogz.t.y=0;",
+			"v.wrxogz.t.z=0;",
+			"v.cyktco=0;",
+			"v.pkwiaw=0;",
+			"v.tatbcp.t=0;",
+			"v.tatbcp.t.x=0;",
+			"v.tatbcp.t.y=0;",
+			"v.tatbcp.t.z=0;",
+			"v.aacasc=0;",
+			"v.oxglad=0;",
+			"v.sxeczg.t=0;",
+			"v.sxeczg.t.x=0;",
+			"v.sxeczg.t.y=0;",
+			"v.sxeczg.t.z=0;",
+			"v.vsnqcv=0;",
+			"v.drflti=0;",
+			"v.gcbpjp.t=0;",
+			"v.gcbpjp.t.x=0;",
+			"v.gcbpjp.t.y=0;",
+			"v.gcbpjp.t.z=0;",
+			"v.pbgflo=0;",
+			"v.zmpzgo=0;",
+			"v.uroqqy.t=0;",
+			"v.uroqqy.t.x=0;",
+			"v.uroqqy.t.y=0;",
+			"v.uroqqy.t.z=0;",
+			"v.yxeyjs=0;",
+			"v.zexxcg=0;",
+			"v.habcyx=0;",
+			"v.eewgjn=0;",
+			"v.lxzmtl=0;",
+			"v.hrsqwn=0;",
+			"v.jcalav=0;",
+			"v.ypfpjf=0;",
+			"v.rbnrwg=0;",
+			"v.vimpib=0;",
+			"v.yjhjhs=0;",
+			"v.vkzvpx=0;",
+			"v.jvamob=0;",
+			"v.ugxubt=0;",
+			"v.vsokrf=0;",
+			"v.tjswog=0;",
+			"v.biljes=0;",
+			"v.qpptaw=0;",
+			"v.qpptaw.t=0;",
+			"v.qpptaw.t.x=0;",
+			"v.qpptaw.t.y=0;",
+			"v.qpptaw.t.z=0;",
+			"v.qpptaw.r=0;",
+			"v.qpptaw.r.x=0;",
+			"v.qpptaw.r.y=0;",
+			"v.qpptaw.r.z=0;",
+			"v.qpptaw.s=0;",
+			"v.qpptaw.s.x=0;",
+			"v.qpptaw.s.y=0;",
+			"v.qpptaw.s.z=0;",
+			"v.edfatt=10000;",
+			"v.acloko=0;",
+			"v.zgldyg=1;",
+			"v.bmahve=1;",
+			"v.rghlbo=0;",
+			"v.mwofua='8dgo';",
+			"v.kmdjay=0;",
+			"v.xuasnj=0;",
+			"v.nwbaeq=0;",
+			"v.oohocu=0;",
+			"v.onlypv=0;",
+			"v.nbdusc=0;",
+			"v.snwgjb=0;",
+			"v.xieegi=0;",
+			"v.hcmvys=0;v.rdmkec=0;",
+			"v.tocraa=Math.random(0,1)<=0.005;",
+			"v.cdrzno=v.tocraa||q.is_baby||(!q.is_in_ui&&q.is_name_any('baby','Baby','vexling','Vexling','wisplet','Wisplet'));",
+			"v.actions_and_stuff=1;",
+			"v.evlypi='unknown';",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.narpvm=0;v.ykxvro=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sxlefg=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.ykxvro?{v.narpvm=1;};v.mgdgwf=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.tsuowj=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.mgdgwf?{v.narpvm=2;};v.atuocm=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.hqvvjb=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.atuocm?{v.narpvm=3;};};"
+		],
+		"pre_animation": [
+			"!q.is_in_ui&&!(v.is_paperdoll??0)?{v.ohkbax=q.is_owner_identifier_any('minecraft:player')?1.665:0;};",
+			"v.dxvpbr=1;",
+			"v.fuppgm=v.qpptaw;",
+			"v.zxxjyc=v.qpptaw;",
+			"v.lrnnba=v.qpptaw;",
+			"v.lfzvoq=v.qpptaw;",
+			"v.wrxogz=v.qpptaw;",
+			"v.tatbcp=v.qpptaw;",
+			"v.sxeczg=v.qpptaw;",
+			"v.gcbpjp=v.qpptaw;",
+			"v.uroqqy=v.qpptaw;",
+			"v.cdrzno=v.tocraa||q.is_baby||(!q.is_in_ui&&q.is_name_any('baby','Baby','vexling','Vexling','wisplet','Wisplet'));",
+			"v.actions_and_stuff=1;",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.qhhozj=0;v.ykxvro=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.ykxvro=v.sxlefg;};v.sqrooj=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sqrooj?{v.qhhozj=1;};v.mgdgwf=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.mgdgwf=v.tsuowj;};v.phqhsg=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.phqhsg?{v.qhhozj=2;};v.atuocm=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.atuocm=v.hqvvjb;};v.levhfc=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.levhfc?{v.qhhozj=3;};};"
+		],
+		"animate": [
+			"bqnjfd",
+			"cfgpsz",
+			"zsccdr",
+			{
+				"mxkxfp": "v.dxvpbr"
+			},
+			{
+				"hspnai": "v.dxvpbr&&v.wtlyok"
+			},
+			"hzsxsn",
+			"kgklcq",
+			"vaistl",
+			"fsetfs",
+			"wlqxdl",
+			{
+				"owcvuz": "q.is_alive"
+			}
+		]
+	},
+	"render_controllers": [
+		{
+			"id": "controller.render.oreville_ans.lnjffb",
+			"condition": null,
+			"arrays": {
+				"array.ncyhyp": [
+					"texture.default",
+					"texture.nhqpoi"
+				]
+			},
+			"geometry": "Geometry.default",
+			"textures": [
+				"Array.ncyhyp[q.is_charging]"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.ckkelc"
+				],
+				[
+					"star6",
+					"Material.vppzlt"
+				],
+				[
+					"rightwing",
+					"Material.vppzlt"
+				],
+				[
+					"leftwing",
+					"Material.vppzlt"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"!v.cdrzno"
+				]
+			],
+			"is_hurt_color": {
+				"r": 1,
+				"g": "!q.is_alive",
+				"b": "!q.is_alive",
+				"a": "q.is_alive?0.6:1-(q.life_time-v.eewgjn)*3.75"
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.oazftj",
+			"condition": "v.cdrzno",
+			"geometry": "Geometry.udcwre",
+			"textures": [
+				"Texture.udcwre"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.ckkelc"
+				],
+				[
+					"star6",
+					"Material.vppzlt"
+				],
+				[
+					"rightwing",
+					"Material.vppzlt"
+				],
+				[
+					"leftwing",
+					"Material.vppzlt"
+				]
+			],
+			"is_hurt_color": {
+				"r": 1,
+				"g": "!q.is_alive",
+				"b": "!q.is_alive",
+				"a": "q.is_alive?0.6:1-(q.life_time-v.eewgjn)*3.75"
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.cchsur",
+			"condition": "q.life_time<0.25",
+			"geometry": "Geometry.aueyju",
+			"textures": [
+				"Texture.aueyju"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.default"
+				]
+			],
+			"overlay_color": {
+				"r": 1,
+				"g": 1,
+				"b": 1,
+				"a": "Math.clamp(1.25-q.life_time*5,0,1)"
+			},
+			"is_hurt_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 0
+			},
+			"light_color_multiplier": "3",
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.vpaczi",
+			"condition": null,
+			"arrays": {
+				"array.epvbkc": [
+					"geometry.uwbvqm",
+					"geometry.rylnol"
+				],
+				"array.ncyhyp": [
+					"texture.default",
+					"texture.nhqpoi"
+				]
+			},
+			"geometry": "v.cdrzno?Geometry.zomwvg:Array.epvbkc[q.is_charging]",
+			"textures": [
+				"v.cdrzno?Texture.udcwre:Array.ncyhyp[q.is_charging]"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.nfimvm"
+				]
+			],
+			"is_hurt_color": {
+				"r": 1,
+				"g": "!q.is_alive",
+				"b": "!q.is_alive",
+				"a": "q.is_alive?0.6:1-(q.life_time-v.eewgjn)*3.75"
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.tqvorp",
+			"condition": "!v.cdrzno",
+			"arrays": {
+				"array.ncyhyp": [
+					"texture.default",
+					"texture.nhqpoi"
+				]
+			},
+			"geometry": "Geometry.sfeecb",
+			"textures": [
+				"Array.ncyhyp[q.is_charging]"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.ckkelc"
+				],
+				[
+					"star6",
+					"Material.vppzlt"
+				],
+				[
+					"rightwing",
+					"Material.vppzlt"
+				],
+				[
+					"leftwing",
+					"Material.vppzlt"
+				]
+			],
+			"is_hurt_color": {
+				"r": 1,
+				"g": "!q.is_alive",
+				"b": "!q.is_alive",
+				"a": "q.is_alive?0.6:1-(q.life_time-v.eewgjn)*3.75"
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.epmjww",
+			"condition": "!v.cdrzno",
+			"arrays": {
+				"array.ncyhyp": [
+					"texture.default",
+					"texture.nhqpoi"
+				]
+			},
+			"geometry": "Geometry.xuqdxy",
+			"textures": [
+				"Array.ncyhyp[q.is_charging]"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.nfimvm"
+				]
+			],
+			"is_hurt_color": {
+				"r": 1,
+				"g": "!q.is_alive",
+				"b": "!q.is_alive",
+				"a": "q.is_alive?0.6:1-(q.life_time-v.eewgjn)*3.75"
+			},
+			"ignore_lighting": true
+		},
+		{
+			"id": "controller.render.oreville_ans.hobhgd",
+			"condition": "q.is_alive&&!v.cdrzno",
+			"geometry": "Geometry.wlqxdl",
+			"textures": [
+				"!q.is_charging?Texture.wlqxdl:Texture.vihznw"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.wlqxdl"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.wtlyok&&!v.cdrzno"
+				]
+			],
+			"on_fire_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"is_hurt_color": {
+				"r": 0,
+				"g": 0,
+				"b": 0,
+				"a": 1
+			},
+			"ignore_lighting": true
+		}
+	],
+	"sound_effects": {
+		"zgynvb": "oreville_ans:zgynvb",
+		"ylnbre": "oreville_ans:ylnbre"
+	},
+	"particle_effects": {
+		"nmagsu": "oreville_ans:mzocys",
+		"txoeiy": "oreville_ans:txoeiy",
+		"tvbebm": "oreville_ans:tvbebm",
+		"wffdjp": "oreville_ans:wffdjp",
+		"texrxh": "oreville_ans:texrxh",
+		"frame": "oreville_ans:frame",
+		"mzocys": "oreville_ans:mzocys"
+	}
+}

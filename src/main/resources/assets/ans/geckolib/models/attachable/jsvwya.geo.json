@@ -1,0 +1,183 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_jsvwya",
+				"texture_width": 16,
+				"texture_height": 16
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "bucket",
+					"parent": "item",
+					"pivot": [
+						0,
+						4,
+						0
+					]
+				},
+				{
+					"name": "mob",
+					"parent": "bucket",
+					"pivot": [
+						0,
+						4,
+						0
+					]
+				},
+				{
+					"name": "mob_body",
+					"parent": "mob",
+					"pivot": [
+						0,
+						8,
+						0
+					],
+					"rotation": [
+						-25,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								7,
+								-2
+							],
+							"size": [
+								3,
+								2,
+								3
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										3,
+										3
+									],
+									"uv_size": [
+										3,
+										2
+									]
+								},
+								"east": {
+									"uv": [
+										0,
+										3
+									],
+									"uv_size": [
+										3,
+										2
+									]
+								},
+								"south": {
+									"uv": [
+										9,
+										3
+									],
+									"uv_size": [
+										3,
+										2
+									]
+								},
+								"west": {
+									"uv": [
+										6,
+										3
+									],
+									"uv_size": [
+										3,
+										2
+									]
+								},
+								"up": {
+									"uv": [
+										6,
+										0
+									],
+									"uv_size": [
+										-3,
+										3
+									]
+								},
+								"down": {
+									"uv": [
+										9,
+										3
+									],
+									"uv_size": [
+										-3,
+										-3
+									]
+								}
+							}
+						},
+						{
+							"origin": [
+								0,
+								7,
+								1
+							],
+							"size": [
+								0,
+								2,
+								4.5
+							],
+							"pivot": [
+								0,
+								9,
+								1
+							],
+							"rotation": [
+								-20,
+								0,
+								0
+							],
+							"uv": {
+								"east": {
+									"uv": [
+										0,
+										7
+									],
+									"uv_size": [
+										4.5,
+										2
+									]
+								},
+								"west": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										0,
+										0
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

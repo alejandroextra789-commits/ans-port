@@ -1,0 +1,83 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "minecraft:portal_reverse_particle",
+ "source": {
+  "layer": "root",
+  "file": "particles/efa.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_add",
+ "render": "add",
+ "bedrock_texture": "textures/particle/nether_portal_pixel_glow",
+ "texture": "ans:textures/particle_fx/particle/nether_portal_pixel_glow.png",
+ "texture_size": [
+  64,
+  128
+ ],
+ "components": {
+  "minecraft:emitter_rate_steady": {
+   "spawn_rate": 1,
+   "max_particles": 1
+  },
+  "minecraft:emitter_lifetime_once": {
+   "active_time": 10
+  },
+  "minecraft:emitter_lifetime_expression": {
+   "activation_expression": 1,
+   "expiration_expression": 0
+  },
+  "minecraft:emitter_shape_box": {
+   "offset": [
+    0.5,
+    0,
+    0.5
+   ],
+   "half_dimensions": [
+    0.5,
+    0,
+    0.5
+   ],
+   "direction": [
+    0,
+    0,
+    0
+   ],
+   "surface_only": true
+  },
+  "minecraft:particle_initial_speed": 0,
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": "Math.Random(3,3.1)"
+  },
+  "minecraft:particle_initialization": {
+   "per_update_expression": "v.tsgarm=v.particle_age/v.particle_lifetime;v.distance=(1-(-1*(v.tsgarm)+Math.Pow((v.tsgarm),2)*2));",
+   "per_render_expression": "v.tsgarm=v.particle_age/v.particle_lifetime;v.distance=(1-(-1*(v.tsgarm)+Math.Pow((v.tsgarm),2)*2));"
+  },
+  "minecraft:particle_motion_dynamic": {
+   "linear_acceleration": [
+    "v.direction.x*v.distance",
+    "v.direction.y*v.distance+v.tsgarm",
+    "v.direction.z*v.distance"
+   ]
+  },
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    "10*(v.particle_random_2*0.02+0.05)*(1-(v.particle_age/v.particle_lifetime))",
+    "10*(v.particle_random_2*0.02+0.05)*(1-(v.particle_age/v.particle_lifetime))"
+   ],
+   "facing_camera_mode": "rotate_xyz",
+   "uv": {
+    "texture_width": 1,
+    "texture_height": 2,
+    "uv": [
+     0,
+     "Math.floor(v.particle_random_4*2)"
+    ],
+    "uv_size": [
+     1,
+     1
+    ]
+   }
+  }
+ }
+}

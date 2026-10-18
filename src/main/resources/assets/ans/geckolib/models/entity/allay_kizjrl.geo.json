@@ -1,0 +1,265 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.allay_kizjrl",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "bodyarmoroffset",
+					"pivot": [
+						0,
+						-14,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"parent": "root",
+					"pivot": [
+						0,
+						4.75,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								5.01,
+								-1.5
+							],
+							"size": [
+								3,
+								3,
+								3
+							],
+							"inflate": 0.2,
+							"uv": [
+								4,
+								2
+							]
+						},
+						{
+							"origin": [
+								-1.5,
+								3.01,
+								-1.5
+							],
+							"size": [
+								3,
+								2,
+								3
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										7,
+										8
+									],
+									"uv_size": [
+										3,
+										2
+									]
+								},
+								"east": {
+									"uv": [
+										4,
+										8
+									],
+									"uv_size": [
+										3,
+										2
+									]
+								},
+								"south": {
+									"uv": [
+										13,
+										8
+									],
+									"uv_size": [
+										3,
+										2
+									]
+								},
+								"west": {
+									"uv": [
+										10,
+										8
+									],
+									"uv_size": [
+										3,
+										2
+									]
+								},
+								"up": {
+									"uv": [
+										11,
+										12
+									],
+									"uv_size": [
+										3,
+										3
+									]
+								},
+								"down": {
+									"uv": [
+										17,
+										14
+									],
+									"uv_size": [
+										3,
+										-3
+									]
+								}
+							}
+						}
+					],
+					"locators": {
+						"tmil": [
+							0,
+							6,
+							0
+						]
+					}
+				},
+				{
+					"name": "eye",
+					"parent": "body",
+					"pivot": [
+						0,
+						6,
+						-1.65
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.25,
+								5.5,
+								-1.75
+							],
+							"size": [
+								2.5,
+								1.35,
+								0
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										15,
+										0
+									],
+									"uv_size": [
+										3,
+										1
+									]
+								},
+								"east": {
+									"uv": [
+										15,
+										0
+									],
+									"uv_size": [
+										0,
+										1
+									]
+								},
+								"south": {
+									"uv": [
+										18,
+										0
+									],
+									"uv_size": [
+										3,
+										1
+									]
+								},
+								"west": {
+									"uv": [
+										18,
+										0
+									],
+									"uv_size": [
+										0,
+										1
+									]
+								},
+								"up": {
+									"uv": [
+										15,
+										0
+									],
+									"uv_size": [
+										3,
+										0
+									]
+								},
+								"down": {
+									"uv": [
+										18,
+										0
+									],
+									"uv_size": [
+										3,
+										0
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "rightarm",
+					"parent": "root",
+					"pivot": [
+						-2,
+						4.5,
+						0
+					]
+				},
+				{
+					"name": "rightitem",
+					"parent": "rightarm",
+					"pivot": [
+						-2,
+						2.5,
+						0
+					],
+					"locators": {
+						"tmil_pwtl": [
+							-2,
+							2.5,
+							0
+						]
+					}
+				},
+				{
+					"name": "glow",
+					"parent": "root",
+					"pivot": [
+						0,
+						6,
+						0
+					]
+				}
+			]
+		}
+	]
+}

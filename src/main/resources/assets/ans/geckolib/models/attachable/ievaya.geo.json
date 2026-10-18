@@ -1,0 +1,276 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_ievaya",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "coppergolemstatue",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "coppergolembody",
+					"parent": "coppergolemstatue",
+					"pivot": [
+						0,
+						3,
+						0
+					]
+				},
+				{
+					"name": "coppergolemwaist",
+					"parent": "coppergolembody",
+					"pivot": [
+						0,
+						3,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								3,
+								-2.5
+							],
+							"size": [
+								6,
+								4,
+								5
+							],
+							"uv": [
+								825,
+								12
+							]
+						}
+					]
+				},
+				{
+					"name": "coppergolemleftarm",
+					"parent": "coppergolemwaist",
+					"pivot": [
+						3,
+						7,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								3,
+								2,
+								-1.5
+							],
+							"size": [
+								2,
+								6,
+								3
+							],
+							"uv": [
+								864,
+								14
+							]
+						}
+					]
+				},
+				{
+					"name": "coppergolemrightarm",
+					"parent": "coppergolemwaist",
+					"pivot": [
+						-3,
+						7,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5,
+								2,
+								-1.5
+							],
+							"size": [
+								2,
+								6,
+								3
+							],
+							"uv": [
+								854,
+								14
+							]
+						}
+					]
+				},
+				{
+					"name": "coppergolemhead",
+					"parent": "coppergolemwaist",
+					"pivot": [
+						0,
+						7,
+						0
+					]
+				},
+				{
+					"name": "coppergolemheadspin",
+					"parent": "coppergolemhead",
+					"pivot": [
+						0,
+						7,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								7,
+								-4
+							],
+							"size": [
+								6,
+								4,
+								8
+							],
+							"uv": [
+								825,
+								0
+							]
+						},
+						{
+							"origin": [
+								-1,
+								6,
+								-5
+							],
+							"size": [
+								2,
+								3,
+								2
+							],
+							"uv": [
+								871,
+								0
+							]
+						},
+						{
+							"origin": [
+								-1,
+								11,
+								-1
+							],
+							"size": [
+								2,
+								2,
+								2
+							],
+							"uv": [
+								855,
+								9
+							]
+						},
+						{
+							"origin": [
+								-2,
+								12.25,
+								-2
+							],
+							"size": [
+								4,
+								4,
+								4
+							],
+							"inflate": -0.25,
+							"uv": [
+								854,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "coppergolemrightleg",
+					"parent": "coppergolemstatue",
+					"pivot": [
+						-1.5,
+						3,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								0,
+								-1.5
+							],
+							"size": [
+								3,
+								3,
+								3
+							],
+							"uv": [
+								825,
+								21
+							]
+						}
+					]
+				},
+				{
+					"name": "coppergolemleftleg",
+					"parent": "coppergolemstatue",
+					"pivot": [
+						1.5,
+						3,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								0,
+								0,
+								-1.5
+							],
+							"size": [
+								3,
+								3,
+								3
+							],
+							"uv": [
+								837,
+								21
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

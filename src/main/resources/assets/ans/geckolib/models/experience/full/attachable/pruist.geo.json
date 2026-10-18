@@ -1,0 +1,129 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_pruist",
+				"texture_width": 384,
+				"texture_height": 256,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [
+					0,
+					0,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "rightleg",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"inflate": 0.01,
+							"uv": [
+								150,
+								52
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"uv": [
+								128,
+								56
+							]
+						}
+					]
+				},
+				{
+					"name": "leftleg",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								150,
+								68
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								128,
+								70
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

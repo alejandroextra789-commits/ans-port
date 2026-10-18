@@ -1,0 +1,167 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_ikbhzs",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [
+					0,
+					0.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "driedkelp",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "flap",
+					"parent": "driedkelp",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						0,
+						42.5
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								0,
+								-5
+							],
+							"size": [
+								5,
+								0,
+								10
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										296,
+										195
+									],
+									"uv_size": [
+										4.98,
+										9.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "flap1",
+					"parent": "flap",
+					"pivot": [
+						-3,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						0,
+						-90
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								-5
+							],
+							"size": [
+								5,
+								0,
+								10
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										291,
+										195
+									],
+									"uv_size": [
+										4.98,
+										9.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "flap2",
+					"parent": "flap",
+					"pivot": [
+						2,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						0,
+						-90
+					],
+					"cubes": [
+						{
+							"origin": [
+								2,
+								0,
+								-5
+							],
+							"size": [
+								5,
+								0,
+								10
+							],
+							"uv": {
+								"up": {
+									"uv": [
+										301,
+										195
+									],
+									"uv_size": [
+										4.98,
+										9.98
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

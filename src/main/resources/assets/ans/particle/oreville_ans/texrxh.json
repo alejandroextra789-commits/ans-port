@@ -1,0 +1,72 @@
+{
+ "format": "ans:bedrock_particle",
+ "format_version": 1,
+ "identifier": "oreville_ans:texrxh",
+ "source": {
+  "layer": "root",
+  "file": "particles/egl.json",
+  "format_version": "1.10.0"
+ },
+ "material": "particles_blend",
+ "render": "blend",
+ "bedrock_texture": "textures/particle/glowing_white",
+ "texture": "ans:textures/particle_fx/particle/glowing_white.png",
+ "texture_size": [
+  160,
+  160
+ ],
+ "curves": {
+  "variable.uyupem": {
+   "type": "linear",
+   "input": "v.particle_age",
+   "horizontal_range": "v.particle_lifetime",
+   "nodes": [
+    1,
+    1,
+    1,
+    0.75,
+    0
+   ]
+  }
+ },
+ "components": {
+  "minecraft:emitter_rate_instant": {
+   "num_particles": 6
+  },
+  "minecraft:emitter_lifetime_once": {
+   "active_time": 1
+  },
+  "minecraft:emitter_shape_point": {},
+  "minecraft:particle_lifetime_expression": {
+   "max_lifetime": "Math.random(2,7)"
+  },
+  "minecraft:particle_initial_speed": 7,
+  "minecraft:particle_motion_dynamic": {
+   "linear_acceleration": [
+    0,
+    1,
+    0
+   ],
+   "linear_drag_coefficient": 5.5
+  },
+  "minecraft:particle_appearance_billboard": {
+   "size": [
+    "0.32*v.uyupem",
+    "0.32*v.uyupem"
+   ],
+   "facing_camera_mode": "rotate_xyz",
+   "uv": {
+    "texture_width": 16,
+    "texture_height": 16,
+    "uv": [
+     0,
+     0
+    ],
+    "uv_size": [
+     16,
+     16
+    ]
+   }
+  }
+ }
+}

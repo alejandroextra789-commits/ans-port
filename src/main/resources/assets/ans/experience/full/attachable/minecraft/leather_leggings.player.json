@@ -1,0 +1,239 @@
+{
+	"format": "ans:bedrock_attachable",
+	"format_version": 1,
+	"identifier": "minecraft:leather_leggings.player",
+	"source": {
+		"layer": "SP2",
+		"file": "attachables/mkt.json",
+		"min_engine_version": null
+	},
+	"items": {
+		"minecraft:leather_leggings": "q.is_owner_identifier_any('minecraft:player')"
+	},
+	"animation_file": "ans:attachable/attachables",
+	"geometry": {
+		"ttywjo": "ans:experience/full/attachable/niixax",
+		"mocaaj": "ans:experience/full/attachable/pkzsqt",
+		"default": "ans:experience/full/attachable/kyszqo",
+		"jtqjtl": "ans:experience/full/attachable/pkzsqt",
+		"ylripg": "ans:experience/full/attachable/niixax",
+		"leather_leggings": "ans:experience/full/attachable/kyszqo"
+	},
+	"bone_bindings": {},
+	"textures": {
+		"default": "ans:textures/experience/full/attachable/cdq.png",
+		"uuzfpo": "ans:textures/experience/full/attachable/djk.png",
+		"enchanted": "minecraft:textures/misc/enchanted_glint_item.png"
+	},
+	"materials": {
+		"default": {
+			"bedrock": "armor_leather",
+			"render_type": "cutout",
+			"color_mask": true
+		},
+		"enchanted": {
+			"bedrock": "armor_leather_enchanted",
+			"render_type": "cutout",
+			"glint": true,
+			"color_mask": true
+		},
+		"avltwh": {
+			"bedrock": "avltwh",
+			"render_type": "cutout"
+		},
+		"zyrdrt": {
+			"bedrock": "zyrdrt",
+			"render_type": "invisible"
+		},
+		"rueivk": {
+			"bedrock": "rueivk",
+			"render_type": "cutout",
+			"glint": true,
+			"color_mask": true
+		},
+		"xxcvdc": {
+			"bedrock": "xxcvdc",
+			"render_type": "cutout",
+			"color_mask": true
+		},
+		"plgjvn": {
+			"bedrock": "jpfveg",
+			"render_type": "cutout"
+		}
+	},
+	"animations": {
+		"nywoyr": {
+			"bedrock": "animation.oreville_ans.ctqdnf",
+			"animation": "animation.attachables.oreville_ans_ctqdnf",
+			"loop": true
+		},
+		"offset": {
+			"bedrock": "animation.armor.leggings.offset",
+			"animation": "animation.attachables.armor_leggings_offset",
+			"loop": true
+		},
+		"zvhsej": {
+			"bedrock": "animation.oreville_ans.zvhsej",
+			"animation": "animation.attachables.oreville_ans_zvhsej",
+			"animation_length": 0.25
+		},
+		"lqlrks": {
+			"bedrock": "controller.animation.oreville_ans.dmaerc",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							{
+								"nywoyr": "!c.is_first_person&&q.is_owner_identifier_any('minecraft:copper_golem')"
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"scripts": {
+		"initialize": [
+			"v.mucbaa=0;",
+			"v.oreville_leggings_armor_layer_hidden=0;",
+			"v.jipoeq=0;",
+			"v.pihgwp=0;"
+		],
+		"pre_animation": [
+			"v.mucbaa=c.owning_entity->v.oreville_leggings_armor_layer_hidden;",
+			"v.jipoeq=(!q.is_pack_setting_selected('oreville_ans:cvmbbr','disabled')&&q.is_owner_identifier_any('minecraft:player')&&!v.mucbaa)||!q.is_owner_identifier_any('minecraft:player');"
+		],
+		"animate": [
+			"offset",
+			"zvhsej",
+			{
+				"lqlrks": "q.is_attached"
+			}
+		]
+	},
+	"render_controllers": [
+		{
+			"id": "controller.render.oreville_ans.ayjoyc",
+			"condition": "v.has_trim&&q.is_pack_setting_enabled('oreville_ans:ltqtrn')",
+			"geometry": "Geometry.default",
+			"textures": [
+				"Texture.uuzfpo",
+				"v.has_trim?v.trim_path:Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.zyrdrt"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					false
+				],
+				[
+					"leather*",
+					"v.jipoeq"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.bzjhwc",
+			"condition": "q.is_pack_setting_enabled('oreville_ans:ltqtrn')",
+			"geometry": "Geometry.default",
+			"textures": [
+				"Texture.uuzfpo",
+				"Texture.enchanted"
+			],
+			"materials": [
+				[
+					"*",
+					"v.has_trim?(v.is_enchanted?Material.rueivk:Material.xxcvdc):(v.is_enchanted?Material.enchanted:Material.default)"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					false
+				],
+				[
+					"leather*",
+					"v.jipoeq"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.vtnsiu",
+			"condition": "!q.is_pack_setting_enabled('oreville_ans:ltqtrn')",
+			"geometry": "Geometry.default",
+			"textures": [
+				"Texture.uuzfpo",
+				"Texture.enchanted"
+			],
+			"materials": [
+				[
+					"*",
+					"v.is_enchanted?Material.enchanted:Material.default"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					false
+				],
+				[
+					"leather*",
+					"v.jipoeq"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.tvjlvq",
+			"condition": "v.has_trim",
+			"geometry": "q.is_pack_setting_enabled('oreville_ans:ltqtrn')?Geometry.ttywjo:Geometry.mocaaj",
+			"textures": [
+				"v.has_trim?v.trim_path:Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.avltwh"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.jipoeq"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.atdbzk",
+			"condition": "v.has_trim&&q.is_pack_setting_enabled('oreville_ans:ltqtrn')",
+			"geometry": "Geometry.default",
+			"textures": [
+				"v.has_trim?v.trim_path:Texture.default",
+				"Texture.enchanted"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.plgjvn"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.jipoeq"
+				],
+				[
+					"leather*",
+					false
+				]
+			]
+		}
+	],
+	"sound_effects": {},
+	"particle_effects": {}
+}

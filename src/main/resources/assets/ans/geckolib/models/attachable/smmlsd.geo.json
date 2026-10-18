@@ -1,0 +1,111 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_smmlsd",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "item",
+					"parent": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "blockside",
+					"parent": "item",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								-8
+							],
+							"size": [
+								16,
+								16,
+								16
+							],
+							"uv": {
+								"north": {
+									"uv": [
+										128,
+										128
+									],
+									"uv_size": [
+										15.98,
+										15.98
+									]
+								},
+								"east": {
+									"uv": [
+										128,
+										128
+									],
+									"uv_size": [
+										15.98,
+										15.98
+									]
+								},
+								"south": {
+									"uv": [
+										128,
+										128
+									],
+									"uv_size": [
+										15.98,
+										15.98
+									]
+								},
+								"west": {
+									"uv": [
+										128,
+										128
+									],
+									"uv_size": [
+										15.98,
+										15.98
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "itemglow",
+					"pivot": [
+						0,
+						8,
+						0
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,609 @@
+{
+	"format": "ans:bedrock_attachable",
+	"format_version": 1,
+	"identifier": "minecraft:firefly_bush",
+	"source": {
+		"layer": "root",
+		"file": "attachables/gor.json",
+		"min_engine_version": "1.8.0"
+	},
+	"items": {
+		"minecraft:firefly_bush": null
+	},
+	"animation_file": "ans:attachable/attachables",
+	"geometry": {
+		"default": "ans:experience/full/attachable/xhruoq",
+		"jwogkq": "ans:attachable/cmcaur",
+		"lxqtnf": "ans:attachable/adymly",
+		"pzoqgz": "ans:attachable/ecnuoa"
+	},
+	"bone_bindings": {
+		"ans:experience/full/attachable/xhruoq": {
+			"item": "q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:attachable/cmcaur": {
+			"item": "c.item_slot=='torso'?'body':q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:attachable/adymly": {
+			"item": "q.item_slot_to_bone_name(c.item_slot)"
+		},
+		"ans:attachable/ecnuoa": {
+			"item": "q.item_slot_to_bone_name(c.item_slot)"
+		}
+	},
+	"textures": {
+		"default": "ans:textures/experience/full/attachable/czc.png",
+		"mdxogn": "ans:textures/attachable/dmh.png",
+		"qbjpuj": "ans:textures/attachable/dqm.png",
+		"firefly_bush": "ans:textures/experience/full/attachable/dmw.png"
+	},
+	"materials": {
+		"default": {
+			"bedrock": "entity_alphatest",
+			"render_type": "cutout"
+		},
+		"mqwxej": {
+			"bedrock": "mqwxej",
+			"render_type": "emissive_alpha",
+			"uv_anim": true
+		},
+		"auulis": {
+			"bedrock": "auulis",
+			"render_type": "additive",
+			"uv_anim": true
+		},
+		"klduzy": {
+			"bedrock": "klduzy",
+			"render_type": "cutout"
+		}
+	},
+	"animations": {
+		"nywoyr": {
+			"bedrock": "animation.oreville_ans.ctqdnf",
+			"animation": "animation.attachables.oreville_ans_ctqdnf",
+			"loop": true
+		},
+		"kgklcq": {
+			"bedrock": "animation.oreville_ans.xghxmf",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.evlypi='jhotdc';return 0;"
+		},
+		"tmiaar": {
+			"bedrock": "controller.animation.oreville_ans.zxyjrj",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							{
+								"iqtvxr": "v.kbdhhf"
+							}
+						],
+						"transitions": [
+							{
+								"biuohp": "1"
+							}
+						],
+						"on_exit": [
+							"q.anim_time>=v.codvro?{v.dgimdg=q.bone_orientation_trs(v.iujjoj);};v.codvro=q.anim_time;"
+						]
+					},
+					"biuohp": {
+						"animations": [
+							{
+								"iqtvxr": "v.kbdhhf"
+							}
+						],
+						"transitions": [
+							{
+								"default": "1"
+							}
+						],
+						"on_exit": [
+							"q.anim_time>=v.codvro?{v.dgimdg=q.bone_orientation_trs(v.iujjoj);};v.codvro=q.anim_time;"
+						]
+					}
+				}
+			}
+		},
+		"iqtvxr": {
+			"bedrock": "animation.oreville_ans.fjawdf",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.cimiam=q.is_owner_identifier_any('minecraft:player')?Math.lerp(v.cimiam,q.is_sneaking?1.13:1.63,q.delta_time/0.2);v.jtptyo?{!(v.gfqeeo??0)?{v.gfqeeo=1;}:{c.is_first_person?{t.cvo=0;t.gvu=1.62;t.ujm=0;}:{t.yvs=q.distance_from_camera;t.awh=q.rotation_to_camera(0);t.qyv=q.rotation_to_camera(1)-q.body_y_rotation;t.cvo=-t.yvs*Math.sin(t.qyv)*Math.cos(t.awh);t.gvu=t.yvs*Math.sin(-t.awh)+v.cimiam;t.ujm=-t.yvs*Math.cos(t.qyv)*Math.cos(t.awh);};t.twu=v.dgimdg.t.x/16;t.zqy=v.dgimdg.t.y/16;t.flf=v.dgimdg.t.z/16;t.swd=t.twu-t.cvo;t.isp=t.zqy-t.gvu;t.eao=t.flf-t.ujm;t.exp=Math.sqrt(t.swd*t.swd+t.isp*t.isp+t.eao*t.eao);v.hcmvys=Math.asin(t.isp/t.exp);v.rdmkec=Math.atan2(t.swd,t.eao);};};q.is_riding&&!q.is_in_ui&&!c.is_first_person?{v.rdmkec=v.rdmkec+q.target_y_rotation;};!v.jtptyo?{v.gfqeeo=1;};return 0;"
+		},
+		"iwhtlx": {
+			"bedrock": "animation.oreville_ans.zqrbiy",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.hcmvys=0;v.rdmkec=0;return 0;"
+		},
+		"ijinqh": {
+			"bedrock": "animation.oreville_ans.wyfqqp",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "t.zmm=c.is_first_person?(q.is_swimming?-0.95:0.3):(q.is_swimming?-1:0.23);t.zig=q.position(1);t.zig=Math.floor(t.zig-Math.floor(t.zig)+t.zmm);t.mbb=q.relative_block_has_any_tag(0,t.zig,0,'water');!t.mbb?{t.mbb=q.relative_block_has_any_tag(0,t.zig-1,0,'water')+q.relative_block_has_any_tag(0,t.zig+1,0,'water');t.mbb>0?{t.mbb=t.mbb+q.relative_block_has_any_tag(1,t.zig,0,'water');};t.mbb>1?{t.mbb=t.mbb+q.relative_block_has_any_tag(-1,t.zig,0,'water');};t.mbb>2?{t.mbb=t.mbb+q.relative_block_has_any_tag(0,t.zig,1,'water');};t.mbb==4?{t.mbb=t.mbb+q.relative_block_has_any_tag(0,t.zig,-1,'water');};t.mbb=t.mbb>=5;};v.wrttzh=t.mbb;return 0;"
+		},
+		"etlgys": {
+			"bedrock": "controller.animation.oreville_ans.tltbpv",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							{
+								"lxdqzp": "v.bnvwmr"
+							},
+							{
+								"ymqchc": "v.khgcce??0"
+							},
+							{
+								"ivtkla": "v.zkvwce??0"
+							},
+							{
+								"fjgjfm": "v.khrfdk??0"
+							}
+						],
+						"transitions": [
+							{
+								"biuohp": "1"
+							}
+						],
+						"on_exit": [
+							"q.anim_time>=v.sxzvht?{v.bnmsjw=q.bone_orientation_trs(v.spuphm);};v.sxzvht=q.anim_time;"
+						]
+					},
+					"biuohp": {
+						"animations": [
+							{
+								"lxdqzp": "v.bnvwmr"
+							},
+							{
+								"ymqchc": "v.khgcce??0"
+							},
+							{
+								"ivtkla": "v.zkvwce??0"
+							},
+							{
+								"fjgjfm": "v.khrfdk??0"
+							}
+						],
+						"transitions": [
+							{
+								"default": "1"
+							}
+						],
+						"on_exit": [
+							"q.anim_time>=v.sxzvht?{v.bnmsjw=q.bone_orientation_trs(v.spuphm);};v.sxzvht=q.anim_time;"
+						]
+					}
+				}
+			}
+		},
+		"lxdqzp": {
+			"bedrock": "animation.oreville_ans.mldazs",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "t.a=v.bnmsjw.t.x/16;t.b=-v.bnmsjw.t.z/16;t.y=v.bnmsjw.t.y/16;t.s=Math.sin(v.wthuxi);t.c=Math.cos(v.wthuxi);t.x=t.a*t.c-t.b*t.s;t.z=t.a*t.s+t.b*t.c;v.ciuozv?{v.vzqfgi=q.relative_block_has_any_tag(t.x,v.sfhypz,t.z,'water');};!v.ciuozv?{v.vzqfgi=q.is_in_water;};return 0;"
+		},
+		"ymqchc": {
+			"bedrock": "animation.oreville_ans.lpdqok",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.spnhnx=v.spnhnx+q.delta_time;v.spnhnx>=v.vkwqzl?{v.vzqfgi?{v.aqeyfg=v.cahagh;v.dkwyvt=v.jmwcle;v.ixeugr=v.ixeugr*v.qtyzsz;v.drwtyh=v.drwtyh*v.qtyzsz;};v.aqeyfg=v.aqeyfg*v.yidefr*16;t.ikw=t.x*16;t.nmy=t.z*16;t.ixr=t.y*16;!v.ogwxra?{v.onazoy=t.ikw;v.sbnnkw=t.ixr;v.zvogyn=t.nmy;v.ogwxra=1;};t.swd=t.ikw-v.onazoy;t.isp=t.ixr-v.sbnnkw;t.eao=t.nmy-v.zvogyn;v.onazoy=t.ikw;v.sbnnkw=t.ixr;v.zvogyn=t.nmy;t.kyb=t.swd*v.ixeugr;t.aqs=t.isp*v.ixeugr;t.fjl=t.eao*v.ixeugr;t.x=q.position(0);t.y=q.position(1);t.z=q.position(2);!v.hkmnpn?{v.iaxjoy=t.x;v.eeydlb=t.y;v.iynnie=t.z;v.hkmnpn=1;};t.swd=(t.x-v.iaxjoy)*16;t.isp=(t.y-v.eeydlb)*16;t.eao=(t.z-v.iynnie)*16;v.iaxjoy=t.x;v.eeydlb=t.y;v.iynnie=t.z;v.rmydys=t.isp;v.mlwzvz?{v.sbbjhd=-Math.sqrt(t.swd*t.swd+t.eao*t.eao);}:{v.wfhvmb=t.swd;v.sbbjhd=t.eao;};v.xfolcx=Math.sqrt(v.wfhvmb*v.wfhvmb+v.sbbjhd*v.sbbjhd);t.awh=Math.sin(-v.wthuxi);t.udb=Math.cos(v.wthuxi);v.nqexps=-(v.wfhvmb*t.udb+v.sbbjhd*-t.awh);v.sfdeke=-(v.wfhvmb*t.awh+v.sbbjhd*t.udb);t.kyb=t.kyb+v.nqexps*-v.drwtyh;t.fjl=t.fjl+v.sfdeke*-v.drwtyh;v.ceavhn=v.ceavhn-v.nqexps;v.pqsyvc=v.pqsyvc-v.sfdeke;v.mlwzvz&&v.ofrbls?{t.hil=c.owning_entity->v.pwllfx;t.hil!=0?{v.wdirmd=t.hil;};t.hil=Math.clamp(t.hil+90,90,180);t.kgp=Math.cos(t.hil);t.oyk=0;t.anx=Math.sin(t.hil);t.dvu=t.kgp;}:{t.oyk=0;t.anx=1;t.dvu=0;};v.motnsu=v.rmydys;t.kyb=t.kyb+t.oyk*v.motnsu*v.drwtyh;t.aqs=t.aqs+t.anx*v.motnsu*v.drwtyh;t.fjl=t.fjl+t.dvu*v.motnsu*v.drwtyh;v.xakcyn=v.xakcyn-v.motnsu;loop(v.spnhnx/v.vkwqzl,{v.spnhnx=v.spnhnx-v.vkwqzl;v.coijhc=v.coijhc+t.oyk*v.aqeyfg*v.vkwqzl;v.ycxhin=v.ycxhin+t.anx*v.aqeyfg*v.vkwqzl;v.gflrsf=v.gflrsf+t.dvu*v.aqeyfg*v.vkwqzl;v.motnsu=!q.is_gliding||v.mlwzvz?v.motnsu:Math.abs(v.motnsu);v.jboire?{v.tnmcbu=v.vzqfgi?v.tnmcbu-2*q.delta_time:v.tnmcbu;};v.coijhc=v.coijhc*v.dkwyvt;v.ycxhin=v.ycxhin*v.dkwyvt;v.gflrsf=v.gflrsf*v.dkwyvt;v.ceavhn=v.ceavhn+v.coijhc*v.vkwqzl;v.xakcyn=v.xakcyn+v.ycxhin*v.vkwqzl;v.pqsyvc=v.pqsyvc+v.gflrsf*v.vkwqzl;t.aoe=v.ceavhn-t.ikw;t.vqt=v.xakcyn-t.ixr;t.jls=v.pqsyvc-t.nmy;t.yvs=Math.sqrt(t.aoe*t.aoe+t.jls*t.jls+t.vqt*t.vqt);t.yvs>v.hzbkxl?{t.xuu=t.aoe/t.yvs;t.rup=t.vqt/t.yvs;t.onq=t.jls/t.yvs;v.ceavhn=v.ceavhn-t.xuu*(t.yvs-v.hzbkxl);v.xakcyn=v.xakcyn-t.rup*(t.yvs-v.hzbkxl);v.pqsyvc=v.pqsyvc-t.onq*(t.yvs-v.hzbkxl);t.kbi=t.kyb-v.coijhc;t.dpd=t.aqs-v.ycxhin;t.vyg=t.fjl-v.gflrsf;t.asg=t.kbi*t.xuu+t.dpd*t.rup+t.vyg*t.onq;t.asg<=0?{t.dej=-(1+v.yiuyji)*t.asg;v.coijhc=v.coijhc-t.xuu*t.dej;v.ycxhin=v.ycxhin-t.rup*t.dej;v.gflrsf=v.gflrsf-t.onq*t.dej;};};t.kyb=0;t.aqs=0;t.fjl=0;});v.mlfmbo=v.ceavhn-t.ikw;v.kwxgtr=v.xakcyn-t.ixr;v.rboaag=v.pqsyvc-t.nmy;};return 0;"
+		},
+		"ivtkla": {
+			"bedrock": "animation.oreville_ans.ommtae",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.vzqfgi?{v.zaatfz=v.hedksz;v.dkwyvt=v.jmwcle;v.ixeugr=v.ixeugr*v.qtyzsz;v.drwtyh=v.drwtyh*v.qtyzsz;v.lfanle=v.lfanle*v.qtyzsz;};!v.ogwxra?{v.onazoy=t.x;v.zvogyn=t.z;v.ogwxra=1;};v.wfhvmb=t.x-v.onazoy;v.sbbjhd=t.z-v.zvogyn;v.wfhvmb=-v.wfhvmb*v.ixeugr;v.sbbjhd=-v.sbbjhd*v.ixeugr;v.onazoy=t.x;v.zvogyn=t.z;v.mlwzvz?{v.wfhvmb=v.wfhvmb+0;v.sbbjhd=v.sbbjhd+-v.drwtyh*q.modified_move_speed/20;}:{t.x=q.position(0);t.z=q.position(2);!v.hkmnpn?{v.iaxjoy=t.x;v.iynnie=t.z;v.hkmnpn=1;};t.swd=t.x-v.iaxjoy;t.eao=t.z-v.iynnie;t.kgp=Math.sqrt(t.swd*t.swd+t.eao*t.eao);t.kgp=t.kgp>1?t.kgp:1;t.swd=t.swd/t.kgp;t.eao=t.eao/t.kgp;v.iaxjoy=t.x;v.iynnie=t.z;v.wfhvmb=v.wfhvmb+t.swd*v.drwtyh;v.sbbjhd=v.sbbjhd+t.eao*v.drwtyh;};v.xfolcx=Math.sqrt(v.wfhvmb*v.wfhvmb+v.sbbjhd*v.sbbjhd);q.is_owner_identifier_any('minecraft:player')?{v.epatlu=q.target_y_rotation;};t.awh=Math.sin(-v.wthuxi);t.udb=Math.cos(v.wthuxi);v.sfdeke=v.wfhvmb*t.awh+v.sbbjhd*t.udb;v.nqexps=-(v.wfhvmb*t.udb+v.sbbjhd*-t.awh);v.tnmcbu=v.tnmcbu*v.dkwyvt;v.mlwzvz&&v.iwbrrx?{t.hil=c.owning_entity->v.pwllfx;t.hil!=0?{v.wdirmd=t.hil;};t.xlb=v.wdirmd-v.ukeclk;v.tnmcbu=v.tnmcbu+t.xlb*v.zaatfz*q.delta_time;}:{t.rfz=-v.zaatfz*v.ukeclk*q.delta_time;v.tnmcbu=v.tnmcbu+t.rfz;};t.wgv=-v.zaatfz*v.eqktue*q.delta_time;v.nldqlc=v.nldqlc*v.dkwyvt+t.wgv;t.v=!q.is_gliding||v.mlwzvz?q.vertical_speed*v.lfanle:Math.abs(q.vertical_speed)*v.lfanle;t.v!=0?{v.tnmcbu=v.tnmcbu+t.v*-Math.sin(v.ukeclk);v.nldqlc=v.nldqlc+t.v*-Math.sin(v.eqktue);};v.shxsbo?{v.tnmcbu=v.vzqfgi?v.tnmcbu-2*q.delta_time:v.tnmcbu;};v.tnmcbu=v.tnmcbu+v.sfdeke*0.1;v.nldqlc=v.nldqlc+v.nqexps*-0.1;v.ukeclk=v.ukeclk+v.tnmcbu;v.eqktue=v.eqktue+v.nldqlc;v.ukeclk>v.zidheq?{v.ukeclk=v.zidheq;v.tnmcbu=Math.copy_sign(v.tnmcbu,-1)*v.yiuyji;}:v.ukeclk<v.nkzcnj?{v.ukeclk=v.nkzcnj;v.tnmcbu=Math.copy_sign(v.tnmcbu,1)*v.yiuyji;};v.eqktue>v.rzlcix?{v.eqktue=v.rzlcix;v.nldqlc=Math.copy_sign(v.nldqlc,-1)*v.yiuyji;}:v.eqktue<v.nikklf?{v.eqktue=v.nikklf;v.nldqlc=Math.copy_sign(v.nldqlc,1)*v.yiuyji;};return 0;"
+		},
+		"fjgjfm": {
+			"bedrock": "animation.oreville_ans.btapxl",
+			"animation": null,
+			"loop": true,
+			"anim_time_update": "v.spnhnx=v.spnhnx+q.delta_time;v.spnhnx>=v.vkwqzl?{v.vzqfgi?{v.aqeyfg=v.cahagh;v.dkwyvt=v.jmwcle;v.xjzvax=v.xjzvax*v.qtyzsz;};v.aqeyfg=v.aqeyfg*v.yidefr;t.shu=v.bnmsjw.r.y+(!v.mlwzvz?q.body_y_rotation);t.cvo=Math.cos(v.bnmsjw.r.x);t.gcb=Math.sin(v.bnmsjw.r.x);t.gvu=Math.cos(t.shu);t.ilt=Math.sin(t.shu);t.ujm=Math.cos(v.bnmsjw.r.z);t.pir=Math.sin(v.bnmsjw.r.z);t.kxc=-(t.gvu*t.ujm);t.gdz=t.gvu*t.pir;t.uqc=-t.ilt;t.awd=-(t.gcb*t.ilt*t.ujm-t.cvo*t.pir);t.flb=t.gcb*t.ilt*t.pir+t.cvo*t.ujm;t.add=t.gcb*t.gvu;t.wok=-(t.cvo*t.ilt*t.ujm+t.gcb*t.pir);t.iqy=t.cvo*t.ilt*t.pir-t.gcb*t.ujm;t.jhs=t.cvo*t.gvu;t.isp=q.position_delta(1)!=-0.0784?q.position_delta(1);t.awl=q.position(0)+q.position_delta(0);t.lmo=q.position(1)+t.isp;t.bul=q.position(2)+q.position_delta(2);!v.ogwxra?{v.ogwxra=1;v.vakdcz=t.awl;v.vzmwvl=t.lmo;v.cgiibq=t.bul;t.ikw=t.x+t.awl;t.ixr=t.y+t.lmo;t.nmy=t.z+t.bul;v.vuwbly=t.ixr-0;v.hdocyq=t.ixr-0.140625;v.otmjui=t.ixr-0.28125;v.jwftqg=t.ixr-0.421875;v.uncfyl=t.ixr-0.5625;}:{v.vakdcz=Math.lerp(v.vakdcz,t.awl,q.delta_time/0.05);v.vzmwvl=Math.lerp(v.vzmwvl,t.lmo,q.delta_time/0.05);v.cgiibq=Math.lerp(v.cgiibq,t.bul,q.delta_time/0.05);t.ikw=t.x+v.vakdcz;t.ixr=t.y+v.vzmwvl;t.nmy=t.z+v.cgiibq;};t.ham=t.ikw-v.onazoy;t.pzn=t.ixr-v.sbnnkw;t.jhv=t.nmy-v.zvogyn;v.onazoy=t.ikw;v.sbnnkw=t.ixr;v.zvogyn=t.nmy;v.mlwzvz&&1?{t.hil=c.owning_entity->v.pwllfx;t.hil!=0?{v.wdirmd=t.hil;};t.hil=Math.clamp(t.hil+90,90,180);t.kgp=Math.cos(t.hil);t.oyk=0;t.anx=Math.sin(t.hil);t.dvu=-t.kgp;}:{t.oyk=0;t.anx=1;t.dvu=0;};t.ovg=(0)/16;t.wcj=(-1)/16;t.lff=(0)/16;t.rxg=t.ikw+t.ovg*t.kxc+t.wcj*t.awd+t.lff*t.wok;t.ycn=t.ixr+t.ovg*t.gdz+t.wcj*t.flb+t.lff*t.iqy;t.qjj=t.nmy+t.ovg*t.uqc+t.wcj*t.add+t.lff*t.jhs;t.vqo=0;t.oks=-0.89;t.hko=0.447;t.hgz=Math.sqrt(t.vqo*t.vqo+t.oks*t.oks+t.hko*t.hko);t.vqo=t.vqo/t.hgz;t.oks=t.oks/t.hgz;t.hko=t.hko/t.hgz;t.blt=t.vqo*t.kxc+t.oks*t.awd+t.hko*t.wok;t.fvh=t.vqo*t.gdz+t.oks*t.flb+t.hko*t.iqy;t.xnc=t.vqo*t.uqc+t.oks*t.add+t.hko*t.jhs;t.une=1;v.cadkjg=v.cadkjg+t.oyk*v.aqeyfg*v.vkwqzl;v.sevrck=v.sevrck+t.anx*v.aqeyfg*v.vkwqzl;v.ncnuqd=v.ncnuqd+t.dvu*v.aqeyfg*v.vkwqzl;v.cadkjg=v.cadkjg*v.dkwyvt;v.sevrck=v.sevrck*v.dkwyvt;v.ncnuqd=v.ncnuqd*v.dkwyvt;v.rmonqz=v.rmonqz+v.cadkjg*v.vkwqzl;v.vuwbly=v.vuwbly+v.sevrck*v.vkwqzl;v.hzzhqr=v.hzzhqr+v.ncnuqd*v.vkwqzl;v.mlwzvz?{v.rmonqz=v.rmonqz+t.ham;v.hzzhqr=v.hzzhqr+t.jhv;t.jvz=Math.sqrt(t.ham*t.ham+t.jhv*t.jhv);v.ncnuqd=v.ncnuqd+t.jvz;};t.aoe=v.rmonqz-t.ikw;t.vqt=v.vuwbly-t.ixr;t.jls=v.hzzhqr-t.nmy;t.yvs=Math.sqrt(t.aoe*t.aoe+t.jls*t.jls+t.vqt*t.vqt);t.xjd=(3)/16;t.yvs>t.xjd?{t.xuu=t.aoe/t.yvs;t.rup=t.vqt/t.yvs;t.onq=t.jls/t.yvs;v.rmonqz=t.ikw+t.xuu*t.xjd;v.vuwbly=t.ixr+t.rup*t.xjd;v.hzzhqr=t.nmy+t.onq*t.xjd;t.kbi=-v.cadkjg;t.dpd=-v.sevrck;t.vyg=-v.ncnuqd;t.asg=t.kbi*t.xuu+t.dpd*t.rup+t.vyg*t.onq;t.asg<=0?{t.dej=-(1+v.yiuyji)*t.asg;v.cadkjg=v.cadkjg-t.xuu*t.dej;v.sevrck=v.sevrck-t.rup*t.dej;v.ncnuqd=v.ncnuqd-t.onq*t.dej;};};t.une?{t.swd=v.rmonqz-t.rxg;t.isp=v.vuwbly-t.ycn;t.eao=v.hzzhqr-t.qjj;t.bxv=t.blt*t.swd+t.fvh*t.isp+t.xnc*t.eao;t.bxv<0?{v.rmonqz=v.rmonqz+t.blt*-t.bxv;v.vuwbly=v.vuwbly+t.fvh*-t.bxv;v.hzzhqr=v.hzzhqr+t.xnc*-t.bxv;t.kbi=-v.cadkjg;t.dpd=-v.sevrck;t.vyg=-v.ncnuqd;t.asg=t.kbi*t.blt+t.dpd*t.fvh+t.vyg*t.xnc;t.asg<=0?{t.dej=-(1+v.yiuyji)*t.asg;v.cadkjg=v.cadkjg-t.blt*t.dej;v.sevrck=v.sevrck-t.fvh*t.dej;v.ncnuqd=v.ncnuqd-t.xnc*t.dej;};};};v.vitnmw=v.vitnmw+t.oyk*v.aqeyfg*v.vkwqzl;v.noakoi=v.noakoi+t.anx*v.aqeyfg*v.vkwqzl;v.wvcupw=v.wvcupw+t.dvu*v.aqeyfg*v.vkwqzl;v.vitnmw=v.vitnmw*v.dkwyvt;v.noakoi=v.noakoi*v.dkwyvt;v.wvcupw=v.wvcupw*v.dkwyvt;v.uvngnz=v.uvngnz+v.vitnmw*v.vkwqzl;v.hdocyq=v.hdocyq+v.noakoi*v.vkwqzl;v.xpnuzd=v.xpnuzd+v.wvcupw*v.vkwqzl;v.mlwzvz?{v.uvngnz=v.uvngnz+t.ham;v.xpnuzd=v.xpnuzd+t.jhv;t.jvz=Math.sqrt(t.ham*t.ham+t.jhv*t.jhv);v.wvcupw=v.wvcupw+t.jvz;};t.aoe=v.uvngnz-v.rmonqz;t.vqt=v.hdocyq-v.vuwbly;t.jls=v.xpnuzd-v.hzzhqr;t.yvs=Math.sqrt(t.aoe*t.aoe+t.jls*t.jls+t.vqt*t.vqt);t.xjd=(3)/16;t.yvs>t.xjd?{t.xuu=t.aoe/t.yvs;t.rup=t.vqt/t.yvs;t.onq=t.jls/t.yvs;v.uvngnz=v.rmonqz+t.xuu*t.xjd;v.hdocyq=v.vuwbly+t.rup*t.xjd;v.xpnuzd=v.hzzhqr+t.onq*t.xjd;t.kbi=v.cadkjg-v.vitnmw;t.dpd=v.sevrck-v.noakoi;t.vyg=v.ncnuqd-v.wvcupw;t.asg=t.kbi*t.xuu+t.dpd*t.rup+t.vyg*t.onq;t.asg<=0?{t.wcy=1/0.1;t.zvg=1/0.1;t.ajm=t.wcy+t.zvg;t.dej=(-(1+v.yiuyji)*t.asg)/t.ajm;v.vitnmw=v.vitnmw-t.xuu*t.dej*t.wcy;v.noakoi=v.noakoi-t.rup*t.dej*t.wcy;v.wvcupw=v.wvcupw-t.onq*t.dej*t.wcy;v.cadkjg=v.cadkjg+t.xuu*t.dej*t.zvg;v.sevrck=v.sevrck+t.rup*t.dej*t.zvg;v.ncnuqd=v.ncnuqd+t.onq*t.dej*t.zvg;};};t.une?{t.swd=v.uvngnz-t.rxg;t.isp=v.hdocyq-t.ycn;t.eao=v.xpnuzd-t.qjj;t.bxv=t.blt*t.swd+t.fvh*t.isp+t.xnc*t.eao;t.bxv<0?{v.uvngnz=v.uvngnz+t.blt*-t.bxv;v.hdocyq=v.hdocyq+t.fvh*-t.bxv;v.xpnuzd=v.xpnuzd+t.xnc*-t.bxv;t.kbi=-v.vitnmw;t.dpd=-v.noakoi;t.vyg=-v.wvcupw;t.asg=t.kbi*t.blt+t.dpd*t.fvh+t.vyg*t.xnc;t.asg<=0?{t.dej=-(1+v.yiuyji)*t.asg;v.vitnmw=v.vitnmw-t.blt*t.dej;v.noakoi=v.noakoi-t.fvh*t.dej;v.wvcupw=v.wvcupw-t.xnc*t.dej;};};};v.dwrnjc=v.dwrnjc+t.oyk*v.aqeyfg*v.vkwqzl;v.yfhlpb=v.yfhlpb+t.anx*v.aqeyfg*v.vkwqzl;v.kyawuj=v.kyawuj+t.dvu*v.aqeyfg*v.vkwqzl;v.dwrnjc=v.dwrnjc*v.dkwyvt;v.yfhlpb=v.yfhlpb*v.dkwyvt;v.kyawuj=v.kyawuj*v.dkwyvt;v.ovrgzm=v.ovrgzm+v.dwrnjc*v.vkwqzl;v.otmjui=v.otmjui+v.yfhlpb*v.vkwqzl;v.cvjtbp=v.cvjtbp+v.kyawuj*v.vkwqzl;v.mlwzvz?{v.ovrgzm=v.ovrgzm+t.ham;v.cvjtbp=v.cvjtbp+t.jhv;t.jvz=Math.sqrt(t.ham*t.ham+t.jhv*t.jhv);v.kyawuj=v.kyawuj+t.jvz;};t.aoe=v.ovrgzm-v.uvngnz;t.vqt=v.otmjui-v.hdocyq;t.jls=v.cvjtbp-v.xpnuzd;t.yvs=Math.sqrt(t.aoe*t.aoe+t.jls*t.jls+t.vqt*t.vqt);t.xjd=(3)/16;t.yvs>t.xjd?{t.xuu=t.aoe/t.yvs;t.rup=t.vqt/t.yvs;t.onq=t.jls/t.yvs;v.ovrgzm=v.uvngnz+t.xuu*t.xjd;v.otmjui=v.hdocyq+t.rup*t.xjd;v.cvjtbp=v.xpnuzd+t.onq*t.xjd;t.kbi=v.vitnmw-v.dwrnjc;t.dpd=v.noakoi-v.yfhlpb;t.vyg=v.wvcupw-v.kyawuj;t.asg=t.kbi*t.xuu+t.dpd*t.rup+t.vyg*t.onq;t.asg<=0?{t.wcy=1/0.1;t.zvg=1/0.1;t.ajm=t.wcy+t.zvg;t.dej=(-(1+v.yiuyji)*t.asg)/t.ajm;v.dwrnjc=v.dwrnjc-t.xuu*t.dej*t.wcy;v.yfhlpb=v.yfhlpb-t.rup*t.dej*t.wcy;v.kyawuj=v.kyawuj-t.onq*t.dej*t.wcy;v.vitnmw=v.vitnmw+t.xuu*t.dej*t.zvg;v.noakoi=v.noakoi+t.rup*t.dej*t.zvg;v.wvcupw=v.wvcupw+t.onq*t.dej*t.zvg;};};t.une?{t.swd=v.ovrgzm-t.rxg;t.isp=v.otmjui-t.ycn;t.eao=v.cvjtbp-t.qjj;t.bxv=t.blt*t.swd+t.fvh*t.isp+t.xnc*t.eao;t.bxv<0?{v.ovrgzm=v.ovrgzm+t.blt*-t.bxv;v.otmjui=v.otmjui+t.fvh*-t.bxv;v.cvjtbp=v.cvjtbp+t.xnc*-t.bxv;t.kbi=-v.dwrnjc;t.dpd=-v.yfhlpb;t.vyg=-v.kyawuj;t.asg=t.kbi*t.blt+t.dpd*t.fvh+t.vyg*t.xnc;t.asg<=0?{t.dej=-(1+v.yiuyji)*t.asg;v.dwrnjc=v.dwrnjc-t.blt*t.dej;v.yfhlpb=v.yfhlpb-t.fvh*t.dej;v.kyawuj=v.kyawuj-t.xnc*t.dej;};};};v.itpecb=v.itpecb+t.oyk*v.aqeyfg*v.vkwqzl;v.pcnmva=v.pcnmva+t.anx*v.aqeyfg*v.vkwqzl;v.qhakca=v.qhakca+t.dvu*v.aqeyfg*v.vkwqzl;v.itpecb=v.itpecb*v.dkwyvt;v.pcnmva=v.pcnmva*v.dkwyvt;v.qhakca=v.qhakca*v.dkwyvt;v.rbizzk=v.rbizzk+v.itpecb*v.vkwqzl;v.jwftqg=v.jwftqg+v.pcnmva*v.vkwqzl;v.otsbpv=v.otsbpv+v.qhakca*v.vkwqzl;v.mlwzvz?{v.rbizzk=v.rbizzk+t.ham;v.otsbpv=v.otsbpv+t.jhv;t.jvz=Math.sqrt(t.ham*t.ham+t.jhv*t.jhv);v.qhakca=v.qhakca+t.jvz;};t.aoe=v.rbizzk-v.ovrgzm;t.vqt=v.jwftqg-v.otmjui;t.jls=v.otsbpv-v.cvjtbp;t.yvs=Math.sqrt(t.aoe*t.aoe+t.jls*t.jls+t.vqt*t.vqt);t.xjd=(3)/16;t.yvs>t.xjd?{t.xuu=t.aoe/t.yvs;t.rup=t.vqt/t.yvs;t.onq=t.jls/t.yvs;v.rbizzk=v.ovrgzm+t.xuu*t.xjd;v.jwftqg=v.otmjui+t.rup*t.xjd;v.otsbpv=v.cvjtbp+t.onq*t.xjd;t.kbi=v.dwrnjc-v.itpecb;t.dpd=v.yfhlpb-v.pcnmva;t.vyg=v.kyawuj-v.qhakca;t.asg=t.kbi*t.xuu+t.dpd*t.rup+t.vyg*t.onq;t.asg<=0?{t.wcy=1/0.1;t.zvg=1/0.1;t.ajm=t.wcy+t.zvg;t.dej=(-(1+v.yiuyji)*t.asg)/t.ajm;v.itpecb=v.itpecb-t.xuu*t.dej*t.wcy;v.pcnmva=v.pcnmva-t.rup*t.dej*t.wcy;v.qhakca=v.qhakca-t.onq*t.dej*t.wcy;v.dwrnjc=v.dwrnjc+t.xuu*t.dej*t.zvg;v.yfhlpb=v.yfhlpb+t.rup*t.dej*t.zvg;v.kyawuj=v.kyawuj+t.onq*t.dej*t.zvg;};};t.une?{t.swd=v.rbizzk-t.rxg;t.isp=v.jwftqg-t.ycn;t.eao=v.otsbpv-t.qjj;t.bxv=t.blt*t.swd+t.fvh*t.isp+t.xnc*t.eao;t.bxv<0?{v.rbizzk=v.rbizzk+t.blt*-t.bxv;v.jwftqg=v.jwftqg+t.fvh*-t.bxv;v.otsbpv=v.otsbpv+t.xnc*-t.bxv;t.kbi=-v.itpecb;t.dpd=-v.pcnmva;t.vyg=-v.qhakca;t.asg=t.kbi*t.blt+t.dpd*t.fvh+t.vyg*t.xnc;t.asg<=0?{t.dej=-(1+v.yiuyji)*t.asg;v.itpecb=v.itpecb-t.blt*t.dej;v.pcnmva=v.pcnmva-t.fvh*t.dej;v.qhakca=v.qhakca-t.xnc*t.dej;};};};v.bhyayv=v.bhyayv+t.oyk*v.aqeyfg*v.vkwqzl;v.bnwsbd=v.bnwsbd+t.anx*v.aqeyfg*v.vkwqzl;v.wmvrfm=v.wmvrfm+t.dvu*v.aqeyfg*v.vkwqzl;v.bhyayv=v.bhyayv*v.dkwyvt;v.bnwsbd=v.bnwsbd*v.dkwyvt;v.wmvrfm=v.wmvrfm*v.dkwyvt;v.ogipui=v.ogipui+v.bhyayv*v.vkwqzl;v.uncfyl=v.uncfyl+v.bnwsbd*v.vkwqzl;v.wxhzwl=v.wxhzwl+v.wmvrfm*v.vkwqzl;v.mlwzvz?{v.ogipui=v.ogipui+t.ham;v.wxhzwl=v.wxhzwl+t.jhv;t.jvz=Math.sqrt(t.ham*t.ham+t.jhv*t.jhv);v.wmvrfm=v.wmvrfm+t.jvz;};t.aoe=v.ogipui-v.rbizzk;t.vqt=v.uncfyl-v.jwftqg;t.jls=v.wxhzwl-v.otsbpv;t.yvs=Math.sqrt(t.aoe*t.aoe+t.jls*t.jls+t.vqt*t.vqt);t.xjd=(3)/16;t.yvs>t.xjd?{t.xuu=t.aoe/t.yvs;t.rup=t.vqt/t.yvs;t.onq=t.jls/t.yvs;v.ogipui=v.rbizzk+t.xuu*t.xjd;v.uncfyl=v.jwftqg+t.rup*t.xjd;v.wxhzwl=v.otsbpv+t.onq*t.xjd;t.kbi=v.itpecb-v.bhyayv;t.dpd=v.pcnmva-v.bnwsbd;t.vyg=v.qhakca-v.wmvrfm;t.asg=t.kbi*t.xuu+t.dpd*t.rup+t.vyg*t.onq;t.asg<=0?{t.wcy=1/0.4;t.zvg=1/0.1;t.ajm=t.wcy+t.zvg;t.dej=(-(1+v.yiuyji)*t.asg)/t.ajm;v.bhyayv=v.bhyayv-t.xuu*t.dej*t.wcy;v.bnwsbd=v.bnwsbd-t.rup*t.dej*t.wcy;v.wmvrfm=v.wmvrfm-t.onq*t.dej*t.wcy;v.itpecb=v.itpecb+t.xuu*t.dej*t.zvg;v.pcnmva=v.pcnmva+t.rup*t.dej*t.zvg;v.qhakca=v.qhakca+t.onq*t.dej*t.zvg;};};t.une?{t.swd=v.ogipui-t.rxg;t.isp=v.uncfyl-t.ycn;t.eao=v.wxhzwl-t.qjj;t.bxv=t.blt*t.swd+t.fvh*t.isp+t.xnc*t.eao;t.bxv<0?{v.ogipui=v.ogipui+t.blt*-t.bxv;v.uncfyl=v.uncfyl+t.fvh*-t.bxv;v.wxhzwl=v.wxhzwl+t.xnc*-t.bxv;t.kbi=-v.bhyayv;t.dpd=-v.bnwsbd;t.vyg=-v.wmvrfm;t.asg=t.kbi*t.blt+t.dpd*t.fvh+t.vyg*t.xnc;t.asg<=0?{t.dej=-(1+v.yiuyji)*t.asg;v.bhyayv=v.bhyayv-t.blt*t.dej;v.bnwsbd=v.bnwsbd-t.fvh*t.dej;v.wmvrfm=v.wmvrfm-t.xnc*t.dej;};};};v.nioklt=(v.rmonqz-t.ikw)*16;v.kpxoox=(v.vuwbly-t.ixr)*16;v.vxreqx=(v.hzzhqr-t.nmy)*16;v.qkcbjd=Math.sqrt(v.nioklt*v.nioklt+v.kpxoox*v.kpxoox+v.vxreqx*v.vxreqx);v.stxeap=(v.uvngnz-v.rmonqz)*16;v.pdnvwj=(v.hdocyq-v.vuwbly)*16;v.vgbnre=(v.xpnuzd-v.hzzhqr)*16;v.gdmfqk=Math.sqrt(v.stxeap*v.stxeap+v.pdnvwj*v.pdnvwj+v.vgbnre*v.vgbnre);v.txkrmi=(v.ovrgzm-v.uvngnz)*16;v.yirujp=(v.otmjui-v.hdocyq)*16;v.hzwxpy=(v.cvjtbp-v.xpnuzd)*16;v.huoeag=Math.sqrt(v.txkrmi*v.txkrmi+v.yirujp*v.yirujp+v.hzwxpy*v.hzwxpy);v.vkitwe=(v.rbizzk-v.ovrgzm)*16;v.lokydh=(v.jwftqg-v.otmjui)*16;v.vfuhjy=(v.otsbpv-v.cvjtbp)*16;v.qnjjcl=Math.sqrt(v.vkitwe*v.vkitwe+v.lokydh*v.lokydh+v.vfuhjy*v.vfuhjy);v.oekngn=(v.ogipui-v.rbizzk)*16;v.qggwse=(v.uncfyl-v.jwftqg)*16;v.sxtsfe=(v.wxhzwl-v.otsbpv)*16;v.blhcvd=Math.sqrt(v.oekngn*v.oekngn+v.qggwse*v.qggwse+v.sxtsfe*v.sxtsfe);v.ubvsfr=Math.asin(v.kpxoox/v.qkcbjd)+90;v.bvelxt=Math.atan2(v.nioklt,v.vxreqx);v.uppymr=v.qkcbjd;v.divjio=Math.asin(v.pdnvwj/v.gdmfqk)+90;v.xbkjfy=Math.atan2(v.stxeap,v.vgbnre);v.iprohr=v.gdmfqk;v.rbanuv=Math.asin(v.yirujp/v.huoeag)+90;v.corkce=Math.atan2(v.txkrmi,v.hzwxpy);v.ujwgsz=v.huoeag;v.mujqya=Math.asin(v.lokydh/v.qnjjcl)+90;v.xxthgi=Math.atan2(v.vkitwe,v.vfuhjy);v.fifemr=v.qnjjcl;v.wzjqtx=Math.asin(v.qggwse/v.blhcvd)+90;v.fixcml=Math.atan2(v.oekngn,v.sxtsfe);v.rwqvlp=v.blhcvd;!v.xiqslo?{v.awjcqr=v.wzjqtx;v.plpwev=v.fixcml/4;v.xiqslo=1;};v.awjcqr=Math.lerprotate(v.awjcqr,Math.clamp(v.wmvrfm*3,-45,45)+v.sxtsfe/12.5*90+(c.is_first_person?v.wdirmd),Math.min(q.delta_time/0.1,1));v.pjzcwx=Math.lerprotate(v.pjzcwx,Math.clamp(v.bhyayv*3,-45,45)+v.oekngn/12.5*90,Math.min(q.delta_time/0.1,1));};return 0;"
+		},
+		"fwehwv": {
+			"bedrock": "animation.oreville_ans.ubplbw",
+			"animation": "animation.attachables.oreville_ans_ubplbw",
+			"loop": "hold_on_last_frame",
+			"animation_length": 100,
+			"anim_time_update": "v.nszoco?q.anim_time+q.delta_time:0"
+		},
+		"yytrhz": {
+			"bedrock": "animation.oreville_ans.sjdljf",
+			"animation": "animation.attachables.oreville_ans_sjdljf",
+			"loop": "hold_on_last_frame",
+			"animation_length": 100,
+			"anim_time_update": "v.nszoco?q.anim_time+q.delta_time:0"
+		},
+		"fall": {
+			"bedrock": "animation.oreville_ans.ninldn",
+			"animation": "animation.attachables.oreville_ans_ninldn",
+			"loop": true,
+			"animation_length": 100
+		},
+		"npisib": {
+			"bedrock": "animation.oreville_ans.npisib",
+			"animation": "animation.attachables.oreville_ans_npisib",
+			"loop": true,
+			"relative_to_entity": [
+				"itemglow"
+			]
+		},
+		"wbdcck": {
+			"bedrock": "animation.oreville_ans.wbdcck",
+			"animation": "animation.attachables.oreville_ans_wbdcck",
+			"loop": true,
+			"relative_to_entity": [
+				"itemglow"
+			]
+		},
+		"sjdljf": {
+			"bedrock": "animation.oreville_ans.sjdljf",
+			"animation": "animation.attachables.oreville_ans_sjdljf",
+			"loop": "hold_on_last_frame",
+			"animation_length": 100,
+			"anim_time_update": "v.nszoco?q.anim_time+q.delta_time:0"
+		},
+		"ubplbw": {
+			"bedrock": "animation.oreville_ans.ubplbw",
+			"animation": "animation.attachables.oreville_ans_ubplbw",
+			"loop": "hold_on_last_frame",
+			"animation_length": 100,
+			"anim_time_update": "v.nszoco?q.anim_time+q.delta_time:0"
+		},
+		"kmcmlx": {
+			"bedrock": "animation.oreville_ans.kmcmlx",
+			"animation": "animation.attachables.oreville_ans_kmcmlx",
+			"loop": true,
+			"animation_length": 6,
+			"relative_to_entity": [
+				"glow1",
+				"glow2",
+				"glow3"
+			]
+		},
+		"lqlrks": {
+			"bedrock": "controller.animation.oreville_ans.dmaerc",
+			"controller": {
+				"initial_state": "default",
+				"states": {
+					"default": {
+						"animations": [
+							{
+								"nywoyr": "!c.is_first_person&&q.is_owner_identifier_any('minecraft:copper_golem')"
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"scripts": {
+		"initialize": [
+			"v.nszoco=0;",
+			"v.shnqjb=0;",
+			"v.xsttiu=0;",
+			"v.dzoqor=0;",
+			"v.dziukm=0;",
+			"v.sqfrlv=0;",
+			"v.avrcqm=0;",
+			"v.lvamli=0;",
+			"v.ciuozv=0;",
+			"v.sfhypz=0;",
+			"v.bnmsjw=0;",
+			"v.wthuxi=0;",
+			"v.bnvwmr=0;",
+			"v.shxsbo=0;",
+			"v.zkvwce=0;",
+			"v.ixeugr=0;",
+			"v.drwtyh=0;",
+			"v.lfanle=0;",
+			"v.zaatfz=0;",
+			"v.hedksz=0;",
+			"v.dkwyvt=0;",
+			"v.jmwcle=0;",
+			"v.qtyzsz=0;",
+			"v.nkzcnj=0;",
+			"v.nikklf=0;",
+			"v.zidheq=0;",
+			"v.rzlcix=0;",
+			"v.yiuyji=0;",
+			"v.mlwzvz=0;",
+			"v.iwbrrx=0;",
+			"v.iujjoj=0;",
+			"v.kbdhhf=0;",
+			"v.jtptyo=0;",
+			"v.dgimdg=0;",
+			"v.qhhozj=0;",
+			"v.sqrooj=0;",
+			"v.phqhsg=0;",
+			"v.levhfc=0;",
+			"v.gfqeeo=0;",
+			"v.dgimdg.t=0;",
+			"v.dgimdg.t.x=0;",
+			"v.dgimdg.t.y=0;",
+			"v.dgimdg.t.z=0;",
+			"v.hcmvys=0;",
+			"v.rdmkec=0;",
+			"v.wrttzh=0;",
+			"v.khgcce=0;",
+			"v.khrfdk=0;",
+			"v.bnmsjw.t=0;",
+			"v.bnmsjw.t.x=0;",
+			"v.bnmsjw.t.z=0;",
+			"v.bnmsjw.t.y=0;",
+			"v.vzqfgi=0;",
+			"v.spnhnx=0;",
+			"v.vkwqzl=0;",
+			"v.aqeyfg=0;",
+			"v.cahagh=0;",
+			"v.yidefr=0;",
+			"v.ogwxra=0;",
+			"v.onazoy=0;",
+			"v.sbnnkw=0;",
+			"v.zvogyn=0;",
+			"v.hkmnpn=0;",
+			"v.iaxjoy=0;",
+			"v.eeydlb=0;",
+			"v.iynnie=0;",
+			"v.rmydys=0;",
+			"v.sbbjhd=0;",
+			"v.wfhvmb=0;",
+			"v.xfolcx=0;",
+			"v.nqexps=0;",
+			"v.sfdeke=0;",
+			"v.ceavhn=0;",
+			"v.pqsyvc=0;",
+			"v.ofrbls=0;",
+			"v.pwllfx=0;",
+			"v.wdirmd=0;",
+			"v.motnsu=0;",
+			"v.xakcyn=0;",
+			"v.coijhc=0;",
+			"v.ycxhin=0;",
+			"v.gflrsf=0;",
+			"v.jboire=0;",
+			"v.tnmcbu=0;",
+			"v.hzbkxl=0;",
+			"v.mlfmbo=0;",
+			"v.kwxgtr=0;",
+			"v.rboaag=0;",
+			"v.epatlu=0;",
+			"v.ukeclk=0;",
+			"v.eqktue=0;",
+			"v.nldqlc=0;",
+			"v.xjzvax=0;",
+			"v.bnmsjw.r=0;",
+			"v.bnmsjw.r.y=0;",
+			"v.bnmsjw.r.x=0;",
+			"v.bnmsjw.r.z=0;",
+			"v.vakdcz=0;",
+			"v.vzmwvl=0;",
+			"v.cgiibq=0;",
+			"v.vuwbly=0;",
+			"v.hdocyq=0;",
+			"v.otmjui=0;",
+			"v.jwftqg=0;",
+			"v.uncfyl=0;",
+			"v.cadkjg=0;",
+			"v.sevrck=0;",
+			"v.ncnuqd=0;",
+			"v.rmonqz=0;",
+			"v.hzzhqr=0;",
+			"v.vitnmw=0;",
+			"v.noakoi=0;",
+			"v.wvcupw=0;",
+			"v.uvngnz=0;",
+			"v.xpnuzd=0;",
+			"v.dwrnjc=0;",
+			"v.yfhlpb=0;",
+			"v.kyawuj=0;",
+			"v.ovrgzm=0;",
+			"v.cvjtbp=0;",
+			"v.itpecb=0;",
+			"v.pcnmva=0;",
+			"v.qhakca=0;",
+			"v.rbizzk=0;",
+			"v.otsbpv=0;",
+			"v.bhyayv=0;",
+			"v.bnwsbd=0;",
+			"v.wmvrfm=0;",
+			"v.ogipui=0;",
+			"v.wxhzwl=0;",
+			"v.nioklt=0;",
+			"v.kpxoox=0;",
+			"v.vxreqx=0;",
+			"v.qkcbjd=0;",
+			"v.stxeap=0;",
+			"v.pdnvwj=0;",
+			"v.vgbnre=0;",
+			"v.gdmfqk=0;",
+			"v.txkrmi=0;",
+			"v.yirujp=0;",
+			"v.hzwxpy=0;",
+			"v.huoeag=0;",
+			"v.vkitwe=0;",
+			"v.lokydh=0;",
+			"v.vfuhjy=0;",
+			"v.qnjjcl=0;",
+			"v.oekngn=0;",
+			"v.qggwse=0;",
+			"v.sxtsfe=0;",
+			"v.blhcvd=0;",
+			"v.ubvsfr=0;",
+			"v.bvelxt=0;",
+			"v.uppymr=0;",
+			"v.divjio=0;",
+			"v.xbkjfy=0;",
+			"v.iprohr=0;",
+			"v.rbanuv=0;",
+			"v.corkce=0;",
+			"v.ujwgsz=0;",
+			"v.mujqya=0;",
+			"v.xxthgi=0;",
+			"v.fifemr=0;",
+			"v.wzjqtx=0;",
+			"v.fixcml=0;",
+			"v.rwqvlp=0;",
+			"v.xiqslo=0;",
+			"v.awjcqr=0;",
+			"v.plpwev=0;",
+			"v.pjzcwx=0;",
+			"v.edijwh=0;",
+			"v.pihgwp=0;",
+			"v.bmhuds=0;",
+			"v.mtvyqs=0;",
+			"v.vfnwfl=0;",
+			"v.ozlwha=0;",
+			"v.qpptaw=0;v.qpptaw.t=0;v.qpptaw.t.x=0;v.qpptaw.t.y=0;v.qpptaw.t.z=0;v.qpptaw.r=0;v.qpptaw.r.x=0;v.qpptaw.r.y=0;v.qpptaw.r.z=0;v.qpptaw.s=0;v.qpptaw.s.x=0;v.qpptaw.s.y=0;v.qpptaw.s.z=0;v.sxzvht=10000;v.spuphm='item';",
+			"v.cimiam=0;v.qpptaw=0;v.qpptaw.t=0;v.qpptaw.t.x=0;v.qpptaw.t.y=0;v.qpptaw.t.z=0;v.qpptaw.r=0;v.qpptaw.r.x=0;v.qpptaw.r.y=0;v.qpptaw.r.z=0;v.qpptaw.s=0;v.qpptaw.s.x=0;v.qpptaw.s.y=0;v.qpptaw.s.z=0;v.codvro=10000;",
+			"v.misscd=0;",
+			"v.actions_and_stuff=1;",
+			"v.evlypi='unknown';",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.narpvm=0;v.ykxvro=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sxlefg=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.ykxvro?{v.narpvm=1;};v.mgdgwf=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.tsuowj=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.mgdgwf?{v.narpvm=2;};v.atuocm=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.hqvvjb=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.atuocm?{v.narpvm=3;};};"
+		],
+		"pre_animation": [
+			"q.is_owner_identifier_any('minecraft:player','minecraft:armor_stand')?{c.item_slot=='main_hand'?{v.nszoco=c.owning_entity->v.shnqjb;};c.item_slot=='off_hand'?{v.nszoco=c.owning_entity->v.xsttiu;};};!q.is_owner_identifier_any('minecraft:player','minecraft:armor_stand')?{v.nszoco=1;};",
+			"v.dzoqor=q.life_time-v.dziukm>q.delta_time+0.1;v.dziukm=q.life_time;",
+			"v.bmhuds=c.is_first_person;",
+			"v.mtvyqs=c.item_slot=='main_hand';",
+			"v.vfnwfl=c.item_slot=='off_hand';",
+			"v.ozlwha=c.item_slot=='head';",
+			"q.is_attached?{v.sqfrlv=q.is_pack_setting_selected('oreville_ans:stghmf','default')||q.is_pack_setting_selected('oreville_ans:stghmf','outline');v.avrcqm=!q.is_pack_setting_selected('oreville_ans:stghmf','outline');v.lvamli='uowpvm';q.is_pack_setting_selected('oreville_ans:stghmf','flhgoc')?{v.lvamli='flhgoc';};};",
+			"v.ciuozv=0;",
+			"v.sfhypz=1.5;",
+			"v.bnmsjw=v.qpptaw;",
+			"v.wthuxi=!c.is_first_person?(!q.is_in_ui?q.body_y_rotation:0);",
+			"v.bnvwmr=1;",
+			"v.shxsbo=0;v.zkvwce=1;t.owd=0.25;v.ixeugr=64*t.owd;v.drwtyh=24*t.owd;v.lfanle=0.03*t.owd;v.zaatfz=0.4;v.hedksz=0.03;v.dkwyvt=0.98;v.jmwcle=0.92;v.qtyzsz=0.75*t.owd;v.nkzcnj=-60;v.nikklf=-60;v.zidheq=120;v.rzlcix=60;v.yiuyji=0;v.mlwzvz=c.is_first_person;v.iwbrrx=0;",
+			"v.iujjoj='item';",
+			"v.kbdhhf=1;",
+			"v.jtptyo=1;",
+			"v.dgimdg=v.qpptaw;",
+			"v.wtlyok=q.graphics_mode_is_any('simple','fancy');",
+			"q.is_attached?{v.misscd=c.owning_entity->v.misscd;};",
+			"v.actions_and_stuff=1;",
+			"v.wtlyok=q.is_in_ui||(v.is_paperdoll??0)||q.graphics_mode_is_any('simple','fancy');",
+			"!q.is_in_ui&&!(v.is_paperdoll??0)&&!q.is_attached?{v.qhhozj=0;v.ykxvro=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.ykxvro=v.sxlefg;};v.sqrooj=(q.entity_biome_has_any_identifier('minecraft:cold_beach','minecraft:cold_taiga','minecraft:cold_taiga_hills','minecraft:cold_taiga_mutated','minecraft:cold_taiga_mutated','minecraft:deep_frozen_ocean','minecraft:frozen_ocean','minecraft:frozen_peaks','minecraft:frozen_river','minecraft:grove','minecraft:ice_mountains','minecraft:ice_plains','minecraft:ice_plains_spikes','minecraft:jagged_peaks','minecraft:legacy_frozen_ocean','minecraft:snowy_slopes'));v.sqrooj?{v.qhhozj=1;};v.mgdgwf=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.mgdgwf=v.tsuowj;};v.phqhsg=(q.entity_biome_has_any_identifier('minecraft:cherry_grove'));v.phqhsg?{v.qhhozj=2;};v.atuocm=0;q.is_pack_setting_selected('oreville_ans:fxwjdy','enabled')?{v.atuocm=v.hqvvjb;};v.levhfc=(q.entity_biome_has_any_identifier('minecraft:sulfur_caves'));v.levhfc?{v.qhhozj=3;};};"
+		],
+		"animate": [
+			{
+				"etlgys": "v.bnvwmr"
+			},
+			{
+				"iwhtlx": "v.kbdhhf"
+			},
+			{
+				"ijinqh": "v.kbdhhf"
+			},
+			{
+				"tmiaar": "v.kbdhhf&&v.wtlyok"
+			},
+			"kgklcq",
+			"kmcmlx",
+			{
+				"sjdljf": "c.is_first_person*0.5"
+			},
+			{
+				"ubplbw": "c.is_first_person"
+			},
+			{
+				"npisib": "c.is_first_person"
+			},
+			{
+				"wbdcck": "!c.is_first_person"
+			},
+			{
+				"lqlrks": "q.is_attached"
+			}
+		],
+		"parent_setup": "c.item_slot=='main_hand'?{v.oreville_mainhand_custom_pos=1;v.oreville_mainhand_visible=1;v.shnqjb=1;v.jyerzu='firefly_bush';v.liynxr='ddrfzp';};c.item_slot=='off_hand'?{v.oreville_offhand_custom_pos=1;v.oreville_offhand_visible=1;v.xsttiu=1;v.kqkoyf='firefly_bush';v.ympdnj='ddrfzp';};"
+	},
+	"render_controllers": [
+		{
+			"id": "controller.render.oreville_ans.firefly_bush",
+			"condition": null,
+			"geometry": "Geometry.default",
+			"textures": [
+				"Texture.default"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.default"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.eyvxua",
+			"condition": null,
+			"geometry": "Geometry.jwogkq",
+			"textures": [
+				"Texture.firefly_bush"
+			],
+			"materials": [
+				[
+					"*",
+					"Material.default"
+				],
+				[
+					"alphatestnofancy*",
+					"Material.klduzy"
+				],
+				[
+					"alphatestnofancy*",
+					"Material.klduzy"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.cclwyv",
+			"condition": null,
+			"geometry": "Geometry.lxqtnf",
+			"textures": [
+				"Texture.mdxogn"
+			],
+			"materials": [
+				[
+					"emissivenofancy*",
+					"Material.mqwxej"
+				],
+				[
+					"*",
+					"Material.mqwxej"
+				]
+			]
+		},
+		{
+			"id": "controller.render.oreville_ans.hwebal",
+			"condition": null,
+			"geometry": "Geometry.pzoqgz",
+			"textures": [
+				"Texture.qbjpuj"
+			],
+			"materials": [
+				[
+					"emissiveadditivealphabilinear*",
+					"Material.auulis"
+				],
+				[
+					"*",
+					"Material.auulis"
+				]
+			],
+			"part_visibility": [
+				[
+					"*",
+					"v.wtlyok"
+				]
+			]
+		}
+	],
+	"sound_effects": {},
+	"particle_effects": {}
+}

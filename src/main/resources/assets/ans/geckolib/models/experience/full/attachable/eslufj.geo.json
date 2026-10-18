@@ -1,0 +1,1175 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ans.attachable_eslufj",
+				"texture_width": 88,
+				"texture_height": 170,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [
+					0,
+					0,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "leftleg",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "normalbootsright",
+					"parent": "leftleg",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "normalbootsrightsnowy1",
+					"parent": "normalbootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								24,
+								2
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsrightsnowy2",
+					"parent": "normalbootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								0,
+								16
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								24,
+								18
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsrightsnowy3",
+					"parent": "normalbootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								0,
+								32
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								24,
+								34
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsrightsnowy4",
+					"parent": "normalbootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								0,
+								48
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								24,
+								50
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsrightsnowy5",
+					"parent": "normalbootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								0,
+								64
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								24,
+								66
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsrightsnowy6",
+					"parent": "normalbootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								0,
+								80
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								24,
+								82
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsrightsnowy7",
+					"parent": "normalbootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								0,
+								96
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								24,
+								98
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsrightsnowy8",
+					"parent": "normalbootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								0,
+								112
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								24,
+								114
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsrightsnowy9",
+					"parent": "normalbootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								0,
+								128
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								24,
+								130
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsrightsnowy10",
+					"parent": "normalbootsright",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								0,
+								144
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"pivot": [
+								0,
+								0,
+								0
+							],
+							"rotation": [
+								0,
+								-0.1,
+								0
+							],
+							"inflate": 0.01,
+							"uv": [
+								24,
+								146
+							]
+						}
+					]
+				},
+				{
+					"name": "rightleg",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "normalbootsleft",
+					"parent": "rightleg",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "normalbootsleftsnowy1",
+					"parent": "normalbootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								24,
+								2
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsleftsnowy2",
+					"parent": "normalbootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								0,
+								16
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								24,
+								18
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsleftsnowy3",
+					"parent": "normalbootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								0,
+								32
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								24,
+								34
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsleftsnowy4",
+					"parent": "normalbootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								0,
+								48
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								24,
+								50
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsleftsnowy5",
+					"parent": "normalbootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								0,
+								64
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								24,
+								66
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsleftsnowy6",
+					"parent": "normalbootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								0,
+								80
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								24,
+								82
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsleftsnowy7",
+					"parent": "normalbootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								0,
+								96
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								24,
+								98
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsleftsnowy8",
+					"parent": "normalbootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								0,
+								112
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								24,
+								114
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsleftsnowy9",
+					"parent": "normalbootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								0,
+								128
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								24,
+								130
+							]
+						}
+					]
+				},
+				{
+					"name": "normalbootsleftsnowy10",
+					"parent": "normalbootsleft",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								-13,
+								-3
+							],
+							"size": [
+								6,
+								10,
+								6
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								0,
+								144
+							]
+						},
+						{
+							"origin": [
+								-2.5,
+								-12.5,
+								-2.5
+							],
+							"size": [
+								5,
+								9,
+								5
+							],
+							"inflate": 0.01,
+							"mirror": true,
+							"uv": [
+								24,
+								146
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

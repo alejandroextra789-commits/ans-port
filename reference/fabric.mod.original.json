@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "ans",
+	"version": "0.7.0",
+	"name": "Actions & Stuff (Java Port)",
+	"description": "Unofficial, private fan-made Java Edition port of the Bedrock resource pack \"Actions & Stuff\" by Oreville Studios (not affiliated or endorsed). Client-side visual mod: re-renders vanilla mobs with animated GeckoLib models. The pack's assets are Oreville Studios' property and are not included in the public source; they are converted locally from your own copy of the pack.",
+	"authors": [
+		"ans-port contributors",
+		"Original Bedrock pack: Oreville Studios"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.ans.client.AnsClient"
+		],
+		"modmenu": [
+			"com.ans.client.settings.AnsModMenu"
+		]
+	},
+	"mixins": [
+		{
+			"config": "ans.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"geckolib": ">=5.5.5"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
