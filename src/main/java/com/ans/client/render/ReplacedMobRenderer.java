@@ -70,6 +70,9 @@ public class ReplacedMobRenderer<E extends LivingEntity> extends GeoReplacedEnti
    @Override
    public void render(E entity, float entityYaw, float partialTick, PoseStack poseStack, MultiBufferSource buffer, int light) {
       FrameResult frame = entity == null ? null : computeFrame(entity, partialTick);
+      if (frame != null) {
+         frame = this.adjustFrame(entity, frame, partialTick);
+      }
       if (frame == null) {
          super.render(entity, entityYaw, partialTick, poseStack, buffer, light);
          return;
@@ -114,6 +117,7 @@ public class ReplacedMobRenderer<E extends LivingEntity> extends GeoReplacedEnti
       } else {
          poseStack.mulPose(Axis.YP.rotationDegrees(180.0F - this.mob.yaw(entity, partialTick)));
       }
+      this.adjustBody(entity, partialTick, poseStack);
       poseStack.scale(age, age, age);
       if (frame.scaleX() != 1.0F || frame.scaleY() != 1.0F || frame.scaleZ() != 1.0F) {
          poseStack.scale(frame.scaleX(), frame.scaleY(), frame.scaleZ());
@@ -146,6 +150,15 @@ public class ReplacedMobRenderer<E extends LivingEntity> extends GeoReplacedEnti
       }
    }
 
+
+   /** Hook for subclasses: may replace or extend the frame (e.g. hidden parts, extra layers). */
+   protected FrameResult adjustFrame(E entity, FrameResult frame, float partialTick) {
+      return frame;
+   }
+
+   /** Hook for subclasses: extra body rotation applied after the yaw, before scaling. */
+   protected void adjustBody(E entity, float partialTick, PoseStack poseStack) {
+   }
 
    @Override
    protected float getDeathMaxRotation(MobAnimatable animatable) {
