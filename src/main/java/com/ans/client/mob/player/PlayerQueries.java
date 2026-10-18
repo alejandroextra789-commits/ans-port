@@ -1,5 +1,6 @@
 package com.ans.client.mob.player;
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import com.ans.Ans;
 import com.ans.client.equipment.EquipmentQueries;
 import com.ans.client.molang.EngineVariables;
@@ -65,7 +66,7 @@ public final class PlayerQueries {
                return 0.0;
             }
 
-            Vec3 cam = Minecraft.getInstance().gameRenderer.mainCamera().position();
+            Vec3 cam = Minecraft.getInstance().gameRenderer.getMainCamera().getPosition();
             double d = cam.distanceTo(c.actor.getPosition(c.partialTick));
             return Mth.clamp((d - from) / (to - from), 0.0, 1.0);
          } else {
@@ -91,21 +92,21 @@ public final class PlayerQueries {
    }
 
    private static void perType() {
-      MolangQueries.registerFor(
+      MolangQueries.registerFactoryFor(
          EntityType.PLAYER,
          "head_y_rotation",
          var0 -> c -> c.entity == null ? 0.0 : Mth.wrapDegrees(Mth.rotLerp(c.partialTick, c.entity.yHeadRotO, c.entity.yHeadRot))
       );
-      MolangQueries.registerFor(EntityType.PLAYER, "ride_body_y_rotation", var0 -> c -> {
+      MolangQueries.registerFactoryFor(EntityType.PLAYER, "ride_body_y_rotation", var0 -> c -> {
          Entity v = c.actor == null ? null : c.actor.getVehicle();
          return v == null ? 0.0 : (v instanceof LivingEntity l ? Mth.rotLerp(c.partialTick, l.yBodyRotO, l.yBodyRot) : Mth.rotLerp(c.partialTick, v.yRotO, v.getYRot()));
       });
-      MolangQueries.registerFor(
+      MolangQueries.registerFactoryFor(
          EntityType.PLAYER,
          "is_swimming",
          var0 -> c -> c.entity == null || !c.entity.isSwimming() && (!c.entity.isVisuallySwimming() || !c.entity.isInWater()) ? 0.0 : 1.0
       );
-      MolangQueries.registerFor(EntityType.PLAYER, "is_jumping", var0 -> c -> {
+      MolangQueries.registerFactoryFor(EntityType.PLAYER, "is_jumping", var0 -> c -> {
          LivingEntity e = c.entity;
          if (e == null) {
             return 0.0;
@@ -115,23 +116,23 @@ public final class PlayerQueries {
             return !e.onGround() && e.getY() - e.yo > 0.01 && !e.isInWater() ? 1.0 : 0.0;
          }
       });
-      MolangQueries.registerFor(
+      MolangQueries.registerFactoryFor(
          EntityType.PLAYER,
          "main_hand_item_use_duration",
          var0 -> c -> c.entity != null && c.entity.isUsingItem() && c.entity.getUsedItemHand() == InteractionHand.MAIN_HAND
             ? c.entity.getTicksUsingItem() / 20.0
             : 0.0
       );
-      MolangQueries.registerFor(EntityType.PLAYER, "sleep_rotation", var0 -> c -> {
+      MolangQueries.registerFactoryFor(EntityType.PLAYER, "sleep_rotation", var0 -> c -> {
          Direction bed = c.entity == null ? null : sleepingDirection(c.entity);
          return bed == null ? 0.0 : (SLEEP_ROTATION ? sleepRotation(bed) : bed.toYRot());
       });
-      MolangQueries.registerFor(
+      MolangQueries.registerFactoryFor(
          EntityType.PLAYER,
          "walk_distance",
          var0 -> c -> c.actor instanceof AbstractClientPlayer p ? Mth.lerp(c.partialTick, p.walkDistO, p.walkDist) : 0.0
       );
-      MolangQueries.registerFor(EntityType.PLAYER, "is_in_ui", var0 -> c -> UiRender.active() ? 1.0 : 0.0);
+      MolangQueries.registerFactoryFor(EntityType.PLAYER, "is_in_ui", var0 -> c -> UiRender.active() ? 1.0 : 0.0);
    }
 
    private static void engineVariables() {
@@ -179,13 +180,13 @@ public final class PlayerQueries {
          }
 
          ItemCooldowns cooldowns = player.getCooldowns();
-         if (!cooldowns.isOnCooldown(stack)) {
+         if (!cooldowns.isOnCooldown(stack.getItem())) {
             return 0.0;
          }
 
-         int[] se = instance(cooldowns, cooldowns.getCooldownGroup(stack));
+         int[] se = instance(cooldowns, BuiltInRegistries.ITEM.getKey(stack.getItem()));
          if (se == null) {
-            return total ? 1.0 : cooldowns.getCooldownPercent(stack, c.partialTick);
+            return total ? 1.0 : cooldowns.getCooldownPercent(stack.getItem(), c.partialTick);
          }
 
          int now = tickCount(cooldowns);

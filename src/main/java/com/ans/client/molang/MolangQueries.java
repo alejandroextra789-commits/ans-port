@@ -54,6 +54,10 @@ public final class MolangQueries {
       PER_TYPE.computeIfAbsent(name, var0x -> new ConcurrentHashMap<>()).put(type, var1x -> c -> c.actor == null ? 0.0 : fn.applyAsDouble((E)c.actor));
    }
 
+   public static <E extends Entity> void registerFactoryFor(EntityType<E> type, String name, MolangQueries.Factory factory) {
+      registerFor(type, name, factory);
+   }
+
    public static <E extends Entity> void registerFor(EntityType<E> type, String name, MolangQueries.Factory factory) {
       PER_TYPE.computeIfAbsent(name, var0x -> new ConcurrentHashMap<>()).put(type, factory);
    }

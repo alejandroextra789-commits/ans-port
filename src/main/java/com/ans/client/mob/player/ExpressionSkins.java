@@ -46,7 +46,7 @@ public final class ExpressionSkins {
          for (int[] r : RECTS) {
             for (int y = r[1]; y < r[1] + r[3]; y++) {
                for (int x = r[0]; x < r[0] + r[2]; i++) {
-                  px[i] = x < image.getWidth() && y < image.getHeight() ? image.getPixel(x, y) : 0;
+                  px[i] = x < image.getWidth() && y < image.getHeight() ? image.getPixelRGBA(x, y) : 0;
                   x++;
                }
             }
@@ -67,7 +67,7 @@ public final class ExpressionSkins {
          for (int[] r : RECTS) {
             for (int y = r[1]; y < r[1] + r[3]; y++) {
                for (int x = r[0]; x < r[0] + r[2]; i++) {
-                  processed.setPixel(x, y, px[i]);
+                  processed.setPixelRGBA(x, y, px[i]);
                   x++;
                }
             }
@@ -114,7 +114,7 @@ public final class ExpressionSkins {
       for (int[] rect : RECTS) {
          for (int y = rect[1]; y < rect[1] + rect[3]; y++) {
             for (int x = rect[0]; x < rect[0] + rect[2]; x++) {
-               px[i++] = image.getPixel(x, y);
+               px[i++] = image.getPixelRGBA(x, y);
             }
          }
       }
@@ -132,6 +132,7 @@ public final class ExpressionSkins {
             return false;
          }
 
+         boolean var17 = false;
          try (InputStream in = res.get().open()) {
             NativeImage image = NativeImage.read(in);
 
@@ -149,7 +150,7 @@ public final class ExpressionSkins {
                   for (int[] r : RECTS) {
                      for (int y = r[1]; y < r[1] + r[3]; y++) {
                         for (int x = r[0]; x < r[0] + r[2]; i++) {
-                           px[i] = image.getPixel(x, y);
+                           px[i] = image.getPixelRGBA(x, y);
                            x++;
                         }
                      }
