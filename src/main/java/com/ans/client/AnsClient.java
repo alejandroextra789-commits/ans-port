@@ -3,8 +3,6 @@ package com.ans.client;
 import com.ans.Ans;
 import com.ans.client.attachable.AttachableQueries;
 import com.ans.client.attachable.Attachables;
-import com.ans.client.dev.DevSelfTest;
-import com.ans.client.dev.ScenarioTest;
 import com.ans.client.gecko.AnsGeckoLoader;
 import com.ans.client.mob.AnimatedMobs;
 import com.ans.client.mob.AnsMobs;
@@ -29,8 +27,6 @@ public final class AnsClient {
       MinecraftForge.EVENT_BUS.addListener(SoundMuting::onPlaySound);
       BedrockParticles.init();
       AnsSettings.init();
-      DevSelfTest.init();
-      ScenarioTest.init();
       Ans.LOGGER.info("[ans] Actions & Stuff (Java port) client initialised");
    }
 

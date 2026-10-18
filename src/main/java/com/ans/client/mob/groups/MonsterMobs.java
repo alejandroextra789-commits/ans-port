@@ -2,7 +2,6 @@ package com.ans.client.mob.groups;
 
 import com.ans.client.mob.AnimatedMob;
 import com.ans.client.mob.monster.EndermanCarriedBlockLayer;
-import com.ans.client.mob.monster.MonsterSelfTest;
 import com.ans.client.molang.EngineVariables;
 import com.ans.client.molang.MolangQueries;
 import java.util.function.BiFunction;
@@ -27,7 +26,6 @@ public final class MonsterMobs {
       AnimatedMob.builder(EntityType.IRON_GOLEM).register();
       EngineVariables.registerFor(EntityType.IRON_GOLEM, "attack_animation_tick", g -> g.getAttackAnimationTick());
       EngineVariables.registerFor(EntityType.IRON_GOLEM, "offer_flower_tick", g -> g.getOfferFlowerTick());
-      MonsterSelfTest.init();
    }
 
    private static <E extends LivingEntity> void partialTickQuery(EntityType<E> type, String name, BiFunction<E, Float, Double> fn) {

@@ -1,6 +1,5 @@
 package com.ans.client.mob.groups;
 
-import com.ans.client.dev.CritterSelfTest;
 import com.ans.client.mob.AnimatedMob;
 import com.ans.client.molang.EngineVariables;
 import com.ans.client.render.BedrockTextures;
@@ -25,7 +24,6 @@ public final class CritterMobs {
       rabbit();
       goat();
       llama();
-      CritterSelfTest.init();
    }
 
    private static void rabbit() {
