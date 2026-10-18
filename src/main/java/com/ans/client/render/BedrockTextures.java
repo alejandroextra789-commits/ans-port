@@ -122,9 +122,9 @@ public final class BedrockTextures {
                   int dx = p.dstX() + x;
                   int dy = p.dstY() + y;
                   if (sx < src.getWidth() && sy < src.getHeight() && dx < out.getWidth() && dy < out.getHeight()) {
-                     int c = src.getPixel(sx, sy);
+                     int c = src.getPixelRGBA(sx, sy);
                      if (c >>> 24 >= 128) {
-                        out.setPixel(dx, dy, alpha << 24 | c & 16777215);
+                        out.setPixelRGBA(dx, dy, alpha << 24 | c & 16777215);
                      }
                   }
                }
@@ -165,14 +165,14 @@ public final class BedrockTextures {
          if (this.mode != BedrockTextures.Mode.RAW) {
          for (int y = 0; y < image.getHeight(); y++) {
             for (int x = 0; x < image.getWidth(); x++) {
-               int c = image.getPixel(x, y);
+               int c = image.getPixelRGBA(x, y);
                int a = c >>> 24;
                if (this.mode == BedrockTextures.Mode.WHITE) {
-                  image.setPixel(x, y, a > 0 ? a << 24 | 16777215 : 0);
+                  image.setPixelRGBA(x, y, a > 0 ? a << 24 | 16777215 : 0);
                } else if (this.mode == BedrockTextures.Mode.GLOW) {
-                  image.setPixel(x, y, a > 0 && a < 255 ? 255 - a << 24 | c & 16777215 : 0);
+                  image.setPixelRGBA(x, y, a > 0 && a < 255 ? 255 - a << 24 | c & 16777215 : 0);
                } else if (this.mode == BedrockTextures.Mode.OPAQUE_GLOW) {
-                  image.setPixel(x, y, a < 255 ? 255 - a << 24 | c & 16777215 : 0);
+                  image.setPixelRGBA(x, y, a < 255 ? 255 - a << 24 | c & 16777215 : 0);
                } else {
                   boolean keep = switch (this.mode) {
                      case ALL, LIT -> a > 0;
@@ -187,7 +187,7 @@ public final class BedrockTextures {
                      case GLOW, WHITE, OPAQUE_GLOW -> false;
                      case OPAQUE_LIT, RAW -> true;
                   };
-                  image.setPixel(x, y, keep ? 0xFF000000 | c & 16777215 : 0);
+                  image.setPixelRGBA(x, y, keep ? 0xFF000000 | c & 16777215 : 0);
                }
             }
          }

@@ -1,5 +1,7 @@
 package com.ans.client.particle;
 
+import org.joml.Quaternionf;
+import com.ans.AnsClientEvents;
 import net.minecraft.util.Mth;
 import com.ans.Ans;
 import com.ans.client.bedrock.EntityRuntime;

@@ -25,7 +25,7 @@ public final class MiscState {
       }
 
       float age = entity.tickCount + MolangContext.current().partialTick;
-      return (float)state.getTimeInMillis(age) / 50.0F;
+      return (float)state.getAccumulatedTime() / 50.0F;
    }
 
    public static float remainingTicks(AnimationState state, Entity entity, int duration) {

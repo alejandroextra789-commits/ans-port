@@ -127,7 +127,7 @@ public final class EngineQueries {
    }
 
    private static boolean fishingRodCast(ItemStack s, LivingEntity e) {
-      return e instanceof Player p && p.fishing != null && e.getItemHeldByArm(holdingArm(p)) == s;
+      return e instanceof Player p && p.fishing != null && e.getItemInHand(holdingArm(p) == p.getMainArm() ? net.minecraft.world.InteractionHand.MAIN_HAND : net.minecraft.world.InteractionHand.OFF_HAND) == s;
    }
 
    /** 1.20.1 keeps charged crossbow projectiles in the item's NBT (the accessor is private). */
