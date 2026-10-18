@@ -391,9 +391,9 @@ public final class Emitter {
             dir.set(local);
             break;
          case DISC:
-            double r = d.radius.eval(c);
+            double rad = d.radius.eval(c);
             double ang = RANDOM.nextDouble() * Math.PI * 2.0;
-            double dist = d.surfaceOnly ? r : r * Math.sqrt(RANDOM.nextDouble());
+            double dist = d.surfaceOnly ? rad : rad * Math.sqrt(RANDOM.nextDouble());
             local.set(dist * Math.cos(ang), 0.0, dist * Math.sin(ang));
             if (d.planeNormal != null) {
                Vector3f nrm = new Vector3f((float)d.planeNormal[0].eval(c), (float)d.planeNormal[1].eval(c), (float)d.planeNormal[2].eval(c));
@@ -635,7 +635,7 @@ public final class Emitter {
          && dx * dx + dy * dy + dz * dz < 100.0) {
          double r = Math.max(d.collisionRadius, 0.005);
          AABB bb = new AABB(p.pos.x - r, p.pos.y - r, p.pos.z - r, p.pos.x + r, p.pos.y + r, p.pos.z + r);
-         Vec3 m = Entity.collideBoundingBox(CollisionContext.empty(), new Vec3(dx, dy, dz), bb, f.level, List.of());
+         Vec3 m = Entity.collideBoundingBox(null, new Vec3(dx, dy, dz), bb, f.level, List.of());
          boolean cx = Math.abs(m.x - dx) > 1.0E-7;
          boolean cy = Math.abs(m.y - dy) > 1.0E-7;
          boolean cz = Math.abs(m.z - dz) > 1.0E-7;

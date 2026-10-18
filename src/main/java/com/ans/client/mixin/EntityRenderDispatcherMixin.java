@@ -20,16 +20,16 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(EntityRenderDispatcher.class)
 public abstract class EntityRenderDispatcherMixin {
    @Shadow
-   private Map<EntityType<?>, EntityRenderer<?, ?>> renderers;
+   private Map<EntityType<?>, EntityRenderer<?>> renderers;
 
    @Inject(
       method = "getRenderer(Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/client/renderer/entity/EntityRenderer;",
       at = @At("HEAD"),
       cancellable = true
    )
-   private void ans$playerRenderer(Entity entity, CallbackInfoReturnable<EntityRenderer<?, ?>> cir) {
+   private void ans$playerRenderer(Entity entity, CallbackInfoReturnable<EntityRenderer<?>> cir) {
       if (entity instanceof AbstractClientPlayer player && PlayerRendering.replaces(player)) {
-         EntityRenderer<?, ?> renderer = this.renderers.get(entity.getType());
+         EntityRenderer<?> renderer = this.renderers.get(entity.getType());
          if (renderer != null) {
             cir.setReturnValue(renderer);
          }

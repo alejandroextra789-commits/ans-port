@@ -296,7 +296,7 @@ public final class PackSounds {
          case "music" -> SoundSource.MUSIC;
          case "record" -> SoundSource.RECORDS;
          case "ambient" -> SoundSource.AMBIENT;
-         case "ui" -> SoundSource.UI;
+         case "ui" -> SoundSource.MASTER;
          case "master" -> SoundSource.MASTER;
          default -> null;
       };

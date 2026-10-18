@@ -212,6 +212,6 @@ public final class AnimatedMob<E extends Entity> {
 
    @FunctionalInterface
    public interface RendererFactory<E extends Entity> {
-      EntityRenderer<E, ?> create(Context var1, AnimatedMob<E> var2, EntityRendererProvider<E> var3);
+      EntityRenderer<E> create(Context var1, AnimatedMob<E> var2, EntityRendererProvider<E> var3);
    }
 }

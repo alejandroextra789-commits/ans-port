@@ -23,6 +23,6 @@ public abstract class WalkAnimationMixin implements BedrockWalk {
 
    @Inject(method = "updateWalkAnimation", at = @At("HEAD"))
    private void ans$updateBedrockWalk(float distance, CallbackInfo ci) {
-      this.ans$walk.update(Math.min(distance * 4.0F, 1.0F), 0.4F, ((LivingEntity)this).isBaby() ? 3.0F : 1.0F);
+      this.ans$walk.update(Math.min(distance * 4.0F, 1.0F) * (((LivingEntity)this).isBaby() ? 3.0F : 1.0F), 0.4F);
    }
 }
