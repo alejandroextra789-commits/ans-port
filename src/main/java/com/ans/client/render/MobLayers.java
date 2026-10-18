@@ -5,12 +5,14 @@ import com.ans.client.bedrock.FrameResult;
 import com.ans.client.bedrock.RenderLayer;
 import com.ans.client.mob.aquatic.DolphinItemLayer;
 import com.ans.client.mob.monster.EndermanCarriedBlockLayer;
+import com.ans.client.mob.player.ShoulderParrotLayer;
 import com.ans.client.mob.pets.FoxHeldItemLayer;
 import com.mojang.blaze3d.vertex.PoseStack;
 import java.util.Optional;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.model.GeoModel;
@@ -31,6 +33,9 @@ public final class MobLayers {
          DolphinItemLayer.render(frame, entity, model, ps, buffers, light);
       } else if (type == EntityType.ENDERMAN) {
          EndermanCarriedBlockLayer.render(frame, entity, model, ps, buffers, light);
+      }
+      if (entity instanceof Player player) {
+         ShoulderParrotLayer.render(frame, player, model, ps, buffers, light);
       }
    }
 
