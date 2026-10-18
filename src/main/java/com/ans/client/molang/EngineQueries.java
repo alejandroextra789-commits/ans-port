@@ -96,7 +96,7 @@ public final class EngineQueries {
                return 0.0;
             }
          } else {
-            return CrossbowItem.getChargedProjectiles(s).stream().anyMatch(projectile -> projectile.is(Items.FIREWORK_ROCKET)) ? 5.0 : 4.0;
+            return hasFireworkCharge(s) ? 5.0 : 4.0;
          }
       });
       MolangQueries.register(
@@ -127,7 +127,23 @@ public final class EngineQueries {
    }
 
    private static boolean fishingRodCast(ItemStack s, LivingEntity e) {
-      return e instanceof Player p && p.fishing != null && e.getItemHeldByArm(FishingHookRenderer.getHoldingArm(p)) == s;
+      return e instanceof Player p && p.fishing != null && e.getItemHeldByArm(holdingArm(p)) == s;
+   }
+
+   /** 1.20.1 keeps charged crossbow projectiles in the item's NBT (the accessor is private). */
+   private static boolean hasFireworkCharge(ItemStack s) {
+      net.minecraft.nbt.ListTag list = s.getOrCreateTag().getList("ChargedProjectiles", net.minecraft.nbt.Tag.TAG_COMPOUND);
+      for (net.minecraft.nbt.Tag t : list) {
+         if (ItemStack.of((net.minecraft.nbt.CompoundTag)t).is(Items.FIREWORK_ROCKET)) {
+            return true;
+         }
+      }
+      return false;
+   }
+
+   /** Same rule as vanilla FishingHookRenderer.getHoldingArm, which is not public in 1.20.1. */
+   private static net.minecraft.world.entity.HumanoidArm holdingArm(Player p) {
+      return p.getMainHandItem().getItem() instanceof net.minecraft.world.item.FishingRodItem ? p.getMainArm() : p.getMainArm().getOpposite();
    }
 
    public static EquipmentSlot armorSlot(int n) {

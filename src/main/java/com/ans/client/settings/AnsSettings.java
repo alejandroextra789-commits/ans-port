@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Map.Entry;
 import com.ans.AnsClientEvents;
-import net.minecraftforge.client.ClientRegistry;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import com.ans.AnsPlatform;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;

@@ -90,7 +90,7 @@ public final class NetherMobs {
          .query("has_target", w -> w.getAlternativeTarget(0) > 0 ? 1.0 : 0.0)
          .query("invulnerable_ticks", WitherBoss::getInvulnerableTicks)
          .register();
-      MolangQueries.registerFor(EntityType.WITHER, "swell_amount", var0 -> c -> {
+      MolangQueries.registerFactoryFor(EntityType.WITHER, "swell_amount", var0 -> c -> {
          if (c.entity instanceof WitherBoss w) {
             int t = w.getInvulnerableTicks();
             return t > 0 ? Mth.clamp(1.0F - (t - c.partialTick) / 220.0F, 0.0F, 1.0F) : 0.0;
