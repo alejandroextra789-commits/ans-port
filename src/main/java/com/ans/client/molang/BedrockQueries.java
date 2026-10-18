@@ -1,10 +1,10 @@
 package com.ans.client.molang;
 
+import net.minecraft.world.entity.Saddleable;
 import com.ans.client.bedrock.BedrockRules;
 import com.ans.client.bedrock.BedrockWalk;
 import com.ans.client.equipment.EquipmentQueries;
 import com.ans.client.mob.player.ExpressionSkins;
-import com.geckolib.util.ClientUtil;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -91,8 +91,8 @@ public final class BedrockQueries {
    }
 
    private static Vec3 cameraPos() {
-      Camera camera = Minecraft.getInstance().gameRenderer.mainCamera();
-      return camera.position();
+      Camera camera = Minecraft.getInstance().gameRenderer.getMainCamera();
+      return camera.getPosition();
    }
 
    private static double horizontalSpeed(Entity e) {
@@ -120,8 +120,8 @@ public final class BedrockQueries {
       MolangQueries.simple("frame_alpha", c -> c.partialTick);
       MolangQueries.simple("time_stamp", c -> c.actor == null ? 0.0 : c.actor.level().getGameTime());
       MolangQueries.simple("day", c -> c.actor == null ? 0.0 : c.actor.level().getGameTime() / 24000.0);
-      MolangQueries.simple("time_of_day", c -> c.actor == null ? 0.0 : (c.actor.level().getDefaultClockTime() % 24000L / 24000.0 + 0.25) % 1.0);
-      MolangQueries.simple("moon_phase", var0 -> ClientUtil.getClientMoonPhase().index());
+      MolangQueries.simple("time_of_day", c -> c.actor == null ? 0.0 : (c.actor.level().getDayTime() % 24000L / 24000.0 + 0.25) % 1.0);
+      MolangQueries.simple("moon_phase", var0 -> Minecraft.getInstance().level == null ? 0 : Minecraft.getInstance().level.getMoonPhase());
    }
 
    private static void controller() {
@@ -196,8 +196,8 @@ public final class BedrockQueries {
       );
       MolangQueries.simple("distance_from_camera", c -> c.actor == null ? 0.0 : cameraPos().distanceTo(cameraOrigin(c.actor, c.partialTick, false)));
       MolangQueries.register("camera_rotation", a -> c -> {
-         Camera camera = Minecraft.getInstance().gameRenderer.mainCamera();
-         return arg(a, 0, c) == 0.0 ? camera.xRot() : camera.yRot();
+         Camera camera = Minecraft.getInstance().gameRenderer.getMainCamera();
+         return arg(a, 0, c) == 0.0 ? camera.getXRot() : camera.getYRot();
       });
       MolangQueries.register("rotation_to_camera", a -> c -> {
          if (c.actor == null) {
@@ -214,7 +214,7 @@ public final class BedrockQueries {
       MolangQueries.flag("is_sleeping", LivingEntity::isSleeping);
       MolangQueries.actorFlag("is_on_fire", Entity::isOnFire);
       MolangQueries.actorFlag("is_invisible", Entity::isInvisible);
-      MolangQueries.flag("is_saddled", e -> e instanceof Mob m && m.isSaddled());
+      MolangQueries.flag("is_saddled", e -> e instanceof Saddleable s && s.isSaddled());
       MolangQueries.actorFlag("is_leashed", e -> e instanceof Mob m && m.isLeashed());
       MolangQueries.flag("is_tamed", e -> e instanceof TamableAnimal t && t.isTame() || e instanceof AbstractHorse h && h.isTamed());
       MolangQueries.flag("is_sitting", e -> e instanceof TamableAnimal t && t.isInSittingPose() || e.getPose() == Pose.SITTING);
@@ -430,7 +430,7 @@ public final class BedrockQueries {
 
          return 0.0;
       });
-      MolangQueries.simple("actor_count", var0 -> ClientUtil.getVisibleEntityCount());
+      MolangQueries.simple("actor_count", var0 -> Minecraft.getInstance().level == null ? 0 : Minecraft.getInstance().level.getEntityCount());
    }
 
    private static void items() {

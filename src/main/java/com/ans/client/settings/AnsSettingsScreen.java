@@ -10,7 +10,7 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.network.chat.Component;
-import com.mojang.blaze3d.vertex.PoseStack;
+import net.minecraft.client.gui.GuiGraphics;
 
 /** Lightweight settings screen implemented against the Minecraft 1.20.1 GUI API. */
 public final class AnsSettingsScreen extends Screen {
@@ -61,8 +61,9 @@ public final class AnsSettingsScreen extends Screen {
                if (tooltip != null) unavailable.setTooltip(tooltip);
                this.addRenderableWidget(unavailable);
             } else {
-               CycleButton<String> button = CycleButton.builder(value -> Component.literal(setting.optionLabel(value)), current)
+               CycleButton<String> button = CycleButton.builder((String value) -> Component.literal(setting.optionLabel(value)))
                   .withValues(setting.options())
+                  .withInitialValue(current)
                   .withTooltip(value -> tooltip)
                   .create(x, y, width, 20, Component.literal(label[0]),
                      (widget, value) -> AnsSettings.set(setting, value, true));
@@ -81,13 +82,13 @@ public final class AnsSettingsScreen extends Screen {
    }
 
    @Override
-   public void render(PoseStack poseStack, int mouseX, int mouseY, float partialTick) {
-      this.renderBackground(poseStack);
-      drawCenteredString(poseStack, this.font, this.title, this.width / 2, 16, 0xFFFFFF);
+   public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
+      this.renderBackground(graphics);
+      graphics.drawCenteredString(this.font, this.title, this.width / 2, 16, 0xFFFFFF);
       if (this.settings.isEmpty()) {
-         drawCenteredString(poseStack, this.font, Component.translatable("ans.settings.missing"), this.width / 2, 44, 0xAAAAAA);
+         graphics.drawCenteredString(this.font, Component.translatable("ans.settings.missing"), this.width / 2, 44, 0xAAAAAA);
       }
-      super.render(poseStack, mouseX, mouseY, partialTick);
+      super.render(graphics, mouseX, mouseY, partialTick);
    }
 
    @Override

@@ -5,7 +5,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.client.ConfigScreenHandler.IConfigScreenFactory;
+import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;
 import com.ans.client.settings.AnsSettingsScreen;
 
@@ -14,8 +14,8 @@ import com.ans.client.settings.AnsSettingsScreen;
 public final class AnsForge {
     public AnsForge() {
         FMLJavaModLoadingContext.get().getModEventBus().register(ClientSetup.class);
-        ModLoadingContext.get().registerExtensionPoint(IConfigScreenFactory.class,
-            () -> (minecraft, parent) -> new AnsSettingsScreen(parent));
+        ModLoadingContext.get().registerExtensionPoint(ConfigScreenHandler.ConfigScreenFactory.class,
+            () -> new ConfigScreenHandler.ConfigScreenFactory((minecraft, parent) -> new AnsSettingsScreen(parent)));
     }
 
     public static final class ClientSetup {
