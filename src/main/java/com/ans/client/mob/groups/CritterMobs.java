@@ -1,5 +1,6 @@
 package com.ans.client.mob.groups;
 
+import com.ans.client.util.DyeColors;
 import com.ans.client.mob.AnimatedMob;
 import com.ans.client.molang.EngineVariables;
 import com.ans.client.render.BedrockTextures;
@@ -55,7 +56,8 @@ public final class CritterMobs {
    private static int carpetIndex(LivingEntity entity) {
       // Llama carpets use the native swag field in Minecraft 1.20.1.
       if (entity instanceof Llama llama) {
-         int swag = llama.getSwag();
+         DyeColor dye = llama.getSwag();
+         int swag = dye == null ? -1 : dye.getId();
          return swag < 0 ? 0 : swag + 1;
       }
       return 0;
@@ -85,7 +87,7 @@ public final class CritterMobs {
 
    private static int woolColor(Sheep sheep, float partialTick) {
       if (!hasName(sheep, "jeb_")) {
-         return sheep.getColor().getTextureDiffuseColor() | 0xFF000000;
+         return DyeColors.diffuse(sheep.getColor());
       }
 
       // Vanilla's rainbow sheep easter egg cycles through the dye palette.
@@ -93,8 +95,8 @@ public final class CritterMobs {
       int current = (int)((sheep.tickCount + partialTick) / 25.0F) % colors.length;
       int next = (current + 1) % colors.length;
       float blend = ((sheep.tickCount + partialTick) % 25.0F) / 25.0F;
-      int a = colors[current].getTextureDiffuseColor();
-      int b = colors[next].getTextureDiffuseColor();
+      int a = DyeColors.diffuse(colors[current]);
+      int b = DyeColors.diffuse(colors[next]);
       int r = (int)(((a >> 16) & 255) * (1.0F - blend) + ((b >> 16) & 255) * blend);
       int g = (int)(((a >> 8) & 255) * (1.0F - blend) + ((b >> 8) & 255) * blend);
       int bl = (int)((a & 255) * (1.0F - blend) + (b & 255) * blend);

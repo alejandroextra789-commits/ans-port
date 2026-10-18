@@ -12,7 +12,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
-import net.minecraft.world.entity.vehicle.minecart.AbstractMinecart;
+import net.minecraft.world.entity.vehicle.AbstractMinecart;
+import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.PotionUtils;
 
 public final class ObjectMobs {
@@ -55,8 +56,7 @@ public final class ObjectMobs {
    }
 
    private static void potions() {
-      AnimatedMob.builder(EntityType.SPLASH_POTION).query("variant", ObjectMobs::potionId).register();
-      AnimatedMob.builder(EntityType.LINGERING_POTION).query("variant", ObjectMobs::potionId).register();
+      AnimatedMob.builder(EntityType.POTION).query("variant", ObjectMobs::potionId).register();
    }
 
    private static void minecarts() {

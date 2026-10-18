@@ -4,7 +4,7 @@ import com.ans.client.equipment.MobEquipment;
 import com.ans.client.mob.AnimatedMob;
 import java.util.List;
 import net.minecraft.client.model.geom.ModelLayers;
-import net.minecraft.core.Holder;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
 
 public final class UndeadMobs {
@@ -39,8 +39,8 @@ public final class UndeadMobs {
       AnimatedMob.builder(EntityType.HUSK).register();
       AnimatedMob.builder(EntityType.DROWNED).register();
       AnimatedMob.builder(EntityType.ZOMBIE_VILLAGER, "zombie_villager_v2")
-         .query("variant", e -> index(PROFESSIONS, e.getVillagerData().profession()))
-         .query("mark_variant", e -> index(TYPES, e.getVillagerData().type()))
+         .query("variant", e -> RegistryIndex.of(PROFESSIONS, BuiltInRegistries.VILLAGER_PROFESSION, e.getVillagerData().getProfession()))
+         .query("mark_variant", e -> RegistryIndex.of(TYPES, BuiltInRegistries.VILLAGER_TYPE, e.getVillagerData().getType()))
          .register();
       MobEquipment.humanoid(EntityType.SKELETON, true, false);
       MobEquipment.humanoid(EntityType.STRAY, true, false);
@@ -50,8 +50,4 @@ public final class UndeadMobs {
       AnimatedMob.builder(EntityType.WITHER_SKELETON).actorScale(e -> 1.2).register();
    }
 
-   private static int index(List<String> order, Holder<?> holder) {
-      int i = holder.unwrapKey().map(k -> order.indexOf(k.location().getPath())).orElse(0);
-      return Math.max(0, i);
-   }
 }

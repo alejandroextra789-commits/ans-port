@@ -1,5 +1,8 @@
 package com.ans.client.mob.groups;
 
+import com.ans.client.util.DyeColors;
+import net.minecraft.world.entity.animal.PolarBear;
+import net.minecraft.world.entity.animal.Panda;
 import com.ans.client.mob.AnimatedMob;
 import com.ans.client.mob.pets.WolfArmorLayer;
 import com.ans.client.molang.EngineVariables;
@@ -46,7 +49,7 @@ public final class PetMobs {
       AnimatedMob.builder(EntityType.WOLF)
          .query("variant", w -> 0.0) // Wolf coat variants do not exist in Minecraft 1.20.1
          .query("is_interested", w -> w.isInterested() ? 1.0 : 0.0)
-         .query("is_shaking_wetness", w -> w.getShakeAnim(1.0F) > 0.0F ? 1.0 : 0.0)
+         .query("is_shaking_wetness", w -> w.getWetShade(1.0F) > 0.0F ? 1.0 : 0.0)
          .query("tail_angle", Wolf::getTailAngle)
          .changeColor((w, pt) -> w.isTame() ? collar(w.getCollarColor()) : -1)
          .register();
@@ -55,13 +58,13 @@ public final class PetMobs {
 
    private static void cat() {
       AnimatedMob.builder(EntityType.CAT)
-         .query("variant", c -> index(CAT_VARIANTS, c.getVariant()))
+         .query("variant", c -> RegistryIndex.of(CAT_VARIANTS, BuiltInRegistries.CAT_VARIANT, c.getVariant()))
          .query("is_sleeping", c -> c.isLying() ? 1.0 : 0.0)
          .changeColor((c, pt) -> c.isTame() ? collar(c.getCollarColor()) : -1)
          .actorScale(c -> c.isBaby() ? 0.4 : 0.8)
          .register();
       EngineVariables.registerForPartial(EntityType.CAT, "liedownamount", (c, pt) -> c.getLieDownAmount(pt));
-      EngineVariables.registerFor(EntityType.CAT, "lieonplayer", c -> c.isLyingOnTopOfSleepingPlayer() ? 1.0 : 0.0);
+      EngineVariables.registerFor(EntityType.CAT, "lieonplayer", c -> c.isLying() ? 1.0 : 0.0);
 
       for (String v : CAT_VARIANTS) {
          BedrockTextures.composite(
@@ -132,13 +135,13 @@ public final class PetMobs {
          .query("roll_counter", p -> p.rollCounter)
          .query("sneeze_counter", p -> p.getSneezeCounter())
          .register();
-      MolangQueries.registerFor(EntityType.PANDA, "sit_amount", partial((p, pt) -> (double)p.getSitAmount(pt)));
-      MolangQueries.registerFor(EntityType.PANDA, "lie_amount", partial((p, pt) -> (double)p.getLieOnBackAmount(pt)));
+      MolangQueries.registerFor(EntityType.PANDA, "sit_amount", partial((Panda p, Float pt) -> (double)p.getSitAmount(pt)));
+      MolangQueries.registerFor(EntityType.PANDA, "lie_amount", partial((Panda p, Float pt) -> (double)p.getLieOnBackAmount(pt)));
    }
 
    private static void polarBear() {
       AnimatedMob.builder(EntityType.POLAR_BEAR).register();
-      MolangQueries.registerFor(EntityType.POLAR_BEAR, "standing_scale", partial((b, pt) -> (double)b.getStandingAnimationScale(pt)));
+      MolangQueries.registerFor(EntityType.POLAR_BEAR, "standing_scale", partial((PolarBear b, Float pt) -> (double)b.getStandingAnimationScale(pt)));
    }
 
 
@@ -147,17 +150,9 @@ public final class PetMobs {
    }
 
    private static int collar(DyeColor color) {
-      return 0xFF000000 | color.getTextureDiffuseColor() & 16777215;
+      return DyeColors.diffuse(color);
    }
 
-   private static int index(List<String> order, Holder<?> holder) {
-      if (holder == null) {
-         return 0;
-      }
-
-      int i = holder.unwrapKey().map(k -> order.indexOf(k.location().getPath())).orElse(0);
-      return Math.max(0, i);
-   }
 
    private static int horseArmorSlot(LivingEntity entity) {
       // Horse armor is still present in 1.20.1, but it is exposed through
@@ -182,7 +177,8 @@ public final class PetMobs {
       // In 1.20.1 llamas expose their carpet color directly; the later BODY
       // equipment slot does not exist yet.
       if (entity instanceof Llama llama) {
-         int swag = llama.getSwag();
+         DyeColor dye = llama.getSwag();
+         int swag = dye == null ? -1 : dye.getId();
          return swag < 0 ? 0 : swag + 1;
       }
       return 0;

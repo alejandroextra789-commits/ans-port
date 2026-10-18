@@ -1,5 +1,6 @@
 package com.ans.client.mob.groups;
 
+import com.ans.client.util.DyeColors;
 import com.ans.client.bedrock.ChangeColors;
 import com.ans.client.mob.AnimatedMob;
 import com.ans.client.mob.aquatic.GuardianBeamLayer;
@@ -8,17 +9,17 @@ import com.ans.client.molang.MolangQueries;
 import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.ToDoubleFunction;
-import net.minecraft.core.Holder;
+import net.minecraft.core.registries.BuiltInRegistries;
 import com.ans.client.util.ArgbCompat;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.animal.axolotl.Axolotl.Variant;
-import net.minecraft.world.entity.animal.fish.Pufferfish;
-import net.minecraft.world.entity.animal.fish.Salmon;
-import net.minecraft.world.entity.animal.fish.TropicalFish.Base;
-import net.minecraft.world.entity.animal.squid.Squid;
+import net.minecraft.world.entity.animal.Pufferfish;
+import net.minecraft.world.entity.animal.Salmon;
+import net.minecraft.world.entity.animal.TropicalFish.Base;
+import net.minecraft.world.entity.animal.Squid;
 import net.minecraft.world.entity.monster.Guardian;
 
 public final class AquaticMobs {
@@ -43,10 +44,10 @@ public final class AquaticMobs {
       AnimatedMob.builder(EntityType.SALMON).actorScale(Salmon::getSalmonScale).register();
       AnimatedMob.builder(EntityType.PUFFERFISH).query("variant", Pufferfish::getPuffState).actorScale(var0 -> 1.2).register();
       AnimatedMob.builder(EntityType.TROPICAL_FISH, "tropicalfish").actorScale(var0 -> 1.3).register();
-      EngineVariables.registerFor(EntityType.TROPICAL_FISH, "TropicalFish.Base", f -> f.getPattern().base() == Base.SMALL ? 0.0 : 1.0);
-      EngineVariables.registerFor(EntityType.TROPICAL_FISH, "TropicalFish.Pattern", f -> f.getPattern().ordinal());
+      EngineVariables.registerFor(EntityType.TROPICAL_FISH, "TropicalFish.Base", f -> f.getVariant().base() == Base.SMALL ? 0.0 : 1.0);
+      EngineVariables.registerFor(EntityType.TROPICAL_FISH, "TropicalFish.Pattern", f -> f.getVariant().ordinal());
       ChangeColors.registerTextureTints(
-         EntityType.TROPICAL_FISH, (f, var1x, i) -> ArgbCompat.opaque((i == 0 ? f.getBaseColor() : f.getPatternColor()).getTextureDiffuseColor())
+         EntityType.TROPICAL_FISH, (f, var1x, i) -> DyeColors.diffuse(i == 0 ? f.getBaseColor() : f.getPatternColor())
       );
 
       for (EntityType<? extends LivingEntity> type : List.of(EntityType.COD, EntityType.SALMON, EntityType.TROPICAL_FISH)) {
@@ -107,7 +108,7 @@ public final class AquaticMobs {
 
    private static void frog() {
       AnimatedMob.builder(EntityType.FROG)
-         .query("variant", f -> index(FROGS, f.getVariant()))
+         .query("variant", f -> RegistryIndex.of(FROGS, BuiltInRegistries.FROG_VARIANT, f.getVariant()))
          .query("is_croaking", f -> f.getPose() == Pose.CROAKING ? 1.0 : 0.0)
          .query("is_eating_mob", f -> f.getPose() == Pose.USING_TONGUE ? 1.0 : 0.0)
          .register();
@@ -115,16 +116,12 @@ public final class AquaticMobs {
 
 
 
-   private static int index(List<String> order, Holder<?> holder) {
-      int i = holder.unwrapKey().map(k -> order.indexOf(k.location().getPath())).orElse(0);
-      return Math.max(0, i);
-   }
 
    private static <E extends LivingEntity> void perType(EntityType<E> type, String name, ToDoubleFunction<E> fn) {
       MolangQueries.registerFor(type, name, fn);
    }
 
    private static <E extends LivingEntity> void partialTickQuery(EntityType<E> type, String name, BiFunction<E, Float, Double> fn) {
-      MolangQueries.registerFor(type, name, var1x -> c -> c.entity == null ? 0.0 : fn.apply((E)c.entity, c.partialTick));
+      MolangQueries.registerFor(type, name, (MolangQueries.Factory)(var1x -> c -> c.entity == null ? 0.0 : fn.apply((E)c.entity, c.partialTick)));
    }
 }

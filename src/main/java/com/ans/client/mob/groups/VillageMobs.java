@@ -7,7 +7,7 @@ import com.ans.client.molang.EngineVariables;
 import com.ans.client.render.EffectsOnlyRuntimes;
 import java.util.List;
 import com.ans.AnsPlatform;
-import net.minecraft.core.Holder;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
@@ -55,9 +55,9 @@ public final class VillageMobs {
    private static void villagers() {
       boolean villagerNews = AnsPlatform.isModLoaded("villagernews");
       AnimatedMob.Builder<Villager> villager = AnimatedMob.builder(EntityType.VILLAGER, "villager_v2")
-         .query("variant", e -> index(PROFESSIONS, e.getVillagerData().profession()))
-         .query("mark_variant", e -> index(TYPES, e.getVillagerData().type()))
-         .query("trade_tier", e -> Mth.clamp(e.getVillagerData().level() - 1, 0, 4))
+         .query("variant", e -> RegistryIndex.of(PROFESSIONS, BuiltInRegistries.VILLAGER_PROFESSION, e.getVillagerData().getProfession()))
+         .query("mark_variant", e -> RegistryIndex.of(TYPES, BuiltInRegistries.VILLAGER_TYPE, e.getVillagerData().getType()))
+         .query("trade_tier", e -> Mth.clamp(e.getVillagerData().getLevel() - 1, 0, 4))
          .query("skin_id", e -> Math.floorMod(e.getUUID().hashCode(), 6));
       if (villagerNews) {
          Ans.LOGGER.info("[ans] Villager News is installed: leaving the villager and wandering trader renderers to it (villager: pack sounds/particles only)");
@@ -93,8 +93,4 @@ public final class VillageMobs {
    }
 
 
-   private static int index(List<String> order, Holder<?> holder) {
-      int i = holder.unwrapKey().map(k -> order.indexOf(k.location().getPath())).orElse(0);
-      return Math.max(0, i);
-   }
 }

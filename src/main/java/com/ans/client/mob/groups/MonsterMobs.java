@@ -27,6 +27,6 @@ public final class MonsterMobs {
    }
 
    private static <E extends LivingEntity> void partialTickQuery(EntityType<E> type, String name, BiFunction<E, Float, Double> fn) {
-      MolangQueries.registerFor(type, name, var1x -> c -> c.entity == null ? 0.0 : fn.apply((E)c.entity, c.partialTick));
+      MolangQueries.registerFor(type, name, (MolangQueries.Factory)(var1x -> c -> c.entity == null ? 0.0 : fn.apply((E)c.entity, c.partialTick)));
    }
 }
