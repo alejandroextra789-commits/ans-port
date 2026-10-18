@@ -45,7 +45,8 @@ tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
     options.compilerArgs += [
         '-AoutRefMapFile=' + file('build/classes/java/main/ans.refmap.json').absolutePath,
-        '-AdefaultObfuscationEnv=searge'
+        '-AdefaultObfuscationEnv=searge',
+        '-Xmaxerrs', '5000'
     ]
 }
 
