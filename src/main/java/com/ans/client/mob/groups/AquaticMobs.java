@@ -2,7 +2,6 @@ package com.ans.client.mob.groups;
 
 import com.ans.client.bedrock.ChangeColors;
 import com.ans.client.mob.AnimatedMob;
-import com.ans.client.mob.aquatic.DolphinItemLayer;
 import com.ans.client.mob.aquatic.GuardianBeamLayer;
 import com.ans.client.molang.EngineVariables;
 import com.ans.client.molang.MolangQueries;
@@ -91,7 +90,6 @@ public final class AquaticMobs {
    private static void dolphin() {
       AnimatedMob.builder(EntityType.DOLPHIN).register();
       pitchQuery(EntityType.DOLPHIN);
-      DolphinItemLayer.install();
    }
 
    private static void turtle() {

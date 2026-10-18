@@ -1,7 +1,6 @@
 package com.ans.client.mob.groups;
 
 import com.ans.client.mob.AnimatedMob;
-import com.ans.client.mob.pets.FoxHeldItemLayer;
 import com.ans.client.mob.pets.WolfArmorLayer;
 import com.ans.client.molang.EngineVariables;
 import com.ans.client.molang.MolangQueries;
@@ -89,7 +88,6 @@ public final class PetMobs {
          .query("is_stalking", f -> f.isCrouching() ? 1.0 : 0.0)
          .query("has_target", f -> !f.isAggressive() && !f.isPouncing() ? 0.0 : 1.0)
          .register();
-      FoxHeldItemLayer.install();
    }
 
    private static void horses() {

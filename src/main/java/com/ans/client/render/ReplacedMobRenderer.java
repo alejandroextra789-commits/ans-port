@@ -100,6 +100,7 @@ public class ReplacedMobRenderer<E extends LivingEntity> extends GeoReplacedEnti
             )
          );
          this.equipment.render(frame, entity, this.getGeoModel(), poseStack, buffer, light, partialTick);
+         MobLayers.render(frame, entity, this.getGeoModel(), poseStack, buffer, light, partialTick);
       } finally {
          poseStack.popPose();
       }

@@ -1,7 +1,6 @@
 package com.ans.client.mob.groups;
 
 import com.ans.client.mob.AnimatedMob;
-import com.ans.client.mob.monster.EndermanCarriedBlockLayer;
 import com.ans.client.molang.EngineVariables;
 import com.ans.client.molang.MolangQueries;
 import java.util.function.BiFunction;
@@ -22,7 +21,6 @@ public final class MonsterMobs {
          .query("is_carrying_block", e -> e.getCarriedBlock() != null ? 1.0 : 0.0)
          .query("is_angry", e -> e.isCreepy() ? 1.0 : 0.0)
          .register();
-      EndermanCarriedBlockLayer.install();
       AnimatedMob.builder(EntityType.IRON_GOLEM).register();
       EngineVariables.registerFor(EntityType.IRON_GOLEM, "attack_animation_tick", g -> g.getAttackAnimationTick());
       EngineVariables.registerFor(EntityType.IRON_GOLEM, "offer_flower_tick", g -> g.getOfferFlowerTick());
