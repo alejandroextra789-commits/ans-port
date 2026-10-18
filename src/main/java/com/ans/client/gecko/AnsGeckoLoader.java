@@ -1,9 +1,9 @@
 package com.ans.client.gecko;
 
-import com.geckolib.cache.animation.BakedAnimations;
+import software.bernie.geckolib.loading.object.BakedAnimations;
 import com.geckolib.loading.loader.GeckoLibGsonLoader;
 import com.geckolib.loading.math.MathParser;
-import com.geckolib.util.GeckoLibUtil;
+import software.bernie.geckolib.util.GeckoLibUtil;
 import com.google.gson.JsonObject;
 import net.minecraft.resources.ResourceLocation;
 

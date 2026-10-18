@@ -9,7 +9,7 @@ import com.ans.client.molang.Molang;
 import com.ans.client.molang.MolangContext;
 import com.ans.client.molang.MolangScope;
 import com.ans.client.sound.PackSounds;
-import com.geckolib.cache.model.BakedGeoModel;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayDeque;

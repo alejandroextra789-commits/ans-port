@@ -85,7 +85,7 @@ public final class ObjectMobs {
    }
 
    private static void armorStand() {
-      MobEquipment.humanoid(EntityType.ARMOR_STAND, ModelLayers.ARMOR_STAND_ARMOR, ModelLayers.ARMOR_STAND_SMALL_ARMOR);
+      MobEquipment.humanoid(EntityType.ARMOR_STAND, true, true);
       AnimatedMob.builder(EntityType.ARMOR_STAND).query("hurt_direction", e -> e.level().getGameTime() - e.lastHit < 5L ? -1.0 : 0.0).register();
    }
 

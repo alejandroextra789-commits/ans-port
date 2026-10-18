@@ -1,5 +1,7 @@
 package com.ans.client.mob.misc;
 
+import com.ans.client.bedrock.BoneLookup;
+
 import com.ans.client.bedrock.FrameResult;
 import com.ans.client.bedrock.MobPose;
 import com.ans.client.bedrock.RenderKind;
@@ -8,10 +10,10 @@ import com.ans.client.mob.AnimatedMob;
 import com.ans.client.render.BedrockTextures;
 import com.ans.client.render.MobAnimatable;
 import com.ans.client.render.ReplacedMobRenderer;
-import com.geckolib.animation.state.BoneSnapshot;
-import com.geckolib.cache.model.BakedGeoModel;
-import com.geckolib.cache.model.GeoBone;
-import com.geckolib.constant.dataticket.DataTicket;
+import software.bernie.geckolib.core.state.BoneSnapshot;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.core.object.DataTicket;
 import com.geckolib.renderer.base.RenderPassInfo;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
@@ -24,8 +26,7 @@ import net.minecraft.client.renderer.entity.EndCrystalRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRendererProvider.Context;
 import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
-import net.minecraft.client.renderer.rendertype.RenderType;
-import net.minecraft.client.renderer.rendertype.RenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.state.level.CameraRenderState;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
@@ -87,13 +88,13 @@ public final class EnderDragonRenderer extends ReplacedMobRenderer<EnderDragon> 
 
          if (body != null) {
             BakedGeoModel model = this.getGeoModel().getBakedModel(body.model());
-            if (!model.isMissingno()) {
+            if (!BoneLookup.isMissing(model)) {
                boolean emissive = body.kindOf("body") == RenderKind.EMISSIVE_ALPHA;
                ResourceLocation texture = emissive ? BedrockTextures.emissiveSplit(body.texture()).plain() : BedrockTextures.resolve(body.texture());
                int alpha = ArgbCompat.white(1.0F - death / 200.0F);
                int light = info.packedLight();
                RenderLayer layer = body;
-               renderTasks.submitCustomGeometry(info.poseStack(), RenderTypes.entityCutoutDissolve(texture, EXPLODING), (pose, buffer) -> {
+               renderTasks.submitCustomGeometry(info.poseStack(), RenderType.entityCutoutNoCull(texture), (pose, buffer) -> {
                   PoseStack ps = info.poseStack();
                   ps.pushPose();
                   ps.last().set(pose);
@@ -102,7 +103,7 @@ public final class EnderDragonRenderer extends ReplacedMobRenderer<EnderDragon> 
                });
                if (emissive) {
                   ResourceLocation glow = BedrockTextures.emissiveSplit(body.texture()).tinted();
-                  renderTasks.submitCustomGeometry(info.poseStack(), RenderTypes.entityTranslucentEmissive(glow), (pose, buffer) -> {
+                  renderTasks.submitCustomGeometry(info.poseStack(), RenderType.entityTranslucentEmissive(glow), (pose, buffer) -> {
                      PoseStack ps = info.poseStack();
                      ps.pushPose();
                      ps.last().set(pose);
@@ -121,9 +122,9 @@ public final class EnderDragonRenderer extends ReplacedMobRenderer<EnderDragon> 
       List<BoneSnapshot> applied = new ArrayList<>();
 
       try {
-         for (GeoBone bone : ((Map)model.boneLookup().get()).values()) {
-            float[] v = pose.get(bone.name());
-            boolean hidden = !layer.visible(bone.name());
+         for (GeoBone bone : ((Map)BoneLookup.of(model)).values()) {
+            float[] v = pose.get(bone.getName());
+            boolean hidden = !layer.visible(bone.getName());
             if (v != null || hidden) {
                BoneSnapshot s = BoneSnapshot.create(bone);
                if (v != null) {
@@ -178,7 +179,7 @@ public final class EnderDragonRenderer extends ReplacedMobRenderer<EnderDragon> 
    private static void submitRays(PoseStack poseStack, float deathTime, SubmitNodeCollector collector) {
       collector.submitCustomGeometry(
          poseStack,
-         RenderTypes.dragonRays(),
+         RenderType.entityTranslucentEmissive(new ResourceLocation("minecraft", "textures/entity/end_gateway_beam.png")),
          (pose, buffer) -> {
             float overDrive = Math.min(deathTime > 0.8F ? (deathTime - 0.8F) / 0.2F : 0.0F, 1.0F);
             int innerColor = ArgbCompat.colorFromFloat(1.0F - overDrive, 1.0F, 1.0F, 1.0F);

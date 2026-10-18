@@ -2,8 +2,6 @@ package com.ans.client.equipment;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import net.minecraft.client.model.geom.ModelLayerLocation;
-import net.minecraft.client.renderer.entity.ArmorModelSet;
 import net.minecraft.world.entity.EntityType;
 
 public final class MobEquipment {
@@ -17,8 +15,8 @@ public final class MobEquipment {
    public final String leftArmBone;
    public final String rightLegBone;
    public final String leftLegBone;
-   public final ArmorModelSet<ModelLayerLocation> armor;
-   public final ArmorModelSet<ModelLayerLocation> babyArmor;
+   public final boolean armor;
+   public final boolean babyArmor;
    public final boolean headItems;
    public final float itemScale;
    public final boolean mainHandRight;
@@ -47,7 +45,7 @@ public final class MobEquipment {
       return new MobEquipment.Builder();
    }
 
-   public static void humanoid(EntityType<?> type, ArmorModelSet<ModelLayerLocation> armor, ArmorModelSet<ModelLayerLocation> babyArmor) {
+   public static void humanoid(EntityType<?> type, boolean armor, boolean babyArmor) {
       builder().armor(armor, babyArmor).register(type);
    }
 
@@ -60,8 +58,8 @@ public final class MobEquipment {
       private String leftArm = "leftarm";
       private String rightLeg = "rightleg";
       private String leftLeg = "leftleg";
-      private ArmorModelSet<ModelLayerLocation> armor;
-      private ArmorModelSet<ModelLayerLocation> babyArmor;
+      private boolean armor;
+      private boolean babyArmor;
       private boolean headItems;
       private float itemScale = 1.0F;
       private boolean mainHandRight;
@@ -82,7 +80,7 @@ public final class MobEquipment {
          return this;
       }
 
-      public MobEquipment.Builder armor(ArmorModelSet<ModelLayerLocation> adult, ArmorModelSet<ModelLayerLocation> baby) {
+      public MobEquipment.Builder armor(boolean adult, boolean baby) {
          this.armor = adult;
          this.babyArmor = baby;
          this.headItems = true;

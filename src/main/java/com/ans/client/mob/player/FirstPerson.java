@@ -14,7 +14,7 @@ import com.ans.client.mob.AnimatedMobs;
 import com.ans.client.molang.MolangContext;
 import com.ans.client.molang.MolangVars;
 import com.ans.client.render.LayerSubmitter;
-import com.geckolib.model.GeoModel;
+import software.bernie.geckolib.model.GeoModel;
 import com.geckolib.renderer.base.RenderPassInfo;
 import com.google.common.base.MoreObjects;
 import com.mojang.blaze3d.vertex.PoseStack;

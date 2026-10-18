@@ -1,5 +1,7 @@
 package com.ans.client.mob.player;
 
+import com.ans.client.bedrock.BoneLookup;
+
 import net.minecraft.util.Mth;
 import com.ans.client.bedrock.BonePattern;
 import com.ans.client.bedrock.FrameResult;
@@ -10,10 +12,10 @@ import com.ans.client.render.LayerSubmitter;
 import com.ans.client.render.MobAnimatable;
 import com.ans.client.render.ReplacedMobRenderer;
 import com.ans.client.render.UiRender;
-import com.geckolib.cache.model.BakedGeoModel;
-import com.geckolib.cache.model.GeoBone;
-import com.geckolib.constant.DataTickets;
-import com.geckolib.model.GeoModel;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.constant.DataTickets;
+import software.bernie.geckolib.model.GeoModel;
 import com.geckolib.renderer.base.RenderPassInfo;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
@@ -265,7 +267,7 @@ public final class PlayerRenderer extends ReplacedMobRenderer<Player> {
    static GeoBone bone(GeoModel<?> geoModel, FrameResult frame, String name) {
       for (RenderLayer layer : frame.layers()) {
          BakedGeoModel model = geoModel.getBakedModel(layer.model());
-         if (!model.isMissingno()) {
+         if (!BoneLookup.isMissing(model)) {
             Optional<GeoBone> bone = model.getBone(name);
             if (bone.isPresent()) {
                return bone.get();

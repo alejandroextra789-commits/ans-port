@@ -1,11 +1,13 @@
 package com.ans.client.attachable;
 
+import com.ans.client.bedrock.BoneLookup;
+
 import com.ans.Ans;
 import com.ans.client.bedrock.AnimationLookup;
-import com.geckolib.cache.model.BakedGeoModel;
-import com.geckolib.cache.model.GeoBone;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.cache.object.GeoBone;
 import com.geckolib.cache.model.cuboid.CuboidGeoBone;
-import com.geckolib.cache.model.cuboid.GeoCube;
+import software.bernie.geckolib.cache.object.GeoCube;
 import com.geckolib.loading.definition.geometry.Geometry;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -164,7 +166,7 @@ public final class TextureMeshes {
                   out = new HashMap<>();
 
                   for (Entry<String, TextureMeshes.BoneSpec> e : spec.bones().entrySet()) {
-                     GeoBone bone = (GeoBone)((Map)model.boneLookup().get()).get(e.getKey());
+                     GeoBone bone = (GeoBone)((Map)BoneLookup.of(model)).get(e.getKey());
                      if (bone instanceof CuboidGeoBone cb) {
                         GeoCube[] mesh = extrude(modelId, spec, e.getValue(), opaque, w, h);
                         GeoCube[] kept = Arrays.copyOf(cb.cubes, Math.min(e.getValue().cubesBefore(), cb.cubes.length));

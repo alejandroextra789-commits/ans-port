@@ -31,10 +31,10 @@ public final class UndeadMobs {
    }
 
    public static void register() {
-      MobEquipment.humanoid(EntityType.ZOMBIE, ModelLayers.ZOMBIE_ARMOR, ModelLayers.ZOMBIE_BABY_ARMOR);
-      MobEquipment.humanoid(EntityType.HUSK, ModelLayers.HUSK_ARMOR, ModelLayers.HUSK_BABY_ARMOR);
-      MobEquipment.humanoid(EntityType.DROWNED, ModelLayers.DROWNED_ARMOR, ModelLayers.DROWNED_BABY_ARMOR);
-      MobEquipment.humanoid(EntityType.ZOMBIE_VILLAGER, ModelLayers.ZOMBIE_VILLAGER_ARMOR, ModelLayers.ZOMBIE_VILLAGER_BABY_ARMOR);
+      MobEquipment.humanoid(EntityType.ZOMBIE, true, true);
+      MobEquipment.humanoid(EntityType.HUSK, true, true);
+      MobEquipment.humanoid(EntityType.DROWNED, true, true);
+      MobEquipment.humanoid(EntityType.ZOMBIE_VILLAGER, true, true);
       AnimatedMob.builder(EntityType.ZOMBIE).register();
       AnimatedMob.builder(EntityType.HUSK).register();
       AnimatedMob.builder(EntityType.DROWNED).register();
@@ -42,11 +42,11 @@ public final class UndeadMobs {
          .query("variant", e -> index(PROFESSIONS, e.getVillagerData().profession()))
          .query("mark_variant", e -> index(TYPES, e.getVillagerData().type()))
          .register();
-      MobEquipment.humanoid(EntityType.SKELETON, ModelLayers.SKELETON_ARMOR, null);
-      MobEquipment.humanoid(EntityType.STRAY, ModelLayers.STRAY_ARMOR, null);
+      MobEquipment.humanoid(EntityType.SKELETON, true, false);
+      MobEquipment.humanoid(EntityType.STRAY, true, false);
       AnimatedMob.builder(EntityType.SKELETON).register();
       AnimatedMob.builder(EntityType.STRAY).register();
-      MobEquipment.humanoid(EntityType.WITHER_SKELETON, ModelLayers.WITHER_SKELETON_ARMOR, null);
+      MobEquipment.humanoid(EntityType.WITHER_SKELETON, true, false);
       AnimatedMob.builder(EntityType.WITHER_SKELETON).actorScale(e -> 1.2).register();
    }
 

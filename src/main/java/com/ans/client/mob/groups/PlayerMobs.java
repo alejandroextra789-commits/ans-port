@@ -20,7 +20,7 @@ public final class PlayerMobs {
       PlayerRendering.install();
       RelativeBones.enable("player");
       EntityRuntime.clampNegativeWeights("player");
-      MobEquipment.builder().armor(ModelLayers.PLAYER_ARMOR, null).mainHandAlwaysRight().register(EntityType.PLAYER);
+      MobEquipment.builder().armor(true, false).mainHandAlwaysRight().register(EntityType.PLAYER);
       AnimatedMob.builder(EntityType.PLAYER).renderer((context, mob, var2) -> new PlayerRenderer(context, mob)).register();
       PlayerScenario.init();
    }

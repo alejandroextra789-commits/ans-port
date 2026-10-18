@@ -1,18 +1,20 @@
 package com.ans.client.mob.pets;
 
+import com.ans.client.bedrock.BoneLookup;
+
 import com.ans.client.bedrock.FrameResult;
 import com.ans.client.bedrock.RenderLayer;
 import com.ans.client.equipment.EquipmentLayer;
 import com.ans.client.render.MobAnimatable;
 import com.ans.client.render.ReplacedMobRenderer;
-import com.geckolib.cache.model.BakedGeoModel;
-import com.geckolib.cache.model.GeoBone;
-import com.geckolib.constant.dataticket.DataTicket;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.core.object.DataTicket;
 import com.geckolib.event.replacedentity.CompileReplacedEntityRenderLayersEvent;
 import com.geckolib.event.replacedentity.CompileReplacedEntityRenderLayersEvent.Listener;
-import com.geckolib.renderer.base.GeoRenderer;
+import software.bernie.geckolib.renderer.GeoRenderer;
 import com.geckolib.renderer.base.RenderPassInfo;
-import com.geckolib.renderer.layer.GeoRenderLayer;
+import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import java.util.Optional;
@@ -63,7 +65,7 @@ public final class FoxHeldItemLayer<E extends LivingEntity> extends GeoRenderLay
 
          for (RenderLayer layer : frame.layers()) {
             BakedGeoModel model = this.getGeoModel().getBakedModel(layer.model());
-            if (!model.isMissingno()) {
+            if (!BoneLookup.isMissing(model)) {
                Optional<GeoBone> b = model.getBone("held_item");
                if (b.isPresent()) {
                   bone = b.get();

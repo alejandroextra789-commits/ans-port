@@ -1,15 +1,17 @@
 package com.ans.client.attachable;
 
+import com.ans.client.bedrock.BoneLookup;
+
 import com.ans.client.bedrock.BoneTransforms;
 import com.ans.client.bedrock.FrameResult;
 import com.ans.client.bedrock.MobPose;
 import com.ans.client.bedrock.RenderLayer;
 import com.ans.client.particle.BedrockParticles;
 import com.ans.client.render.LayerSubmitter;
-import com.geckolib.cache.model.BakedGeoModel;
-import com.geckolib.cache.model.GeoBone;
-import com.geckolib.cache.model.cuboid.GeoCube;
-import com.geckolib.model.GeoModel;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.cache.object.GeoCube;
+import software.bernie.geckolib.model.GeoModel;
 import com.geckolib.renderer.base.GeoRenderState;
 import com.geckolib.renderer.base.RenderPassInfo;
 import com.geckolib.util.RenderUtil;
@@ -43,7 +45,7 @@ public final class AttachableRenderer {
    private static GeoBone holderBone(GeoModel<?> geoModel, FrameResult holder, String name) {
       for (RenderLayer layer : holder.layers()) {
          BakedGeoModel model = geoModel.getBakedModel(layer.model());
-         if (!model.isMissingno()) {
+         if (!BoneLookup.isMissing(model)) {
             GeoBone b = BoneTransforms.resolve(model, layer.model(), name);
             if (b != null) {
                return b;
@@ -57,7 +59,7 @@ public final class AttachableRenderer {
    private static boolean holderHasExact(GeoModel<?> geoModel, FrameResult holder, String name) {
       for (RenderLayer layer : holder.layers()) {
          BakedGeoModel model = geoModel != null ? geoModel.getBakedModel(layer.model()) : BoneTransforms.model(layer.model());
-         if (model != null && !model.isMissingno() && ((Map)model.boneLookup().get()).containsKey(name)) {
+         if (model != null && !BoneLookup.isMissing(model) && ((Map)BoneLookup.of(model)).containsKey(name)) {
             return true;
          }
       }
@@ -80,20 +82,20 @@ public final class AttachableRenderer {
    }
 
    private static String anchorName(GeoBone bone, Map<String, String> bindings, boolean[] bound, Predicate<String> holderHas) {
-      String b = bindings.get(bone.name());
+      String b = bindings.get(bone.getName());
       if (b != null) {
          bound[0] = true;
          return b;
       } else {
          bound[0] = false;
-         return holderHas.test(bone.name()) ? bone.name() : null;
+         return holderHas.test(bone.getName()) ? bone.getName() : null;
       }
    }
 
    static Matrix4f holderMatrix(GeoBone bone, MobPose pose) {
       List<GeoBone> chain = new ArrayList<>();
 
-      for (GeoBone b = bone; b != null; b = b.parent()) {
+      for (GeoBone b = bone; b != null; b = b.getParent()) {
          chain.add(b);
       }
 
@@ -101,15 +103,15 @@ public final class AttachableRenderer {
 
       for (int i = chain.size() - 1; i >= 0; i--) {
          GeoBone b = chain.get(i);
-         float[] v = pose.get(b.name());
+         float[] v = pose.get(b.getName());
          if (v != null) {
             m.translate(-fin(v[3], 0.0F) / 16.0F, fin(v[4], 0.0F) / 16.0F, fin(v[5], 0.0F) / 16.0F);
          }
 
-         m.translate(b.pivotX() / 16.0F, b.pivotY() / 16.0F, b.pivotZ() / 16.0F);
-         float rx = b.baseRotX() + (v == null ? 0.0F : fin(v[0], 0.0F));
-         float ry = b.baseRotY() + (v == null ? 0.0F : fin(v[1], 0.0F));
-         float rz = b.baseRotZ() + (v == null ? 0.0F : fin(v[2], 0.0F));
+         m.translate(b.getPivotX() / 16.0F, b.getPivotY() / 16.0F, b.getPivotZ() / 16.0F);
+         float rx = b.getInitialSnapshot().getRotX() + (v == null ? 0.0F : fin(v[0], 0.0F));
+         float ry = b.getInitialSnapshot().getRotY() + (v == null ? 0.0F : fin(v[1], 0.0F));
+         float rz = b.getInitialSnapshot().getRotZ() + (v == null ? 0.0F : fin(v[2], 0.0F));
          if (rx != 0.0F || ry != 0.0F || rz != 0.0F) {
             m.rotate(new Quaternionf().rotationZYX(rz, ry, rx));
          }
@@ -118,10 +120,10 @@ public final class AttachableRenderer {
             m.scale(fin(v[6], 1.0F), fin(v[7], 1.0F), fin(v[8], 1.0F));
          }
 
-         m.translate(-b.pivotX() / 16.0F, -b.pivotY() / 16.0F, -b.pivotZ() / 16.0F);
+         m.translate(-b.getPivotX() / 16.0F, -b.getPivotY() / 16.0F, -b.getPivotZ() / 16.0F);
       }
 
-      m.translate(bone.pivotX() / 16.0F, bone.pivotY() / 16.0F, bone.pivotZ() / 16.0F);
+      m.translate(bone.getPivotX() / 16.0F, bone.getPivotY() / 16.0F, bone.getPivotZ() / 16.0F);
       return m;
    }
 
@@ -132,7 +134,7 @@ public final class AttachableRenderer {
    private static Quaternionf chainRotation(GeoBone bone, MobPose pose, Quaternionf out) {
       List<GeoBone> chain = new ArrayList<>();
 
-      for (GeoBone b = bone; b != null; b = b.parent()) {
+      for (GeoBone b = bone; b != null; b = b.getParent()) {
          chain.add(b);
       }
 
@@ -146,10 +148,10 @@ public final class AttachableRenderer {
    }
 
    private static Quaternionf rotation(GeoBone b, MobPose pose, Quaternionf out) {
-      float[] v = pose.get(b.name());
-      float x = b.baseRotX() + (v == null ? 0.0F : fin(v[0], 0.0F));
-      float y = b.baseRotY() + (v == null ? 0.0F : fin(v[1], 0.0F));
-      float z = b.baseRotZ() + (v == null ? 0.0F : fin(v[2], 0.0F));
+      float[] v = pose.get(b.getName());
+      float x = b.getInitialSnapshot().getRotX() + (v == null ? 0.0F : fin(v[0], 0.0F));
+      float y = b.getInitialSnapshot().getRotY() + (v == null ? 0.0F : fin(v[1], 0.0F));
+      float z = b.getInitialSnapshot().getRotZ() + (v == null ? 0.0F : fin(v[2], 0.0F));
       return out.rotationZYX(z, y, x);
    }
 
@@ -163,7 +165,7 @@ public final class AttachableRenderer {
          for (RenderLayer layer : f.frame().layers()) {
             BakedGeoModel model = BoneTransforms.model(layer.model());
             if (model != null) {
-               Map<String, GeoBone> bones = (Map<String, GeoBone>)model.boneLookup().get();
+               Map<String, GeoBone> bones = (Map<String, GeoBone>)BoneLookup.of(model);
 
                for (String n : pose.entityRelative()) {
                   GeoBone b = found.containsKey(n) ? null : bones.get(n);
@@ -195,7 +197,7 @@ public final class AttachableRenderer {
             if (self != null) {
                holderAnchor = holderBone(holder, self);
             } else {
-               for (GeoBone p = bone.parent(); p != null; p = p.parent()) {
+               for (GeoBone p = bone.getParent(); p != null; p = p.getParent()) {
                   parents.add(p);
                   String a = anchorName(p, binds, bound, n -> holderHasExact(null, holder, n));
                   if (a != null) {
@@ -218,11 +220,11 @@ public final class AttachableRenderer {
             rotation(bone, pose, desired);
             Quaternionf local = chain.conjugate().mul(desired);
             new Matrix3f().set(local).getEulerAnglesZYX(euler);
-            float[] v = pose.get(bone.name());
+            float[] v = pose.get(bone.getName());
             if (v != null) {
-               v[0] = euler.x - bone.baseRotX();
-               v[1] = euler.y - bone.baseRotY();
-               v[2] = euler.z - bone.baseRotZ();
+               v[0] = euler.x - bone.getInitialSnapshot().getRotX();
+               v[1] = euler.y - bone.getInitialSnapshot().getRotY();
+               v[2] = euler.z - bone.getInitialSnapshot().getRotZ();
                if (relativeDropsParentScale) {
                   float sx = 1.0F;
                   float sy = 1.0F;
@@ -235,7 +237,7 @@ public final class AttachableRenderer {
                   }
 
                   for (GeoBone p : parents) {
-                     float[] pv = pose.get(p.name());
+                     float[] pv = pose.get(p.getName());
                      if (pv != null) {
                         sx *= fin(pv[6], 1.0F);
                         sy *= fin(pv[7], 1.0F);
@@ -269,7 +271,7 @@ public final class AttachableRenderer {
             List<GeoBone> chain = new ArrayList<>();
             Matrix4f m = new Matrix4f();
 
-            for (GeoBone b = bone; b != null; b = b.parent()) {
+            for (GeoBone b = bone; b != null; b = b.getParent()) {
                chain.add(b);
                String a = anchorName(b, binds, bound, n -> holderHasExact(null, holder, n));
                if (a != null) {
@@ -279,7 +281,7 @@ public final class AttachableRenderer {
                   }
 
                   m = holderMatrix(hb, holder.pose());
-                  if (bound[0] && b.parent() == null) {
+                  if (bound[0] && b.getParent() == null) {
                      m.translate(0.0F, -1.5F, 0.0F);
                      break;
                   }
@@ -291,15 +293,15 @@ public final class AttachableRenderer {
 
             for (int i = chain.size() - 1; i >= 0; i--) {
                GeoBone b = chain.get(i);
-               float[] v = pose.get(b.name());
+               float[] v = pose.get(b.getName());
                if (v != null) {
                   m.translate(-fin(v[3], 0.0F) / 16.0F, fin(v[4], 0.0F) / 16.0F, fin(v[5], 0.0F) / 16.0F);
                }
 
-               m.translate(b.pivotX() / 16.0F, b.pivotY() / 16.0F, b.pivotZ() / 16.0F);
-               float rx = b.baseRotX() + (v == null ? 0.0F : fin(v[0], 0.0F));
-               float ry = b.baseRotY() + (v == null ? 0.0F : fin(v[1], 0.0F));
-               float rz = b.baseRotZ() + (v == null ? 0.0F : fin(v[2], 0.0F));
+               m.translate(b.getPivotX() / 16.0F, b.getPivotY() / 16.0F, b.getPivotZ() / 16.0F);
+               float rx = b.getInitialSnapshot().getRotX() + (v == null ? 0.0F : fin(v[0], 0.0F));
+               float ry = b.getInitialSnapshot().getRotY() + (v == null ? 0.0F : fin(v[1], 0.0F));
+               float rz = b.getInitialSnapshot().getRotZ() + (v == null ? 0.0F : fin(v[2], 0.0F));
                if (rx != 0.0F || ry != 0.0F || rz != 0.0F) {
                   m.rotateZYX(rz, ry, rx);
                }
@@ -309,7 +311,7 @@ public final class AttachableRenderer {
                }
 
                if (i > 0) {
-                  m.translate(-b.pivotX() / 16.0F, -b.pivotY() / 16.0F, -b.pivotZ() / 16.0F);
+                  m.translate(-b.getPivotX() / 16.0F, -b.getPivotY() / 16.0F, -b.getPivotZ() / 16.0F);
                }
             }
 
@@ -340,9 +342,9 @@ public final class AttachableRenderer {
                Vector3f sc = m.getScale(new Vector3f());
                sb.append(String.format(Locale.ROOT, "[t=(%.2f,%.2f,%.2f) s=(%.2f,%.2f,%.2f) chain:", t.x * 16.0F, t.y * 16.0F, t.z * 16.0F, sc.x, sc.y, sc.z));
 
-               for (GeoBone p = hb; p != null; p = p.parent()) {
-                  float[] v = holder.pose().get(p.name());
-                  sb.append(' ').append(p.name());
+               for (GeoBone p = hb; p != null; p = p.getParent()) {
+                  float[] v = holder.pose().get(p.getName());
+                  sb.append(' ').append(p.getName());
                   if (v != null) {
                      sb.append(String.format(Locale.ROOT, "{p(%.1f,%.1f,%.1f)s(%.2f,%.2f,%.2f)}", v[3], v[4], v[5], v[6], v[7], v[8]));
                   }
@@ -359,7 +361,7 @@ public final class AttachableRenderer {
    private static int depth(GeoBone b) {
       int d = 0;
 
-      for (GeoBone p = b.parent(); p != null; p = p.parent()) {
+      for (GeoBone p = b.getParent(); p != null; p = p.getParent()) {
          d++;
       }
 
@@ -370,21 +372,21 @@ public final class AttachableRenderer {
       Map<String, Matrix4f> out = new HashMap<>();
       boolean[] bound = new boolean[1];
 
-      for (GeoBone bone : ((Map)model.boneLookup().get()).values()) {
+      for (GeoBone bone : ((Map)BoneLookup.of(model)).values()) {
          String target = anchorName(bone, binds, bound, n -> holderHasExact(geoModel, holder, n));
          if (target != null) {
             GeoBone hb = holderBone(geoModel, holder, target);
             if (hb == null) {
-               out.put(bone.name(), null);
+               out.put(bone.getName(), null);
             } else {
                Matrix4f m = holderMatrix(hb, holder.pose());
-               if (bound[0] && bone.parent() == null) {
+               if (bound[0] && bone.getParent() == null) {
                   m.translate(0.0F, -1.5F, 0.0F);
                } else {
                   anchorOffset(m, bone, bound[0]);
                }
 
-               out.put(bone.name(), m);
+               out.put(bone.getName(), m);
             }
          }
       }
@@ -393,8 +395,8 @@ public final class AttachableRenderer {
    }
 
    static void anchorOffset(Matrix4f m, GeoBone bone, boolean bound) {
-      GeoBone ref = bound && bone.parent() != null ? bone.parent() : bone;
-      m.translate(-ref.pivotX() / 16.0F, -ref.pivotY() / 16.0F, -ref.pivotZ() / 16.0F);
+      GeoBone ref = bound && bone.getParent() != null ? bone.getParent() : bone;
+      m.translate(-ref.getPivotX() / 16.0F, -ref.getPivotY() / 16.0F, -ref.getPivotZ() / 16.0F);
    }
 
    public static <R extends GeoRenderState> void submit(
@@ -406,7 +408,7 @@ public final class AttachableRenderer {
 
          for (RenderLayer layer : f.frame().layers()) {
             BakedGeoModel model = geoModel.getBakedModel(layer.model());
-            if (!model.isMissingno() && !anchors.containsKey(model)) {
+            if (!BoneLookup.isMissing(model) && !anchors.containsKey(model)) {
                anchors.put(model, anchors(geoModel, model, f.bindings().getOrDefault(layer.model(), Map.of()), holder));
                TextureMeshes.Spec spec = f.bundle().textureMeshes.get(layer.model());
                ResourceLocation meshTexture = spec == null ? null : f.bundle().bundle.textures.get(spec.textureKey());
@@ -460,8 +462,8 @@ public final class AttachableRenderer {
       int overlay,
       int color
    ) {
-      boolean anchored = anchors.containsKey(bone.name());
-      Matrix4f anchor = anchors.get(bone.name());
+      boolean anchored = anchors.containsKey(bone.getName());
+      Matrix4f anchor = anchors.get(bone.getName());
       if (!anchored || anchor != null) {
          ps.pushPose();
          if (anchor != null) {
@@ -470,7 +472,7 @@ public final class AttachableRenderer {
          }
 
          RenderUtil.prepMatrixForBone(ps, bone);
-         GeoCube[] meshCubes = meshes.get(bone.name());
+         GeoCube[] meshCubes = meshes.get(bone.getName());
          if (meshCubes == null) {
             bone.render(info, ps, out, light, overlay, color);
          } else if (bone.frameSnapshot == null || !bone.frameSnapshot.isHidden()) {

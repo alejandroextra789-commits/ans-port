@@ -1,8 +1,8 @@
 package com.ans.client.bedrock;
 
-import com.geckolib.cache.GeckoLibResources;
-import com.geckolib.cache.model.BakedGeoModel;
-import com.geckolib.cache.model.GeoBone;
+import software.bernie.geckolib.cache.GeckoLibCache;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.cache.object.GeoBone;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -20,12 +20,12 @@ public final class BoneTransforms {
    }
 
    public static BakedGeoModel model(ResourceLocation id) {
-      BakedGeoModel m = GeckoLibResources.getBakedModels().getModel(id);
-      return m != null && !m.isMissingno() ? m : null;
+      BakedGeoModel m = GeckoLibCache.getBakedModels().get(id);
+      return m != null && !BoneLookup.isMissing(m) ? m : null;
    }
 
    public static GeoBone resolve(BakedGeoModel model, ResourceLocation modelId, String raw) {
-      Map<String, GeoBone> bones = (Map<String, GeoBone>)model.boneLookup().get();
+      Map<String, GeoBone> bones = (Map<String, GeoBone>)BoneLookup.of(model);
       String key = modelId + "|" + raw;
       String known = RESOLVED.get(key);
       if (known != null) {
@@ -76,7 +76,7 @@ public final class BoneTransforms {
    public static double[] trs(GeoBone bone, MobPose pose) {
       List<GeoBone> chain = new ArrayList<>();
 
-      for (GeoBone b = bone; b != null; b = b.parent()) {
+      for (GeoBone b = bone; b != null; b = b.getParent()) {
          chain.add(b);
       }
 
@@ -84,15 +84,15 @@ public final class BoneTransforms {
 
       for (int i = chain.size() - 1; i >= 0; i--) {
          GeoBone b = chain.get(i);
-         float[] v = pose == null ? null : pose.get(b.name());
+         float[] v = pose == null ? null : pose.get(b.getName());
          if (v != null) {
             m.translate(-v[3] / 16.0F, v[4] / 16.0F, v[5] / 16.0F);
          }
 
-         m.translate(b.pivotX() / 16.0F, b.pivotY() / 16.0F, b.pivotZ() / 16.0F);
-         float rx = b.baseRotX() + (v == null ? 0.0F : v[0]);
-         float ry = b.baseRotY() + (v == null ? 0.0F : v[1]);
-         float rz = b.baseRotZ() + (v == null ? 0.0F : v[2]);
+         m.translate(b.getPivotX() / 16.0F, b.getPivotY() / 16.0F, b.getPivotZ() / 16.0F);
+         float rx = b.getInitialSnapshot().getRotX() + (v == null ? 0.0F : v[0]);
+         float ry = b.getInitialSnapshot().getRotY() + (v == null ? 0.0F : v[1]);
+         float rz = b.getInitialSnapshot().getRotZ() + (v == null ? 0.0F : v[2]);
          if (rx != 0.0F || ry != 0.0F || rz != 0.0F) {
             m.rotateZYX(rz, ry, rx);
          }
@@ -102,7 +102,7 @@ public final class BoneTransforms {
          }
 
          if (i > 0) {
-            m.translate(-b.pivotX() / 16.0F, -b.pivotY() / 16.0F, -b.pivotZ() / 16.0F);
+            m.translate(-b.getPivotX() / 16.0F, -b.getPivotY() / 16.0F, -b.getPivotZ() / 16.0F);
          }
       }
 
@@ -113,6 +113,6 @@ public final class BoneTransforms {
    }
 
    public static double[] origin(GeoBone bone) {
-      return new double[]{-bone.pivotX(), 24.0F - bone.pivotY(), bone.pivotZ()};
+      return new double[]{-bone.getPivotX(), 24.0F - bone.getPivotY(), bone.getPivotZ()};
    }
 }

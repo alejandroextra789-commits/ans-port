@@ -8,50 +8,57 @@ import com.ans.client.bedrock.FrameResult;
 import com.ans.client.equipment.EquipmentLayer;
 import com.ans.client.equipment.MobEquipment;
 import com.ans.client.mob.AnimatedMob;
-import com.geckolib.animatable.manager.AnimatableManager;
-import com.geckolib.constant.DataTickets;
-import com.geckolib.constant.dataticket.DataTicket;
-import com.geckolib.renderer.GeoReplacedEntityRenderer;
-import com.geckolib.renderer.base.BoneSnapshots;
-import com.geckolib.renderer.base.GeoRenderState;
-import com.geckolib.renderer.base.RenderPassInfo;
+import com.ans.client.util.ArgbCompat;
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
 import java.lang.reflect.Field;
 import java.util.Map;
+import java.util.WeakHashMap;
 import java.util.concurrent.ConcurrentHashMap;
-import net.minecraft.client.renderer.OrderedSubmitNodeCollector;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRendererProvider.Context;
-import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
-import net.minecraft.client.renderer.rendertype.RenderType;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.core.Direction;
+import net.minecraft.world.entity.AgeableMob;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Pose;
+import software.bernie.geckolib.renderer.GeoReplacedEntityRenderer;
 
-public class ReplacedMobRenderer<E extends LivingEntity> extends GeoReplacedEntityRenderer<MobAnimatable, E, LivingEntityRenderState> {
-   private static final DataTicket<EntityRuntime> RUNTIME = DataTicket.create("ans_runtime", EntityRuntime.class);
+/**
+ * Replaced living-mob renderer, ported to GeckoLib 4.
+ *
+ * Same flow as ReplacedEntityRenderer, plus: baby scale, bed orientation while sleeping,
+ * and the equipment layer. Death rotation is not applied on the Bedrock path yet.
+ */
+public class ReplacedMobRenderer<E extends LivingEntity> extends GeoReplacedEntityRenderer<E, MobAnimatable> {
    private static final int FULL_BRIGHT = 15728880;
    protected final AnimatedMob<E> mob;
+   private final EquipmentLayer<E> equipment;
+   private final Map<Entity, EntityRuntime> runtimes = new WeakHashMap<>();
    private boolean failed;
    public static boolean debug;
    public static final Map<Integer, EntityRuntime> DEBUG_RUNTIMES = new ConcurrentHashMap<>();
    static final boolean BEDROCK_BED_POSITION = !"false".equalsIgnoreCase(System.getProperty("ans.bedrockBedPosition", "true"));
+   private float lastScale = 1.0F;
 
    public ReplacedMobRenderer(Context context, AnimatedMob<E> mob, EntityRendererProvider<E> vanilla) {
       super(context, new MobGeoModel(mob), new MobAnimatable(mob));
       this.mob = mob;
       this.shadowRadius = Float.isNaN(mob.shadowRadius()) ? vanillaShadow(context, vanilla) : mob.shadowRadius();
-      this.withRenderLayer(new EquipmentLayer(this, context, MobEquipment.get(mob.type())));
+      this.equipment = new EquipmentLayer<>(context, MobEquipment.get(mob.type()));
    }
 
    private static float vanillaShadow(Context context, EntityRendererProvider<?> vanilla) {
       if (vanilla == null) {
          return 0.5F;
       }
-
       try {
-         EntityRenderer<?, ?> renderer = vanilla.create(context);
+         EntityRenderer<?> renderer = vanilla.create(context);
          Field f = EntityRenderer.class.getDeclaredField("shadowRadius");
          f.setAccessible(true);
          return f.getFloat(renderer);
@@ -60,94 +67,91 @@ public class ReplacedMobRenderer<E extends LivingEntity> extends GeoReplacedEnti
       }
    }
 
-   public void addRenderData(MobAnimatable animatable, E entity, LivingEntityRenderState renderState, float partialTick) {
-      if (entity != null) {
-         EntityBundle bundle = EntityBundles.get(this.mob.id(), this.mob.bundleFor(entity));
-         AnimatableManager<?> manager = (AnimatableManager<?>)renderState.getGeckolibData(DataTickets.ANIMATABLE_MANAGER);
-         if (bundle != null && manager != null) {
-            EntityRuntime runtime = (EntityRuntime)manager.getAnimatableData(RUNTIME);
-            if (runtime == null || runtime.bundle() != bundle) {
-               runtime = new EntityRuntime(this.mob.id(), bundle);
-               manager.setAnimatableData(RUNTIME, runtime);
-            }
+   @Override
+   public void render(E entity, float entityYaw, float partialTick, PoseStack poseStack, MultiBufferSource buffer, int light) {
+      FrameResult frame = entity == null ? null : computeFrame(entity, partialTick);
+      if (frame == null) {
+         super.render(entity, entityYaw, partialTick, poseStack, buffer, light);
+         return;
+      }
 
-            try {
-               renderState.addGeckolibData(FrameResult.TICKET, runtime.tick(entity, partialTick, renderState));
-               if (debug) {
-                  DEBUG_RUNTIMES.put(entity.getId(), runtime);
-               }
-            } catch (RuntimeException e) {
-               if (!this.failed) {
-                  Ans.LOGGER.error("[ans] {} failed to animate {}; drawing its rest pose (logged once)", new Object[]{this.mob, entity, e});
-               }
-
-               this.failed = true;
-            }
-         }
+      float age = entity instanceof AgeableMob a && a.isBaby() ? 0.5F : 1.0F;
+      poseStack.pushPose();
+      try {
+         applyBodyTransform(entity, partialTick, poseStack, age, frame);
+         final float pt = partialTick;
+         LayerSubmitter.submit(
+            poseStack,
+            buffer,
+            this.getGeoModel(),
+            frame,
+            ArgbCompat.colorFromFloat(1.0F, 1.0F, 1.0F, 1.0F),
+            light,
+            OverlayTexture.NO_OVERLAY,
+            false,
+            null,
+            null,
+            (model, type, vc, l, o, c) -> this.actuallyRender(
+               poseStack, this.getAnimatable(), model, type, buffer, vc, false, pt, l, o,
+               ArgbCompat.red(c) / 255.0F, ArgbCompat.green(c) / 255.0F, ArgbCompat.blue(c) / 255.0F, ArgbCompat.alpha(c) / 255.0F
+            )
+         );
+         this.equipment.render(frame, entity, this.getGeoModel(), poseStack, buffer, light, partialTick);
+      } finally {
+         poseStack.popPose();
       }
    }
 
-   public void applyAnimationControllers(RenderPassInfo<LivingEntityRenderState> renderPassInfo, BoneSnapshots snapshots) {
-      LayerSubmitter.applyPose((FrameResult)renderPassInfo.getGeckolibData(FrameResult.TICKET), snapshots);
-   }
-
-   public void submitRenderTasks(
-      RenderPassInfo<LivingEntityRenderState> renderPassInfo, OrderedSubmitNodeCollector renderTasks, RenderType renderType
-   ) {
-      if (renderType != null) {
-         FrameResult frame = (FrameResult)renderPassInfo.getGeckolibData(FrameResult.TICKET);
-         if (frame == null) {
-            super.submitRenderTasks(renderPassInfo, renderTasks, renderType);
-         } else {
-            LayerSubmitter.submit(this.getGeoModel(), renderPassInfo, renderTasks, frame, ((LivingEntityRenderState)renderPassInfo.renderState()).isInvisible);
-         }
-      }
-   }
-
-   public void scaleModelForRender(RenderPassInfo<LivingEntityRenderState> renderPassInfo, float widthScale, float heightScale) {
-      float age = ((LivingEntityRenderState)renderPassInfo.renderState()).ageScale;
-      super.scaleModelForRender(renderPassInfo, widthScale * age, heightScale * age);
-      FrameResult frame = (FrameResult)renderPassInfo.getGeckolibData(FrameResult.TICKET);
-      if (frame != null && (frame.scaleX() != 1.0F || frame.scaleY() != 1.0F || frame.scaleZ() != 1.0F)) {
-         renderPassInfo.poseStack().scale(frame.scaleX(), frame.scaleY(), frame.scaleZ());
-      }
-   }
-
-   protected float getShadowRadius(LivingEntityRenderState renderState) {
-      FrameResult frame = (FrameResult)renderState.getGeckolibData(FrameResult.TICKET);
-      float scale = frame == null ? 1.0F : Math.max(frame.scaleX(), frame.scaleZ());
-      return this.shadowRadius * renderState.ageScale * scale;
-   }
-
-   protected void applyRotations(RenderPassInfo<LivingEntityRenderState> renderPassInfo, PoseStack poseStack, float nativeScale) {
-      LivingEntityRenderState state = (LivingEntityRenderState)renderPassInfo.renderState();
-      if (state.bedOrientation != null && state.getGeckolibData(DataTickets.ENTITY_POSE) == Pose.SLEEPING && state.deathTime <= 0.0F) {
-         poseStack.mulPose(Axis.YP.rotationDegrees(-state.bedOrientation.toYRot()));
-      } else {
-         super.applyRotations(renderPassInfo, poseStack, nativeScale);
-      }
-   }
-
-   public void adjustRenderPose(RenderPassInfo<LivingEntityRenderState> renderPassInfo) {
-      LivingEntityRenderState state = (LivingEntityRenderState)renderPassInfo.renderState();
-      if (BEDROCK_BED_POSITION && state.bedOrientation != null && !(state.deathTime > 0.0F) && state.getGeckolibData(DataTickets.ENTITY_POSE) == Pose.SLEEPING) {
-         FrameResult frame = (FrameResult)renderPassInfo.getGeckolibData(FrameResult.TICKET);
-         float sx = Math.max(1.0E-4F, state.ageScale * (frame == null ? 1.0F : frame.scaleX()));
-         float sz = Math.max(1.0E-4F, state.ageScale * (frame == null ? 1.0F : frame.scaleZ()));
-         PoseStack poseStack = renderPassInfo.poseStack();
-         poseStack.translate(-state.bedOrientation.getStepX() * 0.5F / sx, 0.0F, -state.bedOrientation.getStepZ() * 0.5F / sz);
-         this.applyRotations(renderPassInfo, poseStack, state.scale);
+   /** Yaw (or bed orientation while sleeping), baby scale, and Bedrock frame scale. */
+   private void applyBodyTransform(E entity, float partialTick, PoseStack poseStack, float age, FrameResult frame) {
+      Direction bed = entity.getPose() == Pose.SLEEPING && entity.deathTime <= 0 ? entity.getBedOrientation() : null;
+      if (BEDROCK_BED_POSITION && bed != null) {
+         float sx = Math.max(1.0E-4F, age * frame.scaleX());
+         float sz = Math.max(1.0E-4F, age * frame.scaleZ());
+         poseStack.translate(-bed.getStepX() * 0.5F / sx, 0.0F, -bed.getStepZ() * 0.5F / sz);
+         poseStack.mulPose(Axis.YP.rotationDegrees(-bed.toYRot()));
          poseStack.translate(0.0F, 0.01F, 0.0F);
       } else {
-         super.adjustRenderPose(renderPassInfo);
+         poseStack.mulPose(Axis.YP.rotationDegrees(180.0F - this.mob.yaw(entity, partialTick)));
+      }
+      poseStack.scale(age, age, age);
+      if (frame.scaleX() != 1.0F || frame.scaleY() != 1.0F || frame.scaleZ() != 1.0F) {
+         poseStack.scale(frame.scaleX(), frame.scaleY(), frame.scaleZ());
       }
    }
 
-   protected float getDeathMaxRotation(GeoRenderState renderState) {
+   private FrameResult computeFrame(E entity, float partialTick) {
+      EntityBundle bundle = EntityBundles.get(this.mob.id(), this.mob.bundleFor(entity));
+      if (bundle == null) {
+         return null;
+      }
+      EntityRuntime runtime = this.runtimes.get(entity);
+      if (runtime == null || runtime.bundle() != bundle) {
+         runtime = new EntityRuntime(this.mob.id(), bundle);
+         this.runtimes.put(entity, runtime);
+      }
+      try {
+         FrameResult frame = runtime.tick(entity, partialTick);
+         if (debug) {
+            DEBUG_RUNTIMES.put(entity.getId(), runtime);
+         }
+         this.lastScale = frame == null ? 1.0F : Math.max(frame.scaleX(), frame.scaleZ());
+         return frame;
+      } catch (RuntimeException e) {
+         if (!this.failed) {
+            Ans.LOGGER.error("[ans] {} failed to animate {}; drawing its rest pose (logged once)", this.mob, entity, e);
+         }
+         this.failed = true;
+         return null;
+      }
+   }
+
+
+   @Override
+   protected float getDeathMaxRotation(MobAnimatable animatable) {
       if (!this.mob.vanillaDeathRotation()) {
          return 0.0F;
-      } else {
-         return Float.isNaN(this.mob.deathRotation()) ? super.getDeathMaxRotation(renderState) : this.mob.deathRotation();
       }
+      return Float.isNaN(this.mob.deathRotation()) ? super.getDeathMaxRotation(animatable) : this.mob.deathRotation();
    }
 }

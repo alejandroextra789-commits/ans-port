@@ -6,9 +6,11 @@ import com.ans.client.bedrock.FrameResult;
 import com.ans.client.bedrock.MobPose;
 import com.ans.client.bedrock.RenderLayer;
 import com.ans.client.molang.BedrockQueries;
-import com.geckolib.cache.model.BakedGeoModel;
-import com.geckolib.cache.model.GeoBone;
-import com.geckolib.cache.model.GeoLocator;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.cache.object.GeoBone;
+import com.ans.client.bedrock.BoneLookup;
+import com.ans.client.bedrock.GeoLocatorData;
+import com.ans.client.bedrock.LocatorReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -194,11 +196,11 @@ public final class RuntimeEffects {
 
       for (ResourceLocation id : models) {
          BakedGeoModel model = BoneTransforms.model(id);
-         GeoLocator loc = model == null ? null : locator(model, name);
+         GeoLocatorData loc = model == null ? null : locator(id, name);
          if (loc != null) {
             List<GeoBone> chain = new ArrayList<>();
 
-            for (GeoBone b = loc.parent(); b != null; b = b.parent()) {
+            for (GeoBone b = parentOf(model, loc); b != null; b = b.getParent()) {
                chain.add(b);
             }
 
@@ -220,7 +222,7 @@ public final class RuntimeEffects {
 
          for (RenderLayer layer : own.layers()) {
             BakedGeoModel model = BoneTransforms.model(layer.model());
-            GeoLocator loc = model == null ? null : locator(model, name);
+            GeoLocatorData loc = model == null ? null : locator(layer.model(), name);
             if (loc != null) {
                Map<String, ? extends Matrix4fc> a = (Map<String, ? extends Matrix4fc>)anchors.get(model);
                if (a == null) {
@@ -229,14 +231,14 @@ public final class RuntimeEffects {
 
                List<GeoBone> chain = new ArrayList<>();
 
-               for (GeoBone x = loc.parent(); x != null; x = x.parent()) {
+               for (GeoBone x = parentOf(model, loc); x != null; x = x.getParent()) {
                   chain.add(x);
                }
 
                for (int i = chain.size() - 1; i >= 0; i--) {
                   GeoBone bone = chain.get(i);
-                  if (a.containsKey(bone.name())) {
-                     Matrix4fc anchor = a.get(bone.name());
+                  if (a.containsKey(bone.getName())) {
+                     Matrix4fc anchor = a.get(bone.getName());
                      if (anchor == null) {
                         return;
                      }
@@ -255,15 +257,15 @@ public final class RuntimeEffects {
    }
 
    private static void prep(Matrix4f m, GeoBone b, MobPose pose) {
-      float[] v = pose.get(b.name());
+      float[] v = pose.get(b.getName());
       if (v != null) {
          m.translate(-fin(v[3], 0.0F) / 16.0F, fin(v[4], 0.0F) / 16.0F, fin(v[5], 0.0F) / 16.0F);
       }
 
-      m.translate(b.pivotX() / 16.0F, b.pivotY() / 16.0F, b.pivotZ() / 16.0F);
-      float rx = b.baseRotX() + (v == null ? 0.0F : fin(v[0], 0.0F));
-      float ry = b.baseRotY() + (v == null ? 0.0F : fin(v[1], 0.0F));
-      float rz = b.baseRotZ() + (v == null ? 0.0F : fin(v[2], 0.0F));
+      m.translate(b.getPivotX() / 16.0F, b.getPivotY() / 16.0F, b.getPivotZ() / 16.0F);
+      float rx = b.getInitialSnapshot().getRotX() + (v == null ? 0.0F : fin(v[0], 0.0F));
+      float ry = b.getInitialSnapshot().getRotY() + (v == null ? 0.0F : fin(v[1], 0.0F));
+      float rz = b.getInitialSnapshot().getRotZ() + (v == null ? 0.0F : fin(v[2], 0.0F));
       if (rx != 0.0F || ry != 0.0F || rz != 0.0F) {
          m.rotateZYX(rz, ry, rx);
       }
@@ -272,10 +274,10 @@ public final class RuntimeEffects {
          m.scale(fin(v[6], 1.0F), fin(v[7], 1.0F), fin(v[8], 1.0F));
       }
 
-      m.translate(-b.pivotX() / 16.0F, -b.pivotY() / 16.0F, -b.pivotZ() / 16.0F);
+      m.translate(-b.getPivotX() / 16.0F, -b.getPivotY() / 16.0F, -b.getPivotZ() / 16.0F);
    }
 
-   private static void applyLocator(Matrix4f m, GeoLocator loc) {
+   private static void applyLocator(Matrix4f m, GeoLocatorData loc) {
       m.translate(loc.offsetX() / 16.0F, loc.offsetY() / 16.0F, loc.offsetZ() / 16.0F);
       if (loc.rotX() != 0.0F || loc.rotY() != 0.0F || loc.rotZ() != 0.0F) {
          m.rotateZYX(loc.rotZ(), loc.rotY(), loc.rotX());
@@ -286,13 +288,13 @@ public final class RuntimeEffects {
       return Float.isFinite(f) ? f : fallback;
    }
 
-   private static GeoLocator locator(BakedGeoModel model, String raw) {
-      Map<String, GeoLocator> all = model.locators();
+   private static GeoLocatorData locator(ResourceLocation id, String raw) {
+      Map<String, GeoLocatorData> all = LocatorReader.forModel(id);
       if (all.isEmpty()) {
          return null;
       }
 
-      GeoLocator l = all.get(raw);
+      GeoLocatorData l = all.get(raw);
       if (l != null) {
          return l;
       }
@@ -308,13 +310,18 @@ public final class RuntimeEffects {
          return l;
       }
 
-      for (Entry<String, GeoLocator> e : all.entrySet()) {
+      for (Entry<String, GeoLocatorData> e : all.entrySet()) {
          if (e.getKey().equalsIgnoreCase(raw)) {
             return e.getValue();
          }
       }
 
       return null;
+   }
+
+   /** The bone a locator hangs from, resolved in the model's bone map (GL4 has no loc.getParent()). */
+   private static GeoBone parentOf(BakedGeoModel model, GeoLocatorData loc) {
+      return BoneLookup.of(model).get(loc.boneName());
    }
 
    private static String decode(String s) {

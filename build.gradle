@@ -38,6 +38,7 @@ dependencies {
     // Mixin annotations are required by the recovered client mixins. Forge supplies
     // the runtime; these dependencies are only for compilation and refmap generation.
     compileOnly 'org.spongepowered:mixin:0.8.5'
+    compileOnly 'com.eliotlash.mclib:mclib:20'
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 

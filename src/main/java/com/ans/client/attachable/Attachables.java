@@ -15,7 +15,7 @@ import com.ans.client.molang.MolangScope;
 import com.ans.client.molang.MolangVars;
 import com.ans.client.render.UiRender;
 import com.ans.client.settings.Experience;
-import com.geckolib.constant.dataticket.DataTicket;
+import software.bernie.geckolib.core.object.DataTicket;
 import com.geckolib.renderer.base.GeoRenderState;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;

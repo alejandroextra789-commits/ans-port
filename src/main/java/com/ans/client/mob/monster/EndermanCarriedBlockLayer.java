@@ -1,18 +1,20 @@
 package com.ans.client.mob.monster;
 
+import com.ans.client.bedrock.BoneLookup;
+
 import com.ans.client.bedrock.FrameResult;
 import com.ans.client.bedrock.RenderLayer;
 import com.ans.client.equipment.EquipmentLayer;
 import com.ans.client.render.MobAnimatable;
 import com.ans.client.render.ReplacedMobRenderer;
-import com.geckolib.cache.model.BakedGeoModel;
-import com.geckolib.cache.model.GeoBone;
-import com.geckolib.constant.dataticket.DataTicket;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.core.object.DataTicket;
 import com.geckolib.event.replacedentity.CompileReplacedEntityRenderLayersEvent;
 import com.geckolib.event.replacedentity.CompileReplacedEntityRenderLayersEvent.Listener;
-import com.geckolib.renderer.base.GeoRenderer;
+import software.bernie.geckolib.renderer.GeoRenderer;
 import com.geckolib.renderer.base.RenderPassInfo;
-import com.geckolib.renderer.layer.GeoRenderLayer;
+import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import java.util.Optional;
@@ -73,7 +75,7 @@ public final class EndermanCarriedBlockLayer<E extends LivingEntity> extends Geo
 
          for (RenderLayer layer : frame.layers()) {
             BakedGeoModel model = this.getGeoModel().getBakedModel(layer.model());
-            if (!model.isMissingno() && layer.visible("fakearms")) {
+            if (!BoneLookup.isMissing(model) && layer.visible("fakearms")) {
                Optional<GeoBone> b = model.getBone("fakearms");
                if (b.isPresent()) {
                   bone = b.get();
@@ -88,7 +90,7 @@ public final class EndermanCarriedBlockLayer<E extends LivingEntity> extends Geo
             ps.last().set(info.getModelRenderMatrixPose());
             EquipmentLayer.toBone(ps, bone, frame.pose());
             ps.scale(-1.0F, -1.0F, 1.0F);
-            float s = Math.abs(bone.pivotY()) / 13.5F;
+            float s = Math.abs(bone.getPivotY()) / 13.5F;
             if (s > 0.01F && Math.abs(s - 1.0F) > 0.05F) {
                ps.scale(s, s, s);
             }

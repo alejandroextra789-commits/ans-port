@@ -6,28 +6,34 @@ import com.ans.client.bedrock.EntityBundles;
 import com.ans.client.bedrock.EntityRuntime;
 import com.ans.client.bedrock.FrameResult;
 import com.ans.client.mob.AnimatedMob;
-import com.geckolib.animatable.manager.AnimatableManager;
-import com.geckolib.constant.DataTickets;
-import com.geckolib.constant.dataticket.DataTicket;
-import com.geckolib.renderer.GeoReplacedEntityRenderer;
-import com.geckolib.renderer.base.BoneSnapshots;
-import com.geckolib.renderer.base.RenderPassInfo;
+import com.ans.client.util.ArgbCompat;
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
 import java.lang.reflect.Field;
-import net.minecraft.client.renderer.OrderedSubmitNodeCollector;
+import java.util.Map;
+import java.util.WeakHashMap;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRendererProvider.Context;
-import net.minecraft.client.renderer.entity.state.EntityRenderState;
-import net.minecraft.client.renderer.rendertype.RenderType;
+import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.world.entity.Entity;
+import software.bernie.geckolib.renderer.GeoReplacedEntityRenderer;
 
-public class ReplacedEntityRenderer<E extends Entity> extends GeoReplacedEntityRenderer<MobAnimatable, E, EntityRenderState> {
-   private static final DataTicket<EntityRuntime> RUNTIME = DataTicket.create("ans_runtime_entity", EntityRuntime.class);
-   private static final DataTicket<Float> YAW = DataTicket.create("ans_yaw", Float.class);
+/**
+ * Replaced non-living entity renderer, ported to GeckoLib 4.
+ *
+ * The per-frame Bedrock result is computed in render() and drawn by LayerSubmitter.
+ * It is not stored on a GeckoLib render state (GL4 has none). When the runtime is
+ * unavailable or fails, the entity falls back to GeckoLib's own render path (rest pose).
+ */
+public class ReplacedEntityRenderer<E extends Entity> extends GeoReplacedEntityRenderer<E, MobAnimatable> {
    protected final AnimatedMob<E> mob;
+   private final Map<Entity, EntityRuntime> runtimes = new WeakHashMap<>();
    private boolean failed;
+   private float lastScale = 1.0F;
 
    public ReplacedEntityRenderer(Context context, AnimatedMob<E> mob, EntityRendererProvider<E> vanilla) {
       super(context, new MobGeoModel(mob), new MobAnimatable(mob));
@@ -39,9 +45,8 @@ public class ReplacedEntityRenderer<E extends Entity> extends GeoReplacedEntityR
       if (vanilla == null) {
          return 0.0F;
       }
-
       try {
-         EntityRenderer<?, ?> renderer = vanilla.create(context);
+         EntityRenderer<?> renderer = vanilla.create(context);
          Field f = EntityRenderer.class.getDeclaredField("shadowRadius");
          f.setAccessible(true);
          return f.getFloat(renderer);
@@ -50,65 +55,65 @@ public class ReplacedEntityRenderer<E extends Entity> extends GeoReplacedEntityR
       }
    }
 
-   public void addRenderData(MobAnimatable animatable, E entity, EntityRenderState renderState, float partialTick) {
-      if (entity != null) {
-         renderState.addGeckolibData(YAW, this.mob.yaw(entity, partialTick));
-         EntityBundle bundle = EntityBundles.get(this.mob.id(), this.mob.bundleFor(entity));
-         AnimatableManager<?> manager = (AnimatableManager<?>)renderState.getGeckolibData(DataTickets.ANIMATABLE_MANAGER);
-         if (bundle != null && manager != null) {
-            EntityRuntime runtime = (EntityRuntime)manager.getAnimatableData(RUNTIME);
-            if (runtime == null || runtime.bundle() != bundle) {
-               runtime = new EntityRuntime(this.mob.id(), bundle);
-               manager.setAnimatableData(RUNTIME, runtime);
-            }
+   @Override
+   public void render(E entity, float entityYaw, float partialTick, PoseStack poseStack, MultiBufferSource buffer, int light) {
+      FrameResult frame = entity == null ? null : computeFrame(entity, partialTick);
+      if (frame == null) {
+         super.render(entity, entityYaw, partialTick, poseStack, buffer, light);
+         return;
+      }
 
-            try {
-               renderState.addGeckolibData(FrameResult.TICKET, runtime.tick(entity, partialTick, renderState));
-               if (ReplacedMobRenderer.debug) {
-                  ReplacedMobRenderer.DEBUG_RUNTIMES.put(entity.getId(), runtime);
-               }
-            } catch (RuntimeException e) {
-               if (!this.failed) {
-                  Ans.LOGGER.error("[ans] {} failed to animate {}; drawing its rest pose (logged once)", new Object[]{this.mob, entity, e});
-               }
-
-               this.failed = true;
-            }
+      float yaw = this.mob.yaw(entity, partialTick);
+      poseStack.pushPose();
+      try {
+         poseStack.mulPose(Axis.YP.rotationDegrees(180.0F - yaw));
+         if (frame.scaleX() != 1.0F || frame.scaleY() != 1.0F || frame.scaleZ() != 1.0F) {
+            poseStack.scale(frame.scaleX(), frame.scaleY(), frame.scaleZ());
          }
+         final float pt = partialTick;
+         LayerSubmitter.submit(
+            poseStack,
+            buffer,
+            this.getGeoModel(),
+            frame,
+            ArgbCompat.colorFromFloat(1.0F, 1.0F, 1.0F, 1.0F),
+            light,
+            OverlayTexture.NO_OVERLAY,
+            false,
+            null,
+            null,
+            (model, type, vc, l, o, c) -> this.actuallyRender(
+               poseStack, this.getAnimatable(), model, type, buffer, vc, false, pt, l, o,
+               ArgbCompat.red(c) / 255.0F, ArgbCompat.green(c) / 255.0F, ArgbCompat.blue(c) / 255.0F, ArgbCompat.alpha(c) / 255.0F
+            )
+         );
+      } finally {
+         poseStack.popPose();
       }
    }
 
-   public void applyAnimationControllers(RenderPassInfo<EntityRenderState> renderPassInfo, BoneSnapshots snapshots) {
-      LayerSubmitter.applyPose((FrameResult)renderPassInfo.getGeckolibData(FrameResult.TICKET), snapshots);
-   }
-
-   public void submitRenderTasks(RenderPassInfo<EntityRenderState> renderPassInfo, OrderedSubmitNodeCollector renderTasks, RenderType renderType) {
-      if (renderType != null) {
-         FrameResult frame = (FrameResult)renderPassInfo.getGeckolibData(FrameResult.TICKET);
-         if (frame == null) {
-            super.submitRenderTasks(renderPassInfo, renderTasks, renderType);
-         } else {
-            LayerSubmitter.submit(this.getGeoModel(), renderPassInfo, renderTasks, frame, ((EntityRenderState)renderPassInfo.renderState()).isInvisible);
+   /** Runs the Bedrock runtime for this entity. Null means "draw the rest pose". */
+   private FrameResult computeFrame(E entity, float partialTick) {
+      EntityBundle bundle = EntityBundles.get(this.mob.id(), this.mob.bundleFor(entity));
+      if (bundle == null) {
+         return null;
+      }
+      EntityRuntime runtime = this.runtimes.get(entity);
+      if (runtime == null || runtime.bundle() != bundle) {
+         runtime = new EntityRuntime(this.mob.id(), bundle);
+         this.runtimes.put(entity, runtime);
+      }
+      try {
+         FrameResult frame = runtime.tick(entity, partialTick);
+         this.lastScale = frame == null ? 1.0F : Math.max(frame.scaleX(), frame.scaleZ());
+         return frame;
+      } catch (RuntimeException e) {
+         if (!this.failed) {
+            Ans.LOGGER.error("[ans] {} failed to animate {}; drawing its rest pose (logged once)", this.mob, entity, e);
          }
+         this.failed = true;
+         return null;
       }
    }
 
-   protected void applyRotations(RenderPassInfo<EntityRenderState> renderPassInfo, PoseStack poseStack, float nativeScale) {
-      float yaw = (Float)((EntityRenderState)renderPassInfo.renderState()).getOrDefaultGeckolibData(YAW, 0.0F);
-      poseStack.mulPose(Axis.YP.rotationDegrees(180.0F - yaw));
-   }
-
-   public void scaleModelForRender(RenderPassInfo<EntityRenderState> renderPassInfo, float widthScale, float heightScale) {
-      super.scaleModelForRender(renderPassInfo, widthScale, heightScale);
-      FrameResult frame = (FrameResult)renderPassInfo.getGeckolibData(FrameResult.TICKET);
-      if (frame != null && (frame.scaleX() != 1.0F || frame.scaleY() != 1.0F || frame.scaleZ() != 1.0F)) {
-         renderPassInfo.poseStack().scale(frame.scaleX(), frame.scaleY(), frame.scaleZ());
-      }
-   }
-
-   protected float getShadowRadius(EntityRenderState renderState) {
-      FrameResult frame = (FrameResult)renderState.getGeckolibData(FrameResult.TICKET);
-      float scale = frame == null ? 1.0F : Math.max(frame.scaleX(), frame.scaleZ());
-      return this.shadowRadius * scale;
-   }
 }

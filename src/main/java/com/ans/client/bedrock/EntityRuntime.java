@@ -11,21 +11,11 @@ import com.ans.client.particle.RuntimeEffects;
 import com.ans.client.sound.BundleSounds;
 import com.ans.client.sound.LocalPlayerSounds;
 import com.ans.client.sound.PackSounds;
-import com.geckolib.animation.AnimationProcessor;
-import com.geckolib.animation.object.LoopType;
-import com.geckolib.animation.state.AnimationPoint;
-import com.geckolib.animation.state.ControllerState;
-import com.geckolib.animation.state.AnimationPoint.Axis;
-import com.geckolib.animation.state.AnimationPoint.Transform;
-import com.geckolib.cache.animation.Animation;
-import com.geckolib.cache.animation.BoneAnimation;
-import com.geckolib.cache.animation.KeyframeStack;
-import com.geckolib.cache.model.BakedGeoModel;
-import com.geckolib.cache.model.GeoBone;
-import com.geckolib.loading.math.value.Variable;
-import com.geckolib.renderer.base.GeoRenderState;
-import it.unimi.dsi.fastutil.objects.Reference2DoubleMap;
-import it.unimi.dsi.fastutil.objects.Reference2DoubleMaps;
+import software.bernie.geckolib.core.animation.Animation;
+import software.bernie.geckolib.core.keyframe.BoneAnimation;
+import software.bernie.geckolib.core.keyframe.KeyframeStack;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.cache.object.GeoBone;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -45,8 +35,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 
 public final class EntityRuntime implements MolangContext.BoneSource {
-   private static final Reference2DoubleMap<Variable> NO_QUERY_VALUES = Reference2DoubleMaps.emptyMap();
-   private static final Axis[] AXES = Axis.values();
    private static final int MAX_DEPTH = 12;
    private final EntityBundle bundle;
    private final String mobId;
@@ -58,7 +46,6 @@ public final class EntityRuntime implements MolangContext.BoneSource {
    private double clock;
    private long frame;
    private List<EntityRuntime.EntryRun> animate = List.of();
-   private GeoRenderState renderState;
    private MobPose pose = new MobPose();
    private MobPose lastPose;
    private List<ResourceLocation> lastModels = List.of();
@@ -76,7 +63,6 @@ public final class EntityRuntime implements MolangContext.BoneSource {
    private static final List<EntityRuntime.PreAnimationHook> PRE_ANIMATION_HOOKS = new CopyOnWriteArrayList<>();
    private static final boolean SCRIPT_TEMPS = !"false".equalsIgnoreCase(System.getProperty("ans.scriptTemps"));
    private static final double STEP_NUDGE = 2.5E-5;
-   private static final Map<Animation, Animation> STEPPED = Collections.synchronizedMap(new WeakHashMap<>());
    public static volatile EntityRuntime.SampleTrace sampleTrace;
    private static final List<EntityBundle.Rule> DEFAULT_MATERIAL_RULES = List.of(
       new EntityBundle.Rule(new BonePattern("*"), Molang.compile("material.default"))
@@ -193,14 +179,13 @@ public final class EntityRuntime implements MolangContext.BoneSource {
       }
    }
 
-   public FrameResult tick(Entity entity, float partialTick, GeoRenderState renderState) {
+   public FrameResult tick(Entity entity, float partialTick) {
       double age = entity.tickCount + partialTick;
       double dt = Double.isNaN(this.lastAge) ? 0.0 : Mth.clamp((age - this.lastAge) / 20.0, 0.0, 0.5);
       this.lastAge = age;
       this.clock += dt;
       this.frame++;
-      this.renderState = renderState;
-      if (entity instanceof LocalPlayer && "player".equals(this.mobId) && !this.firstPerson && !this.ui) {
+            if (entity instanceof LocalPlayer && "player".equals(this.mobId) && !this.firstPerson && !this.ui) {
          LocalPlayerSounds.ran(entity.getId());
       }
 
@@ -276,8 +261,7 @@ public final class EntityRuntime implements MolangContext.BoneSource {
          MolangContext.restore(previous);
          c.entity = null;
          c.actor = null;
-         this.renderState = null;
-      }
+               }
    }
 
    private double eval(MolangExpr e, double fallback) {
@@ -375,89 +359,82 @@ public final class EntityRuntime implements MolangContext.BoneSource {
       }
    }
 
-   private static Animation stepped(Animation a) {
-      return STEPPED.computeIfAbsent(
-         a, k -> new Animation(k.name(), k.length() + 2.5E-5, k.loopType(), k.boneAnimations(), k.usedVariables(), k.keyframeMarkers())
-      );
-   }
-
    private void sample(EntityRuntime.AnimationPlayer player, float weight) {
       Animation animation = player.baked;
-      GeoRenderState state = this.renderState;
-      if (animation != null && state != null) {
-         boolean step = BedrockRules.stepKeyframes();
-         Animation sampled = step ? stepped(animation) : animation;
-         double at = step ? player.time + 2.5E-5 : player.time;
-         AnimationPoint point = player.point != null && player.point.animation() == sampled
-            ? player.point.createNext(at)
-            : AnimationPoint.createFor(sampled, null, LoopType.PLAY_ONCE, at);
-         player.point = point;
-         ControllerState cs = new ControllerState(point, null, -1.0, 0, false, null, state, NO_QUERY_VALUES);
-         BoneAnimation[] bones = animation.boneAnimations();
-         boolean override = player.def.overridePrevious();
-         float keep = 1.0F - weight;
-         if (this.relativeBones) {
-            List<String> rel = this.bundle.relativeToEntity.get(player.def.key());
-            if (rel != null) {
-               for (String r : rel) {
-                  this.pose.markEntityRelative(r);
-               }
+      if (animation == null) {
+         return;
+      }
+      boolean step = BedrockRules.stepKeyframes();
+      double at = step ? player.time + 2.5E-5 : player.time;
+      Map<String, BedrockSampler.BoneTransform> sampled = BedrockSampler.sample(animation, at, step);
+      BoneAnimation[] bones = animation.boneAnimations();
+      boolean override = player.def.overridePrevious();
+      float keep = 1.0F - weight;
+      if (this.relativeBones) {
+         List<String> rel = this.bundle.relativeToEntity.get(player.def.key());
+         if (rel != null) {
+            for (String r : rel) {
+               this.pose.markEntityRelative(r);
             }
          }
+      }
 
-         MolangContext c = this.ctx;
-         boolean bedrockThis = BedrockRules.animationThis();
-         EntityRuntime.SampleTrace trace = sampleTrace;
+      MolangContext c = this.ctx;
+      boolean bedrockThis = BedrockRules.animationThis();
+      EntityRuntime.SampleTrace trace = sampleTrace;
 
-         try {
-            for (int b = 0; b < bones.length; b++) {
-               BoneAnimation bone = bones[b];
-               float[] v = this.pose.bone(bone.boneName());
-               float[] before = trace != null ? (float[])v.clone() : null;
-               float[] rest = bedrockThis ? this.restRotation(bone.boneName()) : NO_REST;
+      try {
+         for (BoneAnimation bone : bones) {
+            BedrockSampler.BoneTransform t = sampled.get(bone.boneName());
+            if (t == null) {
+               continue;
+            }
+            float[] v = this.pose.bone(bone.boneName());
+            float[] before = trace != null ? (float[])v.clone() : null;
+            float[] rest = bedrockThis ? this.restRotation(bone.boneName()) : NO_REST;
 
-               for (Axis axis : AXES) {
-                  int a = axis.index;
-                  if (has(bone.rotationKeyFrames(), axis)) {
-                     if (bedrockThis) {
-                        c.thisValue = a == 2 ? Math.toDegrees(v[a] + rest[a]) : -Math.toDegrees(v[a] + rest[a]);
-                     }
-
-                     float x = AnimationProcessor.findAnimationPointValue(null, cs, point, null, b, Transform.ROTATION, axis, null);
-                     v[a] = override ? v[a] * keep + weight * x : v[a] + weight * x;
+            for (int a = 0; a < 3; a++) {
+               if (hasChannel(bone.rotationKeyFrames(), a)) {
+                  if (bedrockThis) {
+                     c.thisValue = a == 2 ? Math.toDegrees(v[a] + rest[a]) : -Math.toDegrees(v[a] + rest[a]);
                   }
-
-                  if (has(bone.positionKeyFrames(), axis)) {
-                     if (bedrockThis) {
-                        c.thisValue = v[3 + a];
-                     }
-
-                     float x = AnimationProcessor.findAnimationPointValue(null, cs, point, null, b, Transform.TRANSLATION, axis, null);
-                     v[3 + a] = override ? v[3 + a] * keep + weight * x : v[3 + a] + weight * x;
-                  }
-
-                  if (has(bone.scaleKeyFrames(), axis)) {
-                     if (bedrockThis) {
-                        c.thisValue = v[6 + a];
-                     }
-
-                     float s = AnimationProcessor.findAnimationPointValue(null, cs, point, null, b, Transform.SCALE, axis, null);
-                     v[6 + a] = override ? v[6 + a] * keep + weight * s : v[6 + a] * (1.0F + weight * (s - 1.0F));
-                  }
+                  float x = a == 0 ? t.rotX() : a == 1 ? t.rotY() : t.rotZ();
+                  v[a] = override ? v[a] * keep + weight * x : v[a] + weight * x;
                }
 
-               if (trace != null) {
-                  trace.sampled(this, player.def.key(), bone.boneName(), weight, before, v);
+               if (hasChannel(bone.positionKeyFrames(), a)) {
+                  if (bedrockThis) {
+                     c.thisValue = v[3 + a];
+                  }
+                  float x = a == 0 ? t.posX() : a == 1 ? t.posY() : t.posZ();
+                  v[3 + a] = override ? v[3 + a] * keep + weight * x : v[3 + a] + weight * x;
+               }
+
+               if (hasChannel(bone.scaleKeyFrames(), a)) {
+                  if (bedrockThis) {
+                     c.thisValue = v[6 + a];
+                  }
+                  float s = a == 0 ? t.scaleX() : a == 1 ? t.scaleY() : t.scaleZ();
+                  v[6 + a] = override ? v[6 + a] * keep + weight * s : v[6 + a] * (1.0F + weight * (s - 1.0F));
                }
             }
-         } finally {
-            c.thisValue = 0.0;
+
+            if (trace != null) {
+               trace.sampled(this, player.def.key(), bone.boneName(), weight, before, v);
+            }
          }
+      } finally {
+         c.thisValue = 0.0;
       }
    }
 
-   private static boolean has(KeyframeStack stack, Axis axis) {
-      return axis.keyframes(stack).length > 0;
+   /** True if the stack has keyframes on channel a (0 = x, 1 = y, 2 = z). */
+   private static boolean hasChannel(KeyframeStack<?> stack, int a) {
+      if (stack == null) {
+         return false;
+      }
+      List<?> frames = a == 0 ? stack.xKeyframes() : a == 1 ? stack.yKeyframes() : stack.zKeyframes();
+      return frames != null && !frames.isEmpty();
    }
 
    private List<RenderLayer> renderLayers(Entity entity) {
@@ -785,9 +762,9 @@ public final class EntityRuntime implements MolangContext.BoneSource {
 
       for (ResourceLocation id : ids) {
          BakedGeoModel model = BoneTransforms.model(id);
-         GeoBone gb = model == null ? null : (GeoBone)((Map)model.boneLookup().get()).get(bone);
-         if (gb != null && (gb.baseRotX() != 0.0F || gb.baseRotY() != 0.0F || gb.baseRotZ() != 0.0F)) {
-            r = new float[]{gb.baseRotX(), gb.baseRotY(), gb.baseRotZ()};
+         GeoBone gb = model == null ? null : (GeoBone)((Map)BoneLookup.of(model)).get(bone);
+         if (gb != null && (gb.getInitialSnapshot().getRotX() != 0.0F || gb.getInitialSnapshot().getRotY() != 0.0F || gb.getInitialSnapshot().getRotZ() != 0.0F)) {
+            r = new float[]{gb.getInitialSnapshot().getRotX(), gb.getInitialSnapshot().getRotY(), gb.getInitialSnapshot().getRotZ()};
             break;
          }
       }
@@ -856,7 +833,6 @@ public final class EntityRuntime implements MolangContext.BoneSource {
       double loopWait;
       Animation baked;
       boolean resolved;
-      AnimationPoint point;
 
       AnimationPlayer(EntityBundle.AnimationDef def) {
          this.def = def;
@@ -1169,7 +1145,7 @@ public final class EntityRuntime implements MolangContext.BoneSource {
 
       private void dropOlder(int count) {
          for (int i = 0; i < count && !this.older.isEmpty(); i++) {
-            EntityRuntime.this.stopParticles(this.older.removeFirst().run());
+            EntityRuntime.this.stopParticles(this.older.remove(0).run());
          }
       }
    }

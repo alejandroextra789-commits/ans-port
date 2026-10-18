@@ -1,7 +1,7 @@
 package com.ans.client.bedrock;
 
-import com.geckolib.cache.model.BakedGeoModel;
-import com.geckolib.cache.model.GeoBone;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.cache.object.GeoBone;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -24,7 +24,7 @@ public final class RelativeBones {
    static void resolve(MobPose pose, BakedGeoModel model) {
       Set<String> marked = pose.entityRelative();
       if (!marked.isEmpty()) {
-         Map<String, GeoBone> bones = (Map<String, GeoBone>)model.boneLookup().get();
+         Map<String, GeoBone> bones = (Map<String, GeoBone>)BoneLookup.of(model);
          List<GeoBone> todo = new ArrayList<>();
 
          for (String name : marked) {
@@ -43,7 +43,7 @@ public final class RelativeBones {
             chain.identity();
             List<GeoBone> parents = new ArrayList<>();
 
-            for (GeoBone p = bone.parent(); p != null; p = p.parent()) {
+            for (GeoBone p = bone.getParent(); p != null; p = p.getParent()) {
                parents.add(p);
             }
 
@@ -54,10 +54,10 @@ public final class RelativeBones {
             rotation(bone, pose, desired);
             Quaternionf local = chain.conjugate().mul(desired);
             new Matrix3f().set(local).getEulerAnglesZYX(euler);
-            float[] v = pose.bone(bone.name());
-            v[0] = euler.x - bone.baseRotX();
-            v[1] = euler.y - bone.baseRotY();
-            v[2] = euler.z - bone.baseRotZ();
+            float[] v = pose.bone(bone.getName());
+            v[0] = euler.x - bone.getInitialSnapshot().getRotX();
+            v[1] = euler.y - bone.getInitialSnapshot().getRotY();
+            v[2] = euler.z - bone.getInitialSnapshot().getRotZ();
          }
       }
    }
@@ -65,7 +65,7 @@ public final class RelativeBones {
    private static int depth(GeoBone b) {
       int d = 0;
 
-      for (GeoBone p = b.parent(); p != null; p = p.parent()) {
+      for (GeoBone p = b.getParent(); p != null; p = p.getParent()) {
          d++;
       }
 
@@ -73,10 +73,10 @@ public final class RelativeBones {
    }
 
    private static Quaternionf rotation(GeoBone b, MobPose pose, Quaternionf out) {
-      float[] v = pose.get(b.name());
-      float x = b.baseRotX() + (v == null ? 0.0F : fin(v[0]));
-      float y = b.baseRotY() + (v == null ? 0.0F : fin(v[1]));
-      float z = b.baseRotZ() + (v == null ? 0.0F : fin(v[2]));
+      float[] v = pose.get(b.getName());
+      float x = b.getInitialSnapshot().getRotX() + (v == null ? 0.0F : fin(v[0]));
+      float y = b.getInitialSnapshot().getRotY() + (v == null ? 0.0F : fin(v[1]));
+      float z = b.getInitialSnapshot().getRotZ() + (v == null ? 0.0F : fin(v[2]));
       return out.rotationZYX(z, y, x);
    }
 

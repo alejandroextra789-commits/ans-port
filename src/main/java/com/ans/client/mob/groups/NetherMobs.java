@@ -70,14 +70,14 @@ public final class NetherMobs {
    }
 
    private static void piglins() {
-      MobEquipment.humanoid(EntityType.PIGLIN, ModelLayers.PIGLIN_ARMOR, ModelLayers.PIGLIN_BABY_ARMOR);
+      MobEquipment.humanoid(EntityType.PIGLIN, true, true);
       AnimatedMob.builder(EntityType.PIGLIN)
          .query("variant", p -> p.getMainHandItem().getItem() instanceof CrossbowItem ? 0.0 : 1.0)
          .query("is_admiring", p -> p.getArmPose() == PiglinArmPose.ADMIRING_ITEM ? 1.0 : 0.0)
          .register();
-      MobEquipment.humanoid(EntityType.PIGLIN_BRUTE, ModelLayers.PIGLIN_BRUTE_ARMOR, null);
+      MobEquipment.humanoid(EntityType.PIGLIN_BRUTE, true, false);
       AnimatedMob.builder(EntityType.PIGLIN_BRUTE).register();
-      MobEquipment.humanoid(EntityType.ZOMBIFIED_PIGLIN, ModelLayers.ZOMBIFIED_PIGLIN_ARMOR, ModelLayers.ZOMBIFIED_PIGLIN_BABY_ARMOR);
+      MobEquipment.humanoid(EntityType.ZOMBIFIED_PIGLIN, true, true);
       AnimatedMob.builder(EntityType.ZOMBIFIED_PIGLIN, "zombie_pigman").register();
    }
 
