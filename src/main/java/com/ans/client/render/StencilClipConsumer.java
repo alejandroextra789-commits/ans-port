@@ -4,8 +4,11 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clips each incoming quad against the planes of a captured mask (1.20.1 VertexConsumer API).
+ * A quad is clipped when its fourth vertex calls endVertex(); the surviving polygon is re-emitted as quads.
+ */
 public final class StencilClipConsumer implements VertexConsumer {
-   private static final int X = 0;
    private static final int U = 3;
    private static final int NX = 5;
    private static final int A = 8;
@@ -17,19 +20,8 @@ public final class StencilClipConsumer implements VertexConsumer {
    private static final int LV = 14;
    private static final int SIZE = 15;
    private final VertexConsumer out;
-
-   @Override
-   public void defaultColor(int r, int g, int b, int a) {
-      this.out.defaultColor(r, g, b, a);
-   }
-
-   @Override
-   public void unsetDefaultColor() {
-      this.out.unsetDefaultColor();
-   }
-
    private final List<float[]> planes = new ArrayList<>();
-   private final float[][] quad = new float[4][15];
+   private final float[][] quad = new float[4][SIZE];
    private int n = -1;
 
    public StencilClipConsumer(VertexConsumer out, StencilClipConsumer.Capture mask) {
@@ -75,28 +67,112 @@ public final class StencilClipConsumer implements VertexConsumer {
       }
    }
 
-   private void flushIfComplete() {
+   @Override
+   public VertexConsumer vertex(double x, double y, double z) {
+      this.n++;
+      float[] v = this.quad[this.n];
+      v[0] = (float)x;
+      v[1] = (float)y;
+      v[2] = (float)z;
+      v[A] = 255.0F;
+      v[R] = 255.0F;
+      v[G] = 255.0F;
+      v[B] = 255.0F;
+      v[U] = 0.0F;
+      v[U + 1] = 0.0F;
+      v[NX] = 0.0F;
+      v[NX + 1] = 0.0F;
+      v[NX + 2] = 0.0F;
+      v[OV] = 0.0F;
+      v[LU] = 240.0F;
+      v[LV] = 240.0F;
+      return this;
+   }
+
+   @Override
+   public VertexConsumer color(int r, int g, int b, int a) {
+      if (this.n >= 0) {
+         float[] v = this.quad[this.n];
+         v[A] = a & 0xFF;
+         v[R] = r & 0xFF;
+         v[G] = g & 0xFF;
+         v[B] = b & 0xFF;
+      }
+      return this;
+   }
+
+   @Override
+   public VertexConsumer uv(float u, float v) {
+      if (this.n >= 0) {
+         this.quad[this.n][U] = u;
+         this.quad[this.n][U + 1] = v;
+      }
+      return this;
+   }
+
+   @Override
+   public VertexConsumer overlayCoords(int u, int v) {
+      if (this.n >= 0) {
+         this.quad[this.n][OV] = u & 0xFFFF | v << 16;
+      }
+      return this;
+   }
+
+   @Override
+   public VertexConsumer uv2(int u, int v) {
+      if (this.n >= 0) {
+         this.quad[this.n][LU] = u & 0xFFFF;
+         this.quad[this.n][LV] = v & 0xFFFF;
+      }
+      return this;
+   }
+
+   @Override
+   public VertexConsumer normal(float x, float y, float z) {
+      if (this.n >= 0) {
+         this.quad[this.n][NX] = x;
+         this.quad[this.n][NX + 1] = y;
+         this.quad[this.n][NX + 2] = z;
+      }
+      return this;
+   }
+
+   @Override
+   public void endVertex() {
       if (this.n == 3) {
          this.n = -1;
+         this.flush();
+      }
+   }
 
-         for (float[] p : this.planes) {
-            List<float[]> poly = new ArrayList<>(8);
+   @Override
+   public void defaultColor(int r, int g, int b, int a) {
+      this.out.defaultColor(r, g, b, a);
+   }
 
-            for (float[] v : this.quad) {
-               poly.add((float[])v.clone());
-            }
+   @Override
+   public void unsetDefaultColor() {
+      this.out.unsetDefaultColor();
+   }
 
-            for (int i = 0; i < 4 && poly.size() >= 3; i++) {
-               poly = clip(poly, p[i * 3], p[i * 3 + 1], p[i * 3 + 2]);
-            }
+   private void flush() {
+      for (float[] p : this.planes) {
+         List<float[]> poly = new ArrayList<>(8);
 
-            if (poly.size() >= 3) {
-               for (int k = 1; k + 1 < poly.size(); k++) {
-                  this.emit(poly.get(0));
-                  this.emit(poly.get(k));
-                  this.emit(poly.get(k + 1));
-                  this.emit(poly.get(k + 1));
-               }
+         for (float[] v : this.quad) {
+            poly.add(v.clone());
+         }
+
+         for (int i = 0; i < 4 && poly.size() >= 3; i++) {
+            poly = clip(poly, p[i * 3], p[i * 3 + 1], p[i * 3 + 2]);
+         }
+
+         if (poly.size() >= 3) {
+            for (int k = 1; k + 1 < poly.size(); k++) {
+               this.emit(poly.get(0));
+               this.emit(poly.get(k));
+               this.emit(poly.get(k + 1));
+               this.emit(poly.get(k + 1));
             }
          }
       }
@@ -116,9 +192,9 @@ public final class StencilClipConsumer implements VertexConsumer {
 
          if (da >= 0.0F != db >= 0.0F) {
             float t = da / (da - db);
-            float[] c = new float[15];
+            float[] c = new float[SIZE];
 
-            for (int k = 0; k < 15; k++) {
+            for (int k = 0; k < SIZE; k++) {
                c[k] = a[k] + (b[k] - a[k]) * t;
             }
 
@@ -130,94 +206,18 @@ public final class StencilClipConsumer implements VertexConsumer {
    }
 
    private void emit(float[] v) {
-      int color = Math.round(v[8]) << 24 | Math.round(v[9]) << 16 | Math.round(v[10]) << 8 | Math.round(v[11]);
-      int overlay = Math.round(v[12]);
-      int light = Math.round(v[13]) & 65535 | Math.round(v[14]) << 16;
-      this.out.addVertex(v[0], v[1], v[2], color, v[3], v[4], overlay, light, v[5], v[6], v[7]);
-   }
-
-   public VertexConsumer addVertex(float x, float y, float z) {
-      this.flushIfComplete();
-      this.n++;
-      float[] v = this.quad[this.n];
-      v[0] = x;
-      v[1] = y;
-      v[2] = z;
-      v[8] = v[9] = v[10] = v[11] = 255.0F;
-      v[12] = 0.0F;
-      v[13] = 240.0F;
-      v[14] = 240.0F;
-      return this;
-   }
-
-   public VertexConsumer setColor(int r, int g, int b, int a) {
-      return this.setColor((a & 0xFF) << 24 | (r & 0xFF) << 16 | (g & 0xFF) << 8 | b & 0xFF);
-   }
-
-   public VertexConsumer setColor(int argb) {
-      if (this.n >= 0) {
-         float[] v = this.quad[this.n];
-         v[8] = argb >>> 24;
-         v[9] = argb >> 16 & 0xFF;
-         v[10] = argb >> 8 & 0xFF;
-         v[11] = argb & 0xFF;
-      }
-
-      return this;
-   }
-
-   public VertexConsumer setUv(float u, float v) {
-      if (this.n >= 0) {
-         this.quad[this.n][3] = u;
-         this.quad[this.n][4] = v;
-      }
-
-      return this;
-   }
-
-   public VertexConsumer setUv1(int u, int v) {
-      if (this.n >= 0) {
-         this.quad[this.n][12] = u & 65535 | v << 16;
-      }
-
-      return this;
-   }
-
-   public VertexConsumer setUv2(int u, int v) {
-      if (this.n >= 0) {
-         this.quad[this.n][13] = u & 65535;
-         this.quad[this.n][14] = v & 65535;
-      }
-
-      return this;
-   }
-
-   public VertexConsumer setNormal(float x, float y, float z) {
-      if (this.n >= 0) {
-         this.quad[this.n][5] = x;
-         this.quad[this.n][6] = y;
-         this.quad[this.n][7] = z;
-      }
-
-      this.flushIfComplete();
-      return this;
-   }
-
-   public VertexConsumer setLineWidth(float width) {
-      return this;
+      int overlay = Math.round(v[OV]);
+      this.out.vertex(v[0], v[1], v[2])
+         .color(Math.round(v[R]), Math.round(v[G]), Math.round(v[B]), Math.round(v[A]))
+         .uv(v[U], v[U + 1])
+         .overlayCoords(overlay & 0xFFFF, overlay >>> 16)
+         .uv2(Math.round(v[LU]), Math.round(v[LV]))
+         .normal(v[NX], v[NX + 1], v[NX + 2])
+         .endVertex();
    }
 
    public static final class Capture implements VertexConsumer {
       final List<float[]> quads = new ArrayList<>();
-
-      @Override
-      public void defaultColor(int r, int g, int b, int a) {
-      }
-
-      @Override
-      public void unsetDefaultColor() {
-      }
-
       private float[] cur = new float[12];
       private int n = -1;
 
@@ -225,46 +225,55 @@ public final class StencilClipConsumer implements VertexConsumer {
          return this.quads.isEmpty();
       }
 
-      public VertexConsumer addVertex(float x, float y, float z) {
+      @Override
+      public VertexConsumer vertex(double x, double y, double z) {
          this.n++;
-         this.cur[this.n * 3] = x;
-         this.cur[this.n * 3 + 1] = y;
-         this.cur[this.n * 3 + 2] = z;
+         this.cur[this.n * 3] = (float)x;
+         this.cur[this.n * 3 + 1] = (float)y;
+         this.cur[this.n * 3 + 2] = (float)z;
+         return this;
+      }
+
+      @Override
+      public VertexConsumer color(int r, int g, int b, int a) {
+         return this;
+      }
+
+      @Override
+      public VertexConsumer uv(float u, float v) {
+         return this;
+      }
+
+      @Override
+      public VertexConsumer overlayCoords(int u, int v) {
+         return this;
+      }
+
+      @Override
+      public VertexConsumer uv2(int u, int v) {
+         return this;
+      }
+
+      @Override
+      public VertexConsumer normal(float x, float y, float z) {
+         return this;
+      }
+
+      @Override
+      public void endVertex() {
          if (this.n == 3) {
             this.quads.add(this.cur);
             this.cur = new float[12];
             this.n = -1;
          }
-
-         return this;
       }
 
-      public VertexConsumer setColor(int r, int g, int b, int a) {
-         return this;
+      @Override
+      public void defaultColor(int r, int g, int b, int a) {
       }
 
-      public VertexConsumer setColor(int argb) {
-         return this;
-      }
-
-      public VertexConsumer setUv(float u, float v) {
-         return this;
-      }
-
-      public VertexConsumer setUv1(int u, int v) {
-         return this;
-      }
-
-      public VertexConsumer setUv2(int u, int v) {
-         return this;
-      }
-
-      public VertexConsumer setNormal(float x, float y, float z) {
-         return this;
-      }
-
-      public VertexConsumer setLineWidth(float width) {
-         return this;
+      @Override
+      public void unsetDefaultColor() {
       }
    }
 }
