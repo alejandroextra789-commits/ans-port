@@ -17,6 +17,17 @@ public final class StencilClipConsumer implements VertexConsumer {
    private static final int LV = 14;
    private static final int SIZE = 15;
    private final VertexConsumer out;
+
+   @Override
+   public void defaultColor(int r, int g, int b, int a) {
+      this.out.defaultColor(r, g, b, a);
+   }
+
+   @Override
+   public void unsetDefaultColor() {
+      this.out.unsetDefaultColor();
+   }
+
    private final List<float[]> planes = new ArrayList<>();
    private final float[][] quad = new float[4][15];
    private int n = -1;
@@ -198,6 +209,15 @@ public final class StencilClipConsumer implements VertexConsumer {
 
    public static final class Capture implements VertexConsumer {
       final List<float[]> quads = new ArrayList<>();
+
+      @Override
+      public void defaultColor(int r, int g, int b, int a) {
+      }
+
+      @Override
+      public void unsetDefaultColor() {
+      }
+
       private float[] cur = new float[12];
       private int n = -1;
 

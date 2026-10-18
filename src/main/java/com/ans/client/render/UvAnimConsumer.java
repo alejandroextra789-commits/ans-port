@@ -4,6 +4,17 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 
 public final class UvAnimConsumer implements VertexConsumer {
    private final VertexConsumer out;
+
+   @Override
+   public void defaultColor(int r, int g, int b, int a) {
+      this.out.defaultColor(r, g, b, a);
+   }
+
+   @Override
+   public void unsetDefaultColor() {
+      this.out.unsetDefaultColor();
+   }
+
    private final float su;
    private final float sv;
    private final float ou;

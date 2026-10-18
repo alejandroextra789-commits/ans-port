@@ -4,6 +4,17 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 
 public final class ReversedQuadConsumer implements VertexConsumer {
    private final VertexConsumer out;
+
+   @Override
+   public void defaultColor(int r, int g, int b, int a) {
+      this.out.defaultColor(r, g, b, a);
+   }
+
+   @Override
+   public void unsetDefaultColor() {
+      this.out.unsetDefaultColor();
+   }
+
    private final float[] pos = new float[12];
    private final float[] uv = new float[8];
    private final float[] normal = new float[12];

@@ -5,6 +5,17 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 public final class NormalizingVertexConsumer implements VertexConsumer {
    private final VertexConsumer out;
 
+   @Override
+   public void defaultColor(int r, int g, int b, int a) {
+      this.out.defaultColor(r, g, b, a);
+   }
+
+   @Override
+   public void unsetDefaultColor() {
+      this.out.unsetDefaultColor();
+   }
+
+
    public NormalizingVertexConsumer(VertexConsumer out) {
       this.out = out;
    }
